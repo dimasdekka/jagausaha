@@ -1,0 +1,76 @@
+{
+  "business_name": "Kopi Teras Barokah",
+  "owner_name": "Arif",
+  "location": "Tebet, Jakarta Selatan",
+  "current_cash": 18500000.0,
+  "safety_buffer": 3000000.0,
+  "avg_daily_gross_inflow": 900000.0,
+  "daily_cogs_ratio": 0.60,
+  "obligations": [
+    {
+      "title": "Gaji 3 Barista & Kitchen",
+      "due_day": 6,
+      "amount": 7500000.0,
+      "category": "payroll",
+      "is_hard_commitment": true
+    },
+    {
+      "title": "Tempo Biji Kopi Toko Berkah",
+      "due_day": 11,
+      "amount": 4200000.0,
+      "category": "supplier_tempo",
+      "is_hard_commitment": true
+    },
+    {
+      "title": "Sewa Ruko Bulanan",
+      "due_day": 25,
+      "amount": 4000000.0,
+      "category": "rent",
+      "is_hard_commitment": true
+    }
+  ],
+  "receivables": [
+    {
+      "title": "Piutang Katering Kantor Pemda",
+      "due_day": 16,
+      "amount": 5000000.0,
+      "collection_probability": 0.90,
+      "contact_person": "Pak Budi",
+      "phone": "+6281299887766"
+    }
+  ],
+  "preset_scenarios": [
+    {
+      "id": "espresso_cash",
+      "name": "Beli Mesin Espresso Rp 14 Jt Tunai",
+      "one_time_outflow": 14000000.0,
+      "outflow_day": 1,
+      "monthly_fixed_delta": 0.0,
+      "daily_inflow_multiplier": 1.05
+    },
+    {
+      "id": "hire_barista",
+      "name": "Rekrut 1 Barista Baru Rp 2,2 Jt/bln",
+      "one_time_outflow": 0.0,
+      "outflow_day": 1,
+      "monthly_fixed_delta": 2200000.0,
+      "daily_inflow_multiplier": 1.15
+    },
+    {
+      "id": "bulk_coffee_discount",
+      "name": "Ambil Promo Biji Kopi 10 Sak Diskon 15% (Rp 6 Jt)",
+      "one_time_outflow": 6000000.0,
+      "outflow_day": 1,
+      "monthly_fixed_delta": 0.0,
+      "daily_inflow_multiplier": 1.0
+    },
+    {
+      "id": "espresso_restructured",
+      "name": "Mesin Espresso (DP 50% Rp 7 Jt + Tempo 30 Hari)",
+      "one_time_outflow": 7000000.0,
+      "outflow_day": 1,
+      "monthly_fixed_delta": 0.0,
+      "daily_inflow_multiplier": 1.05
+    }
+  ]
+}
