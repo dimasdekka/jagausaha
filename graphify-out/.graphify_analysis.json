@@ -1,0 +1,488 @@
+{
+  "communities": {
+    "0": [
+      "api_server_get_business_pulse",
+      "api_server_simulate_decision",
+      "cli_demo",
+      "cli_demo_print_banner",
+      "cli_demo_rationale_1",
+      "cli_demo_run_cli",
+      "core_advisor",
+      "core_advisor_advisoragent",
+      "core_advisor_advisoragent_formulate_simulation_advisory",
+      "core_advisor_advisoragent_generate_debt_collection_message",
+      "core_advisor_advisoragent_generate_supplier_negotiation_script",
+      "core_advisor_advisoragent_init",
+      "core_advisor_py_any",
+      "core_advisor_rationale_1",
+      "core_advisor_rationale_111",
+      "core_advisor_rationale_29",
+      "core_advisor_rationale_84",
+      "core_dlmm",
+      "core_dlmm_businessstate",
+      "core_dlmm_businessstate_net_daily_operating_cash",
+      "core_dlmm_calculate_runway",
+      "core_dlmm_calculate_safe_to_spend",
+      "core_dlmm_rationale_1",
+      "core_dlmm_rationale_60",
+      "core_dlmm_rationale_83",
+      "core_dlmm_scenario",
+      "core_dlmm_simulate_trajectory",
+      "core_dlmm_trajectoryresult",
+      "core_sensor",
+      "core_sensor_rationale_1",
+      "dataclasses",
+      "os",
+      "re",
+      "rich_console",
+      "rich_panel",
+      "rich_progress",
+      "rich_prompt",
+      "rich_table",
+      "sys",
+      "time",
+      "typing"
+    ],
+    "1": [
+      "api_server",
+      "api_server_get_negotiate_script",
+      "api_server_get_nudge_script",
+      "api_server_health_check",
+      "api_server_ingest_text",
+      "api_server_ingestrequest",
+      "api_server_load_initial_state",
+      "api_server_negotiaterequest",
+      "api_server_nudgerequest",
+      "api_server_rationale_1",
+      "api_server_reset_state",
+      "api_server_serve_frontend_root",
+      "api_server_serve_frontend_spa",
+      "api_server_serve_placeholder",
+      "api_server_simulaterequest",
+      "basemodel",
+      "core_dlmm_obligation",
+      "core_dlmm_receivable",
+      "fastapi",
+      "fastapi_middleware_cors",
+      "fastapi_responses",
+      "fastapi_staticfiles",
+      "get",
+      "json",
+      "pathlib",
+      "post",
+      "pydantic",
+      "uvicorn"
+    ],
+    "2": [
+      "frontend_package",
+      "frontend_package_name",
+      "frontend_package_private",
+      "frontend_package_scripts",
+      "frontend_package_scripts_build",
+      "frontend_package_scripts_dev",
+      "frontend_package_scripts_lint",
+      "frontend_package_scripts_preview",
+      "frontend_package_type",
+      "frontend_package_version",
+      "frontend_src_app_app",
+      "frontend_src_index",
+      "frontend_src_main",
+      "frontend_vite_config",
+      "ref_autoprefixer",
+      "ref_oxlint",
+      "ref_postcss",
+      "ref_react_dom",
+      "ref_tailwindcss",
+      "ref_types_node",
+      "ref_types_react",
+      "ref_types_react_dom",
+      "ref_typescript",
+      "ref_vite",
+      "ref_vitejs_plugin_react"
+    ],
+    "3": [
+      "frontend_src_app",
+      "frontend_src_app_presets",
+      "frontend_src_app_pulsedata",
+      "frontend_src_components_actionfeed",
+      "frontend_src_components_actionfeed_actionfeed",
+      "frontend_src_components_actionfeed_actionfeedprops",
+      "frontend_src_components_faqsection",
+      "frontend_src_components_faqsection_faqsection",
+      "frontend_src_components_finalcta",
+      "frontend_src_components_finalcta_finalcta",
+      "frontend_src_components_finalcta_finalctaprops",
+      "frontend_src_components_footer",
+      "frontend_src_components_footer_footer",
+      "frontend_src_components_howitworks",
+      "frontend_src_components_howitworks_howitworks",
+      "frontend_src_components_howitworks_howitworksprops",
+      "frontend_src_components_testimonials",
+      "frontend_src_components_testimonials_testimonials",
+      "frontend_src_components_whatsappmodal",
+      "frontend_src_components_whatsappmodal_whatsappmodal",
+      "frontend_src_components_whatsappmodal_whatsappmodalprops",
+      "ref_lucide_react"
+    ],
+    "4": [
+      "frontend_tsconfig_app",
+      "frontend_tsconfig_app_compileroptions",
+      "frontend_tsconfig_app_compileroptions_allowarbitraryextensions",
+      "frontend_tsconfig_app_compileroptions_allowimportingtsextensions",
+      "frontend_tsconfig_app_compileroptions_erasablesyntaxonly",
+      "frontend_tsconfig_app_compileroptions_jsx",
+      "frontend_tsconfig_app_compileroptions_lib",
+      "frontend_tsconfig_app_compileroptions_module",
+      "frontend_tsconfig_app_compileroptions_moduledetection",
+      "frontend_tsconfig_app_compileroptions_moduleresolution",
+      "frontend_tsconfig_app_compileroptions_noemit",
+      "frontend_tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "frontend_tsconfig_app_compileroptions_nounusedlocals",
+      "frontend_tsconfig_app_compileroptions_nounusedparameters",
+      "frontend_tsconfig_app_compileroptions_skiplibcheck",
+      "frontend_tsconfig_app_compileroptions_target",
+      "frontend_tsconfig_app_compileroptions_tsbuildinfofile",
+      "frontend_tsconfig_app_compileroptions_types",
+      "frontend_tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "frontend_tsconfig_app_include"
+    ],
+    "5": [
+      "frontend_tsconfig_node",
+      "frontend_tsconfig_node_compileroptions",
+      "frontend_tsconfig_node_compileroptions_allowimportingtsextensions",
+      "frontend_tsconfig_node_compileroptions_erasablesyntaxonly",
+      "frontend_tsconfig_node_compileroptions_lib",
+      "frontend_tsconfig_node_compileroptions_module",
+      "frontend_tsconfig_node_compileroptions_moduledetection",
+      "frontend_tsconfig_node_compileroptions_noemit",
+      "frontend_tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "frontend_tsconfig_node_compileroptions_nounusedlocals",
+      "frontend_tsconfig_node_compileroptions_nounusedparameters",
+      "frontend_tsconfig_node_compileroptions_skiplibcheck",
+      "frontend_tsconfig_node_compileroptions_target",
+      "frontend_tsconfig_node_compileroptions_tsbuildinfofile",
+      "frontend_tsconfig_node_compileroptions_types",
+      "frontend_tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "frontend_tsconfig_node_include"
+    ],
+    "6": [
+      "frontend_src_components_ui_matrix_orb",
+      "frontend_src_components_ui_matrix_orb_envelope",
+      "frontend_src_components_ui_matrix_orb_intensityof",
+      "frontend_src_components_ui_matrix_orb_labels",
+      "frontend_src_components_ui_matrix_orb_matrixorb",
+      "frontend_src_components_ui_matrix_orb_matrixorbprops",
+      "frontend_src_components_ui_matrix_orb_matrixorbstate",
+      "frontend_src_components_ui_matrix_orb_orbiters",
+      "frontend_src_components_ui_matrix_orb_scale",
+      "frontend_src_components_ui_matrix_orb_states",
+      "frontend_src_components_ui_matrix_orb_subscribetozoom",
+      "frontend_src_components_ui_matrix_orb_usedevicepixelratio",
+      "frontend_src_lib_utils",
+      "frontend_src_lib_utils_cn",
+      "ref_clsx",
+      "ref_tailwind_merge"
+    ],
+    "7": [
+      "frontend_src_components_herosection",
+      "frontend_src_components_herosection_herosection",
+      "frontend_src_components_herosection_herosectionprops",
+      "frontend_src_components_reactbits_blurtext",
+      "frontend_src_components_reactbits_blurtext_blurtext",
+      "frontend_src_components_reactbits_blurtext_blurtextprops",
+      "frontend_src_components_reactbits_magnet",
+      "frontend_src_components_reactbits_magnet_magnet",
+      "frontend_src_components_reactbits_magnet_magnetprops",
+      "frontend_src_components_reactbits_shinytext",
+      "frontend_src_components_reactbits_shinytext_shinytext",
+      "frontend_src_components_reactbits_shinytext_shinytextprops",
+      "ref_framer_motion"
+    ],
+    "8": [
+      "frontend_package_devdependencies",
+      "frontend_package_devdependencies_autoprefixer",
+      "frontend_package_devdependencies_oxlint",
+      "frontend_package_devdependencies_postcss",
+      "frontend_package_devdependencies_tailwindcss",
+      "frontend_package_devdependencies_types_node",
+      "frontend_package_devdependencies_types_react",
+      "frontend_package_devdependencies_types_react_dom",
+      "frontend_package_devdependencies_typescript",
+      "frontend_package_devdependencies_vite",
+      "frontend_package_devdependencies_vitejs_plugin_react"
+    ],
+    "9": [
+      "frontend_src_components_featureagents",
+      "frontend_src_components_featureagents_featureagents",
+      "frontend_src_components_pulsecards",
+      "frontend_src_components_pulsecards_pulsecards",
+      "frontend_src_components_pulsecards_pulsecardsprops",
+      "frontend_src_components_reactbits_countup",
+      "frontend_src_components_reactbits_countup_countup",
+      "frontend_src_components_reactbits_countup_countupprops",
+      "frontend_src_components_reactbits_spotlightcard",
+      "frontend_src_components_reactbits_spotlightcard_spotlightcard",
+      "frontend_src_components_reactbits_spotlightcard_spotlightcardprops"
+    ],
+    "10": [
+      "core_sensor_parsedtransaction",
+      "core_sensor_py_any",
+      "core_sensor_rationale_33",
+      "core_sensor_rationale_91",
+      "core_sensor_sensoragent",
+      "core_sensor_sensoragent_init",
+      "core_sensor_sensoragent_parse_bca_mutation_text",
+      "core_sensor_sensoragent_parse_whatsapp_note"
+    ],
+    "11": [
+      "frontend_package_dependencies",
+      "frontend_package_dependencies_clsx",
+      "frontend_package_dependencies_framer_motion",
+      "frontend_package_dependencies_lucide_react",
+      "frontend_package_dependencies_react",
+      "frontend_package_dependencies_react_dom",
+      "frontend_package_dependencies_recharts",
+      "frontend_package_dependencies_tailwind_merge"
+    ],
+    "12": [
+      "frontend_src_components_terminaldrawer",
+      "frontend_src_components_terminaldrawer_terminaldrawer",
+      "frontend_src_components_terminaldrawer_terminaldrawerprops",
+      "frontend_src_components_trajectorychart",
+      "frontend_src_components_trajectorychart_trajectorychart",
+      "frontend_src_components_trajectorychart_trajectorychartprops",
+      "ref_react"
+    ],
+    "13": [
+      "frontend_oxlintrc",
+      "frontend_oxlintrc_plugins",
+      "frontend_oxlintrc_rules",
+      "frontend_oxlintrc_rules_react_only_export_components",
+      "frontend_oxlintrc_rules_react_rules_of_hooks",
+      "frontend_oxlintrc_schema"
+    ],
+    "14": [
+      "frontend_src_components_boarduiagentthinking",
+      "frontend_src_components_boarduiagentthinking_boarduiagentthinking",
+      "frontend_src_components_boarduiagentthinking_boarduiagentthinkingprops",
+      "frontend_src_components_boarduiagentthinking_dotwaveindicator",
+      "frontend_src_components_boarduiagentthinking_elapsedtimer",
+      "frontend_src_components_boarduiagentthinking_thinkingstep"
+    ],
+    "15": [
+      "frontend_src_components_boarduiareachart",
+      "frontend_src_components_boarduiareachart_boarduiareachart",
+      "frontend_src_components_boarduiareachart_boarduiareachartprops",
+      "frontend_src_components_boarduiareachart_chartdatapoint",
+      "frontend_src_components_boarduiareachart_customtooltip",
+      "ref_recharts"
+    ],
+    "16": [
+      "frontend_src_components_agentthinking",
+      "frontend_src_components_agentthinking_agentthinking",
+      "frontend_src_components_agentthinking_agentthinkingprops",
+      "frontend_src_components_agentthinking_thinkingstep"
+    ],
+    "17": [
+      "frontend_src_components_header",
+      "frontend_src_components_header_header",
+      "frontend_src_components_header_headerprops"
+    ],
+    "18": [
+      "frontend_tsconfig",
+      "frontend_tsconfig_files",
+      "frontend_tsconfig_references"
+    ],
+    "19": [
+      "api_init",
+      "api_init_rationale_1"
+    ],
+    "20": [
+      "core_init",
+      "core_init_rationale_1"
+    ],
+    "21": [
+      "deploy_vps",
+      "deploy_vps_sh__entry"
+    ],
+    "22": [
+      "frontend_tailwind_config",
+      "tailwindcss"
+    ],
+    "23": [
+      "frontend_postcss_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08536585365853659,
+    "1": 0.1164021164021164,
+    "2": 0.08333333333333333,
+    "3": 0.1471861471861472,
+    "4": 0.1,
+    "5": 0.11764705882352941,
+    "6": 0.175,
+    "7": 0.1794871794871795,
+    "8": 0.18181818181818182,
+    "9": 0.23636363636363636,
+    "10": 0.25,
+    "11": 0.25,
+    "12": 0.2857142857142857,
+    "13": 0.3333333333333333,
+    "14": 0.3333333333333333,
+    "15": 0.3333333333333333,
+    "16": 0.5,
+    "17": 0.6666666666666666,
+    "18": 0.6666666666666666,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0
+  },
+  "gods": [
+    {
+      "id": "ref_react",
+      "label": "react",
+      "degree": 25
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions",
+      "label": "compilerOptions",
+      "degree": 18
+    },
+    {
+      "id": "ref_lucide_react",
+      "label": "lucide-react",
+      "degree": 16
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions",
+      "label": "compilerOptions",
+      "degree": 15
+    },
+    {
+      "id": "core_dlmm_simulate_trajectory",
+      "label": "simulate_trajectory()",
+      "degree": 12
+    },
+    {
+      "id": "core_advisor_advisoragent",
+      "label": "AdvisorAgent",
+      "degree": 9
+    },
+    {
+      "id": "core_dlmm_businessstate",
+      "label": "BusinessState",
+      "degree": 9
+    },
+    {
+      "id": "cli_demo_run_cli",
+      "label": "run_cli()",
+      "degree": 9
+    },
+    {
+      "id": "core_dlmm_calculate_safe_to_spend",
+      "label": "calculate_safe_to_spend()",
+      "degree": 9
+    },
+    {
+      "id": "core_dlmm_scenario",
+      "label": "Scenario",
+      "degree": 6
+    }
+  ],
+  "surprises": [
+    {
+      "source": "load_initial_state()",
+      "target": "BusinessState",
+      "source_files": [
+        "api/server.py",
+        "core/dlmm.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "simulate_decision()",
+      "target": "Scenario",
+      "source_files": [
+        "api/server.py",
+        "core/dlmm.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "ingest_text()",
+      "target": "Obligation",
+      "source_files": [
+        "api/server.py",
+        "core/dlmm.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "run_cli()",
+      "target": "Obligation",
+      "source_files": [
+        "cli_demo.py",
+        "core/dlmm.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "ingest_text()",
+      "target": "Receivable",
+      "source_files": [
+        "api/server.py",
+        "core/dlmm.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `react` connect `react` to `package.json`, `App.tsx`, `matrix-orb.tsx`, `HeroSection.tsx`, `PulseCards.tsx`, `BoardUIAgentThinking.tsx`, `BoardUIAreaChart.tsx`, `AgentThinking.tsx`, `Header.tsx`?",
+      "why": "High betweenness centrality (0.110) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `lucide-react` connect `App.tsx` to `package.json`, `HeroSection.tsx`, `PulseCards.tsx`, `react`, `BoardUIAgentThinking.tsx`, `BoardUIAreaChart.tsx`, `AgentThinking.tsx`, `Header.tsx`?",
+      "why": "High betweenness centrality (0.039) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `devDependencies` connect `devDependencies` to `package.json`?",
+      "why": "High betweenness centrality (0.036) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `TerminalDrawerProps`, `TrajectoryChartProps`, `BoardUIAgentThinkingProps` to the rest of the system?",
+      "why": "99 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `cli_demo.py` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08536585365853659 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `server.py` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1164021164021164 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `package.json` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
