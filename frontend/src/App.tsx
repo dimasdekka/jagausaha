@@ -10,7 +10,6 @@ import { FinalCTA } from './components/FinalCTA';
 import { Footer } from './components/Footer';
 import { TerminalDrawer } from './components/TerminalDrawer';
 import { WhatsAppModal } from './components/WhatsAppModal';
-import { type MatrixOrbState } from './components/ui/matrix-orb';
 
 interface PulseData {
   business_name: string;
@@ -51,10 +50,8 @@ export function App() {
   const [insolvencyDay, setInsolvencyDay] = useState<number | null>(null);
   const [scenarioName, setScenarioName] = useState<string>('Beli Mesin Kopi Tunai (Rp 14 Jt)');
 
-  // Matrix Orb Voice States
-  const [orbState, setOrbState] = useState<MatrixOrbState>('idle');
   const [voiceTranscript, setVoiceTranscript] = useState<string>(
-    '"Mas JagaUsaha, kalau beli mesin espresso Rp 14 juta cash aman nggak?"'
+    'Contoh: "Beli mesin espresso 14 juta tunai aman nggak?"'
   );
 
   // Terminal Logs
@@ -88,7 +85,6 @@ export function App() {
 
   const runSimulation = async (presetId: string, amount?: number) => {
     setActivePreset(presetId);
-    setOrbState('thinking');
 
     const match = PRESETS.find(p => p.id === presetId);
     const chosenAmount = amount !== undefined ? amount : (match ? match.outflow : 14000000);
@@ -112,7 +108,6 @@ export function App() {
           : `[RISIKO] Defisit kas pada Hari ke-${data.metrics.insolvency_day}! Min: Rp ${data.metrics.min_scenario_cash.toLocaleString('id-ID')}`;
         
         setLogs(prev => [logMsg, ...prev]);
-        setOrbState('idle');
         return;
       }
     } catch {
@@ -127,8 +122,7 @@ export function App() {
 
       setScenarioCurve(scen);
       setInsolvencyDay(crashDay);
-      setOrbState('idle');
-    }, 400);
+    }, 300);
   };
 
   useEffect(() => {
@@ -136,11 +130,10 @@ export function App() {
   }, []);
 
   const handleVoiceSim = () => {
-    setOrbState('listening');
-    setVoiceTranscript('"Mas JagaUsaha, kalau beli mesin espresso Rp 14 juta cash aman nggak?"');
+    setVoiceTranscript('Memproses: "Beli mesin espresso 14 juta tunai aman nggak?"');
     setTimeout(() => {
       runSimulation('espresso_cash', 14000000);
-    }, 1500);
+    }, 600);
   };
 
   const openWhatsAppNudge = (debtor: string, amount: number) => {
@@ -191,7 +184,6 @@ export function App() {
             scenarioName={scenarioName}
             activePreset={activePreset}
             presets={PRESETS}
-            orbState={orbState}
             voiceTranscript={voiceTranscript}
             onSelectPreset={runSimulation}
             onTriggerVoiceSim={handleVoiceSim}

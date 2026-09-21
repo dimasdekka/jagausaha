@@ -1,5 +1,5 @@
 import React from 'react';
-import { AlertTriangle, CheckCircle2, MessageSquare, ShieldCheck, Clock } from 'lucide-react';
+import { ArrowRight, MessageSquare } from 'lucide-react';
 
 interface DecisionIntelligenceProps {
   isSafe: boolean;
@@ -20,103 +20,94 @@ export const DecisionIntelligenceCard: React.FC<DecisionIntelligenceProps> = ({
   onOpenNegotiate,
   onApplySafeSolution,
 }) => {
-  const formatRupiah = (val: number) => `Rp ${Math.abs(val).toLocaleString('id-ID')}`;
-
   return (
-    <div className="rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm flex flex-col justify-between h-full space-y-5">
-      {/* Status Header */}
-      <div>
-        <div className="flex items-center justify-between gap-2 mb-3">
-          <span className="text-xs font-semibold text-neutral-500 uppercase tracking-wider">
-            Evaluasi Keputusan
+    <div className="rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm flex flex-col justify-between h-full space-y-6">
+      {/* Header */}
+      <div className="space-y-3">
+        <div className="flex items-center justify-between">
+          <span className="text-xs font-semibold uppercase tracking-wider text-neutral-500 font-mono">
+            Analisis Keputusan
           </span>
-          {isSafe ? (
-            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200/80 px-2.5 py-1 rounded-full">
-              <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
-              Aman Dijalankan
-            </span>
-          ) : (
-            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-rose-800 bg-rose-50 border border-rose-200/80 px-2.5 py-1 rounded-full">
-              <AlertTriangle className="h-3.5 w-3.5 text-rose-600" />
-              Risiko Tinggi (Defisit)
-            </span>
-          )}
+          <span
+            className={`inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-0.5 rounded-full ${
+              isSafe
+                ? 'bg-neutral-100 text-neutral-800'
+                : 'bg-neutral-900 text-white'
+            }`}
+          >
+            <span
+              className={`h-1.5 w-1.5 rounded-full ${
+                isSafe ? 'bg-emerald-500' : 'bg-rose-500 animate-pulse'
+              }`}
+            />
+            <span>{isSafe ? 'Kas Aman' : `Defisit Hari ke-${insolvencyDay || 6}`}</span>
+          </span>
         </div>
 
-        <h4 className="text-base font-semibold text-neutral-900 tracking-tight leading-snug">
+        <h4 className="text-lg font-semibold text-neutral-950 tracking-tight leading-snug">
           {isSafe
-            ? 'Likuiditas Usaha Tetap Terjaga'
-            : `Peringatan: Defisit Kas pada Hari ke-${insolvencyDay || 6}`}
+            ? 'Arus kas usaha tetap aman'
+            : 'Risiko gagal bayar gaji & supplier'}
         </h4>
 
-        <p className="text-xs text-neutral-600 mt-2 leading-relaxed">
+        <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed font-normal">
           {isSafe ? (
             <>
-              Setelah keputusan <b>{scenarioName}</b> dieksekusi, saldo kas minimum tetap terjaga di{' '}
-              <span className="font-semibold text-emerald-700">Rp {minCash.toLocaleString('id-ID')}</span>. 
-              Kewajiban gaji dan tempo supplier tetap aman terbayar tepat waktu.
+              Keputusan {scenarioName} tidak mengganggu komitmen operasional. Saldo kas terendah tetap berada di atas cadangan darurat.
             </>
           ) : (
             <>
-              Pengeluaran untuk <b>{scenarioName}</b> menghabiskan cadangan sebelum benturan jadwal{' '}
-              <b>Gaji Karyawan (H+6 Rp 7,5 Jt)</b> dan <b>Tempo Kopi (H+11 Rp 4,2 Jt)</b>. Saldo diproyeksikan{' '}
-              <span className="font-bold text-rose-600">-Rp {Math.abs(minCash).toLocaleString('id-ID')}</span>.
+              Pengeluaran untuk {scenarioName} menguras likuiditas sebelum jadwal pembayaran gaji staf (H+6) dan tempo bahan baku (H+11).
             </>
           )}
         </p>
       </div>
 
-      {/* Structured Impact Breakdown */}
-      <div className="rounded-xl border border-neutral-100 bg-neutral-50/70 p-4 space-y-2.5 text-xs font-sans">
-        <div className="flex items-center justify-between text-neutral-600">
-          <span>Duit Dingin yang Boleh Dipakai:</span>
-          <span className="font-semibold text-neutral-900 font-mono">
+      {/* Structured Metrics Table (Clean, Borderless, Tabular) */}
+      <div className="border-y border-neutral-100 py-3.5 space-y-2 text-xs">
+        <div className="flex items-center justify-between">
+          <span className="text-neutral-500">Batas Duit Dingin Aman</span>
+          <span className="font-semibold text-neutral-900 font-mono tabular-nums">
             Rp {safeToSpend.toLocaleString('id-ID')}
           </span>
         </div>
-        <div className="flex items-center justify-between text-neutral-600">
-          <span>Proyeksi Saldo Terendah:</span>
-          <span
-            className={`font-semibold font-mono ${
-              minCash < 0 ? 'text-rose-600 font-bold' : 'text-emerald-700'
-            }`}
-          >
-            {minCash < 0 ? `-${formatRupiah(minCash)}` : `Rp ${minCash.toLocaleString('id-ID')}`}
+        <div className="flex items-center justify-between">
+          <span className="text-neutral-500">Proyeksi Saldo Terendah</span>
+          <span className={`font-semibold font-mono tabular-nums ${minCash < 0 ? 'text-rose-600' : 'text-neutral-900'}`}>
+            {minCash < 0 ? `-Rp ${Math.abs(minCash).toLocaleString('id-ID')}` : `Rp ${minCash.toLocaleString('id-ID')}`}
           </span>
         </div>
-        <div className="flex items-center justify-between text-neutral-600 pt-2 border-t border-neutral-200/60">
-          <span>Batas Waktu Intervensi:</span>
-          <span className="font-medium text-neutral-800 flex items-center gap-1">
-            <Clock className="h-3 w-3 text-neutral-400" />
-            <span>Sebelum Hari ke-6</span>
+        <div className="flex items-center justify-between">
+          <span className="text-neutral-500">Jadwal Pengeluaran Kritis</span>
+          <span className="font-medium text-neutral-900">
+            Hari ke-6 (Gaji Karyawan)
           </span>
         </div>
       </div>
 
       {/* Action Buttons */}
-      <div className="space-y-2 pt-1">
+      <div className="space-y-2">
         {!isSafe ? (
           <>
             <button
               onClick={onApplySafeSolution}
-              className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white py-2.5 text-xs font-semibold transition-all shadow-sm active:scale-95"
+              className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white py-3 text-xs font-medium transition-all shadow-sm active:scale-95"
             >
-              <ShieldCheck className="h-3.5 w-3.5 text-emerald-400" />
               <span>Terapkan Solusi Aman (DP 50%)</span>
+              <ArrowRight className="h-3.5 w-3.5" />
             </button>
 
             <button
               onClick={onOpenNegotiate}
-              className="w-full inline-flex items-center justify-center gap-2 rounded-full border border-neutral-200 bg-white hover:bg-neutral-50 text-neutral-800 py-2.5 text-xs font-medium transition-all active:scale-95"
+              className="w-full inline-flex items-center justify-center gap-2 rounded-full border border-neutral-300 bg-white hover:bg-neutral-50 text-neutral-900 py-3 text-xs font-medium transition-all active:scale-95"
             >
-              <MessageSquare className="h-3.5 w-3.5 text-neutral-500" />
-              <span>Draf WhatsApp Negosiasi Supplier</span>
+              <MessageSquare className="h-3.5 w-3.5 text-neutral-600" />
+              <span>Draf Pesan WhatsApp Supplier</span>
             </button>
           </>
         ) : (
-          <div className="flex items-center justify-center gap-2 text-xs font-medium text-emerald-800 bg-emerald-50/80 border border-emerald-200/60 py-2.5 rounded-full">
-            <CheckCircle2 className="h-4 w-4 text-emerald-600" />
-            <span>Rencana belanja aman untuk dieksekusi</span>
+          <div className="flex items-center justify-center text-xs text-neutral-600 bg-neutral-50 py-3 rounded-full border border-neutral-200/80 font-medium">
+            <span>Rencana pengeluaran terverifikasi aman</span>
           </div>
         )}
       </div>
