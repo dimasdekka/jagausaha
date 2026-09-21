@@ -75,7 +75,7 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
 }) => {
   const [horizon, setHorizon] = useState<number>(30); // 14 or 30 days
 
-  // Clean data starting from Day 1 to avoid Day 0 vertical plunge glitch
+  // Smooth daily points starting from Day 1
   const chartData: ChartDataPoint[] = [];
   const maxDay = Math.min(horizon, days.length - 1);
 
@@ -91,7 +91,7 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
   // Explicit, evenly spaced X-axis ticks
   const xTicks = horizon === 14 ? [1, 3, 7, 10, 14] : [1, 5, 10, 15, 20, 25, 30];
 
-  // Explicit, uniform Y-axis ticks in multiples of 5 Juta
+  // Clean uniform Y-axis ticks in 5 Juta increments
   const yTicks = [-5000000, 0, 5000000, 10000000, 15000000, 20000000, 25000000];
 
   const formatYAxis = (val: number) => {
@@ -111,7 +111,7 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
             Proyeksi Arus Kas Operasional
           </h3>
           <p className="text-xs text-neutral-500 mt-0.5 font-normal">
-            Garis linear pergerakan kas harian terhadap jadwal pengeluaran wajib
+            Kurva pergerakan kas harian terhadap jadwal pengeluaran wajib
           </p>
         </div>
 
@@ -133,18 +133,19 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
         </div>
       </div>
 
-      {/* Main Recharts Area */}
+      {/* Main Recharts Area with Silky Smooth Continuous Curves */}
       <div className="h-72 w-full pt-4">
         <ResponsiveContainer width="100%" height="100%">
           <ComposedChart data={chartData} margin={{ top: 12, right: 20, left: 10, bottom: 4 }}>
             <defs>
-              <linearGradient id="cleanScenarioGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor={insolvencyDay ? '#DC2626' : '#059669'} stopOpacity={0.12} />
-                <stop offset="95%" stopColor={insolvencyDay ? '#DC2626' : '#059669'} stopOpacity={0.0} />
+              <linearGradient id="smoothScenarioGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor={insolvencyDay ? '#E11D48' : '#10B981'} stopOpacity={0.15} />
+                <stop offset="95%" stopColor={insolvencyDay ? '#E11D48' : '#10B981'} stopOpacity={0.0} />
               </linearGradient>
             </defs>
 
-            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#F3F4F6" />
+            {/* Subtle horizontal grid lines */}
+            <CartesianGrid vertical={false} stroke="#E5E7EB" strokeDasharray="4 4" strokeOpacity={0.6} />
 
             <XAxis
               dataKey="day"
@@ -169,44 +170,44 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
 
             <Tooltip content={<CustomTooltip />} />
 
-            {/* Critical Zero Deficit Reference Line */}
+            {/* Subtle Zero Deficit Line */}
             <ReferenceLine
               y={0}
-              stroke="#DC2626"
+              stroke="#F43F5E"
               strokeDasharray="4 4"
-              strokeWidth={1}
+              strokeWidth={1.2}
             />
 
-            {/* Safety Buffer Reference Line */}
+            {/* Subtle Safety Buffer Line */}
             <ReferenceLine
               y={safetyBuffer}
-              stroke="#9CA3AF"
-              strokeDasharray="2 3"
+              stroke="#10B981"
+              strokeDasharray="3 3"
               strokeWidth={1}
+              strokeOpacity={0.5}
             />
 
-            {/* Baseline Cash: Clean Linear Line with NO Fill to avoid muddy overlap */}
+            {/* Baseline Cash: Silky smooth natural curve */}
             <Line
-              type="linear"
+              type="natural"
               dataKey="baseline"
               name="Kas Berjalan Normal"
-              stroke="#4B5563"
-              strokeWidth={1.8}
-              strokeDasharray="3 3"
+              stroke="#64748B"
+              strokeWidth={2}
               dot={false}
               isAnimationActive={false}
             />
 
-            {/* Scenario Cash: Clean Linear Area with subtle transparent gradient */}
+            {/* Scenario Cash: Silky smooth natural curve with soft gradient fill */}
             {scenario && (
               <Area
-                type="linear"
+                type="natural"
                 dataKey="scenario"
                 name={scenarioName}
-                stroke={insolvencyDay ? '#DC2626' : '#059669'}
-                strokeWidth={2.2}
+                stroke={insolvencyDay ? '#E11D48' : '#10B981'}
+                strokeWidth={2.5}
                 fillOpacity={1}
-                fill="url(#cleanScenarioGrad)"
+                fill="url(#smoothScenarioGrad)"
                 dot={false}
                 isAnimationActive={false}
               />
@@ -217,14 +218,14 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
 
       {/* Clean Single-Line Legend */}
       <div className="flex flex-wrap items-center justify-between pt-4 mt-2 border-t border-neutral-100 text-xs text-neutral-600 gap-2">
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-6">
           <span className="flex items-center gap-2 whitespace-nowrap">
-            <span className="w-3 h-0.5 bg-neutral-500 border-dashed shrink-0" />
+            <span className="w-3.5 h-1 bg-slate-400 rounded-full shrink-0" />
             <span className="text-neutral-600 whitespace-nowrap">Kas Berjalan</span>
           </span>
           {scenario && (
             <span className="flex items-center gap-2 whitespace-nowrap">
-              <span className={`w-3 h-1 rounded-full shrink-0 ${insolvencyDay ? 'bg-rose-600' : 'bg-emerald-600'}`} />
+              <span className={`w-3.5 h-1 rounded-full shrink-0 ${insolvencyDay ? 'bg-rose-600' : 'bg-emerald-600'}`} />
               <span className="text-neutral-900 font-medium whitespace-nowrap">
                 Setelah Belanja
               </span>
