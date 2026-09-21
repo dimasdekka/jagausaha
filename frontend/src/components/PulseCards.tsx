@@ -1,6 +1,5 @@
 import React from 'react';
 import { Lock, Sparkles, Calendar, Wallet } from 'lucide-react';
-import { SpotlightCard } from './reactbits/SpotlightCard';
 
 interface PulseCardsProps {
   safeToSpend: number;
@@ -20,83 +19,74 @@ export const PulseCards: React.FC<PulseCardsProps> = ({
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
       {/* 1. Duit Dingin (Safe-to-Spend) */}
-      <SpotlightCard
-        spotlightColor="rgba(16, 185, 129, 0.14)"
-        className="border-emerald-200/90 bg-gradient-to-b from-emerald-50/40 to-white"
-      >
-        <div className="space-y-3">
+      <div className="rounded-2xl border border-emerald-200/90 bg-gradient-to-b from-emerald-50/50 via-white to-white p-5 shadow-stripe-card transition-all hover:shadow-stripe">
+        <div className="space-y-2.5">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-emerald-800 tracking-tight flex items-center gap-1.5">
               <Sparkles className="h-3.5 w-3.5 text-emerald-600" />
               Duit Dingin (Safe-to-Spend)
             </span>
-            <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300/60">
+            <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300/60">
               Aman Dibelanjakan
             </span>
           </div>
 
-          <div className="text-3xl font-bold text-neutral-950 tracking-tight">
+          <div className="text-3xl font-extrabold text-navy-950 tracking-tight tabular-nums">
             Rp {safeToSpend.toLocaleString('id-ID')}
           </div>
 
-          <p className="text-xs text-neutral-600 leading-normal pt-2 border-t border-emerald-100/80">
-            Batas belanja maksimal tanpa risiko gagal bayar gaji & tempo supplier.
+          <p className="text-xs text-slate-700 leading-relaxed pt-2.5 border-t border-emerald-100/80">
+            Batas pengeluaran aman tanpa memicu risiko gagal bayar gaji atau tempo.
           </p>
         </div>
-      </SpotlightCard>
+      </div>
 
       {/* 2. Komitmen Wajib Terjadwal */}
-      <SpotlightCard
-        spotlightColor="rgba(245, 158, 11, 0.10)"
-        className="border-neutral-200/90 bg-white"
-      >
-        <div className="space-y-3">
+      <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-stripe-card transition-all hover:shadow-stripe">
+        <div className="space-y-2.5">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold text-neutral-700 tracking-tight flex items-center gap-1.5">
+            <span className="text-xs font-semibold text-slate-700 tracking-tight flex items-center gap-1.5">
               <Calendar className="h-3.5 w-3.5 text-amber-600" />
               Komitmen Terjadwal (14 Hari)
             </span>
-            <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded-full bg-amber-50 text-amber-800 border border-amber-200">
+            <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-amber-50 text-amber-800 border border-amber-200">
               Wajib Terkunci
             </span>
           </div>
 
-          <div className="text-3xl font-bold text-neutral-950 tracking-tight">
+          <div className="text-3xl font-extrabold text-navy-950 tracking-tight tabular-nums">
             Rp {committedObligations.toLocaleString('id-ID')}
           </div>
 
-          <p className="text-xs text-neutral-500 leading-normal pt-2 border-t border-neutral-100 flex items-center gap-1.5">
-            <Lock className="h-3.5 w-3.5 text-neutral-400 shrink-0" />
+          <p className="text-xs text-slate-700 leading-relaxed pt-2.5 border-t border-slate-100 flex items-center gap-1.5">
+            <Lock className="h-3.5 w-3.5 text-slate-400 shrink-0" />
             <span>Gaji 3 Staf (Rp 7,5 Jt) + Tempo Kopi (Rp 4,2 Jt)</span>
           </p>
         </div>
-      </SpotlightCard>
+      </div>
 
       {/* 3. Saldo Bank Total */}
-      <SpotlightCard
-        spotlightColor="rgba(59, 130, 246, 0.10)"
-        className="border-neutral-200/90 bg-white"
-      >
-        <div className="space-y-3">
+      <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-stripe-card transition-all hover:shadow-stripe">
+        <div className="space-y-2.5">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold text-neutral-700 tracking-tight flex items-center gap-1.5">
-              <Wallet className="h-3.5 w-3.5 text-blue-600" />
+            <span className="text-xs font-semibold text-slate-700 tracking-tight flex items-center gap-1.5">
+              <Wallet className="h-3.5 w-3.5 text-brand-indigo" />
               Saldo Rekening BCA
             </span>
-            <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded-full bg-neutral-100 text-neutral-700 border border-neutral-200">
-              Kas Aktif
+            <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
+              Total Kas
             </span>
           </div>
 
-          <div className="text-3xl font-bold text-neutral-950 tracking-tight">
+          <div className="text-3xl font-extrabold text-navy-950 tracking-tight tabular-nums">
             Rp {currentCash.toLocaleString('id-ID')}
           </div>
 
-          <p className="text-xs text-neutral-500 leading-normal pt-2 border-t border-neutral-100">
-            Termasuk cadangan buffer darurat minimum Rp {safetyBuffer.toLocaleString('id-ID')}.
+          <p className="text-xs text-slate-700 leading-relaxed pt-2.5 border-t border-slate-100">
+            Termasuk cadangan darurat minimum Rp {safetyBuffer.toLocaleString('id-ID')}.
           </p>
         </div>
-      </SpotlightCard>
+      </div>
     </div>
   );
 };

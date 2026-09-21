@@ -204,7 +204,7 @@ export function App() {
         <FeatureAgents />
 
         {/* 4. How It Works */}
-        <HowItWorks onSimulateCustom={(_name) => runSimulation('espresso_cash', 14000000)} />
+        <HowItWorks onSimulateCustom={(amt) => { runSimulation('espresso_cash', amt); scrollToDemo(); }} />
 
         {/* 5. Priority Tactical Actions (No Fake Client Testimonials) */}
         <section className="max-w-5xl mx-auto px-4 sm:px-6">
