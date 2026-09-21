@@ -9,7 +9,7 @@ import {
   Tooltip,
   ReferenceLine,
 } from 'recharts';
-import { AlertTriangle, CheckCircle2, TrendingDown, Calendar } from 'lucide-react';
+import { AlertTriangle } from 'lucide-react';
 
 interface ChartDataPoint {
   day: number;
@@ -25,7 +25,6 @@ interface BoardUIAreaChartProps {
   insolvencyDay?: number | null;
   scenarioName?: string;
   safetyBuffer?: number;
-  safeToSpend?: number;
 }
 
 const CustomTooltip = ({ active, payload, label }: any) => {
@@ -79,7 +78,6 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
   insolvencyDay,
   scenarioName = 'Simulasi',
   safetyBuffer = 3000000,
-  safeToSpend = 3800000,
 }) => {
   const [horizon, setHorizon] = useState<number>(30); // 7, 14, or 30 days
 
@@ -95,11 +93,6 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
       scenario: scenario ? scenario[i] : undefined,
     });
   }
-
-  // Min cash in scenario
-  const minScenarioVal = scenario
-    ? Math.min(...scenario.slice(0, sliceCount))
-    : Math.min(...baseline.slice(0, sliceCount));
 
   const formatYAxis = (val: number) => {
     if (Math.abs(val) >= 1_000_000) {
@@ -245,44 +238,25 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
         </ResponsiveContainer>
       </div>
 
-      {/* BoardUI Stat Tiles Grid Below Chart */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-5 mt-3 border-t border-neutral-100">
-        <div className="rounded-xl bg-neutral-50 p-3 border border-neutral-100">
-          <div className="text-[11px] text-neutral-500 font-medium">Saldo Terendah</div>
-          <div className={`text-sm font-bold font-mono mt-0.5 ${minScenarioVal < 0 ? 'text-rose-600' : 'text-neutral-900'}`}>
-            Rp {minScenarioVal.toLocaleString('id-ID')}
-          </div>
-        </div>
-
-        <div className="rounded-xl bg-neutral-50 p-3 border border-neutral-100">
-          <div className="text-[11px] text-neutral-500 font-medium">Duit Dingin Aman</div>
-          <div className="text-sm font-bold font-mono text-emerald-700 mt-0.5">
-            Rp {safeToSpend.toLocaleString('id-ID')}
-          </div>
-        </div>
-
-        <div className="rounded-xl bg-neutral-50 p-3 border border-neutral-100">
-          <div className="text-[11px] text-neutral-500 font-medium">Jatuh Tempo Gaji</div>
-          <div className="text-sm font-semibold text-neutral-800 mt-0.5 flex items-center gap-1">
-            <Calendar className="h-3.5 w-3.5 text-neutral-400" />
-            <span>Hari ke-6 (Rp 7.5M)</span>
-          </div>
-        </div>
-
-        <div className="rounded-xl bg-neutral-50 p-3 border border-neutral-100">
-          <div className="text-[11px] text-neutral-500 font-medium">Status Risiko</div>
-          <div className="text-sm font-semibold mt-0.5 flex items-center gap-1">
-            {insolvencyDay ? (
-              <span className="text-rose-600 flex items-center gap-1">
-                <TrendingDown className="h-3.5 w-3.5" /> Defisit H+{insolvencyDay}
+      {/* Clean Legend Bar */}
+      <div className="flex items-center justify-between pt-4 mt-2 border-t border-neutral-100 text-xs text-neutral-500 font-sans">
+        <div className="flex items-center gap-4">
+          <span className="flex items-center gap-1.5">
+            <span className="h-2.5 w-2.5 rounded-full bg-emerald-600" />
+            <span className="text-neutral-700 font-medium">Kas Berjalan Normal</span>
+          </span>
+          {scenario && (
+            <span className="flex items-center gap-1.5">
+              <span className={`h-2.5 w-2.5 rounded-full ${insolvencyDay ? 'bg-rose-600' : 'bg-amber-500'}`} />
+              <span className={insolvencyDay ? 'text-rose-700 font-semibold' : 'text-amber-700 font-medium'}>
+                {scenarioName}
               </span>
-            ) : (
-              <span className="text-emerald-700 flex items-center gap-1">
-                <CheckCircle2 className="h-3.5 w-3.5" /> Kas Aman
-              </span>
-            )}
-          </div>
+            </span>
+          )}
         </div>
+        <span className="text-[11px] text-neutral-400 font-mono hidden sm:inline">
+          Garis putus merah = Batas defisit kas Rp 0
+        </span>
       </div>
     </div>
   );
