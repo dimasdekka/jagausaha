@@ -28,40 +28,40 @@ export const FAQSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-24 border-t border-slate-200 bg-white">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
+    <section className="py-20 sm:py-28 border-t border-neutral-100 bg-white">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-12">
         <div className="text-center space-y-3">
-          <span className="text-xs font-bold uppercase tracking-wider text-brand-indigo font-mono">
-            Tanya Jawab Teknis
+          <span className="text-xs font-semibold uppercase tracking-wider text-neutral-500 font-mono">
+            Frequently Asked Questions
           </span>
-          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-[-0.03em] text-navy-900">
+          <h2 className="font-serif font-extralight text-4xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-[-0.03em] leading-tight">
             Pertanyaan yang sering diajukan
           </h2>
-          <p className="text-sm sm:text-base text-slate-700">
+          <p className="text-sm sm:text-base text-neutral-600 font-normal">
             Segala hal yang perlu Anda ketahui tentang arsitektur dan cara kerja JagaUsaha.
           </p>
         </div>
 
-        <div className="divide-y divide-slate-200 border-y border-slate-200">
+        <div className="divide-y divide-neutral-200/80 border-y border-neutral-200/80">
           {faqs.map((faq, idx) => {
             const isOpen = openIdx === idx;
             return (
-              <div key={idx} className="py-5">
+              <div key={idx} className="py-6">
                 <button
                   onClick={() => setOpenIdx(isOpen ? null : idx)}
                   className="w-full flex items-center justify-between text-left gap-4 group"
                 >
-                  <span className="text-base font-bold text-navy-900 group-hover:text-brand-indigo transition-colors">
+                  <span className="text-base font-medium text-neutral-900 group-hover:text-neutral-950 transition-colors">
                     {faq.q}
                   </span>
                   <ChevronDown
-                    className={`h-5 w-5 text-slate-400 transition-transform duration-200 shrink-0 ${
-                      isOpen ? 'rotate-180 text-brand-indigo' : ''
+                    className={`h-5 w-5 text-neutral-400 transition-transform duration-200 shrink-0 ${
+                      isOpen ? 'rotate-180 text-neutral-950' : ''
                     }`}
                   />
                 </button>
                 {isOpen && (
-                  <p className="mt-3 text-xs sm:text-sm text-slate-700 leading-relaxed pr-8 animate-in fade-in duration-150">
+                  <p className="mt-3 text-xs sm:text-sm text-neutral-600 leading-relaxed pr-8 animate-in fade-in duration-150">
                     {faq.a}
                   </p>
                 )}

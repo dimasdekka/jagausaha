@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, ShieldCheck } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 interface FinalCTAProps {
   onStart: () => void;
@@ -7,31 +7,27 @@ interface FinalCTAProps {
 
 export const FinalCTA: React.FC<FinalCTAProps> = ({ onStart }) => {
   return (
-    <section className="py-20 sm:py-28 bg-gradient-to-b from-slate-50 to-white border-t border-slate-200">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-6">
-        <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-brand-indigo to-brand-violet text-white flex items-center justify-center mx-auto shadow-stripe">
-          <ShieldCheck className="h-7 w-7 text-white" />
-        </div>
-
-        <h2 className="text-3xl sm:text-5xl font-extrabold tracking-[-0.03em] text-navy-900 max-w-2xl mx-auto leading-tight">
+    <section className="py-24 sm:py-36 bg-neutral-50/60 border-t border-neutral-100">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-7">
+        <h2 className="font-serif font-extralight text-4xl sm:text-6xl lg:text-7xl tracking-[-0.03em] text-neutral-950 max-w-2xl mx-auto leading-[1.08] text-balance">
           Jaga napas kas bisnis Anda mulai hari ini
         </h2>
 
-        <p className="text-sm sm:text-base text-slate-700 max-w-xl mx-auto leading-relaxed">
-          Jangan biarkan keputusan belanja impulsif atau ilusi omset ramai menenggelamkan usaha yang sudah Anda rintis bertahun-tahun.
+        <p className="text-base sm:text-lg text-neutral-600 max-w-xl mx-auto leading-relaxed font-normal text-balance">
+          Jangan biarkan keputusan belanja impulsif atau keterlambatan tagihan menenggelamkan usaha yang sudah Anda rintis bertahun-tahun.
         </p>
 
         <div className="pt-2">
           <button
             onClick={onStart}
-            className="inline-flex items-center gap-2.5 rounded-full bg-brand-indigo hover:bg-brand-violet text-white px-8 py-3.5 text-sm font-bold transition-all shadow-stripe hover:shadow-stripe-hover hover:-translate-y-0.5 active:translate-y-0"
+            className="inline-flex items-center gap-2 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white px-7 py-3.5 text-sm font-medium transition-all shadow-sm active:scale-95"
           >
-            <span>Mulai Uji Coba Gratis Sekarang</span>
+            <span>Mulai Uji Coba Gratis</span>
             <ArrowRight className="h-4 w-4" />
           </button>
         </div>
 
-        <p className="text-xs text-slate-500 font-medium">
+        <p className="text-xs text-neutral-400 font-mono">
           Ditenagai oleh Hermes Agent Runtime di IDwebhost CloudBaik VPS.
         </p>
       </div>
