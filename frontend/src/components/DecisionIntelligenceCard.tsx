@@ -64,16 +64,16 @@ export const DecisionIntelligenceCard: React.FC<DecisionIntelligenceProps> = ({
       </div>
 
       {/* Structured Metrics Table (Clean, Borderless, Tabular) */}
-      <div className="border-y border-neutral-100 py-3.5 space-y-2 text-xs">
+      <div className="border-y border-neutral-100 py-3.5 space-y-2.5 text-xs">
         <div className="flex items-center justify-between">
           <span className="text-neutral-500">Batas Duit Dingin Aman</span>
-          <span className="font-semibold text-neutral-900 font-mono tabular-nums">
+          <span className="font-semibold text-neutral-900 tabular-nums">
             Rp {safeToSpend.toLocaleString('id-ID')}
           </span>
         </div>
         <div className="flex items-center justify-between">
           <span className="text-neutral-500">Proyeksi Saldo Terendah</span>
-          <span className={`font-semibold font-mono tabular-nums ${minCash < 0 ? 'text-rose-600' : 'text-neutral-900'}`}>
+          <span className={`font-semibold tabular-nums ${minCash < 0 ? 'text-rose-600' : 'text-neutral-900'}`}>
             {minCash < 0 ? `-Rp ${Math.abs(minCash).toLocaleString('id-ID')}` : `Rp ${minCash.toLocaleString('id-ID')}`}
           </span>
         </div>

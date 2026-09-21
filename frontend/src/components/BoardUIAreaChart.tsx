@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import {
   ResponsiveContainer,
-  AreaChart,
+  ComposedChart,
   Area,
+  Line,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -38,20 +39,20 @@ const CustomTooltip = ({ active, payload, label }: any) => {
           <span className="font-semibold text-neutral-900">{label}</span>
           {isDeficit && (
             <span className="text-[10px] font-mono font-medium text-rose-700 bg-rose-50 border border-rose-200 px-1.5 py-0.5 rounded">
-              Defisit
+              Defisit Kas
             </span>
           )}
         </div>
         <div className="space-y-1.5 font-mono text-[11px]">
           <div className="flex items-center justify-between gap-4">
-            <span className="text-neutral-500">Kas Berjalan</span>
+            <span className="text-neutral-500">Kas Normal</span>
             <span className="font-medium text-neutral-900 tabular-nums">
               Rp {baseVal?.toLocaleString('id-ID')}
             </span>
           </div>
           {scenVal !== undefined && (
             <div className="flex items-center justify-between gap-4">
-              <span className="text-neutral-500">Setelah Pengeluaran</span>
+              <span className="text-neutral-500">Setelah Belanja</span>
               <span className={`font-semibold tabular-nums ${isDeficit ? 'text-rose-600' : 'text-neutral-900'}`}>
                 Rp {scenVal?.toLocaleString('id-ID')}
               </span>
@@ -74,23 +75,31 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
 }) => {
   const [horizon, setHorizon] = useState<number>(30); // 14 or 30 days
 
-  const sliceCount = Math.min(horizon + 1, days.length);
+  // Clean data starting from Day 1 to avoid Day 0 vertical plunge glitch
   const chartData: ChartDataPoint[] = [];
+  const maxDay = Math.min(horizon, days.length - 1);
 
-  for (let i = 0; i < sliceCount; i++) {
+  for (let i = 1; i <= maxDay; i++) {
     chartData.push({
-      day: days[i],
-      label: `Hari ke-${days[i]}`,
-      baseline: baseline[i],
-      scenario: scenario ? scenario[i] : undefined,
+      day: i,
+      label: `Hari ke-${i}`,
+      baseline: baseline[i] !== undefined ? baseline[i] : baseline[baseline.length - 1],
+      scenario: scenario && scenario[i] !== undefined ? scenario[i] : undefined,
     });
   }
 
+  // Explicit, evenly spaced X-axis ticks
+  const xTicks = horizon === 14 ? [1, 3, 7, 10, 14] : [1, 5, 10, 15, 20, 25, 30];
+
+  // Explicit, uniform Y-axis ticks in multiples of 5 Juta
+  const yTicks = [-5000000, 0, 5000000, 10000000, 15000000, 20000000, 25000000];
+
   const formatYAxis = (val: number) => {
+    if (val === 0) return 'Rp 0';
     if (Math.abs(val) >= 1_000_000) {
-      return `${(val / 1_000_000).toFixed(0)} Jt`;
+      return `${val / 1_000_000} Jt`;
     }
-    return `${(val / 1_000).toFixed(0)}k`;
+    return `${val}`;
   };
 
   return (
@@ -99,10 +108,10 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-neutral-100">
         <div>
           <h3 className="text-base font-semibold text-neutral-950 tracking-tight">
-            Proyeksi Arus Kas
+            Proyeksi Arus Kas Operasional
           </h3>
-          <p className="text-xs text-neutral-500 mt-0.5">
-            Perbandingan saldo kas normal dengan skenario {scenarioName}
+          <p className="text-xs text-neutral-500 mt-0.5 font-normal">
+            Garis linear pergerakan kas harian terhadap jadwal pengeluaran wajib
           </p>
         </div>
 
@@ -112,7 +121,7 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
             <button
               key={h}
               onClick={() => setHorizon(h)}
-              className={`px-3 py-1 rounded-full transition-all ${
+              className={`px-3.5 py-1 rounded-full transition-all ${
                 horizon === h
                   ? 'bg-white text-neutral-950 shadow-sm font-semibold'
                   : 'text-neutral-500 hover:text-neutral-900'
@@ -127,14 +136,10 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
       {/* Main Recharts Area */}
       <div className="h-72 w-full pt-4">
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={chartData} margin={{ top: 12, right: 12, left: -10, bottom: 0 }}>
+          <ComposedChart data={chartData} margin={{ top: 12, right: 20, left: 10, bottom: 4 }}>
             <defs>
-              <linearGradient id="cleanBaselineGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#4B5563" stopOpacity={0.12} />
-                <stop offset="95%" stopColor="#4B5563" stopOpacity={0.0} />
-              </linearGradient>
               <linearGradient id="cleanScenarioGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor={insolvencyDay ? '#DC2626' : '#059669'} stopOpacity={0.15} />
+                <stop offset="5%" stopColor={insolvencyDay ? '#DC2626' : '#059669'} stopOpacity={0.12} />
                 <stop offset="95%" stopColor={insolvencyDay ? '#DC2626' : '#059669'} stopOpacity={0.0} />
               </linearGradient>
             </defs>
@@ -143,100 +148,92 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
 
             <XAxis
               dataKey="day"
+              ticks={xTicks}
               tickFormatter={(d) => `H+${d}`}
               tickLine={false}
-              axisLine={false}
+              axisLine={{ stroke: '#E5E7EB' }}
               stroke="#9CA3AF"
               fontSize={11}
               dy={6}
             />
 
             <YAxis
+              ticks={yTicks}
+              domain={[-5000000, 25000000]}
               tickFormatter={formatYAxis}
               tickLine={false}
-              axisLine={false}
+              axisLine={{ stroke: '#E5E7EB' }}
               stroke="#9CA3AF"
               fontSize={11}
-              domain={['auto', 'auto']}
             />
 
             <Tooltip content={<CustomTooltip />} />
 
-            {/* Zero Deficit Reference Line */}
+            {/* Critical Zero Deficit Reference Line */}
             <ReferenceLine
               y={0}
-              stroke="#9CA3AF"
-              strokeDasharray="3 3"
+              stroke="#DC2626"
+              strokeDasharray="4 4"
               strokeWidth={1}
-              label={{
-                value: 'Batas Defisit (Rp 0)',
-                position: 'insideBottomRight',
-                fill: '#9CA3AF',
-                fontSize: 10,
-                fontWeight: 500,
-              }}
             />
 
             {/* Safety Buffer Reference Line */}
             <ReferenceLine
               y={safetyBuffer}
-              stroke="#D1D5DB"
+              stroke="#9CA3AF"
               strokeDasharray="2 3"
               strokeWidth={1}
-              label={{
-                value: 'Buffer Cadangan',
-                position: 'insideTopRight',
-                fill: '#9CA3AF',
-                fontSize: 10,
-                fontWeight: 500,
-              }}
             />
 
-            {/* Baseline Area */}
-            <Area
-              type="monotone"
+            {/* Baseline Cash: Clean Linear Line with NO Fill to avoid muddy overlap */}
+            <Line
+              type="linear"
               dataKey="baseline"
               name="Kas Berjalan Normal"
               stroke="#4B5563"
-              strokeWidth={2}
-              fillOpacity={1}
-              fill="url(#cleanBaselineGrad)"
+              strokeWidth={1.8}
+              strokeDasharray="3 3"
+              dot={false}
+              isAnimationActive={false}
             />
 
-            {/* Scenario Area */}
+            {/* Scenario Cash: Clean Linear Area with subtle transparent gradient */}
             {scenario && (
               <Area
-                type="monotone"
+                type="linear"
                 dataKey="scenario"
                 name={scenarioName}
                 stroke={insolvencyDay ? '#DC2626' : '#059669'}
                 strokeWidth={2.2}
                 fillOpacity={1}
                 fill="url(#cleanScenarioGrad)"
+                dot={false}
+                isAnimationActive={false}
               />
             )}
-          </AreaChart>
+          </ComposedChart>
         </ResponsiveContainer>
       </div>
 
-      {/* Clean Quiet Legend */}
-      <div className="flex items-center justify-between pt-4 mt-2 border-t border-neutral-100 text-xs text-neutral-500">
-        <div className="flex items-center gap-4">
-          <span className="flex items-center gap-1.5">
-            <span className="h-2 w-2 rounded-full bg-neutral-600" />
-            <span className="text-neutral-700 font-medium">Kas Berjalan Normal</span>
+      {/* Clean Single-Line Legend */}
+      <div className="flex flex-wrap items-center justify-between pt-4 mt-2 border-t border-neutral-100 text-xs text-neutral-600 gap-2">
+        <div className="flex items-center gap-5">
+          <span className="flex items-center gap-2 whitespace-nowrap">
+            <span className="w-3 h-0.5 bg-neutral-500 border-dashed shrink-0" />
+            <span className="text-neutral-600 whitespace-nowrap">Kas Berjalan</span>
           </span>
           {scenario && (
-            <span className="flex items-center gap-1.5">
-              <span className={`h-2 w-2 rounded-full ${insolvencyDay ? 'bg-rose-600' : 'bg-emerald-600'}`} />
-              <span className="text-neutral-900 font-medium">
-                Setelah Pengeluaran
+            <span className="flex items-center gap-2 whitespace-nowrap">
+              <span className={`w-3 h-1 rounded-full shrink-0 ${insolvencyDay ? 'bg-rose-600' : 'bg-emerald-600'}`} />
+              <span className="text-neutral-900 font-medium whitespace-nowrap">
+                Setelah Belanja
               </span>
             </span>
           )}
         </div>
-        <span className="text-[11px] text-neutral-400 hidden sm:inline font-mono">
-          Garis putus-putus = Batas defisit Rp 0
+
+        <span className="text-neutral-400 text-xs font-mono whitespace-nowrap">
+          Jadwal: Gaji H+6 · Tempo H+11
         </span>
       </div>
     </div>
