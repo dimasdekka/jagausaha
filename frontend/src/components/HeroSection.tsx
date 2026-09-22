@@ -4,6 +4,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ExpandingArrowButton } from './motion/expanding-arrow-button';
 import { MotionButton } from './motion/button';
+import { HeroVisual3D } from './HeroVisual3D';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -41,6 +42,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
       ref={heroRef}
       className="relative w-full pt-16 pb-12 sm:pt-24 sm:pb-16 overflow-hidden will-change-transform"
     >
+      {/* 3D Glassmorphic Assets & Coordinate Grid */}
+      <HeroVisual3D />
+
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-7">
         {/* Animated Editorial Headline with Living Shimmer Effect */}
         <h1 className="font-serif font-extralight text-5xl sm:text-7xl lg:text-[80px] leading-[1.04] tracking-[-0.03em] text-neutral-950 max-w-3xl mx-auto text-balance select-none">

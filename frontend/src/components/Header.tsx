@@ -1,19 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import {
-  RotateCcw,
-  Sparkles,
   ChevronDown,
   Menu,
   X,
-  Layers,
-  HelpCircle,
   ArrowRight,
   Shield,
   Activity,
   MessageSquareCode,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { AnimatedBadge } from './motion/animated-badge';
 import { MotionButton } from './motion/button';
 import { SharedLayoutBg } from './motion/shared-layout-bg';
 import { SPRING_PANEL, EASE_OUT } from '../lib/ease';
@@ -25,8 +20,6 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({
-  onReset,
-  isLoading,
   onScrollToSection,
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,12 +41,12 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-    <header className="sticky top-3 z-50 w-full px-4 sm:px-6 transition-all duration-300">
+    <header className="sticky top-3.5 z-50 w-full px-4 sm:px-6 transition-all duration-300">
       <div
-        className={`max-w-5xl mx-auto rounded-full border transition-all duration-300 ${
+        className={`max-w-4xl mx-auto rounded-full border transition-all duration-300 ${
           isScrolled
-            ? 'border-neutral-300/80 bg-white/95 shadow-xl shadow-neutral-900/[0.06] backdrop-blur-xl py-2 px-4 sm:px-5'
-            : 'border-neutral-200/90 bg-white/90 shadow-md shadow-neutral-900/[0.03] backdrop-blur-lg py-2.5 px-4 sm:px-6'
+            ? 'border-neutral-300/80 bg-white/95 shadow-xl shadow-neutral-900/[0.06] backdrop-blur-xl h-13 px-4 sm:px-5'
+            : 'border-neutral-200/80 bg-white/80 shadow-md shadow-neutral-900/[0.03] backdrop-blur-lg h-14 px-4 sm:px-6'
         } flex items-center justify-between`}
       >
         {/* Brand Left */}
@@ -62,25 +55,22 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex items-center gap-2.5 group text-left cursor-pointer"
           >
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-950 text-white font-bold text-xs shadow-sm transition-transform group-hover:scale-105">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-950 text-white font-bold text-xs shadow-xs transition-transform group-hover:scale-105">
               JU
             </div>
-            <div className="flex flex-col">
-              <span className="text-sm font-bold tracking-tight text-neutral-950">
-                JagaUsaha
-              </span>
-            </div>
+            <span className="text-sm font-bold tracking-tight text-neutral-950">
+              JagaUsaha
+            </span>
           </button>
 
-          {/* Desktop Navigation Links with beUI SharedLayoutBg */}
-          <SharedLayoutBg as="nav" className="hidden md:flex items-center gap-1 text-xs font-medium text-neutral-600">
+          {/* Desktop Navigation Links with beUI SharedLayoutBg (Clean, No Random Icon Clutter) */}
+          <SharedLayoutBg as="nav" className="hidden md:flex items-center gap-0.5 text-xs font-medium text-neutral-600">
             {/* Simulator Link */}
             <button
               onClick={() => handleNavClick('demo-sandbox')}
-              className="px-3.5 py-1.5 rounded-full hover:text-neutral-950 transition-colors flex items-center gap-1.5 cursor-pointer"
+              className="px-3.5 py-1.5 rounded-full hover:text-neutral-950 transition-colors cursor-pointer"
             >
-              <Sparkles className="h-3.5 w-3.5 text-neutral-400" />
-              <span>Simulator Kas</span>
+              Simulator Kas
             </button>
 
             {/* Agen & Arsitektur Dropdown */}
@@ -93,7 +83,6 @@ export const Header: React.FC<HeaderProps> = ({
                 onClick={() => handleNavClick('feature-agents')}
                 className="px-3.5 py-1.5 rounded-full hover:text-neutral-950 transition-colors flex items-center gap-1 cursor-pointer"
               >
-                <Layers className="h-3.5 w-3.5 text-neutral-400" />
                 <span>Arsitektur Agen</span>
                 <ChevronDown className={`h-3 w-3 text-neutral-400 transition-transform duration-150 ${agentDropdownOpen ? 'rotate-180 text-neutral-950' : ''}`} />
               </button>
@@ -179,46 +168,27 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Tanya Jawab */}
             <button
               onClick={() => handleNavClick('faq')}
-              className="px-3.5 py-1.5 rounded-full hover:text-neutral-950 transition-colors flex items-center gap-1 cursor-pointer"
+              className="px-3.5 py-1.5 rounded-full hover:text-neutral-950 transition-colors cursor-pointer"
             >
-              <HelpCircle className="h-3.5 w-3.5 text-neutral-400" />
-              <span>FAQ</span>
+              FAQ
             </button>
           </SharedLayoutBg>
         </div>
 
-        {/* Right Actions Dock */}
-        <div className="flex items-center gap-2 sm:gap-3">
-          {/* Cloud VPS Status Pill with beUI AnimatedBadge */}
-          <div className="hidden lg:inline-flex">
-            <AnimatedBadge status="success" size="sm" pulse={true}>
-              CloudBaik VPS
-            </AnimatedBadge>
+        {/* Right Actions Dock (Linear / Apple Tier: Clean, No Nested Pill Clutter) */}
+        <div className="flex items-center gap-3">
+          {/* Subtle Server Ping */}
+          <div className="hidden lg:flex items-center gap-1.5 text-[11px] font-medium text-neutral-500 px-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+            <span>CloudBaik VPS</span>
           </div>
 
-          {/* Reset Demo Button with beUI MotionButton */}
-          <MotionButton
-            variant="outline"
-            size="sm"
-            onClick={onReset}
-            disabled={isLoading}
-            className="border-neutral-200"
-            title="Reset Data Skenario Demo"
-          >
-            <RotateCcw
-              className={`h-3.5 w-3.5 ${
-                isLoading ? 'animate-spin text-neutral-900' : 'text-neutral-500'
-              }`}
-            />
-            <span className="hidden sm:inline">Reset</span>
-          </MotionButton>
-
-          {/* Primary CTA with beUI MotionButton */}
+          {/* Primary Action Button */}
           <MotionButton
             variant="primary"
             size="sm"
             onClick={() => handleNavClick('demo-sandbox')}
-            className="px-4"
+            className="px-4.5 h-8.5 text-xs font-semibold rounded-full shadow-xs"
           >
             <span>Uji Coba</span>
             <ArrowRight className="h-3.5 w-3.5" />
@@ -242,7 +212,7 @@ export const Header: React.FC<HeaderProps> = ({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.18, ease: EASE_OUT }}
-            className="md:hidden max-w-5xl mx-auto mt-2"
+            className="md:hidden max-w-4xl mx-auto mt-2"
           >
             <div className="rounded-3xl border border-neutral-200 bg-white/98 p-5 shadow-2xl backdrop-blur-2xl space-y-4">
               <div className="space-y-1 text-sm font-medium text-neutral-800">
@@ -250,10 +220,7 @@ export const Header: React.FC<HeaderProps> = ({
                   onClick={() => handleNavClick('demo-sandbox')}
                   className="w-full text-left py-2.5 px-3 rounded-xl hover:bg-neutral-100 flex items-center justify-between cursor-pointer"
                 >
-                  <span className="flex items-center gap-2">
-                    <Sparkles className="h-4 w-4 text-emerald-600" />
-                    Simulator Kas
-                  </span>
+                  <span>Simulator Kas</span>
                   <ArrowRight className="h-3.5 w-3.5 text-neutral-400" />
                 </button>
 
@@ -261,10 +228,7 @@ export const Header: React.FC<HeaderProps> = ({
                   onClick={() => handleNavClick('feature-agents')}
                   className="w-full text-left py-2.5 px-3 rounded-xl hover:bg-neutral-100 flex items-center justify-between cursor-pointer"
                 >
-                  <span className="flex items-center gap-2">
-                    <Layers className="h-4 w-4 text-amber-600" />
-                    Arsitektur Multi-Agent
-                  </span>
+                  <span>Arsitektur Multi-Agent</span>
                   <ArrowRight className="h-3.5 w-3.5 text-neutral-400" />
                 </button>
 
@@ -290,13 +254,6 @@ export const Header: React.FC<HeaderProps> = ({
                   <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
                   IDwebhost CloudBaik VPS
                 </span>
-                <button
-                  onClick={onReset}
-                  className="inline-flex items-center gap-1 text-neutral-700 hover:text-neutral-950 font-medium cursor-pointer"
-                >
-                  <RotateCcw className="h-3 w-3" />
-                  Reset Demo
-                </button>
               </div>
             </div>
           </motion.div>

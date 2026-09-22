@@ -132,15 +132,15 @@
     "semantic_hash": ""
   },
   "frontend/src/components/Header.tsx": {
-    "mtime": 1790053728.2655773,
-    "seen": 1790054338.1713145,
-    "ast_hash": "5500b9f9a31942cf388bd04c605f8c22",
+    "mtime": 1790056429.7361872,
+    "seen": 1790057071.2964892,
+    "ast_hash": "bf9cbf957387c77d29b2eb7e3472a021",
     "semantic_hash": ""
   },
   "frontend/src/components/HeroSection.tsx": {
-    "mtime": 1790055177.741561,
-    "seen": 1790056280.4918666,
-    "ast_hash": "0acbfe813d911fd901762de4b584670c",
+    "mtime": 1790056474.3324683,
+    "seen": 1790057071.2964892,
+    "ast_hash": "a44776d803448937317ddf4f09f4c49d",
     "semantic_hash": ""
   },
   "frontend/src/components/HowItWorks.tsx": {
@@ -735,6 +735,96 @@
     "mtime": 1790056108.3011262,
     "seen": 1790056280.4918666,
     "ast_hash": "5db54d0419593127092a78916e2d95af",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/HeroVisual3D.tsx": {
+    "mtime": 1790056944.3538916,
+    "seen": 1790057071.2964892,
+    "ast_hash": "77b9d0b4cd95a241f472f8ab9f5f6d6f",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/chart-gradient.webp": {
+    "mtime": 1790056663.8767478,
+    "seen": 1790057071.2964892,
+    "ast_hash": "f5f61d374ce729f33a645ea287683652",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/chart-premium.png": {
+    "mtime": 1790056912.2573369,
+    "seen": 1790057071.2964892,
+    "ast_hash": "04847e1ddca40274dfa8abadfe871028",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/chart-premium.webp": {
+    "mtime": 1790056663.0791667,
+    "seen": 1790057071.2964892,
+    "ast_hash": "12149b80aea3d8cdd372c12cc856eb50",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/dollar-gradient.webp": {
+    "mtime": 1790056662.4655197,
+    "seen": 1790057071.2964892,
+    "ast_hash": "a393077e10e45d68f36b1b8b64448b79",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/dollar-premium.png": {
+    "mtime": 1790056912.296762,
+    "seen": 1790057071.2964892,
+    "ast_hash": "a6e7ccf67b6f7b25722d585932cfa33b",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/dollar-premium.webp": {
+    "mtime": 1790056661.7627232,
+    "seen": 1790057071.2964892,
+    "ast_hash": "5235a82136be627102108236114186eb",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/flash-premium.png": {
+    "mtime": 1790056912.3247623,
+    "seen": 1790057071.2964892,
+    "ast_hash": "3717b5bd8a1f0bfad96d821b8adf444e",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/flash-premium.webp": {
+    "mtime": 1790056664.564216,
+    "seen": 1790057071.2964892,
+    "ast_hash": "4f39d62df328f53dbb6563999f39dafe",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/shield-gradient.webp": {
+    "mtime": 1790056661.2563198,
+    "seen": 1790057071.2964892,
+    "ast_hash": "b347467c077317effb37f27f2d1900aa",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/shield-premium.png": {
+    "mtime": 1790056912.223816,
+    "seen": 1790057071.2964892,
+    "ast_hash": "0cfee9a2a2a4d5c17edaa53dfbc40c32",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/shield-premium.webp": {
+    "mtime": 1790056660.97301,
+    "seen": 1790057071.2964892,
+    "ast_hash": "2b9b3c6bdd2ad8d83c4b5d79d6f1d9f3",
+    "semantic_hash": ""
+  },
+  "screenshot_highres_3d_hero_verified.png": {
+    "mtime": 1790056860.1461127,
+    "seen": 1790057071.2964892,
+    "ast_hash": "339f85a0ca9fe6e53d1fc3a7fde4fcad",
+    "semantic_hash": ""
+  },
+  "screenshot_redesigned_navbar_and_3d_hero.png": {
+    "mtime": 1790056531.083714,
+    "seen": 1790057071.2964892,
+    "ast_hash": "f87907f618a33d1bc45732f2793a6a99",
+    "semantic_hash": ""
+  },
+  "screenshot_seamless_3d_hero_verified.png": {
+    "mtime": 1790057032.8727133,
+    "seen": 1790057071.2964892,
+    "ast_hash": "21967ed1346969a8e47120b0835334ec",
     "semantic_hash": ""
   }
 }
