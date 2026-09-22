@@ -11,7 +11,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-7">
         {/* Headline */}
         <h1 className="font-serif font-extralight text-5xl sm:text-7xl lg:text-[80px] leading-[1.04] tracking-[-0.03em] text-neutral-950 max-w-3xl mx-auto text-balance">
-          Ketahui <span className="italic font-normal">napas kas bisnis</span> sebelum uang keluar
+          Ketahui <span className="italic font-normal">keamanan arus kas</span> sebelum uang keluar
         </h1>
 
         {/* Subtitle */}

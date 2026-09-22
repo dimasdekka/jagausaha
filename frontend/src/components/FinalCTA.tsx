@@ -10,7 +10,7 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onStart }) => {
     <section className="py-24 sm:py-36 bg-neutral-50/60 border-t border-neutral-100">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-7">
         <h2 className="font-serif font-extralight text-4xl sm:text-6xl lg:text-7xl tracking-[-0.03em] text-neutral-950 max-w-2xl mx-auto leading-[1.08] text-balance">
-          Jaga napas kas bisnis Anda mulai hari ini
+          Lindungi ketahanan arus kas usaha Anda mulai hari ini
         </h2>
 
         <p className="text-base sm:text-lg text-neutral-600 max-w-xl mx-auto leading-relaxed font-normal text-balance">
