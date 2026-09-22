@@ -738,9 +738,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/HeroVisual3D.tsx": {
-    "mtime": 1790056944.3538916,
-    "seen": 1790057071.2964892,
-    "ast_hash": "77b9d0b4cd95a241f472f8ab9f5f6d6f",
+    "mtime": 1790057272.1770625,
+    "seen": 1790057337.1989448,
+    "ast_hash": "09c65e9f461ce45ece1b6e0a8d42041e",
     "semantic_hash": ""
   },
   "frontend/public/3d/chart-gradient.webp": {
@@ -825,6 +825,120 @@
     "mtime": 1790057032.8727133,
     "seen": 1790057071.2964892,
     "ast_hash": "21967ed1346969a8e47120b0835334ec",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/key-premium.png": {
+    "mtime": 1790057217.6510644,
+    "seen": 1790057337.1989448,
+    "ast_hash": "6008df5a96e3b6aa23067f7955344079",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/key-premium.webp": {
+    "mtime": 1790057217.619065,
+    "seen": 1790057337.1989448,
+    "ast_hash": "62d3957fe52212f1fdadd976e2e8d50f",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/lock-gradient.png": {
+    "mtime": 1790057214.192011,
+    "seen": 1790057337.1989448,
+    "ast_hash": "eb15c107cad0e1309fac43e4b885927d",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/lock-gradient.webp": {
+    "mtime": 1790057214.1553812,
+    "seen": 1790057337.1989448,
+    "ast_hash": "af914db84573e6c536b3521865e1982d",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/lock-premium.png": {
+    "mtime": 1790057213.6406145,
+    "seen": 1790057337.1989448,
+    "ast_hash": "609cc642a18661f285e68e30345703be",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/lock-premium.webp": {
+    "mtime": 1790057213.5806167,
+    "seen": 1790057337.1989448,
+    "ast_hash": "51f0819489d8f00a0fbf7bcf2f7ed454",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/money-bag-premium.png": {
+    "mtime": 1790057216.3348303,
+    "seen": 1790057337.1989448,
+    "ast_hash": "f5a2fdd993cfacc2527322de2c8fc8b9",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/money-bag-premium.webp": {
+    "mtime": 1790057216.2928221,
+    "seen": 1790057337.1989448,
+    "ast_hash": "15e2efb488113102648ee65f10143f4d",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/money-premium.png": {
+    "mtime": 1790057215.8434072,
+    "seen": 1790057337.1989448,
+    "ast_hash": "717aef201fbd31c90e5353aee9cdcc55",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/money-premium.webp": {
+    "mtime": 1790057215.8014085,
+    "seen": 1790057337.1989448,
+    "ast_hash": "ce7e2b7b591c0b4a2b369cead0d089ca",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/target-premium.png": {
+    "mtime": 1790057216.909781,
+    "seen": 1790057337.1989448,
+    "ast_hash": "0cb214bf403a36c6324ef218ca372c0b",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/target-premium.webp": {
+    "mtime": 1790057216.8737407,
+    "seen": 1790057337.1989448,
+    "ast_hash": "52acdac15db3783ad69e6b90657fd736",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/tick-premium.png": {
+    "mtime": 1790057216.6397047,
+    "seen": 1790057337.1989448,
+    "ast_hash": "058d046457989969da8bb5a3067c61df",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/tick-premium.webp": {
+    "mtime": 1790057216.60871,
+    "seen": 1790057337.1989448,
+    "ast_hash": "28f469e5180a7d082dd6208e56956aa8",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/wallet-color.png": {
+    "mtime": 1790057215.1880703,
+    "seen": 1790057337.1989448,
+    "ast_hash": "b99fc486d01780f4cc2237f1822b5b66",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/wallet-color.webp": {
+    "mtime": 1790057215.1390307,
+    "seen": 1790057337.1989448,
+    "ast_hash": "e2d0bac12b82a1f59387aacc7fc9499c",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/wallet-premium.png": {
+    "mtime": 1790057214.7115014,
+    "seen": 1790057337.1989448,
+    "ast_hash": "0a18cb44252e4aa270c7ccf6d60d3554",
+    "semantic_hash": ""
+  },
+  "frontend/public/3d/wallet-premium.webp": {
+    "mtime": 1790057214.671465,
+    "seen": 1790057337.1989448,
+    "ast_hash": "7d84687914db651d264612e74bf6830e",
+    "semantic_hash": ""
+  },
+  "screenshot_multi_cluster_3d_hero_verified.png": {
+    "mtime": 1790057302.1175425,
+    "seen": 1790057337.1999438,
+    "ast_hash": "1b799b1c109e051c787a7d973ec50c5f",
     "semantic_hash": ""
   }
 }
