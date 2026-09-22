@@ -14,22 +14,47 @@ import { Tabs, TabsList, TabsTrigger } from './motion/tabs';
 
 interface ChartDataPoint {
   day: number;
-  label: string;
   baseline: number;
   scenario?: number;
+  rawDay: number;
 }
 
 interface BoardUIAreaChartProps {
   days: number[];
   baseline: number[];
   scenario?: number[];
-  insolvencyDay?: number | null;
-  scenarioName?: string;
+  insolvencyDay: number | null;
+  scenarioName: string;
   safetyBuffer?: number;
 }
 
-const CustomTooltip = ({ active, payload, label }: any) => {
-  if (active && payload && payload.length) {
+export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
+  days,
+  baseline,
+  scenario,
+  insolvencyDay,
+  scenarioName,
+  safetyBuffer = 3800000,
+}) => {
+  const [horizon, setHorizon] = useState<number>(30);
+
+  // Filter cleanly by selected horizon (14 or 30 days), skipping Day 0 cliff
+  const chartData: ChartDataPoint[] = [];
+  const maxDay = Math.min(horizon, days.length - 1);
+
+  for (let i = 1; i <= maxDay; i++) {
+    chartData.push({
+      day: days[i],
+      rawDay: i,
+      baseline: baseline[i] !== undefined ? baseline[i] : baseline[baseline.length - 1],
+      scenario: scenario && scenario[i] !== undefined ? scenario[i] : undefined,
+    });
+  }
+
+  // Custom high-precision tooltip
+  const CustomTooltip = ({ active, payload, label }: any) => {
+    if (!active || !payload || !payload.length) return null;
+
     const baseVal = payload.find((p: any) => p.dataKey === 'baseline')?.value;
     const scenVal = payload.find((p: any) => p.dataKey === 'scenario')?.value;
     const isDeficit = scenVal !== undefined && scenVal < 0;
@@ -37,7 +62,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
     return (
       <div className="rounded-xl border border-neutral-200 bg-white/95 p-3.5 shadow-lg backdrop-blur-sm text-xs font-sans">
         <div className="flex items-center justify-between gap-4 pb-2 mb-2 border-b border-neutral-100">
-          <span className="font-semibold text-neutral-900">{label}</span>
+          <span className="font-semibold text-neutral-900">Hari ke-{label} (H+{label})</span>
           {isDeficit && (
             <span className="text-[10px] font-medium text-rose-700 bg-rose-50 border border-rose-200 px-1.5 py-0.5 rounded">
               Defisit Kas
@@ -55,39 +80,19 @@ const CustomTooltip = ({ active, payload, label }: any) => {
             <div className="flex items-center justify-between gap-4">
               <span className="text-neutral-500">Setelah Belanja</span>
               <span className={`font-semibold tabular-nums ${isDeficit ? 'text-rose-600' : 'text-neutral-900'}`}>
-                Rp {scenVal?.toLocaleString('id-ID')}
+                {scenVal < 0 ? `−Rp ${Math.abs(scenVal).toLocaleString('id-ID')}` : `Rp ${scenVal?.toLocaleString('id-ID')}`}
               </span>
             </div>
           )}
         </div>
+        <div className="pt-2 mt-2 border-t border-neutral-100 text-[10px] text-neutral-400">
+          {label === 6 && '📅 Jatuh tempo gaji 3 barista (Rp 7,5 Jt)'}
+          {label === 11 && '📅 Jatuh tempo supplier kopi (Rp 4,2 Jt)'}
+          {label !== 6 && label !== 11 && 'Operasional harian berjalan normal'}
+        </div>
       </div>
     );
-  }
-  return null;
-};
-
-export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
-  days,
-  baseline,
-  scenario,
-  insolvencyDay,
-  scenarioName = 'Simulasi',
-  safetyBuffer = 3000000,
-}) => {
-  const [horizon, setHorizon] = useState<number>(30); // 14 or 30 days
-
-  // Smooth daily points starting from Day 1
-  const chartData: ChartDataPoint[] = [];
-  const maxDay = Math.min(horizon, days.length - 1);
-
-  for (let i = 1; i <= maxDay; i++) {
-    chartData.push({
-      day: i,
-      label: `Hari ke-${i}`,
-      baseline: baseline[i] !== undefined ? baseline[i] : baseline[baseline.length - 1],
-      scenario: scenario && scenario[i] !== undefined ? scenario[i] : undefined,
-    });
-  }
+  };
 
   // Explicit, evenly spaced X-axis ticks
   const xTicks = horizon === 14 ? [1, 3, 7, 10, 14] : [1, 5, 10, 15, 20, 25, 30];
@@ -97,18 +102,16 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
 
   const formatYAxis = (val: number) => {
     if (val === 0) return 'Rp 0';
-    if (Math.abs(val) >= 1_000_000) {
-      return `${val / 1_000_000} Jt`;
-    }
-    return `${val}`;
+    if (val < 0) return `−Rp ${Math.abs(val) / 1_000_000} Jt`;
+    return `Rp ${val / 1_000_000} Jt`;
   };
 
   return (
-    <div className="w-full rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm flex flex-col justify-between h-full">
+    <div className="w-full rounded-2xl border border-neutral-200/90 bg-white p-5 sm:p-6 shadow-sm flex flex-col justify-between h-full">
       {/* Chart Header & Horizon Controls */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-neutral-100">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-3.5 border-b border-neutral-100">
         <div>
-          <h3 className="text-base font-semibold text-neutral-950 tracking-tight">
+          <h3 className="text-sm font-semibold text-neutral-950 tracking-tight">
             Proyeksi Arus Kas Operasional
           </h3>
           <p className="text-xs text-neutral-500 mt-0.5 font-normal">
@@ -117,22 +120,24 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
         </div>
 
         {/* beUI Motion Horizon Tabs with Spring Gliding Indicator */}
-        <Tabs
-          value={String(horizon)}
-          onValueChange={(val) => setHorizon(Number(val))}
-          variant="pill"
-        >
-          <TabsList>
-            <TabsTrigger value="14">14 Hari</TabsTrigger>
-            <TabsTrigger value="30">30 Hari</TabsTrigger>
-          </TabsList>
-        </Tabs>
+        <div className="shrink-0">
+          <Tabs
+            value={String(horizon)}
+            onValueChange={(val) => setHorizon(Number(val))}
+            variant="pill"
+          >
+            <TabsList className="bg-neutral-100 border border-neutral-200/80 p-0.5">
+              <TabsTrigger value="14" className="px-3 py-1 text-xs">14 Hari</TabsTrigger>
+              <TabsTrigger value="30" className="px-3 py-1 text-xs">30 Hari</TabsTrigger>
+            </TabsList>
+          </Tabs>
+        </div>
       </div>
 
       {/* Main Recharts Area with Silky Smooth Continuous Curves */}
-      <div className="h-72 w-full pt-4">
+      <div className="h-72 w-full pt-3">
         <ResponsiveContainer width="100%" height="100%">
-          <ComposedChart data={chartData} margin={{ top: 12, right: 20, left: 10, bottom: 4 }}>
+          <ComposedChart data={chartData} margin={{ top: 10, right: 15, left: 15, bottom: 4 }}>
             <defs>
               <linearGradient id="smoothScenarioGrad" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor={insolvencyDay ? '#E11D48' : '#10B981'} stopOpacity={0.15} />
@@ -162,6 +167,7 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
               axisLine={{ stroke: '#E5E7EB' }}
               stroke="#9CA3AF"
               fontSize={11}
+              width={65}
             />
 
             <Tooltip content={<CustomTooltip />} />
@@ -183,7 +189,7 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
               strokeOpacity={0.5}
             />
 
-            {/* Baseline Cash: Silky smooth natural curve */}
+            {/* Baseline Cash: Smooth solid curve */}
             <Line
               type="natural"
               dataKey="baseline"
@@ -194,7 +200,7 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
               isAnimationActive={false}
             />
 
-            {/* Scenario Cash: Silky smooth natural curve with soft gradient fill */}
+            {/* Scenario Cash: Smooth flowing curve with soft gradient fill */}
             {scenario && (
               <Area
                 type="natural"
@@ -213,23 +219,25 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
       </div>
 
       {/* Clean Single-Line Legend */}
-      <div className="flex flex-wrap items-center justify-between pt-4 mt-2 border-t border-neutral-100 text-xs text-neutral-600 gap-2">
-        <div className="flex items-center gap-6">
-          <span className="flex items-center gap-2 whitespace-nowrap">
-            <span className="w-3.5 h-1 bg-slate-400 rounded-full shrink-0" />
-            <span className="text-neutral-600 whitespace-nowrap">Kas Berjalan</span>
+      <div className="flex flex-wrap items-center justify-between pt-3.5 mt-2 border-t border-neutral-100 text-[11px] text-neutral-600 gap-2">
+        <div className="flex flex-wrap items-center gap-4 sm:gap-5">
+          <span className="flex items-center gap-1.5 whitespace-nowrap">
+            <span className="w-3 h-0.5 bg-slate-500 rounded-full shrink-0" />
+            <span>Kas Berjalan</span>
           </span>
           {scenario && (
-            <span className="flex items-center gap-2 whitespace-nowrap">
-              <span className={`w-3.5 h-1 rounded-full shrink-0 ${insolvencyDay ? 'bg-rose-600' : 'bg-emerald-600'}`} />
-              <span className="text-neutral-900 font-medium whitespace-nowrap">
-                Setelah Belanja
-              </span>
+            <span className="flex items-center gap-1.5 whitespace-nowrap">
+              <span className={`w-3 h-0.5 rounded-full shrink-0 ${insolvencyDay ? 'bg-rose-600' : 'bg-emerald-600'}`} />
+              <span className="font-medium text-neutral-900">Setelah Belanja</span>
             </span>
           )}
+          <span className="flex items-center gap-1.5 whitespace-nowrap text-neutral-400">
+            <span className="w-3 h-0.5 border-b border-dashed border-emerald-500 shrink-0" />
+            <span>Buffer Aman (Rp 3,8 Jt)</span>
+          </span>
         </div>
 
-        <span className="text-neutral-400 text-xs whitespace-nowrap">
+        <span className="text-neutral-400 text-[11px] whitespace-nowrap">
           Jadwal: Gaji H+6 · Tempo H+11
         </span>
       </div>

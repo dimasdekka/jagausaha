@@ -110,7 +110,7 @@ export function TabsTrigger({
       aria-selected={active}
       onClick={() => onValueChange(value)}
       className={cn(
-        "relative z-10 inline-flex items-center justify-center px-3.5 py-1 text-xs font-medium transition-colors outline-none",
+        "relative z-10 inline-flex items-center justify-center px-3.5 py-1 text-xs font-medium whitespace-nowrap shrink-0 transition-colors outline-none cursor-pointer select-none",
         active ? "text-neutral-950 font-semibold" : "text-neutral-500 hover:text-neutral-800",
         variant === "pill" ? "rounded-full" : "rounded-md",
         className,

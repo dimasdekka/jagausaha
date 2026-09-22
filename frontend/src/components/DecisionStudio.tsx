@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { PulseCards } from './PulseCards';
 import { BoardUIAreaChart } from './BoardUIAreaChart';
 import { DecisionIntelligenceCard } from './DecisionIntelligenceCard';
-import { Mic, Sparkles, Send } from 'lucide-react';
+import { SimulationChatModal } from './SimulationChatModal';
+import { MatrixOrb, type MatrixOrbState } from './ui/matrix-orb';
+import { Mic, Sparkles, Send, Volume2 } from 'lucide-react';
 import { Input } from './motion/input';
+import { MotionButton } from './motion/button';
 
 interface PresetScenario {
   id: string;
@@ -46,7 +49,6 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
   scenarioName,
   activePreset,
   presets,
-  voiceTranscript,
   onSelectPreset,
   onTriggerVoiceSim,
   onOpenNegotiate,
@@ -54,11 +56,53 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
 }) => {
   const isSafe = insolvencyDay === null;
   const minCash = scenarioCash ? Math.min(...scenarioCash) : Math.min(...baselineCash);
-  const [promptText, setPromptText] = useState(voiceTranscript);
+  const [promptText, setPromptText] = useState('');
+  const [orbState, setOrbState] = useState<MatrixOrbState>('idle');
+  const [isChatModalOpen, setIsChatModalOpen] = useState(false);
+  const [activeQuery, setActiveQuery] = useState('Beli mesin espresso 14 juta tunai aman nggak?');
 
-  useEffect(() => {
-    setPromptText(voiceTranscript);
-  }, [voiceTranscript]);
+  const suggestionChips = [
+    { label: 'Beli Mesin Kopi Tunai (14 Jt)', presetId: 'espresso_cash', amount: 14000000 },
+    { label: 'Rekrut Barista Baru', presetId: 'hire_barista', amount: 0 },
+    { label: 'Promo Biji Kopi (6 Jt)', presetId: 'bulk_coffee_discount', amount: 6000000 },
+    { label: 'Mesin DP 50% + Tempo (7 Jt)', presetId: 'espresso_restructured', amount: 7000000 },
+  ];
+
+  const handleRunSimulation = (queryToRun?: string) => {
+    const text = queryToRun || promptText || 'Beli mesin espresso 14 juta tunai aman nggak?';
+    setActiveQuery(text);
+    setOrbState('thinking');
+
+    // Parse amount from text if custom
+    const match = text.match(/(\d+([\.,]\d+)?)\s*(juta|jt)/i);
+    if (match) {
+      const num = parseFloat(match[1].replace(',', '.')) * 1_000_000;
+      onSelectPreset('custom', num);
+    } else {
+      const found = presets.find(p => text.toLowerCase().includes(p.label.toLowerCase()));
+      if (found) {
+        onSelectPreset(found.id, found.outflow);
+      }
+    }
+
+    setTimeout(() => {
+      setOrbState('idle');
+      setIsChatModalOpen(true);
+    }, 350);
+  };
+
+  const handleVoiceTest = () => {
+    setOrbState('listening');
+    setActiveQuery('Pesan Suara WhatsApp: "Beli mesin espresso 14 juta tunai aman nggak buat gajian barista minggu depan?"');
+    onTriggerVoiceSim();
+    setTimeout(() => {
+      setOrbState('thinking');
+      setTimeout(() => {
+        setOrbState('idle');
+        setIsChatModalOpen(true);
+      }, 400);
+    }, 600);
+  };
 
   return (
     <div className="rounded-3xl border border-neutral-200/90 bg-white shadow-handhold overflow-hidden">
@@ -81,12 +125,12 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
       </div>
 
       {/* 2. Studio Body */}
-      <div className="p-6 sm:p-8 space-y-6">
+      <div className="p-5 sm:p-7 space-y-5">
         {/* Scenario Selector Tabs */}
-        <div className="space-y-2.5">
+        <div className="space-y-2">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-medium text-neutral-700 flex items-center gap-1.5">
-              <Sparkles className="h-3 w-3 text-neutral-400" />
+            <span className="text-xs font-semibold text-neutral-500 uppercase tracking-wider flex items-center gap-1.5">
+              <Sparkles className="h-3.5 w-3.5 text-neutral-400" />
               Pilih Skenario Belanja Modal:
             </span>
             <span className="text-xs text-neutral-500 hidden sm:inline">
@@ -101,10 +145,10 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
                 <button
                   key={preset.id}
                   onClick={() => onSelectPreset(preset.id, preset.outflow)}
-                  className={`p-3.5 rounded-2xl border text-left transition-all duration-150 active:scale-[0.98] ${
+                  className={`p-3.5 rounded-xl border text-left transition-all duration-150 active:scale-[0.98] cursor-pointer ${
                     isSelected
-                      ? 'border-neutral-950 bg-neutral-950 text-white shadow-sm'
-                      : 'border-neutral-200 bg-neutral-50/50 hover:bg-neutral-100/80 hover:border-neutral-300 text-neutral-800'
+                      ? 'border-neutral-950 bg-neutral-950 text-white shadow-xs'
+                      : 'border-neutral-200 bg-neutral-50/60 hover:bg-neutral-100 hover:border-neutral-300 text-neutral-800'
                   }`}
                 >
                   <div className="text-xs font-semibold tracking-tight truncate">
@@ -119,7 +163,7 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
           </div>
         </div>
 
-        {/* 3. Three Clean Financial Metric Cards */}
+        {/* 3. Three Clean Financial Metric Cards with beUI TiltCard & AnimatedNumber */}
         <PulseCards
           safeToSpend={safeToSpend}
           currentCash={currentCash}
@@ -129,7 +173,7 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
         />
 
         {/* 4. Main Two-Column View (Chart + Decision Intelligence) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
           {/* Left: Recharts Area Chart */}
           <div className="lg:col-span-7 flex flex-col">
             <BoardUIAreaChart
@@ -138,7 +182,6 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
               scenario={scenarioCash}
               insolvencyDay={insolvencyDay}
               scenarioName={scenarioName}
-              safetyBuffer={safetyBuffer}
             />
           </div>
 
@@ -156,47 +199,115 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
           </div>
         </div>
 
-        {/* 5. Interactive Simulation Prompt & Voice Bar with beUI Input */}
-        <div className="rounded-2xl border border-neutral-200/80 bg-neutral-50/60 p-4 sm:p-5 space-y-3">
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-medium text-neutral-700">
-              Konsultasi Pengeluaran (Teks / Pesan Suara):
-            </span>
-            <span className="text-xs text-neutral-500 hidden sm:inline">
-              Ketik keputusan atau uji pesan suara WhatsApp
-            </span>
+        {/* 5. Executive AI Consultation Bar */}
+        <div className="rounded-2xl border border-neutral-200/90 bg-neutral-50/70 p-4 sm:p-5 space-y-3">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-neutral-200/60 pb-2.5">
+            <div className="flex items-center gap-2.5">
+              <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-neutral-900 text-white">
+                <Sparkles className="h-3 w-3" />
+              </div>
+              <div>
+                <span className="text-xs font-semibold text-neutral-950">
+                  Konsultasi Keputusan Finansial AI
+                </span>
+                <span className="text-[11px] text-neutral-500 font-normal pl-2">
+                  Ketik pertanyaan atau klik uji suara untuk simulasi interaktif
+                </span>
+              </div>
+            </div>
+
+            <button
+              onClick={handleVoiceTest}
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-white border border-neutral-200/80 hover:bg-neutral-100 text-[11px] font-medium text-neutral-800 transition-all shadow-xs cursor-pointer active:scale-95"
+            >
+              <Volume2 className="h-3.5 w-3.5 text-emerald-600" />
+              <span>Uji Voice Note WhatsApp</span>
+            </button>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5">
+          {/* Input Row with Reactive Mini Orb & beUI Input */}
+          <div className="flex flex-col sm:flex-row items-center gap-2.5">
+            {/* Live Interactive Orb Avatar */}
+            <div
+              onClick={handleVoiceTest}
+              className="hidden sm:flex items-center justify-center p-1 rounded-xl bg-white border border-neutral-200/80 shadow-xs cursor-pointer hover:border-neutral-300 transition-all shrink-0"
+              title="Klik untuk uji suara AI"
+            >
+              <MatrixOrb
+                state={orbState}
+                size={38}
+                dots={14}
+                color={orbState === 'listening' ? '#10B981' : '#0A0A0A'}
+                className="[&_span]:hidden"
+              />
+            </div>
+
+            {/* Input Bar */}
             <div className="flex-1 w-full">
               <Input
                 type="text"
                 value={promptText}
                 onChange={(val) => setPromptText(val)}
-                placeholder='Contoh: "Beli mesin espresso 14 juta tunai"'
+                placeholder='Tanyakan rencana belanja... (cth: "Beli mesin espresso 14 juta tunai aman?")'
                 leftIcon={<Mic className="h-4 w-4 text-neutral-400" />}
-                success={promptText.length > 5}
+                spellCheck={false}
+                autoComplete="off"
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    e.preventDefault();
+                    handleRunSimulation();
+                  }
+                }}
               />
             </div>
 
-            <button
-              onClick={() => {
-                const match = promptText.match(/(\d+([\.,]\d+)?)\s*(juta|jt)/i);
-                if (match) {
-                  const num = parseFloat(match[1].replace(',', '.')) * 1_000_000;
-                  onSelectPreset('custom', num);
-                } else {
-                  onTriggerVoiceSim();
-                }
-              }}
-              className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-1.5 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white px-5 h-11 text-xs font-medium transition-all shadow-sm active:scale-95 mb-4 sm:mb-0"
+            {/* Simulate Action Button */}
+            <MotionButton
+              type="button"
+              variant="primary"
+              size="md"
+              onClick={() => handleRunSimulation()}
+              className="w-full sm:w-auto shrink-0 h-10 px-5 rounded-xl gap-2 text-xs font-semibold"
             >
               <Send className="h-3.5 w-3.5" />
               <span>Simulasikan</span>
-            </button>
+            </MotionButton>
+          </div>
+
+          {/* Quick Suggestion Chips */}
+          <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
+            <span className="text-[11px] font-medium text-neutral-400">Contoh Cepat:</span>
+            {suggestionChips.map((chip, idx) => (
+              <button
+                key={idx}
+                onClick={() => {
+                  setPromptText(chip.label);
+                  onSelectPreset(chip.presetId, chip.amount);
+                  handleRunSimulation(chip.label);
+                }}
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white hover:bg-neutral-100 border border-neutral-200/80 text-[11px] font-medium text-neutral-700 transition-colors shadow-2xs cursor-pointer active:scale-95"
+              >
+                <span>{chip.label}</span>
+              </button>
+            ))}
           </div>
         </div>
       </div>
+
+      {/* Smooth beUI Simulation Chat Modal */}
+      <SimulationChatModal
+        isOpen={isChatModalOpen}
+        onClose={() => setIsChatModalOpen(false)}
+        query={activeQuery}
+        isSafe={isSafe}
+        insolvencyDay={insolvencyDay}
+        minCash={minCash}
+        safeToSpend={safeToSpend}
+        scenarioName={scenarioName}
+        onApplySafeSolution={onApplySafeSolution}
+        onOpenNegotiate={onOpenNegotiate}
+        onNewSimulation={(text) => handleRunSimulation(text)}
+      />
     </div>
   );
 };
