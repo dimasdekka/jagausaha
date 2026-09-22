@@ -4,12 +4,12 @@
 - cluster-only mode — file stats not available
 
 ## Summary
-- 513 nodes · 768 edges · 38 communities (26 shown, 12 thin omitted)
+- 513 nodes · 766 edges · 40 communities (26 shown, 14 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.94)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3505d1ab`
+- Built from commit: `83607432`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -17,7 +17,7 @@
 - server.py
 - JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM
 - package.json
-- react
+- CountUp.tsx
 - compilerOptions
 - compilerOptions
 - devDependencies
@@ -44,10 +44,12 @@
 - CLAUDE.md
 - .claude/CLAUDE.md
 - extraction-spec.md
-- Header.tsx
 - ease.ts
+- JagaUsaha 🛡️
+- TrajectoryChart.tsx
+- tilt-card.tsx
 - animated-badge.tsx
-- expanding-arrow-button.tsx
+- react
 - App.tsx
 - framer-motion
 
@@ -64,10 +66,10 @@
 10. `simulate_trajectory()` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `🎨 Komponen UI & Desain Eksternal` --references--> `AgentThinking()`  [INFERRED]
-  README.md → frontend/src/components/AgentThinking.tsx
 - `🎨 Komponen UI & Desain Eksternal` --references--> `MatrixOrb()`  [INFERRED]
   README.md → frontend/src/components/ui/matrix-orb.tsx
+- `🎨 Komponen UI & Desain Eksternal` --references--> `AgentThinking()`  [INFERRED]
+  README.md → frontend/src/components/AgentThinking.tsx
 - `ingest_text()` --uses--> `Obligation`  [INFERRED]
   api/server.py → core/dlmm.py
 - `ingest_text()` --uses--> `Receivable`  [INFERRED]
@@ -78,7 +80,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (38 total, 12 thin omitted)
+## Communities (40 total, 14 thin omitted)
 
 ### Community 0 - "server.py"
 Cohesion: 0.05
@@ -91,10 +93,6 @@ Nodes (46): 10.1 The "Zero-Form" Onboarding Philosophy, 10. DATA REALITY: OVERCO
 ### Community 2 - "package.json"
 Cohesion: 0.07
 Nodes (29): dependencies, clsx, framer-motion, lucide-react, react, react-dom, recharts, tailwind-merge (+21 more)
-
-### Community 3 - "react"
-Cohesion: 0.15
-Nodes (5): CountUpProps, ShinyTextProps, SpotlightCardProps, TrajectoryChartProps, react
 
 ### Community 4 - "compilerOptions"
 Cohesion: 0.10
@@ -121,8 +119,8 @@ Cohesion: 0.10
 Nodes (20): 18. FINAL PRODUCT SYNTHESIS, A. Problem, B. Product, C. One-Sentence Pitch, D. Why Now, E. Target User, F. Core User Journey, G. Hero Feature (+12 more)
 
 ### Community 10 - "button.tsx"
-Cohesion: 0.28
-Nodes (6): ActionFeed(), ActionFeedProps, HeroSection(), HeroSectionProps, MotionButton, MotionButtonProps
+Cohesion: 0.33
+Nodes (5): HeroSection(), HeroSectionProps, MotionButton, MotionButtonProps, SPRING_PRESS
 
 ### Community 11 - "6. FIFTEEN UNCONVENTIONAL OUT-OF-THE-BOX AGENT CAPABILITIES"
 Cohesion: 0.12
@@ -141,8 +139,8 @@ Cohesion: 0.33
 Nodes (5): For /graphify explain, For /graphify path, graphify reference: query, path, explain, Step 0 — Constrained query expansion (REQUIRED before traversal), Step 1 — Traversal
 
 ### Community 16 - "DecisionStudio.tsx"
-Cohesion: 0.06
-Nodes (38): AgentThinking(), AgentThinkingProps, ThinkingStep, DecisionIntelligenceCard(), DecisionStudio(), DecisionStudioProps, PresetScenario, HowItWorks() (+30 more)
+Cohesion: 0.11
+Nodes (23): DecisionIntelligenceCard(), DecisionStudio(), DecisionStudioProps, PresetScenario, HowItWorks(), HowItWorksProps, Input, InputClassNames (+15 more)
 
 ### Community 17 - "graphify reference: add a URL and watch a folder"
 Cohesion: 0.50
@@ -160,45 +158,49 @@ Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphif
 Cohesion: 0.50
 Nodes (3): Expanding the Oxlint configuration, React Compiler, React + TypeScript + Vite
 
-### Community 32 - "Header.tsx"
-Cohesion: 0.25
-Nodes (7): Header(), HeaderProps, reducedVariants, SharedLayoutBg, SharedLayoutBgProps, variants, SPRING_LAYOUT
+### Community 32 - "ease.ts"
+Cohesion: 0.16
+Nodes (12): Header(), HeaderProps, reducedVariants, SharedLayoutBg, SharedLayoutBgProps, variants, EASE_DRAWER, EASE_IN_OUT (+4 more)
 
-### Community 40 - "ease.ts"
-Cohesion: 0.20
-Nodes (9): WhatsAppModal(), WhatsAppModalProps, EASE_DRAWER, EASE_IN_OUT, EASE_OUT_CSS, SPRING_GLIDE, SPRING_MOUSE, SPRING_PRESS (+1 more)
+### Community 33 - "JagaUsaha 🛡️"
+Cohesion: 0.12
+Nodes (15): AgentThinking(), AgentThinkingProps, ThinkingStep, 1. Menjalankan Backend & Dashboard (Production Ready), 2. Menjalankan Interactive Terminal Demo (Khusus Video Demo Hackathon), 3. Menjalankan Frontend Development Mode (Hot-Reload), A. Video Demo (5–10 Menit), 🏗️ Arsitektur Sistem (+7 more)
+
+### Community 40 - "tilt-card.tsx"
+Cohesion: 0.24
+Nodes (7): ActionFeed(), ActionFeedProps, TiltCard(), TiltCardProps, PulseCards(), PulseCardsProps, SPRING_MOUSE
 
 ### Community 41 - "animated-badge.tsx"
 Cohesion: 0.13
 Nodes (16): DecisionIntelligenceProps, AnimatedBadge(), AnimatedBadgeProps, AnimatedBadgeSize, AnimatedBadgeStatus, ICON_CLASS, ICON_ROLL_VARIANTS, ICONS (+8 more)
 
-### Community 44 - "expanding-arrow-button.tsx"
-Cohesion: 0.22
-Nodes (8): FinalCTA(), FinalCTAProps, ARROW_OPACITY, ExpandingArrowButton, ExpandingArrowButtonProps, TiltCard(), TiltCardProps, useHoverCapable()
+### Community 44 - "react"
+Cohesion: 0.17
+Nodes (8): FinalCTAProps, ARROW_OPACITY, ExpandingArrowButton, ExpandingArrowButtonProps, ShinyTextProps, SpotlightCardProps, useHoverCapable(), react
 
 ### Community 45 - "App.tsx"
-Cohesion: 0.23
-Nodes (8): PRESETS, PulseData, FAQSection(), FeatureAgents(), Footer(), TerminalDrawer(), TerminalDrawerProps, lucide-react
+Cohesion: 0.21
+Nodes (9): PRESETS, PulseData, FAQSection(), FeatureAgents(), FinalCTA(), Footer(), WhatsAppModal(), WhatsAppModalProps (+1 more)
 
 ### Community 46 - "framer-motion"
 Cohesion: 0.29
 Nodes (3): BlurTextProps, MagnetProps, framer-motion
 
 ## Knowledge Gaps
-- **265 isolated node(s):** `ActionFeedProps`, `HeroSectionProps`, `MotionButtonProps`, `BoardUIAgentThinkingProps`, `ThinkingStep` (+260 more)
+- **265 isolated node(s):** `HeroSectionProps`, `MotionButtonProps`, `BoardUIAgentThinkingProps`, `ThinkingStep`, `DecisionStudioProps` (+260 more)
   These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 330 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `react` connect `react` to `Header.tsx`, `package.json`, `cn`, `animated-badge.tsx`, `button.tsx`, `ease.ts`, `expanding-arrow-button.tsx`, `App.tsx`, `BoardUIAgentThinking.tsx`, `framer-motion`, `DecisionStudio.tsx`?**
+- **Why does `react` connect `react` to `ease.ts`, `JagaUsaha 🛡️`, `package.json`, `CountUp.tsx`, `TrajectoryChart.tsx`, `tilt-card.tsx`, `cn`, `animated-badge.tsx`, `button.tsx`, `App.tsx`, `BoardUIAgentThinking.tsx`, `framer-motion`, `DecisionStudio.tsx`?**
   _High betweenness centrality (0.082) - this node is a cross-community bridge._
 - **Why does `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` connect `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` to `18. FINAL PRODUCT SYNTHESIS`, `6. FIFTEEN UNCONVENTIONAL OUT-OF-THE-BOX AGENT CAPABILITIES`?**
   _High betweenness centrality (0.023) - this node is a cross-community bridge._
-- **Why does `MatrixOrb()` connect `DecisionStudio.tsx` to `cn`?**
+- **Why does `MatrixOrb()` connect `DecisionStudio.tsx` to `cn`, `JagaUsaha 🛡️`?**
   _High betweenness centrality (0.020) - this node is a cross-community bridge._
-- **What connects `ActionFeedProps`, `HeroSectionProps`, `MotionButtonProps` to the rest of the system?**
+- **What connects `HeroSectionProps`, `MotionButtonProps`, `BoardUIAgentThinkingProps` to the rest of the system?**
   _265 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `server.py` be split into smaller, more focused modules?**
   _Cohesion score 0.050580997949419004 - nodes in this community are weakly interconnected._

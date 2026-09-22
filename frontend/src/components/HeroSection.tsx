@@ -1,67 +1,13 @@
 import React from 'react';
-import {
-  Play,
-  Building2,
-  Wallet,
-  CreditCard,
-  QrCode,
-  Zap,
-  MessageSquare,
-  Server,
-  Cpu,
-} from 'lucide-react';
+import { Play } from 'lucide-react';
 import { ExpandingArrowButton } from './motion/expanding-arrow-button';
 import { MotionButton } from './motion/button';
-import { Marquee } from './motion/marquee';
 
 interface HeroSectionProps {
   onScrollToDemo: () => void;
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
-  const ecosystemPartners = [
-    {
-      name: "Bank Central Asia (BCA)",
-      desc: "Mutasi e-Banking & Giro Usaha",
-      icon: <Building2 className="h-4 w-4 text-neutral-800" />,
-    },
-    {
-      name: "Bank Mandiri",
-      desc: "Sinkronisasi Rekening Livin & MCM",
-      icon: <Wallet className="h-4 w-4 text-neutral-800" />,
-    },
-    {
-      name: "Bank BRI",
-      desc: "Rekap Mutasi Transaksi BRImo",
-      icon: <CreditCard className="h-4 w-4 text-neutral-800" />,
-    },
-    {
-      name: "QRIS Standar Nasional",
-      desc: "Generasi QR Pembayaran Dinamis",
-      icon: <QrCode className="h-4 w-4 text-neutral-800" />,
-    },
-    {
-      name: "BI-FAST Bank Indonesia",
-      desc: "Kliring Arus Kas Real-Time",
-      icon: <Zap className="h-4 w-4 text-neutral-800" />,
-    },
-    {
-      name: "WhatsApp Business API",
-      desc: "Draf Negosiasi & Bon Santun",
-      icon: <MessageSquare className="h-4 w-4 text-neutral-800" />,
-    },
-    {
-      name: "IDwebhost CloudBaik",
-      desc: "Hosting Dedicated VPS Terisolasi",
-      icon: <Server className="h-4 w-4 text-neutral-800" />,
-    },
-    {
-      name: "Hermes Agent Framework",
-      desc: "Kalkulasi Deterministik Python",
-      icon: <Cpu className="h-4 w-4 text-neutral-800" />,
-    },
-  ];
-
   return (
     <section className="relative w-full pt-16 pb-12 sm:pt-24 sm:pb-16 overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-7">
@@ -125,33 +71,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* High-End Fintech Ecosystem Integration Strip */}
-        <div className="pt-10 max-w-4xl mx-auto border-t border-neutral-100">
-          <div className="text-xs font-medium text-neutral-500 mb-4 tracking-normal">
-            Kompatibel dengan perbankan & sistem pembayaran resmi Indonesia
-          </div>
-          <Marquee speed={28} gap="1.5rem" className="py-2" fade={true}>
-            {ecosystemPartners.map((partner, idx) => (
-              <div
-                key={idx}
-                className="flex items-center gap-3 px-3.5 py-2 rounded-xl bg-white border border-neutral-200/80 shadow-2xs hover:border-neutral-300 transition-all text-left group"
-              >
-                <div className="h-7 w-7 rounded-lg bg-neutral-100 flex items-center justify-center shrink-0 border border-neutral-200/60 group-hover:bg-neutral-200/60 transition-colors">
-                  {partner.icon}
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-xs font-semibold text-neutral-900 tracking-tight whitespace-nowrap">
-                    {partner.name}
-                  </span>
-                  <span className="text-[11px] text-neutral-500 font-normal whitespace-nowrap">
-                    {partner.desc}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </Marquee>
         </div>
       </div>
     </section>
