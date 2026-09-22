@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
+import { EASE_OUT } from '../lib/ease';
 
 export const FAQSection: React.FC = () => {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
+  const reduce = useReducedMotion();
 
   const faqs = [
     {
@@ -49,22 +52,35 @@ export const FAQSection: React.FC = () => {
               <div key={idx} className="py-6">
                 <button
                   onClick={() => setOpenIdx(isOpen ? null : idx)}
-                  className="w-full flex items-center justify-between text-left gap-4 group"
+                  className="w-full flex items-center justify-between text-left gap-4 group cursor-pointer"
                 >
                   <span className="text-base font-medium text-neutral-900 group-hover:text-neutral-950 transition-colors">
                     {faq.q}
                   </span>
-                  <ChevronDown
-                    className={`h-5 w-5 text-neutral-400 transition-transform duration-200 shrink-0 ${
-                      isOpen ? 'rotate-180 text-neutral-950' : ''
-                    }`}
-                  />
+                  <motion.span
+                    animate={{ rotate: isOpen ? 180 : 0 }}
+                    transition={{ duration: 0.22, ease: EASE_OUT }}
+                    className="shrink-0 text-neutral-400 group-hover:text-neutral-900"
+                  >
+                    <ChevronDown className="h-5 w-5" />
+                  </motion.span>
                 </button>
-                {isOpen && (
-                  <p className="mt-3 text-xs sm:text-sm text-neutral-600 leading-relaxed pr-8 animate-in fade-in duration-150">
-                    {faq.a}
-                  </p>
-                )}
+                <AnimatePresence initial={false}>
+                  {isOpen && (
+                    <motion.div
+                      key={`faq-content-${idx}`}
+                      initial={reduce ? { opacity: 0 } : { opacity: 0, height: 0 }}
+                      animate={reduce ? { opacity: 1 } : { opacity: 1, height: "auto" }}
+                      exit={reduce ? { opacity: 0 } : { opacity: 0, height: 0 }}
+                      transition={{ duration: 0.22, ease: EASE_OUT }}
+                      className="overflow-hidden"
+                    >
+                      <p className="mt-3 text-xs sm:text-sm text-neutral-600 leading-relaxed pr-8">
+                        {faq.a}
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             );
           })}

@@ -108,9 +108,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/FAQSection.tsx": {
-    "mtime": 1790047978.3509226,
-    "seen": 1790048074.188307,
-    "ast_hash": "a4b63169e30707af41c36967daef97b0",
+    "mtime": 1790049922.6363196,
+    "seen": 1790050414.1188896,
+    "ast_hash": "08f34a5e969335fbb2761b767c6b7727",
     "semantic_hash": ""
   },
   "frontend/src/components/FeatureAgents.tsx": {
@@ -168,10 +168,10 @@
     "semantic_hash": "ad133f6350c6397d414d67d33a62cc81"
   },
   "frontend/src/components/WhatsAppModal.tsx": {
-    "mtime": 1789387853.3749726,
-    "seen": 1789997349.3947217,
-    "ast_hash": "e8b0475ffdbcf517fda6d9f60ffe9492",
-    "semantic_hash": "e8b0475ffdbcf517fda6d9f60ffe9492"
+    "mtime": 1790050352.194098,
+    "seen": 1790050414.1188896,
+    "ast_hash": "1da403250cf6dd8a2f59f751bded472b",
+    "semantic_hash": ""
   },
   "frontend/src/components/reactbits/BlurText.tsx": {
     "mtime": 1789443022.3702984,
@@ -507,6 +507,42 @@
     "mtime": 1790049160.261768,
     "seen": 1790049188.8908732,
     "ast_hash": "ba03b77a33aee080e2d6cdb576c906bb",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/motion/button.tsx": {
+    "mtime": 1790049894.368918,
+    "seen": 1790050414.1188896,
+    "ast_hash": "9952520268d23f1b3b90c59366838997",
+    "semantic_hash": ""
+  },
+  "screenshot_fixed_modal.png": {
+    "mtime": 1790050190.3951674,
+    "seen": 1790050414.1188896,
+    "ast_hash": "6cf064cdea4453d6debc69bbaed23ffb",
+    "semantic_hash": ""
+  },
+  "screenshot_opaque_modal_verified.png": {
+    "mtime": 1790050305.8146825,
+    "seen": 1790050414.1188896,
+    "ast_hash": "9409175cf7dbb770a4500d4fb5e016dd",
+    "semantic_hash": ""
+  },
+  "screenshot_portal_modal_clean.png": {
+    "mtime": 1790050099.6797235,
+    "seen": 1790050414.1188896,
+    "ast_hash": "b4c50cdc64706325639bbda7e769b607",
+    "semantic_hash": ""
+  },
+  "screenshot_solid_modal_verified.png": {
+    "mtime": 1790050383.137311,
+    "seen": 1790050414.1188896,
+    "ast_hash": "58673a3d4dce372740f7a92633830914",
+    "semantic_hash": ""
+  },
+  "screenshot_whatsapp_modal_spring.png": {
+    "mtime": 1790049996.1833136,
+    "seen": 1790050414.1188896,
+    "ast_hash": "bbd7a2bf85b4d7f551308b3c4f79fcac",
     "semantic_hash": ""
   }
 }
