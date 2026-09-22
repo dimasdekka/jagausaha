@@ -1,7 +1,9 @@
 # Graph Report - JagaUsaha  (2026-09-22)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 62 files · ~90,928 words
+- Verdict: corpus is large enough that graph structure adds value.
+- Unclassified: 5 file(s) not represented in the graph (top: (none) 3, .css 2)
 
 ## Summary
 - 476 nodes · 613 edges · 38 communities (25 shown, 13 thin omitted)
@@ -68,11 +70,11 @@
   README.md → frontend/src/components/ui/matrix-orb.tsx
 - `🎨 Komponen UI & Desain Eksternal` --references--> `AgentThinking()`  [INFERRED]
   README.md → frontend/src/components/AgentThinking.tsx
+- `simulate_decision()` --uses--> `Scenario`  [INFERRED]
+  api/server.py → core/dlmm.py
 - `ingest_text()` --uses--> `Obligation`  [INFERRED]
   api/server.py → core/dlmm.py
 - `ingest_text()` --uses--> `Receivable`  [INFERRED]
-  api/server.py → core/dlmm.py
-- `simulate_decision()` --uses--> `Scenario`  [INFERRED]
   api/server.py → core/dlmm.py
 
 ## Import Cycles
@@ -181,7 +183,7 @@ Cohesion: 0.29
 Nodes (3): BlurTextProps, MagnetProps, framer-motion
 
 ## Knowledge Gaps
-- **252 isolated node(s):** `BoardUIAgentThinkingProps`, `ThinkingStep`, `AgentThinkingProps`, `ThinkingStep`, `PulseData` (+247 more)
+- **252 isolated node(s):** `deploy_vps.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+247 more)
   These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 317 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -194,7 +196,7 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.027) - this node is a cross-community bridge._
 - **Why does `🎨 Komponen UI & Desain Eksternal` connect `JagaUsaha 🛡️` to `matrix-orb.tsx`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **What connects `BoardUIAgentThinkingProps`, `ThinkingStep`, `AgentThinkingProps` to the rest of the system?**
+- **What connects `deploy_vps.sh script`, `$schema`, `plugins` to the rest of the system?**
   _252 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `server.py` be split into smaller, more focused modules?**
   _Cohesion score 0.05368382080710848 - nodes in this community are weakly interconnected._

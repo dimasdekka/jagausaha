@@ -48,12 +48,7 @@
       "core_dlmm_simulate_trajectory",
       "core_dlmm_trajectoryresult",
       "core_sensor",
-      "core_sensor_parsedtransaction",
       "core_sensor_rationale_1",
-      "core_sensor_rationale_33",
-      "core_sensor_sensoragent",
-      "core_sensor_sensoragent_init",
-      "core_sensor_sensoragent_parse_bca_mutation_text",
       "dataclasses",
       "fastapi",
       "fastapi_middleware_cors",
@@ -135,17 +130,6 @@
       "frontend_package_dependencies_react_dom",
       "frontend_package_dependencies_recharts",
       "frontend_package_dependencies_tailwind_merge",
-      "frontend_package_devdependencies",
-      "frontend_package_devdependencies_autoprefixer",
-      "frontend_package_devdependencies_oxlint",
-      "frontend_package_devdependencies_postcss",
-      "frontend_package_devdependencies_tailwindcss",
-      "frontend_package_devdependencies_types_node",
-      "frontend_package_devdependencies_types_react",
-      "frontend_package_devdependencies_types_react_dom",
-      "frontend_package_devdependencies_typescript",
-      "frontend_package_devdependencies_vite",
-      "frontend_package_devdependencies_vitejs_plugin_react",
       "frontend_package_name",
       "frontend_package_private",
       "frontend_package_scripts",
@@ -155,13 +139,17 @@
       "frontend_package_scripts_preview",
       "frontend_package_type",
       "frontend_package_version",
+      "frontend_src_components_reactbits_blurtext",
+      "frontend_src_components_reactbits_blurtext_blurtext",
+      "frontend_src_components_reactbits_blurtext_blurtextprops",
+      "frontend_src_components_reactbits_magnet",
+      "frontend_src_components_reactbits_magnet_magnet",
+      "frontend_src_components_reactbits_magnet_magnetprops",
       "frontend_vite_config",
       "ref_autoprefixer",
-      "ref_clsx",
+      "ref_framer_motion",
       "ref_oxlint",
       "ref_postcss",
-      "ref_recharts",
-      "ref_tailwind_merge",
       "ref_tailwindcss",
       "ref_types_node",
       "ref_types_react",
@@ -172,11 +160,24 @@
     ],
     "3": [
       "frontend_src_app",
+      "frontend_src_app_app",
       "frontend_src_app_presets",
       "frontend_src_app_pulsedata",
       "frontend_src_components_actionfeed",
       "frontend_src_components_actionfeed_actionfeed",
       "frontend_src_components_actionfeed_actionfeedprops",
+      "frontend_src_components_boarduiareachart",
+      "frontend_src_components_boarduiareachart_boarduiareachart",
+      "frontend_src_components_boarduiareachart_boarduiareachartprops",
+      "frontend_src_components_boarduiareachart_chartdatapoint",
+      "frontend_src_components_boarduiareachart_customtooltip",
+      "frontend_src_components_decisionintelligencecard",
+      "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
+      "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
+      "frontend_src_components_decisionstudio",
+      "frontend_src_components_decisionstudio_decisionstudio",
+      "frontend_src_components_decisionstudio_decisionstudioprops",
+      "frontend_src_components_decisionstudio_presetscenario",
       "frontend_src_components_faqsection",
       "frontend_src_components_faqsection_faqsection",
       "frontend_src_components_featureagents",
@@ -184,19 +185,44 @@
       "frontend_src_components_finalcta",
       "frontend_src_components_finalcta_finalcta",
       "frontend_src_components_finalcta_finalctaprops",
+      "frontend_src_components_footer",
+      "frontend_src_components_footer_footer",
       "frontend_src_components_header",
       "frontend_src_components_header_header",
       "frontend_src_components_header_headerprops",
       "frontend_src_components_herosection",
       "frontend_src_components_herosection_herosection",
       "frontend_src_components_herosection_herosectionprops",
+      "frontend_src_components_howitworks",
+      "frontend_src_components_howitworks_howitworks",
+      "frontend_src_components_howitworks_howitworksprops",
+      "frontend_src_components_pulsecards",
+      "frontend_src_components_pulsecards_pulsecards",
+      "frontend_src_components_pulsecards_pulsecardsprops",
+      "frontend_src_components_reactbits_countup",
+      "frontend_src_components_reactbits_countup_countup",
+      "frontend_src_components_reactbits_countup_countupprops",
+      "frontend_src_components_reactbits_shinytext",
+      "frontend_src_components_reactbits_shinytext_shinytext",
+      "frontend_src_components_reactbits_shinytext_shinytextprops",
+      "frontend_src_components_reactbits_spotlightcard",
+      "frontend_src_components_reactbits_spotlightcard_spotlightcard",
+      "frontend_src_components_reactbits_spotlightcard_spotlightcardprops",
       "frontend_src_components_terminaldrawer",
       "frontend_src_components_terminaldrawer_terminaldrawer",
       "frontend_src_components_terminaldrawer_terminaldrawerprops",
+      "frontend_src_components_trajectorychart",
+      "frontend_src_components_trajectorychart_trajectorychart",
+      "frontend_src_components_trajectorychart_trajectorychartprops",
       "frontend_src_components_whatsappmodal",
       "frontend_src_components_whatsappmodal_whatsappmodal",
       "frontend_src_components_whatsappmodal_whatsappmodalprops",
-      "ref_lucide_react"
+      "frontend_src_index",
+      "frontend_src_main",
+      "ref_lucide_react",
+      "ref_react",
+      "ref_react_dom",
+      "ref_recharts"
     ],
     "4": [
       "frontend_tsconfig_app",
@@ -251,7 +277,11 @@
       "frontend_src_components_ui_matrix_orb_scale",
       "frontend_src_components_ui_matrix_orb_states",
       "frontend_src_components_ui_matrix_orb_subscribetozoom",
-      "frontend_src_components_ui_matrix_orb_usedevicepixelratio"
+      "frontend_src_components_ui_matrix_orb_usedevicepixelratio",
+      "frontend_src_lib_utils",
+      "frontend_src_lib_utils_cn",
+      "ref_clsx",
+      "ref_tailwind_merge"
     ],
     "7": [
       "claude_skills_graphify_skill",
@@ -283,26 +313,17 @@
       "claude_skills_graphify_skill_what_you_must_do_when_invoked"
     ],
     "8": [
-      "frontend_src_app_app",
-      "frontend_src_components_motion_animated_toast_stack",
-      "frontend_src_components_motion_animated_toast_stack_animatedtoast",
-      "frontend_src_components_motion_animated_toast_stack_animatedtoastaction",
-      "frontend_src_components_motion_animated_toast_stack_animatedtoaststackprops",
-      "frontend_src_components_motion_animated_toast_stack_createtoast",
-      "frontend_src_components_motion_animated_toast_stack_position_class",
-      "frontend_src_components_motion_animated_toast_stack_stack_spring",
-      "frontend_src_components_motion_animated_toast_stack_status_class",
-      "frontend_src_components_motion_animated_toast_stack_status_icon",
-      "frontend_src_components_motion_animated_toast_stack_toastclassnames",
-      "frontend_src_components_motion_animated_toast_stack_toastinput",
-      "frontend_src_components_motion_animated_toast_stack_toastitem",
-      "frontend_src_components_motion_animated_toast_stack_toastposition",
-      "frontend_src_components_motion_animated_toast_stack_toaststatus",
-      "frontend_src_components_motion_animated_toast_stack_useanimatedtoaststack",
-      "frontend_src_components_motion_animated_toast_stack_useanimatedtoaststackoptions",
-      "frontend_src_index",
-      "frontend_src_main",
-      "ref_react_dom"
+      "frontend_package_devdependencies",
+      "frontend_package_devdependencies_autoprefixer",
+      "frontend_package_devdependencies_oxlint",
+      "frontend_package_devdependencies_postcss",
+      "frontend_package_devdependencies_tailwindcss",
+      "frontend_package_devdependencies_types_node",
+      "frontend_package_devdependencies_types_react",
+      "frontend_package_devdependencies_types_react_dom",
+      "frontend_package_devdependencies_typescript",
+      "frontend_package_devdependencies_vite",
+      "frontend_package_devdependencies_vitejs_plugin_react"
     ],
     "9": [
       "jagausaha_strategy_spec_18_final_product_synthesis",
@@ -327,8 +348,13 @@
       "jagausaha_strategy_spec_s_post_hackathon_roadmap"
     ],
     "10": [
+      "core_sensor_parsedtransaction",
       "core_sensor_py_any",
+      "core_sensor_rationale_33",
       "core_sensor_rationale_91",
+      "core_sensor_sensoragent",
+      "core_sensor_sensoragent_init",
+      "core_sensor_sensoragent_parse_bca_mutation_text",
       "core_sensor_sensoragent_parse_whatsapp_note"
     ],
     "11": [
@@ -473,98 +499,20 @@
     "31": [
       "claude_skills_graphify_references_extraction_spec",
       "claude_skills_graphify_references_extraction_spec_graphify_reference_extraction_subagent_prompt"
-    ],
-    "32": [
-      "frontend_src_components_boarduiareachart",
-      "frontend_src_components_boarduiareachart_boarduiareachart",
-      "frontend_src_components_boarduiareachart_boarduiareachartprops",
-      "frontend_src_components_boarduiareachart_chartdatapoint",
-      "frontend_src_components_boarduiareachart_customtooltip",
-      "frontend_src_components_motion_animated_toast_stack_animatedtoaststack",
-      "frontend_src_components_motion_tabs",
-      "frontend_src_components_motion_tabs_tabs",
-      "frontend_src_components_motion_tabs_tabscontext",
-      "frontend_src_components_motion_tabs_tabscontexttype",
-      "frontend_src_components_motion_tabs_tabslist",
-      "frontend_src_components_motion_tabs_tabstrigger",
-      "frontend_src_components_motion_tabs_usetabscontext",
-      "frontend_src_components_motion_tabs_variant",
-      "frontend_src_lib_utils_cn"
-    ],
-    "33": [
-      "frontend_src_components_footer",
-      "frontend_src_components_footer_footer",
-      "frontend_src_components_reactbits_countup",
-      "frontend_src_components_reactbits_countup_countup",
-      "frontend_src_components_reactbits_countup_countupprops",
-      "frontend_src_components_reactbits_shinytext",
-      "frontend_src_components_reactbits_shinytext_shinytext",
-      "frontend_src_components_reactbits_shinytext_shinytextprops",
-      "frontend_src_components_reactbits_spotlightcard",
-      "frontend_src_components_reactbits_spotlightcard_spotlightcard",
-      "frontend_src_components_reactbits_spotlightcard_spotlightcardprops",
-      "frontend_src_components_trajectorychart",
-      "frontend_src_components_trajectorychart_trajectorychart",
-      "frontend_src_components_trajectorychart_trajectorychartprops",
-      "ref_react"
-    ],
-    "34": [
-      "frontend_src_lib_ease",
-      "frontend_src_lib_ease_ease_drawer",
-      "frontend_src_lib_ease_ease_in_out",
-      "frontend_src_lib_ease_ease_out",
-      "frontend_src_lib_ease_ease_out_css",
-      "frontend_src_lib_ease_spring_glide",
-      "frontend_src_lib_ease_spring_layout",
-      "frontend_src_lib_ease_spring_mouse",
-      "frontend_src_lib_ease_spring_panel",
-      "frontend_src_lib_ease_spring_press",
-      "frontend_src_lib_ease_spring_swap"
-    ],
-    "35": [
-      "frontend_src_components_decisionintelligencecard",
-      "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
-      "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
-      "frontend_src_components_decisionstudio",
-      "frontend_src_components_decisionstudio_decisionstudio",
-      "frontend_src_components_decisionstudio_decisionstudioprops",
-      "frontend_src_components_decisionstudio_presetscenario",
-      "frontend_src_components_pulsecards",
-      "frontend_src_components_pulsecards_pulsecards",
-      "frontend_src_components_pulsecards_pulsecardsprops"
-    ],
-    "36": [
-      "frontend_src_components_howitworks",
-      "frontend_src_components_howitworks_howitworks",
-      "frontend_src_components_howitworks_howitworksprops",
-      "frontend_src_components_motion_input",
-      "frontend_src_components_motion_input_input",
-      "frontend_src_components_motion_input_inputclassnames",
-      "frontend_src_components_motion_input_inputprops",
-      "frontend_src_lib_utils"
-    ],
-    "37": [
-      "frontend_src_components_reactbits_blurtext",
-      "frontend_src_components_reactbits_blurtext_blurtext",
-      "frontend_src_components_reactbits_blurtext_blurtextprops",
-      "frontend_src_components_reactbits_magnet",
-      "frontend_src_components_reactbits_magnet_magnet",
-      "frontend_src_components_reactbits_magnet_magnetprops",
-      "ref_framer_motion"
     ]
   },
   "cohesion": {
-    "0": 0.05368382080710848,
+    "0": 0.05839727195225917,
     "1": 0.0425531914893617,
-    "2": 0.047619047619047616,
-    "3": 0.12307692307692308,
+    "2": 0.05714285714285714,
+    "3": 0.051587301587301584,
     "4": 0.1,
     "5": 0.11764705882352941,
-    "6": 0.22727272727272727,
+    "6": 0.175,
     "7": 0.07407407407407407,
-    "8": 0.11052631578947368,
+    "8": 0.18181818181818182,
     "9": 0.1,
-    "10": 0.6666666666666666,
+    "10": 0.25,
     "11": 0.11764705882352941,
     "12": 0.2222222222222222,
     "13": 0.3333333333333333,
@@ -585,19 +533,13 @@
     "28": 0.6666666666666666,
     "29": 1.0,
     "30": 1.0,
-    "31": 1.0,
-    "32": 0.20952380952380953,
-    "33": 0.13333333333333333,
-    "34": 0.18181818181818182,
-    "35": 0.24444444444444444,
-    "36": 0.2857142857142857,
-    "37": 0.2857142857142857
+    "31": 1.0
   },
   "gods": [
     {
       "id": "ref_react",
       "label": "react",
-      "degree": 29
+      "degree": 26
     },
     {
       "id": "jagausaha_strategy_spec_jagausaha_ai_autonomous_financial_guardian_decision_sandbox_for_indonesian_umkm",
@@ -622,7 +564,7 @@
     {
       "id": "ref_lucide_react",
       "label": "lucide-react",
-      "degree": 16
+      "degree": 15
     },
     {
       "id": "frontend_tsconfig_node_compileroptions",
@@ -635,14 +577,14 @@
       "degree": 12
     },
     {
-      "id": "frontend_src_lib_utils_cn",
-      "label": "cn()",
-      "degree": 12
-    },
-    {
       "id": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
       "label": "What You Must Do When Invoked",
       "degree": 12
+    },
+    {
+      "id": "claude_skills_graphify_skill_graphify",
+      "label": "/graphify",
+      "degree": 11
     }
   ],
   "surprises": [
@@ -705,13 +647,13 @@
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `react` connect `react` to `tabs.tsx`, `package.json`, `App.tsx`, `DecisionStudio.tsx`, `input.tsx`, `framer-motion`, `matrix-orb.tsx`, `animated-toast-stack.tsx`, `BoardUIAgentThinking.tsx`, `JagaUsaha 🛡️`?",
-      "why": "High betweenness centrality (0.073) - this node is a cross-community bridge."
+      "question": "Why does `react` connect `App.tsx` to `JagaUsaha 🛡️`, `package.json`, `BoardUIAgentThinking.tsx`, `matrix-orb.tsx`?",
+      "why": "High betweenness centrality (0.072) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
       "question": "Why does `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` connect `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` to `18. FINAL PRODUCT SYNTHESIS`, `6. FIFTEEN UNCONVENTIONAL OUT-OF-THE-BOX AGENT CAPABILITIES`?",
-      "why": "High betweenness centrality (0.027) - this node is a cross-community bridge."
+      "why": "High betweenness centrality (0.032) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
@@ -721,12 +663,12 @@
     {
       "type": "isolated_nodes",
       "question": "What connects `BoardUIAgentThinkingProps`, `ThinkingStep`, `AgentThinkingProps` to the rest of the system?",
-      "why": "252 weakly-connected nodes found - possible documentation gaps or missing edges."
+      "why": "225 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
       "type": "low_cohesion",
       "question": "Should `server.py` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.05368382080710848 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.05839727195225917 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
@@ -736,7 +678,7 @@
     {
       "type": "low_cohesion",
       "question": "Should `package.json` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.047619047619047616 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected."
     }
   ]
 }

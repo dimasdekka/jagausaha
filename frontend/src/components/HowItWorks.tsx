@@ -1,19 +1,37 @@
 import React, { useState } from 'react';
 import { ArrowRight, CheckCircle2, Zap } from 'lucide-react';
+import { Input } from './motion/input';
 
 interface HowItWorksProps {
   onSimulateCustom: (amount: number) => void;
 }
 
 export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
-  const [customNominal, setCustomNominal] = useState('10000000');
+  const [customNominal, setCustomNominal] = useState('10.000.000');
+  const [errorMsg, setErrorMsg] = useState<string | undefined>();
+
+  const cleanNum = parseFloat(customNominal.replace(/[^0-9]/g, ''));
+  const isValid = !isNaN(cleanNum) && cleanNum > 0;
+
+  const handleNominalChange = (val: string) => {
+    const raw = val.replace(/[^0-9]/g, '');
+    if (!raw) {
+      setCustomNominal('');
+      return;
+    }
+    const num = parseInt(raw, 10);
+    setCustomNominal(num.toLocaleString('id-ID'));
+    if (errorMsg) setErrorMsg(undefined);
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const cleanNum = parseFloat(customNominal.replace(/[^0-9]/g, ''));
-    if (!isNaN(cleanNum) && cleanNum > 0) {
-      onSimulateCustom(cleanNum);
+    if (!isValid) {
+      setErrorMsg('Masukkan nominal valid lebih dari Rp 0');
+      return;
     }
+    setErrorMsg(undefined);
+    onSimulateCustom(cleanNum);
   };
 
   return (
@@ -81,20 +99,22 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto">
-            <div className="relative w-full">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-xs font-semibold text-neutral-400">Rp</span>
-              <input
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-start sm:items-center gap-3 max-w-md mx-auto w-full">
+            <div className="flex-1 w-full">
+              <Input
                 type="text"
                 value={customNominal}
-                onChange={(e) => setCustomNominal(e.target.value)}
+                onChange={handleNominalChange}
                 placeholder="10.000.000"
-                className="w-full rounded-full border border-neutral-300 bg-neutral-50 pl-10 pr-4 py-3 text-xs sm:text-sm font-semibold text-neutral-950 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:bg-white transition-all tabular-nums"
+                leftIcon={<span className="text-xs font-semibold text-neutral-400">Rp</span>}
+                error={errorMsg}
+                success={isValid && !errorMsg}
+                reserveErrorLine
               />
             </div>
             <button
               type="submit"
-              className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white px-6 py-3 text-xs sm:text-sm font-medium transition-all shadow-sm active:scale-95"
+              className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white px-6 h-11 text-xs sm:text-sm font-medium transition-all shadow-sm active:scale-95 mb-4 sm:mb-0"
             >
               <span>Uji Simulasi</span>
               <ArrowRight className="h-4 w-4" />

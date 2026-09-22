@@ -10,6 +10,7 @@ import { FinalCTA } from './components/FinalCTA';
 import { Footer } from './components/Footer';
 import { TerminalDrawer } from './components/TerminalDrawer';
 import { WhatsAppModal } from './components/WhatsAppModal';
+import { useAnimatedToastStack, AnimatedToastStack } from './components/motion/animated-toast-stack';
 
 interface PulseData {
   business_name: string;
@@ -32,6 +33,8 @@ const PRESETS = [
 ];
 
 export function App() {
+  const { toasts, showToast, dismissToast } = useAnimatedToastStack();
+
   const [pulse] = useState<PulseData>({
     business_name: 'Kopi Teras Barokah',
     current_cash: 18500000,
@@ -109,6 +112,20 @@ export function App() {
         const data = await res.json();
         setScenarioCurve(data.trajectory.scenario);
         setInsolvencyDay(data.metrics.insolvency_day);
+
+        if (data.metrics.is_safe) {
+          showToast({
+            title: 'Skenario Kas Terverifikasi Aman',
+            description: `${currentName} aman dieksekusi tanpa risiko insolvensi.`,
+            status: 'success',
+          });
+        } else {
+          showToast({
+            title: `Peringatan: Defisit Hari ke-${data.metrics.insolvency_day}`,
+            description: `${currentName} memicu defisit sebelum jadwal gaji/tempo.`,
+            status: 'error',
+          });
+        }
 
         const logMsg = data.metrics.is_safe
           ? `[AMAN] Skenario '${currentName}' lulus uji kas.`
@@ -241,6 +258,13 @@ export function App() {
         recipientName={modalData.recipient}
         whatsappText={modalData.text}
         type={modalData.type}
+      />
+
+      {/* beUI Animated Toast Stack Notifications */}
+      <AnimatedToastStack
+        toasts={toasts}
+        onDismiss={dismissToast}
+        position="bottom-right"
       />
     </div>
   );

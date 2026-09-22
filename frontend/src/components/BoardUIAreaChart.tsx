@@ -10,6 +10,7 @@ import {
   Tooltip,
   ReferenceLine,
 } from 'recharts';
+import { Tabs, TabsList, TabsTrigger } from './motion/tabs';
 
 interface ChartDataPoint {
   day: number;
@@ -115,22 +116,17 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
           </p>
         </div>
 
-        {/* Quiet Minimal Horizon Tabs */}
-        <div className="flex items-center rounded-full border border-neutral-200 bg-neutral-50 p-0.5 text-xs font-medium">
-          {[14, 30].map((h) => (
-            <button
-              key={h}
-              onClick={() => setHorizon(h)}
-              className={`px-3.5 py-1 rounded-full transition-all ${
-                horizon === h
-                  ? 'bg-white text-neutral-950 shadow-sm font-semibold'
-                  : 'text-neutral-500 hover:text-neutral-900'
-              }`}
-            >
-              {h} Hari
-            </button>
-          ))}
-        </div>
+        {/* beUI Motion Horizon Tabs with Spring Gliding Indicator */}
+        <Tabs
+          value={String(horizon)}
+          onValueChange={(val) => setHorizon(Number(val))}
+          variant="pill"
+        >
+          <TabsList>
+            <TabsTrigger value="14">14 Hari</TabsTrigger>
+            <TabsTrigger value="30">30 Hari</TabsTrigger>
+          </TabsList>
+        </Tabs>
       </div>
 
       {/* Main Recharts Area with Silky Smooth Continuous Curves */}

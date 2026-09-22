@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { PulseCards } from './PulseCards';
 import { BoardUIAreaChart } from './BoardUIAreaChart';
 import { DecisionIntelligenceCard } from './DecisionIntelligenceCard';
-import { Mic, Sparkles } from 'lucide-react';
+import { Mic, Sparkles, Send } from 'lucide-react';
+import { Input } from './motion/input';
 
 interface PresetScenario {
   id: string;
@@ -53,6 +54,11 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
 }) => {
   const isSafe = insolvencyDay === null;
   const minCash = scenarioCash ? Math.min(...scenarioCash) : Math.min(...baselineCash);
+  const [promptText, setPromptText] = useState(voiceTranscript);
+
+  useEffect(() => {
+    setPromptText(voiceTranscript);
+  }, [voiceTranscript]);
 
   return (
     <div className="rounded-3xl border border-neutral-200/90 bg-white shadow-handhold overflow-hidden">
@@ -150,29 +156,45 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
           </div>
         </div>
 
-        {/* 5. Clean Voice Note Consultation Bar */}
-        <div className="rounded-2xl border border-neutral-200/80 bg-neutral-50/60 p-4 sm:p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3.5">
-            <div className="h-10 w-10 rounded-full bg-white border border-neutral-200/80 flex items-center justify-center text-neutral-800 shrink-0 shadow-sm">
-              <Mic className="h-4 w-4" />
-            </div>
-
-            <div>
-              <div className="text-xs font-semibold text-neutral-900">
-                Konsultasi Pengeluaran via Pesan Suara
-              </div>
-              <p className="text-xs text-neutral-500 mt-0.5 font-normal">
-                {voiceTranscript}
-              </p>
-            </div>
+        {/* 5. Interactive Simulation Prompt & Voice Bar with beUI Input */}
+        <div className="rounded-2xl border border-neutral-200/80 bg-neutral-50/60 p-4 sm:p-5 space-y-3">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-medium text-neutral-700">
+              Konsultasi Pengeluaran (Teks / Pesan Suara):
+            </span>
+            <span className="text-xs text-neutral-500 hidden sm:inline">
+              Ketik keputusan atau uji pesan suara WhatsApp
+            </span>
           </div>
 
-          <button
-            onClick={onTriggerVoiceSim}
-            className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white px-5 py-2.5 text-xs font-medium transition-all shadow-sm active:scale-95"
-          >
-            <span>Uji Pesan Suara</span>
-          </button>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5">
+            <div className="flex-1 w-full">
+              <Input
+                type="text"
+                value={promptText}
+                onChange={(val) => setPromptText(val)}
+                placeholder='Contoh: "Beli mesin espresso 14 juta tunai"'
+                leftIcon={<Mic className="h-4 w-4 text-neutral-400" />}
+                success={promptText.length > 5}
+              />
+            </div>
+
+            <button
+              onClick={() => {
+                const match = promptText.match(/(\d+([\.,]\d+)?)\s*(juta|jt)/i);
+                if (match) {
+                  const num = parseFloat(match[1].replace(',', '.')) * 1_000_000;
+                  onSelectPreset('custom', num);
+                } else {
+                  onTriggerVoiceSim();
+                }
+              }}
+              className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-1.5 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white px-5 h-11 text-xs font-medium transition-all shadow-sm active:scale-95 mb-4 sm:mb-0"
+            >
+              <Send className="h-3.5 w-3.5" />
+              <span>Simulasikan</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
