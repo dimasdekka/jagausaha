@@ -83,6 +83,13 @@ export function App() {
     demoSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   const runSimulation = async (presetId: string, amount?: number) => {
     setActivePreset(presetId);
 
@@ -159,9 +166,9 @@ export function App() {
   return (
     <div className="min-h-screen bg-[#FAFAFB] text-neutral-900 flex flex-col font-sans selection:bg-emerald-100 selection:text-emerald-900 antialiased">
       <Header
-        businessName={pulse.business_name}
         onReset={() => runSimulation('espresso_cash', 14000000)}
         isLoading={false}
+        onScrollToSection={scrollToSection}
       />
 
       <main className="flex-1 w-full space-y-16 sm:space-y-24">
@@ -169,9 +176,8 @@ export function App() {
         <HeroSection onScrollToDemo={scrollToDemo} />
 
         {/* 2. Interactive Decision Studio Sandbox */}
-        <section ref={demoSectionRef} className="max-w-5xl mx-auto px-4 sm:px-6">
+        <section ref={demoSectionRef} id="demo-sandbox" className="max-w-5xl mx-auto px-4 sm:px-6">
           <DecisionStudio
-            businessName={pulse.business_name}
             currentCash={pulse.current_cash}
             safeToSpend={pulse.safe_to_spend}
             safetyBuffer={pulse.safety_buffer}
@@ -193,12 +199,16 @@ export function App() {
         </section>
 
         {/* 3. Feature Agents */}
-        <FeatureAgents />
+        <div id="feature-agents">
+          <FeatureAgents />
+        </div>
 
         {/* 4. How It Works */}
-        <HowItWorks onSimulateCustom={(amt) => { runSimulation('espresso_cash', amt); scrollToDemo(); }} />
+        <div id="how-it-works">
+          <HowItWorks onSimulateCustom={(amt) => { runSimulation('espresso_cash', amt); scrollToDemo(); }} />
+        </div>
 
-        {/* 5. Priority Tactical Actions (No Fake Client Testimonials) */}
+        {/* 5. Priority Tactical Actions */}
         <section className="max-w-5xl mx-auto px-4 sm:px-6">
           <ActionFeed
             onOpenNudge={openWhatsAppNudge}
@@ -207,7 +217,9 @@ export function App() {
         </section>
 
         {/* 6. FAQ Accordion */}
-        <FAQSection />
+        <div id="faq">
+          <FAQSection />
+        </div>
 
         {/* 7. Final Call to Action */}
         <FinalCTA onStart={scrollToDemo} />
