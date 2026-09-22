@@ -2,23 +2,19 @@ import React from 'react';
 import { RotateCcw } from 'lucide-react';
 
 interface HeaderProps {
-  businessName: string;
+  businessName?: string;
   onReset: () => void;
   isLoading: boolean;
   onTryFree?: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ businessName, onReset, isLoading, onTryFree }) => {
+export const Header: React.FC<HeaderProps> = ({ onReset, isLoading, onTryFree }) => {
   return (
     <header className="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md border-b border-neutral-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-8 h-18 flex items-center justify-between">
         {/* Brand Left */}
         <div className="flex items-center gap-3">
           <span className="text-xl font-bold tracking-tight text-neutral-950">JagaUsaha</span>
-          <span className="hidden sm:inline-flex items-center gap-1.5 text-xs text-neutral-500 bg-neutral-50 border border-neutral-200/60 px-2.5 py-0.5 rounded-full">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-            {businessName}
-          </span>
         </div>
 
         {/* Navigation & CTAs */}

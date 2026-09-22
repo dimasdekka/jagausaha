@@ -77,7 +77,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
               Punya rencana belanja berapa minggu ini?
             </h3>
             <p className="text-xs sm:text-sm text-neutral-500">
-              Masukkan nominal rencana belanja untuk melihat proyeksi dampaknya terhadap kas Kopi Teras Barokah.
+              Masukkan nominal rencana belanja untuk melihat proyeksi dampaknya terhadap arus kas usaha Anda.
             </p>
           </div>
 

@@ -38,17 +38,34 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
           </button>
         </div>
 
-        {/* Quiet Metric Dock */}
-        <div className="pt-6 flex items-center justify-center">
-          <div className="inline-flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs text-neutral-600 bg-neutral-50/80 px-8 py-3 rounded-full border border-neutral-100">
-            <div className="flex items-center gap-2">
-              <span className="font-bold text-neutral-950 text-sm tabular-nums">14 Hari</span>
-              <span className="text-neutral-500">deteksi defisit lebih awal</span>
+        {/* Handhold-Style Metrics Display */}
+        <div className="pt-8 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 border-t border-neutral-100 pt-8">
+            <div className="text-center sm:text-left space-y-1">
+              <div className="text-2xl sm:text-3xl font-semibold tracking-tight text-neutral-950 tabular-nums">
+                14 Hari
+              </div>
+              <div className="text-xs text-neutral-500 leading-normal font-normal">
+                Deteksi dini defisit kas sebelum jatuh tempo
+              </div>
             </div>
-            <div className="hidden sm:block h-3.5 w-px bg-neutral-200" />
-            <div className="flex items-center gap-2">
-              <span className="font-bold text-neutral-950 text-sm tabular-nums">0 Beban</span>
-              <span className="text-neutral-500">input manual pembukuan</span>
+
+            <div className="text-center sm:text-left space-y-1">
+              <div className="text-2xl sm:text-3xl font-semibold tracking-tight text-neutral-950 tabular-nums">
+                100%
+              </div>
+              <div className="text-xs text-neutral-500 leading-normal font-normal">
+                Kalkulasi matematis deterministik tanpa halusinasi
+              </div>
+            </div>
+
+            <div className="text-center sm:text-left space-y-1">
+              <div className="text-2xl sm:text-3xl font-semibold tracking-tight text-neutral-950 tabular-nums">
+                0 Beban
+              </div>
+              <div className="text-xs text-neutral-500 leading-normal font-normal">
+                Ekstraksi otomatis dari mutasi bank & audio
+              </div>
             </div>
           </div>
         </div>

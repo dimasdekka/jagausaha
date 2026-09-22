@@ -12,7 +12,7 @@ interface PresetScenario {
 }
 
 interface DecisionStudioProps {
-  businessName: string;
+  businessName?: string;
   currentCash: number;
   safeToSpend: number;
   safetyBuffer: number;
@@ -33,7 +33,6 @@ interface DecisionStudioProps {
 }
 
 export const DecisionStudio: React.FC<DecisionStudioProps> = ({
-  businessName,
   currentCash,
   safeToSpend,
   safetyBuffer,
@@ -66,7 +65,7 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
             <span className="h-2.5 w-2.5 rounded-full bg-neutral-300" />
           </div>
           <span className="text-xs font-mono text-neutral-500 pl-2.5 border-l border-neutral-200">
-            jagausaha.app/sandbox — {businessName}
+            jagausaha.app/sandbox
           </span>
         </div>
 
