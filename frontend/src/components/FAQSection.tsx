@@ -31,7 +31,7 @@ export const FAQSection: React.FC = () => {
     <section className="py-20 sm:py-28 border-t border-neutral-100 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-12">
         <div className="text-center space-y-3">
-          <span className="text-xs font-semibold uppercase tracking-wider text-neutral-500 font-mono">
+          <span className="text-xs font-medium text-neutral-500">
             Frequently Asked Questions
           </span>
           <h2 className="font-serif font-extralight text-4xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-[-0.03em] leading-tight">

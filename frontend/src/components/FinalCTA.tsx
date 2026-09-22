@@ -27,7 +27,7 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onStart }) => {
           </button>
         </div>
 
-        <p className="text-xs text-neutral-400 font-mono">
+        <p className="text-xs text-neutral-400 font-normal">
           Ditenagai oleh Hermes Agent Runtime di IDwebhost CloudBaik VPS.
         </p>
       </div>

@@ -38,12 +38,12 @@ const CustomTooltip = ({ active, payload, label }: any) => {
         <div className="flex items-center justify-between gap-4 pb-2 mb-2 border-b border-neutral-100">
           <span className="font-semibold text-neutral-900">{label}</span>
           {isDeficit && (
-            <span className="text-[10px] font-mono font-medium text-rose-700 bg-rose-50 border border-rose-200 px-1.5 py-0.5 rounded">
+            <span className="text-[10px] font-medium text-rose-700 bg-rose-50 border border-rose-200 px-1.5 py-0.5 rounded">
               Defisit Kas
             </span>
           )}
         </div>
-        <div className="space-y-1.5 font-mono text-[11px]">
+        <div className="space-y-1.5 text-[11px]">
           <div className="flex items-center justify-between gap-4">
             <span className="text-neutral-500">Kas Normal</span>
             <span className="font-medium text-neutral-900 tabular-nums">
@@ -233,7 +233,7 @@ export const BoardUIAreaChart: React.FC<BoardUIAreaChartProps> = ({
           )}
         </div>
 
-        <span className="text-neutral-400 text-xs font-mono whitespace-nowrap">
+        <span className="text-neutral-400 text-xs whitespace-nowrap">
           Jadwal: Gaji H+6 · Tempo H+11
         </span>
       </div>

@@ -11,14 +11,14 @@ export const ActionFeed: React.FC<ActionFeedProps> = ({ onOpenNudge, onOpenNegot
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-neutral-100 pb-4">
         <div>
-          <span className="text-xs font-semibold uppercase tracking-wider text-neutral-500 font-mono">
+          <span className="text-xs font-medium text-neutral-500">
             Proactive Decision Guard
           </span>
           <h3 className="font-serif font-extralight text-3xl sm:text-4xl text-neutral-950 tracking-[-0.02em] mt-1">
             Tindakan Taktis Terjadwal
           </h3>
         </div>
-        <span className="text-xs text-neutral-400 font-mono">
+        <span className="text-xs text-neutral-500">
           3 Tindakan Perlu Perhatian
         </span>
       </div>
@@ -28,10 +28,10 @@ export const ActionFeed: React.FC<ActionFeedProps> = ({ onOpenNudge, onOpenNegot
         <div className="rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm flex flex-col justify-between hover:border-neutral-300 transition-all">
           <div>
             <div className="flex items-center justify-between mb-3">
-              <span className="text-[10px] font-mono font-medium px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-800 border border-amber-200">
+              <span className="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-800 border border-amber-200">
                 Piutang Cair H+16
               </span>
-              <span className="text-xs font-semibold text-neutral-950 font-mono">Rp 5.000.000</span>
+              <span className="text-xs font-semibold text-neutral-950 tabular-nums">Rp 5.000.000</span>
             </div>
             <h4 className="text-sm font-semibold text-neutral-900 mb-1.5 tracking-tight">
               Katering Kantor Pemda (Pak Budi)
@@ -53,10 +53,10 @@ export const ActionFeed: React.FC<ActionFeedProps> = ({ onOpenNudge, onOpenNegot
         <div className="rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm flex flex-col justify-between hover:border-neutral-300 transition-all">
           <div>
             <div className="flex items-center justify-between mb-3">
-              <span className="text-[10px] font-mono font-medium px-2.5 py-0.5 rounded-full bg-teal-50 text-teal-800 border border-teal-200">
+              <span className="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-teal-50 text-teal-800 border border-teal-200">
                 Tempo Supplier H+11
               </span>
-              <span className="text-xs font-semibold text-neutral-950 font-mono">Rp 4.200.000</span>
+              <span className="text-xs font-semibold text-neutral-950 tabular-nums">Rp 4.200.000</span>
             </div>
             <h4 className="text-sm font-semibold text-neutral-900 mb-1.5 tracking-tight">
               Toko Berkah (Biji Kopi Arabika)
@@ -78,10 +78,10 @@ export const ActionFeed: React.FC<ActionFeedProps> = ({ onOpenNudge, onOpenNegot
         <div className="rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm flex flex-col justify-between hover:border-neutral-300 transition-all">
           <div>
             <div className="flex items-center justify-between mb-3">
-              <span className="text-[10px] font-mono font-medium px-2.5 py-0.5 rounded-full bg-rose-50 text-rose-800 border border-rose-200">
+              <span className="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-rose-50 text-rose-800 border border-rose-200">
                 Bocor Halus Terdeteksi
               </span>
-              <span className="text-xs font-semibold text-rose-600 font-mono">Rp 1.850.000/bln</span>
+              <span className="text-xs font-semibold text-rose-600 tabular-nums">Rp 1.850.000/bln</span>
             </div>
             <h4 className="text-sm font-semibold text-neutral-900 mb-1.5 tracking-tight">
               Prive Pribadi di Rekening Bisnis

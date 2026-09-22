@@ -25,7 +25,7 @@ export const DecisionIntelligenceCard: React.FC<DecisionIntelligenceProps> = ({
       {/* Header */}
       <div className="space-y-3">
         <div className="flex items-center justify-between">
-          <span className="text-xs font-semibold uppercase tracking-wider text-neutral-500 font-mono">
+          <span className="text-xs font-medium text-neutral-500">
             Analisis Keputusan
           </span>
           <span

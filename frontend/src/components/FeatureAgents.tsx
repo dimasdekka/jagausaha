@@ -7,7 +7,7 @@ export const FeatureAgents: React.FC = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-14">
         {/* Handhold Section Header */}
         <div className="text-center space-y-4 max-w-2xl mx-auto">
-          <span className="text-xs font-semibold uppercase tracking-wider text-neutral-500 font-mono">
+          <span className="text-xs font-medium text-neutral-500">
             Autonomous Multi-Agent Architecture
           </span>
           <h2 className="font-serif font-extralight text-4xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-[-0.03em] leading-tight">
@@ -27,7 +27,7 @@ export const FeatureAgents: React.FC = () => {
                 <Eye className="h-4 w-4" />
               </div>
               <div>
-                <span className="text-[11px] font-mono font-medium text-neutral-500 uppercase tracking-wider">
+                <span className="text-[11px] font-medium text-neutral-500">
                   Inbound Perception Agent
                 </span>
                 <h3 className="text-lg font-semibold text-neutral-950 tracking-tight mt-1">
@@ -61,7 +61,7 @@ export const FeatureAgents: React.FC = () => {
                 <Cpu className="h-4 w-4" />
               </div>
               <div>
-                <span className="text-[11px] font-mono font-medium text-neutral-500 uppercase tracking-wider">
+                <span className="text-[11px] font-medium text-neutral-500">
                   Simulation & Sandbox Agent
                 </span>
                 <h3 className="text-lg font-semibold text-neutral-950 tracking-tight mt-1">
@@ -95,7 +95,7 @@ export const FeatureAgents: React.FC = () => {
                 <MessageSquare className="h-4 w-4" />
               </div>
               <div>
-                <span className="text-[11px] font-mono font-medium text-neutral-500 uppercase tracking-wider">
+                <span className="text-[11px] font-medium text-neutral-500">
                   Action & Negotiation Agent
                 </span>
                 <h3 className="text-lg font-semibold text-neutral-950 tracking-tight mt-1">

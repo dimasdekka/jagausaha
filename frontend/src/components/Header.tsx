@@ -171,7 +171,7 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Right Actions Dock */}
         <div className="flex items-center gap-2 sm:gap-3">
           {/* Cloud VPS Status Pill */}
-          <div className="hidden lg:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200/60 text-[11px] text-neutral-600 font-mono">
+          <div className="hidden lg:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200/60 text-[11px] text-neutral-600 font-medium">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
             <span>CloudBaik VPS</span>
           </div>
@@ -255,7 +255,7 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
 
             <div className="pt-3 border-t border-neutral-100 flex items-center justify-between text-xs text-neutral-500">
-              <span className="flex items-center gap-1.5 font-mono">
+              <span className="flex items-center gap-1.5 font-medium">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
                 IDwebhost CloudBaik VPS
               </span>

@@ -21,7 +21,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-16">
         {/* Step-by-Step Title */}
         <div className="text-center space-y-4 max-w-2xl mx-auto">
-          <span className="text-xs font-semibold uppercase tracking-wider text-neutral-500 font-mono">
+          <span className="text-xs font-medium text-neutral-500">
             Get started in minutes
           </span>
           <h2 className="font-serif font-extralight text-4xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-[-0.03em] leading-tight">
@@ -83,13 +83,13 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
 
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto">
             <div className="relative w-full">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-xs font-bold text-neutral-400 font-mono">Rp</span>
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-xs font-semibold text-neutral-400">Rp</span>
               <input
                 type="text"
                 value={customNominal}
                 onChange={(e) => setCustomNominal(e.target.value)}
                 placeholder="10.000.000"
-                className="w-full rounded-full border border-neutral-300 bg-neutral-50 pl-10 pr-4 py-3 text-xs sm:text-sm font-semibold text-neutral-950 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:bg-white transition-all font-mono"
+                className="w-full rounded-full border border-neutral-300 bg-neutral-50 pl-10 pr-4 py-3 text-xs sm:text-sm font-semibold text-neutral-950 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:bg-white transition-all tabular-nums"
               />
             </div>
             <button
