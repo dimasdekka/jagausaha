@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ArrowRight, CheckCircle2, Zap } from 'lucide-react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Input } from './motion/input';
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface HowItWorksProps {
   onSimulateCustom: (amount: number) => void;
@@ -9,6 +13,60 @@ interface HowItWorksProps {
 export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
   const [customNominal, setCustomNominal] = useState('10.000.000');
   const [errorMsg, setErrorMsg] = useState<string | undefined>();
+
+  const sectionRef = useRef<HTMLElement>(null);
+  const stepsRef = useRef<HTMLDivElement>(null);
+  const simCardRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      if (stepsRef.current) {
+        ScrollTrigger.create({
+          trigger: stepsRef.current,
+          start: 'top 92%',
+          once: true,
+          onEnter: () => {
+            gsap.fromTo(
+              stepsRef.current!.children,
+              { y: 24, opacity: 0 },
+              {
+                y: 0,
+                opacity: 1,
+                duration: 0.5,
+                stagger: 0.08,
+                ease: 'power2.out',
+                clearProps: 'all',
+              }
+            );
+          },
+        });
+      }
+
+      if (simCardRef.current) {
+        ScrollTrigger.create({
+          trigger: simCardRef.current,
+          start: 'top 92%',
+          once: true,
+          onEnter: () => {
+            gsap.fromTo(
+              simCardRef.current!,
+              { y: 24, opacity: 0, scale: 0.98 },
+              {
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 0.6,
+                ease: 'power2.out',
+                clearProps: 'all',
+              }
+            );
+          },
+        });
+      }
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
 
   const cleanNum = parseFloat(customNominal.replace(/[^0-9]/g, ''));
   const isValid = !isNaN(cleanNum) && cleanNum > 0;
@@ -35,7 +93,11 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
   };
 
   return (
-    <section id="how-it-works" className="py-20 sm:py-28 border-t border-neutral-100 bg-neutral-50/50 scroll-mt-20">
+    <section
+      ref={sectionRef}
+      id="how-it-works"
+      className="py-20 sm:py-28 border-t border-neutral-100 bg-neutral-50/50 scroll-mt-20"
+    >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-16">
         {/* Step-by-Step Title */}
         <div className="text-center space-y-4 max-w-2xl mx-auto">
@@ -50,8 +112,8 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
           </p>
         </div>
 
-        {/* 3 Step Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* 3 Step Cards with GSAP Stagger */}
+        <div ref={stepsRef} className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="rounded-2xl border border-neutral-200/90 bg-white p-7 shadow-sm space-y-3">
             <span className="text-3xl font-extralight font-serif text-neutral-400">1.</span>
             <h3 className="text-base font-semibold text-neutral-950 tracking-tight">
@@ -68,7 +130,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
               Hitung "Duit Dingin"
             </h3>
             <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-              Mesin matematis DLMM memisahkan dana terikat (gaji & tempo) dari saldo kas yang benar-benar aman dibelanjakan.
+              Algoritma DLMM otomatis memisahkan saldo bank Anda dari komitmen gaji dan tempo supplier 14 hari ke depan.
             </p>
           </div>
 
@@ -78,13 +140,16 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
               Simulasi Sebelum Belanja
             </h3>
             <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-              Sebelum beli mesin atau ambil promo grosir supplier, uji keputusan di sandbox untuk memastikan kas tidak minus.
+              Ketik atau ucapkan rencana belanja modal untuk melihat apakah uang kas Anda aman hingga hari gajian berikutnya.
             </p>
           </div>
         </div>
 
-        {/* Handhold-Style Interactive Generator Card */}
-        <div className="rounded-3xl border border-neutral-200/90 bg-white p-8 sm:p-12 shadow-handhold text-center max-w-3xl mx-auto space-y-6">
+        {/* Custom Spend Simulator Input Box */}
+        <div
+          ref={simCardRef}
+          className="rounded-3xl border border-neutral-200/90 bg-white p-8 sm:p-10 shadow-sm text-center space-y-6 max-w-2xl mx-auto"
+        >
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-neutral-100 text-xs font-medium text-neutral-700 border border-neutral-200/60">
             <Zap className="h-3.5 w-3.5 text-neutral-900" />
             <span>Simulasi Instan Bisnis Anda</span>
@@ -114,7 +179,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
             </div>
             <button
               type="submit"
-              className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white px-6 h-11 text-xs sm:text-sm font-medium transition-all shadow-sm active:scale-95 mb-4 sm:mb-0"
+              className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white px-6 h-11 text-xs sm:text-sm font-medium transition-all shadow-sm active:scale-95 mb-4 sm:mb-0 cursor-pointer"
             >
               <span>Uji Simulasi</span>
               <ArrowRight className="h-4 w-4" />
@@ -133,7 +198,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
             </div>
             <div className="flex items-center gap-1.5">
               <CheckCircle2 className="h-4 w-4 text-emerald-600" />
-              <span>100% Deterministik Tanpa Halusinasi</span>
+              <span>100% Data Anda Aman</span>
             </div>
           </div>
         </div>

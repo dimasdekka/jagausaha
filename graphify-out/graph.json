@@ -160,30 +160,56 @@
       "source_location": "L19"
     },
     {
-      "id": "frontend_src_components_herosection_herosectionprops",
-      "label": "HeroSectionProps",
+      "id": "frontend_src_components_terminaldrawer_terminaldrawerprops",
+      "label": "TerminalDrawerProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 10,
-      "community_name": "button.tsx",
+      "community_name": "ease.ts",
       "file_type": "code",
-      "norm_label": "herosectionprops",
-      "source_file": "frontend/src/components/HeroSection.tsx",
+      "norm_label": "terminaldrawerprops",
+      "source_file": "frontend/src/components/TerminalDrawer.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "frontend_src_components_whatsappmodal_whatsappmodalprops",
+      "label": "WhatsAppModalProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "whatsappmodalprops",
+      "source_file": "frontend/src/components/WhatsAppModal.tsx",
       "source_location": "L6"
     },
     {
-      "id": "frontend_src_components_motion_button_motionbuttonprops",
-      "label": "MotionButtonProps",
+      "id": "frontend_src_components_agentthinking_agentthinkingprops",
+      "label": "AgentThinkingProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 10,
-      "community_name": "button.tsx",
+      "community": 14,
+      "community_name": "lucide-react",
       "file_type": "code",
-      "norm_label": "motionbuttonprops",
-      "source_file": "frontend/src/components/motion/button.tsx",
-      "source_location": "L9"
+      "norm_label": "agentthinkingprops",
+      "source_file": "frontend/src/components/AgentThinking.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "frontend_src_components_agentthinking_thinkingstep",
+      "label": "ThinkingStep",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "lucide-react",
+      "file_type": "code",
+      "norm_label": "thinkingstep",
+      "source_file": "frontend/src/components/AgentThinking.tsx",
+      "source_location": "L4"
     },
     {
       "id": "frontend_src_components_boarduiagentthinking_boarduiagentthinkingprops",
@@ -192,7 +218,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 14,
-      "community_name": "BoardUIAgentThinking.tsx",
+      "community_name": "lucide-react",
       "file_type": "code",
       "norm_label": "boarduiagentthinkingprops",
       "source_file": "frontend/src/components/BoardUIAgentThinking.tsx",
@@ -205,7 +231,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 14,
-      "community_name": "BoardUIAgentThinking.tsx",
+      "community_name": "lucide-react",
       "file_type": "code",
       "norm_label": "thinkingstep",
       "source_file": "frontend/src/components/BoardUIAgentThinking.tsx",
@@ -248,7 +274,7 @@
       "file_type": "code",
       "norm_label": "howitworksprops",
       "source_file": "frontend/src/components/HowItWorks.tsx",
-      "source_location": "L5"
+      "source_location": "L9"
     },
     {
       "id": "frontend_src_components_motion_input_inputclassnames",
@@ -290,19 +316,6 @@
       "source_location": "L18"
     },
     {
-      "id": "frontend_src_components_ui_matrix_orb_matrixorbprops",
-      "label": "MatrixOrbProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "matrixorbprops",
-      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
-      "source_location": "L6"
-    },
-    {
       "id": "frontend_src_components_ui_matrix_orb_matrixorbstate",
       "label": "MatrixOrbState",
       "_callable": true,
@@ -322,10 +335,49 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "CountUp.tsx",
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "countupprops",
       "source_file": "frontend/src/components/reactbits/CountUp.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "frontend_src_components_reactbits_shinytext_shinytextprops",
+      "label": "ShinyTextProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "shinytextprops",
+      "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "frontend_src_components_reactbits_spotlightcard_spotlightcardprops",
+      "label": "SpotlightCardProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "spotlightcardprops",
+      "source_file": "frontend/src/components/reactbits/SpotlightCard.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "frontend_src_components_trajectorychart_trajectorychartprops",
+      "label": "TrajectoryChartProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "trajectorychartprops",
+      "source_file": "frontend/src/components/TrajectoryChart.tsx",
       "source_location": "L3"
     },
     {
@@ -335,7 +387,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 32,
-      "community_name": "ease.ts",
+      "community_name": "Header.tsx",
       "file_type": "code",
       "norm_label": "headerprops",
       "source_file": "frontend/src/components/Header.tsx",
@@ -348,76 +400,50 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 32,
-      "community_name": "ease.ts",
+      "community_name": "Header.tsx",
       "file_type": "code",
       "norm_label": "sharedlayoutbgprops",
       "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
       "source_location": "L27"
     },
     {
-      "id": "frontend_src_components_agentthinking_agentthinkingprops",
-      "label": "AgentThinkingProps",
+      "id": "frontend_src_components_ui_matrix_orb_matrixorbprops",
+      "label": "MatrixOrbProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
+      "community_name": "matrix-orb.tsx",
       "file_type": "code",
-      "norm_label": "agentthinkingprops",
-      "source_file": "frontend/src/components/AgentThinking.tsx",
-      "source_location": "L11"
+      "norm_label": "matrixorbprops",
+      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
+      "source_location": "L6"
     },
     {
-      "id": "frontend_src_components_agentthinking_thinkingstep",
-      "label": "ThinkingStep",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
-      "file_type": "code",
-      "norm_label": "thinkingstep",
-      "source_file": "frontend/src/components/AgentThinking.tsx",
-      "source_location": "L4"
-    },
-    {
-      "id": "frontend_src_components_trajectorychart_trajectorychartprops",
-      "label": "TrajectoryChartProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "TrajectoryChart.tsx",
-      "file_type": "code",
-      "norm_label": "trajectorychartprops",
-      "source_file": "frontend/src/components/TrajectoryChart.tsx",
-      "source_location": "L3"
-    },
-    {
-      "id": "frontend_src_components_actionfeed_actionfeedprops",
-      "label": "ActionFeedProps",
+      "id": "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
+      "label": "DecisionIntelligenceProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 40,
-      "community_name": "tilt-card.tsx",
+      "community_name": "DecisionIntelligenceCard.tsx",
       "file_type": "code",
-      "norm_label": "actionfeedprops",
-      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "norm_label": "decisionintelligenceprops",
+      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
       "source_location": "L7"
     },
     {
-      "id": "frontend_src_components_motion_tilt_card_tiltcardprops",
-      "label": "TiltCardProps",
+      "id": "frontend_src_components_motion_number_animatednumberprops",
+      "label": "AnimatedNumberProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 40,
-      "community_name": "tilt-card.tsx",
+      "community_name": "DecisionIntelligenceCard.tsx",
       "file_type": "code",
-      "norm_label": "tiltcardprops",
-      "source_file": "frontend/src/components/motion/tilt-card.tsx",
-      "source_location": "L16"
+      "norm_label": "animatednumberprops",
+      "source_file": "frontend/src/components/motion/number.tsx",
+      "source_location": "L9"
     },
     {
       "id": "frontend_src_components_pulsecards_pulsecardsprops",
@@ -426,24 +452,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 40,
-      "community_name": "tilt-card.tsx",
+      "community_name": "DecisionIntelligenceCard.tsx",
       "file_type": "code",
       "norm_label": "pulsecardsprops",
       "source_file": "frontend/src/components/PulseCards.tsx",
-      "source_location": "L7"
-    },
-    {
-      "id": "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
-      "label": "DecisionIntelligenceProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "animated-badge.tsx",
-      "file_type": "code",
-      "norm_label": "decisionintelligenceprops",
-      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
-      "source_location": "L7"
+      "source_location": "L6"
     },
     {
       "id": "frontend_src_components_motion_animated_badge_animatedbadgeprops",
@@ -485,30 +498,30 @@
       "source_location": "L24"
     },
     {
-      "id": "frontend_src_components_motion_number_animatednumberprops",
-      "label": "AnimatedNumberProps",
+      "id": "frontend_src_components_boarduiareachart_boarduiareachartprops",
+      "label": "BoardUIAreaChartProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 41,
-      "community_name": "animated-badge.tsx",
+      "community": 44,
+      "community_name": "cn",
       "file_type": "code",
-      "norm_label": "animatednumberprops",
-      "source_file": "frontend/src/components/motion/number.tsx",
-      "source_location": "L9"
+      "norm_label": "boarduiareachartprops",
+      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
+      "source_location": "L22"
     },
     {
-      "id": "frontend_src_components_terminaldrawer_terminaldrawerprops",
-      "label": "TerminalDrawerProps",
+      "id": "frontend_src_components_boarduiareachart_chartdatapoint",
+      "label": "ChartDataPoint",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 41,
-      "community_name": "animated-badge.tsx",
+      "community": 44,
+      "community_name": "cn",
       "file_type": "code",
-      "norm_label": "terminaldrawerprops",
-      "source_file": "frontend/src/components/TerminalDrawer.tsx",
-      "source_location": "L7"
+      "norm_label": "chartdatapoint",
+      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
+      "source_location": "L15"
     },
     {
       "id": "frontend_src_components_finalcta_finalctaprops",
@@ -517,7 +530,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 44,
-      "community_name": "react",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "finalctaprops",
       "source_file": "frontend/src/components/FinalCTA.tsx",
@@ -530,37 +543,102 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 44,
-      "community_name": "react",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "expandingarrowbuttonprops",
       "source_file": "frontend/src/components/motion/expanding-arrow-button.tsx",
       "source_location": "L16"
     },
     {
-      "id": "frontend_src_components_reactbits_shinytext_shinytextprops",
-      "label": "ShinyTextProps",
+      "id": "frontend_src_components_motion_marquee_marqueeprops",
+      "label": "MarqueeProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 44,
-      "community_name": "react",
+      "community_name": "cn",
       "file_type": "code",
-      "norm_label": "shinytextprops",
-      "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
-      "source_location": "L3"
+      "norm_label": "marqueeprops",
+      "source_file": "frontend/src/components/motion/marquee.tsx",
+      "source_location": "L4"
     },
     {
-      "id": "frontend_src_components_reactbits_spotlightcard_spotlightcardprops",
-      "label": "SpotlightCardProps",
+      "id": "frontend_src_components_motion_tabs_tabscontexttype",
+      "label": "TabsContextType",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 44,
-      "community_name": "react",
+      "community_name": "cn",
       "file_type": "code",
-      "norm_label": "spotlightcardprops",
-      "source_file": "frontend/src/components/reactbits/SpotlightCard.tsx",
-      "source_location": "L3"
+      "norm_label": "tabscontexttype",
+      "source_file": "frontend/src/components/motion/tabs.tsx",
+      "source_location": "L15"
+    },
+    {
+      "id": "frontend_src_components_motion_tabs_variant",
+      "label": "Variant",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "variant",
+      "source_file": "frontend/src/components/motion/tabs.tsx",
+      "source_location": "L13"
+    },
+    {
+      "id": "frontend_src_components_motion_text_reveal_splitmode",
+      "label": "SplitMode",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "splitmode",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "frontend_src_components_motion_text_reveal_textrevealprops",
+      "label": "TextRevealProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "textrevealprops",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "frontend_src_components_motion_text_reveal_wordgroup",
+      "label": "WordGroup",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "wordgroup",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L28"
+    },
+    {
+      "id": "frontend_src_components_motion_tilt_card_tiltcardprops",
+      "label": "TiltCardProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "tiltcardprops",
+      "source_file": "frontend/src/components/motion/tilt-card.tsx",
+      "source_location": "L16"
     },
     {
       "id": "frontend_src_app_pulsedata",
@@ -576,17 +654,43 @@
       "source_location": "L15"
     },
     {
-      "id": "frontend_src_components_whatsappmodal_whatsappmodalprops",
-      "label": "WhatsAppModalProps",
+      "id": "frontend_src_components_actionfeed_actionfeedprops",
+      "label": "ActionFeedProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 45,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "whatsappmodalprops",
-      "source_file": "frontend/src/components/WhatsAppModal.tsx",
-      "source_location": "L6"
+      "norm_label": "actionfeedprops",
+      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "frontend_src_components_herosection_herosectionprops",
+      "label": "HeroSectionProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "herosectionprops",
+      "source_file": "frontend/src/components/HeroSection.tsx",
+      "source_location": "L10"
+    },
+    {
+      "id": "frontend_src_components_motion_button_motionbuttonprops",
+      "label": "MotionButtonProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "motionbuttonprops",
+      "source_file": "frontend/src/components/motion/button.tsx",
+      "source_location": "L9"
     },
     {
       "id": "frontend_src_components_reactbits_blurtext_blurtextprops",
@@ -615,39 +719,13 @@
       "source_location": "L4"
     },
     {
-      "id": "frontend_src_components_boarduiareachart_boarduiareachartprops",
-      "label": "BoardUIAreaChartProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "boarduiareachartprops",
-      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
-      "source_location": "L22"
-    },
-    {
-      "id": "frontend_src_components_boarduiareachart_chartdatapoint",
-      "label": "ChartDataPoint",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "chartdatapoint",
-      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
-      "source_location": "L15"
-    },
-    {
       "id": "frontend_src_components_motion_animated_toast_stack_animatedtoast",
       "label": "AnimatedToast",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "animatedtoast",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
@@ -660,7 +738,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "animatedtoastaction",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
@@ -673,7 +751,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "animatedtoaststackprops",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
@@ -686,7 +764,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "toastclassnames",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
@@ -699,7 +777,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "toastinput",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
@@ -712,7 +790,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "toastposition",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
@@ -725,7 +803,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "toaststatus",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
@@ -738,50 +816,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "useanimatedtoaststackoptions",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
       "source_location": "L89"
-    },
-    {
-      "id": "frontend_src_components_motion_marquee_marqueeprops",
-      "label": "MarqueeProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "marqueeprops",
-      "source_file": "frontend/src/components/motion/marquee.tsx",
-      "source_location": "L4"
-    },
-    {
-      "id": "frontend_src_components_motion_tabs_tabscontexttype",
-      "label": "TabsContextType",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "tabscontexttype",
-      "source_file": "frontend/src/components/motion/tabs.tsx",
-      "source_location": "L15"
-    },
-    {
-      "id": "frontend_src_components_motion_tabs_variant",
-      "label": "Variant",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "variant",
-      "source_file": "frontend/src/components/motion/tabs.tsx",
-      "source_location": "L13"
     },
     {
       "id": "api_server_get_business_pulse",
@@ -1072,16 +1111,40 @@
       "source_location": "L90"
     },
     {
-      "id": "frontend_src_components_herosection_herosection",
-      "label": "HeroSection()",
+      "id": "frontend_src_components_faqsection_faqsection",
+      "label": "FAQSection()",
       "_callable": true,
       "_origin": "ast",
       "community": 10,
-      "community_name": "button.tsx",
+      "community_name": "ease.ts",
       "file_type": "code",
-      "norm_label": "herosection()",
-      "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L10"
+      "norm_label": "faqsection()",
+      "source_file": "frontend/src/components/FAQSection.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "frontend_src_components_terminaldrawer_terminaldrawer",
+      "label": "TerminalDrawer()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "terminaldrawer()",
+      "source_file": "frontend/src/components/TerminalDrawer.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "frontend_src_components_whatsappmodal_whatsappmodal",
+      "label": "WhatsAppModal()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "whatsappmodal()",
+      "source_file": "frontend/src/components/WhatsAppModal.tsx",
+      "source_location": "L16"
     },
     {
       "id": "frontend_src_components_boarduiagentthinking_boarduiagentthinking",
@@ -1089,7 +1152,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 14,
-      "community_name": "BoardUIAgentThinking.tsx",
+      "community_name": "lucide-react",
       "file_type": "code",
       "norm_label": "boarduiagentthinking()",
       "source_file": "frontend/src/components/BoardUIAgentThinking.tsx",
@@ -1101,7 +1164,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 14,
-      "community_name": "BoardUIAgentThinking.tsx",
+      "community_name": "lucide-react",
       "file_type": "code",
       "norm_label": "dotwaveindicator()",
       "source_file": "frontend/src/components/BoardUIAgentThinking.tsx",
@@ -1113,35 +1176,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 14,
-      "community_name": "BoardUIAgentThinking.tsx",
+      "community_name": "lucide-react",
       "file_type": "code",
       "norm_label": "elapsedtimer()",
       "source_file": "frontend/src/components/BoardUIAgentThinking.tsx",
       "source_location": "L46"
-    },
-    {
-      "id": "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
-      "label": "DecisionIntelligenceCard()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "decisionintelligencecard()",
-      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
-      "source_location": "L17"
-    },
-    {
-      "id": "frontend_src_components_decisionstudio_decisionstudio",
-      "label": "DecisionStudio()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "decisionstudio()",
-      "source_file": "frontend/src/components/DecisionStudio.tsx",
-      "source_location": "L39"
     },
     {
       "id": "frontend_src_components_howitworks_howitworks",
@@ -1153,7 +1192,7 @@
       "file_type": "code",
       "norm_label": "howitworks()",
       "source_file": "frontend/src/components/HowItWorks.tsx",
-      "source_location": "L9"
+      "source_location": "L13"
     },
     {
       "id": "frontend_src_components_simulationchatmodal_simulationchatmodal",
@@ -1168,203 +1207,23 @@
       "source_location": "L32"
     },
     {
-      "id": "frontend_src_components_ui_matrix_orb_envelope",
-      "label": "envelope()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "envelope()",
-      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
-      "source_location": "L42"
-    },
-    {
-      "id": "frontend_src_components_ui_matrix_orb_intensityof",
-      "label": "intensityOf()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "intensityof()",
-      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
-      "source_location": "L48"
-    },
-    {
-      "id": "frontend_src_components_ui_matrix_orb_matrixorb",
-      "label": "MatrixOrb()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "matrixorb()",
-      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
-      "source_location": "L88"
-    },
-    {
-      "id": "frontend_src_components_ui_matrix_orb_subscribetozoom",
-      "label": "subscribeToZoom()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "subscribetozoom()",
-      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
-      "source_location": "L75"
-    },
-    {
-      "id": "frontend_src_components_ui_matrix_orb_usedevicepixelratio",
-      "label": "useDevicePixelRatio()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "usedevicepixelratio()",
-      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
-      "source_location": "L80"
-    },
-    {
       "id": "frontend_src_components_reactbits_countup_countup",
       "label": "CountUp()",
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "CountUp.tsx",
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "countup()",
       "source_file": "frontend/src/components/reactbits/CountUp.tsx",
       "source_location": "L14"
     },
     {
-      "id": "frontend_src_components_header_header",
-      "label": "Header()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "header()",
-      "source_file": "frontend/src/components/Header.tsx",
-      "source_location": "L27"
-    },
-    {
-      "id": "frontend_src_components_agentthinking_agentthinking",
-      "label": "AgentThinking()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
-      "file_type": "code",
-      "norm_label": "agentthinking()",
-      "source_file": "frontend/src/components/AgentThinking.tsx",
-      "source_location": "L16"
-    },
-    {
-      "id": "frontend_src_components_trajectorychart_trajectorychart",
-      "label": "TrajectoryChart()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "TrajectoryChart.tsx",
-      "file_type": "code",
-      "norm_label": "trajectorychart()",
-      "source_file": "frontend/src/components/TrajectoryChart.tsx",
-      "source_location": "L12"
-    },
-    {
-      "id": "frontend_src_components_actionfeed_actionfeed",
-      "label": "ActionFeed()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "tilt-card.tsx",
-      "file_type": "code",
-      "norm_label": "actionfeed()",
-      "source_file": "frontend/src/components/ActionFeed.tsx",
-      "source_location": "L12"
-    },
-    {
-      "id": "frontend_src_components_motion_tilt_card_tiltcard",
-      "label": "TiltCard()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "tilt-card.tsx",
-      "file_type": "code",
-      "norm_label": "tiltcard()",
-      "source_file": "frontend/src/components/motion/tilt-card.tsx",
-      "source_location": "L23"
-    },
-    {
-      "id": "frontend_src_components_pulsecards_pulsecards",
-      "label": "PulseCards()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "tilt-card.tsx",
-      "file_type": "code",
-      "norm_label": "pulsecards()",
-      "source_file": "frontend/src/components/PulseCards.tsx",
-      "source_location": "L15"
-    },
-    {
-      "id": "frontend_src_components_motion_animated_badge_animatedbadge",
-      "label": "AnimatedBadge()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "animated-badge.tsx",
-      "file_type": "code",
-      "norm_label": "animatedbadge()",
-      "source_file": "frontend/src/components/motion/animated-badge.tsx",
-      "source_location": "L125"
-    },
-    {
-      "id": "frontend_src_components_motion_number_animatednumber",
-      "label": "AnimatedNumber()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "animated-badge.tsx",
-      "file_type": "code",
-      "norm_label": "animatednumber()",
-      "source_file": "frontend/src/components/motion/number.tsx",
-      "source_location": "L17"
-    },
-    {
-      "id": "frontend_src_components_terminaldrawer_terminaldrawer",
-      "label": "TerminalDrawer()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "animated-badge.tsx",
-      "file_type": "code",
-      "norm_label": "terminaldrawer()",
-      "source_file": "frontend/src/components/TerminalDrawer.tsx",
-      "source_location": "L11"
-    },
-    {
-      "id": "frontend_src_components_motion_expanding_arrow_button_dottedchevron",
-      "label": "DottedChevron()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "dottedchevron()",
-      "source_file": "frontend/src/components/motion/expanding-arrow-button.tsx",
-      "source_location": "L25"
-    },
-    {
       "id": "frontend_src_components_reactbits_shinytext_shinytext",
       "label": "ShinyText()",
       "_callable": true,
       "_origin": "ast",
-      "community": 44,
+      "community": 3,
       "community_name": "react",
       "file_type": "code",
       "norm_label": "shinytext()",
@@ -1376,7 +1235,7 @@
       "label": "SpotlightCard()",
       "_callable": true,
       "_origin": "ast",
-      "community": 44,
+      "community": 3,
       "community_name": "react",
       "file_type": "code",
       "norm_label": "spotlightcard()",
@@ -1384,28 +1243,328 @@
       "source_location": "L9"
     },
     {
+      "id": "frontend_src_components_trajectorychart_trajectorychart",
+      "label": "TrajectoryChart()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "trajectorychart()",
+      "source_file": "frontend/src/components/TrajectoryChart.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "frontend_src_components_header_header",
+      "label": "Header()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "Header.tsx",
+      "file_type": "code",
+      "norm_label": "header()",
+      "source_file": "frontend/src/components/Header.tsx",
+      "source_location": "L27"
+    },
+    {
+      "id": "frontend_src_components_agentthinking_agentthinking",
+      "label": "AgentThinking()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "matrix-orb.tsx",
+      "file_type": "code",
+      "norm_label": "agentthinking()",
+      "source_file": "frontend/src/components/AgentThinking.tsx",
+      "source_location": "L16"
+    },
+    {
+      "id": "frontend_src_components_ui_matrix_orb_envelope",
+      "label": "envelope()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "matrix-orb.tsx",
+      "file_type": "code",
+      "norm_label": "envelope()",
+      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
+      "source_location": "L42"
+    },
+    {
+      "id": "frontend_src_components_ui_matrix_orb_intensityof",
+      "label": "intensityOf()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "matrix-orb.tsx",
+      "file_type": "code",
+      "norm_label": "intensityof()",
+      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
+      "source_location": "L48"
+    },
+    {
+      "id": "frontend_src_components_ui_matrix_orb_matrixorb",
+      "label": "MatrixOrb()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "matrix-orb.tsx",
+      "file_type": "code",
+      "norm_label": "matrixorb()",
+      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
+      "source_location": "L88"
+    },
+    {
+      "id": "frontend_src_components_ui_matrix_orb_subscribetozoom",
+      "label": "subscribeToZoom()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "matrix-orb.tsx",
+      "file_type": "code",
+      "norm_label": "subscribetozoom()",
+      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
+      "source_location": "L75"
+    },
+    {
+      "id": "frontend_src_components_ui_matrix_orb_usedevicepixelratio",
+      "label": "useDevicePixelRatio()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "matrix-orb.tsx",
+      "file_type": "code",
+      "norm_label": "usedevicepixelratio()",
+      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
+      "source_location": "L80"
+    },
+    {
+      "id": "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
+      "label": "DecisionIntelligenceCard()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "DecisionIntelligenceCard.tsx",
+      "file_type": "code",
+      "norm_label": "decisionintelligencecard()",
+      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "frontend_src_components_motion_animated_badge_animatedbadge",
+      "label": "AnimatedBadge()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "DecisionIntelligenceCard.tsx",
+      "file_type": "code",
+      "norm_label": "animatedbadge()",
+      "source_file": "frontend/src/components/motion/animated-badge.tsx",
+      "source_location": "L125"
+    },
+    {
+      "id": "frontend_src_components_motion_number_animatednumber",
+      "label": "AnimatedNumber()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "DecisionIntelligenceCard.tsx",
+      "file_type": "code",
+      "norm_label": "animatednumber()",
+      "source_file": "frontend/src/components/motion/number.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "frontend_src_components_pulsecards_pulsecards",
+      "label": "PulseCards()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "DecisionIntelligenceCard.tsx",
+      "file_type": "code",
+      "norm_label": "pulsecards()",
+      "source_file": "frontend/src/components/PulseCards.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "frontend_src_components_boarduiareachart_boarduiareachart",
+      "label": "BoardUIAreaChart()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "boarduiareachart()",
+      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
+      "source_location": "L31"
+    },
+    {
+      "id": "frontend_src_components_finalcta_finalcta",
+      "label": "FinalCTA()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "finalcta()",
+      "source_file": "frontend/src/components/FinalCTA.tsx",
+      "source_location": "L8"
+    },
+    {
+      "id": "frontend_src_components_motion_expanding_arrow_button_dottedchevron",
+      "label": "DottedChevron()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "dottedchevron()",
+      "source_file": "frontend/src/components/motion/expanding-arrow-button.tsx",
+      "source_location": "L25"
+    },
+    {
+      "id": "frontend_src_components_motion_marquee_marquee",
+      "label": "Marquee()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "marquee()",
+      "source_file": "frontend/src/components/motion/marquee.tsx",
+      "source_location": "L14"
+    },
+    {
+      "id": "frontend_src_components_motion_tabs_tabs",
+      "label": "Tabs()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "tabs()",
+      "source_file": "frontend/src/components/motion/tabs.tsx",
+      "source_location": "L30"
+    },
+    {
+      "id": "frontend_src_components_motion_tabs_tabslist",
+      "label": "TabsList()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "tabslist()",
+      "source_file": "frontend/src/components/motion/tabs.tsx",
+      "source_location": "L70"
+    },
+    {
+      "id": "frontend_src_components_motion_tabs_tabstrigger",
+      "label": "TabsTrigger()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "tabstrigger()",
+      "source_file": "frontend/src/components/motion/tabs.tsx",
+      "source_location": "L93"
+    },
+    {
+      "id": "frontend_src_components_motion_tabs_usetabscontext",
+      "label": "useTabsContext()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "usetabscontext()",
+      "source_file": "frontend/src/components/motion/tabs.tsx",
+      "source_location": "L24"
+    },
+    {
+      "id": "frontend_src_components_motion_text_reveal_textreveal",
+      "label": "TextReveal()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "textreveal()",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L38"
+    },
+    {
+      "id": "frontend_src_components_motion_text_reveal_towordgroups",
+      "label": "toWordGroups()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "towordgroups()",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L30"
+    },
+    {
+      "id": "frontend_src_components_motion_tilt_card_tiltcard",
+      "label": "TiltCard()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "tiltcard()",
+      "source_file": "frontend/src/components/motion/tilt-card.tsx",
+      "source_location": "L23"
+    },
+    {
       "id": "frontend_src_lib_hooks_use_hover_capable_usehovercapable",
       "label": "useHoverCapable()",
       "_callable": true,
       "_origin": "ast",
       "community": 44,
-      "community_name": "react",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "usehovercapable()",
       "source_file": "frontend/src/lib/hooks/use-hover-capable.ts",
       "source_location": "L3"
     },
     {
-      "id": "frontend_src_components_faqsection_faqsection",
-      "label": "FAQSection()",
+      "id": "frontend_src_lib_utils_cn",
+      "label": "cn()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "cn()",
+      "source_file": "frontend/src/lib/utils.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "frontend_src_components_actionfeed_actionfeed",
+      "label": "ActionFeed()",
       "_callable": true,
       "_origin": "ast",
       "community": 45,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "faqsection()",
-      "source_file": "frontend/src/components/FAQSection.tsx",
-      "source_location": "L6"
+      "norm_label": "actionfeed()",
+      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "source_location": "L16"
+    },
+    {
+      "id": "frontend_src_components_decisionstudio_decisionstudio",
+      "label": "DecisionStudio()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "decisionstudio()",
+      "source_file": "frontend/src/components/DecisionStudio.tsx",
+      "source_location": "L39"
     },
     {
       "id": "frontend_src_components_featureagents_featureagents",
@@ -1417,19 +1576,7 @@
       "file_type": "code",
       "norm_label": "featureagents()",
       "source_file": "frontend/src/components/FeatureAgents.tsx",
-      "source_location": "L5"
-    },
-    {
-      "id": "frontend_src_components_finalcta_finalcta",
-      "label": "FinalCTA()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 45,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "finalcta()",
-      "source_file": "frontend/src/components/FinalCTA.tsx",
-      "source_location": "L8"
+      "source_location": "L9"
     },
     {
       "id": "frontend_src_components_footer_footer",
@@ -1444,16 +1591,16 @@
       "source_location": "L3"
     },
     {
-      "id": "frontend_src_components_whatsappmodal_whatsappmodal",
-      "label": "WhatsAppModal()",
+      "id": "frontend_src_components_herosection_herosection",
+      "label": "HeroSection()",
       "_callable": true,
       "_origin": "ast",
       "community": 45,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "whatsappmodal()",
-      "source_file": "frontend/src/components/WhatsAppModal.tsx",
-      "source_location": "L16"
+      "norm_label": "herosection()",
+      "source_file": "frontend/src/components/HeroSection.tsx",
+      "source_location": "L14"
     },
     {
       "id": "frontend_src_components_reactbits_blurtext_blurtext",
@@ -1485,23 +1632,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "app()",
       "source_file": "frontend/src/App.tsx",
       "source_location": "L35"
-    },
-    {
-      "id": "frontend_src_components_boarduiareachart_boarduiareachart",
-      "label": "BoardUIAreaChart()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "boarduiareachart()",
-      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
-      "source_location": "L31"
     },
     {
       "id": "frontend_src_components_motion_animated_toast_stack_animatedtoaststack",
@@ -1509,7 +1644,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "animatedtoaststack()",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
@@ -1521,7 +1656,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "createtoast()",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
@@ -1533,83 +1668,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "useanimatedtoaststack()",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
       "source_location": "L139"
-    },
-    {
-      "id": "frontend_src_components_motion_marquee_marquee",
-      "label": "Marquee()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "marquee()",
-      "source_file": "frontend/src/components/motion/marquee.tsx",
-      "source_location": "L14"
-    },
-    {
-      "id": "frontend_src_components_motion_tabs_tabs",
-      "label": "Tabs()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "tabs()",
-      "source_file": "frontend/src/components/motion/tabs.tsx",
-      "source_location": "L30"
-    },
-    {
-      "id": "frontend_src_components_motion_tabs_tabslist",
-      "label": "TabsList()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "tabslist()",
-      "source_file": "frontend/src/components/motion/tabs.tsx",
-      "source_location": "L70"
-    },
-    {
-      "id": "frontend_src_components_motion_tabs_tabstrigger",
-      "label": "TabsTrigger()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "tabstrigger()",
-      "source_file": "frontend/src/components/motion/tabs.tsx",
-      "source_location": "L93"
-    },
-    {
-      "id": "frontend_src_components_motion_tabs_usetabscontext",
-      "label": "useTabsContext()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "usetabscontext()",
-      "source_file": "frontend/src/components/motion/tabs.tsx",
-      "source_location": "L24"
-    },
-    {
-      "id": "frontend_src_lib_utils_cn",
-      "label": "cn()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "cn()",
-      "source_file": "frontend/src/lib/utils.ts",
-      "source_location": "L4"
     },
     {
       "id": "api_server",
@@ -2418,48 +2481,125 @@
       "source_location": "L728"
     },
     {
-      "id": "frontend_src_components_herosection",
-      "label": "HeroSection.tsx",
+      "id": "frontend_src_components_faqsection",
+      "label": "FAQSection.tsx",
       "_origin": "ast",
       "community": 10,
-      "community_name": "button.tsx",
+      "community_name": "ease.ts",
       "file_type": "code",
-      "norm_label": "herosection.tsx",
-      "source_file": "frontend/src/components/HeroSection.tsx",
+      "norm_label": "faqsection.tsx",
+      "source_file": "frontend/src/components/FAQSection.tsx",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_motion_button",
-      "label": "button.tsx",
+      "id": "frontend_src_components_terminaldrawer",
+      "label": "TerminalDrawer.tsx",
       "_origin": "ast",
       "community": 10,
-      "community_name": "button.tsx",
+      "community_name": "ease.ts",
       "file_type": "code",
-      "norm_label": "button.tsx",
-      "source_file": "frontend/src/components/motion/button.tsx",
+      "norm_label": "terminaldrawer.tsx",
+      "source_file": "frontend/src/components/TerminalDrawer.tsx",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_motion_button_motionbutton",
-      "label": "MotionButton",
+      "id": "frontend_src_components_whatsappmodal",
+      "label": "WhatsAppModal.tsx",
       "_origin": "ast",
       "community": 10,
-      "community_name": "button.tsx",
+      "community_name": "ease.ts",
       "file_type": "code",
-      "norm_label": "motionbutton",
-      "source_file": "frontend/src/components/motion/button.tsx",
-      "source_location": "L17"
+      "norm_label": "whatsappmodal.tsx",
+      "source_file": "frontend/src/components/WhatsAppModal.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_lib_ease",
+      "label": "ease.ts",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "ease.ts",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_lib_ease_ease_drawer",
+      "label": "EASE_DRAWER",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "ease_drawer",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "frontend_src_lib_ease_ease_in_out",
+      "label": "EASE_IN_OUT",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "ease_in_out",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "frontend_src_lib_ease_ease_out",
+      "label": "EASE_OUT",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "ease_out",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L2"
+    },
+    {
+      "id": "frontend_src_lib_ease_ease_out_css",
+      "label": "EASE_OUT_CSS",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "ease_out_css",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "frontend_src_lib_ease_spring_glide",
+      "label": "SPRING_GLIDE",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "spring_glide",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L42"
     },
     {
       "id": "frontend_src_lib_ease_spring_press",
       "label": "SPRING_PRESS",
       "_origin": "ast",
       "community": 10,
-      "community_name": "button.tsx",
+      "community_name": "ease.ts",
       "file_type": "code",
       "norm_label": "spring_press",
       "source_file": "frontend/src/lib/ease.ts",
       "source_location": "L8"
+    },
+    {
+      "id": "frontend_src_lib_ease_spring_swap",
+      "label": "SPRING_SWAP",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "spring_swap",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L15"
     },
     {
       "id": "jagausaha_strategy_spec_6_fifteen_unconventional_out_of_the_box_agent_capabilities",
@@ -2840,15 +2980,37 @@
       "source_location": "L2"
     },
     {
+      "id": "frontend_src_components_agentthinking",
+      "label": "AgentThinking.tsx",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "lucide-react",
+      "file_type": "code",
+      "norm_label": "agentthinking.tsx",
+      "source_file": "frontend/src/components/AgentThinking.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "frontend_src_components_boarduiagentthinking",
       "label": "BoardUIAgentThinking.tsx",
       "_origin": "ast",
       "community": 14,
-      "community_name": "BoardUIAgentThinking.tsx",
+      "community_name": "lucide-react",
       "file_type": "code",
       "norm_label": "boarduiagentthinking.tsx",
       "source_file": "frontend/src/components/BoardUIAgentThinking.tsx",
       "source_location": "L1"
+    },
+    {
+      "id": "ref_lucide_react",
+      "label": "lucide-react",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "lucide-react",
+      "file_type": "concept",
+      "norm_label": "lucide-react",
+      "source_file": "frontend/package.json",
+      "source_location": "L16"
     },
     {
       "id": "claude_skills_graphify_references_query",
@@ -2976,72 +3138,6 @@
       "norm_label": "simulationchatmodal.tsx",
       "source_file": "frontend/src/components/SimulationChatModal.tsx",
       "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_ui_matrix_orb",
-      "label": "matrix-orb.tsx",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "matrix-orb.tsx",
-      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_ui_matrix_orb_labels",
-      "label": "LABELS",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "labels",
-      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
-      "source_location": "L18"
-    },
-    {
-      "id": "frontend_src_components_ui_matrix_orb_orbiters",
-      "label": "ORBITERS",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "orbiters",
-      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
-      "source_location": "L36"
-    },
-    {
-      "id": "frontend_src_components_ui_matrix_orb_scale",
-      "label": "SCALE",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "scale",
-      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
-      "source_location": "L24"
-    },
-    {
-      "id": "frontend_src_components_ui_matrix_orb_states",
-      "label": "STATES",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "states",
-      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
-      "source_location": "L16"
-    },
-    {
-      "id": "frontend_src_lib_ease_spring_panel",
-      "label": "SPRING_PANEL",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "spring_panel",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L22"
     },
     {
       "id": "claude_skills_graphify_references_add_watch",
@@ -3191,6 +3287,17 @@
       "source_location": "L14"
     },
     {
+      "id": "frontend_package_dependencies_gsap",
+      "label": "gsap",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "gsap",
+      "source_file": "frontend/package.json",
+      "source_location": "L15"
+    },
+    {
       "id": "frontend_package_dependencies_lucide_react",
       "label": "lucide-react",
       "_origin": "ast",
@@ -3199,7 +3306,7 @@
       "file_type": "code",
       "norm_label": "lucide-react",
       "source_file": "frontend/package.json",
-      "source_location": "L15"
+      "source_location": "L16"
     },
     {
       "id": "frontend_package_dependencies_react",
@@ -3210,7 +3317,7 @@
       "file_type": "code",
       "norm_label": "react",
       "source_file": "frontend/package.json",
-      "source_location": "L16"
+      "source_location": "L17"
     },
     {
       "id": "frontend_package_dependencies_react_dom",
@@ -3221,7 +3328,7 @@
       "file_type": "code",
       "norm_label": "react-dom",
       "source_file": "frontend/package.json",
-      "source_location": "L17"
+      "source_location": "L18"
     },
     {
       "id": "frontend_package_dependencies_recharts",
@@ -3232,7 +3339,7 @@
       "file_type": "code",
       "norm_label": "recharts",
       "source_file": "frontend/package.json",
-      "source_location": "L18"
+      "source_location": "L19"
     },
     {
       "id": "frontend_package_dependencies_tailwind_merge",
@@ -3243,7 +3350,128 @@
       "file_type": "code",
       "norm_label": "tailwind-merge",
       "source_file": "frontend/package.json",
-      "source_location": "L19"
+      "source_location": "L20"
+    },
+    {
+      "id": "frontend_package_devdependencies",
+      "label": "devDependencies",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "devdependencies",
+      "source_file": "frontend/package.json",
+      "source_location": "L22"
+    },
+    {
+      "id": "frontend_package_devdependencies_autoprefixer",
+      "label": "autoprefixer",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "autoprefixer",
+      "source_file": "frontend/package.json",
+      "source_location": "L27"
+    },
+    {
+      "id": "frontend_package_devdependencies_oxlint",
+      "label": "oxlint",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "oxlint",
+      "source_file": "frontend/package.json",
+      "source_location": "L28"
+    },
+    {
+      "id": "frontend_package_devdependencies_postcss",
+      "label": "postcss",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "postcss",
+      "source_file": "frontend/package.json",
+      "source_location": "L29"
+    },
+    {
+      "id": "frontend_package_devdependencies_tailwindcss",
+      "label": "tailwindcss",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "tailwindcss",
+      "source_file": "frontend/package.json",
+      "source_location": "L30"
+    },
+    {
+      "id": "frontend_package_devdependencies_types_node",
+      "label": "@types/node",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "@types/node",
+      "source_file": "frontend/package.json",
+      "source_location": "L23"
+    },
+    {
+      "id": "frontend_package_devdependencies_types_react",
+      "label": "@types/react",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "@types/react",
+      "source_file": "frontend/package.json",
+      "source_location": "L24"
+    },
+    {
+      "id": "frontend_package_devdependencies_types_react_dom",
+      "label": "@types/react-dom",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "@types/react-dom",
+      "source_file": "frontend/package.json",
+      "source_location": "L25"
+    },
+    {
+      "id": "frontend_package_devdependencies_typescript",
+      "label": "typescript",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "typescript",
+      "source_file": "frontend/package.json",
+      "source_location": "L31"
+    },
+    {
+      "id": "frontend_package_devdependencies_vite",
+      "label": "vite",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "vite",
+      "source_file": "frontend/package.json",
+      "source_location": "L32"
+    },
+    {
+      "id": "frontend_package_devdependencies_vitejs_plugin_react",
+      "label": "@vitejs/plugin-react",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "@vitejs/plugin-react",
+      "source_file": "frontend/package.json",
+      "source_location": "L26"
     },
     {
       "id": "frontend_package_name",
@@ -3345,17 +3573,6 @@
       "source_location": "L4"
     },
     {
-      "id": "frontend_src_lib_utils",
-      "label": "utils.ts",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "utils.ts",
-      "source_file": "frontend/src/lib/utils.ts",
-      "source_location": "L1"
-    },
-    {
       "id": "frontend_vite_config",
       "label": "vite.config.ts",
       "_origin": "ast",
@@ -3375,18 +3592,7 @@
       "file_type": "concept",
       "norm_label": "autoprefixer",
       "source_file": "frontend/package.json",
-      "source_location": "L26"
-    },
-    {
-      "id": "ref_clsx",
-      "label": "clsx",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "concept",
-      "norm_label": "clsx",
-      "source_file": "frontend/package.json",
-      "source_location": "L13"
+      "source_location": "L27"
     },
     {
       "id": "ref_oxlint",
@@ -3397,7 +3603,7 @@
       "file_type": "concept",
       "norm_label": "oxlint",
       "source_file": "frontend/package.json",
-      "source_location": "L27"
+      "source_location": "L28"
     },
     {
       "id": "ref_postcss",
@@ -3408,18 +3614,7 @@
       "file_type": "concept",
       "norm_label": "postcss",
       "source_file": "frontend/package.json",
-      "source_location": "L28"
-    },
-    {
-      "id": "ref_tailwind_merge",
-      "label": "tailwind-merge",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "concept",
-      "norm_label": "tailwind-merge",
-      "source_file": "frontend/package.json",
-      "source_location": "L19"
+      "source_location": "L29"
     },
     {
       "id": "ref_tailwindcss",
@@ -3430,7 +3625,7 @@
       "file_type": "concept",
       "norm_label": "tailwindcss",
       "source_file": "frontend/package.json",
-      "source_location": "L29"
+      "source_location": "L30"
     },
     {
       "id": "ref_types_node",
@@ -3441,7 +3636,7 @@
       "file_type": "concept",
       "norm_label": "@types/node",
       "source_file": "frontend/package.json",
-      "source_location": "L22"
+      "source_location": "L23"
     },
     {
       "id": "ref_types_react",
@@ -3452,7 +3647,7 @@
       "file_type": "concept",
       "norm_label": "@types/react",
       "source_file": "frontend/package.json",
-      "source_location": "L23"
+      "source_location": "L24"
     },
     {
       "id": "ref_types_react_dom",
@@ -3463,7 +3658,7 @@
       "file_type": "concept",
       "norm_label": "@types/react-dom",
       "source_file": "frontend/package.json",
-      "source_location": "L24"
+      "source_location": "L25"
     },
     {
       "id": "ref_typescript",
@@ -3474,7 +3669,7 @@
       "file_type": "concept",
       "norm_label": "typescript",
       "source_file": "frontend/package.json",
-      "source_location": "L30"
+      "source_location": "L31"
     },
     {
       "id": "ref_vite",
@@ -3485,7 +3680,7 @@
       "file_type": "concept",
       "norm_label": "vite",
       "source_file": "frontend/package.json",
-      "source_location": "L31"
+      "source_location": "L32"
     },
     {
       "id": "ref_vitejs_plugin_react",
@@ -3496,7 +3691,7 @@
       "file_type": "concept",
       "norm_label": "@vitejs/plugin-react",
       "source_file": "frontend/package.json",
-      "source_location": "L25"
+      "source_location": "L26"
     },
     {
       "id": "core_init",
@@ -3828,11 +4023,55 @@
       "label": "CountUp.tsx",
       "_origin": "ast",
       "community": 3,
-      "community_name": "CountUp.tsx",
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "countup.tsx",
       "source_file": "frontend/src/components/reactbits/CountUp.tsx",
       "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_reactbits_shinytext",
+      "label": "ShinyText.tsx",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "shinytext.tsx",
+      "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_reactbits_spotlightcard",
+      "label": "SpotlightCard.tsx",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "spotlightcard.tsx",
+      "source_file": "frontend/src/components/reactbits/SpotlightCard.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_trajectorychart",
+      "label": "TrajectoryChart.tsx",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "trajectorychart.tsx",
+      "source_file": "frontend/src/components/TrajectoryChart.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "react",
+      "file_type": "concept",
+      "norm_label": "react",
+      "source_file": "frontend/package.json",
+      "source_location": "L17"
     },
     {
       "id": "claude_claude",
@@ -3887,7 +4126,7 @@
       "label": "Header.tsx",
       "_origin": "ast",
       "community": 32,
-      "community_name": "ease.ts",
+      "community_name": "Header.tsx",
       "file_type": "code",
       "norm_label": "header.tsx",
       "source_file": "frontend/src/components/Header.tsx",
@@ -3898,7 +4137,7 @@
       "label": "shared-layout-bg.tsx",
       "_origin": "ast",
       "community": 32,
-      "community_name": "ease.ts",
+      "community_name": "Header.tsx",
       "file_type": "code",
       "norm_label": "shared-layout-bg.tsx",
       "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
@@ -3909,7 +4148,7 @@
       "label": "reducedVariants",
       "_origin": "ast",
       "community": 32,
-      "community_name": "ease.ts",
+      "community_name": "Header.tsx",
       "file_type": "code",
       "norm_label": "reducedvariants",
       "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
@@ -3920,7 +4159,7 @@
       "label": "SharedLayoutBg",
       "_origin": "ast",
       "community": 32,
-      "community_name": "ease.ts",
+      "community_name": "Header.tsx",
       "file_type": "code",
       "norm_label": "sharedlayoutbg",
       "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
@@ -3931,106 +4170,95 @@
       "label": "variants",
       "_origin": "ast",
       "community": 32,
-      "community_name": "ease.ts",
+      "community_name": "Header.tsx",
       "file_type": "code",
       "norm_label": "variants",
       "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
       "source_location": "L35"
     },
     {
-      "id": "frontend_src_lib_ease",
-      "label": "ease.ts",
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "ease.ts",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_lib_ease_ease_drawer",
-      "label": "EASE_DRAWER",
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "ease_drawer",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L4"
-    },
-    {
-      "id": "frontend_src_lib_ease_ease_in_out",
-      "label": "EASE_IN_OUT",
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "ease_in_out",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L3"
-    },
-    {
-      "id": "frontend_src_lib_ease_ease_out_css",
-      "label": "EASE_OUT_CSS",
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "ease_out_css",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L6"
-    },
-    {
-      "id": "frontend_src_lib_ease_spring_glide",
-      "label": "SPRING_GLIDE",
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "spring_glide",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L42"
-    },
-    {
       "id": "frontend_src_lib_ease_spring_layout",
       "label": "SPRING_LAYOUT",
       "_origin": "ast",
       "community": 32,
-      "community_name": "ease.ts",
+      "community_name": "Header.tsx",
       "file_type": "code",
       "norm_label": "spring_layout",
       "source_file": "frontend/src/lib/ease.ts",
       "source_location": "L29"
     },
     {
-      "id": "frontend_src_lib_ease_spring_swap",
-      "label": "SPRING_SWAP",
+      "id": "frontend_src_lib_ease_spring_panel",
+      "label": "SPRING_PANEL",
       "_origin": "ast",
       "community": 32,
-      "community_name": "ease.ts",
+      "community_name": "Header.tsx",
       "file_type": "code",
-      "norm_label": "spring_swap",
+      "norm_label": "spring_panel",
       "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L15"
+      "source_location": "L22"
     },
     {
-      "id": "frontend_src_components_agentthinking",
-      "label": "AgentThinking.tsx",
+      "id": "frontend_src_components_ui_matrix_orb",
+      "label": "matrix-orb.tsx",
       "_origin": "ast",
       "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
+      "community_name": "matrix-orb.tsx",
       "file_type": "code",
-      "norm_label": "agentthinking.tsx",
-      "source_file": "frontend/src/components/AgentThinking.tsx",
+      "norm_label": "matrix-orb.tsx",
+      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
       "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_ui_matrix_orb_labels",
+      "label": "LABELS",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "matrix-orb.tsx",
+      "file_type": "code",
+      "norm_label": "labels",
+      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
+      "source_location": "L18"
+    },
+    {
+      "id": "frontend_src_components_ui_matrix_orb_orbiters",
+      "label": "ORBITERS",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "matrix-orb.tsx",
+      "file_type": "code",
+      "norm_label": "orbiters",
+      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
+      "source_location": "L36"
+    },
+    {
+      "id": "frontend_src_components_ui_matrix_orb_scale",
+      "label": "SCALE",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "matrix-orb.tsx",
+      "file_type": "code",
+      "norm_label": "scale",
+      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
+      "source_location": "L24"
+    },
+    {
+      "id": "frontend_src_components_ui_matrix_orb_states",
+      "label": "STATES",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "matrix-orb.tsx",
+      "file_type": "code",
+      "norm_label": "states",
+      "source_file": "frontend/src/components/ui/matrix-orb.tsx",
+      "source_location": "L16"
     },
     {
       "id": "readme",
       "label": "README.md",
       "_origin": "ast",
       "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
+      "community_name": "matrix-orb.tsx",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "readme.md",
@@ -4042,7 +4270,7 @@
       "label": "1. Menjalankan Backend & Dashboard (Production Ready)",
       "_origin": "ast",
       "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
+      "community_name": "matrix-orb.tsx",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "1. menjalankan backend & dashboard (production ready)",
@@ -4054,7 +4282,7 @@
       "label": "2. Menjalankan Interactive Terminal Demo (Khusus Video Demo Hackathon)",
       "_origin": "ast",
       "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
+      "community_name": "matrix-orb.tsx",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "2. menjalankan interactive terminal demo (khusus video demo hackathon)",
@@ -4066,7 +4294,7 @@
       "label": "3. Menjalankan Frontend Development Mode (Hot-Reload)",
       "_origin": "ast",
       "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
+      "community_name": "matrix-orb.tsx",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "3. menjalankan frontend development mode (hot-reload)",
@@ -4078,7 +4306,7 @@
       "label": "A. Video Demo (5\u201310 Menit)",
       "_origin": "ast",
       "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
+      "community_name": "matrix-orb.tsx",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "a. video demo (5\u201310 menit)",
@@ -4090,7 +4318,7 @@
       "label": "\ud83c\udfd7\ufe0f Arsitektur Sistem",
       "_origin": "ast",
       "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
+      "community_name": "matrix-orb.tsx",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83c\udfd7\ufe0f arsitektur sistem",
@@ -4102,7 +4330,7 @@
       "label": "B. Artikel Publikasi (Min. 800 Kata)",
       "_origin": "ast",
       "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
+      "community_name": "matrix-orb.tsx",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "b. artikel publikasi (min. 800 kata)",
@@ -4114,7 +4342,7 @@
       "label": "\u2601\ufe0f Deployment ke CloudBaik VPS",
       "_origin": "ast",
       "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
+      "community_name": "matrix-orb.tsx",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\u2601\ufe0f deployment ke cloudbaik vps",
@@ -4126,7 +4354,7 @@
       "label": "JagaUsaha \ud83d\udee1\ufe0f",
       "_origin": "ast",
       "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
+      "community_name": "matrix-orb.tsx",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "jagausaha \ud83d\udee1\ufe0f",
@@ -4138,7 +4366,7 @@
       "label": "\ud83c\udfa8 Komponen UI & Desain Eksternal",
       "_origin": "ast",
       "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
+      "community_name": "matrix-orb.tsx",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83c\udfa8 komponen ui & desain eksternal",
@@ -4150,7 +4378,7 @@
       "label": "\ud83d\udccb Panduan Deliverables AI HackFest 2026",
       "_origin": "ast",
       "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
+      "community_name": "matrix-orb.tsx",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83d\udccb panduan deliverables ai hackfest 2026",
@@ -4162,7 +4390,7 @@
       "label": "\ud83d\ude80 Panduan Menjalankan (Quick Start)",
       "_origin": "ast",
       "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
+      "community_name": "matrix-orb.tsx",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83d\ude80 panduan menjalankan (quick start)",
@@ -4174,23 +4402,12 @@
       "label": "\ud83d\udccc Ringkasan Masalah & Solusi",
       "_origin": "ast",
       "community": 33,
-      "community_name": "JagaUsaha \ud83d\udee1\ufe0f",
+      "community_name": "matrix-orb.tsx",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83d\udccc ringkasan masalah & solusi",
       "source_file": "README.md",
       "source_location": "L8"
-    },
-    {
-      "id": "frontend_src_components_trajectorychart",
-      "label": "TrajectoryChart.tsx",
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "TrajectoryChart.tsx",
-      "file_type": "code",
-      "norm_label": "trajectorychart.tsx",
-      "source_file": "frontend/src/components/TrajectoryChart.tsx",
-      "source_location": "L1"
     },
     {
       "id": "frontend_tsconfig_app",
@@ -4413,25 +4630,25 @@
       "source_location": "L25"
     },
     {
-      "id": "frontend_src_components_actionfeed",
-      "label": "ActionFeed.tsx",
+      "id": "frontend_src_components_decisionintelligencecard",
+      "label": "DecisionIntelligenceCard.tsx",
       "_origin": "ast",
       "community": 40,
-      "community_name": "tilt-card.tsx",
+      "community_name": "DecisionIntelligenceCard.tsx",
       "file_type": "code",
-      "norm_label": "actionfeed.tsx",
-      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "norm_label": "decisionintelligencecard.tsx",
+      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_motion_tilt_card",
-      "label": "tilt-card.tsx",
+      "id": "frontend_src_components_motion_number",
+      "label": "number.tsx",
       "_origin": "ast",
       "community": 40,
-      "community_name": "tilt-card.tsx",
+      "community_name": "DecisionIntelligenceCard.tsx",
       "file_type": "code",
-      "norm_label": "tilt-card.tsx",
-      "source_file": "frontend/src/components/motion/tilt-card.tsx",
+      "norm_label": "number.tsx",
+      "source_file": "frontend/src/components/motion/number.tsx",
       "source_location": "L1"
     },
     {
@@ -4439,32 +4656,10 @@
       "label": "PulseCards.tsx",
       "_origin": "ast",
       "community": 40,
-      "community_name": "tilt-card.tsx",
+      "community_name": "DecisionIntelligenceCard.tsx",
       "file_type": "code",
       "norm_label": "pulsecards.tsx",
       "source_file": "frontend/src/components/PulseCards.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_lib_ease_spring_mouse",
-      "label": "SPRING_MOUSE",
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "tilt-card.tsx",
-      "file_type": "code",
-      "norm_label": "spring_mouse",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L36"
-    },
-    {
-      "id": "frontend_src_components_decisionintelligencecard",
-      "label": "DecisionIntelligenceCard.tsx",
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "animated-badge.tsx",
-      "file_type": "code",
-      "norm_label": "decisionintelligencecard.tsx",
-      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
       "source_location": "L1"
     },
     {
@@ -4545,55 +4740,44 @@
       "source_location": "L105"
     },
     {
-      "id": "frontend_src_components_motion_number",
-      "label": "number.tsx",
+      "id": "frontend_src_components_boarduiareachart",
+      "label": "BoardUIAreaChart.tsx",
       "_origin": "ast",
-      "community": 41,
-      "community_name": "animated-badge.tsx",
+      "community": 44,
+      "community_name": "cn",
       "file_type": "code",
-      "norm_label": "number.tsx",
-      "source_file": "frontend/src/components/motion/number.tsx",
+      "norm_label": "boarduiareachart.tsx",
+      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
       "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_terminaldrawer",
-      "label": "TerminalDrawer.tsx",
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "animated-badge.tsx",
-      "file_type": "code",
-      "norm_label": "terminaldrawer.tsx",
-      "source_file": "frontend/src/components/TerminalDrawer.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_lib_ease_ease_out",
-      "label": "EASE_OUT",
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "animated-badge.tsx",
-      "file_type": "code",
-      "norm_label": "ease_out",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L2"
     },
     {
       "id": "frontend_src_components_finalcta",
       "label": "FinalCTA.tsx",
       "_origin": "ast",
       "community": 44,
-      "community_name": "react",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "finalcta.tsx",
       "source_file": "frontend/src/components/FinalCTA.tsx",
       "source_location": "L1"
     },
     {
+      "id": "frontend_src_components_motion_animated_toast_stack_toastitem",
+      "label": "ToastItem",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "toastitem",
+      "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
+      "source_location": "L317"
+    },
+    {
       "id": "frontend_src_components_motion_expanding_arrow_button",
       "label": "expanding-arrow-button.tsx",
       "_origin": "ast",
       "community": 44,
-      "community_name": "react",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "expanding-arrow-button.tsx",
       "source_file": "frontend/src/components/motion/expanding-arrow-button.tsx",
@@ -4604,7 +4788,7 @@
       "label": "ARROW_OPACITY",
       "_origin": "ast",
       "community": 44,
-      "community_name": "react",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "arrow_opacity",
       "source_file": "frontend/src/components/motion/expanding-arrow-button.tsx",
@@ -4615,55 +4799,143 @@
       "label": "ExpandingArrowButton",
       "_origin": "ast",
       "community": 44,
-      "community_name": "react",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "expandingarrowbutton",
       "source_file": "frontend/src/components/motion/expanding-arrow-button.tsx",
       "source_location": "L42"
     },
     {
-      "id": "frontend_src_components_reactbits_shinytext",
-      "label": "ShinyText.tsx",
+      "id": "frontend_src_components_motion_marquee",
+      "label": "marquee.tsx",
       "_origin": "ast",
       "community": 44,
-      "community_name": "react",
+      "community_name": "cn",
       "file_type": "code",
-      "norm_label": "shinytext.tsx",
-      "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
+      "norm_label": "marquee.tsx",
+      "source_file": "frontend/src/components/motion/marquee.tsx",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_reactbits_spotlightcard",
-      "label": "SpotlightCard.tsx",
+      "id": "frontend_src_components_motion_tabs",
+      "label": "tabs.tsx",
       "_origin": "ast",
       "community": 44,
-      "community_name": "react",
+      "community_name": "cn",
       "file_type": "code",
-      "norm_label": "spotlightcard.tsx",
-      "source_file": "frontend/src/components/reactbits/SpotlightCard.tsx",
+      "norm_label": "tabs.tsx",
+      "source_file": "frontend/src/components/motion/tabs.tsx",
       "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_motion_tabs_tabscontext",
+      "label": "TabsContext",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "tabscontext",
+      "source_file": "frontend/src/components/motion/tabs.tsx",
+      "source_location": "L22"
+    },
+    {
+      "id": "frontend_src_components_motion_text_reveal",
+      "label": "text-reveal.tsx",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "text-reveal.tsx",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_motion_text_reveal_default_spring",
+      "label": "DEFAULT_SPRING",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "default_spring",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L26"
+    },
+    {
+      "id": "frontend_src_components_motion_tilt_card",
+      "label": "tilt-card.tsx",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "tilt-card.tsx",
+      "source_file": "frontend/src/components/motion/tilt-card.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_lib_ease_spring_mouse",
+      "label": "SPRING_MOUSE",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "spring_mouse",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L36"
     },
     {
       "id": "frontend_src_lib_hooks_use_hover_capable",
       "label": "use-hover-capable.ts",
       "_origin": "ast",
       "community": 44,
-      "community_name": "react",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "use-hover-capable.ts",
       "source_file": "frontend/src/lib/hooks/use-hover-capable.ts",
       "source_location": "L1"
     },
     {
-      "id": "ref_react",
-      "label": "react",
+      "id": "frontend_src_lib_utils",
+      "label": "utils.ts",
       "_origin": "ast",
       "community": 44,
-      "community_name": "react",
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "utils.ts",
+      "source_file": "frontend/src/lib/utils.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "ref_clsx",
+      "label": "clsx",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
       "file_type": "concept",
-      "norm_label": "react",
+      "norm_label": "clsx",
       "source_file": "frontend/package.json",
-      "source_location": "L16"
+      "source_location": "L13"
+    },
+    {
+      "id": "ref_recharts",
+      "label": "recharts",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "concept",
+      "norm_label": "recharts",
+      "source_file": "frontend/package.json",
+      "source_location": "L19"
+    },
+    {
+      "id": "ref_tailwind_merge",
+      "label": "tailwind-merge",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "concept",
+      "norm_label": "tailwind-merge",
+      "source_file": "frontend/package.json",
+      "source_location": "L20"
     },
     {
       "id": "frontend_src_app",
@@ -4688,14 +4960,14 @@
       "source_location": "L28"
     },
     {
-      "id": "frontend_src_components_faqsection",
-      "label": "FAQSection.tsx",
+      "id": "frontend_src_components_actionfeed",
+      "label": "ActionFeed.tsx",
       "_origin": "ast",
       "community": 45,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "faqsection.tsx",
-      "source_file": "frontend/src/components/FAQSection.tsx",
+      "norm_label": "actionfeed.tsx",
+      "source_file": "frontend/src/components/ActionFeed.tsx",
       "source_location": "L1"
     },
     {
@@ -4721,24 +4993,46 @@
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_whatsappmodal",
-      "label": "WhatsAppModal.tsx",
+      "id": "frontend_src_components_herosection",
+      "label": "HeroSection.tsx",
       "_origin": "ast",
       "community": 45,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "whatsappmodal.tsx",
-      "source_file": "frontend/src/components/WhatsAppModal.tsx",
+      "norm_label": "herosection.tsx",
+      "source_file": "frontend/src/components/HeroSection.tsx",
       "source_location": "L1"
     },
     {
-      "id": "ref_lucide_react",
-      "label": "lucide-react",
+      "id": "frontend_src_components_motion_button",
+      "label": "button.tsx",
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "button.tsx",
+      "source_file": "frontend/src/components/motion/button.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_motion_button_motionbutton",
+      "label": "MotionButton",
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "motionbutton",
+      "source_file": "frontend/src/components/motion/button.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "ref_gsap",
+      "label": "gsap",
       "_origin": "ast",
       "community": 45,
       "community_name": "App.tsx",
       "file_type": "concept",
-      "norm_label": "lucide-react",
+      "norm_label": "gsap",
       "source_file": "frontend/package.json",
       "source_location": "L15"
     },
@@ -4961,127 +5255,6 @@
       "norm_label": "include",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L22"
-    },
-    {
-      "id": "frontend_package_devdependencies",
-      "label": "devDependencies",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "devdependencies",
-      "source_file": "frontend/package.json",
-      "source_location": "L21"
-    },
-    {
-      "id": "frontend_package_devdependencies_autoprefixer",
-      "label": "autoprefixer",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "autoprefixer",
-      "source_file": "frontend/package.json",
-      "source_location": "L26"
-    },
-    {
-      "id": "frontend_package_devdependencies_oxlint",
-      "label": "oxlint",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "oxlint",
-      "source_file": "frontend/package.json",
-      "source_location": "L27"
-    },
-    {
-      "id": "frontend_package_devdependencies_postcss",
-      "label": "postcss",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "postcss",
-      "source_file": "frontend/package.json",
-      "source_location": "L28"
-    },
-    {
-      "id": "frontend_package_devdependencies_tailwindcss",
-      "label": "tailwindcss",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "tailwindcss",
-      "source_file": "frontend/package.json",
-      "source_location": "L29"
-    },
-    {
-      "id": "frontend_package_devdependencies_types_node",
-      "label": "@types/node",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@types/node",
-      "source_file": "frontend/package.json",
-      "source_location": "L22"
-    },
-    {
-      "id": "frontend_package_devdependencies_types_react",
-      "label": "@types/react",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@types/react",
-      "source_file": "frontend/package.json",
-      "source_location": "L23"
-    },
-    {
-      "id": "frontend_package_devdependencies_types_react_dom",
-      "label": "@types/react-dom",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@types/react-dom",
-      "source_file": "frontend/package.json",
-      "source_location": "L24"
-    },
-    {
-      "id": "frontend_package_devdependencies_typescript",
-      "label": "typescript",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "typescript",
-      "source_file": "frontend/package.json",
-      "source_location": "L30"
-    },
-    {
-      "id": "frontend_package_devdependencies_vite",
-      "label": "vite",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "vite",
-      "source_file": "frontend/package.json",
-      "source_location": "L31"
-    },
-    {
-      "id": "frontend_package_devdependencies_vitejs_plugin_react",
-      "label": "@vitejs/plugin-react",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@vitejs/plugin-react",
-      "source_file": "frontend/package.json",
-      "source_location": "L25"
     },
     {
       "id": "claude_skills_graphify_skill",
@@ -5412,22 +5585,11 @@
       "source_location": "L49"
     },
     {
-      "id": "frontend_src_components_boarduiareachart",
-      "label": "BoardUIAreaChart.tsx",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "boarduiareachart.tsx",
-      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "frontend_src_components_motion_animated_toast_stack",
       "label": "animated-toast-stack.tsx",
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "animated-toast-stack.tsx",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
@@ -5438,7 +5600,7 @@
       "label": "POSITION_CLASS",
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "position_class",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
@@ -5449,7 +5611,7 @@
       "label": "STACK_SPRING",
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "stack_spring",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
@@ -5460,7 +5622,7 @@
       "label": "STATUS_CLASS",
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "status_class",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
@@ -5471,62 +5633,18 @@
       "label": "STATUS_ICON",
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "status_icon",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
       "source_location": "L102"
     },
     {
-      "id": "frontend_src_components_motion_animated_toast_stack_toastitem",
-      "label": "ToastItem",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "toastitem",
-      "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
-      "source_location": "L317"
-    },
-    {
-      "id": "frontend_src_components_motion_marquee",
-      "label": "marquee.tsx",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "marquee.tsx",
-      "source_file": "frontend/src/components/motion/marquee.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_motion_tabs",
-      "label": "tabs.tsx",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "tabs.tsx",
-      "source_file": "frontend/src/components/motion/tabs.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_motion_tabs_tabscontext",
-      "label": "TabsContext",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "tabscontext",
-      "source_file": "frontend/src/components/motion/tabs.tsx",
-      "source_location": "L22"
-    },
-    {
       "id": "frontend_src_main",
       "label": "main.tsx",
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "code",
       "norm_label": "main.tsx",
       "source_file": "frontend/src/main.tsx",
@@ -5537,20 +5655,9 @@
       "label": "react-dom",
       "_origin": "ast",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "file_type": "concept",
       "norm_label": "react-dom",
-      "source_file": "frontend/package.json",
-      "source_location": "L17"
-    },
-    {
-      "id": "ref_recharts",
-      "label": "recharts",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "cn",
-      "file_type": "concept",
-      "norm_label": "recharts",
       "source_file": "frontend/package.json",
       "source_location": "L18"
     },
@@ -6027,7 +6134,7 @@
       "label": "frontend_src_index",
       "_origin": "semantic",
       "community": 8,
-      "community_name": "cn",
+      "community_name": "animated-toast-stack.tsx",
       "external": true,
       "file_type": "concept",
       "norm_label": "frontend_src_index",
@@ -6466,6 +6573,30 @@
       "context": "call",
       "source_file": "frontend/src/components/motion/tabs.tsx",
       "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_motion_text_reveal_textreveal",
+      "target": "frontend_src_components_motion_text_reveal_towordgroups",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_motion_text_reveal_textreveal",
+      "target": "frontend_src_lib_utils_cn",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L64",
       "weight": 1.0
     },
     {
@@ -7070,7 +7201,7 @@
     },
     {
       "source": "frontend_package",
-      "target": "ref_lucide_react",
+      "target": "ref_gsap",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7082,7 +7213,7 @@
     },
     {
       "source": "frontend_package",
-      "target": "ref_react",
+      "target": "ref_lucide_react",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7094,7 +7225,7 @@
     },
     {
       "source": "frontend_package",
-      "target": "ref_react_dom",
+      "target": "ref_react",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7106,7 +7237,7 @@
     },
     {
       "source": "frontend_package",
-      "target": "ref_recharts",
+      "target": "ref_react_dom",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7118,7 +7249,7 @@
     },
     {
       "source": "frontend_package",
-      "target": "ref_tailwind_merge",
+      "target": "ref_recharts",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7130,19 +7261,19 @@
     },
     {
       "source": "frontend_package",
-      "target": "ref_types_node",
+      "target": "ref_tailwind_merge",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/package.json",
-      "source_location": "L22",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
       "source": "frontend_package",
-      "target": "ref_types_react",
+      "target": "ref_types_node",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7154,7 +7285,7 @@
     },
     {
       "source": "frontend_package",
-      "target": "ref_types_react_dom",
+      "target": "ref_types_react",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7166,7 +7297,7 @@
     },
     {
       "source": "frontend_package",
-      "target": "ref_vitejs_plugin_react",
+      "target": "ref_types_react_dom",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7178,7 +7309,7 @@
     },
     {
       "source": "frontend_package",
-      "target": "ref_autoprefixer",
+      "target": "ref_vitejs_plugin_react",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7190,7 +7321,7 @@
     },
     {
       "source": "frontend_package",
-      "target": "ref_oxlint",
+      "target": "ref_autoprefixer",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7202,7 +7333,7 @@
     },
     {
       "source": "frontend_package",
-      "target": "ref_postcss",
+      "target": "ref_oxlint",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7214,7 +7345,7 @@
     },
     {
       "source": "frontend_package",
-      "target": "ref_tailwindcss",
+      "target": "ref_postcss",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7226,7 +7357,7 @@
     },
     {
       "source": "frontend_package",
-      "target": "ref_typescript",
+      "target": "ref_tailwindcss",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7238,7 +7369,7 @@
     },
     {
       "source": "frontend_package",
-      "target": "ref_vite",
+      "target": "ref_typescript",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7246,6 +7377,18 @@
       "context": "import",
       "source_file": "frontend/package.json",
       "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_vite",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/package.json",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -7413,7 +7556,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/ActionFeed.tsx",
-      "source_location": "L3",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -7425,7 +7568,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/ActionFeed.tsx",
-      "source_location": "L4",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -7437,7 +7580,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/ActionFeed.tsx",
-      "source_location": "L5",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -7629,7 +7772,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/FeatureAgents.tsx",
-      "source_location": "L3",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -7713,7 +7856,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L3",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -7725,7 +7868,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L4",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -7737,7 +7880,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/HowItWorks.tsx",
-      "source_location": "L3",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -7945,6 +8088,30 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_motion_text_reveal",
+      "target": "frontend_src_lib_ease_ease_out",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_motion_text_reveal",
+      "target": "frontend_src_lib_utils_cn",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_motion_tilt_card",
       "target": "frontend_src_lib_ease_spring_mouse",
       "relation": "imports",
@@ -8002,18 +8169,6 @@
       "context": "import",
       "source_file": "frontend/src/components/PulseCards.tsx",
       "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_pulsecards",
-      "target": "frontend_src_components_motion_tilt_card_tiltcard",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/PulseCards.tsx",
-      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -8642,19 +8797,7 @@
     },
     {
       "source": "frontend_src_components_actionfeed",
-      "target": "frontend_src_components_motion_animated_badge",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/ActionFeed.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_actionfeed",
-      "target": "frontend_src_components_motion_button",
+      "target": "ref_gsap",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8666,7 +8809,7 @@
     },
     {
       "source": "frontend_src_components_actionfeed",
-      "target": "frontend_src_components_motion_tilt_card",
+      "target": "frontend_src_components_motion_animated_badge",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8674,6 +8817,30 @@
       "context": "import",
       "source_file": "frontend/src/components/ActionFeed.tsx",
       "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_actionfeed",
+      "target": "frontend_src_components_motion_button",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_actionfeed",
+      "target": "frontend_src_components_motion_tilt_card",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -9002,6 +9169,18 @@
     },
     {
       "source": "frontend_src_components_featureagents",
+      "target": "ref_gsap",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/FeatureAgents.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_featureagents",
       "target": "frontend_src_components_motion_tilt_card",
       "relation": "imports_from",
       "_origin": "ast",
@@ -9009,7 +9188,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/FeatureAgents.tsx",
-      "source_location": "L3",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -9158,6 +9337,18 @@
     },
     {
       "source": "frontend_src_components_herosection",
+      "target": "ref_gsap",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/HeroSection.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_herosection",
       "target": "frontend_src_components_motion_expanding_arrow_button",
       "relation": "imports_from",
       "_origin": "ast",
@@ -9165,7 +9356,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L3",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -9177,7 +9368,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L4",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -9206,6 +9397,18 @@
     },
     {
       "source": "frontend_src_components_howitworks",
+      "target": "ref_gsap",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/HowItWorks.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_howitworks",
       "target": "frontend_src_components_motion_input",
       "relation": "imports_from",
       "_origin": "ast",
@@ -9213,7 +9416,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/HowItWorks.tsx",
-      "source_location": "L3",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -9638,6 +9841,54 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_motion_text_reveal",
+      "target": "ref_framer_motion",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_motion_text_reveal",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_motion_text_reveal",
+      "target": "frontend_src_lib_ease",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_motion_text_reveal",
+      "target": "frontend_src_lib_utils",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_motion_tilt_card",
       "target": "ref_react",
       "relation": "imports_from",
@@ -9743,18 +9994,6 @@
       "context": "import",
       "source_file": "frontend/src/components/PulseCards.tsx",
       "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_pulsecards",
-      "target": "frontend_src_components_motion_tilt_card",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/PulseCards.tsx",
-      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -11282,7 +11521,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -11353,7 +11592,7 @@
     },
     {
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_lucide_react",
+      "target": "frontend_package_dependencies_gsap",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -11364,7 +11603,7 @@
     },
     {
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react",
+      "target": "frontend_package_dependencies_lucide_react",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -11375,7 +11614,7 @@
     },
     {
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react_dom",
+      "target": "frontend_package_dependencies_react",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -11386,7 +11625,7 @@
     },
     {
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_recharts",
+      "target": "frontend_package_dependencies_react_dom",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -11397,13 +11636,24 @@
     },
     {
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_tailwind_merge",
+      "target": "frontend_package_dependencies_recharts",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/package.json",
       "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_tailwind_merge",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/package.json",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -11414,7 +11664,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -11425,7 +11675,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -11436,7 +11686,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/package.json",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -11447,7 +11697,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/package.json",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -11458,7 +11708,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -11469,7 +11719,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -11480,7 +11730,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -11491,7 +11741,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/package.json",
-      "source_location": "L29",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -11502,7 +11752,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/package.json",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -11513,7 +11763,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -11628,24 +11878,24 @@
     },
     {
       "source": "frontend_src_components_actionfeed",
-      "target": "frontend_src_components_actionfeed_actionfeed",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/components/ActionFeed.tsx",
-      "source_location": "L12",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_actionfeed",
       "target": "frontend_src_components_actionfeed_actionfeedprops",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/ActionFeed.tsx",
-      "source_location": "L7",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_actionfeed",
+      "target": "frontend_src_components_actionfeed_actionfeed",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -11843,7 +12093,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/FeatureAgents.tsx",
-      "source_location": "L5",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -11903,7 +12153,7 @@
     },
     {
       "source": "frontend_src_components_herosection",
-      "target": "frontend_src_components_herosection_herosection",
+      "target": "frontend_src_components_herosection_herosectionprops",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -11914,29 +12164,29 @@
     },
     {
       "source": "frontend_src_components_herosection",
-      "target": "frontend_src_components_herosection_herosectionprops",
+      "target": "frontend_src_components_herosection_herosection",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_howitworks",
-      "target": "frontend_src_components_howitworks_howitworksprops",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/components/HowItWorks.tsx",
-      "source_location": "L5",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
       "source": "frontend_src_components_howitworks",
       "target": "frontend_src_components_howitworks_howitworks",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/HowItWorks.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_howitworks",
+      "target": "frontend_src_components_howitworks_howitworksprops",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -12496,6 +12746,72 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_motion_text_reveal",
+      "target": "frontend_src_components_motion_text_reveal_textrevealprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_motion_text_reveal",
+      "target": "frontend_src_components_motion_text_reveal_default_spring",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_motion_text_reveal",
+      "target": "frontend_src_components_motion_text_reveal_wordgroup",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_motion_text_reveal",
+      "target": "frontend_src_components_motion_text_reveal_towordgroups",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_motion_text_reveal",
+      "target": "frontend_src_components_motion_text_reveal_textreveal",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_motion_text_reveal",
+      "target": "frontend_src_components_motion_text_reveal_splitmode",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_motion_tilt_card",
       "target": "frontend_src_components_motion_tilt_card_tiltcardprops",
       "relation": "contains",
@@ -12525,7 +12841,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/PulseCards.tsx",
-      "source_location": "L15",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -12536,7 +12852,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/PulseCards.tsx",
-      "source_location": "L7",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -14819,5 +15135,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8360743214b2457f6210dce0b3502964403352b3"
+  "built_at_commit": "bc4a00f21089b1a9215ab42ab4245666dd5341e5"
 }

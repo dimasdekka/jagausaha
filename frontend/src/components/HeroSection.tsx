@@ -1,19 +1,54 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Play } from 'lucide-react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ExpandingArrowButton } from './motion/expanding-arrow-button';
 import { MotionButton } from './motion/button';
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface HeroSectionProps {
   onScrollToDemo: () => void;
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
+  const heroRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // GSAP ScrollTrigger: Smooth gentle scrub parallax as user scrolls into the sandbox
+      if (heroRef.current) {
+        gsap.to(heroRef.current, {
+          scrollTrigger: {
+            trigger: heroRef.current,
+            start: 'top top',
+            end: 'bottom top',
+            scrub: 1,
+          },
+          y: 40,
+          opacity: 0.88,
+          scale: 0.98,
+          ease: 'none',
+        });
+      }
+    }, heroRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="relative w-full pt-16 pb-12 sm:pt-24 sm:pb-16 overflow-hidden">
+    <section
+      ref={heroRef}
+      className="relative w-full pt-16 pb-12 sm:pt-24 sm:pb-16 overflow-hidden will-change-transform"
+    >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-7">
-        {/* Headline */}
-        <h1 className="font-serif font-extralight text-5xl sm:text-7xl lg:text-[80px] leading-[1.04] tracking-[-0.03em] text-neutral-950 max-w-3xl mx-auto text-balance">
-          Ketahui <span className="italic font-normal">keamanan arus kas</span> sebelum uang keluar
+        {/* Animated Editorial Headline with Living Shimmer Effect */}
+        <h1 className="font-serif font-extralight text-5xl sm:text-7xl lg:text-[80px] leading-[1.04] tracking-[-0.03em] text-neutral-950 max-w-3xl mx-auto text-balance select-none">
+          Ketahui{' '}
+          <span className="italic font-normal animate-text-shimmer drop-shadow-2xs">
+            keamanan arus kas
+          </span>{' '}
+          sebelum uang keluar
         </h1>
 
         {/* Subtitle */}

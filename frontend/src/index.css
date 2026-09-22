@@ -33,6 +33,31 @@ body {
   animation: marquee linear infinite;
 }
 
+@keyframes text-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animate-text-shimmer {
+  background: linear-gradient(
+    115deg,
+    #0a0a0a 15%,
+    #047857 38%,
+    #10b981 50%,
+    #047857 62%,
+    #0a0a0a 85%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: text-shimmer 6s ease-in-out infinite;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 5px;

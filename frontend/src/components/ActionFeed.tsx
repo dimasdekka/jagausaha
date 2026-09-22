@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ArrowRight, MessageSquare, AlertCircle } from 'lucide-react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { AnimatedBadge } from './motion/animated-badge';
 import { MotionButton } from './motion/button';
 import { TiltCard } from './motion/tilt-card';
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface ActionFeedProps {
   onOpenNudge: (debtor: string, amount: number) => void;
@@ -10,8 +14,39 @@ interface ActionFeedProps {
 }
 
 export const ActionFeed: React.FC<ActionFeedProps> = ({ onOpenNudge, onOpenNegotiate }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const cardsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      if (cardsRef.current) {
+        ScrollTrigger.create({
+          trigger: cardsRef.current,
+          start: 'top 92%',
+          once: true,
+          onEnter: () => {
+            gsap.fromTo(
+              cardsRef.current!.children,
+              { y: 24, opacity: 0 },
+              {
+                y: 0,
+                opacity: 1,
+                duration: 0.5,
+                stagger: 0.08,
+                ease: 'power2.out',
+                clearProps: 'all',
+              }
+            );
+          },
+        });
+      }
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div className="space-y-6">
+    <div ref={containerRef} className="space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-neutral-100 pb-4">
         <div>
           <span className="text-xs font-medium text-neutral-500">
@@ -26,7 +61,7 @@ export const ActionFeed: React.FC<ActionFeedProps> = ({ onOpenNudge, onOpenNegot
         </span>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Card 1: Kolektor Bon Santun */}
         <TiltCard max={6} glare={true}>
           <div className="rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm flex flex-col justify-between hover:border-neutral-300 transition-all h-full">

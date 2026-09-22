@@ -61,11 +61,10 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
   const [isChatModalOpen, setIsChatModalOpen] = useState(false);
   const [activeQuery, setActiveQuery] = useState('Beli mesin espresso 14 juta tunai aman nggak?');
 
-  const suggestionChips = [
-    { label: 'Beli Mesin Kopi Tunai (14 Jt)', presetId: 'espresso_cash', amount: 14000000 },
-    { label: 'Rekrut Barista Baru', presetId: 'hire_barista', amount: 0 },
-    { label: 'Promo Biji Kopi (6 Jt)', presetId: 'bulk_coffee_discount', amount: 6000000 },
-    { label: 'Mesin DP 50% + Tempo (7 Jt)', presetId: 'espresso_restructured', amount: 7000000 },
+  const customIdeaChips = [
+    { label: 'Sewa Ruko Tambahan (20 Jt)', amount: 20000000 },
+    { label: 'Beli Grinder Kopi Baru (4.5 Jt)', amount: 4500000 },
+    { label: 'Renovasi Bar Espresso (8 Jt)', amount: 8000000 },
   ];
 
   const handleRunSimulation = (queryToRun?: string) => {
@@ -106,8 +105,8 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
 
   return (
     <div className="rounded-3xl border border-neutral-200/90 bg-white shadow-handhold overflow-hidden">
-      {/* 1. Window Header */}
-      <div className="flex items-center justify-between px-6 py-3.5 border-b border-neutral-100 bg-neutral-50/60">
+      {/* 1. Window Header (macOS Terminal / Studio Top Bar) */}
+      <div className="flex items-center justify-between px-6 py-3.5 border-b border-neutral-100 bg-neutral-50/70">
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1.5">
             <span className="h-2.5 w-2.5 rounded-full bg-neutral-300" />
@@ -119,42 +118,65 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
           </span>
         </div>
 
-        <span className="text-xs font-medium text-neutral-500">
-          Simulasi Kas 30 Hari
-        </span>
+        <div className="flex items-center gap-2">
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+          <span className="text-xs font-medium text-neutral-600">
+            Simulasi Kas 30 Hari · DLMM Engine
+          </span>
+        </div>
       </div>
 
       {/* 2. Studio Body */}
-      <div className="p-5 sm:p-7 space-y-5">
-        {/* Scenario Selector Tabs */}
-        <div className="space-y-2">
+      <div className="p-5 sm:p-7 space-y-6">
+        {/* Scenario Selector */}
+        <div className="space-y-2.5">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-neutral-500 uppercase tracking-wider flex items-center gap-1.5">
               <Sparkles className="h-3.5 w-3.5 text-neutral-400" />
-              Pilih Skenario Belanja Modal:
+              Pilih Skenario Keputusan Bisnis:
             </span>
-            <span className="text-xs text-neutral-500 hidden sm:inline">
-              Uji dampak pengeluaran terhadap saldo kas operasional
+            <span className="text-xs text-neutral-400 hidden sm:inline">
+              Uji dampak belanja modal terhadap likuiditas kas operasional
             </span>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
             {presets.map((preset) => {
               const isSelected = activePreset === preset.id;
+              const isDangerous = preset.dangerous;
+              const isRecommended = preset.id === 'espresso_restructured';
+
               return (
                 <button
                   key={preset.id}
                   onClick={() => onSelectPreset(preset.id, preset.outflow)}
-                  className={`p-3.5 rounded-xl border text-left transition-all duration-150 active:scale-[0.98] cursor-pointer ${
+                  className={`p-3.5 rounded-xl border text-left transition-all duration-150 active:scale-[0.98] cursor-pointer flex flex-col justify-between h-full ${
                     isSelected
                       ? 'border-neutral-950 bg-neutral-950 text-white shadow-xs'
-                      : 'border-neutral-200 bg-neutral-50/60 hover:bg-neutral-100 hover:border-neutral-300 text-neutral-800'
+                      : 'border-neutral-200/90 bg-white hover:bg-neutral-50 hover:border-neutral-300 text-neutral-800'
                   }`}
                 >
-                  <div className="text-xs font-semibold tracking-tight truncate">
-                    {preset.label}
+                  <div>
+                    <div className="flex items-center justify-between gap-1 mb-1">
+                      <span className={`text-[10px] font-medium px-2 py-0.5 rounded-md ${
+                        isSelected
+                          ? 'bg-neutral-800 text-neutral-200'
+                          : isDangerous
+                          ? 'bg-rose-50 text-rose-700'
+                          : isRecommended
+                          ? 'bg-emerald-50 text-emerald-700'
+                          : 'bg-neutral-100 text-neutral-600'
+                      }`}>
+                        {isDangerous ? 'Risiko Defisit' : isRecommended ? 'Solusi Aman' : 'Beban Rutin'}
+                      </span>
+                    </div>
+
+                    <div className="text-xs font-semibold tracking-tight">
+                      {preset.label}
+                    </div>
                   </div>
-                  <div className={`text-xs tabular-nums mt-0.5 font-normal ${isSelected ? 'text-neutral-300' : 'text-neutral-500'}`}>
+
+                  <div className={`text-xs tabular-nums mt-2 font-medium ${isSelected ? 'text-neutral-300' : 'text-neutral-500'}`}>
                     {preset.outflow > 0 ? `Rp ${(preset.outflow / 1_000_000).toFixed(1)} Jt` : 'Beban Rutin'}
                   </div>
                 </button>
@@ -163,13 +185,16 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
           </div>
         </div>
 
-        {/* 3. Three Clean Financial Metric Cards with beUI TiltCard & AnimatedNumber */}
+        {/* 3. Three Clean Financial Metric Cards with Real-time Delta Impact */}
         <PulseCards
           safeToSpend={safeToSpend}
           currentCash={currentCash}
           runwayDays={runwayDays}
           dailyGross={dailyGross}
           safetyBuffer={safetyBuffer}
+          minCash={minCash}
+          isSafe={isSafe}
+          insolvencyDay={insolvencyDay}
         />
 
         {/* 4. Main Two-Column View (Chart + Decision Intelligence) */}
@@ -182,6 +207,7 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
               scenario={scenarioCash}
               insolvencyDay={insolvencyDay}
               scenarioName={scenarioName}
+              safetyBuffer={safeToSpend}
             />
           </div>
 
@@ -199,7 +225,7 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
           </div>
         </div>
 
-        {/* 5. Executive AI Consultation Bar */}
+        {/* 5. Raycast-Style Ambient AI Command Bar */}
         <div className="rounded-2xl border border-neutral-200/90 bg-neutral-50/70 p-4 sm:p-5 space-y-3">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-neutral-200/60 pb-2.5">
             <div className="flex items-center gap-2.5">
@@ -210,8 +236,8 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
                 <span className="text-xs font-semibold text-neutral-950">
                   Konsultasi Keputusan Finansial AI
                 </span>
-                <span className="text-[11px] text-neutral-500 font-normal pl-2">
-                  Ketik pertanyaan atau klik uji suara untuk simulasi interaktif
+                <span className="text-[11px] text-neutral-500 font-normal pl-2 hidden sm:inline">
+                  Ketik pertanyaan custom atau uji voice note WhatsApp untuk simulasi instan
                 </span>
               </div>
             </div>
@@ -248,7 +274,7 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
                 type="text"
                 value={promptText}
                 onChange={(val) => setPromptText(val)}
-                placeholder='Tanyakan rencana belanja... (cth: "Beli mesin espresso 14 juta tunai aman?")'
+                placeholder='Tanyakan skenario custom... (cth: "Sewa ruko 20 juta per tahun aman?")'
                 leftIcon={<Mic className="h-4 w-4 text-neutral-400" />}
                 spellCheck={false}
                 autoComplete="off"
@@ -274,15 +300,15 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
             </MotionButton>
           </div>
 
-          {/* Quick Suggestion Chips */}
+          {/* Custom Exploratory Idea Chips (No Redundancy) */}
           <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
-            <span className="text-[11px] font-medium text-neutral-400">Contoh Cepat:</span>
-            {suggestionChips.map((chip, idx) => (
+            <span className="text-[11px] font-medium text-neutral-400">Eksplorasi Ide Lain:</span>
+            {customIdeaChips.map((chip, idx) => (
               <button
                 key={idx}
                 onClick={() => {
                   setPromptText(chip.label);
-                  onSelectPreset(chip.presetId, chip.amount);
+                  onSelectPreset('custom', chip.amount);
                   handleRunSimulation(chip.label);
                 }}
                 className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white hover:bg-neutral-100 border border-neutral-200/80 text-[11px] font-medium text-neutral-700 transition-colors shadow-2xs cursor-pointer active:scale-95"
