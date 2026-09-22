@@ -49,11 +49,14 @@
       "core_dlmm_trajectoryresult",
       "core_sensor",
       "core_sensor_parsedtransaction",
+      "core_sensor_py_any",
       "core_sensor_rationale_1",
       "core_sensor_rationale_33",
+      "core_sensor_rationale_91",
       "core_sensor_sensoragent",
       "core_sensor_sensoragent_init",
       "core_sensor_sensoragent_parse_bca_mutation_text",
+      "core_sensor_sensoragent_parse_whatsapp_note",
       "dataclasses",
       "fastapi",
       "fastapi_middleware_cors",
@@ -81,49 +84,16 @@
       "jagausaha_strategy_spec_10_1_the_zero_form_onboarding_philosophy",
       "jagausaha_strategy_spec_10_data_reality_overcoming_the_indonesian_umkm_onboarding_barrier",
       "jagausaha_strategy_spec_11_hackathon_mvp_scope_what_to_build_vs_what_to_cut",
-      "jagausaha_strategy_spec_12_the_perfect_3_minute_hackathon_demo_script",
       "jagausaha_strategy_spec_13_ui_ux_design_architecture",
-      "jagausaha_strategy_spec_14_1_evaluating_hermes_agent_framework",
-      "jagausaha_strategy_spec_14_2_production_stack_specifications",
-      "jagausaha_strategy_spec_14_3_division_of_labor_code_vs_llm",
-      "jagausaha_strategy_spec_14_technical_architecture_framework_evaluation",
       "jagausaha_strategy_spec_15_1_real_vs_fabricated_metrics",
       "jagausaha_strategy_spec_15_measurable_impact_framework",
-      "jagausaha_strategy_spec_16_red_team_the_idea_brutal_judge_objections_defenses",
       "jagausaha_strategy_spec_17_the_competitive_moat",
-      "jagausaha_strategy_spec_19_final_challenge_the_7_day_hackathon_execution_plan",
-      "jagausaha_strategy_spec_1_1_field_realities_of_indonesian_umkm",
-      "jagausaha_strategy_spec_1_2_problem_ranking_matrix",
-      "jagausaha_strategy_spec_1_start_from_the_problem_not_the_solution",
-      "jagausaha_strategy_spec_2_1_the_original_hypothesis",
-      "jagausaha_strategy_spec_2_2_brutal_reality_check_weak_assumptions",
-      "jagausaha_strategy_spec_2_critical_evaluation_of_the_original_idea",
-      "jagausaha_strategy_spec_3_1_global_domestic_precedents",
-      "jagausaha_strategy_spec_3_2_the_unfair_differentiation_for_jagausaha",
-      "jagausaha_strategy_spec_3_competitive_landscape_local_adaptation",
       "jagausaha_strategy_spec_4_1_liquidity_invariant_engine",
       "jagausaha_strategy_spec_4_core_intelligence_dynamic_liquidity_margin_model_dlmm",
       "jagausaha_strategy_spec_5_1_evaluated_core_features",
       "jagausaha_strategy_spec_5_differentiating_feature_deep_dive",
-      "jagausaha_strategy_spec_7_1_multi_agent_specialization_vs_monolithic_llm",
-      "jagausaha_strategy_spec_7_2_component_responsibilities",
-      "jagausaha_strategy_spec_7_agentic_design_system_topology",
       "jagausaha_strategy_spec_8_proactive_behavior_the_autonomous_guardian_loop",
-      "jagausaha_strategy_spec_9_1_risk_classification_autonomy_gates",
-      "jagausaha_strategy_spec_9_2_hallucination_immunity_protocol",
-      "jagausaha_strategy_spec_9_safety_architecture_financial_trust_boundaries",
-      "jagausaha_strategy_spec_final_product_definition",
-      "jagausaha_strategy_spec_jagausaha_ai_autonomous_financial_guardian_decision_sandbox_for_indonesian_umkm",
-      "jagausaha_strategy_spec_minute_by_minute_live_walkthrough",
-      "jagausaha_strategy_spec_objection_1_isn_t_this_just_mekari_or_bukuwarung_with_a_chatgpt_wrapper",
-      "jagausaha_strategy_spec_objection_2_where_does_the_data_come_from_indonesian_umkm_keep_messy_cash_in_a_biscuit_tin",
-      "jagausaha_strategy_spec_objection_3_why_does_this_require_an_agent_a_simple_excel_formula_can_do_cash_flow_projection",
-      "jagausaha_strategy_spec_objection_4_what_if_your_ai_gives_wrong_advice_and_causes_a_business_to_collapse",
-      "jagausaha_strategy_spec_scenario_kopi_teras_barokah_small_coffee_shop_in_south_jakarta",
-      "jagausaha_strategy_spec_the_30_second_pitch",
-      "jagausaha_strategy_spec_the_7_day_exact_build_specification",
-      "jagausaha_strategy_spec_the_one_demo_moment_judges_will_remember",
-      "jagausaha_strategy_spec_what_not_to_build"
+      "jagausaha_strategy_spec_jagausaha_ai_autonomous_financial_guardian_decision_sandbox_for_indonesian_umkm"
     ],
     "2": [
       "frontend_package",
@@ -157,11 +127,8 @@
       "frontend_package_version",
       "frontend_vite_config",
       "ref_autoprefixer",
-      "ref_clsx",
       "ref_oxlint",
       "ref_postcss",
-      "ref_recharts",
-      "ref_tailwind_merge",
       "ref_tailwindcss",
       "ref_types_node",
       "ref_types_react",
@@ -177,6 +144,13 @@
       "frontend_src_components_actionfeed",
       "frontend_src_components_actionfeed_actionfeed",
       "frontend_src_components_actionfeed_actionfeedprops",
+      "frontend_src_components_decisionintelligencecard",
+      "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
+      "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
+      "frontend_src_components_decisionstudio",
+      "frontend_src_components_decisionstudio_decisionstudio",
+      "frontend_src_components_decisionstudio_decisionstudioprops",
+      "frontend_src_components_decisionstudio_presetscenario",
       "frontend_src_components_faqsection",
       "frontend_src_components_faqsection_faqsection",
       "frontend_src_components_featureagents",
@@ -184,19 +158,52 @@
       "frontend_src_components_finalcta",
       "frontend_src_components_finalcta_finalcta",
       "frontend_src_components_finalcta_finalctaprops",
+      "frontend_src_components_footer",
+      "frontend_src_components_footer_footer",
       "frontend_src_components_header",
       "frontend_src_components_header_header",
       "frontend_src_components_header_headerprops",
       "frontend_src_components_herosection",
       "frontend_src_components_herosection_herosection",
       "frontend_src_components_herosection_herosectionprops",
+      "frontend_src_components_howitworks",
+      "frontend_src_components_howitworks_howitworks",
+      "frontend_src_components_howitworks_howitworksprops",
+      "frontend_src_components_motion_input",
+      "frontend_src_components_motion_input_input",
+      "frontend_src_components_motion_input_inputclassnames",
+      "frontend_src_components_motion_input_inputprops",
+      "frontend_src_components_pulsecards",
+      "frontend_src_components_pulsecards_pulsecards",
+      "frontend_src_components_pulsecards_pulsecardsprops",
+      "frontend_src_components_reactbits_blurtext",
+      "frontend_src_components_reactbits_blurtext_blurtext",
+      "frontend_src_components_reactbits_blurtext_blurtextprops",
+      "frontend_src_components_reactbits_countup",
+      "frontend_src_components_reactbits_countup_countup",
+      "frontend_src_components_reactbits_countup_countupprops",
+      "frontend_src_components_reactbits_magnet",
+      "frontend_src_components_reactbits_magnet_magnet",
+      "frontend_src_components_reactbits_magnet_magnetprops",
+      "frontend_src_components_reactbits_shinytext",
+      "frontend_src_components_reactbits_shinytext_shinytext",
+      "frontend_src_components_reactbits_shinytext_shinytextprops",
+      "frontend_src_components_reactbits_spotlightcard",
+      "frontend_src_components_reactbits_spotlightcard_spotlightcard",
+      "frontend_src_components_reactbits_spotlightcard_spotlightcardprops",
       "frontend_src_components_terminaldrawer",
       "frontend_src_components_terminaldrawer_terminaldrawer",
       "frontend_src_components_terminaldrawer_terminaldrawerprops",
+      "frontend_src_components_trajectorychart",
+      "frontend_src_components_trajectorychart_trajectorychart",
+      "frontend_src_components_trajectorychart_trajectorychartprops",
       "frontend_src_components_whatsappmodal",
       "frontend_src_components_whatsappmodal_whatsappmodal",
       "frontend_src_components_whatsappmodal_whatsappmodalprops",
-      "ref_lucide_react"
+      "frontend_src_lib_ease_ease_out",
+      "ref_framer_motion",
+      "ref_lucide_react",
+      "ref_react"
     ],
     "4": [
       "frontend_tsconfig_app",
@@ -240,18 +247,12 @@
       "frontend_tsconfig_node_include"
     ],
     "6": [
-      "frontend_src_components_ui_matrix_orb",
-      "frontend_src_components_ui_matrix_orb_envelope",
-      "frontend_src_components_ui_matrix_orb_intensityof",
-      "frontend_src_components_ui_matrix_orb_labels",
-      "frontend_src_components_ui_matrix_orb_matrixorb",
-      "frontend_src_components_ui_matrix_orb_matrixorbprops",
-      "frontend_src_components_ui_matrix_orb_matrixorbstate",
-      "frontend_src_components_ui_matrix_orb_orbiters",
-      "frontend_src_components_ui_matrix_orb_scale",
-      "frontend_src_components_ui_matrix_orb_states",
-      "frontend_src_components_ui_matrix_orb_subscribetozoom",
-      "frontend_src_components_ui_matrix_orb_usedevicepixelratio"
+      "jagausaha_strategy_spec_19_final_challenge_the_7_day_hackathon_execution_plan",
+      "jagausaha_strategy_spec_final_product_definition",
+      "jagausaha_strategy_spec_the_30_second_pitch",
+      "jagausaha_strategy_spec_the_7_day_exact_build_specification",
+      "jagausaha_strategy_spec_the_one_demo_moment_judges_will_remember",
+      "jagausaha_strategy_spec_what_not_to_build"
     ],
     "7": [
       "claude_skills_graphify_skill",
@@ -295,7 +296,6 @@
       "frontend_src_components_motion_animated_toast_stack_status_icon",
       "frontend_src_components_motion_animated_toast_stack_toastclassnames",
       "frontend_src_components_motion_animated_toast_stack_toastinput",
-      "frontend_src_components_motion_animated_toast_stack_toastitem",
       "frontend_src_components_motion_animated_toast_stack_toastposition",
       "frontend_src_components_motion_animated_toast_stack_toaststatus",
       "frontend_src_components_motion_animated_toast_stack_useanimatedtoaststack",
@@ -327,9 +327,11 @@
       "jagausaha_strategy_spec_s_post_hackathon_roadmap"
     ],
     "10": [
-      "core_sensor_py_any",
-      "core_sensor_rationale_91",
-      "core_sensor_sensoragent_parse_whatsapp_note"
+      "jagausaha_strategy_spec_16_red_team_the_idea_brutal_judge_objections_defenses",
+      "jagausaha_strategy_spec_objection_1_isn_t_this_just_mekari_or_bukuwarung_with_a_chatgpt_wrapper",
+      "jagausaha_strategy_spec_objection_2_where_does_the_data_come_from_indonesian_umkm_keep_messy_cash_in_a_biscuit_tin",
+      "jagausaha_strategy_spec_objection_3_why_does_this_require_an_agent_a_simple_excel_formula_can_do_cash_flow_projection",
+      "jagausaha_strategy_spec_objection_4_what_if_your_ai_gives_wrong_advice_and_causes_a_business_to_collapse"
     ],
     "11": [
       "jagausaha_strategy_spec_6_fifteen_unconventional_out_of_the_box_agent_capabilities",
@@ -390,6 +392,18 @@
       "frontend_src_components_agentthinking_agentthinking",
       "frontend_src_components_agentthinking_agentthinkingprops",
       "frontend_src_components_agentthinking_thinkingstep",
+      "frontend_src_components_ui_matrix_orb",
+      "frontend_src_components_ui_matrix_orb_envelope",
+      "frontend_src_components_ui_matrix_orb_intensityof",
+      "frontend_src_components_ui_matrix_orb_labels",
+      "frontend_src_components_ui_matrix_orb_matrixorb",
+      "frontend_src_components_ui_matrix_orb_matrixorbprops",
+      "frontend_src_components_ui_matrix_orb_matrixorbstate",
+      "frontend_src_components_ui_matrix_orb_orbiters",
+      "frontend_src_components_ui_matrix_orb_scale",
+      "frontend_src_components_ui_matrix_orb_states",
+      "frontend_src_components_ui_matrix_orb_subscribetozoom",
+      "frontend_src_components_ui_matrix_orb_usedevicepixelratio",
       "readme",
       "readme_1_menjalankan_backend_dashboard_production_ready",
       "readme_2_menjalankan_interactive_terminal_demo_khusus_video_demo_hackathon",
@@ -481,6 +495,10 @@
       "frontend_src_components_boarduiareachart_chartdatapoint",
       "frontend_src_components_boarduiareachart_customtooltip",
       "frontend_src_components_motion_animated_toast_stack_animatedtoaststack",
+      "frontend_src_components_motion_animated_toast_stack_toastitem",
+      "frontend_src_components_motion_button",
+      "frontend_src_components_motion_button_motionbutton",
+      "frontend_src_components_motion_button_motionbuttonprops",
       "frontend_src_components_motion_tabs",
       "frontend_src_components_motion_tabs_tabs",
       "frontend_src_components_motion_tabs_tabscontext",
@@ -489,88 +507,77 @@
       "frontend_src_components_motion_tabs_tabstrigger",
       "frontend_src_components_motion_tabs_usetabscontext",
       "frontend_src_components_motion_tabs_variant",
-      "frontend_src_lib_utils_cn"
-    ],
-    "33": [
-      "frontend_src_components_footer",
-      "frontend_src_components_footer_footer",
-      "frontend_src_components_reactbits_countup",
-      "frontend_src_components_reactbits_countup_countup",
-      "frontend_src_components_reactbits_countup_countupprops",
-      "frontend_src_components_reactbits_shinytext",
-      "frontend_src_components_reactbits_shinytext_shinytext",
-      "frontend_src_components_reactbits_shinytext_shinytextprops",
-      "frontend_src_components_reactbits_spotlightcard",
-      "frontend_src_components_reactbits_spotlightcard_spotlightcard",
-      "frontend_src_components_reactbits_spotlightcard_spotlightcardprops",
-      "frontend_src_components_trajectorychart",
-      "frontend_src_components_trajectorychart_trajectorychart",
-      "frontend_src_components_trajectorychart_trajectorychartprops",
-      "ref_react"
-    ],
-    "34": [
       "frontend_src_lib_ease",
       "frontend_src_lib_ease_ease_drawer",
       "frontend_src_lib_ease_ease_in_out",
-      "frontend_src_lib_ease_ease_out",
       "frontend_src_lib_ease_ease_out_css",
       "frontend_src_lib_ease_spring_glide",
       "frontend_src_lib_ease_spring_layout",
       "frontend_src_lib_ease_spring_mouse",
       "frontend_src_lib_ease_spring_panel",
       "frontend_src_lib_ease_spring_press",
-      "frontend_src_lib_ease_spring_swap"
+      "frontend_src_lib_ease_spring_swap",
+      "frontend_src_lib_utils",
+      "frontend_src_lib_utils_cn",
+      "ref_clsx",
+      "ref_recharts",
+      "ref_tailwind_merge"
+    ],
+    "33": [
+      "jagausaha_strategy_spec_14_1_evaluating_hermes_agent_framework",
+      "jagausaha_strategy_spec_14_2_production_stack_specifications",
+      "jagausaha_strategy_spec_14_3_division_of_labor_code_vs_llm",
+      "jagausaha_strategy_spec_14_technical_architecture_framework_evaluation"
+    ],
+    "34": [
+      "jagausaha_strategy_spec_12_the_perfect_3_minute_hackathon_demo_script",
+      "jagausaha_strategy_spec_minute_by_minute_live_walkthrough",
+      "jagausaha_strategy_spec_scenario_kopi_teras_barokah_small_coffee_shop_in_south_jakarta"
     ],
     "35": [
-      "frontend_src_components_decisionintelligencecard",
-      "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
-      "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
-      "frontend_src_components_decisionstudio",
-      "frontend_src_components_decisionstudio_decisionstudio",
-      "frontend_src_components_decisionstudio_decisionstudioprops",
-      "frontend_src_components_decisionstudio_presetscenario",
-      "frontend_src_components_pulsecards",
-      "frontend_src_components_pulsecards_pulsecards",
-      "frontend_src_components_pulsecards_pulsecardsprops"
+      "jagausaha_strategy_spec_1_1_field_realities_of_indonesian_umkm",
+      "jagausaha_strategy_spec_1_2_problem_ranking_matrix",
+      "jagausaha_strategy_spec_1_start_from_the_problem_not_the_solution"
     ],
     "36": [
-      "frontend_src_components_howitworks",
-      "frontend_src_components_howitworks_howitworks",
-      "frontend_src_components_howitworks_howitworksprops",
-      "frontend_src_components_motion_input",
-      "frontend_src_components_motion_input_input",
-      "frontend_src_components_motion_input_inputclassnames",
-      "frontend_src_components_motion_input_inputprops",
-      "frontend_src_lib_utils"
+      "jagausaha_strategy_spec_2_1_the_original_hypothesis",
+      "jagausaha_strategy_spec_2_2_brutal_reality_check_weak_assumptions",
+      "jagausaha_strategy_spec_2_critical_evaluation_of_the_original_idea"
     ],
     "37": [
-      "frontend_src_components_reactbits_blurtext",
-      "frontend_src_components_reactbits_blurtext_blurtext",
-      "frontend_src_components_reactbits_blurtext_blurtextprops",
-      "frontend_src_components_reactbits_magnet",
-      "frontend_src_components_reactbits_magnet_magnet",
-      "frontend_src_components_reactbits_magnet_magnetprops",
-      "ref_framer_motion"
+      "jagausaha_strategy_spec_3_1_global_domestic_precedents",
+      "jagausaha_strategy_spec_3_2_the_unfair_differentiation_for_jagausaha",
+      "jagausaha_strategy_spec_3_competitive_landscape_local_adaptation"
+    ],
+    "38": [
+      "jagausaha_strategy_spec_7_1_multi_agent_specialization_vs_monolithic_llm",
+      "jagausaha_strategy_spec_7_2_component_responsibilities",
+      "jagausaha_strategy_spec_7_agentic_design_system_topology"
+    ],
+    "39": [
+      "jagausaha_strategy_spec_9_1_risk_classification_autonomy_gates",
+      "jagausaha_strategy_spec_9_2_hallucination_immunity_protocol",
+      "jagausaha_strategy_spec_9_safety_architecture_financial_trust_boundaries"
     ]
   },
   "cohesion": {
-    "0": 0.05368382080710848,
-    "1": 0.0425531914893617,
-    "2": 0.047619047619047616,
-    "3": 0.12307692307692308,
+    "0": 0.050580997949419004,
+    "1": 0.14285714285714285,
+    "2": 0.05128205128205128,
+    "3": 0.05174825174825175,
     "4": 0.1,
     "5": 0.11764705882352941,
-    "6": 0.22727272727272727,
+    "6": 0.3333333333333333,
     "7": 0.07407407407407407,
-    "8": 0.11052631578947368,
+    "8": 0.11695906432748537,
     "9": 0.1,
-    "10": 0.6666666666666666,
+    "10": 0.4,
     "11": 0.11764705882352941,
     "12": 0.2222222222222222,
     "13": 0.3333333333333333,
     "14": 0.3333333333333333,
     "15": 0.3333333333333333,
-    "16": 0.11764705882352941,
+    "16": 0.07881773399014778,
     "17": 0.5,
     "18": 0.6666666666666666,
     "19": 1.0,
@@ -586,18 +593,20 @@
     "29": 1.0,
     "30": 1.0,
     "31": 1.0,
-    "32": 0.20952380952380953,
-    "33": 0.13333333333333333,
-    "34": 0.18181818181818182,
-    "35": 0.24444444444444444,
-    "36": 0.2857142857142857,
-    "37": 0.2857142857142857
+    "32": 0.08333333333333333,
+    "33": 0.5,
+    "34": 0.6666666666666666,
+    "35": 0.6666666666666666,
+    "36": 0.6666666666666666,
+    "37": 0.6666666666666666,
+    "38": 0.6666666666666666,
+    "39": 0.6666666666666666
   },
   "gods": [
     {
       "id": "ref_react",
       "label": "react",
-      "degree": 29
+      "degree": 30
     },
     {
       "id": "jagausaha_strategy_spec_jagausaha_ai_autonomous_financial_guardian_decision_sandbox_for_indonesian_umkm",
@@ -630,13 +639,13 @@
       "degree": 15
     },
     {
-      "id": "core_dlmm_simulate_trajectory",
-      "label": "simulate_trajectory()",
-      "degree": 12
-    },
-    {
       "id": "frontend_src_lib_utils_cn",
       "label": "cn()",
+      "degree": 14
+    },
+    {
+      "id": "core_dlmm_simulate_trajectory",
+      "label": "simulate_trajectory()",
       "degree": 12
     },
     {
@@ -648,21 +657,21 @@
   "surprises": [
     {
       "source": "🎨 Komponen UI & Desain Eksternal",
-      "target": "MatrixOrb()",
-      "source_files": [
-        "README.md",
-        "frontend/src/components/ui/matrix-orb.tsx"
-      ],
-      "confidence": "INFERRED",
-      "relation": "references",
-      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities"
-    },
-    {
-      "source": "🎨 Komponen UI & Desain Eksternal",
       "target": "AgentThinking()",
       "source_files": [
         "README.md",
         "frontend/src/components/AgentThinking.tsx"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories"
+    },
+    {
+      "source": "🎨 Komponen UI & Desain Eksternal",
+      "target": "MatrixOrb()",
+      "source_files": [
+        "README.md",
+        "frontend/src/components/ui/matrix-orb.tsx"
       ],
       "confidence": "INFERRED",
       "relation": "references",
@@ -705,38 +714,38 @@
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `react` connect `react` to `tabs.tsx`, `package.json`, `App.tsx`, `DecisionStudio.tsx`, `input.tsx`, `framer-motion`, `matrix-orb.tsx`, `animated-toast-stack.tsx`, `BoardUIAgentThinking.tsx`, `JagaUsaha 🛡️`?",
-      "why": "High betweenness centrality (0.073) - this node is a cross-community bridge."
+      "question": "Why does `react` connect `App.tsx` to `cn`, `package.json`, `animated-toast-stack.tsx`, `BoardUIAgentThinking.tsx`, `matrix-orb.tsx`?",
+      "why": "High betweenness centrality (0.081) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` connect `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` to `18. FINAL PRODUCT SYNTHESIS`, `6. FIFTEEN UNCONVENTIONAL OUT-OF-THE-BOX AGENT CAPABILITIES`?",
+      "question": "Why does `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` connect `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` to `14. TECHNICAL ARCHITECTURE & FRAMEWORK EVALUATION`, `12. THE PERFECT 3-MINUTE HACKATHON DEMO SCRIPT`, `1. START FROM THE PROBLEM — NOT THE SOLUTION`, `2. CRITICAL EVALUATION OF THE ORIGINAL IDEA`, `3. COMPETITIVE LANDSCAPE & LOCAL ADAPTATION`, `19. FINAL CHALLENGE: THE 7-DAY HACKATHON EXECUTION PLAN`, `7. AGENTIC DESIGN & SYSTEM TOPOLOGY`, `9. SAFETY ARCHITECTURE & FINANCIAL TRUST BOUNDARIES`, `18. FINAL PRODUCT SYNTHESIS`, `16. RED TEAM THE IDEA: BRUTAL JUDGE OBJECTIONS & DEFENSES`, `6. FIFTEEN UNCONVENTIONAL OUT-OF-THE-BOX AGENT CAPABILITIES`?",
       "why": "High betweenness centrality (0.027) - this node is a cross-community bridge."
-    },
-    {
-      "type": "bridge_node",
-      "question": "Why does `🎨 Komponen UI & Desain Eksternal` connect `JagaUsaha 🛡️` to `matrix-orb.tsx`?",
-      "why": "High betweenness centrality (0.018) - this node is a cross-community bridge."
     },
     {
       "type": "isolated_nodes",
       "question": "What connects `BoardUIAgentThinkingProps`, `ThinkingStep`, `AgentThinkingProps` to the rest of the system?",
-      "why": "252 weakly-connected nodes found - possible documentation gaps or missing edges."
+      "why": "251 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
       "type": "low_cohesion",
       "question": "Should `server.py` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.05368382080710848 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.050580997949419004 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
       "question": "Should `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
       "question": "Should `package.json` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.047619047619047616 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.05128205128205128 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `App.tsx` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.05174825174825175 - nodes in this community are weakly interconnected."
     }
   ]
 }

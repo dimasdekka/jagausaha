@@ -20,6 +20,19 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap, 1.5rem)));
+  }
+}
+
+.animate-marquee {
+  animation: marquee linear infinite;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 5px;

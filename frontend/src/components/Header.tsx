@@ -9,6 +9,8 @@ import {
   HelpCircle,
   ArrowRight,
 } from 'lucide-react';
+import { AnimatedBadge } from './motion/animated-badge';
+import { MotionButton } from './motion/button';
 
 interface HeaderProps {
   onReset: () => void;
@@ -40,9 +42,9 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-    <header className="sticky top-3 z-50 w-full px-4 sm:px-6 pointer-events-none transition-all duration-300">
+    <header className="sticky top-3 z-50 w-full px-4 sm:px-6 transition-all duration-300">
       <div
-        className={`max-w-5xl mx-auto rounded-full border transition-all duration-300 pointer-events-auto ${
+        className={`max-w-5xl mx-auto rounded-full border transition-all duration-300 ${
           isScrolled
             ? 'border-neutral-300/80 bg-white/95 shadow-xl shadow-neutral-900/[0.06] backdrop-blur-xl py-2 px-4 sm:px-5'
             : 'border-neutral-200/90 bg-white/90 shadow-md shadow-neutral-900/[0.03] backdrop-blur-lg py-2.5 px-4 sm:px-6'
@@ -170,17 +172,20 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Right Actions Dock */}
         <div className="flex items-center gap-2 sm:gap-3">
-          {/* Cloud VPS Status Pill */}
-          <div className="hidden lg:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200/60 text-[11px] text-neutral-600 font-medium">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-            <span>CloudBaik VPS</span>
+          {/* Cloud VPS Status Pill with beUI AnimatedBadge */}
+          <div className="hidden lg:inline-flex">
+            <AnimatedBadge status="success" size="sm" pulse={true}>
+              CloudBaik VPS
+            </AnimatedBadge>
           </div>
 
-          {/* Reset Demo Button */}
-          <button
+          {/* Reset Demo Button with beUI MotionButton */}
+          <MotionButton
+            variant="outline"
+            size="sm"
             onClick={onReset}
             disabled={isLoading}
-            className="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 bg-white hover:bg-neutral-50 hover:border-neutral-300 px-3 py-1.5 text-xs font-medium text-neutral-700 transition-all active:scale-95 shadow-sm"
+            className="border-neutral-200"
             title="Reset Data Skenario Demo"
           >
             <RotateCcw
@@ -189,16 +194,18 @@ export const Header: React.FC<HeaderProps> = ({
               }`}
             />
             <span className="hidden sm:inline">Reset</span>
-          </button>
+          </MotionButton>
 
-          {/* Primary CTA */}
-          <button
+          {/* Primary CTA with beUI MotionButton */}
+          <MotionButton
+            variant="primary"
+            size="sm"
             onClick={() => handleNavClick('demo-sandbox')}
-            className="inline-flex items-center justify-center gap-1.5 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white px-4 py-1.5 text-xs font-semibold transition-all shadow-sm active:scale-95"
+            className="px-4"
           >
             <span>Uji Coba</span>
             <ArrowRight className="h-3.5 w-3.5" />
-          </button>
+          </MotionButton>
 
           {/* Mobile Menu Toggle */}
           <button

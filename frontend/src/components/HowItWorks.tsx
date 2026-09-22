@@ -35,7 +35,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
   };
 
   return (
-    <section className="py-20 sm:py-28 border-t border-neutral-100 bg-neutral-50/50">
+    <section id="how-it-works" className="py-20 sm:py-28 border-t border-neutral-100 bg-neutral-50/50 scroll-mt-20">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-16">
         {/* Step-by-Step Title */}
         <div className="text-center space-y-4 max-w-2xl mx-auto">

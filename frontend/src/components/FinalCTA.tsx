@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ExpandingArrowButton } from './motion/expanding-arrow-button';
 
 interface FinalCTAProps {
   onStart: () => void;
@@ -17,14 +17,13 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onStart }) => {
           Jangan biarkan keputusan belanja impulsif atau keterlambatan tagihan menenggelamkan usaha yang sudah Anda rintis bertahun-tahun.
         </p>
 
-        <div className="pt-2">
-          <button
+        <div className="pt-2 flex justify-center">
+          <ExpandingArrowButton
             onClick={onStart}
-            className="inline-flex items-center gap-2 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white px-7 py-3.5 text-sm font-medium transition-all shadow-sm active:scale-95"
+            className="h-14 min-w-64 shadow-lg shadow-neutral-900/10"
           >
-            <span>Mulai Uji Coba Gratis</span>
-            <ArrowRight className="h-4 w-4" />
-          </button>
+            Mulai Uji Coba Gratis
+          </ExpandingArrowButton>
         </div>
 
         <p className="text-xs text-neutral-400 font-normal">

@@ -31,7 +31,7 @@ export const FAQSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 sm:py-28 border-t border-neutral-100 bg-white">
+    <section id="faq" className="py-20 sm:py-28 border-t border-neutral-100 bg-white scroll-mt-20">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-12">
         <div className="text-center space-y-3">
           <span className="text-xs font-medium text-neutral-500">

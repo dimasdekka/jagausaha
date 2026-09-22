@@ -193,7 +193,7 @@ export function App() {
         <HeroSection onScrollToDemo={scrollToDemo} />
 
         {/* 2. Interactive Decision Studio Sandbox */}
-        <section ref={demoSectionRef} id="demo-sandbox" className="max-w-5xl mx-auto px-4 sm:px-6">
+        <section ref={demoSectionRef} id="demo-sandbox" className="max-w-5xl mx-auto px-4 sm:px-6 scroll-mt-24">
           <DecisionStudio
             currentCash={pulse.current_cash}
             safeToSpend={pulse.safe_to_spend}
@@ -216,14 +216,10 @@ export function App() {
         </section>
 
         {/* 3. Feature Agents */}
-        <div id="feature-agents">
-          <FeatureAgents />
-        </div>
+        <FeatureAgents />
 
         {/* 4. How It Works */}
-        <div id="how-it-works">
-          <HowItWorks onSimulateCustom={(amt) => { runSimulation('espresso_cash', amt); scrollToDemo(); }} />
-        </div>
+        <HowItWorks onSimulateCustom={(amt) => { runSimulation('espresso_cash', amt); scrollToDemo(); }} />
 
         {/* 5. Priority Tactical Actions */}
         <section className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -234,9 +230,7 @@ export function App() {
         </section>
 
         {/* 6. FAQ Accordion */}
-        <div id="faq">
-          <FAQSection />
-        </div>
+        <FAQSection />
 
         {/* 7. Final Call to Action */}
         <FinalCTA onStart={scrollToDemo} />

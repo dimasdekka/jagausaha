@@ -1,5 +1,8 @@
 import React from 'react';
 import { ArrowRight, MessageSquare } from 'lucide-react';
+import { AnimatedBadge } from './motion/animated-badge';
+import { AnimatedNumber } from './motion/number';
+import { MotionButton } from './motion/button';
 
 interface DecisionIntelligenceProps {
   isSafe: boolean;
@@ -28,20 +31,13 @@ export const DecisionIntelligenceCard: React.FC<DecisionIntelligenceProps> = ({
           <span className="text-xs font-medium text-neutral-500">
             Analisis Keputusan
           </span>
-          <span
-            className={`inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-0.5 rounded-full ${
-              isSafe
-                ? 'bg-neutral-100 text-neutral-800'
-                : 'bg-neutral-900 text-white'
-            }`}
+          <AnimatedBadge
+            status={isSafe ? "success" : "danger"}
+            size="sm"
+            pulse={!isSafe}
           >
-            <span
-              className={`h-1.5 w-1.5 rounded-full ${
-                isSafe ? 'bg-emerald-500' : 'bg-rose-500 animate-pulse'
-              }`}
-            />
-            <span>{isSafe ? 'Kas Aman' : `Defisit Hari ke-${insolvencyDay || 6}`}</span>
-          </span>
+            {isSafe ? 'Kas Aman' : `Defisit Hari ke-${insolvencyDay || 6}`}
+          </AnimatedBadge>
         </div>
 
         <h4 className="text-lg font-semibold text-neutral-950 tracking-tight leading-snug">
@@ -67,14 +63,16 @@ export const DecisionIntelligenceCard: React.FC<DecisionIntelligenceProps> = ({
       <div className="border-y border-neutral-100 py-3.5 space-y-2.5 text-xs">
         <div className="flex items-center justify-between">
           <span className="text-neutral-500">Batas Duit Dingin Aman</span>
-          <span className="font-semibold text-neutral-900 tabular-nums">
-            Rp {safeToSpend.toLocaleString('id-ID')}
+          <span className="font-semibold text-neutral-900 tabular-nums flex items-center gap-1">
+            <span>Rp</span>
+            <AnimatedNumber value={safeToSpend} duration={0.6} />
           </span>
         </div>
         <div className="flex items-center justify-between">
           <span className="text-neutral-500">Proyeksi Saldo Terendah</span>
-          <span className={`font-semibold tabular-nums ${minCash < 0 ? 'text-rose-600' : 'text-neutral-900'}`}>
-            {minCash < 0 ? `-Rp ${Math.abs(minCash).toLocaleString('id-ID')}` : `Rp ${minCash.toLocaleString('id-ID')}`}
+          <span className={`font-semibold tabular-nums flex items-center gap-1 ${minCash < 0 ? 'text-rose-600' : 'text-neutral-900'}`}>
+            <span>{minCash < 0 ? '-Rp' : 'Rp'}</span>
+            <AnimatedNumber value={Math.abs(minCash)} duration={0.6} />
           </span>
         </div>
         <div className="flex items-center justify-between">
@@ -89,21 +87,25 @@ export const DecisionIntelligenceCard: React.FC<DecisionIntelligenceProps> = ({
       <div className="space-y-2">
         {!isSafe ? (
           <>
-            <button
+            <MotionButton
+              variant="primary"
+              size="md"
               onClick={onApplySafeSolution}
-              className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white py-3 text-xs font-medium transition-all shadow-sm active:scale-95"
+              className="w-full h-11"
             >
               <span>Terapkan Solusi Aman (DP 50%)</span>
               <ArrowRight className="h-3.5 w-3.5" />
-            </button>
+            </MotionButton>
 
-            <button
+            <MotionButton
+              variant="outline"
+              size="md"
               onClick={onOpenNegotiate}
-              className="w-full inline-flex items-center justify-center gap-2 rounded-full border border-neutral-300 bg-white hover:bg-neutral-50 text-neutral-900 py-3 text-xs font-medium transition-all active:scale-95"
+              className="w-full h-11 border-neutral-300"
             >
               <MessageSquare className="h-3.5 w-3.5 text-neutral-600" />
               <span>Draf Pesan WhatsApp Supplier</span>
-            </button>
+            </MotionButton>
           </>
         ) : (
           <div className="flex items-center justify-center text-xs text-neutral-600 bg-neutral-50 py-3 rounded-full border border-neutral-200/80 font-medium">

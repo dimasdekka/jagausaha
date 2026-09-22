@@ -1,11 +1,25 @@
 import React from 'react';
-import { ArrowRight, Play } from 'lucide-react';
+import { Play } from 'lucide-react';
+import { ExpandingArrowButton } from './motion/expanding-arrow-button';
+import { MotionButton } from './motion/button';
+import { Marquee } from './motion/marquee';
 
 interface HeroSectionProps {
   onScrollToDemo: () => void;
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
+  const ecosystems = [
+    { label: "BCA KlikBCA / e-Banking", type: "Bank Terhubung" },
+    { label: "Bank Mandiri Livin", type: "Mutasi Otomatis" },
+    { label: "BRImo Korporat", type: "Rekening Usaha" },
+    { label: "QRIS Nasional", type: "Bon Dinamis" },
+    { label: "IDwebhost CloudBaik VPS", type: "Infrastruktur Cloud" },
+    { label: "Hermes Agent Framework", type: "Arsitektur AI" },
+    { label: "WhatsApp Business API", type: "Komunikasi Santun" },
+    { label: "POS Moka & Pawoon", type: "Sinkronisasi Kasir" },
+  ];
+
   return (
     <section className="relative w-full pt-16 pb-12 sm:pt-24 sm:pb-16 overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-7">
@@ -19,23 +33,24 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
           Simulasikan dampak keputusan belanja modal terhadap jadwal gaji dan tempo supplier hingga 30 hari ke depan secara deterministik.
         </p>
 
-        {/* CTA Buttons */}
+        {/* beUI Expanding CTA & Secondary Button */}
         <div className="flex flex-wrap items-center justify-center gap-3.5 pt-2">
-          <button
+          <ExpandingArrowButton
             onClick={onScrollToDemo}
-            className="inline-flex items-center gap-2 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white px-7 py-3.5 text-sm font-medium transition-all shadow-sm active:scale-95"
+            className="h-12 min-w-60 shadow-md"
           >
-            <span>Mulai Uji Coba Gratis</span>
-            <ArrowRight className="h-4 w-4" />
-          </button>
+            Mulai Uji Coba Gratis
+          </ExpandingArrowButton>
 
-          <button
+          <MotionButton
+            variant="outline"
+            size="lg"
             onClick={onScrollToDemo}
-            className="inline-flex items-center gap-2 rounded-full border border-neutral-300 bg-white hover:bg-neutral-50 px-6 py-3.5 text-sm font-medium text-neutral-900 transition-all shadow-sm active:scale-95"
+            className="h-12 border-neutral-300"
           >
             <Play className="h-3.5 w-3.5 fill-neutral-900 text-neutral-900" />
             <span>Lihat Demo Interaktif</span>
-          </button>
+          </MotionButton>
         </div>
 
         {/* Handhold-Style Metrics Display */}
@@ -68,6 +83,25 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* beUI Infinite Marquee Ecosystem Bar */}
+        <div className="pt-10 max-w-3xl mx-auto border-t border-neutral-100/80">
+          <div className="text-[11px] font-medium text-neutral-400 mb-3 tracking-wide uppercase">
+            Terhubung Langsung dengan Ekosistem Perbankan & UMKM Indonesia
+          </div>
+          <Marquee speed={25} gap="1.5rem" className="py-1">
+            {ecosystems.map((eco, idx) => (
+              <div
+                key={idx}
+                className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-50 border border-neutral-200/60 text-xs text-neutral-700 whitespace-nowrap shadow-xs"
+              >
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                <span className="font-semibold text-neutral-900">{eco.label}</span>
+                <span className="text-[10px] text-neutral-400">· {eco.type}</span>
+              </div>
+            ))}
+          </Marquee>
         </div>
       </div>
     </section>

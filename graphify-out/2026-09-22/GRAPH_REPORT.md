@@ -1,17 +1,17 @@
 # Graph Report - JagaUsaha  (2026-09-22)
 
 ## Corpus Check
-- 63 files · ~122,537 words
+- 69 files · ~142,953 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 5 file(s) not represented in the graph (top: (none) 3, .css 2)
 
 ## Summary
-- 479 nodes · 629 edges · 40 communities (28 shown, 12 thin omitted)
+- 506 nodes · 728 edges · 47 communities (35 shown, 12 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.94)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3c6336b0`
+- Built from commit: `f24a9132`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -19,7 +19,7 @@
 - server.py
 - JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM
 - package.json
-- App.tsx
+- react
 - compilerOptions
 - compilerOptions
 - 19. FINAL CHALLENGE: THE 7-DAY HACKATHON EXECUTION PLAN
@@ -46,7 +46,7 @@
 - CLAUDE.md
 - .claude/CLAUDE.md
 - extraction-spec.md
-- cn
+- tabs.tsx
 - 14. TECHNICAL ARCHITECTURE & FRAMEWORK EVALUATION
 - 12. THE PERFECT 3-MINUTE HACKATHON DEMO SCRIPT
 - 1. START FROM THE PROBLEM — NOT THE SOLUTION
@@ -54,18 +54,25 @@
 - 3. COMPETITIVE LANDSCAPE & LOCAL ADAPTATION
 - 7. AGENTIC DESIGN & SYSTEM TOPOLOGY
 - 9. SAFETY ARCHITECTURE & FINANCIAL TRUST BOUNDARIES
+- App.tsx
+- animated-badge.tsx
+- DecisionStudio.tsx
+- cn
+- expanding-arrow-button.tsx
+- tilt-card.tsx
+- framer-motion
 
 ## God Nodes (most connected - your core abstractions)
-1. `react` - 30 edges
-2. `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` - 20 edges
-3. `18. FINAL PRODUCT SYNTHESIS` - 20 edges
-4. `compilerOptions` - 18 edges
-5. `6. FIFTEEN UNCONVENTIONAL OUT-OF-THE-BOX AGENT CAPABILITIES` - 17 edges
-6. `lucide-react` - 16 edges
-7. `compilerOptions` - 15 edges
-8. `cn()` - 14 edges
-9. `simulate_trajectory()` - 12 edges
-10. `What You Must Do When Invoked` - 12 edges
+1. `react` - 36 edges
+2. `cn()` - 24 edges
+3. `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` - 20 edges
+4. `18. FINAL PRODUCT SYNTHESIS` - 20 edges
+5. `compilerOptions` - 18 edges
+6. `6. FIFTEEN UNCONVENTIONAL OUT-OF-THE-BOX AGENT CAPABILITIES` - 17 edges
+7. `lucide-react` - 16 edges
+8. `compilerOptions` - 15 edges
+9. `framer-motion` - 14 edges
+10. `simulate_trajectory()` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `🎨 Komponen UI & Desain Eksternal` --references--> `AgentThinking()`  [INFERRED]
@@ -82,7 +89,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (40 total, 12 thin omitted)
+## Communities (47 total, 12 thin omitted)
 
 ### Community 0 - "server.py"
 Cohesion: 0.05
@@ -96,9 +103,9 @@ Nodes (13): 10.1 The "Zero-Form" Onboarding Philosophy, 10. DATA REALITY: OVERCO
 Cohesion: 0.05
 Nodes (38): dependencies, clsx, framer-motion, lucide-react, react, react-dom, recharts, tailwind-merge (+30 more)
 
-### Community 3 - "App.tsx"
-Cohesion: 0.05
-Nodes (39): PRESETS, PulseData, ActionFeed(), ActionFeedProps, DecisionIntelligenceCard(), DecisionIntelligenceProps, DecisionStudio(), DecisionStudioProps (+31 more)
+### Community 3 - "react"
+Cohesion: 0.11
+Nodes (8): AgentThinkingProps, ThinkingStep, Footer(), CountUpProps, ShinyTextProps, SpotlightCardProps, TrajectoryChartProps, react
 
 ### Community 4 - "compilerOptions"
 Cohesion: 0.10
@@ -117,8 +124,8 @@ Cohesion: 0.07
 Nodes (26): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+18 more)
 
 ### Community 8 - "animated-toast-stack.tsx"
-Cohesion: 0.12
-Nodes (17): App(), AnimatedToast, AnimatedToastAction, AnimatedToastStackProps, createToast(), POSITION_CLASS, STACK_SPRING, STATUS_CLASS (+9 more)
+Cohesion: 0.11
+Nodes (18): App(), AnimatedToast, AnimatedToastAction, AnimatedToastStackProps, createToast(), POSITION_CLASS, STACK_SPRING, STATUS_CLASS (+10 more)
 
 ### Community 9 - "18. FINAL PRODUCT SYNTHESIS"
 Cohesion: 0.10
@@ -145,8 +152,8 @@ Cohesion: 0.33
 Nodes (5): For /graphify explain, For /graphify path, graphify reference: query, path, explain, Step 0 — Constrained query expansion (REQUIRED before traversal), Step 1 — Traversal
 
 ### Community 16 - "matrix-orb.tsx"
-Cohesion: 0.08
-Nodes (26): AgentThinking(), AgentThinkingProps, ThinkingStep, envelope(), intensityOf(), LABELS, MatrixOrb(), MatrixOrbProps (+18 more)
+Cohesion: 0.09
+Nodes (24): AgentThinking(), envelope(), intensityOf(), LABELS, MatrixOrb(), MatrixOrbProps, MatrixOrbState, ORBITERS (+16 more)
 
 ### Community 17 - "graphify reference: add a URL and watch a folder"
 Cohesion: 0.50
@@ -164,9 +171,9 @@ Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphif
 Cohesion: 0.50
 Nodes (3): Expanding the Oxlint configuration, React Compiler, React + TypeScript + Vite
 
-### Community 32 - "cn"
-Cohesion: 0.08
-Nodes (27): BoardUIAreaChart(), BoardUIAreaChartProps, ChartDataPoint, AnimatedToastStack(), ToastItem, MotionButton, MotionButtonProps, Tabs() (+19 more)
+### Community 32 - "tabs.tsx"
+Cohesion: 0.20
+Nodes (11): BoardUIAreaChart(), BoardUIAreaChartProps, ChartDataPoint, Tabs(), TabsContext, TabsContextType, TabsList(), TabsTrigger() (+3 more)
 
 ### Community 33 - "14. TECHNICAL ARCHITECTURE & FRAMEWORK EVALUATION"
 Cohesion: 0.50
@@ -196,25 +203,53 @@ Nodes (3): 7.1 Multi-Agent Specialization vs. Monolithic LLM, 7.2 Component Resp
 Cohesion: 0.67
 Nodes (3): 9.1 Risk Classification & Autonomy Gates, 9.2 Hallucination Immunity Protocol, 9. SAFETY ARCHITECTURE & FINANCIAL TRUST BOUNDARIES
 
+### Community 40 - "App.tsx"
+Cohesion: 0.13
+Nodes (17): PRESETS, PulseData, ActionFeed(), FAQSection(), Header(), TerminalDrawer(), TerminalDrawerProps, WhatsAppModal() (+9 more)
+
+### Community 41 - "animated-badge.tsx"
+Cohesion: 0.15
+Nodes (16): ActionFeedProps, DecisionIntelligenceProps, HeaderProps, AnimatedBadge(), AnimatedBadgeProps, AnimatedBadgeSize, AnimatedBadgeStatus, ICON_CLASS (+8 more)
+
+### Community 42 - "DecisionStudio.tsx"
+Cohesion: 0.18
+Nodes (10): DecisionIntelligenceCard(), DecisionStudio(), DecisionStudioProps, PresetScenario, HowItWorks(), HowItWorksProps, Input, InputClassNames (+2 more)
+
+### Community 43 - "cn"
+Cohesion: 0.22
+Nodes (9): AnimatedToastStack(), Marquee(), MarqueeProps, AnimatedNumber(), AnimatedNumberProps, PulseCardsProps, cn(), clsx (+1 more)
+
+### Community 44 - "expanding-arrow-button.tsx"
+Cohesion: 0.20
+Nodes (8): FinalCTA(), FinalCTAProps, HeroSection(), HeroSectionProps, ARROW_OPACITY, ExpandingArrowButton, ExpandingArrowButtonProps, SPRING_LAYOUT
+
+### Community 45 - "tilt-card.tsx"
+Cohesion: 0.36
+Nodes (5): FeatureAgents(), TiltCard(), TiltCardProps, SPRING_MOUSE, useHoverCapable()
+
+### Community 46 - "framer-motion"
+Cohesion: 0.29
+Nodes (3): BlurTextProps, MagnetProps, framer-motion
+
 ## Knowledge Gaps
-- **251 isolated node(s):** `deploy_vps.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+246 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 316 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **263 isolated node(s):** `deploy_vps.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+258 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 329 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `react` connect `App.tsx` to `cn`, `package.json`, `animated-toast-stack.tsx`, `BoardUIAgentThinking.tsx`, `matrix-orb.tsx`?**
-  _High betweenness centrality (0.081) - this node is a cross-community bridge._
+- **Why does `react` connect `react` to `tabs.tsx`, `package.json`, `App.tsx`, `animated-badge.tsx`, `DecisionStudio.tsx`, `animated-toast-stack.tsx`, `expanding-arrow-button.tsx`, `tilt-card.tsx`, `BoardUIAgentThinking.tsx`, `cn`, `framer-motion`, `matrix-orb.tsx`?**
+  _High betweenness centrality (0.086) - this node is a cross-community bridge._
 - **Why does `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` connect `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` to `14. TECHNICAL ARCHITECTURE & FRAMEWORK EVALUATION`, `12. THE PERFECT 3-MINUTE HACKATHON DEMO SCRIPT`, `1. START FROM THE PROBLEM — NOT THE SOLUTION`, `2. CRITICAL EVALUATION OF THE ORIGINAL IDEA`, `3. COMPETITIVE LANDSCAPE & LOCAL ADAPTATION`, `19. FINAL CHALLENGE: THE 7-DAY HACKATHON EXECUTION PLAN`, `7. AGENTIC DESIGN & SYSTEM TOPOLOGY`, `9. SAFETY ARCHITECTURE & FINANCIAL TRUST BOUNDARIES`, `18. FINAL PRODUCT SYNTHESIS`, `16. RED TEAM THE IDEA: BRUTAL JUDGE OBJECTIONS & DEFENSES`, `6. FIFTEEN UNCONVENTIONAL OUT-OF-THE-BOX AGENT CAPABILITIES`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+- **Why does `cn()` connect `cn` to `tabs.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `DecisionStudio.tsx`, `expanding-arrow-button.tsx`, `tilt-card.tsx`, `matrix-orb.tsx`?**
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
 - **What connects `deploy_vps.sh script`, `$schema`, `plugins` to the rest of the system?**
-  _251 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _263 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `server.py` be split into smaller, more focused modules?**
   _Cohesion score 0.050580997949419004 - nodes in this community are weakly interconnected._
 - **Should `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` be split into smaller, more focused modules?**
   _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
   _Cohesion score 0.05128205128205128 - nodes in this community are weakly interconnected._
-- **Should `App.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.05174825174825175 - nodes in this community are weakly interconnected._
