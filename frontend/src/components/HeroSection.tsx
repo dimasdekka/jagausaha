@@ -1,5 +1,15 @@
 import React from 'react';
-import { Play } from 'lucide-react';
+import {
+  Play,
+  Building2,
+  Wallet,
+  CreditCard,
+  QrCode,
+  Zap,
+  MessageSquare,
+  Server,
+  Cpu,
+} from 'lucide-react';
 import { ExpandingArrowButton } from './motion/expanding-arrow-button';
 import { MotionButton } from './motion/button';
 import { Marquee } from './motion/marquee';
@@ -9,15 +19,47 @@ interface HeroSectionProps {
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
-  const ecosystems = [
-    { label: "BCA KlikBCA / e-Banking", type: "Bank Terhubung" },
-    { label: "Bank Mandiri Livin", type: "Mutasi Otomatis" },
-    { label: "BRImo Korporat", type: "Rekening Usaha" },
-    { label: "QRIS Nasional", type: "Bon Dinamis" },
-    { label: "IDwebhost CloudBaik VPS", type: "Infrastruktur Cloud" },
-    { label: "Hermes Agent Framework", type: "Arsitektur AI" },
-    { label: "WhatsApp Business API", type: "Komunikasi Santun" },
-    { label: "POS Moka & Pawoon", type: "Sinkronisasi Kasir" },
+  const ecosystemPartners = [
+    {
+      name: "Bank Central Asia (BCA)",
+      desc: "Mutasi e-Banking & Giro Usaha",
+      icon: <Building2 className="h-4 w-4 text-neutral-800" />,
+    },
+    {
+      name: "Bank Mandiri",
+      desc: "Sinkronisasi Rekening Livin & MCM",
+      icon: <Wallet className="h-4 w-4 text-neutral-800" />,
+    },
+    {
+      name: "Bank BRI",
+      desc: "Rekap Mutasi Transaksi BRImo",
+      icon: <CreditCard className="h-4 w-4 text-neutral-800" />,
+    },
+    {
+      name: "QRIS Standar Nasional",
+      desc: "Generasi QR Pembayaran Dinamis",
+      icon: <QrCode className="h-4 w-4 text-neutral-800" />,
+    },
+    {
+      name: "BI-FAST Bank Indonesia",
+      desc: "Kliring Arus Kas Real-Time",
+      icon: <Zap className="h-4 w-4 text-neutral-800" />,
+    },
+    {
+      name: "WhatsApp Business API",
+      desc: "Draf Negosiasi & Bon Santun",
+      icon: <MessageSquare className="h-4 w-4 text-neutral-800" />,
+    },
+    {
+      name: "IDwebhost CloudBaik",
+      desc: "Hosting Dedicated VPS Terisolasi",
+      icon: <Server className="h-4 w-4 text-neutral-800" />,
+    },
+    {
+      name: "Hermes Agent Framework",
+      desc: "Kalkulasi Deterministik Python",
+      icon: <Cpu className="h-4 w-4 text-neutral-800" />,
+    },
   ];
 
   return (
@@ -85,20 +127,28 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
           </div>
         </div>
 
-        {/* beUI Infinite Marquee Ecosystem Bar */}
-        <div className="pt-10 max-w-3xl mx-auto border-t border-neutral-100/80">
-          <div className="text-[11px] font-medium text-neutral-400 mb-3 tracking-wide uppercase">
-            Terhubung Langsung dengan Ekosistem Perbankan & UMKM Indonesia
+        {/* High-End Fintech Ecosystem Integration Strip */}
+        <div className="pt-10 max-w-4xl mx-auto border-t border-neutral-100">
+          <div className="text-xs font-medium text-neutral-500 mb-4 tracking-normal">
+            Kompatibel dengan perbankan & sistem pembayaran resmi Indonesia
           </div>
-          <Marquee speed={25} gap="1.5rem" className="py-1">
-            {ecosystems.map((eco, idx) => (
+          <Marquee speed={28} gap="1.5rem" className="py-2" fade={true}>
+            {ecosystemPartners.map((partner, idx) => (
               <div
                 key={idx}
-                className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-50 border border-neutral-200/60 text-xs text-neutral-700 whitespace-nowrap shadow-xs"
+                className="flex items-center gap-3 px-3.5 py-2 rounded-xl bg-white border border-neutral-200/80 shadow-2xs hover:border-neutral-300 transition-all text-left group"
               >
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                <span className="font-semibold text-neutral-900">{eco.label}</span>
-                <span className="text-[10px] text-neutral-400">· {eco.type}</span>
+                <div className="h-7 w-7 rounded-lg bg-neutral-100 flex items-center justify-center shrink-0 border border-neutral-200/60 group-hover:bg-neutral-200/60 transition-colors">
+                  {partner.icon}
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xs font-semibold text-neutral-900 tracking-tight whitespace-nowrap">
+                    {partner.name}
+                  </span>
+                  <span className="text-[11px] text-neutral-500 font-normal whitespace-nowrap">
+                    {partner.desc}
+                  </span>
+                </div>
               </div>
             ))}
           </Marquee>

@@ -183,7 +183,7 @@
       "file_type": "code",
       "norm_label": "herosectionprops",
       "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L7"
+      "source_location": "L17"
     },
     {
       "id": "frontend_src_components_motion_button_motionbuttonprops",
@@ -1093,7 +1093,7 @@
       "file_type": "code",
       "norm_label": "herosection()",
       "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L11"
+      "source_location": "L21"
     },
     {
       "id": "frontend_src_components_boarduiagentthinking_boarduiagentthinking",
@@ -7713,7 +7713,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L3",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -7725,7 +7725,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L4",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -7737,7 +7737,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L5",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -9158,18 +9158,6 @@
     },
     {
       "source": "frontend_src_components_herosection",
-      "target": "ref_lucide_react",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L2",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_herosection",
       "target": "frontend_src_components_motion_expanding_arrow_button",
       "relation": "imports_from",
       "_origin": "ast",
@@ -9177,7 +9165,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L3",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -9189,7 +9177,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L4",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -9201,7 +9189,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L5",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_herosection",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/HeroSection.tsx",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -11927,24 +11927,24 @@
     },
     {
       "source": "frontend_src_components_herosection",
-      "target": "frontend_src_components_herosection_herosection",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_herosection",
       "target": "frontend_src_components_herosection_herosectionprops",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L7",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_herosection",
+      "target": "frontend_src_components_herosection_herosection",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/HeroSection.tsx",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -14843,5 +14843,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "bd08851dd0003d0af1f0c22e5acba64f52cdb4b9"
+  "built_at_commit": "3505d1aba735cccb1272be9999a5dda9310449a2"
 }

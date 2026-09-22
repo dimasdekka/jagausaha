@@ -138,9 +138,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/HeroSection.tsx": {
-    "mtime": 1790053218.5104077,
-    "seen": 1790053414.7118094,
-    "ast_hash": "6cbc749c7fbeeef20c095c9bb1f77b38",
+    "mtime": 1790054446.7267346,
+    "seen": 1790054549.559343,
+    "ast_hash": "cea2e67d335ccead5d8ffbeef0d3775b",
     "semantic_hash": ""
   },
   "frontend/src/components/HowItWorks.tsx": {
@@ -663,6 +663,12 @@
     "mtime": 1790054254.7962909,
     "seen": 1790054338.1713145,
     "ast_hash": "7ad097dc9d934cafcc3858d19864c65e",
+    "semantic_hash": ""
+  },
+  "screenshot_ecosystem_redesigned.png": {
+    "mtime": 1790054510.7343142,
+    "seen": 1790054549.559343,
+    "ast_hash": "ce1d343b4d420c3d59a3c9f38e7cf12e",
     "semantic_hash": ""
   }
 }
