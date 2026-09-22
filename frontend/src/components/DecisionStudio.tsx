@@ -79,11 +79,11 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
         {/* Scenario Selector Tabs */}
         <div className="space-y-2.5">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold text-neutral-500 uppercase tracking-wider flex items-center gap-1.5">
+            <span className="text-xs font-medium text-neutral-700 flex items-center gap-1.5">
               <Sparkles className="h-3 w-3 text-neutral-400" />
               Pilih Skenario Belanja Modal:
             </span>
-            <span className="text-xs text-neutral-400 hidden sm:inline">
+            <span className="text-xs text-neutral-500 hidden sm:inline">
               Uji dampak pengeluaran terhadap saldo kas operasional
             </span>
           </div>
@@ -104,7 +104,7 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
                   <div className="text-xs font-semibold tracking-tight truncate">
                     {preset.label}
                   </div>
-                  <div className={`text-[11px] font-mono mt-0.5 ${isSelected ? 'text-neutral-300' : 'text-neutral-500'}`}>
+                  <div className={`text-xs tabular-nums mt-0.5 font-normal ${isSelected ? 'text-neutral-300' : 'text-neutral-500'}`}>
                     {preset.outflow > 0 ? `Rp ${(preset.outflow / 1_000_000).toFixed(1)} Jt` : 'Beban Rutin'}
                   </div>
                 </button>
