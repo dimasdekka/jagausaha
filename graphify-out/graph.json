@@ -794,7 +794,7 @@
       "file_type": "code",
       "norm_label": "dashboardpageprops",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L26"
+      "source_location": "L28"
     },
     {
       "id": "frontend_src_components_motion_number_animatednumberprops",
@@ -1800,7 +1800,7 @@
       "file_type": "code",
       "norm_label": "dashboardpage()",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L50"
+      "source_location": "L52"
     },
     {
       "id": "frontend_src_components_motion_number_animatednumber",
@@ -8112,7 +8112,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L21",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -8124,7 +8124,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L22",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -8136,7 +8136,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L23",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -8148,7 +8148,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L24",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -9588,7 +9588,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L21",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -9600,7 +9600,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L22",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -9612,7 +9612,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L23",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -9624,7 +9624,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L24",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -13025,7 +13025,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L26",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -13036,7 +13036,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L50",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -16375,5 +16375,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0cebc7de4f91100611d144ecc383ba45f59bc487"
+  "built_at_commit": "419c48d3ef5b0f118b49000c7b1a6a1445aab001"
 }

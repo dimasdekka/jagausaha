@@ -1008,9 +1008,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/LoginPage.tsx": {
-    "mtime": 1790189091.892609,
-    "seen": 1790189637.3746934,
-    "ast_hash": "30ebd65a90b4ebbeccbe1efe03bc89e8",
+    "mtime": 1790190286.4630456,
+    "seen": 1790190560.8134022,
+    "ast_hash": "041a26d93e857c363bf2c309a30e4ff0",
     "semantic_hash": ""
   },
   "frontend/src/components/ui/JagaUsahaLogo.tsx": {
@@ -1068,15 +1068,21 @@
     "semantic_hash": ""
   },
   "frontend/src/components/DashboardPage.tsx": {
-    "mtime": 1790190069.0260036,
-    "seen": 1790190141.3464673,
-    "ast_hash": "318705903e6237edc7a5a386b9b1ea07",
+    "mtime": 1790190539.7238355,
+    "seen": 1790190560.8134022,
+    "ast_hash": "d9bce3c52c88ff88d9639c52ca8d954b",
     "semantic_hash": ""
   },
   "screenshot_dashboard_page_verified.png": {
     "mtime": 1790190026.1830797,
     "seen": 1790190141.3464673,
     "ast_hash": "b48d12d3cf64752836db5b03c18f2a75",
+    "semantic_hash": ""
+  },
+  "screenshot_left_sidebar_dashboard_verified.png": {
+    "mtime": 1790190499.6774268,
+    "seen": 1790190560.8144028,
+    "ast_hash": "819e7f8537c7a53bd698433cc11bb228",
     "semantic_hash": ""
   }
 }
