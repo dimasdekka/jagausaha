@@ -5,7 +5,6 @@ import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { DecisionStudio } from './components/DecisionStudio';
 import { FeatureAgents } from './components/FeatureAgents';
-import { HowItWorks } from './components/HowItWorks';
 import { ActionFeed } from './components/ActionFeed';
 import { FAQSection } from './components/FAQSection';
 import { FinalCTA } from './components/FinalCTA';
@@ -20,7 +19,6 @@ import {
   Activity,
   Shield,
   MessageSquareCode,
-  Zap,
   HelpCircle,
   FileSpreadsheet,
   Volume2,
@@ -313,28 +311,20 @@ export function App() {
 
     // Navigasi Bagian
     {
+      id: 'cmd-nav-agents',
+      label: 'Arsitektur 3 Agen (Sensor, Simulator, Advisor)',
+      group: 'Navigasi Langsung',
+      icon: Activity,
+      keywords: ['agent', 'arsitektur', 'sensor', 'simulator', 'advisor', 'cara kerja'],
+      onSelect: () => scrollToSection('feature-agents'),
+    },
+    {
       id: 'cmd-nav-sandbox',
       label: 'Simulator Kas (Decision Sandbox)',
       group: 'Navigasi Langsung',
       icon: TrendingUp,
       keywords: ['simulator', 'sandbox', 'chart', 'grafik', 'kas'],
       onSelect: () => scrollToSection('demo-sandbox'),
-    },
-    {
-      id: 'cmd-nav-agents',
-      label: 'Arsitektur Multi-Agent (Sensor, Simulator, Advisor)',
-      group: 'Navigasi Langsung',
-      icon: Activity,
-      keywords: ['agent', 'arsitektur', 'sensor', 'simulator', 'advisor'],
-      onSelect: () => scrollToSection('feature-agents'),
-    },
-    {
-      id: 'cmd-nav-how-it-works',
-      label: 'Cara Kerja & Alur 3 Tahap',
-      group: 'Navigasi Langsung',
-      icon: Zap,
-      keywords: ['cara kerja', 'tahap', 'step', 'alur'],
-      onSelect: () => scrollToSection('how-it-works'),
     },
     {
       id: 'cmd-nav-action-feed',
@@ -405,10 +395,13 @@ export function App() {
       />
 
       <main className="flex-1 w-full space-y-16 sm:space-y-24">
-        {/* 1. Hero Section (Clean, No Fake Quotes) */}
-        <HeroSection onScrollToDemo={scrollToDemo} />
+        {/* 1. Hero Section (Hook & Problem/Solution Context) */}
+        <HeroSection onScrollToDemo={() => scrollToSection('feature-agents')} />
 
-        {/* 2. Interactive Decision Studio Sandbox */}
+        {/* 2. Closed-Loop Multi-Agent Architecture (01 Ingest -> 02 Simulate -> 03 Act) */}
+        <FeatureAgents />
+
+        {/* 3. Live Interactive Decision Studio Sandbox */}
         <section ref={demoSectionRef} id="demo-sandbox" className="max-w-5xl mx-auto px-4 sm:px-6 scroll-mt-24">
           <DecisionStudio
             currentCash={pulse.current_cash}
@@ -431,27 +424,21 @@ export function App() {
           />
         </section>
 
-        {/* 3. Feature Agents */}
-        <FeatureAgents />
-
-        {/* 4. How It Works */}
-        <HowItWorks onSimulateCustom={(amt) => { runSimulation('espresso_cash', amt); scrollToDemo(); }} />
-
-        {/* 5. Priority Tactical Actions */}
-        <section className="max-w-5xl mx-auto px-4 sm:px-6">
+        {/* 4. Priority Tactical Actions (Real Daily Interventions) */}
+        <section id="action-feed" className="max-w-5xl mx-auto px-4 sm:px-6 scroll-mt-24">
           <ActionFeed
             onOpenNudge={openWhatsAppNudge}
             onOpenNegotiate={openSupplierNegotiate}
           />
         </section>
 
-        {/* 6. FAQ Accordion */}
+        {/* 5. Transparansi Arsitektur & Keamanan (FAQ) */}
         <FAQSection />
 
-        {/* 7. Final Call to Action */}
+        {/* 6. Final Call to Action */}
         <FinalCTA onStart={scrollToDemo} />
 
-        {/* 8. VPS Telemetry Logs */}
+        {/* 7. VPS Telemetry & Audit Logs */}
         <section className="max-w-5xl mx-auto px-4 sm:px-6">
           <TerminalDrawer logs={logs} />
         </section>

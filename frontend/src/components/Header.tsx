@@ -68,14 +68,6 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Desktop Navigation Links with beUI SharedLayoutBg */}
           <SharedLayoutBg as="nav" className="hidden md:flex items-center gap-1 text-xs font-medium text-neutral-600">
-            {/* Simulator Link */}
-            <button
-              onClick={() => handleNavClick('demo-sandbox')}
-              className="px-3.5 py-2 rounded-full hover:text-neutral-950 transition-colors cursor-pointer"
-            >
-              Simulator Kas
-            </button>
-
             {/* Agen & Arsitektur Dropdown */}
             <div
               className="relative"
@@ -160,12 +152,20 @@ export const Header: React.FC<HeaderProps> = ({
               </AnimatePresence>
             </div>
 
-            {/* Cara Kerja */}
+            {/* Simulator Link */}
             <button
-              onClick={() => handleNavClick('how-it-works')}
+              onClick={() => handleNavClick('demo-sandbox')}
               className="px-3.5 py-2 rounded-full hover:text-neutral-950 transition-colors cursor-pointer"
             >
-              Cara Kerja
+              Simulator Kas
+            </button>
+
+            {/* Tindakan Taktis */}
+            <button
+              onClick={() => handleNavClick('action-feed')}
+              className="px-3.5 py-2 rounded-full hover:text-neutral-950 transition-colors cursor-pointer"
+            >
+              Tindakan Taktis
             </button>
 
             {/* Tanya Jawab */}

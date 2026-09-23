@@ -78,9 +78,9 @@
     "semantic_hash": "ef3ba2a81ba19f8ea5ddf625521e96f0"
   },
   "frontend/src/App.tsx": {
-    "mtime": 1790187609.1667833,
-    "seen": 1790187834.8969367,
-    "ast_hash": "908aadc1005aea1b97778dee9b57e759",
+    "mtime": 1790188100.6167905,
+    "seen": 1790188188.4935284,
+    "ast_hash": "15a70e39ef767f1476ac3e23e415ca02",
     "semantic_hash": ""
   },
   "frontend/src/components/ActionFeed.tsx": {
@@ -114,9 +114,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/FeatureAgents.tsx": {
-    "mtime": 1790187539.3613057,
-    "seen": 1790187834.8969367,
-    "ast_hash": "d462c0b42cf16708aef95c36debb8038",
+    "mtime": 1790187980.281503,
+    "seen": 1790188188.4935284,
+    "ast_hash": "3863738a3ffaea86f6c80caf33253f62",
     "semantic_hash": ""
   },
   "frontend/src/components/FinalCTA.tsx": {
@@ -132,9 +132,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/Header.tsx": {
-    "mtime": 1790186919.884853,
-    "seen": 1790186995.565561,
-    "ast_hash": "02e4bd47b978b1e9c25991b66cba7bcd",
+    "mtime": 1790188017.9520078,
+    "seen": 1790188188.4935284,
+    "ast_hash": "70130c19c9c24ac465e9fe32c36d93f3",
     "semantic_hash": ""
   },
   "frontend/src/components/HeroSection.tsx": {
@@ -999,6 +999,12 @@
     "mtime": 1790187678.6004777,
     "seen": 1790187834.8969367,
     "ast_hash": "dfc357b2a92abd80a8668531c2e5b651",
+    "semantic_hash": ""
+  },
+  "screenshot_feature_agents_redesigned_verified.png": {
+    "mtime": 1790188150.4430003,
+    "seen": 1790188188.4935284,
+    "ast_hash": "57a55cd5d42c225f85f841990ada157d",
     "semantic_hash": ""
   }
 }
