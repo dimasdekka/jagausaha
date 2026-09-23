@@ -44,21 +44,21 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-    <header className="sticky top-3.5 z-50 w-full px-4 sm:px-6 transition-all duration-300">
+    <header className="sticky top-4 z-50 w-full px-4 sm:px-6 transition-all duration-300">
       <div
         className={`max-w-4xl mx-auto rounded-full border transition-all duration-300 ${
           isScrolled
-            ? 'border-neutral-300/80 bg-white/95 shadow-xl shadow-neutral-900/[0.06] backdrop-blur-xl h-13 px-4 sm:px-5'
-            : 'border-neutral-200/80 bg-white/80 shadow-md shadow-neutral-900/[0.03] backdrop-blur-lg h-14 px-4 sm:px-6'
+            ? 'border-neutral-300/80 bg-white/95 shadow-[0_12px_36px_rgba(0,0,0,0.08)] backdrop-blur-2xl h-16 px-5 sm:px-6'
+            : 'border-neutral-200/90 bg-white/85 shadow-[0_8px_30px_rgba(0,0,0,0.04)] backdrop-blur-xl h-16 px-5 sm:px-6'
         } flex items-center justify-between`}
       >
         {/* Brand Left */}
         <div className="flex items-center gap-6">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center gap-2.5 group text-left cursor-pointer"
+            className="flex items-center gap-3 group text-left cursor-pointer"
           >
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-950 text-white font-bold text-xs shadow-xs transition-transform group-hover:scale-105">
+            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-950 text-white font-bold text-xs shadow-xs transition-transform group-hover:scale-105">
               JU
             </div>
             <span className="text-sm font-bold tracking-tight text-neutral-950">
@@ -66,12 +66,12 @@ export const Header: React.FC<HeaderProps> = ({
             </span>
           </button>
 
-          {/* Desktop Navigation Links with beUI SharedLayoutBg (Clean, No Random Icon Clutter) */}
-          <SharedLayoutBg as="nav" className="hidden md:flex items-center gap-0.5 text-xs font-medium text-neutral-600">
+          {/* Desktop Navigation Links with beUI SharedLayoutBg */}
+          <SharedLayoutBg as="nav" className="hidden md:flex items-center gap-1 text-xs font-medium text-neutral-600">
             {/* Simulator Link */}
             <button
               onClick={() => handleNavClick('demo-sandbox')}
-              className="px-3.5 py-1.5 rounded-full hover:text-neutral-950 transition-colors cursor-pointer"
+              className="px-3.5 py-2 rounded-full hover:text-neutral-950 transition-colors cursor-pointer"
             >
               Simulator Kas
             </button>
@@ -84,10 +84,10 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <button
                 onClick={() => handleNavClick('feature-agents')}
-                className="px-3.5 py-1.5 rounded-full hover:text-neutral-950 transition-colors flex items-center gap-1 cursor-pointer"
+                className="px-3.5 py-2 rounded-full hover:text-neutral-950 transition-colors flex items-center gap-1 cursor-pointer"
               >
                 <span>Arsitektur Agen</span>
-                <ChevronDown className={`h-3 w-3 text-neutral-400 transition-transform duration-150 ${agentDropdownOpen ? 'rotate-180 text-neutral-950' : ''}`} />
+                <ChevronDown className={`h-3.5 w-3.5 text-neutral-400 transition-transform duration-150 ${agentDropdownOpen ? 'rotate-180 text-neutral-950' : ''}`} />
               </button>
 
               {/* Mega Dropdown Menu with beUI Spring Motion */}
@@ -163,7 +163,7 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Cara Kerja */}
             <button
               onClick={() => handleNavClick('how-it-works')}
-              className="px-3.5 py-1.5 rounded-full hover:text-neutral-950 transition-colors cursor-pointer"
+              className="px-3.5 py-2 rounded-full hover:text-neutral-950 transition-colors cursor-pointer"
             >
               Cara Kerja
             </button>
@@ -171,40 +171,34 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Tanya Jawab */}
             <button
               onClick={() => handleNavClick('faq')}
-              className="px-3.5 py-1.5 rounded-full hover:text-neutral-950 transition-colors cursor-pointer"
+              className="px-3.5 py-2 rounded-full hover:text-neutral-950 transition-colors cursor-pointer"
             >
               FAQ
             </button>
           </SharedLayoutBg>
         </div>
 
-        {/* Right Actions Dock (Linear / Apple Tier: Clean, No Nested Pill Clutter) */}
-        <div className="flex items-center gap-2.5">
-          {/* Quick Command Palette Search Button (Linear / Raycast Style) */}
+        {/* Right Actions Dock (Linear / Apple Tier: High Conversion, No Server Clutter) */}
+        <div className="flex items-center gap-3">
+          {/* Quick Command Palette Search Button */}
           <button
             onClick={onOpenCommandPalette}
-            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-neutral-100 hover:bg-neutral-200/80 border border-neutral-200/60 text-[11px] text-neutral-500 hover:text-neutral-900 transition-all cursor-pointer shadow-2xs group"
+            className="hidden sm:flex items-center gap-2 h-9 px-3.5 rounded-full bg-neutral-100/90 hover:bg-neutral-200/80 border border-neutral-200/70 text-xs text-neutral-500 hover:text-neutral-900 transition-all cursor-pointer shadow-2xs group"
             title="Buka Command Palette (⌘K)"
           >
-            <Search className="h-3 w-3 text-neutral-400 group-hover:text-neutral-700" />
+            <Search className="h-3.5 w-3.5 text-neutral-400 group-hover:text-neutral-700" />
             <span className="font-medium">Cari...</span>
-            <kbd className="inline-flex items-center rounded border border-neutral-300/80 bg-white px-1 font-mono text-[9px] font-semibold text-neutral-600 shadow-2xs">
+            <kbd className="inline-flex items-center rounded-md border border-neutral-300/80 bg-white px-1.5 py-0.5 font-mono text-[10px] font-semibold text-neutral-600 shadow-2xs">
               ⌘K
             </kbd>
           </button>
-
-          {/* Subtle Server Ping */}
-          <div className="hidden lg:flex items-center gap-1.5 text-[11px] font-medium text-neutral-500 px-1">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-            <span>CloudBaik VPS</span>
-          </div>
 
           {/* Primary Action Button */}
           <MotionButton
             variant="primary"
             size="sm"
             onClick={() => handleNavClick('demo-sandbox')}
-            className="px-4.5 h-8.5 text-xs font-semibold rounded-full shadow-xs"
+            className="h-9 px-5 text-xs font-semibold rounded-full shadow-xs"
           >
             <span>Uji Coba</span>
             <ArrowRight className="h-3.5 w-3.5" />
@@ -213,7 +207,7 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-1.5 rounded-full text-neutral-600 hover:bg-neutral-100 transition-colors cursor-pointer"
+            className="md:hidden p-2 rounded-full text-neutral-600 hover:bg-neutral-100 transition-colors cursor-pointer"
           >
             {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
@@ -280,13 +274,6 @@ export const Header: React.FC<HeaderProps> = ({
                   <span>Tanya Jawab (FAQ)</span>
                   <ArrowRight className="h-3.5 w-3.5 text-neutral-400" />
                 </button>
-              </div>
-
-              <div className="pt-3 border-t border-neutral-100 flex items-center justify-between text-xs text-neutral-500">
-                <span className="flex items-center gap-1.5 font-medium">
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                  IDwebhost CloudBaik VPS
-                </span>
               </div>
             </div>
           </motion.div>
