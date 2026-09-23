@@ -78,9 +78,9 @@
     "semantic_hash": "ef3ba2a81ba19f8ea5ddf625521e96f0"
   },
   "frontend/src/App.tsx": {
-    "mtime": 1790188901.3364818,
-    "seen": 1790189637.3746934,
-    "ast_hash": "46a695999647ed8f34d0c31ebe4079db",
+    "mtime": 1790189946.622569,
+    "seen": 1790190141.3464673,
+    "ast_hash": "02cc721ecc6e3d98881c7d96c228e875",
     "semantic_hash": ""
   },
   "frontend/src/components/ActionFeed.tsx": {
@@ -108,9 +108,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/FAQSection.tsx": {
-    "mtime": 1790097872.3756804,
-    "seen": 1790186583.6545866,
-    "ast_hash": "721dbf3c15c3fae7d4c71f8c0cb6c39b",
+    "mtime": 1790189846.8321948,
+    "seen": 1790190141.3464673,
+    "ast_hash": "4c52d98a52fb6be6a3302908b4a30d29",
     "semantic_hash": ""
   },
   "frontend/src/components/FeatureAgents.tsx": {
@@ -942,9 +942,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/motion/bouncy-accordion.tsx": {
-    "mtime": 1790097848.6542468,
-    "seen": 1790186583.6545866,
-    "ast_hash": "0dad19d3325bd9299e33e47f46b8bbf6",
+    "mtime": 1790189836.2502332,
+    "seen": 1790190141.3464673,
+    "ast_hash": "ac41b891ca04a93fc6c56605bf8bf905",
     "semantic_hash": ""
   },
   "frontend/src/components/motion/command-palette.tsx": {
@@ -1065,6 +1065,18 @@
     "mtime": 1790188999.1410103,
     "seen": 1790189637.3746934,
     "ast_hash": "1381af081fb078cc1ea17669ff9f0753",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/DashboardPage.tsx": {
+    "mtime": 1790190069.0260036,
+    "seen": 1790190141.3464673,
+    "ast_hash": "318705903e6237edc7a5a386b9b1ea07",
+    "semantic_hash": ""
+  },
+  "screenshot_dashboard_page_verified.png": {
+    "mtime": 1790190026.1830797,
+    "seen": 1790190141.3464673,
+    "ast_hash": "b48d12d3cf64752836db5b03c18f2a75",
     "semantic_hash": ""
   }
 }

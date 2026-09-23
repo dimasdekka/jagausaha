@@ -43,6 +43,7 @@ export interface BouncyAccordionProps {
   defaultValue?: string | null;
   onValueChange?: (value: string | null) => void;
   collapsible?: boolean;
+  expandOnHover?: boolean;
   className?: string;
   classNames?: BouncyAccordionClassNames;
 }
@@ -115,6 +116,7 @@ function BouncyAccordionRow({
   reduce,
   classNames,
   onToggle,
+  onHover,
 }: {
   item: BouncyAccordionItem;
   open: boolean;
@@ -126,6 +128,7 @@ function BouncyAccordionRow({
   reduce: boolean | null;
   classNames?: BouncyAccordionClassNames;
   onToggle: () => void;
+  onHover?: () => void;
 }) {
   const contentRef = useRef<HTMLDivElement>(null);
   const [contentHeight, setContentHeight] = useState(0);
@@ -171,6 +174,9 @@ function BouncyAccordionRow({
           item.disabled && "opacity-50",
           classNames?.item,
         )}
+        onMouseEnter={() => {
+          if (onHover) onHover();
+        }}
       >
         <button
           id={triggerId}
@@ -179,6 +185,9 @@ function BouncyAccordionRow({
           aria-expanded={open}
           aria-controls={contentId}
           onClick={onToggle}
+          onMouseEnter={() => {
+            if (onHover) onHover();
+          }}
           className={cn(
             "flex min-h-[56px] w-full items-center gap-4 px-5 py-3 text-left outline-none transition-colors cursor-pointer",
             "hover:bg-neutral-50/80",
@@ -265,6 +274,7 @@ export function BouncyAccordion({
   defaultValue = null,
   onValueChange,
   collapsible = true,
+  expandOnHover = false,
   className,
   classNames,
 }: BouncyAccordionProps) {
@@ -315,6 +325,7 @@ export function BouncyAccordion({
             reduce={reduce}
             classNames={classNames}
             onToggle={() => toggleItem(item.id)}
+            onHover={expandOnHover ? () => setActiveValue(item.id) : undefined}
           />
         );
       })}

@@ -12,6 +12,7 @@ import { Footer } from './components/Footer';
 import { TerminalDrawer } from './components/TerminalDrawer';
 import { WhatsAppModal } from './components/WhatsAppModal';
 import { LoginPage } from './components/LoginPage';
+import { DashboardPage } from './components/DashboardPage';
 import { useAnimatedToastStack, AnimatedToastStack } from './components/motion/animated-toast-stack';
 import { CommandPalette, type CommandItem } from './components/motion/command-palette';
 import {
@@ -214,16 +215,19 @@ export function App() {
   };
 
   const [isCommandOpen, setIsCommandOpen] = useState(false);
-  const [currentView, setCurrentView] = useState<'landing' | 'login'>(() => {
+  const [currentView, setCurrentView] = useState<'landing' | 'login' | 'dashboard'>(() => {
     if (typeof window !== 'undefined') {
-      return window.location.hash === '#login' || window.location.pathname === '/login' ? 'login' : 'landing';
+      if (window.location.hash === '#dashboard' || window.location.pathname === '/dashboard') return 'dashboard';
+      if (window.location.hash === '#login' || window.location.pathname === '/login') return 'login';
     }
     return 'landing';
   });
 
   useEffect(() => {
     const handleHashChange = () => {
-      if (window.location.hash === '#login') {
+      if (window.location.hash === '#dashboard') {
+        setCurrentView('dashboard');
+      } else if (window.location.hash === '#login') {
         setCurrentView('login');
       } else {
         setCurrentView('landing');
@@ -236,6 +240,12 @@ export function App() {
   const goToLogin = () => {
     setCurrentView('login');
     window.location.hash = '#login';
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  };
+
+  const goToDashboard = () => {
+    setCurrentView('dashboard');
+    window.location.hash = '#dashboard';
     window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
@@ -411,11 +421,56 @@ export function App() {
           onLoginSuccess={(email) => {
             showToast({
               title: 'Login Berhasil!',
-              description: `Selamat datang kembali, ${email}. Portal JagaUsaha aktif.`,
+              description: `Selamat datang di Dashboard JagaUsaha, ${email}!`,
               status: 'success',
+            });
+            goToDashboard();
+          }}
+        />
+        <AnimatedToastStack
+          toasts={toasts}
+          onDismiss={dismissToast}
+          position="bottom-right"
+        />
+      </>
+    );
+  }
+
+  if (currentView === 'dashboard') {
+    return (
+      <>
+        <DashboardPage
+          onLogout={() => {
+            showToast({
+              title: 'Logout Berhasil',
+              description: 'Sesi aman berakhir. Kembali ke beranda.',
+              status: 'info',
             });
             goToLanding();
           }}
+          onOpenWhatsAppModal={(data) => setModalData({ isOpen: true, ...data })}
+          currentCash={pulse.current_cash}
+          safeToSpend={pulse.safe_to_spend}
+          safetyBuffer={pulse.safety_buffer}
+          runwayDays={pulse.runway_days}
+          dailyGross={pulse.daily_gross}
+          baselineDays={pulse.baseline_trajectory.days}
+          baselineCash={pulse.baseline_trajectory.cash}
+          scenarioCash={scenarioCurve}
+          insolvencyDay={insolvencyDay}
+          scenarioName={scenarioName}
+          activePreset={activePreset}
+          presets={PRESETS}
+          onSelectPreset={runSimulation}
+          onOpenCommandPalette={() => setIsCommandOpen(true)}
+        />
+        <WhatsAppModal
+          isOpen={modalData.isOpen}
+          onClose={() => setModalData((prev) => ({ ...prev, isOpen: false }))}
+          title={modalData.title}
+          recipientName={modalData.recipient}
+          whatsappText={modalData.text}
+          type={modalData.type}
         />
         <AnimatedToastStack
           toasts={toasts}

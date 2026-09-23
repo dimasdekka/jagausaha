@@ -55,6 +55,7 @@ export const FAQSection: React.FC = () => {
           items={faqs}
           defaultValue="faq-1"
           collapsible={true}
+          expandOnHover={true}
         />
       </div>
     </section>
