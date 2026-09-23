@@ -5,7 +5,7 @@ import { DecisionIntelligenceCard } from './DecisionIntelligenceCard';
 import { SimulationChatModal } from './SimulationChatModal';
 import { ThinkingOrb, type OrbState } from 'thinking-orbs';
 import { BorderBeam } from 'border-beam';
-import { Mic, Sparkles, Send, Volume2 } from 'lucide-react';
+import { Mic, Sparkles, Send } from 'lucide-react';
 import { Input } from './motion/input';
 import { MotionButton } from './motion/button';
 
@@ -226,73 +226,74 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
           </div>
         </div>
 
-        {/* 5. Raycast-Style Ambient AI Command Bar with BorderBeam & ThinkingOrb */}
-        <BorderBeam
-          size="md"
-          colorVariant="colorful"
-          strength={0.7}
-          theme="light"
-          borderRadius={16}
-        >
-          <div className="rounded-2xl border border-neutral-200/90 bg-white/95 p-4 sm:p-5 space-y-3.5 shadow-sm">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-neutral-100 pb-3">
-              <div className="flex items-center gap-2.5">
-                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-neutral-900 text-white overflow-hidden shadow-xs">
-                  <ThinkingOrb
-                    state={orbState === 'listening' ? 'listening' : 'breathing'}
-                    size={20}
-                    speed={1}
-                    theme="dark"
-                  />
-                </div>
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-semibold text-neutral-950">
-                      Konsultasi Keputusan Finansial AI
-                    </span>
-                    <span className="text-[10px] text-emerald-600 font-medium bg-emerald-50 border border-emerald-200/60 px-2 py-0.2 rounded-full">
-                      DLMM Engine
-                    </span>
-                  </div>
-                  <div className="text-[11px] text-neutral-500 font-normal">
-                    Ketik pertanyaan custom atau uji voice note WhatsApp untuk simulasi instan
-                  </div>
-                </div>
-              </div>
-
-              <button
-                onClick={handleVoiceTest}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-neutral-50 hover:bg-neutral-100 border border-neutral-200/80 text-[11px] font-medium text-neutral-800 transition-all shadow-2xs cursor-pointer active:scale-95"
-              >
-                <Volume2 className="h-3.5 w-3.5 text-emerald-600" />
-                <span>Uji Voice Note WhatsApp</span>
-              </button>
-            </div>
-
-            {/* Input Row with Reactive ThinkingOrb & beUI Input */}
-            <div className="flex flex-col sm:flex-row items-center gap-3">
-              {/* Live Interactive ThinkingOrb Avatar Scale (64px) */}
-              <div
-                onClick={handleVoiceTest}
-                className="hidden sm:flex items-center justify-center h-11 w-11 rounded-xl bg-neutral-50 border border-neutral-200/90 shadow-2xs cursor-pointer hover:border-neutral-400 hover:scale-105 transition-all shrink-0 overflow-hidden"
-                title="ThinkingOrb AI Voice Simulation - Klik untuk uji suara"
-              >
+        {/* 5. Raycast-Style Ambient AI Command Bar */}
+        <div className="rounded-2xl border border-neutral-200/90 bg-white p-4 sm:p-5 space-y-3.5 shadow-xs">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-neutral-100 pb-3">
+            <div className="flex items-center gap-2.5">
+              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-neutral-900 text-white overflow-hidden shadow-xs">
                 <ThinkingOrb
-                  state={orbState === 'listening' ? 'listening' : (promptText ? 'composing' : 'searching')}
-                  size={64}
+                  state={orbState === 'listening' ? 'listening' : 'breathing'}
+                  size={20}
                   speed={1}
-                  theme="light"
+                  theme="dark"
                 />
               </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-semibold text-neutral-950">
+                    Konsultasi Keputusan Finansial AI
+                  </span>
+                  <span className="text-[10px] text-emerald-600 font-medium bg-emerald-50 border border-emerald-200/60 px-2 py-0.2 rounded-full">
+                    DLMM Engine
+                  </span>
+                </div>
+                <div className="text-[11px] text-neutral-500 font-normal">
+                  Simulasi dampak pengeluaran modal kustom terhadap arus kas 30 hari ke depan
+                </div>
+              </div>
+            </div>
+          </div>
 
-              {/* Input Bar */}
-              <div className="flex-1 w-full">
+          {/* Input Row with Reactive ThinkingOrb & Input Wrapped in BorderBeam */}
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            {/* Live Interactive ThinkingOrb Avatar Scale (64px) */}
+            <div
+              onClick={handleVoiceTest}
+              className="hidden sm:flex items-center justify-center h-11 w-11 rounded-xl bg-neutral-50 border border-neutral-200/90 shadow-2xs cursor-pointer hover:border-neutral-400 hover:scale-105 transition-all shrink-0 overflow-hidden"
+              title="ThinkingOrb AI Voice Simulation - Klik untuk uji suara"
+            >
+              <ThinkingOrb
+                state={orbState === 'listening' ? 'listening' : (promptText ? 'composing' : 'searching')}
+                size={64}
+                speed={1}
+                theme="light"
+              />
+            </div>
+
+            {/* Input Bar with RGB BorderBeam (Around Input Field Itself) */}
+            <div className="flex-1 w-full relative">
+              <BorderBeam
+                size="sm"
+                colorVariant="colorful"
+                strength={0.85}
+                theme="light"
+                borderRadius={9999}
+              >
                 <Input
                   type="text"
                   value={promptText}
                   onChange={(val) => setPromptText(val)}
                   placeholder='Tanyakan skenario custom... (cth: "Sewa ruko 20 juta per tahun aman?")'
-                  leftIcon={<Mic className="h-4 w-4 text-neutral-400" />}
+                  leftIcon={
+                    <button
+                      type="button"
+                      onClick={handleVoiceTest}
+                      title="Klik untuk uji simulasi pesan suara WhatsApp"
+                      className="p-0.5 rounded-full hover:bg-neutral-100 text-neutral-400 hover:text-emerald-600 transition-colors cursor-pointer"
+                    >
+                      <Mic className="h-4 w-4" />
+                    </button>
+                  }
                   spellCheck={false}
                   autoComplete="off"
                   onKeyDown={(e) => {
@@ -302,40 +303,40 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
                     }
                   }}
                 />
-              </div>
-
-              {/* Simulate Action Button */}
-              <MotionButton
-                type="button"
-                variant="primary"
-                size="md"
-                onClick={() => handleRunSimulation()}
-                className="w-full sm:w-auto shrink-0 h-10 px-5 rounded-xl gap-2 text-xs font-semibold"
-              >
-                <Send className="h-3.5 w-3.5" />
-                <span>Simulasikan</span>
-              </MotionButton>
+              </BorderBeam>
             </div>
 
-            {/* Custom Exploratory Idea Chips (No Redundancy) */}
-            <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
-              <span className="text-[11px] font-medium text-neutral-400">Eksplorasi Ide Lain:</span>
-              {customIdeaChips.map((chip, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => {
-                    setPromptText(chip.label);
-                    onSelectPreset('custom', chip.amount);
-                    handleRunSimulation(chip.label);
-                  }}
-                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-neutral-50 hover:bg-neutral-100 border border-neutral-200/80 text-[11px] font-medium text-neutral-700 transition-colors shadow-2xs cursor-pointer active:scale-95"
-                >
-                  <span>{chip.label}</span>
-                </button>
-              ))}
-            </div>
+            {/* Simulate Action Button */}
+            <MotionButton
+              type="button"
+              variant="primary"
+              size="md"
+              onClick={() => handleRunSimulation()}
+              className="w-full sm:w-auto shrink-0 h-10 px-5 rounded-xl gap-2 text-xs font-semibold"
+            >
+              <Send className="h-3.5 w-3.5" />
+              <span>Simulasikan</span>
+            </MotionButton>
           </div>
-        </BorderBeam>
+
+          {/* Custom Exploratory Idea Chips (No Redundancy) */}
+          <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
+            <span className="text-[11px] font-medium text-neutral-400">Eksplorasi Ide Lain:</span>
+            {customIdeaChips.map((chip, idx) => (
+              <button
+                key={idx}
+                onClick={() => {
+                  setPromptText(chip.label);
+                  onSelectPreset('custom', chip.amount);
+                  handleRunSimulation(chip.label);
+                }}
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-neutral-50 hover:bg-neutral-100 border border-neutral-200/80 text-[11px] font-medium text-neutral-700 transition-colors shadow-2xs cursor-pointer active:scale-95"
+              >
+                <span>{chip.label}</span>
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* Smooth beUI Simulation Chat Modal */}
