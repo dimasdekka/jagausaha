@@ -7,6 +7,7 @@ import {
   Shield,
   Activity,
   MessageSquareCode,
+  Search,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionButton } from './motion/button';
@@ -17,10 +18,12 @@ interface HeaderProps {
   onReset: () => void;
   isLoading: boolean;
   onScrollToSection: (sectionId: string) => void;
+  onOpenCommandPalette?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
   onScrollToSection,
+  onOpenCommandPalette,
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -176,9 +179,22 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Right Actions Dock (Linear / Apple Tier: Clean, No Nested Pill Clutter) */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5">
+          {/* Quick Command Palette Search Button (Linear / Raycast Style) */}
+          <button
+            onClick={onOpenCommandPalette}
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-neutral-100 hover:bg-neutral-200/80 border border-neutral-200/60 text-[11px] text-neutral-500 hover:text-neutral-900 transition-all cursor-pointer shadow-2xs group"
+            title="Buka Command Palette (⌘K)"
+          >
+            <Search className="h-3 w-3 text-neutral-400 group-hover:text-neutral-700" />
+            <span className="font-medium">Cari...</span>
+            <kbd className="inline-flex items-center rounded border border-neutral-300/80 bg-white px-1 font-mono text-[9px] font-semibold text-neutral-600 shadow-2xs">
+              ⌘K
+            </kbd>
+          </button>
+
           {/* Subtle Server Ping */}
-          <div className="hidden lg:flex items-center gap-1.5 text-[11px] font-medium text-neutral-500 px-2">
+          <div className="hidden lg:flex items-center gap-1.5 text-[11px] font-medium text-neutral-500 px-1">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
             <span>CloudBaik VPS</span>
           </div>
@@ -215,6 +231,23 @@ export const Header: React.FC<HeaderProps> = ({
             className="md:hidden max-w-4xl mx-auto mt-2"
           >
             <div className="rounded-3xl border border-neutral-200 bg-white/98 p-5 shadow-2xl backdrop-blur-2xl space-y-4">
+              {/* Quick Search in Mobile */}
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  onOpenCommandPalette?.();
+                }}
+                className="w-full flex items-center justify-between p-3 rounded-2xl bg-neutral-100/90 text-neutral-800 text-xs font-medium cursor-pointer"
+              >
+                <div className="flex items-center gap-2">
+                  <Search className="h-4 w-4 text-neutral-500" />
+                  <span>Cari skenario, agen, data...</span>
+                </div>
+                <kbd className="rounded border border-neutral-300/80 bg-white px-1.5 py-0.5 font-mono text-[10px] font-semibold text-neutral-600 shadow-2xs">
+                  ⌘K
+                </kbd>
+              </button>
+
               <div className="space-y-1 text-sm font-medium text-neutral-800">
                 <button
                   onClick={() => handleNavClick('demo-sandbox')}

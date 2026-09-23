@@ -12,7 +12,8 @@ import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { AnimatedBadge } from './motion/animated-badge';
 import { MotionButton } from './motion/button';
 import { Input } from './motion/input';
-import { MatrixOrb, type MatrixOrbState } from './ui/matrix-orb';
+import { ThinkingOrb } from 'thinking-orbs';
+import { BorderBeam } from 'border-beam';
 import { SPRING_PANEL, EASE_OUT } from '../lib/ease';
 
 interface SimulationChatModalProps {
@@ -42,17 +43,17 @@ export const SimulationChatModal: React.FC<SimulationChatModalProps> = ({
   onOpenNegotiate,
   onNewSimulation,
 }) => {
-  const [orbState, setOrbState] = useState<MatrixOrbState>('thinking');
+  const [orbState, setOrbState] = useState<"working" | "searching" | "solving" | "listening" | "connecting" | "weaving" | "composing" | "breathing" | "shaping">('solving');
   const [followUpText, setFollowUpText] = useState('');
   const [isProcessing, setIsProcessing] = useState(false);
   const reduce = useReducedMotion();
 
   useEffect(() => {
     if (isOpen) {
-      setOrbState('thinking');
+      setOrbState('solving');
       const timer = setTimeout(() => {
-        setOrbState('idle');
-      }, 1000);
+        setOrbState('breathing');
+      }, 1200);
       return () => clearTimeout(timer);
     }
   }, [isOpen, query]);
@@ -61,13 +62,13 @@ export const SimulationChatModal: React.FC<SimulationChatModalProps> = ({
     e.preventDefault();
     if (!followUpText.trim()) return;
     setIsProcessing(true);
-    setOrbState('thinking');
+    setOrbState('solving');
     onNewSimulation(followUpText);
     setTimeout(() => {
       setIsProcessing(false);
-      setOrbState('idle');
+      setOrbState('breathing');
       setFollowUpText('');
-    }, 600);
+    }, 700);
   };
 
   return (
@@ -108,14 +109,13 @@ export const SimulationChatModal: React.FC<SimulationChatModalProps> = ({
             {/* Modal Header */}
             <div className="flex items-center justify-between border-b border-neutral-100 bg-neutral-50/90 px-4 py-3">
               <div className="flex items-center gap-2.5">
-                {/* Compact Reactive Orb in Header */}
-                <div className="h-8 w-8 rounded-full overflow-hidden bg-white border border-neutral-200 flex items-center justify-center shrink-0 shadow-2xs">
-                  <MatrixOrb
+                {/* ThinkingOrb from Libraries.dev in Header */}
+                <div className="h-9 w-9 rounded-full overflow-hidden bg-neutral-100 border border-neutral-200 flex items-center justify-center shrink-0 shadow-2xs">
+                  <ThinkingOrb
                     state={orbState}
-                    size={36}
-                    dots={12}
-                    color={isSafe ? "#10B981" : "#E11D48"}
-                    className="[&_span]:hidden"
+                    size={64}
+                    speed={1}
+                    theme="light"
                   />
                 </div>
                 <div>
@@ -157,78 +157,86 @@ export const SimulationChatModal: React.FC<SimulationChatModalProps> = ({
                 </div>
               </div>
 
-              {/* AI Agent Execution & Reasoning Trace */}
-              <div className="rounded-2xl border border-neutral-200/80 bg-white p-3.5 space-y-2 shadow-xs text-xs">
-                <div className="flex items-center justify-between font-semibold text-neutral-900 pb-1.5 border-b border-neutral-100">
-                  <span className="flex items-center gap-1.5">
-                    <Cpu className="h-3.5 w-3.5 text-neutral-500" />
-                    Analisis Deterministik DLMM Core
-                  </span>
-                  <span className="text-[10px] text-neutral-400 font-normal">Horizon 30 Hari</span>
+              {/* AI Agent Execution & Reasoning Trace with BorderBeam */}
+              <BorderBeam
+                size="sm"
+                colorVariant={isSafe ? "forest" : "colorful"}
+                strength={0.65}
+                theme="light"
+                borderRadius={16}
+              >
+                <div className="rounded-2xl border border-neutral-200/80 bg-white p-3.5 space-y-2 shadow-xs text-xs">
+                  <div className="flex items-center justify-between font-semibold text-neutral-900 pb-1.5 border-b border-neutral-100">
+                    <span className="flex items-center gap-1.5">
+                      <Cpu className="h-3.5 w-3.5 text-neutral-500" />
+                      Analisis Deterministik DLMM Core
+                    </span>
+                    <span className="text-[10px] text-neutral-400 font-normal">Horizon 30 Hari</span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-2 text-[11px] text-neutral-600 pt-0.5">
+                    <div className="p-2 rounded-xl bg-neutral-50 border border-neutral-100">
+                      <div className="text-neutral-400">Duit Dingin Aman:</div>
+                      <div className="font-semibold text-neutral-900 mt-0.5">Rp {safeToSpend.toLocaleString('id-ID')}</div>
+                    </div>
+                    <div className="p-2 rounded-xl bg-neutral-50 border border-neutral-100">
+                      <div className="text-neutral-400">Proyeksi Terendah:</div>
+                      <div className={`font-semibold mt-0.5 ${minCash < 0 ? 'text-rose-600' : 'text-neutral-900'}`}>
+                        {minCash < 0 ? `-Rp ${Math.abs(minCash).toLocaleString('id-ID')}` : `Rp ${minCash.toLocaleString('id-ID')}`}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Verdict Box */}
+                  {!isSafe ? (
+                    <div className="mt-2 p-3 rounded-xl bg-rose-50 border border-rose-200/80 space-y-2">
+                      <div className="flex items-center gap-1.5 text-rose-800 font-semibold text-xs">
+                        <AlertTriangle className="h-3.5 w-3.5 shrink-0 text-rose-600" />
+                        <span>PERINGATAN: Defisit Kas Hari ke-{insolvencyDay || 6}</span>
+                      </div>
+                      <p className="text-[11px] text-rose-700 leading-relaxed">
+                        Pengeluaran <strong>{scenarioName}</strong> akan menyebabkan kas defisit{' '}
+                        <strong>-Rp {Math.abs(minCash).toLocaleString('id-ID')}</strong> saat jadwal gaji barista (H+6) dan tempo kopi (H+11).
+                      </p>
+                      
+                      {/* Action Solutions */}
+                      <div className="pt-1 flex flex-col sm:flex-row gap-2">
+                        <button
+                          onClick={() => {
+                            onApplySafeSolution();
+                            onClose();
+                          }}
+                          className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white py-2 px-3 text-xs font-medium transition-all shadow-xs cursor-pointer active:scale-95"
+                        >
+                          <span>Terapkan DP 50%</span>
+                          <ArrowRight className="h-3 w-3" />
+                        </button>
+
+                        <button
+                          onClick={() => {
+                            onOpenNegotiate();
+                            onClose();
+                          }}
+                          className="inline-flex items-center justify-center gap-1.5 rounded-full border border-neutral-300 bg-white hover:bg-neutral-50 text-neutral-800 py-2 px-3 text-xs font-medium transition-all cursor-pointer active:scale-95"
+                        >
+                          <MessageSquare className="h-3 w-3 text-neutral-500" />
+                          <span>Draf WhatsApp</span>
+                        </button>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="mt-2 p-3 rounded-xl bg-emerald-50 border border-emerald-200/80 space-y-1">
+                      <div className="flex items-center gap-1.5 text-emerald-800 font-semibold text-xs">
+                        <CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-emerald-600" />
+                        <span>TERVERIFIKASI AMAN</span>
+                      </div>
+                      <p className="text-[11px] text-emerald-700 leading-relaxed">
+                        Pengeluaran <strong>{scenarioName}</strong> tidak mengganggu komitmen gaji & tempo. Saldo kas tetap di atas cadangan Rp 3.000.000.
+                      </p>
+                    </div>
+                  )}
                 </div>
-
-                <div className="grid grid-cols-2 gap-2 text-[11px] text-neutral-600 pt-0.5">
-                  <div className="p-2 rounded-xl bg-neutral-50 border border-neutral-100">
-                    <div className="text-neutral-400">Duit Dingin Aman:</div>
-                    <div className="font-semibold text-neutral-900 mt-0.5">Rp {safeToSpend.toLocaleString('id-ID')}</div>
-                  </div>
-                  <div className="p-2 rounded-xl bg-neutral-50 border border-neutral-100">
-                    <div className="text-neutral-400">Proyeksi Terendah:</div>
-                    <div className={`font-semibold mt-0.5 ${minCash < 0 ? 'text-rose-600' : 'text-neutral-900'}`}>
-                      {minCash < 0 ? `-Rp ${Math.abs(minCash).toLocaleString('id-ID')}` : `Rp ${minCash.toLocaleString('id-ID')}`}
-                    </div>
-                  </div>
-                </div>
-
-                {/* Verdict Box */}
-                {!isSafe ? (
-                  <div className="mt-2 p-3 rounded-xl bg-rose-50 border border-rose-200/80 space-y-2">
-                    <div className="flex items-center gap-1.5 text-rose-800 font-semibold text-xs">
-                      <AlertTriangle className="h-3.5 w-3.5 shrink-0 text-rose-600" />
-                      <span>PERINGATAN: Defisit Kas Hari ke-{insolvencyDay || 6}</span>
-                    </div>
-                    <p className="text-[11px] text-rose-700 leading-relaxed">
-                      Pengeluaran <strong>{scenarioName}</strong> akan menyebabkan kas defisit{' '}
-                      <strong>-Rp {Math.abs(minCash).toLocaleString('id-ID')}</strong> saat jadwal gaji barista (H+6) dan tempo kopi (H+11).
-                    </p>
-                    
-                    {/* Action Solutions */}
-                    <div className="pt-1 flex flex-col sm:flex-row gap-2">
-                      <button
-                        onClick={() => {
-                          onApplySafeSolution();
-                          onClose();
-                        }}
-                        className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white py-2 px-3 text-xs font-medium transition-all shadow-xs cursor-pointer active:scale-95"
-                      >
-                        <span>Terapkan DP 50%</span>
-                        <ArrowRight className="h-3 w-3" />
-                      </button>
-
-                      <button
-                        onClick={() => {
-                          onOpenNegotiate();
-                          onClose();
-                        }}
-                        className="inline-flex items-center justify-center gap-1.5 rounded-full border border-neutral-300 bg-white hover:bg-neutral-50 text-neutral-800 py-2 px-3 text-xs font-medium transition-all cursor-pointer active:scale-95"
-                      >
-                        <MessageSquare className="h-3 w-3 text-neutral-500" />
-                        <span>Draf WhatsApp</span>
-                      </button>
-                    </div>
-                  </div>
-                ) : (
-                  <div className="mt-2 p-3 rounded-xl bg-emerald-50 border border-emerald-200/80 space-y-1">
-                    <div className="flex items-center gap-1.5 text-emerald-800 font-semibold text-xs">
-                      <CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-emerald-600" />
-                      <span>TERVERIFIKASI AMAN</span>
-                    </div>
-                    <p className="text-[11px] text-emerald-700 leading-relaxed">
-                      Pengeluaran <strong>{scenarioName}</strong> tidak mengganggu komitmen gaji & tempo. Saldo kas tetap di atas cadangan Rp 3.000.000.
-                    </p>
-                  </div>
-                )}
-              </div>
+              </BorderBeam>
             </div>
 
             {/* Persistent Follow-Up Input Composer */}

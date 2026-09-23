@@ -1,7 +1,9 @@
 # Graph Report - JagaUsaha  (2026-09-24)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 75 files · ~304,384 words
+- Verdict: corpus is large enough that graph structure adds value.
+- Unclassified: 5 file(s) not represented in the graph (top: (none) 3, .css 2)
 
 ## Summary
 - 545 nodes · 827 edges · 48 communities (33 shown, 15 thin omitted)
@@ -65,8 +67,8 @@
 1. `react` - 42 edges
 2. `cn()` - 33 edges
 3. `lucide-react` - 21 edges
-4. `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` - 20 edges
-5. `framer-motion` - 20 edges
+4. `framer-motion` - 20 edges
+5. `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` - 20 edges
 6. `18. FINAL PRODUCT SYNTHESIS` - 20 edges
 7. `compilerOptions` - 18 edges
 8. `6. FIFTEEN UNCONVENTIONAL OUT-OF-THE-BOX AGENT CAPABILITIES` - 17 edges
@@ -78,11 +80,11 @@
   README.md → frontend/src/components/AgentThinking.tsx
 - `🎨 Komponen UI & Desain Eksternal` --references--> `MatrixOrb()`  [INFERRED]
   README.md → frontend/src/components/ui/matrix-orb.tsx
+- `simulate_decision()` --uses--> `Scenario`  [INFERRED]
+  api/server.py → core/dlmm.py
 - `ingest_text()` --uses--> `Obligation`  [INFERRED]
   api/server.py → core/dlmm.py
 - `ingest_text()` --uses--> `Receivable`  [INFERRED]
-  api/server.py → core/dlmm.py
-- `simulate_decision()` --uses--> `Scenario`  [INFERRED]
   api/server.py → core/dlmm.py
 
 ## Import Cycles
@@ -223,7 +225,7 @@ Cohesion: 0.67
 Nodes (3): 9.1 Risk Classification & Autonomy Gates, 9.2 Hallucination Immunity Protocol, 9. SAFETY ARCHITECTURE & FINANCIAL TRUST BOUNDARIES
 
 ## Knowledge Gaps
-- **283 isolated node(s):** `WhatsAppModalProps`, `BoardUIAgentThinkingProps`, `ThinkingStep`, `DecisionStudioProps`, `PresetScenario` (+278 more)
+- **283 isolated node(s):** `deploy_vps.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+278 more)
   These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 348 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **15 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -236,7 +238,7 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.030) - this node is a cross-community bridge._
 - **Why does `lucide-react` connect `react` to `matrix-orb.tsx`, `package.json`, `button.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `ease.ts`, `cn`, `BoardUIAgentThinking.tsx`, `DecisionStudio.tsx`?**
   _High betweenness centrality (0.022) - this node is a cross-community bridge._
-- **What connects `WhatsAppModalProps`, `BoardUIAgentThinkingProps`, `ThinkingStep` to the rest of the system?**
+- **What connects `deploy_vps.sh script`, `$schema`, `plugins` to the rest of the system?**
   _283 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `server.py` be split into smaller, more focused modules?**
   _Cohesion score 0.050580997949419004 - nodes in this community are weakly interconnected._
