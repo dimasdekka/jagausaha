@@ -26,7 +26,7 @@ export const HeroVisual3D: React.FC = () => {
       {/* ========================================================================= */}
       {/* 3. LEFT 3D CLUSTER: Guardian & Security Suite (Mirrors image_f91f3c.png)   */}
       {/* ========================================================================= */}
-      <div className="absolute top-12 left-0 sm:left-2 lg:left-6 xl:left-12 hidden md:block w-64 lg:w-72 xl:w-80 h-[480px]">
+      <div id="hero-3d-left" className="absolute top-12 left-0 sm:left-2 lg:left-6 xl:left-12 hidden md:block w-64 lg:w-72 xl:w-80 h-[480px] will-change-transform">
         {/* Main 3D Asset: Ray-Traced Guardian Shield */}
         <motion.div
           animate={
@@ -168,7 +168,7 @@ export const HeroVisual3D: React.FC = () => {
       {/* ========================================================================= */}
       {/* 4. RIGHT 3D CLUSTER: Treasury & Forecast Suite (Mirrors image_f91f3c.png) */}
       {/* ========================================================================= */}
-      <div className="absolute top-12 right-0 sm:right-2 lg:right-6 xl:right-12 hidden md:block w-64 lg:w-72 xl:w-80 h-[480px]">
+      <div id="hero-3d-right" className="absolute top-12 right-0 sm:right-2 lg:right-6 xl:right-12 hidden md:block w-64 lg:w-72 xl:w-80 h-[480px] will-change-transform">
         {/* Main 3D Asset: Ray-Traced Leather Wallet & Gold Cards */}
         <motion.div
           animate={

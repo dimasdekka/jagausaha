@@ -495,6 +495,9 @@
       "frontend_src_components_motion_command_palette_commandpalette",
       "frontend_src_components_motion_command_palette_commandpaletteprops",
       "frontend_src_components_motion_command_palette_panel_spring",
+      "frontend_src_components_reactbits_shinytext",
+      "frontend_src_components_reactbits_shinytext_shinytext",
+      "frontend_src_components_reactbits_shinytext_shinytextprops",
       "ref_gsap",
       "ref_lucide_react",
       "ref_react"
@@ -506,9 +509,6 @@
       "jagausaha_strategy_spec_14_technical_architecture_framework_evaluation"
     ],
     "37": [
-      "frontend_src_components_reactbits_shinytext",
-      "frontend_src_components_reactbits_shinytext_shinytext",
-      "frontend_src_components_reactbits_shinytext_shinytextprops",
       "frontend_src_components_reactbits_spotlightcard",
       "frontend_src_components_reactbits_spotlightcard_spotlightcard",
       "frontend_src_components_reactbits_spotlightcard_spotlightcardprops"
@@ -678,9 +678,9 @@
     "32": 0.3333333333333333,
     "33": 0.07881773399014778,
     "34": 0.4,
-    "35": 0.15666666666666668,
+    "35": 0.1349206349206349,
     "36": 0.5,
-    "37": 0.26666666666666666,
+    "37": 0.6666666666666666,
     "38": 0.6666666666666666,
     "39": 0.6666666666666666,
     "40": 0.6666666666666666,
@@ -804,8 +804,8 @@
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `react` connect `react` to `matrix-orb.tsx`, `package.json`, `CountUp.tsx`, `ShinyText.tsx`, `button.tsx`, `TrajectoryChart.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `ease.ts`, `cn`, `BoardUIAgentThinking.tsx`, `framer-motion`, `DecisionStudio.tsx`?",
-      "why": "High betweenness centrality (0.092) - this node is a cross-community bridge."
+      "question": "Why does `react` connect `react` to `matrix-orb.tsx`, `package.json`, `CountUp.tsx`, `SpotlightCard.tsx`, `button.tsx`, `TrajectoryChart.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `ease.ts`, `cn`, `BoardUIAgentThinking.tsx`, `framer-motion`, `DecisionStudio.tsx`?",
+      "why": "High betweenness centrality (0.091) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",

@@ -4,12 +4,12 @@
 - cluster-only mode — file stats not available
 
 ## Summary
-- 545 nodes · 827 edges · 48 communities (33 shown, 15 thin omitted)
+- 545 nodes · 828 edges · 48 communities (33 shown, 15 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.94)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f4d8b862`
+- Built from commit: `66ec51c7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -49,7 +49,7 @@
 - 16. RED TEAM THE IDEA: BRUTAL JUDGE OBJECTIONS & DEFENSES
 - react
 - 14. TECHNICAL ARCHITECTURE & FRAMEWORK EVALUATION
-- ShinyText.tsx
+- SpotlightCard.tsx
 - 12. THE PERFECT 3-MINUTE HACKATHON DEMO SCRIPT
 - TrajectoryChart.tsx
 - 1. START FROM THE PROBLEM — NOT THE SOLUTION
@@ -179,8 +179,8 @@ Cohesion: 0.40
 Nodes (5): 16. RED TEAM THE IDEA: BRUTAL JUDGE OBJECTIONS & DEFENSES, Objection 1: "Isn't this just Mekari or BukuWarung with a ChatGPT wrapper?", Objection 2: "Where does the data come from? Indonesian UMKM keep messy cash in a biscuit tin!", Objection 3: "Why does this require an AGENT? A simple Excel formula can do cash flow projection.", Objection 4: "What if your AI gives wrong advice and causes a business to collapse?"
 
 ### Community 35 - "react"
-Cohesion: 0.16
-Nodes (17): PRESETS, PulseData, FAQSection(), FeatureAgents(), Footer(), HeroSection(), HeroSectionProps, HeroVisual3D() (+9 more)
+Cohesion: 0.13
+Nodes (18): PRESETS, PulseData, FAQSection(), FeatureAgents(), Footer(), HeroSection(), HeroSectionProps, HeroVisual3D() (+10 more)
 
 ### Community 36 - "14. TECHNICAL ARCHITECTURE & FRAMEWORK EVALUATION"
 Cohesion: 0.50
@@ -230,8 +230,8 @@ Nodes (3): 9.1 Risk Classification & Autonomy Gates, 9.2 Hallucination Immunity 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `react` connect `react` to `matrix-orb.tsx`, `package.json`, `CountUp.tsx`, `ShinyText.tsx`, `button.tsx`, `TrajectoryChart.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `ease.ts`, `cn`, `BoardUIAgentThinking.tsx`, `framer-motion`, `DecisionStudio.tsx`?**
-  _High betweenness centrality (0.092) - this node is a cross-community bridge._
+- **Why does `react` connect `react` to `matrix-orb.tsx`, `package.json`, `CountUp.tsx`, `SpotlightCard.tsx`, `button.tsx`, `TrajectoryChart.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `ease.ts`, `cn`, `BoardUIAgentThinking.tsx`, `framer-motion`, `DecisionStudio.tsx`?**
+  _High betweenness centrality (0.091) - this node is a cross-community bridge._
 - **Why does `cn()` connect `cn` to `matrix-orb.tsx`, `react`, `button.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `DecisionStudio.tsx`?**
   _High betweenness centrality (0.030) - this node is a cross-community bridge._
 - **Why does `lucide-react` connect `react` to `matrix-orb.tsx`, `package.json`, `button.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `ease.ts`, `cn`, `BoardUIAgentThinking.tsx`, `DecisionStudio.tsx`?**

@@ -78,15 +78,15 @@
     "semantic_hash": "ef3ba2a81ba19f8ea5ddf625521e96f0"
   },
   "frontend/src/App.tsx": {
-    "mtime": 1790098216.8757854,
-    "seen": 1790186583.6545866,
-    "ast_hash": "7cb808c145f866a9b642bf17c4af8e4f",
+    "mtime": 1790187609.1667833,
+    "seen": 1790187834.8969367,
+    "ast_hash": "908aadc1005aea1b97778dee9b57e759",
     "semantic_hash": ""
   },
   "frontend/src/components/ActionFeed.tsx": {
-    "mtime": 1790055545.4968576,
-    "seen": 1790056280.4918666,
-    "ast_hash": "5941d55775e566c4a69e0a104be1f036",
+    "mtime": 1790187440.7792375,
+    "seen": 1790187834.8969367,
+    "ast_hash": "0ba0da436611320fc5769cc8445cf6bf",
     "semantic_hash": ""
   },
   "frontend/src/components/AgentThinking.tsx": {
@@ -114,9 +114,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/FeatureAgents.tsx": {
-    "mtime": 1790055538.5885055,
-    "seen": 1790056280.4918666,
-    "ast_hash": "36b17e04aeeffce5d1b71313ab3dc22f",
+    "mtime": 1790187539.3613057,
+    "seen": 1790187834.8969367,
+    "ast_hash": "d462c0b42cf16708aef95c36debb8038",
     "semantic_hash": ""
   },
   "frontend/src/components/FinalCTA.tsx": {
@@ -132,27 +132,27 @@
     "semantic_hash": ""
   },
   "frontend/src/components/Header.tsx": {
-    "mtime": 1790098147.566362,
-    "seen": 1790186583.6545866,
-    "ast_hash": "8172d418514e808fb206cbeebdf2fed3",
+    "mtime": 1790186919.884853,
+    "seen": 1790186995.565561,
+    "ast_hash": "02e4bd47b978b1e9c25991b66cba7bcd",
     "semantic_hash": ""
   },
   "frontend/src/components/HeroSection.tsx": {
-    "mtime": 1790056474.3324683,
-    "seen": 1790057071.2964892,
-    "ast_hash": "a44776d803448937317ddf4f09f4c49d",
+    "mtime": 1790187384.0290122,
+    "seen": 1790187834.8969367,
+    "ast_hash": "57e2a58a5465b4ae00626ed256ecdb17",
     "semantic_hash": ""
   },
   "frontend/src/components/HowItWorks.tsx": {
-    "mtime": 1790055552.6695218,
-    "seen": 1790056280.4918666,
-    "ast_hash": "cc1d24a7667b2b3defb26aa71e048a18",
+    "mtime": 1790187556.098967,
+    "seen": 1790187834.8969367,
+    "ast_hash": "790c3ef977a9497cf95802103f33f4cc",
     "semantic_hash": ""
   },
   "frontend/src/components/PulseCards.tsx": {
-    "mtime": 1790055645.1281986,
-    "seen": 1790056280.4918666,
-    "ast_hash": "95f6ce327904adbb4ee2039cd67300fb",
+    "mtime": 1790187515.3734794,
+    "seen": 1790187834.8969367,
+    "ast_hash": "9bac74e58a40df399824ba4b05699183",
     "semantic_hash": ""
   },
   "frontend/src/components/TerminalDrawer.tsx": {
@@ -258,9 +258,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/DecisionStudio.tsx": {
-    "mtime": 1790086416.6300797,
-    "seen": 1790186583.6545866,
-    "ast_hash": "9f8c6ff5b67d2af6002ebe490bce118a",
+    "mtime": 1790187631.957225,
+    "seen": 1790187834.8969367,
+    "ast_hash": "ce7ae59952010ee39616994696133379",
     "semantic_hash": ""
   },
   ".claude/CLAUDE.md": {
@@ -738,9 +738,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/HeroVisual3D.tsx": {
-    "mtime": 1790057272.1770625,
-    "seen": 1790057337.1989448,
-    "ast_hash": "09c65e9f461ce45ece1b6e0a8d42041e",
+    "mtime": 1790187367.3803341,
+    "seen": 1790187834.8969367,
+    "ast_hash": "1752f445ad66b9f24b574b8ec82009fc",
     "semantic_hash": ""
   },
   "frontend/public/3d/chart-gradient.webp": {
@@ -981,6 +981,24 @@
     "mtime": 1790097778.3880658,
     "seen": 1790186583.6545866,
     "ast_hash": "2ebfb066535f9ac1c5b2dd88f470a56e",
+    "semantic_hash": ""
+  },
+  "screenshot_spacious_dock_navbar_verified.png": {
+    "mtime": 1790186963.0766003,
+    "seen": 1790186995.565561,
+    "ast_hash": "46324a34f31e4a6040725d6cd0ce1a73",
+    "semantic_hash": ""
+  },
+  "screenshot_input_borderbeam_verified.png": {
+    "mtime": 1790187176.3979287,
+    "seen": 1790187205.7483985,
+    "ast_hash": "568f8307dc830f9c48312ee0268dc1b6",
+    "semantic_hash": ""
+  },
+  "screenshot_aligned_howitworks_verified.png": {
+    "mtime": 1790187678.6004777,
+    "seen": 1790187834.8969367,
+    "ast_hash": "dfc357b2a92abd80a8668531c2e5b651",
     "semantic_hash": ""
   }
 }

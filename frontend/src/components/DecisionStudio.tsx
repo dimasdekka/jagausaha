@@ -130,13 +130,13 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
       {/* 2. Studio Body */}
       <div className="p-5 sm:p-7 space-y-6">
         {/* Scenario Selector */}
-        <div className="space-y-2.5">
+        <div className="space-y-3">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold text-neutral-500 uppercase tracking-wider flex items-center gap-1.5">
-              <Sparkles className="h-3.5 w-3.5 text-neutral-400" />
+            <span className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
+              <Sparkles className="h-3.5 w-3.5 text-emerald-600" />
               Pilih Skenario Keputusan Bisnis:
             </span>
-            <span className="text-xs text-neutral-400 hidden sm:inline">
+            <span className="text-xs text-slate-500 font-medium hidden sm:inline">
               Uji dampak belanja modal terhadap likuiditas kas operasional
             </span>
           </div>
@@ -153,31 +153,35 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
                   onClick={() => onSelectPreset(preset.id, preset.outflow)}
                   className={`p-3.5 rounded-xl border text-left transition-all duration-150 active:scale-[0.98] cursor-pointer flex flex-col justify-between h-full ${
                     isSelected
-                      ? 'border-neutral-950 bg-neutral-950 text-white shadow-xs'
-                      : 'border-neutral-200/90 bg-white hover:bg-neutral-50 hover:border-neutral-300 text-neutral-800'
+                      ? 'border-neutral-950 bg-neutral-950 text-white shadow-md ring-2 ring-neutral-900/10'
+                      : isDangerous
+                      ? 'border-rose-200/80 bg-rose-50/20 hover:bg-rose-50/50 hover:border-rose-300 text-slate-900'
+                      : isRecommended
+                      ? 'border-emerald-200/80 bg-emerald-50/20 hover:bg-emerald-50/50 hover:border-emerald-300 text-slate-900'
+                      : 'border-slate-200/80 bg-white hover:bg-slate-50/80 hover:border-slate-300 text-slate-900'
                   }`}
                 >
                   <div>
-                    <div className="flex items-center justify-between gap-1 mb-1">
-                      <span className={`text-[10px] font-medium px-2 py-0.5 rounded-md ${
+                    <div className="flex items-center justify-between gap-1 mb-1.5">
+                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md border ${
                         isSelected
-                          ? 'bg-neutral-800 text-neutral-200'
+                          ? 'bg-neutral-800 text-neutral-200 border-neutral-700'
                           : isDangerous
-                          ? 'bg-rose-50 text-rose-700'
+                          ? 'bg-rose-100 text-rose-800 border-rose-200'
                           : isRecommended
-                          ? 'bg-emerald-50 text-emerald-700'
-                          : 'bg-neutral-100 text-neutral-600'
+                          ? 'bg-emerald-100 text-emerald-800 border-emerald-200'
+                          : 'bg-slate-100 text-slate-700 border-slate-200'
                       }`}>
                         {isDangerous ? 'Risiko Defisit' : isRecommended ? 'Solusi Aman' : 'Beban Rutin'}
                       </span>
                     </div>
 
-                    <div className="text-xs font-semibold tracking-tight">
+                    <div className="text-xs font-bold tracking-tight">
                       {preset.label}
                     </div>
                   </div>
 
-                  <div className={`text-xs tabular-nums mt-2 font-medium ${isSelected ? 'text-neutral-300' : 'text-neutral-500'}`}>
+                  <div className={`text-xs tabular-nums mt-2.5 font-semibold ${isSelected ? 'text-neutral-300' : 'text-slate-600'}`}>
                     {preset.outflow > 0 ? `Rp ${(preset.outflow / 1_000_000).toFixed(1)} Jt` : 'Beban Rutin'}
                   </div>
                 </button>

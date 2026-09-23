@@ -21,47 +21,42 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
   useEffect(() => {
     const ctx = gsap.context(() => {
       if (stepsRef.current) {
-        ScrollTrigger.create({
-          trigger: stepsRef.current,
-          start: 'top 92%',
-          once: true,
-          onEnter: () => {
-            gsap.fromTo(
-              stepsRef.current!.children,
-              { y: 24, opacity: 0 },
-              {
-                y: 0,
-                opacity: 1,
-                duration: 0.5,
-                stagger: 0.08,
-                ease: 'power2.out',
-                clearProps: 'all',
-              }
-            );
-          },
-        });
+        gsap.fromTo(
+          stepsRef.current.children,
+          { y: 50, opacity: 0, scale: 0.96 },
+          {
+            y: 0,
+            opacity: 1,
+            scale: 1,
+            stagger: 0.1,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: stepsRef.current,
+              start: 'top 85%',
+              end: 'top 50%',
+              scrub: 1,
+            },
+          }
+        );
       }
 
       if (simCardRef.current) {
-        ScrollTrigger.create({
-          trigger: simCardRef.current,
-          start: 'top 92%',
-          once: true,
-          onEnter: () => {
-            gsap.fromTo(
-              simCardRef.current!,
-              { y: 24, opacity: 0, scale: 0.98 },
-              {
-                y: 0,
-                opacity: 1,
-                scale: 1,
-                duration: 0.6,
-                ease: 'power2.out',
-                clearProps: 'all',
-              }
-            );
-          },
-        });
+        gsap.fromTo(
+          simCardRef.current,
+          { y: 40, opacity: 0.7, scale: 0.98 },
+          {
+            y: 0,
+            opacity: 1,
+            scale: 1,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: simCardRef.current,
+              start: 'top 88%',
+              end: 'top 55%',
+              scrub: 1,
+            },
+          }
+        );
       }
     }, sectionRef);
 
@@ -101,47 +96,68 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-16">
         {/* Step-by-Step Title */}
         <div className="text-center space-y-4 max-w-2xl mx-auto">
-          <span className="text-xs font-medium text-neutral-500">
-            Get started in minutes
+          <span className="text-xs font-semibold text-blue-700 uppercase tracking-wider bg-blue-50 px-3 py-1 rounded-full border border-blue-200/70">
+            Alur Eksekusi Mandiri
           </span>
           <h2 className="font-serif font-extralight text-4xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-[-0.03em] leading-tight">
             Mulai dalam hitungan menit
           </h2>
-          <p className="text-sm sm:text-base text-neutral-600 font-normal">
+          <p className="text-sm sm:text-base text-slate-700 font-normal">
             Tanpa perlu keahlian akuntansi atau konfigurasi software pembukuan yang rumit.
           </p>
         </div>
 
-        {/* 3 Step Cards with GSAP Stagger */}
+        {/* 3 Step Cards with GSAP Stagger & High-Contrast Accents */}
         <div ref={stepsRef} className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="rounded-2xl border border-neutral-200/90 bg-white p-7 shadow-sm space-y-3">
-            <span className="text-3xl font-extralight font-serif text-neutral-400">1.</span>
-            <h3 className="text-base font-semibold text-neutral-950 tracking-tight">
-              Kirim Rekap Transaksi
-            </h3>
-            <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-              Upload file mutasi PDF KlikBCA/Mandiri atau kirim voice note pengeluaran ke bot WhatsApp JagaUsaha.
-            </p>
+          <div className="rounded-2xl border border-blue-200/70 bg-gradient-to-b from-blue-50/20 via-white to-white p-7 shadow-xs space-y-3.5 flex flex-col justify-between">
+            <div className="space-y-3">
+              <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-blue-100 text-blue-800 font-bold text-sm">
+                1
+              </span>
+              <h3 className="text-lg font-bold text-neutral-950 tracking-tight">
+                Kirim Rekap Transaksi
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+                Upload file mutasi PDF KlikBCA/Mandiri atau kirim voice note pengeluaran ke bot WhatsApp JagaUsaha.
+              </p>
+            </div>
+            <div className="text-[11px] font-semibold text-blue-700 pt-2 border-t border-blue-100/60">
+              ✓ Format Bebas & Multi-Channel
+            </div>
           </div>
 
-          <div className="rounded-2xl border border-neutral-200/90 bg-white p-7 shadow-sm space-y-3">
-            <span className="text-3xl font-extralight font-serif text-neutral-400">2.</span>
-            <h3 className="text-base font-semibold text-neutral-950 tracking-tight">
-              Hitung "Duit Dingin"
-            </h3>
-            <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-              Algoritma DLMM otomatis memisahkan saldo bank Anda dari komitmen gaji dan tempo supplier 14 hari ke depan.
-            </p>
+          <div className="rounded-2xl border border-emerald-200/70 bg-gradient-to-b from-emerald-50/20 via-white to-white p-7 shadow-xs space-y-3.5 flex flex-col justify-between">
+            <div className="space-y-3">
+              <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-emerald-100 text-emerald-800 font-bold text-sm">
+                2
+              </span>
+              <h3 className="text-lg font-bold text-neutral-950 tracking-tight">
+                Hitung "Duit Dingin"
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+                Algoritma DLMM otomatis memisahkan saldo bank Anda dari komitmen gaji dan tempo supplier 14 hari ke depan.
+              </p>
+            </div>
+            <div className="text-[11px] font-semibold text-emerald-700 pt-2 border-t border-emerald-100/60">
+              ✓ Matematika Deterministik 100%
+            </div>
           </div>
 
-          <div className="rounded-2xl border border-neutral-200/90 bg-white p-7 shadow-sm space-y-3">
-            <span className="text-3xl font-extralight font-serif text-neutral-400">3.</span>
-            <h3 className="text-base font-semibold text-neutral-950 tracking-tight">
-              Simulasi Sebelum Belanja
-            </h3>
-            <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-              Ketik atau ucapkan rencana belanja modal untuk melihat apakah uang kas Anda aman hingga hari gajian berikutnya.
-            </p>
+          <div className="rounded-2xl border border-indigo-200/70 bg-gradient-to-b from-indigo-50/20 via-white to-white p-7 shadow-xs space-y-3.5 flex flex-col justify-between">
+            <div className="space-y-3">
+              <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-indigo-100 text-indigo-800 font-bold text-sm">
+                3
+              </span>
+              <h3 className="text-lg font-bold text-neutral-950 tracking-tight">
+                Simulasi Sebelum Belanja
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+                Ketik atau ucapkan rencana belanja modal untuk melihat apakah uang kas Anda aman hingga hari gajian berikutnya.
+              </p>
+            </div>
+            <div className="text-[11px] font-semibold text-indigo-700 pt-2 border-t border-indigo-100/60">
+              ✓ Deteksi Dini Sebelum Uang Keluar
+            </div>
           </div>
         </div>
 
@@ -164,33 +180,37 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onSimulateCustom }) => {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-start sm:items-center gap-3 max-w-md mx-auto w-full">
-            <div className="flex-1 w-full">
-              <Input
-                type="text"
-                value={customNominal}
-                onChange={handleNominalChange}
-                placeholder="10.000.000"
-                leftIcon={<span className="text-xs font-semibold text-neutral-400">Rp</span>}
-                error={errorMsg}
-                success={isValid && !errorMsg}
-                reserveErrorLine
-              />
+          <form onSubmit={handleSubmit} className="max-w-md mx-auto w-full space-y-2">
+            <div className="flex flex-col sm:flex-row items-center gap-3 w-full">
+              <div className="flex-1 w-full">
+                <Input
+                  type="text"
+                  value={customNominal}
+                  onChange={handleNominalChange}
+                  placeholder="10.000.000"
+                  leftIcon={<span className="text-xs font-semibold text-neutral-400">Rp</span>}
+                  error={Boolean(errorMsg)}
+                  success={isValid && !errorMsg}
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white px-6 h-11 text-xs sm:text-sm font-semibold transition-all shadow-sm active:scale-95 cursor-pointer"
+              >
+                <span>Uji Simulasi</span>
+                <ArrowRight className="h-4 w-4" />
+              </button>
             </div>
-            <button
-              type="submit"
-              className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white px-6 h-11 text-xs sm:text-sm font-medium transition-all shadow-sm active:scale-95 mb-4 sm:mb-0 cursor-pointer"
-            >
-              <span>Uji Simulasi</span>
-              <ArrowRight className="h-4 w-4" />
-            </button>
+            {errorMsg && (
+              <p className="text-left text-xs text-rose-500 font-medium px-2">{errorMsg}</p>
+            )}
           </form>
 
           {/* 3 Value Badges */}
           <div className="pt-2 flex flex-wrap items-center justify-center gap-6 text-xs text-neutral-600 font-medium">
             <div className="flex items-center gap-1.5">
               <CheckCircle2 className="h-4 w-4 text-emerald-600" />
-              <span>Real-Time di CloudBaik VPS</span>
+              <span>Kalkulasi Kas Real-Time</span>
             </div>
             <div className="flex items-center gap-1.5">
               <CheckCircle2 className="h-4 w-4 text-emerald-600" />

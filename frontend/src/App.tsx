@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { DecisionStudio } from './components/DecisionStudio';
@@ -23,6 +25,8 @@ import {
   FileSpreadsheet,
   Volume2,
 } from 'lucide-react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface PulseData {
   business_name: string;
@@ -164,6 +168,43 @@ export function App() {
 
   useEffect(() => {
     runSimulation('espresso_cash', 14000000);
+  }, []);
+
+  // GSAP Smooth Scroll Progress & Sandbox Scrub
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // 1. Top Luminous Scroll Progress Bar
+      gsap.to('#scroll-progress-bar', {
+        scaleX: 1,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: document.documentElement,
+          start: 'top top',
+          end: 'bottom bottom',
+          scrub: 0.25,
+        },
+      });
+
+      // 2. Decision Studio Sandbox Scrub Parallax Entrance
+      gsap.fromTo(
+        '#demo-sandbox',
+        { y: 60, scale: 0.97, opacity: 0.75 },
+        {
+          y: 0,
+          scale: 1,
+          opacity: 1,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: '#demo-sandbox',
+            start: 'top 88%',
+            end: 'top 48%',
+            scrub: 1,
+          },
+        }
+      );
+    });
+
+    return () => ctx.revert();
   }, []);
 
   const handleVoiceSim = () => {
@@ -342,7 +383,13 @@ export function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#FAFAFB] text-neutral-900 flex flex-col font-sans selection:bg-emerald-100 selection:text-emerald-900 antialiased">
+    <div className="min-h-screen bg-[#F8FAFC] text-slate-900 flex flex-col font-sans selection:bg-emerald-200 selection:text-emerald-950 antialiased relative">
+      {/* Top Luminous GSAP Scroll Progress Bar */}
+      <div
+        id="scroll-progress-bar"
+        className="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-emerald-500 via-teal-400 to-indigo-500 z-[100] w-full scale-x-0 origin-left pointer-events-none shadow-xs shadow-emerald-500/20"
+      />
+
       <Header
         onReset={() => runSimulation('espresso_cash', 14000000)}
         isLoading={false}

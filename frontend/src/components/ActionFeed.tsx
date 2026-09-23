@@ -20,25 +20,23 @@ export const ActionFeed: React.FC<ActionFeedProps> = ({ onOpenNudge, onOpenNegot
   useEffect(() => {
     const ctx = gsap.context(() => {
       if (cardsRef.current) {
-        ScrollTrigger.create({
-          trigger: cardsRef.current,
-          start: 'top 92%',
-          once: true,
-          onEnter: () => {
-            gsap.fromTo(
-              cardsRef.current!.children,
-              { y: 24, opacity: 0 },
-              {
-                y: 0,
-                opacity: 1,
-                duration: 0.5,
-                stagger: 0.08,
-                ease: 'power2.out',
-                clearProps: 'all',
-              }
-            );
-          },
-        });
+        gsap.fromTo(
+          cardsRef.current.children,
+          { y: 50, opacity: 0, scale: 0.96 },
+          {
+            y: 0,
+            opacity: 1,
+            scale: 1,
+            stagger: 0.1,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: cardsRef.current,
+              start: 'top 85%',
+              end: 'top 50%',
+              scrub: 1,
+            },
+          }
+        );
       }
     }, containerRef);
 

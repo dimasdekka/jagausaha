@@ -17,7 +17,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // GSAP ScrollTrigger: Smooth gentle scrub parallax as user scrolls into the sandbox
+      // 1. Hero Container Scrub Parallax
       if (heroRef.current) {
         gsap.to(heroRef.current, {
           scrollTrigger: {
@@ -26,10 +26,40 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
             end: 'bottom top',
             scrub: 1,
           },
-          y: 40,
-          opacity: 0.88,
+          y: 50,
+          opacity: 0.85,
           scale: 0.98,
           ease: 'none',
+        });
+
+        // 2. Left 3D Cluster Scrub Floating & Outward Rotation
+        gsap.to('#hero-3d-left', {
+          scrollTrigger: {
+            trigger: heroRef.current,
+            start: 'top top',
+            end: 'bottom top',
+            scrub: 1.2,
+          },
+          y: -80,
+          x: -30,
+          rotate: -8,
+          opacity: 0.45,
+          ease: 'power1.out',
+        });
+
+        // 3. Right 3D Cluster Scrub Floating & Outward Rotation
+        gsap.to('#hero-3d-right', {
+          scrollTrigger: {
+            trigger: heroRef.current,
+            start: 'top top',
+            end: 'bottom top',
+            scrub: 1.2,
+          },
+          y: -80,
+          x: 30,
+          rotate: 8,
+          opacity: 0.45,
+          ease: 'power1.out',
         });
       }
     }, heroRef);

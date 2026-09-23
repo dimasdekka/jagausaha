@@ -339,7 +339,7 @@
       "file_type": "code",
       "norm_label": "pulsedata",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L27"
+      "source_location": "L31"
     },
     {
       "id": "frontend_src_components_herosection_herosectionprops",
@@ -399,8 +399,8 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 37,
-      "community_name": "ShinyText.tsx",
+      "community": 35,
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "shinytextprops",
       "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
@@ -413,7 +413,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 37,
-      "community_name": "ShinyText.tsx",
+      "community_name": "SpotlightCard.tsx",
       "file_type": "code",
       "norm_label": "spotlightcardprops",
       "source_file": "frontend/src/components/reactbits/SpotlightCard.tsx",
@@ -1420,8 +1420,8 @@
       "label": "ShinyText()",
       "_callable": true,
       "_origin": "ast",
-      "community": 37,
-      "community_name": "ShinyText.tsx",
+      "community": 35,
+      "community_name": "react",
       "file_type": "code",
       "norm_label": "shinytext()",
       "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
@@ -1433,7 +1433,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 37,
-      "community_name": "ShinyText.tsx",
+      "community_name": "SpotlightCard.tsx",
       "file_type": "code",
       "norm_label": "spotlightcard()",
       "source_file": "frontend/src/components/reactbits/SpotlightCard.tsx",
@@ -1761,7 +1761,7 @@
       "file_type": "code",
       "norm_label": "app()",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L47"
+      "source_location": "L51"
     },
     {
       "id": "frontend_src_components_motion_animated_toast_stack_animatedtoaststack",
@@ -4191,7 +4191,7 @@
       "file_type": "code",
       "norm_label": "presets",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L40"
+      "source_location": "L44"
     },
     {
       "id": "frontend_src_components_faqsection",
@@ -4282,6 +4282,17 @@
       "source_location": "L34"
     },
     {
+      "id": "frontend_src_components_reactbits_shinytext",
+      "label": "ShinyText.tsx",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "shinytext.tsx",
+      "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "ref_gsap",
       "label": "gsap",
       "_origin": "ast",
@@ -4363,22 +4374,11 @@
       "source_location": "L525"
     },
     {
-      "id": "frontend_src_components_reactbits_shinytext",
-      "label": "ShinyText.tsx",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "ShinyText.tsx",
-      "file_type": "code",
-      "norm_label": "shinytext.tsx",
-      "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "frontend_src_components_reactbits_spotlightcard",
       "label": "SpotlightCard.tsx",
       "_origin": "ast",
       "community": 37,
-      "community_name": "ShinyText.tsx",
+      "community_name": "SpotlightCard.tsx",
       "file_type": "code",
       "norm_label": "spotlightcard.tsx",
       "source_file": "frontend/src/components/reactbits/SpotlightCard.tsx",
@@ -6648,7 +6648,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L48",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -7733,7 +7733,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_footer_footer",
+      "target": "frontend_src_components_faqsection_faqsection",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7745,7 +7745,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_terminaldrawer_terminaldrawer",
+      "target": "frontend_src_components_finalcta_finalcta",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7757,7 +7757,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_whatsappmodal_whatsappmodal",
+      "target": "frontend_src_components_footer_footer",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7769,7 +7769,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_motion_animated_toast_stack_animatedtoaststack",
+      "target": "frontend_src_components_terminaldrawer_terminaldrawer",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7777,6 +7777,30 @@
       "context": "import",
       "source_file": "frontend/src/App.tsx",
       "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "frontend_src_components_whatsappmodal_whatsappmodal",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "frontend_src_components_motion_animated_toast_stack_animatedtoaststack",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -7788,7 +7812,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L13",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -7800,7 +7824,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L14",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -7812,7 +7836,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L14",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -7824,7 +7848,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L2",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -7836,7 +7860,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L3",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -7848,7 +7872,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L4",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -7860,7 +7884,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L5",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -7872,36 +7896,12 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_app",
-      "target": "frontend_src_components_actionfeed_actionfeed",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/App.tsx",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_app",
-      "target": "frontend_src_components_faqsection_faqsection",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/App.tsx",
       "source_location": "L8",
       "weight": 1.0
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_finalcta_finalcta",
+      "target": "frontend_src_components_actionfeed_actionfeed",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8993,7 +8993,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_footer",
+      "target": "frontend_src_components_faqsection",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9005,7 +9005,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_terminaldrawer",
+      "target": "frontend_src_components_finalcta",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9017,7 +9017,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_whatsappmodal",
+      "target": "frontend_src_components_footer",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9029,7 +9029,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_motion_animated_toast_stack",
+      "target": "frontend_src_components_terminaldrawer",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9041,7 +9041,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_motion_command_palette",
+      "target": "frontend_src_components_whatsappmodal",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9053,7 +9053,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "ref_lucide_react",
+      "target": "frontend_src_components_motion_animated_toast_stack",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9065,19 +9065,31 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_header",
+      "target": "frontend_src_components_motion_command_palette",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L2",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_herosection",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "ref_gsap",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9089,7 +9101,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_decisionstudio",
+      "target": "frontend_src_components_header",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9101,7 +9113,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_featureagents",
+      "target": "frontend_src_components_herosection",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9113,7 +9125,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_howitworks",
+      "target": "frontend_src_components_decisionstudio",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9125,7 +9137,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_actionfeed",
+      "target": "frontend_src_components_featureagents",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9137,7 +9149,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_faqsection",
+      "target": "frontend_src_components_howitworks",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9149,7 +9161,7 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_components_finalcta",
+      "target": "frontend_src_components_actionfeed",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -12441,7 +12453,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L27",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -12452,7 +12464,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L40",
+      "source_location": "L44",
       "weight": 1.0
     },
     {
@@ -12463,7 +12475,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L47",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -15901,5 +15913,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f4d8b862e4c56bf419cf6312bc785d6b50d86e69"
+  "built_at_commit": "66ec51c732b1fd7a419f0fdc0611ccf1e8152b9b"
 }
