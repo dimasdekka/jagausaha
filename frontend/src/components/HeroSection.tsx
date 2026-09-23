@@ -10,9 +10,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 interface HeroSectionProps {
   onScrollToDemo: () => void;
+  onStartTrial?: () => void;
 }
 
-export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
+export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo, onStartTrial }) => {
   const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -93,8 +94,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
         {/* beUI Expanding CTA & Secondary Button */}
         <div className="flex flex-wrap items-center justify-center gap-3.5 pt-2">
           <ExpandingArrowButton
-            onClick={onScrollToDemo}
-            className="h-12 min-w-60 shadow-md"
+            onClick={onStartTrial || onScrollToDemo}
+            className="h-12 min-w-60 shadow-md cursor-pointer"
           >
             Mulai Uji Coba Gratis
           </ExpandingArrowButton>
@@ -103,7 +104,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToDemo }) => {
             variant="outline"
             size="lg"
             onClick={onScrollToDemo}
-            className="h-12 border-neutral-300"
+            className="h-12 border-neutral-300 cursor-pointer"
           >
             <Play className="h-3.5 w-3.5 fill-neutral-900 text-neutral-900" />
             <span>Lihat Demo Interaktif</span>

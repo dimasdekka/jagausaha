@@ -11,6 +11,7 @@ import { FinalCTA } from './components/FinalCTA';
 import { Footer } from './components/Footer';
 import { TerminalDrawer } from './components/TerminalDrawer';
 import { WhatsAppModal } from './components/WhatsAppModal';
+import { LoginPage } from './components/LoginPage';
 import { useAnimatedToastStack, AnimatedToastStack } from './components/motion/animated-toast-stack';
 import { CommandPalette, type CommandItem } from './components/motion/command-palette';
 import {
@@ -213,6 +214,36 @@ export function App() {
   };
 
   const [isCommandOpen, setIsCommandOpen] = useState(false);
+  const [currentView, setCurrentView] = useState<'landing' | 'login'>(() => {
+    if (typeof window !== 'undefined') {
+      return window.location.hash === '#login' || window.location.pathname === '/login' ? 'login' : 'landing';
+    }
+    return 'landing';
+  });
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      if (window.location.hash === '#login') {
+        setCurrentView('login');
+      } else {
+        setCurrentView('landing');
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const goToLogin = () => {
+    setCurrentView('login');
+    window.location.hash = '#login';
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  };
+
+  const goToLanding = () => {
+    setCurrentView('landing');
+    window.location.hash = '';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const openWhatsAppNudge = (debtor: string, amount: number) => {
     setModalData({
@@ -372,6 +403,29 @@ export function App() {
     },
   ];
 
+  if (currentView === 'login') {
+    return (
+      <>
+        <LoginPage
+          onBackToHome={goToLanding}
+          onLoginSuccess={(email) => {
+            showToast({
+              title: 'Login Berhasil!',
+              description: `Selamat datang kembali, ${email}. Portal JagaUsaha aktif.`,
+              status: 'success',
+            });
+            goToLanding();
+          }}
+        />
+        <AnimatedToastStack
+          toasts={toasts}
+          onDismiss={dismissToast}
+          position="bottom-right"
+        />
+      </>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-slate-900 flex flex-col font-sans selection:bg-emerald-200 selection:text-emerald-950 antialiased relative">
       {/* Top Luminous GSAP Scroll Progress Bar */}
@@ -385,6 +439,7 @@ export function App() {
         isLoading={false}
         onScrollToSection={scrollToSection}
         onOpenCommandPalette={() => setIsCommandOpen(true)}
+        onOpenLogin={goToLogin}
       />
 
       {/* Global Command Palette (⌘K) */}
@@ -394,9 +449,12 @@ export function App() {
         items={commandItems}
       />
 
-      <main className="flex-1 w-full space-y-16 sm:space-y-24">
+      <main className="flex-1 w-full space-y-12 sm:space-y-16">
         {/* 1. Hero Section (Hook & Problem/Solution Context) */}
-        <HeroSection onScrollToDemo={() => scrollToSection('feature-agents')} />
+        <HeroSection
+          onScrollToDemo={() => scrollToSection('demo-sandbox')}
+          onStartTrial={goToLogin}
+        />
 
         {/* 2. Closed-Loop Multi-Agent Architecture (01 Ingest -> 02 Simulate -> 03 Act) */}
         <FeatureAgents />
@@ -429,6 +487,13 @@ export function App() {
           <ActionFeed
             onOpenNudge={openWhatsAppNudge}
             onOpenNegotiate={openSupplierNegotiate}
+            onOpenAuditPrive={() => {
+              showToast({
+                title: 'Audit Prive Terjadwal',
+                description: 'Aturan pemisahan rekening pribadi & operasional BCA telah diaktifkan.',
+                status: 'info',
+              });
+            }}
           />
         </section>
 
@@ -436,7 +501,7 @@ export function App() {
         <FAQSection />
 
         {/* 6. Final Call to Action */}
-        <FinalCTA onStart={scrollToDemo} />
+        <FinalCTA onStart={goToLogin} />
 
         {/* 7. VPS Telemetry & Audit Logs */}
         <section className="max-w-5xl mx-auto px-4 sm:px-6">

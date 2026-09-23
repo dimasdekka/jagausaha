@@ -97,17 +97,6 @@
     ],
     "2": [
       "frontend_package",
-      "frontend_package_dependencies",
-      "frontend_package_dependencies_border_beam",
-      "frontend_package_dependencies_clsx",
-      "frontend_package_dependencies_framer_motion",
-      "frontend_package_dependencies_gsap",
-      "frontend_package_dependencies_lucide_react",
-      "frontend_package_dependencies_react",
-      "frontend_package_dependencies_react_dom",
-      "frontend_package_dependencies_recharts",
-      "frontend_package_dependencies_tailwind_merge",
-      "frontend_package_dependencies_thinking_orbs",
       "frontend_package_devdependencies",
       "frontend_package_devdependencies_autoprefixer",
       "frontend_package_devdependencies_oxlint",
@@ -192,13 +181,9 @@
       "frontend_src_components_actionfeed",
       "frontend_src_components_actionfeed_actionfeed",
       "frontend_src_components_actionfeed_actionfeedprops",
-      "frontend_src_components_header",
-      "frontend_src_components_header_header",
-      "frontend_src_components_header_headerprops",
       "frontend_src_components_motion_button",
       "frontend_src_components_motion_button_motionbutton",
-      "frontend_src_components_motion_button_motionbuttonprops",
-      "frontend_src_lib_ease_spring_panel"
+      "frontend_src_components_motion_button_motionbuttonprops"
     ],
     "7": [
       "claude_skills_graphify_skill",
@@ -275,15 +260,22 @@
       "jagausaha_strategy_spec_s_post_hackathon_roadmap"
     ],
     "10": [
+      "frontend_src_components_header",
+      "frontend_src_components_header_header",
+      "frontend_src_components_header_headerprops",
+      "frontend_src_components_motion_number",
+      "frontend_src_components_motion_number_animatednumberprops",
       "frontend_src_components_whatsappmodal",
       "frontend_src_components_whatsappmodal_whatsappmodal",
       "frontend_src_components_whatsappmodal_whatsappmodalprops",
       "frontend_src_lib_ease",
       "frontend_src_lib_ease_ease_drawer",
       "frontend_src_lib_ease_ease_in_out",
+      "frontend_src_lib_ease_ease_out",
       "frontend_src_lib_ease_ease_out_css",
       "frontend_src_lib_ease_spring_glide",
       "frontend_src_lib_ease_spring_mouse",
+      "frontend_src_lib_ease_spring_panel",
       "frontend_src_lib_ease_spring_press",
       "frontend_src_lib_ease_spring_swap"
     ],
@@ -342,14 +334,17 @@
       "claude_skills_graphify_references_query_step_1_traversal"
     ],
     "16": [
+      "frontend_src_components_decisionintelligencecard",
+      "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
+      "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
       "frontend_src_components_decisionstudio",
       "frontend_src_components_decisionstudio_decisionstudio",
       "frontend_src_components_decisionstudio_decisionstudioprops",
       "frontend_src_components_decisionstudio_presetscenario",
-      "frontend_src_components_motion_input",
-      "frontend_src_components_motion_input_input",
-      "frontend_src_components_motion_input_inputclassnames",
-      "frontend_src_components_motion_input_inputprops",
+      "frontend_src_components_motion_number_animatednumber",
+      "frontend_src_components_pulsecards",
+      "frontend_src_components_pulsecards_pulsecards",
+      "frontend_src_components_pulsecards_pulsecardsprops",
       "frontend_src_components_simulationchatmodal",
       "frontend_src_components_simulationchatmodal_simulationchatmodal",
       "frontend_src_components_simulationchatmodal_simulationchatmodalprops",
@@ -487,17 +482,11 @@
       "frontend_src_components_herosection_herosectionprops",
       "frontend_src_components_herovisual3d",
       "frontend_src_components_herovisual3d_herovisual3d",
-      "frontend_src_components_howitworks",
-      "frontend_src_components_howitworks_howitworks",
-      "frontend_src_components_howitworks_howitworksprops",
       "frontend_src_components_motion_command_palette",
       "frontend_src_components_motion_command_palette_commanditem",
       "frontend_src_components_motion_command_palette_commandpalette",
       "frontend_src_components_motion_command_palette_commandpaletteprops",
       "frontend_src_components_motion_command_palette_panel_spring",
-      "frontend_src_components_reactbits_shinytext",
-      "frontend_src_components_reactbits_shinytext_shinytext",
-      "frontend_src_components_reactbits_shinytext_shinytextprops",
       "ref_gsap",
       "ref_lucide_react",
       "ref_react"
@@ -529,9 +518,6 @@
       "jagausaha_strategy_spec_1_start_from_the_problem_not_the_solution"
     ],
     "41": [
-      "frontend_src_components_decisionintelligencecard",
-      "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
-      "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
       "frontend_src_components_motion_animated_badge",
       "frontend_src_components_motion_animated_badge_animatedbadge",
       "frontend_src_components_motion_animated_badge_animatedbadgeprops",
@@ -543,16 +529,9 @@
       "frontend_src_components_motion_animated_badge_size_class",
       "frontend_src_components_motion_animated_badge_status_class",
       "frontend_src_components_motion_animated_badge_text_roll_variants",
-      "frontend_src_components_motion_number",
-      "frontend_src_components_motion_number_animatednumber",
-      "frontend_src_components_motion_number_animatednumberprops",
-      "frontend_src_components_pulsecards",
-      "frontend_src_components_pulsecards_pulsecards",
-      "frontend_src_components_pulsecards_pulsecardsprops",
       "frontend_src_components_terminaldrawer",
       "frontend_src_components_terminaldrawer_terminaldrawer",
-      "frontend_src_components_terminaldrawer_terminaldrawerprops",
-      "frontend_src_lib_ease_ease_out"
+      "frontend_src_components_terminaldrawer_terminaldrawerprops"
     ],
     "42": [
       "jagausaha_strategy_spec_2_1_the_original_hypothesis",
@@ -572,18 +551,6 @@
       "frontend_src_components_finalcta",
       "frontend_src_components_finalcta_finalcta",
       "frontend_src_components_finalcta_finalctaprops",
-      "frontend_src_components_motion_bouncy_accordion",
-      "frontend_src_components_motion_bouncy_accordion_bouncyaccordion",
-      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionclassnames",
-      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionitem",
-      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionprops",
-      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionrow",
-      "frontend_src_components_motion_bouncy_accordion_chevron_transition",
-      "frontend_src_components_motion_bouncy_accordion_content_close_transition",
-      "frontend_src_components_motion_bouncy_accordion_content_open_transition",
-      "frontend_src_components_motion_bouncy_accordion_description_transition",
-      "frontend_src_components_motion_bouncy_accordion_row_transition",
-      "frontend_src_components_motion_bouncy_accordion_usecontrollableaccordionvalue",
       "frontend_src_components_motion_expanding_arrow_button",
       "frontend_src_components_motion_expanding_arrow_button_arrow_opacity",
       "frontend_src_components_motion_expanding_arrow_button_dottedchevron",
@@ -640,26 +607,67 @@
       "jagausaha_strategy_spec_9_1_risk_classification_autonomy_gates",
       "jagausaha_strategy_spec_9_2_hallucination_immunity_protocol",
       "jagausaha_strategy_spec_9_safety_architecture_financial_trust_boundaries"
+    ],
+    "48": [
+      "frontend_src_components_motion_bouncy_accordion",
+      "frontend_src_components_motion_bouncy_accordion_bouncyaccordion",
+      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionclassnames",
+      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionitem",
+      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionprops",
+      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionrow",
+      "frontend_src_components_motion_bouncy_accordion_chevron_transition",
+      "frontend_src_components_motion_bouncy_accordion_content_close_transition",
+      "frontend_src_components_motion_bouncy_accordion_content_open_transition",
+      "frontend_src_components_motion_bouncy_accordion_description_transition",
+      "frontend_src_components_motion_bouncy_accordion_row_transition",
+      "frontend_src_components_motion_bouncy_accordion_usecontrollableaccordionvalue"
+    ],
+    "49": [
+      "frontend_package_dependencies",
+      "frontend_package_dependencies_border_beam",
+      "frontend_package_dependencies_clsx",
+      "frontend_package_dependencies_framer_motion",
+      "frontend_package_dependencies_gsap",
+      "frontend_package_dependencies_lucide_react",
+      "frontend_package_dependencies_react",
+      "frontend_package_dependencies_react_dom",
+      "frontend_package_dependencies_recharts",
+      "frontend_package_dependencies_tailwind_merge",
+      "frontend_package_dependencies_thinking_orbs"
+    ],
+    "50": [
+      "frontend_src_components_howitworks",
+      "frontend_src_components_howitworks_howitworks",
+      "frontend_src_components_howitworks_howitworksprops",
+      "frontend_src_components_motion_input",
+      "frontend_src_components_motion_input_input",
+      "frontend_src_components_motion_input_inputclassnames",
+      "frontend_src_components_motion_input_inputprops"
+    ],
+    "51": [
+      "frontend_src_components_reactbits_shinytext",
+      "frontend_src_components_reactbits_shinytext_shinytext",
+      "frontend_src_components_reactbits_shinytext_shinytextprops"
     ]
   },
   "cohesion": {
     "0": 0.050580997949419004,
     "1": 0.14285714285714285,
-    "2": 0.045454545454545456,
+    "2": 0.06060606060606061,
     "3": 0.6666666666666666,
     "4": 0.1,
     "5": 0.11764705882352941,
-    "6": 0.24444444444444444,
+    "6": 0.4,
     "7": 0.07407407407407407,
     "8": 0.10476190476190476,
     "9": 0.1,
-    "10": 0.2,
+    "10": 0.1437908496732026,
     "11": 0.11764705882352941,
     "12": 0.2222222222222222,
     "13": 0.3333333333333333,
     "14": 0.3333333333333333,
     "15": 0.3333333333333333,
-    "16": 0.23076923076923078,
+    "16": 0.175,
     "17": 0.5,
     "18": 0.6666666666666666,
     "19": 1.0,
@@ -678,19 +686,23 @@
     "32": 0.3333333333333333,
     "33": 0.07881773399014778,
     "34": 0.4,
-    "35": 0.1349206349206349,
+    "35": 0.1774891774891775,
     "36": 0.5,
     "37": 0.6666666666666666,
     "38": 0.6666666666666666,
     "39": 0.6666666666666666,
     "40": 0.6666666666666666,
-    "41": 0.11231884057971014,
+    "41": 0.15384615384615385,
     "42": 0.6666666666666666,
     "43": 0.6666666666666666,
-    "44": 0.05584415584415584,
+    "44": 0.07399577167019028,
     "45": 0.6666666666666666,
     "46": 0.2857142857142857,
-    "47": 0.6666666666666666
+    "47": 0.6666666666666666,
+    "48": 0.18181818181818182,
+    "49": 0.18181818181818182,
+    "50": 0.3333333333333333,
+    "51": 0.6666666666666666
   },
   "gods": [
     {
@@ -804,22 +816,22 @@
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `react` connect `react` to `matrix-orb.tsx`, `package.json`, `CountUp.tsx`, `SpotlightCard.tsx`, `button.tsx`, `TrajectoryChart.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `ease.ts`, `cn`, `BoardUIAgentThinking.tsx`, `framer-motion`, `DecisionStudio.tsx`?",
-      "why": "High betweenness centrality (0.091) - this node is a cross-community bridge."
+      "question": "Why does `react` connect `react` to `matrix-orb.tsx`, `package.json`, `CountUp.tsx`, `SpotlightCard.tsx`, `button.tsx`, `TrajectoryChart.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `ease.ts`, `cn`, `BoardUIAgentThinking.tsx`, `framer-motion`, `DecisionStudio.tsx`, `bouncy-accordion.tsx`, `input.tsx`, `ShinyText.tsx`?",
+      "why": "High betweenness centrality (0.092) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `cn()` connect `cn` to `matrix-orb.tsx`, `react`, `button.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `DecisionStudio.tsx`?",
+      "question": "Why does `cn()` connect `cn` to `matrix-orb.tsx`, `react`, `button.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `ease.ts`, `bouncy-accordion.tsx`, `DecisionStudio.tsx`, `input.tsx`?",
       "why": "High betweenness centrality (0.030) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `lucide-react` connect `react` to `matrix-orb.tsx`, `package.json`, `button.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `ease.ts`, `cn`, `BoardUIAgentThinking.tsx`, `DecisionStudio.tsx`?",
+      "question": "Why does `lucide-react` connect `react` to `matrix-orb.tsx`, `package.json`, `button.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `ease.ts`, `BoardUIAgentThinking.tsx`, `DecisionStudio.tsx`, `bouncy-accordion.tsx`, `input.tsx`?",
       "why": "High betweenness centrality (0.022) - this node is a cross-community bridge."
     },
     {
       "type": "isolated_nodes",
-      "question": "What connects `WhatsAppModalProps`, `BoardUIAgentThinkingProps`, `ThinkingStep` to the rest of the system?",
+      "question": "What connects `HeaderProps`, `AnimatedNumberProps`, `WhatsAppModalProps` to the rest of the system?",
       "why": "283 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
@@ -835,7 +847,7 @@
     {
       "type": "low_cohesion",
       "question": "Should `package.json` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.045454545454545456 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.06060606060606061 - nodes in this community are weakly interconnected."
     }
   ]
 }

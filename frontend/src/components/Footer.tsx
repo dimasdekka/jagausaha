@@ -1,4 +1,5 @@
 import React from 'react';
+import { JagaUsahaLogo } from './ui/JagaUsahaLogo';
 
 export const Footer: React.FC = () => {
   return (
@@ -6,12 +7,9 @@ export const Footer: React.FC = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2.5">
-            <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-navy-950 text-white font-bold text-xs">
-              JU
-            </div>
-            <span className="font-bold text-navy-900 text-sm">JagaUsaha</span>
+            <JagaUsahaLogo size={28} showWordmark={true} />
             <span className="text-slate-300">·</span>
-            <span className="text-slate-600">AI Autonomous Financial Guardian untuk UMKM Indonesia</span>
+            <span className="text-slate-600 font-medium">AI Autonomous Financial Guardian untuk UMKM Indonesia</span>
           </div>
 
           <div className="flex items-center gap-5 text-slate-700 font-semibold">
