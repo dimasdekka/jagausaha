@@ -24,7 +24,6 @@ import {
 import { JagaUsahaLogo } from './ui/JagaUsahaLogo';
 import { BoardUIAreaChart } from './BoardUIAreaChart';
 import { AnimatedNumber } from './motion/number';
-import { AnimatedBadge } from './motion/animated-badge';
 import { DashboardSimulatorView } from './dashboard/DashboardSimulatorView';
 import { DashboardAgendaView } from './dashboard/DashboardAgendaView';
 import { DashboardAgentsView } from './dashboard/DashboardAgentsView';
@@ -146,32 +145,32 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
   ];
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-slate-900 flex flex-col md:flex-row font-sans selection:bg-emerald-200 selection:text-emerald-950 antialiased">
+    <div className="min-h-screen bg-[#ffffff] text-[#171717] flex flex-col md:flex-row font-sans selection:bg-[#dcfce7] selection:text-[#16a34a] antialiased">
       {/* ========================================================================= */}
-      {/* 1. LEFT SIDEBAR NAVIGATION (Linear / Stripe / Mercury Grade Layout)       */}
+      {/* 1. LEFT SIDEBAR NAVIGATION (Dub / Linear Hairline Aesthetic)              */}
       {/* ========================================================================= */}
-      <aside className="w-full md:w-64 lg:w-72 bg-white border-r border-slate-200/90 flex flex-col justify-between shrink-0 md:h-screen md:sticky md:top-0 z-30">
+      <aside className="w-full md:w-64 lg:w-72 bg-[#ffffff] border-r border-[#e5e5e5] flex flex-col justify-between shrink-0 md:h-screen md:sticky md:top-0 z-30">
         {/* Top Workspace Header */}
-        <div className="p-5 border-b border-slate-100 space-y-3.5">
+        <div className="p-5 border-b border-[#e5e5e5] space-y-3.5">
           <div className="flex items-center justify-between">
             <JagaUsahaLogo size={32} showWordmark={true} />
-            <span className="text-[10.5px] font-mono font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full border border-slate-200">
+            <span className="text-[10.5px] font-mono font-medium text-[#737373] bg-[#f5f5f5] px-2 py-0.5 rounded-full border border-[#e5e5e5]">
               v1.0
             </span>
           </div>
 
-          {/* Workspace Identity Card (Linear / Stripe Standard) */}
-          <div className="p-3 rounded-2xl bg-slate-50 border border-slate-200/80">
+          {/* Workspace Identity Card (Dub Card Standard) */}
+          <div className="p-3 rounded-[12px] bg-[#f5f5f5] border border-[#e5e5e5]">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5 truncate">
-                <div className="h-8 w-8 rounded-xl bg-slate-900 text-white flex items-center justify-center font-bold font-mono text-xs shrink-0 shadow-2xs">
+                <div className="h-8 w-8 rounded-[8px] bg-[#0a0a0a] text-white flex items-center justify-center font-bold font-mono text-xs shrink-0 shadow-dub-subtle">
                   {businessProfile.businessName.slice(0, 2).toUpperCase()}
                 </div>
                 <div className="truncate">
-                  <div className="text-xs font-bold text-slate-900 truncate">
+                  <div className="text-xs font-semibold text-[#171717] truncate">
                     {businessProfile.businessName}
                   </div>
-                  <div className="text-[11px] text-slate-500 font-medium capitalize">
+                  <div className="text-[11px] text-[#737373] font-medium capitalize">
                     {businessProfile.archetype === 'fnb'
                       ? 'Kafe, Resto & F&B'
                       : businessProfile.archetype === 'retail'
@@ -183,7 +182,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                 </div>
               </div>
 
-              <span className="text-[10px] font-bold text-slate-600 bg-slate-200/70 px-2 py-0.5 rounded-md shrink-0">
+              <span className="text-[10px] font-medium text-[#525252] bg-[#ffffff] border border-[#e5e5e5] px-2 py-0.5 rounded-full shrink-0 shadow-dub-subtle">
                 UMKM
               </span>
             </div>
@@ -191,70 +190,70 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
         </div>
 
         {/* Sidebar Nav Links */}
-        <div className="flex-1 p-4 space-y-6 overflow-y-auto">
+        <div className="flex-1 p-4 space-y-5 overflow-y-auto">
           {/* Main Views */}
           <div className="space-y-1">
-            <div className="px-3 pb-1 text-[10px] font-bold uppercase tracking-wider text-slate-400">
+            <div className="px-3 pb-1 text-[10.5px] font-medium uppercase tracking-wider text-[#737373]">
               Menu Utama
             </div>
 
             <button
               onClick={() => setActiveNav('overview')}
-              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-[8px] text-xs transition-all cursor-pointer ${
                 activeNav === 'overview'
-                  ? 'bg-neutral-950 text-white shadow-xs'
-                  : 'text-slate-600 hover:bg-slate-100 hover:text-slate-950'
+                  ? 'bg-[#0a0a0a] text-white font-semibold shadow-dub-subtle'
+                  : 'text-[#404040] hover:text-[#0a0a0a] hover:bg-[#f5f5f5] font-medium'
               }`}
             >
-              <LayoutDashboard className={`h-4 w-4 ${activeNav === 'overview' ? 'text-emerald-400' : 'text-slate-500'}`} />
+              <LayoutDashboard className={`h-4 w-4 ${activeNav === 'overview' ? 'text-[#16a34a]' : 'text-[#737373]'}`} />
               <span>Ringkasan Kas & Sandbox</span>
             </button>
 
             <button
               onClick={() => setActiveNav('simulator')}
-              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-[8px] text-xs transition-all cursor-pointer ${
                 activeNav === 'simulator'
-                  ? 'bg-neutral-950 text-white shadow-xs'
-                  : 'text-slate-600 hover:bg-slate-100 hover:text-slate-950'
+                  ? 'bg-[#0a0a0a] text-white font-semibold shadow-dub-subtle'
+                  : 'text-[#404040] hover:text-[#0a0a0a] hover:bg-[#f5f5f5] font-medium'
               }`}
             >
-              <SlidersHorizontal className={`h-4 w-4 ${activeNav === 'simulator' ? 'text-emerald-400' : 'text-slate-500'}`} />
+              <SlidersHorizontal className={`h-4 w-4 ${activeNav === 'simulator' ? 'text-[#2563eb]' : 'text-[#737373]'}`} />
               <span>Simulasi Keputusan</span>
             </button>
 
             <button
               onClick={() => setActiveNav('agenda')}
-              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-[8px] text-xs transition-all cursor-pointer ${
                 activeNav === 'agenda'
-                  ? 'bg-neutral-950 text-white shadow-xs'
-                  : 'text-slate-600 hover:bg-slate-100 hover:text-slate-950'
+                  ? 'bg-[#0a0a0a] text-white font-semibold shadow-dub-subtle'
+                  : 'text-[#404040] hover:text-[#0a0a0a] hover:bg-[#f5f5f5] font-medium'
               }`}
             >
-              <Receipt className={`h-4 w-4 ${activeNav === 'agenda' ? 'text-emerald-400' : 'text-slate-500'}`} />
+              <Receipt className={`h-4 w-4 ${activeNav === 'agenda' ? 'text-[#7c3aed]' : 'text-[#737373]'}`} />
               <span>Agenda Kas 14H</span>
             </button>
 
             <button
               onClick={() => setActiveNav('agents')}
-              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-[8px] text-xs transition-all cursor-pointer ${
                 activeNav === 'agents'
-                  ? 'bg-neutral-950 text-white shadow-xs'
-                  : 'text-slate-600 hover:bg-slate-100 hover:text-slate-950'
+                  ? 'bg-[#0a0a0a] text-white font-semibold shadow-dub-subtle'
+                  : 'text-[#404040] hover:text-[#0a0a0a] hover:bg-[#f5f5f5] font-medium'
               }`}
             >
-              <Bot className={`h-4 w-4 ${activeNav === 'agents' ? 'text-emerald-400' : 'text-slate-500'}`} />
+              <Bot className={`h-4 w-4 ${activeNav === 'agents' ? 'text-[#ea580c]' : 'text-[#737373]'}`} />
               <span>Log Sensor & AI Guardian</span>
             </button>
 
             <button
               onClick={() => setActiveNav('memory')}
-              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-[8px] text-xs transition-all cursor-pointer ${
                 activeNav === 'memory'
-                  ? 'bg-neutral-950 text-white shadow-xs'
-                  : 'text-slate-600 hover:bg-slate-100 hover:text-slate-950'
+                  ? 'bg-[#0a0a0a] text-white font-semibold shadow-dub-subtle'
+                  : 'text-[#404040] hover:text-[#0a0a0a] hover:bg-[#f5f5f5] font-medium'
               }`}
             >
-              <History className={`h-4 w-4 ${activeNav === 'memory' ? 'text-emerald-400' : 'text-slate-500'}`} />
+              <History className={`h-4 w-4 ${activeNav === 'memory' ? 'text-[#16a34a]' : 'text-[#737373]'}`} />
               <span>Memori Keputusan & Outcome</span>
             </button>
           </div>
@@ -264,26 +263,28 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             <button
               type="button"
               onClick={() => setIsDataInboxOpen(true)}
-              className="w-full flex items-center justify-between p-3 rounded-2xl bg-amber-50/70 hover:bg-amber-100/70 border border-amber-200/80 text-amber-950 transition-all cursor-pointer shadow-2xs"
+              className="w-full flex items-center justify-between p-3 rounded-[12px] bg-[#ffffff] hover:bg-[#f5f5f5] border border-[#e5e5e5] text-[#171717] transition-all cursor-pointer shadow-dub-subtle"
             >
-              <span className="flex items-center gap-2 text-xs font-bold">
-                <Inbox className="h-4 w-4 text-amber-700" />
+              <span className="flex items-center gap-2 text-xs font-semibold">
+                <Inbox className="h-4 w-4 text-[#ea580c]" />
                 <span>Data Inbox (2 Transaksi)</span>
               </span>
-              <span className="text-[10px] font-bold bg-amber-200 text-amber-900 px-2 py-0.5 rounded-full">
+              <span className="text-[10px] font-bold bg-[#fff7ed] text-[#ea580c] border border-[#fed7aa] px-2 py-0.5 rounded-full">
                 Review
               </span>
             </button>
           </div>
 
           {/* Engine Status Widget */}
-          <div className="pt-2 border-t border-slate-100">
-            <div className="p-3 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-1.5">
-              <div className="text-[11px] font-bold text-slate-800 flex items-center justify-between">
+          <div className="pt-2 border-t border-[#e5e5e5]">
+            <div className="p-3 rounded-[12px] bg-[#f5f5f5] border border-[#e5e5e5] space-y-1">
+              <div className="text-[11px] font-semibold text-[#171717] flex items-center justify-between">
                 <span>Integritas DLMM</span>
-                <span className="text-emerald-700 font-bold text-[10px]">100% Deterministik</span>
+                <span className="text-[#16a34a] font-bold text-[10px] bg-[#dcfce7] px-1.5 py-0.2 rounded-full border border-[#bbf7d0]">
+                  100% Deterministik
+                </span>
               </div>
-              <p className="text-[10px] text-slate-500 leading-relaxed font-normal">
+              <p className="text-[10px] text-[#737373] leading-relaxed font-normal">
                 Formula matematika native Python. Bebas halusinasi LLM untuk perlindungan kas harian.
               </p>
             </div>
@@ -291,21 +292,21 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
         </div>
 
         {/* Bottom Sidebar User Profile & Logout */}
-        <div className="p-4 border-t border-slate-100 bg-slate-50/50 space-y-3">
+        <div className="p-4 border-t border-[#e5e5e5] bg-[#ffffff] space-y-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2.5 truncate">
-              <div className="h-8 w-8 rounded-full bg-neutral-900 text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-2xs">
+              <div className="h-8 w-8 rounded-[8px] bg-[#0a0a0a] text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-dub-subtle">
                 OB
               </div>
               <div className="truncate">
-                <div className="text-xs font-bold text-slate-900 leading-tight">Owner Bisnis</div>
-                <div className="text-[10.5px] text-slate-500 truncate">owner@kopiteras.id</div>
+                <div className="text-xs font-semibold text-[#171717] leading-tight">Owner Bisnis</div>
+                <div className="text-[10.5px] text-[#737373] truncate">owner@kopiteras.id</div>
               </div>
             </div>
 
             <button
               onClick={onLogout}
-              className="p-1.5 rounded-lg text-slate-400 hover:text-rose-600 hover:bg-rose-50 transition-colors cursor-pointer"
+              className="p-1.5 rounded-[8px] text-[#737373] hover:text-[#ea580c] hover:bg-[#fff7ed] transition-colors cursor-pointer"
               title="Keluar ke Landing Page"
             >
               <LogOut className="h-4 w-4" />
@@ -416,124 +417,130 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
 
           {activeNav === 'overview' && (
             <>
-              {/* A. Top 4-Pillar Financial KPI Strip */}
+              {/* A. Top 4-Pillar Financial KPI Strip (Dub Border-First Cards) */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {/* Card 1: Saldo Kas Aktif */}
-                <div className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs flex flex-col justify-between space-y-2">
+                <div className="rounded-[12px] border border-[#e5e5e5] bg-[#ffffff] p-5 shadow-dub-subtle flex flex-col justify-between space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
-                      <div className="p-1 rounded-md bg-blue-50 text-blue-700 border border-blue-200/60">
+                    <span className="text-xs font-semibold text-[#171717] flex items-center gap-1.5">
+                      <div className="p-1 rounded-[6px] bg-[#eff6ff] text-[#2563eb] border border-[#dbeafe]">
                         <Wallet className="h-3.5 w-3.5" />
                       </div>
                       Kas Rekening {businessProfile.bankName}
                     </span>
-                    <AnimatedBadge status="info" size="sm">
+                    <span className="text-[10px] font-medium text-[#2563eb] bg-[#eff6ff] px-2 py-0.5 rounded-full border border-[#dbeafe]">
                       Live Sinkron
-                    </AnimatedBadge>
+                    </span>
                   </div>
-                  <div className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight flex items-baseline tabular-nums">
-                    <span className="text-xs font-semibold text-slate-400 mr-1">Rp</span>
+                  <div className="text-2xl sm:text-3xl font-semibold text-[#0a0a0a] tracking-tight flex items-baseline tabular-nums">
+                    <span className="text-xs font-semibold text-[#737373] mr-1">Rp</span>
                     <AnimatedNumber value={currentCash} duration={0.8} />
                   </div>
-                  <div className="text-[11px] text-slate-500 font-medium border-t border-slate-100 pt-2.5 mt-2 flex items-center justify-between">
+                  <div className="text-[11px] text-[#737373] font-medium border-t border-[#e5e5e5] pt-2.5 mt-2 flex items-center justify-between">
                     <span>Cadangan Darurat</span>
-                    <span className="h-3 w-px bg-slate-200" />
-                    <strong className="text-slate-900 font-bold tabular-nums">Rp {safetyBuffer.toLocaleString('id-ID')}</strong>
+                    <span className="h-3 w-px bg-[#e5e5e5]" />
+                    <strong className="text-[#171717] font-semibold tabular-nums">Rp {safetyBuffer.toLocaleString('id-ID')}</strong>
                   </div>
                 </div>
 
-                {/* Card 2: Duit Dingin Aman (Safe-to-Spend) — STANDOUT HERO */}
-                <div className="rounded-2xl border-2 border-emerald-500 bg-emerald-50/20 p-5 shadow-xs flex flex-col justify-between space-y-2">
+                {/* Card 2: Duit Dingin Aman (Safe-to-Spend) — DUB VIVID GREEN ACCENT */}
+                <div className="rounded-[12px] border border-[#16a34a]/30 bg-[#dcfce7]/20 p-5 shadow-dub-subtle flex flex-col justify-between space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-emerald-950 uppercase tracking-wider flex items-center gap-1.5">
-                      <div className="p-1 rounded-md bg-emerald-100 text-emerald-700">
+                    <span className="text-xs font-semibold text-[#16a34a] flex items-center gap-1.5">
+                      <div className="p-1 rounded-[6px] bg-[#dcfce7] text-[#16a34a] border border-[#bbf7d0]">
                         <Sparkles className="h-3.5 w-3.5" />
                       </div>
                       Duit Dingin Aman
                     </span>
-                    <AnimatedBadge status="success" size="sm">
+                    <span className="text-[10px] font-bold text-[#16a34a] bg-[#dcfce7] px-2 py-0.5 rounded-full border border-[#bbf7d0]">
                       Safe-to-Spend
-                    </AnimatedBadge>
+                    </span>
                   </div>
-                  <div className="text-2xl sm:text-3xl font-extrabold text-emerald-950 tracking-tight flex items-baseline tabular-nums">
-                    <span className="text-xs font-semibold text-emerald-600/80 mr-1">Rp</span>
+                  <div className="text-2xl sm:text-3xl font-semibold text-[#0a0a0a] tracking-tight flex items-baseline tabular-nums">
+                    <span className="text-xs font-semibold text-[#16a34a] mr-1">Rp</span>
                     <AnimatedNumber value={safeToSpend} duration={0.8} />
                   </div>
-                  <div className="text-[11px] text-emerald-900 font-medium border-t border-emerald-200/60 pt-2.5 mt-2 flex items-center justify-between">
+                  <div className="text-[11px] text-[#16a34a] font-medium border-t border-[#bbf7d0]/60 pt-2.5 mt-2 flex items-center justify-between">
                     <span>Batas Belanja Bebas</span>
-                    <span className="h-3 w-px bg-emerald-300/80" />
-                    <strong className="text-emerald-950 font-bold">100% Aman Gaji</strong>
+                    <span className="h-3 w-px bg-[#bbf7d0]" />
+                    <strong className="text-[#14532d] font-bold">100% Aman Gaji</strong>
                   </div>
                 </div>
 
                 {/* Card 3: Runway Kas Operasional */}
-                <div className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs flex flex-col justify-between space-y-2">
+                <div className="rounded-[12px] border border-[#e5e5e5] bg-[#ffffff] p-5 shadow-dub-subtle flex flex-col justify-between space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
-                      <div className="p-1 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-200/60">
+                    <span className="text-xs font-semibold text-[#171717] flex items-center gap-1.5">
+                      <div className="p-1 rounded-[6px] bg-[#f5f3ff] text-[#7c3aed] border border-[#ede9fe]">
                         <Clock className="h-3.5 w-3.5" />
                       </div>
                       Runway Kas
                     </span>
-                    <span className="text-[10px] font-bold text-indigo-800 bg-indigo-50 border border-indigo-200/60 px-2 py-0.5 rounded-full">
+                    <span className="text-[10px] font-medium text-[#7c3aed] bg-[#f5f3ff] border border-[#ede9fe] px-2 py-0.5 rounded-full">
                       Horizon 30H
                     </span>
                   </div>
-                  <div className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight flex items-baseline gap-1.5 tabular-nums">
+                  <div className="text-2xl sm:text-3xl font-semibold text-[#0a0a0a] tracking-tight flex items-baseline gap-1.5 tabular-nums">
                     <span>{runwayDays}</span>
-                    <span className="text-xs font-bold text-indigo-900">Hari Aman</span>
+                    <span className="text-xs font-semibold text-[#7c3aed]">Hari Aman</span>
                   </div>
-                  <div className="text-[11px] text-slate-500 font-medium border-t border-slate-100 pt-2.5 mt-2 flex items-center justify-between">
+                  <div className="text-[11px] text-[#737373] font-medium border-t border-[#e5e5e5] pt-2.5 mt-2 flex items-center justify-between">
                     <span>Ketahanan Operasional</span>
-                    <span className="h-3 w-px bg-slate-200" />
-                    <strong className="text-slate-900 font-bold">Optimal</strong>
+                    <span className="h-3 w-px bg-[#e5e5e5]" />
+                    <strong className="text-[#171717] font-semibold">Optimal</strong>
                   </div>
                 </div>
 
                 {/* Card 4: Net Inflow Harian */}
-                <div className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs flex flex-col justify-between space-y-2">
+                <div className="rounded-[12px] border border-[#e5e5e5] bg-[#ffffff] p-5 shadow-dub-subtle flex flex-col justify-between space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
-                      <div className="p-1 rounded-md bg-slate-100 text-slate-700 border border-slate-200/60">
+                    <span className="text-xs font-semibold text-[#171717] flex items-center gap-1.5">
+                      <div className="p-1 rounded-[6px] bg-[#f5f5f5] text-[#525252] border border-[#e5e5e5]">
                         <TrendingUp className="h-3.5 w-3.5" />
                       </div>
                       Omset Rata-Rata
                     </span>
-                    <span className="text-[10px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                    <span className="text-[10px] font-medium text-[#16a34a] bg-[#dcfce7] px-2 py-0.5 rounded-full border border-[#bbf7d0]">
                       Inflow Stabil
                     </span>
                   </div>
-                  <div className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight flex items-baseline tabular-nums">
-                    <span className="text-xs font-semibold text-slate-400 mr-1">Rp</span>
+                  <div className="text-2xl sm:text-3xl font-semibold text-[#0a0a0a] tracking-tight flex items-baseline tabular-nums">
+                    <span className="text-xs font-semibold text-[#737373] mr-1">Rp</span>
                     <AnimatedNumber value={dailyGross} duration={0.8} />
-                    <span className="text-xs font-medium text-slate-400 ml-1">/hari</span>
+                    <span className="text-xs font-medium text-[#737373] ml-1">/hari</span>
                   </div>
-                  <div className="text-[11px] text-slate-500 font-medium border-t border-slate-100 pt-2.5 mt-2 flex items-center justify-between">
+                  <div className="text-[11px] text-[#737373] font-medium border-t border-[#e5e5e5] pt-2.5 mt-2 flex items-center justify-between">
                     <span>Margin Bersih</span>
-                    <span className="h-3 w-px bg-slate-200" />
-                    <strong className="text-slate-900 font-bold">51.1% Operasional</strong>
+                    <span className="h-3 w-px bg-[#e5e5e5]" />
+                    <strong className="text-[#171717] font-semibold">51.1% Operasional</strong>
                   </div>
                 </div>
               </div>
 
-          {/* B. Skenario Belanja Quick Selector Strip */}
-          <div className="rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm space-y-4">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
+          {/* B. Skenario Belanja Quick Selector Strip (Dub Large Card) */}
+          <div className="rounded-[16px] border border-[#e5e5e5] bg-[#ffffff] p-5 sm:p-6 shadow-dub-subtle space-y-4">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-[#e5e5e5] pb-3.5">
               <div>
-                <h3 className="text-base font-bold text-slate-950 flex items-center gap-2">
-                  <SlidersHorizontal className="h-4 w-4 text-emerald-600" />
+                <h3 className="text-base font-semibold text-[#171717] flex items-center gap-2">
+                  <SlidersHorizontal className="h-4 w-4 text-[#2563eb]" />
                   <span>Uji Skenario Belanja Modal (Interactive Sandbox)</span>
                 </h3>
-                <p className="text-xs text-slate-600 mt-0.5">
+                <p className="text-xs text-[#737373] mt-0.5 font-normal">
                   Pilih skenario di bawah ini untuk melihat simulasi dampaknya terhadap saldo kas dan hari gajian:
                 </p>
               </div>
 
               <div className="flex items-center gap-2">
-                <span className="text-xs text-slate-500 font-medium">Status Hasil:</span>
-                <AnimatedBadge status={isSafe ? 'success' : 'danger'} size="sm" pulse={!isSafe}>
+                <span className="text-xs text-[#737373] font-medium">Status Hasil:</span>
+                <span
+                  className={`text-[11px] font-semibold px-2.5 py-0.5 rounded-full border ${
+                    isSafe
+                      ? 'bg-[#dcfce7] text-[#16a34a] border-[#bbf7d0]'
+                      : 'bg-[#fff1f2] text-[#e11d48] border-[#fecdd3]'
+                  }`}
+                >
                   {isSafe ? 'Kas Aman' : `Peringatan Defisit H+${insolvencyDay || 6}`}
-                </AnimatedBadge>
+                </span>
               </div>
             </div>
 
@@ -547,43 +554,43 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                   <button
                     key={preset.id}
                     onClick={() => onSelectPreset(preset.id, preset.outflow)}
-                    className={`p-3.5 rounded-2xl border text-left transition-all duration-150 active:scale-[0.98] cursor-pointer flex flex-col justify-between h-full relative ${
+                    className={`p-3.5 rounded-[12px] border text-left transition-all duration-150 active:scale-[0.98] cursor-pointer flex flex-col justify-between h-full relative ${
                       isSelected
-                        ? 'border-2 border-slate-900 bg-slate-50/70 shadow-xs ring-1 ring-slate-900/10 text-slate-950 font-bold'
+                        ? 'border-2 border-[#0a0a0a] bg-[#f5f5f5] shadow-dub-subtle text-[#0a0a0a] font-semibold'
                         : isDangerous
-                        ? 'border border-rose-200/90 bg-rose-50/30 hover:bg-rose-50/60 hover:border-rose-300 text-slate-900'
+                        ? 'border border-[#fecdd3] bg-[#fff1f2]/40 hover:bg-[#fff1f2]/80 text-[#171717]'
                         : isRecommended
-                        ? 'border border-emerald-200/90 bg-emerald-50/30 hover:bg-emerald-50/60 hover:border-emerald-300 text-slate-900'
-                        : 'border border-slate-200/90 bg-white hover:bg-slate-50/80 hover:border-slate-300 text-slate-900'
+                        ? 'border border-[#bbf7d0] bg-[#dcfce7]/30 hover:bg-[#dcfce7]/60 text-[#171717]'
+                        : 'border border-[#e5e5e5] bg-[#ffffff] hover:bg-[#f5f5f5] text-[#171717]'
                     }`}
                   >
                     <div>
                       <div className="flex items-center justify-between gap-1 mb-1.5">
                         <span
-                          className={`text-[10px] font-bold px-2 py-0.5 rounded-md border ${
+                          className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${
                             isDangerous
-                              ? 'bg-rose-100 text-rose-800 border-rose-200'
+                              ? 'bg-[#fff1f2] text-[#e11d48] border-[#fecdd3]'
                               : isRecommended
-                              ? 'bg-emerald-100 text-emerald-800 border-emerald-200'
-                              : 'bg-slate-100 text-slate-700 border-slate-200'
+                              ? 'bg-[#dcfce7] text-[#16a34a] border-[#bbf7d0]'
+                              : 'bg-[#f5f5f5] text-[#525252] border-[#e5e5e5]'
                           }`}
                         >
                           {isDangerous ? 'Risiko Defisit' : isRecommended ? 'Solusi Aman' : 'Beban Rutin'}
                         </span>
 
                         {isSelected && (
-                          <span className="h-4 w-4 rounded-full bg-slate-900 text-white text-[10px] font-bold flex items-center justify-center shrink-0">
+                          <span className="h-4 w-4 rounded-full bg-[#0a0a0a] text-white text-[10px] font-bold flex items-center justify-center shrink-0">
                             ✓
                           </span>
                         )}
                       </div>
 
-                      <div className="text-xs font-bold tracking-tight">{preset.label}</div>
+                      <div className="text-xs font-semibold tracking-tight">{preset.label}</div>
                     </div>
 
                     <div
-                      className={`text-xs tabular-nums mt-2.5 font-bold ${
-                        isSelected ? 'text-slate-950 font-extrabold' : 'text-slate-600'
+                      className={`text-xs tabular-nums mt-2.5 font-semibold ${
+                        isSelected ? 'text-[#0a0a0a] font-bold' : 'text-[#737373]'
                       }`}
                     >
                       {preset.outflow > 0
@@ -613,26 +620,26 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             {/* Right Column (5 cols): Operational Cockpit & Mitigation Feed */}
             <div className="lg:col-span-5 flex flex-col space-y-5 justify-between">
               {/* Box A: Real-Time Intelligence & Clashing Alert */}
-              <div className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-sm space-y-3.5">
-                <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
-                  <span className="text-sm font-semibold text-slate-950 tracking-tight flex items-center gap-1.5">
-                    <Zap className="h-4 w-4 text-amber-500" />
+              <div className="rounded-[16px] border border-[#e5e5e5] bg-[#ffffff] p-5 shadow-dub-subtle space-y-3.5">
+                <div className="flex items-center justify-between border-b border-[#e5e5e5] pb-2.5">
+                  <span className="text-sm font-semibold text-[#171717] tracking-tight flex items-center gap-1.5">
+                    <Zap className="h-4 w-4 text-[#ea580c]" />
                     Analisis Risiko Deterministik
                   </span>
-                  <span className="text-[10px] font-mono font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200">
+                  <span className="text-[10px] font-mono font-medium text-[#737373] bg-[#f5f5f5] px-2 py-0.5 rounded-full border border-[#e5e5e5]">
                     DLMM FastMath v1.0
                   </span>
                 </div>
 
                 {!isSafe ? (
-                  <div className="p-3.5 rounded-xl bg-rose-50/80 border border-rose-200 space-y-2.5">
-                    <div className="flex items-center gap-1.5 text-rose-900 font-bold text-xs">
-                      <AlertTriangle className="h-4 w-4 text-rose-600 shrink-0" />
+                  <div className="p-3.5 rounded-[12px] bg-[#fff1f2] border border-[#fecdd3] space-y-2.5">
+                    <div className="flex items-center gap-1.5 text-[#e11d48] font-semibold text-xs">
+                      <AlertTriangle className="h-4 w-4 text-[#e11d48] shrink-0" />
                       <span>PERINGATAN: Defisit Kas Hari ke-{insolvencyDay || 6}</span>
                     </div>
-                    <p className="text-xs text-rose-800 leading-relaxed font-normal">
+                    <p className="text-xs text-[#9f1239] leading-relaxed font-normal">
                       Pengeluaran <strong>{scenarioName}</strong> akan menyebabkan kas defisit{' '}
-                      <strong className="text-rose-950 font-bold">
+                      <strong className="text-[#881337] font-bold">
                         -Rp {Math.abs(minCash).toLocaleString('id-ID')}
                       </strong>{' '}
                       saat jadwal gajian barista (H+6) dan tempo kopi (H+11).
@@ -640,7 +647,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                     <div className="pt-1 flex flex-col sm:flex-row gap-2">
                       <button
                         onClick={() => onSelectPreset('espresso_restructured', 7000000)}
-                        className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-xl bg-neutral-950 hover:bg-neutral-800 text-white py-2 px-3 text-xs font-semibold shadow-xs cursor-pointer active:scale-95"
+                        className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-[8px] bg-[#0a0a0a] hover:bg-[#171717] text-white py-2 px-3 text-xs font-semibold shadow-dub-subtle cursor-pointer active:scale-95"
                       >
                         <span>Terapkan DP 50%</span>
                         <ArrowRight className="h-3.5 w-3.5" />
@@ -654,20 +661,20 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                             type: 'supplier_negotiation',
                           })
                         }
-                        className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-300 bg-white hover:bg-slate-100 text-slate-800 py-2 px-3 text-xs font-semibold cursor-pointer active:scale-95"
+                        className="inline-flex items-center justify-center gap-1.5 rounded-[8px] border border-[#e5e5e5] bg-[#ffffff] hover:bg-[#f5f5f5] text-[#171717] py-2 px-3 text-xs font-semibold cursor-pointer active:scale-95 shadow-dub-subtle"
                       >
-                        <MessageSquare className="h-3.5 w-3.5 text-emerald-600" />
+                        <MessageSquare className="h-3.5 w-3.5 text-[#16a34a]" />
                         <span>Draf WhatsApp</span>
                       </button>
                     </div>
                   </div>
                 ) : (
-                  <div className="p-3.5 rounded-xl bg-emerald-50/80 border border-emerald-200 space-y-1.5">
-                    <div className="flex items-center gap-1.5 text-emerald-950 font-bold text-xs">
-                      <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0" />
+                  <div className="p-3.5 rounded-[12px] bg-[#dcfce7]/60 border border-[#bbf7d0] space-y-1.5">
+                    <div className="flex items-center gap-1.5 text-[#14532d] font-semibold text-xs">
+                      <CheckCircle2 className="h-4 w-4 text-[#16a34a] shrink-0" />
                       <span>Keputusan Aman: Likuiditas Terlindungi</span>
                     </div>
-                    <p className="text-xs text-emerald-800 leading-relaxed font-normal">
+                    <p className="text-xs text-[#166534] leading-relaxed font-normal">
                       Keputusan <strong>{scenarioName}</strong> sepenuhnya aman dieksekusi. Saldo kas terendah Anda tetap
                       berada di atas batas aman cadangan Rp {safetyBuffer.toLocaleString('id-ID')}.
                     </p>
@@ -676,13 +683,13 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               </div>
 
               {/* Box B: Scheduled Cash Events Timeline */}
-              <div className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-sm space-y-3">
-                <div className="flex items-center justify-between border-b border-slate-100 pb-2">
-                  <span className="text-sm font-semibold text-slate-950 tracking-tight flex items-center gap-1.5">
-                    <Calendar className="h-4 w-4 text-blue-600" />
+              <div className="rounded-[16px] border border-[#e5e5e5] bg-[#ffffff] p-5 shadow-dub-subtle space-y-3">
+                <div className="flex items-center justify-between border-b border-[#e5e5e5] pb-2">
+                  <span className="text-sm font-semibold text-[#171717] tracking-tight flex items-center gap-1.5">
+                    <Calendar className="h-4 w-4 text-[#2563eb]" />
                     Agenda Kas Kritis 14 Hari ke Depan
                   </span>
-                  <span className="text-[10px] font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200">
+                  <span className="text-[10px] font-medium text-[#737373] bg-[#f5f5f5] px-2 py-0.5 rounded-full border border-[#e5e5e5]">
                     4 Komitmen
                   </span>
                 </div>
@@ -691,21 +698,21 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                   {scheduledEvents.map((evt, idx) => (
                     <div
                       key={idx}
-                      className={`p-2.5 rounded-xl border flex items-center justify-between gap-3 text-xs transition-colors ${
+                      className={`p-2.5 rounded-[8px] border flex items-center justify-between gap-3 text-xs transition-colors ${
                         evt.warning
-                          ? 'border-rose-300 bg-rose-50/60'
+                          ? 'border-[#fecdd3] bg-[#fff1f2]/60'
                           : evt.type === 'inflow'
-                          ? 'border-emerald-200/70 bg-emerald-50/20'
-                          : 'border-slate-200 bg-slate-50/40'
+                          ? 'border-[#bbf7d0] bg-[#dcfce7]/20'
+                          : 'border-[#e5e5e5] bg-[#f5f5f5]/60'
                       }`}
                     >
                       <div className="flex items-center gap-2.5">
-                        <span className="font-mono text-[10px] font-bold text-slate-600 bg-white px-1.5 py-0.5 rounded border border-slate-200">
+                        <span className="font-mono text-[10px] font-semibold text-[#525252] bg-[#ffffff] px-1.5 py-0.5 rounded border border-[#e5e5e5]">
                           {evt.day}
                         </span>
                         <div>
-                          <div className="font-bold text-slate-900 tracking-tight">{evt.title}</div>
-                          <div className="text-[10.5px] text-slate-500 font-medium">
+                          <div className="font-semibold text-[#171717] tracking-tight">{evt.title}</div>
+                          <div className="text-[10.5px] text-[#737373] font-medium">
                             {evt.date} · {evt.status}
                           </div>
                         </div>
@@ -713,8 +720,8 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
 
                       <div className="text-right shrink-0">
                         <div
-                          className={`font-bold tabular-nums ${
-                            evt.type === 'inflow' ? 'text-emerald-700' : 'text-slate-900'
+                          className={`font-semibold tabular-nums ${
+                            evt.type === 'inflow' ? 'text-[#16a34a]' : 'text-[#171717]'
                           }`}
                         >
                           {evt.type === 'inflow' ? '+Rp ' : '-Rp '}
@@ -724,7 +731,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                         {evt.action && evt.actionHandler && (
                           <button
                             onClick={evt.actionHandler}
-                            className="mt-0.5 text-[10px] font-bold text-emerald-800 hover:text-emerald-950 underline underline-offset-2 cursor-pointer"
+                            className="mt-0.5 text-[10px] font-semibold text-[#16a34a] hover:text-[#14532d] underline underline-offset-2 cursor-pointer"
                           >
                             {evt.action} →
                           </button>

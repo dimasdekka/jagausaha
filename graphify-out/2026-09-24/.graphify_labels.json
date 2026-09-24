@@ -65,5 +65,8 @@
   "63": "16. MERMAID FLOW DIAGRAMS",
   "64": "7. AGENTIC DESIGN & SYSTEM TOPOLOGY",
   "65": "5. DATA INGESTION FLOW (CANONICAL PIPELINE)",
-  "66": ".get_day_inflow_multiplier"
+  "66": ".get_day_inflow_multiplier",
+  "67": "input.tsx",
+  "68": "shared-layout-bg.tsx",
+  "69": "ShinyText.tsx"
 }

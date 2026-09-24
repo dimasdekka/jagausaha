@@ -1,17 +1,17 @@
 # Graph Report - JagaUsaha  (2026-09-24)
 
 ## Corpus Check
-- 87 files · ~434,800 words
+- 87 files · ~454,652 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 5 file(s) not represented in the graph (top: (none) 3, .css 2)
 
 ## Summary
-- 660 nodes · 1037 edges · 67 communities (51 shown, 16 thin omitted)
+- 660 nodes · 1035 edges · 70 communities (53 shown, 17 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 16 edges (avg confidence: 0.94)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `58772140`
+- Built from commit: `3785e94e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -81,6 +81,9 @@
 - 7. AGENTIC DESIGN & SYSTEM TOPOLOGY
 - 5. DATA INGESTION FLOW (CANONICAL PIPELINE)
 - .get_day_inflow_multiplier
+- input.tsx
+- shared-layout-bg.tsx
+- ShinyText.tsx
 
 ## God Nodes (most connected - your core abstractions)
 1. `react` - 51 edges
@@ -109,7 +112,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (67 total, 16 thin omitted)
+## Communities (70 total, 17 thin omitted)
 
 ### Community 0 - "server.py"
 Cohesion: 0.10
@@ -148,8 +151,8 @@ Cohesion: 0.10
 Nodes (20): 18. FINAL PRODUCT SYNTHESIS, A. Problem, B. Product, C. One-Sentence Pitch, D. Why Now, E. Target User, F. Core User Journey, G. Hero Feature (+12 more)
 
 ### Community 10 - "react"
-Cohesion: 0.18
-Nodes (9): HowItWorksProps, LoginPageProps, Input, InputClassNames, InputProps, ShinyTextProps, JagaUsahaLogo(), JagaUsahaLogoProps (+1 more)
+Cohesion: 0.25
+Nodes (9): ActionFeedProps, HeaderProps, LoginPage(), LoginPageProps, MotionButton, MotionButtonProps, JagaUsahaLogo(), JagaUsahaLogoProps (+1 more)
 
 ### Community 11 - "6. FIFTEEN UNCONVENTIONAL OUT-OF-THE-BOX AGENT CAPABILITIES"
 Cohesion: 0.12
@@ -173,7 +176,7 @@ Nodes (5): For /graphify explain, For /graphify path, graphify reference: query,
 
 ### Community 16 - "DecisionStudio.tsx"
 Cohesion: 0.16
-Nodes (14): ActionFeed(), ActionFeedProps, DecisionIntelligenceCard(), DecisionIntelligenceProps, DecisionStudio(), DecisionStudioProps, PresetScenario, MotionButton (+6 more)
+Nodes (14): DecisionIntelligenceCard(), DecisionIntelligenceProps, DecisionStudio(), DecisionStudioProps, PresetScenario, AnimatedBadge(), AnimatedNumber(), AnimatedNumberProps (+6 more)
 
 ### Community 17 - "graphify reference: add a URL and watch a folder"
 Cohesion: 0.50
@@ -201,31 +204,31 @@ Nodes (26): AgentThinking(), AgentThinkingProps, ThinkingStep, envelope(), inten
 
 ### Community 35 - "App.tsx"
 Cohesion: 0.19
-Nodes (12): PRESETS, PulseData, FeatureAgents(), Footer(), HeroSection(), HeroSectionProps, HeroVisual3D(), LoginPage() (+4 more)
+Nodes (12): PRESETS, PulseData, ActionFeed(), DashboardPage(), FeatureAgents(), Footer(), Header(), HeroSection() (+4 more)
 
 ### Community 36 - "bouncy-accordion.tsx"
-Cohesion: 0.18
-Nodes (11): FAQSection(), BouncyAccordion(), BouncyAccordionClassNames, BouncyAccordionItem, BouncyAccordionProps, CHEVRON_TRANSITION, CONTENT_CLOSE_TRANSITION, CONTENT_OPEN_TRANSITION (+3 more)
+Cohesion: 0.16
+Nodes (12): FAQSection(), BouncyAccordion(), BouncyAccordionClassNames, BouncyAccordionItem, BouncyAccordionProps, BouncyAccordionRow(), CHEVRON_TRANSITION, CONTENT_CLOSE_TRANSITION (+4 more)
 
 ### Community 37 - "animated-badge.tsx"
 Cohesion: 0.20
 Nodes (9): AnimatedBadgeProps, AnimatedBadgeSize, AnimatedBadgeStatus, ICON_CLASS, ICON_ROLL_VARIANTS, ICONS, SIZE_CLASS, STATUS_CLASS (+1 more)
 
 ### Community 38 - "cn"
-Cohesion: 0.17
-Nodes (12): AnimatedToastStack(), ToastItem, BouncyAccordionRow(), CommandItem, CommandPalette(), CommandPaletteProps, PANEL_SPRING, Marquee() (+4 more)
+Cohesion: 0.19
+Nodes (11): AnimatedToastStack(), ToastItem, CommandItem, CommandPalette(), CommandPaletteProps, PANEL_SPRING, Marquee(), MarqueeProps (+3 more)
 
 ### Community 39 - "ease.ts"
-Cohesion: 0.15
-Nodes (13): AnimatedNumber(), AnimatedNumberProps, PulseCards(), PulseCardsProps, WhatsAppModal(), WhatsAppModalProps, EASE_DRAWER, EASE_IN_OUT (+5 more)
+Cohesion: 0.16
+Nodes (12): TerminalDrawer(), TerminalDrawerProps, WhatsAppModal(), WhatsAppModalProps, EASE_DRAWER, EASE_IN_OUT, EASE_OUT, EASE_OUT_CSS (+4 more)
 
 ### Community 40 - "JagaUsaha — Canonical Product Flow & Business Architecture Specification"
 Cohesion: 0.18
 Nodes (10): 1. Product North Star, 2. Aktor & Tanggung Jawab Sistem, 3. End-to-End Lifecycle, 4. Progressive Cold-Start Onboarding (Zero Historical Data), 5. Formula Matematis Deterministik (DLMM Core), 6. Sinyal Anomali $\to$ Kasus Risiko (*RiskCase*), 7. Data Confidence & Data Inbox, 8. Human Approval & Financial Safety (+2 more)
 
 ### Community 41 - "DashboardPage.tsx"
-Cohesion: 0.13
-Nodes (16): CashEvent, DashboardAgendaView(), DashboardAgendaViewProps, DashboardAgentsView(), DashboardMemoryView(), DashboardSimulatorView(), DashboardSimulatorViewProps, DashboardPage() (+8 more)
+Cohesion: 0.15
+Nodes (12): CashEvent, DashboardAgendaView(), DashboardAgendaViewProps, DashboardAgentsView(), DashboardMemoryView(), DashboardPageProps, DataInboxItem, DataInboxModal() (+4 more)
 
 ### Community 42 - "calculate_safe_to_spend"
 Cohesion: 0.40
@@ -244,8 +247,8 @@ Cohesion: 0.33
 Nodes (6): 19. FINAL CHALLENGE: THE 7-DAY HACKATHON EXECUTION PLAN, Final Product Definition, The 30-Second Pitch, The 7-Day Exact Build Specification, The One Demo Moment Judges Will Remember, What NOT to Build
 
 ### Community 46 - "framer-motion"
-Cohesion: 0.14
-Nodes (10): Header(), HeaderProps, reducedVariants, SharedLayoutBg, SharedLayoutBgProps, variants, BlurTextProps, MagnetProps (+2 more)
+Cohesion: 0.29
+Nodes (3): BlurTextProps, MagnetProps, framer-motion
 
 ### Community 47 - "16. RED TEAM THE IDEA: BRUTAL JUDGE OBJECTIONS & DEFENSES"
 Cohesion: 0.40
@@ -315,15 +318,23 @@ Nodes (3): 16. MERMAID FLOW DIAGRAMS, Diagram 1: Continuous Guardian & Decision 
 Cohesion: 0.67
 Nodes (3): 7.1 Multi-Agent Specialization vs. Monolithic LLM, 7.2 Component Responsibilities, 7. AGENTIC DESIGN & SYSTEM TOPOLOGY
 
+### Community 67 - "input.tsx"
+Cohesion: 0.24
+Nodes (6): DashboardSimulatorView(), DashboardSimulatorViewProps, HowItWorksProps, Input, InputClassNames, InputProps
+
+### Community 68 - "shared-layout-bg.tsx"
+Cohesion: 0.33
+Nodes (5): reducedVariants, SharedLayoutBg, SharedLayoutBgProps, variants, SPRING_LAYOUT
+
 ## Knowledge Gaps
 - **345 isolated node(s):** `deploy_vps.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+340 more)
   These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 418 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `react` connect `react` to `tabs.tsx`, `matrix-orb.tsx`, `package.json`, `App.tsx`, `bouncy-accordion.tsx`, `animated-badge.tsx`, `cn`, `ease.ts`, `animated-toast-stack.tsx`, `DashboardPage.tsx`, `CountUp.tsx`, `text-reveal.tsx`, `expanding-arrow-button.tsx`, `SpotlightCard.tsx`, `BoardUIAgentThinking.tsx`, `framer-motion`, `DecisionStudio.tsx`?**
+- **Why does `react` connect `react` to `package.json`, `CountUp.tsx`, `animated-toast-stack.tsx`, `BoardUIAgentThinking.tsx`, `DecisionStudio.tsx`, `tabs.tsx`, `matrix-orb.tsx`, `SpotlightCard.tsx`, `App.tsx`, `bouncy-accordion.tsx`, `animated-badge.tsx`, `cn`, `ease.ts`, `DashboardPage.tsx`, `text-reveal.tsx`, `expanding-arrow-button.tsx`, `framer-motion`, `input.tsx`, `shared-layout-bg.tsx`, `ShinyText.tsx`?**
   _High betweenness centrality (0.079) - this node is a cross-community bridge._
 - **Why does `JagaUsaha — Master Architecture & Product Logic Plan` connect `JagaUsaha — Master Architecture & Product Logic Plan` to `5. DATA INGESTION FLOW (CANONICAL PIPELINE)`, `calculate_safe_to_spend`, `12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)`, `15. STATE MACHINES`, `29. REALITY-CHECK: WHERE WOULD THE SYSTEM FAIL TOMORROW & HOW IT IS FIXED?`, `4. NEW USER ONBOARDING FLOW (PROGRESSIVE DISCLOSURE)`, `16. MERMAID FLOW DIAGRAMS`?**
   _High betweenness centrality (0.029) - this node is a cross-community bridge._
