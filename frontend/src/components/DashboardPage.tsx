@@ -12,7 +12,6 @@ import {
   SlidersHorizontal,
   Bell,
   Search,
-  Building2,
   Clock,
   Zap,
   LayoutDashboard,
@@ -156,29 +155,42 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             </span>
           </div>
 
-          {/* Active Workspace Switcher Card */}
+          {/* Workspace Identity Card (Linear / Stripe Standard) */}
           <div className="p-3 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
-            <div className="flex items-center justify-between text-xs font-bold text-slate-900">
-              <span className="flex items-center gap-1.5 truncate">
-                <Building2 className="h-3.5 w-3.5 text-slate-600 shrink-0" />
-                <span className="truncate">{businessProfile.businessName}</span>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2 truncate">
+                <div className="h-7 w-7 rounded-xl bg-neutral-900 text-white flex items-center justify-center font-bold text-[11px] shrink-0 shadow-2xs">
+                  {businessProfile.businessName.slice(0, 2).toUpperCase()}
+                </div>
+                <div className="truncate">
+                  <div className="text-xs font-bold text-slate-900 truncate">
+                    {businessProfile.businessName}
+                  </div>
+                  <div className="text-[10.5px] text-slate-500 font-medium capitalize">
+                    {businessProfile.archetype === 'fnb'
+                      ? 'Kafe, Resto & F&B'
+                      : businessProfile.archetype === 'retail'
+                      ? 'Retail & Fashion'
+                      : businessProfile.archetype === 'grocery'
+                      ? 'Warung & Kelontong'
+                      : 'Jasa & Agensi'}
+                  </div>
+                </div>
+              </div>
+
+              <span className="text-[10px] font-bold text-slate-600 bg-slate-200/70 px-1.5 py-0.5 rounded-md shrink-0">
+                UMKM
               </span>
-              <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
-            </div>
-            <div className="text-[10.5px] text-slate-500 flex items-center justify-between">
-              <span>{businessProfile.bankName} Rekening Aktif</span>
-              <span className="text-emerald-700 font-semibold">Terkoneksi</span>
             </div>
 
-            {/* Inisialisasi Usaha Baru / Setup Konteks Trigger */}
+            {/* Ubah Parameter Usaha Trigger */}
             <button
               type="button"
               onClick={() => setIsOnboardingOpen(true)}
-              className="w-full py-1.5 px-2.5 rounded-xl bg-white hover:bg-slate-100 border border-slate-200/90 text-[10.5px] font-bold text-slate-700 hover:text-slate-950 flex items-center justify-center gap-1.5 transition-colors cursor-pointer shadow-2xs"
-              title="Atur parameter usaha baru (tanpa riwayat kas lama)"
+              className="w-full py-1.5 px-2 rounded-xl bg-white hover:bg-slate-100 border border-slate-200/90 text-[10.5px] font-semibold text-slate-700 hover:text-slate-950 flex items-center justify-center gap-1.5 transition-colors cursor-pointer shadow-2xs"
             >
               <Sparkles className="h-3 w-3 text-emerald-600" />
-              <span>Inisialisasi Usaha Baru</span>
+              <span>Ubah Parameter Usaha</span>
             </button>
           </div>
         </div>
@@ -350,17 +362,17 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               title="Notifikasi"
             >
               <Bell className="h-4 w-4" />
-              <span className="absolute top-2 right-2 h-2 w-2 rounded-full bg-rose-500 animate-pulse" />
+              <span className="absolute top-2 right-2 h-2 w-2 rounded-full bg-rose-500" />
             </button>
 
-            {/* Inisialisasi Usaha Baru Quick Action */}
+            {/* Parameter Usaha Quick Action */}
             <button
               onClick={() => setIsOnboardingOpen(true)}
-              className="hidden md:inline-flex items-center gap-1.5 h-9 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100/80 border border-emerald-200 text-xs font-bold text-emerald-900 transition-all cursor-pointer shadow-2xs"
-              title="Inisialisasi profil usaha baru tanpa histori kas"
+              className="hidden md:inline-flex items-center gap-1.5 h-9 px-3 rounded-xl bg-slate-100 hover:bg-slate-200/80 border border-slate-200 text-xs font-semibold text-slate-800 transition-all cursor-pointer shadow-2xs"
+              title="Atur parameter profil usaha (archetype, kas awal, komitmen rutin)"
             >
               <Sparkles className="h-3.5 w-3.5 text-emerald-600" />
-              <span>Inisialisasi Usaha Baru</span>
+              <span>Parameter Usaha</span>
             </button>
 
             {/* Back to Home Shortcut */}

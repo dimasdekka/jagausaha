@@ -56,32 +56,6 @@
       "source_location": "L61"
     },
     {
-      "id": "core_advisor_advisoragent",
-      "label": "AdvisorAgent",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "advisoragent",
-      "source_file": "core/advisor.py",
-      "source_location": "L18"
-    },
-    {
-      "id": "core_dlmm_businessstate",
-      "label": "BusinessState",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "businessstate",
-      "source_file": "core/dlmm.py",
-      "source_location": "L25"
-    },
-    {
       "id": "core_dlmm_obligation",
       "label": "Obligation",
       "_callable": true,
@@ -108,71 +82,6 @@
       "source_location": "L18"
     },
     {
-      "id": "core_dlmm_scenario",
-      "label": "Scenario",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "scenario",
-      "source_file": "core/dlmm.py",
-      "source_location": "L39"
-    },
-    {
-      "id": "core_dlmm_trajectoryresult",
-      "label": "TrajectoryResult",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "trajectoryresult",
-      "source_file": "core/dlmm.py",
-      "source_location": "L48"
-    },
-    {
-      "id": "core_sensor_parsedtransaction",
-      "label": "ParsedTransaction",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "parsedtransaction",
-      "source_file": "core/sensor.py",
-      "source_location": "L10"
-    },
-    {
-      "id": "core_sensor_sensoragent",
-      "label": "SensorAgent",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "sensoragent",
-      "source_file": "core/sensor.py",
-      "source_location": "L19"
-    },
-    {
-      "id": "frontend_src_components_actionfeed_actionfeedprops",
-      "label": "ActionFeedProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "actionfeedprops",
-      "source_file": "frontend/src/components/ActionFeed.tsx",
-      "source_location": "L11"
-    },
-    {
       "id": "frontend_src_components_header_headerprops",
       "label": "HeaderProps",
       "_callable": true,
@@ -184,6 +93,19 @@
       "norm_label": "headerprops",
       "source_file": "frontend/src/components/Header.tsx",
       "source_location": "L14"
+    },
+    {
+      "id": "frontend_src_components_herosection_herosectionprops",
+      "label": "HeroSectionProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "herosectionprops",
+      "source_file": "frontend/src/components/HeroSection.tsx",
+      "source_location": "L11"
     },
     {
       "id": "frontend_src_components_loginpage_loginpageprops",
@@ -257,11 +179,37 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 16,
-      "community_name": "input.tsx",
+      "community_name": "DecisionStudio.tsx",
       "file_type": "code",
       "norm_label": "dashboardsimulatorviewprops",
       "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
       "source_location": "L13"
+    },
+    {
+      "id": "frontend_src_components_decisionstudio_decisionstudioprops",
+      "label": "DecisionStudioProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "decisionstudioprops",
+      "source_file": "frontend/src/components/DecisionStudio.tsx",
+      "source_location": "L19"
+    },
+    {
+      "id": "frontend_src_components_decisionstudio_presetscenario",
+      "label": "PresetScenario",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "presetscenario",
+      "source_file": "frontend/src/components/DecisionStudio.tsx",
+      "source_location": "L12"
     },
     {
       "id": "frontend_src_components_howitworks_howitworksprops",
@@ -270,7 +218,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 16,
-      "community_name": "input.tsx",
+      "community_name": "DecisionStudio.tsx",
       "file_type": "code",
       "norm_label": "howitworksprops",
       "source_file": "frontend/src/components/HowItWorks.tsx",
@@ -283,7 +231,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 16,
-      "community_name": "input.tsx",
+      "community_name": "DecisionStudio.tsx",
       "file_type": "code",
       "norm_label": "inputclassnames",
       "source_file": "frontend/src/components/motion/input.tsx",
@@ -296,11 +244,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 16,
-      "community_name": "input.tsx",
+      "community_name": "DecisionStudio.tsx",
       "file_type": "code",
       "norm_label": "inputprops",
       "source_file": "frontend/src/components/motion/input.tsx",
       "source_location": "L31"
+    },
+    {
+      "id": "frontend_src_components_simulationchatmodal_simulationchatmodalprops",
+      "label": "SimulationChatModalProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "simulationchatmodalprops",
+      "source_file": "frontend/src/components/SimulationChatModal.tsx",
+      "source_location": "L19"
     },
     {
       "id": "frontend_src_components_reactbits_countup_countupprops",
@@ -446,30 +407,17 @@
       "source_location": "L31"
     },
     {
-      "id": "frontend_src_components_herosection_herosectionprops",
-      "label": "HeroSectionProps",
+      "id": "frontend_src_components_actionfeed_actionfeedprops",
+      "label": "ActionFeedProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "herosectionprops",
-      "source_file": "frontend/src/components/HeroSection.tsx",
+      "norm_label": "actionfeedprops",
+      "source_file": "frontend/src/components/ActionFeed.tsx",
       "source_location": "L11"
-    },
-    {
-      "id": "frontend_src_components_terminaldrawer_terminaldrawerprops",
-      "label": "TerminalDrawerProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "terminaldrawerprops",
-      "source_file": "frontend/src/components/TerminalDrawer.tsx",
-      "source_location": "L7"
     },
     {
       "id": "frontend_src_components_whatsappmodal_whatsappmodalprops",
@@ -563,6 +511,19 @@
       "source_location": "L24"
     },
     {
+      "id": "frontend_src_components_terminaldrawer_terminaldrawerprops",
+      "label": "TerminalDrawerProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "animated-badge.tsx",
+      "file_type": "code",
+      "norm_label": "terminaldrawerprops",
+      "source_file": "frontend/src/components/TerminalDrawer.tsx",
+      "source_location": "L7"
+    },
+    {
       "id": "frontend_src_components_motion_marquee_marqueeprops",
       "label": "MarqueeProps",
       "_callable": true,
@@ -651,7 +612,33 @@
       "file_type": "code",
       "norm_label": "dashboardpageprops",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L32"
+      "source_location": "L31"
+    },
+    {
+      "id": "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
+      "label": "DecisionIntelligenceProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "DashboardPage.tsx",
+      "file_type": "code",
+      "norm_label": "decisionintelligenceprops",
+      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "frontend_src_components_motion_number_animatednumberprops",
+      "label": "AnimatedNumberProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "DashboardPage.tsx",
+      "file_type": "code",
+      "norm_label": "animatednumberprops",
+      "source_file": "frontend/src/components/motion/number.tsx",
+      "source_location": "L9"
     },
     {
       "id": "frontend_src_components_onboardingmodal_businesscontextdata",
@@ -678,6 +665,19 @@
       "norm_label": "onboardingmodalprops",
       "source_file": "frontend/src/components/OnboardingModal.tsx",
       "source_location": "L28"
+    },
+    {
+      "id": "frontend_src_components_pulsecards_pulsecardsprops",
+      "label": "PulseCardsProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "DashboardPage.tsx",
+      "file_type": "code",
+      "norm_label": "pulsecardsprops",
+      "source_file": "frontend/src/components/PulseCards.tsx",
+      "source_location": "L6"
     },
     {
       "id": "frontend_src_components_trajectorychart_trajectorychartprops",
@@ -810,82 +810,82 @@
       "source_location": "L4"
     },
     {
-      "id": "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
-      "label": "DecisionIntelligenceProps",
+      "id": "core_sensor_parsedtransaction",
+      "label": "ParsedTransaction",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
+      "community": 54,
+      "community_name": "dlmm.py",
       "file_type": "code",
-      "norm_label": "decisionintelligenceprops",
-      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
-      "source_location": "L7"
+      "norm_label": "parsedtransaction",
+      "source_file": "core/sensor.py",
+      "source_location": "L10"
     },
     {
-      "id": "frontend_src_components_decisionstudio_decisionstudioprops",
-      "label": "DecisionStudioProps",
+      "id": "core_sensor_sensoragent",
+      "label": "SensorAgent",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
+      "community": 54,
+      "community_name": "dlmm.py",
       "file_type": "code",
-      "norm_label": "decisionstudioprops",
-      "source_file": "frontend/src/components/DecisionStudio.tsx",
+      "norm_label": "sensoragent",
+      "source_file": "core/sensor.py",
       "source_location": "L19"
     },
     {
-      "id": "frontend_src_components_decisionstudio_presetscenario",
-      "label": "PresetScenario",
+      "id": "core_dlmm_businessstate",
+      "label": "BusinessState",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
+      "community": 56,
+      "community_name": "simulate_trajectory",
       "file_type": "code",
-      "norm_label": "presetscenario",
-      "source_file": "frontend/src/components/DecisionStudio.tsx",
-      "source_location": "L12"
+      "norm_label": "businessstate",
+      "source_file": "core/dlmm.py",
+      "source_location": "L25"
     },
     {
-      "id": "frontend_src_components_motion_number_animatednumberprops",
-      "label": "AnimatedNumberProps",
+      "id": "core_dlmm_scenario",
+      "label": "Scenario",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
+      "community": 56,
+      "community_name": "simulate_trajectory",
       "file_type": "code",
-      "norm_label": "animatednumberprops",
-      "source_file": "frontend/src/components/motion/number.tsx",
-      "source_location": "L9"
+      "norm_label": "scenario",
+      "source_file": "core/dlmm.py",
+      "source_location": "L39"
     },
     {
-      "id": "frontend_src_components_pulsecards_pulsecardsprops",
-      "label": "PulseCardsProps",
+      "id": "core_advisor_advisoragent",
+      "label": "AdvisorAgent",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
+      "community": 58,
+      "community_name": "AdvisorAgent",
       "file_type": "code",
-      "norm_label": "pulsecardsprops",
-      "source_file": "frontend/src/components/PulseCards.tsx",
-      "source_location": "L6"
+      "norm_label": "advisoragent",
+      "source_file": "core/advisor.py",
+      "source_location": "L18"
     },
     {
-      "id": "frontend_src_components_simulationchatmodal_simulationchatmodalprops",
-      "label": "SimulationChatModalProps",
+      "id": "core_dlmm_trajectoryresult",
+      "label": "TrajectoryResult",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
+      "community": 58,
+      "community_name": "AdvisorAgent",
       "file_type": "code",
-      "norm_label": "simulationchatmodalprops",
-      "source_file": "frontend/src/components/SimulationChatModal.tsx",
-      "source_location": "L19"
+      "norm_label": "trajectoryresult",
+      "source_file": "core/dlmm.py",
+      "source_location": "L48"
     },
     {
       "id": "frontend_src_components_motion_animated_toast_stack_animatedtoast",
@@ -992,18 +992,6 @@
       "source_location": "L89"
     },
     {
-      "id": "api_server_get_business_pulse",
-      "label": "get_business_pulse()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "get_business_pulse()",
-      "source_file": "api/server.py",
-      "source_location": "L96"
-    },
-    {
       "id": "api_server_get_negotiate_script",
       "label": "get_negotiate_script()",
       "_callable": true,
@@ -1026,18 +1014,6 @@
       "norm_label": "get_nudge_script()",
       "source_file": "api/server.py",
       "source_location": "L164"
-    },
-    {
-      "id": "api_server_health_check",
-      "label": "health_check()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "health_check()",
-      "source_file": "api/server.py",
-      "source_location": "L86"
     },
     {
       "id": "api_server_ingest_text",
@@ -1076,42 +1052,6 @@
       "source_location": "L197"
     },
     {
-      "id": "api_server_serve_frontend_root",
-      "label": "serve_frontend_root()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "serve_frontend_root()",
-      "source_file": "api/server.py",
-      "source_location": "L208"
-    },
-    {
-      "id": "api_server_serve_frontend_spa",
-      "label": "serve_frontend_spa()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "serve_frontend_spa()",
-      "source_file": "api/server.py",
-      "source_location": "L212"
-    },
-    {
-      "id": "api_server_serve_placeholder",
-      "label": "serve_placeholder()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "serve_placeholder()",
-      "source_file": "api/server.py",
-      "source_location": "L221"
-    },
-    {
       "id": "api_server_simulate_decision",
       "label": "simulate_decision()",
       "_callable": true,
@@ -1124,172 +1064,16 @@
       "source_location": "L117"
     },
     {
-      "id": "cli_demo_print_banner",
-      "label": "print_banner()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "print_banner()",
-      "source_file": "cli_demo.py",
-      "source_location": "L24"
-    },
-    {
-      "id": "cli_demo_run_cli",
-      "label": "run_cli()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "run_cli()",
-      "source_file": "cli_demo.py",
-      "source_location": "L38"
-    },
-    {
-      "id": "core_advisor_advisoragent_formulate_simulation_advisory",
-      "label": ".formulate_simulation_advisory()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": ".formulate_simulation_advisory()",
-      "source_file": "core/advisor.py",
-      "source_location": "L110"
-    },
-    {
-      "id": "core_advisor_advisoragent_generate_debt_collection_message",
-      "label": ".generate_debt_collection_message()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": ".generate_debt_collection_message()",
-      "source_file": "core/advisor.py",
-      "source_location": "L22"
-    },
-    {
-      "id": "core_advisor_advisoragent_generate_supplier_negotiation_script",
-      "label": ".generate_supplier_negotiation_script()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": ".generate_supplier_negotiation_script()",
-      "source_file": "core/advisor.py",
-      "source_location": "L76"
-    },
-    {
-      "id": "core_advisor_advisoragent_init",
-      "label": ".__init__()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": ".__init__()",
-      "source_file": "core/advisor.py",
-      "source_location": "L19"
-    },
-    {
-      "id": "core_dlmm_businessstate_net_daily_operating_cash",
-      "label": ".net_daily_operating_cash()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": ".net_daily_operating_cash()",
-      "source_file": "core/dlmm.py",
-      "source_location": "L35"
-    },
-    {
-      "id": "core_dlmm_calculate_runway",
-      "label": "calculate_runway()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "calculate_runway()",
-      "source_file": "core/dlmm.py",
-      "source_location": "L77"
-    },
-    {
-      "id": "core_dlmm_calculate_safe_to_spend",
-      "label": "calculate_safe_to_spend()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "calculate_safe_to_spend()",
-      "source_file": "core/dlmm.py",
-      "source_location": "L59"
-    },
-    {
-      "id": "core_dlmm_simulate_trajectory",
-      "label": "simulate_trajectory()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "simulate_trajectory()",
-      "source_file": "core/dlmm.py",
-      "source_location": "L82"
-    },
-    {
-      "id": "core_sensor_sensoragent_init",
-      "label": ".__init__()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": ".__init__()",
-      "source_file": "core/sensor.py",
-      "source_location": "L20"
-    },
-    {
-      "id": "core_sensor_sensoragent_parse_bca_mutation_text",
-      "label": ".parse_bca_mutation_text()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": ".parse_bca_mutation_text()",
-      "source_file": "core/sensor.py",
-      "source_location": "L32"
-    },
-    {
-      "id": "core_sensor_sensoragent_parse_whatsapp_note",
-      "label": ".parse_whatsapp_note()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": ".parse_whatsapp_note()",
-      "source_file": "core/sensor.py",
-      "source_location": "L90"
-    },
-    {
-      "id": "frontend_src_components_header_header",
-      "label": "Header()",
+      "id": "frontend_src_components_herovisual3d_herovisual3d",
+      "label": "HeroVisual3D()",
       "_callable": true,
       "_origin": "ast",
       "community": 10,
       "community_name": "react",
       "file_type": "code",
-      "norm_label": "header()",
-      "source_file": "frontend/src/components/Header.tsx",
-      "source_location": "L22"
+      "norm_label": "herovisual3d()",
+      "source_file": "frontend/src/components/HeroVisual3D.tsx",
+      "source_location": "L5"
     },
     {
       "id": "frontend_src_components_ui_jagausahalogo_jagausahalogo",
@@ -1345,11 +1129,35 @@
       "_callable": true,
       "_origin": "ast",
       "community": 16,
-      "community_name": "input.tsx",
+      "community_name": "DecisionStudio.tsx",
       "file_type": "code",
       "norm_label": "dashboardsimulatorview()",
       "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
       "source_location": "L26"
+    },
+    {
+      "id": "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
+      "label": "DecisionIntelligenceCard()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "decisionintelligencecard()",
+      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "frontend_src_components_decisionstudio_decisionstudio",
+      "label": "DecisionStudio()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "decisionstudio()",
+      "source_file": "frontend/src/components/DecisionStudio.tsx",
+      "source_location": "L40"
     },
     {
       "id": "frontend_src_components_howitworks_howitworks",
@@ -1357,11 +1165,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 16,
-      "community_name": "input.tsx",
+      "community_name": "DecisionStudio.tsx",
       "file_type": "code",
       "norm_label": "howitworks()",
       "source_file": "frontend/src/components/HowItWorks.tsx",
       "source_location": "L13"
+    },
+    {
+      "id": "frontend_src_components_simulationchatmodal_simulationchatmodal",
+      "label": "SimulationChatModal()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "simulationchatmodal()",
+      "source_file": "frontend/src/components/SimulationChatModal.tsx",
+      "source_location": "L33"
     },
     {
       "id": "frontend_src_components_reactbits_countup_countup",
@@ -1374,6 +1194,18 @@
       "norm_label": "countup()",
       "source_file": "frontend/src/components/reactbits/CountUp.tsx",
       "source_location": "L14"
+    },
+    {
+      "id": "frontend_src_components_boarduiareachart_boarduiareachart",
+      "label": "BoardUIAreaChart()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "tabs.tsx",
+      "file_type": "code",
+      "norm_label": "boarduiareachart()",
+      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
+      "source_location": "L31"
     },
     {
       "id": "frontend_src_components_motion_tabs_tabs",
@@ -1529,19 +1361,7 @@
       "file_type": "code",
       "norm_label": "dashboardpage()",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L56"
-    },
-    {
-      "id": "frontend_src_components_decisionstudio_decisionstudio",
-      "label": "DecisionStudio()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "decisionstudio()",
-      "source_file": "frontend/src/components/DecisionStudio.tsx",
-      "source_location": "L40"
+      "source_location": "L55"
     },
     {
       "id": "frontend_src_components_faqsection_faqsection",
@@ -1556,6 +1376,18 @@
       "source_location": "L5"
     },
     {
+      "id": "frontend_src_components_featureagents_featureagents",
+      "label": "FeatureAgents()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "featureagents()",
+      "source_file": "frontend/src/components/FeatureAgents.tsx",
+      "source_location": "L9"
+    },
+    {
       "id": "frontend_src_components_footer_footer",
       "label": "Footer()",
       "_callable": true,
@@ -1566,6 +1398,18 @@
       "norm_label": "footer()",
       "source_file": "frontend/src/components/Footer.tsx",
       "source_location": "L4"
+    },
+    {
+      "id": "frontend_src_components_header_header",
+      "label": "Header()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "header()",
+      "source_file": "frontend/src/components/Header.tsx",
+      "source_location": "L22"
     },
     {
       "id": "frontend_src_components_herosection_herosection",
@@ -1580,18 +1424,6 @@
       "source_location": "L16"
     },
     {
-      "id": "frontend_src_components_herovisual3d_herovisual3d",
-      "label": "HeroVisual3D()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "herovisual3d()",
-      "source_file": "frontend/src/components/HeroVisual3D.tsx",
-      "source_location": "L5"
-    },
-    {
       "id": "frontend_src_components_loginpage_loginpage",
       "label": "LoginPage()",
       "_callable": true,
@@ -1604,16 +1436,16 @@
       "source_location": "L12"
     },
     {
-      "id": "frontend_src_components_terminaldrawer_terminaldrawer",
-      "label": "TerminalDrawer()",
+      "id": "frontend_src_components_motion_tilt_card_tiltcard",
+      "label": "TiltCard()",
       "_callable": true,
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "terminaldrawer()",
-      "source_file": "frontend/src/components/TerminalDrawer.tsx",
-      "source_location": "L11"
+      "norm_label": "tiltcard()",
+      "source_file": "frontend/src/components/motion/tilt-card.tsx",
+      "source_location": "L23"
     },
     {
       "id": "frontend_src_components_whatsappmodal_whatsappmodal",
@@ -1662,6 +1494,18 @@
       "norm_label": "usecontrollableaccordionvalue()",
       "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
       "source_location": "L82"
+    },
+    {
+      "id": "frontend_src_components_terminaldrawer_terminaldrawer",
+      "label": "TerminalDrawer()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "animated-badge.tsx",
+      "file_type": "code",
+      "norm_label": "terminaldrawer()",
+      "source_file": "frontend/src/components/TerminalDrawer.tsx",
+      "source_location": "L11"
     },
     {
       "id": "frontend_src_components_motion_animated_toast_stack_animatedtoaststack",
@@ -1724,18 +1568,6 @@
       "source_location": "L10"
     },
     {
-      "id": "frontend_src_components_boarduiareachart_boarduiareachart",
-      "label": "BoardUIAreaChart()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "DashboardPage.tsx",
-      "file_type": "code",
-      "norm_label": "boarduiareachart()",
-      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
-      "source_location": "L31"
-    },
-    {
       "id": "frontend_src_components_dashboard_dashboardagendaview_dashboardagendaview",
       "label": "DashboardAgendaView()",
       "_callable": true,
@@ -1772,6 +1604,18 @@
       "source_location": "L125"
     },
     {
+      "id": "frontend_src_components_motion_number_animatednumber",
+      "label": "AnimatedNumber()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "DashboardPage.tsx",
+      "file_type": "code",
+      "norm_label": "animatednumber()",
+      "source_file": "frontend/src/components/motion/number.tsx",
+      "source_location": "L17"
+    },
+    {
       "id": "frontend_src_components_onboardingmodal_onboardingmodal",
       "label": "OnboardingModal()",
       "_callable": true,
@@ -1782,6 +1626,18 @@
       "norm_label": "onboardingmodal()",
       "source_file": "frontend/src/components/OnboardingModal.tsx",
       "source_location": "L35"
+    },
+    {
+      "id": "frontend_src_components_pulsecards_pulsecards",
+      "label": "PulseCards()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "DashboardPage.tsx",
+      "file_type": "code",
+      "norm_label": "pulsecards()",
+      "source_file": "frontend/src/components/PulseCards.tsx",
+      "source_location": "L17"
     },
     {
       "id": "frontend_src_components_trajectorychart_trajectorychart",
@@ -1820,18 +1676,6 @@
       "source_location": "L30"
     },
     {
-      "id": "frontend_src_components_featureagents_featureagents",
-      "label": "FeatureAgents()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "featureagents()",
-      "source_file": "frontend/src/components/FeatureAgents.tsx",
-      "source_location": "L9"
-    },
-    {
       "id": "frontend_src_components_finalcta_finalcta",
       "label": "FinalCTA()",
       "_callable": true,
@@ -1854,18 +1698,6 @@
       "norm_label": "dottedchevron()",
       "source_file": "frontend/src/components/motion/expanding-arrow-button.tsx",
       "source_location": "L25"
-    },
-    {
-      "id": "frontend_src_components_motion_tilt_card_tiltcard",
-      "label": "TiltCard()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "tiltcard()",
-      "source_file": "frontend/src/components/motion/tilt-card.tsx",
-      "source_location": "L23"
     },
     {
       "id": "frontend_src_lib_hooks_use_hover_capable_usehovercapable",
@@ -1904,52 +1736,220 @@
       "source_location": "L12"
     },
     {
-      "id": "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
-      "label": "DecisionIntelligenceCard()",
+      "id": "core_dlmm_calculate_runway",
+      "label": "calculate_runway()",
       "_callable": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
+      "community": 54,
+      "community_name": "dlmm.py",
       "file_type": "code",
-      "norm_label": "decisionintelligencecard()",
-      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
-      "source_location": "L17"
+      "norm_label": "calculate_runway()",
+      "source_file": "core/dlmm.py",
+      "source_location": "L77"
     },
     {
-      "id": "frontend_src_components_motion_number_animatednumber",
-      "label": "AnimatedNumber()",
+      "id": "core_sensor_sensoragent_init",
+      "label": ".__init__()",
       "_callable": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
+      "community": 54,
+      "community_name": "dlmm.py",
       "file_type": "code",
-      "norm_label": "animatednumber()",
-      "source_file": "frontend/src/components/motion/number.tsx",
-      "source_location": "L17"
+      "norm_label": ".__init__()",
+      "source_file": "core/sensor.py",
+      "source_location": "L20"
     },
     {
-      "id": "frontend_src_components_pulsecards_pulsecards",
-      "label": "PulseCards()",
+      "id": "core_sensor_sensoragent_parse_bca_mutation_text",
+      "label": ".parse_bca_mutation_text()",
       "_callable": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
+      "community": 54,
+      "community_name": "dlmm.py",
       "file_type": "code",
-      "norm_label": "pulsecards()",
-      "source_file": "frontend/src/components/PulseCards.tsx",
-      "source_location": "L17"
+      "norm_label": ".parse_bca_mutation_text()",
+      "source_file": "core/sensor.py",
+      "source_location": "L32"
     },
     {
-      "id": "frontend_src_components_simulationchatmodal_simulationchatmodal",
-      "label": "SimulationChatModal()",
+      "id": "core_sensor_sensoragent_parse_whatsapp_note",
+      "label": ".parse_whatsapp_note()",
       "_callable": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
+      "community": 54,
+      "community_name": "dlmm.py",
       "file_type": "code",
-      "norm_label": "simulationchatmodal()",
-      "source_file": "frontend/src/components/SimulationChatModal.tsx",
-      "source_location": "L33"
+      "norm_label": ".parse_whatsapp_note()",
+      "source_file": "core/sensor.py",
+      "source_location": "L90"
+    },
+    {
+      "id": "api_server_get_business_pulse",
+      "label": "get_business_pulse()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": "get_business_pulse()",
+      "source_file": "api/server.py",
+      "source_location": "L96"
+    },
+    {
+      "id": "cli_demo_print_banner",
+      "label": "print_banner()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": "print_banner()",
+      "source_file": "cli_demo.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "cli_demo_run_cli",
+      "label": "run_cli()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": "run_cli()",
+      "source_file": "cli_demo.py",
+      "source_location": "L38"
+    },
+    {
+      "id": "core_dlmm_businessstate_net_daily_operating_cash",
+      "label": ".net_daily_operating_cash()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": ".net_daily_operating_cash()",
+      "source_file": "core/dlmm.py",
+      "source_location": "L35"
+    },
+    {
+      "id": "core_dlmm_calculate_safe_to_spend",
+      "label": "calculate_safe_to_spend()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": "calculate_safe_to_spend()",
+      "source_file": "core/dlmm.py",
+      "source_location": "L59"
+    },
+    {
+      "id": "core_dlmm_simulate_trajectory",
+      "label": "simulate_trajectory()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": "simulate_trajectory()",
+      "source_file": "core/dlmm.py",
+      "source_location": "L82"
+    },
+    {
+      "id": "core_advisor_advisoragent_formulate_simulation_advisory",
+      "label": ".formulate_simulation_advisory()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "AdvisorAgent",
+      "file_type": "code",
+      "norm_label": ".formulate_simulation_advisory()",
+      "source_file": "core/advisor.py",
+      "source_location": "L110"
+    },
+    {
+      "id": "core_advisor_advisoragent_generate_debt_collection_message",
+      "label": ".generate_debt_collection_message()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "AdvisorAgent",
+      "file_type": "code",
+      "norm_label": ".generate_debt_collection_message()",
+      "source_file": "core/advisor.py",
+      "source_location": "L22"
+    },
+    {
+      "id": "core_advisor_advisoragent_generate_supplier_negotiation_script",
+      "label": ".generate_supplier_negotiation_script()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "AdvisorAgent",
+      "file_type": "code",
+      "norm_label": ".generate_supplier_negotiation_script()",
+      "source_file": "core/advisor.py",
+      "source_location": "L76"
+    },
+    {
+      "id": "core_advisor_advisoragent_init",
+      "label": ".__init__()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "AdvisorAgent",
+      "file_type": "code",
+      "norm_label": ".__init__()",
+      "source_file": "core/advisor.py",
+      "source_location": "L19"
+    },
+    {
+      "id": "api_server_health_check",
+      "label": "health_check()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 59,
+      "community_name": "get",
+      "file_type": "code",
+      "norm_label": "health_check()",
+      "source_file": "api/server.py",
+      "source_location": "L86"
+    },
+    {
+      "id": "api_server_serve_frontend_root",
+      "label": "serve_frontend_root()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 59,
+      "community_name": "get",
+      "file_type": "code",
+      "norm_label": "serve_frontend_root()",
+      "source_file": "api/server.py",
+      "source_location": "L208"
+    },
+    {
+      "id": "api_server_serve_frontend_spa",
+      "label": "serve_frontend_spa()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 59,
+      "community_name": "get",
+      "file_type": "code",
+      "norm_label": "serve_frontend_spa()",
+      "source_file": "api/server.py",
+      "source_location": "L212"
+    },
+    {
+      "id": "api_server_serve_placeholder",
+      "label": "serve_placeholder()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 59,
+      "community_name": "get",
+      "file_type": "code",
+      "norm_label": "serve_placeholder()",
+      "source_file": "api/server.py",
+      "source_location": "L221"
     },
     {
       "id": "frontend_src_app_app",
@@ -2010,83 +2010,6 @@
       "source_location": ""
     },
     {
-      "id": "cli_demo",
-      "label": "cli_demo.py",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "cli_demo.py",
-      "source_file": "cli_demo.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "core_advisor",
-      "label": "advisor.py",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "advisor.py",
-      "source_file": "core/advisor.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "core_advisor_py_any",
-      "label": "Any",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "any",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "core_dlmm",
-      "label": "dlmm.py",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "dlmm.py",
-      "source_file": "core/dlmm.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "core_sensor",
-      "label": "sensor.py",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "sensor.py",
-      "source_file": "core/sensor.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "core_sensor_py_any",
-      "label": "Any",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "any",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "get",
-      "label": "get",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "get",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "post",
       "label": "post",
       "_origin": "ast",
@@ -2107,127 +2030,6 @@
       "norm_label": "fastapi server for jagausaha serves rest endpoints for dlmm engine, sensor...",
       "source_file": "api/server.py",
       "source_location": "L1"
-    },
-    {
-      "id": "cli_demo_rationale_1",
-      "label": "Interactive CLI Runner for JagaUsaha. Specifically designed for the IDwebhost\u2026",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "rationale",
-      "norm_label": "interactive cli runner for jagausaha. specifically designed for the idwebhost...",
-      "source_file": "cli_demo.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "core_advisor_rationale_1",
-      "label": "Advisor Agent & Culturally Tuned Communication Engine for JagaUsaha. Generates\u2026",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "rationale",
-      "norm_label": "advisor agent & culturally tuned communication engine for jagausaha. generates...",
-      "source_file": "core/advisor.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "core_advisor_rationale_111",
-      "label": "Translates raw mathematical TrajectoryResult into plain Indonesian actionable\u2026",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "rationale",
-      "norm_label": "translates raw mathematical trajectoryresult into plain indonesian actionable...",
-      "source_file": "core/advisor.py",
-      "source_location": "L111"
-    },
-    {
-      "id": "core_advisor_rationale_29",
-      "label": "'Kolektor Bon Santun': Culturally tuned polite Indonesian debt collection for\u2026",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "rationale",
-      "norm_label": "'kolektor bon santun': culturally tuned polite indonesian debt collection for...",
-      "source_file": "core/advisor.py",
-      "source_location": "L29"
-    },
-    {
-      "id": "core_advisor_rationale_84",
-      "label": "'Script Negosiasi Tempo Supplier': Counter-offer to restructure upfront CAPEX\u2026",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "rationale",
-      "norm_label": "'script negosiasi tempo supplier': counter-offer to restructure upfront capex...",
-      "source_file": "core/advisor.py",
-      "source_location": "L84"
-    },
-    {
-      "id": "core_dlmm_rationale_1",
-      "label": "Dynamic Liquidity & Margin Model (DLMM) Deterministic Financial Simulation Core\u2026",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "rationale",
-      "norm_label": "dynamic liquidity & margin model (dlmm) deterministic financial simulation core...",
-      "source_file": "core/dlmm.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "core_dlmm_rationale_60",
-      "label": "Safe-to-Spend (\"Duit Dingin\"): Cash - Committed Obligations(window) +\u2026",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "rationale",
-      "norm_label": "safe-to-spend (\"duit dingin\"): cash - committed obligations(window) +...",
-      "source_file": "core/dlmm.py",
-      "source_location": "L60"
-    },
-    {
-      "id": "core_dlmm_rationale_83",
-      "label": "Simulate day-by-day cash evolution across specified horizon. Compares baseline\u2026",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "rationale",
-      "norm_label": "simulate day-by-day cash evolution across specified horizon. compares baseline...",
-      "source_file": "core/dlmm.py",
-      "source_location": "L83"
-    },
-    {
-      "id": "core_sensor_rationale_1",
-      "label": "Sensor Agent & Multimodal Ingestion Module for JagaUsaha. Parses Indonesian\u2026",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "rationale",
-      "norm_label": "sensor agent & multimodal ingestion module for jagausaha. parses indonesian...",
-      "source_file": "core/sensor.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "core_sensor_rationale_33",
-      "label": "Parses standard KlikBCA / m-BCA text export. Example lines: 20/09 TRSF\u2026",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "rationale",
-      "norm_label": "parses standard klikbca / m-bca text export. example lines: 20/09 trsf...",
-      "source_file": "core/sensor.py",
-      "source_location": "L33"
-    },
-    {
-      "id": "core_sensor_rationale_91",
-      "label": "Parses natural conversational WhatsApp voice-to-text notes from the owner.\u2026",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "rationale",
-      "norm_label": "parses natural conversational whatsapp voice-to-text notes from the owner....",
-      "source_file": "core/sensor.py",
-      "source_location": "L91"
     },
     {
       "id": "jagausaha_strategy_spec",
@@ -2374,42 +2176,6 @@
       "source_location": "L121"
     },
     {
-      "id": "jagausaha_strategy_spec_7_1_multi_agent_specialization_vs_monolithic_llm",
-      "label": "7.1 Multi-Agent Specialization vs. Monolithic LLM",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "7.1 multi-agent specialization vs. monolithic llm",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L306"
-    },
-    {
-      "id": "jagausaha_strategy_spec_7_2_component_responsibilities",
-      "label": "7.2 Component Responsibilities",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "7.2 component responsibilities",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L343"
-    },
-    {
-      "id": "jagausaha_strategy_spec_7_agentic_design_system_topology",
-      "label": "7. AGENTIC DESIGN & SYSTEM TOPOLOGY",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "7. agentic design & system topology",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L304"
-    },
-    {
       "id": "jagausaha_strategy_spec_8_proactive_behavior_the_autonomous_guardian_loop",
       "label": "8. PROACTIVE BEHAVIOR: THE AUTONOMOUS GUARDIAN LOOP",
       "_origin": "ast",
@@ -2434,17 +2200,6 @@
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_actionfeed",
-      "label": "ActionFeed.tsx",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "actionfeed.tsx",
-      "source_file": "frontend/src/components/ActionFeed.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "frontend_src_components_footer",
       "label": "Footer.tsx",
       "_origin": "ast",
@@ -2464,6 +2219,28 @@
       "file_type": "code",
       "norm_label": "header.tsx",
       "source_file": "frontend/src/components/Header.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_herosection",
+      "label": "HeroSection.tsx",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "herosection.tsx",
+      "source_file": "frontend/src/components/HeroSection.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_herovisual3d",
+      "label": "HeroVisual3D.tsx",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "herovisual3d.tsx",
+      "source_file": "frontend/src/components/HeroVisual3D.tsx",
       "source_location": "L1"
     },
     {
@@ -2987,10 +2764,21 @@
       "label": "DashboardSimulatorView.tsx",
       "_origin": "ast",
       "community": 16,
-      "community_name": "input.tsx",
+      "community_name": "DecisionStudio.tsx",
       "file_type": "code",
       "norm_label": "dashboardsimulatorview.tsx",
       "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_decisionstudio",
+      "label": "DecisionStudio.tsx",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "decisionstudio.tsx",
+      "source_file": "frontend/src/components/DecisionStudio.tsx",
       "source_location": "L1"
     },
     {
@@ -2998,7 +2786,7 @@
       "label": "HowItWorks.tsx",
       "_origin": "ast",
       "community": 16,
-      "community_name": "input.tsx",
+      "community_name": "DecisionStudio.tsx",
       "file_type": "code",
       "norm_label": "howitworks.tsx",
       "source_file": "frontend/src/components/HowItWorks.tsx",
@@ -3009,7 +2797,7 @@
       "label": "input.tsx",
       "_origin": "ast",
       "community": 16,
-      "community_name": "input.tsx",
+      "community_name": "DecisionStudio.tsx",
       "file_type": "code",
       "norm_label": "input.tsx",
       "source_file": "frontend/src/components/motion/input.tsx",
@@ -3020,11 +2808,55 @@
       "label": "Input",
       "_origin": "ast",
       "community": 16,
-      "community_name": "input.tsx",
+      "community_name": "DecisionStudio.tsx",
       "file_type": "code",
       "norm_label": "input",
       "source_file": "frontend/src/components/motion/input.tsx",
       "source_location": "L51"
+    },
+    {
+      "id": "frontend_src_components_simulationchatmodal",
+      "label": "SimulationChatModal.tsx",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "simulationchatmodal.tsx",
+      "source_file": "frontend/src/components/SimulationChatModal.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_lib_ease_spring_panel",
+      "label": "SPRING_PANEL",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "spring_panel",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L22"
+    },
+    {
+      "id": "ref_border_beam",
+      "label": "border-beam",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "concept",
+      "norm_label": "border-beam",
+      "source_file": "frontend/package.json",
+      "source_location": "L13"
+    },
+    {
+      "id": "ref_thinking_orbs",
+      "label": "thinking-orbs",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "concept",
+      "norm_label": "thinking-orbs",
+      "source_file": "frontend/package.json",
+      "source_location": "L22"
     },
     {
       "id": "claude_skills_graphify_references_add_watch",
@@ -4286,6 +4118,17 @@
       "source_location": "L44"
     },
     {
+      "id": "frontend_src_components_actionfeed",
+      "label": "ActionFeed.tsx",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "actionfeed.tsx",
+      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "frontend_src_components_faqsection",
       "label": "FAQSection.tsx",
       "_origin": "ast",
@@ -4297,36 +4140,14 @@
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_herosection",
-      "label": "HeroSection.tsx",
+      "id": "frontend_src_components_featureagents",
+      "label": "FeatureAgents.tsx",
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "herosection.tsx",
-      "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_herovisual3d",
-      "label": "HeroVisual3D.tsx",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "herovisual3d.tsx",
-      "source_file": "frontend/src/components/HeroVisual3D.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_terminaldrawer",
-      "label": "TerminalDrawer.tsx",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "terminaldrawer.tsx",
-      "source_file": "frontend/src/components/TerminalDrawer.tsx",
+      "norm_label": "featureagents.tsx",
+      "source_file": "frontend/src/components/FeatureAgents.tsx",
       "source_location": "L1"
     },
     {
@@ -4341,15 +4162,15 @@
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_lib_ease_ease_out",
-      "label": "EASE_OUT",
+      "id": "frontend_src_lib_ease_spring_press",
+      "label": "SPRING_PRESS",
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "ease_out",
+      "norm_label": "spring_press",
       "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L2"
+      "source_location": "L8"
     },
     {
       "id": "ref_gsap",
@@ -4515,6 +4336,28 @@
       "norm_label": "text_roll_variants",
       "source_file": "frontend/src/components/motion/animated-badge.tsx",
       "source_location": "L105"
+    },
+    {
+      "id": "frontend_src_components_terminaldrawer",
+      "label": "TerminalDrawer.tsx",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "animated-badge.tsx",
+      "file_type": "code",
+      "norm_label": "terminaldrawer.tsx",
+      "source_file": "frontend/src/components/TerminalDrawer.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_lib_ease_ease_out",
+      "label": "EASE_OUT",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "animated-badge.tsx",
+      "file_type": "code",
+      "norm_label": "ease_out",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L2"
     },
     {
       "id": "frontend_src_components_motion_animated_toast_stack_toastitem",
@@ -4880,6 +4723,28 @@
       "source_location": "L1"
     },
     {
+      "id": "frontend_src_components_decisionintelligencecard",
+      "label": "DecisionIntelligenceCard.tsx",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "DashboardPage.tsx",
+      "file_type": "code",
+      "norm_label": "decisionintelligencecard.tsx",
+      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_motion_number",
+      "label": "number.tsx",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "DashboardPage.tsx",
+      "file_type": "code",
+      "norm_label": "number.tsx",
+      "source_file": "frontend/src/components/motion/number.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "frontend_src_components_onboardingmodal",
       "label": "OnboardingModal.tsx",
       "_origin": "ast",
@@ -4888,6 +4753,17 @@
       "file_type": "code",
       "norm_label": "onboardingmodal.tsx",
       "source_file": "frontend/src/components/OnboardingModal.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_pulsecards",
+      "label": "PulseCards.tsx",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "DashboardPage.tsx",
+      "file_type": "code",
+      "norm_label": "pulsecards.tsx",
+      "source_file": "frontend/src/components/PulseCards.tsx",
       "source_location": "L1"
     },
     {
@@ -4922,17 +4798,6 @@
       "norm_label": "default_spring",
       "source_file": "frontend/src/components/motion/text-reveal.tsx",
       "source_location": "L26"
-    },
-    {
-      "id": "frontend_src_components_featureagents",
-      "label": "FeatureAgents.tsx",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "featureagents.tsx",
-      "source_file": "frontend/src/components/FeatureAgents.tsx",
-      "source_location": "L1"
     },
     {
       "id": "frontend_src_components_finalcta",
@@ -5109,28 +4974,6 @@
       "norm_label": "spring_mouse",
       "source_file": "frontend/src/lib/ease.ts",
       "source_location": "L36"
-    },
-    {
-      "id": "frontend_src_lib_ease_spring_panel",
-      "label": "SPRING_PANEL",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "spring_panel",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L22"
-    },
-    {
-      "id": "frontend_src_lib_ease_spring_press",
-      "label": "SPRING_PRESS",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "spring_press",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L8"
     },
     {
       "id": "frontend_src_lib_ease_spring_swap",
@@ -5735,81 +5578,874 @@
       "source_location": "L405"
     },
     {
-      "id": "frontend_src_components_decisionintelligencecard",
-      "label": "DecisionIntelligenceCard.tsx",
+      "id": "core_dlmm",
+      "label": "dlmm.py",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
+      "community": 54,
+      "community_name": "dlmm.py",
       "file_type": "code",
-      "norm_label": "decisionintelligencecard.tsx",
-      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
+      "norm_label": "dlmm.py",
+      "source_file": "core/dlmm.py",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_decisionstudio",
-      "label": "DecisionStudio.tsx",
+      "id": "core_sensor",
+      "label": "sensor.py",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
+      "community": 54,
+      "community_name": "dlmm.py",
       "file_type": "code",
-      "norm_label": "decisionstudio.tsx",
-      "source_file": "frontend/src/components/DecisionStudio.tsx",
+      "norm_label": "sensor.py",
+      "source_file": "core/sensor.py",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_motion_number",
-      "label": "number.tsx",
+      "id": "core_sensor_py_any",
+      "label": "Any",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
+      "community": 54,
+      "community_name": "dlmm.py",
       "file_type": "code",
-      "norm_label": "number.tsx",
-      "source_file": "frontend/src/components/motion/number.tsx",
+      "norm_label": "any",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "core_dlmm_rationale_1",
+      "label": "Dynamic Liquidity & Margin Model (DLMM) Deterministic Financial Simulation Core\u2026",
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "dlmm.py",
+      "file_type": "rationale",
+      "norm_label": "dynamic liquidity & margin model (dlmm) deterministic financial simulation core...",
+      "source_file": "core/dlmm.py",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_pulsecards",
-      "label": "PulseCards.tsx",
+      "id": "core_sensor_rationale_1",
+      "label": "Sensor Agent & Multimodal Ingestion Module for JagaUsaha. Parses Indonesian\u2026",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "pulsecards.tsx",
-      "source_file": "frontend/src/components/PulseCards.tsx",
+      "community": 54,
+      "community_name": "dlmm.py",
+      "file_type": "rationale",
+      "norm_label": "sensor agent & multimodal ingestion module for jagausaha. parses indonesian...",
+      "source_file": "core/sensor.py",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_simulationchatmodal",
-      "label": "SimulationChatModal.tsx",
+      "id": "core_sensor_rationale_33",
+      "label": "Parses standard KlikBCA / m-BCA text export. Example lines: 20/09 TRSF\u2026",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
+      "community": 54,
+      "community_name": "dlmm.py",
+      "file_type": "rationale",
+      "norm_label": "parses standard klikbca / m-bca text export. example lines: 20/09 trsf...",
+      "source_file": "core/sensor.py",
+      "source_location": "L33"
+    },
+    {
+      "id": "core_sensor_rationale_91",
+      "label": "Parses natural conversational WhatsApp voice-to-text notes from the owner.\u2026",
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "dlmm.py",
+      "file_type": "rationale",
+      "norm_label": "parses natural conversational whatsapp voice-to-text notes from the owner....",
+      "source_file": "core/sensor.py",
+      "source_location": "L91"
+    },
+    {
+      "id": "cli_demo",
+      "label": "cli_demo.py",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "cli_demo.py",
       "file_type": "code",
-      "norm_label": "simulationchatmodal.tsx",
-      "source_file": "frontend/src/components/SimulationChatModal.tsx",
+      "norm_label": "cli_demo.py",
+      "source_file": "cli_demo.py",
       "source_location": "L1"
     },
     {
-      "id": "ref_border_beam",
-      "label": "border-beam",
+      "id": "core_advisor",
+      "label": "advisor.py",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "concept",
-      "norm_label": "border-beam",
-      "source_file": "frontend/package.json",
-      "source_location": "L13"
+      "community": 55,
+      "community_name": "cli_demo.py",
+      "file_type": "code",
+      "norm_label": "advisor.py",
+      "source_file": "core/advisor.py",
+      "source_location": "L1"
     },
     {
-      "id": "ref_thinking_orbs",
-      "label": "thinking-orbs",
+      "id": "cli_demo_rationale_1",
+      "label": "Interactive CLI Runner for JagaUsaha. Specifically designed for the IDwebhost\u2026",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "cli_demo.py",
+      "file_type": "rationale",
+      "norm_label": "interactive cli runner for jagausaha. specifically designed for the idwebhost...",
+      "source_file": "cli_demo.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "core_advisor_rationale_1",
+      "label": "Advisor Agent & Culturally Tuned Communication Engine for JagaUsaha. Generates\u2026",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "cli_demo.py",
+      "file_type": "rationale",
+      "norm_label": "advisor agent & culturally tuned communication engine for jagausaha. generates...",
+      "source_file": "core/advisor.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_13_agent_architecture_hermes_runtime_specification",
+      "label": "13. AGENT ARCHITECTURE (HERMES RUNTIME SPECIFICATION)",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "13. agent architecture (hermes runtime specification)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L308"
+    },
+    {
+      "id": "core_dlmm_rationale_60",
+      "label": "Safe-to-Spend (\"Duit Dingin\"): Cash - Committed Obligations(window) +\u2026",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "rationale",
+      "norm_label": "safe-to-spend (\"duit dingin\"): cash - committed obligations(window) +...",
+      "source_file": "core/dlmm.py",
+      "source_location": "L60"
+    },
+    {
+      "id": "core_dlmm_rationale_83",
+      "label": "Simulate day-by-day cash evolution across specified horizon. Compares baseline\u2026",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "rationale",
+      "norm_label": "simulate day-by-day cash evolution across specified horizon. compares baseline...",
+      "source_file": "core/dlmm.py",
+      "source_location": "L83"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_10_ask_jagausaha_asisten_konsultasi_finansial_kontekstual",
+      "label": "10. Ask JagaUsaha (Asisten Konsultasi Finansial Kontekstual)",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "10. ask jagausaha (asisten konsultasi finansial kontekstual)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L302"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_12_feature_flows_spesifikasi_10_fitur_utama",
+      "label": "12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "12. feature flows (spesifikasi 10 fitur utama)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L250"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_1_business_pulse_homepage_keamanan_kas",
+      "label": "1. Business Pulse (Homepage Keamanan Kas)",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. business pulse (homepage keamanan kas)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L252"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_2_guardian_feed_pusat_intervensi_berkas_kasus",
+      "label": "2. Guardian Feed (Pusat Intervensi & Berkas Kasus)",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. guardian feed (pusat intervensi & berkas kasus)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L258"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_3_silent_leak_detector_detektor_kebocoran_kas_halus",
+      "label": "3. Silent Leak Detector (Detektor Kebocoran Kas Halus)",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. silent leak detector (detektor kebocoran kas halus)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L265"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_4_safe_to_spend_calculator_duit_dingin_aman_belanja",
+      "label": "4. Safe-to-Spend Calculator (Duit Dingin Aman Belanja)",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. safe-to-spend calculator (duit dingin aman belanja)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L269"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_5_future_simulator_decision_sandbox",
+      "label": "5. Future Simulator (Decision Sandbox)",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. future simulator (decision sandbox)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L273"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_6_business_fire_drill_uji_ketahanan_krisis_otomatis",
+      "label": "6. Business Fire Drill (Uji Ketahanan Krisis Otomatis)",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "6. business fire drill (uji ketahanan krisis otomatis)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L282"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_7_pre_mortem_analyzer_simulasi_sebab_akibat_6_bulan_ke_depan",
+      "label": "7. Pre-Mortem Analyzer (Simulasi Sebab-Akibat 6 Bulan ke Depan)",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "7. pre-mortem analyzer (simulasi sebab-akibat 6 bulan ke depan)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L288"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_8_business_memory_memori_pengalaman_keputusan_outcome",
+      "label": "8. Business Memory (Memori Pengalaman Keputusan & Outcome)",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "8. business memory (memori pengalaman keputusan & outcome)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L293"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_9_data_inbox_kotak_masuk_rekonsiliasi_ragu_ragu",
+      "label": "9. Data Inbox (Kotak Masuk Rekonsiliasi Ragu-Ragu)",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "9. data inbox (kotak masuk rekonsiliasi ragu-ragu)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L297"
+    },
+    {
+      "id": "core_advisor_py_any",
+      "label": "Any",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "AdvisorAgent",
+      "file_type": "code",
+      "norm_label": "any",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "core_advisor_rationale_111",
+      "label": "Translates raw mathematical TrajectoryResult into plain Indonesian actionable\u2026",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "AdvisorAgent",
+      "file_type": "rationale",
+      "norm_label": "translates raw mathematical trajectoryresult into plain indonesian actionable...",
+      "source_file": "core/advisor.py",
+      "source_location": "L111"
+    },
+    {
+      "id": "core_advisor_rationale_29",
+      "label": "'Kolektor Bon Santun': Culturally tuned polite Indonesian debt collection for\u2026",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "AdvisorAgent",
+      "file_type": "rationale",
+      "norm_label": "'kolektor bon santun': culturally tuned polite indonesian debt collection for...",
+      "source_file": "core/advisor.py",
+      "source_location": "L29"
+    },
+    {
+      "id": "core_advisor_rationale_84",
+      "label": "'Script Negosiasi Tempo Supplier': Counter-offer to restructure upfront CAPEX\u2026",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "AdvisorAgent",
+      "file_type": "rationale",
+      "norm_label": "'script negosiasi tempo supplier': counter-offer to restructure upfront capex...",
+      "source_file": "core/advisor.py",
+      "source_location": "L84"
+    },
+    {
+      "id": "get",
+      "label": "get",
+      "_origin": "ast",
+      "community": 59,
+      "community_name": "get",
+      "file_type": "code",
+      "norm_label": "get",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan",
+      "label": "2026-09-24_jagausaha-master-architecture-plan.md",
       "_origin": "ast",
       "community": 6,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "concept",
-      "norm_label": "thinking-orbs",
-      "source_file": "frontend/package.json",
-      "source_location": "L22"
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_10_guardian_monitoring_engine_the_continuous_loop",
+      "label": "10. GUARDIAN MONITORING ENGINE (THE CONTINUOUS LOOP)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "10. guardian monitoring engine (the continuous loop)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L214"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_11_signal_risk_logic_dari_anomali_ke_risiko_bermakna",
+      "label": "11. SIGNAL \u2192 RISK LOGIC (DARI ANOMALI KE RISIKO BERMAKNA)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "11. signal \u2192 risk logic (dari anomali ke risiko bermakna)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L238"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_14_human_approval_financial_safety_tiers",
+      "label": "14. HUMAN APPROVAL & FINANCIAL SAFETY TIERS",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "14. human approval & financial safety tiers",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L348"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_17_ui_screen_map_information_architecture",
+      "label": "17. UI SCREEN MAP (INFORMATION ARCHITECTURE)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "17. ui screen map (information architecture)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L423"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_18_edge_cases_penanganan_kondisi_realistis_umkm",
+      "label": "18. EDGE CASES (PENANGANAN KONDISI REALISTIS UMKM)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "18. edge cases (penanganan kondisi realistis umkm)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L448"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_19_hackathon_mvp_vertical_slice_priority",
+      "label": "19. HACKATHON MVP (VERTICAL SLICE PRIORITY)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "19. hackathon mvp (vertical slice priority)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L463"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_1_product_north_star",
+      "label": "1. PRODUCT NORTH STAR",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. product north star",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_20_database_plan_postgresql_relational_schema",
+      "label": "20. DATABASE PLAN (POSTGRESQL RELATIONAL SCHEMA)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "20. database plan (postgresql relational schema)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L475"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_21_api_plan_restful_fastapi_specification",
+      "label": "21. API PLAN (RESTFUL FASTAPI SPECIFICATION)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "21. api plan (restful fastapi specification)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L570"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_22_event_job_pipeline",
+      "label": "22. EVENT / JOB PIPELINE",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "22. event / job pipeline",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L585"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_23_first_30_days_experience_retention_driver",
+      "label": "23. FIRST 30 DAYS EXPERIENCE (RETENTION DRIVER)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "23. first 30 days experience (retention driver)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L604"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_24_demo_data_specification_kopi_nusa",
+      "label": "24. DEMO DATA SPECIFICATION: \"KOPI NUSA\"",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "24. demo data specification: \"kopi nusa\"",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L614"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_25_exact_3_5_minute_demo_sequence_hackfest_wow_moment",
+      "label": "25. EXACT 3\u20135 MINUTE DEMO SEQUENCE (HACKFEST WOW MOMENT)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "25. exact 3\u20135 minute demo sequence (hackfest wow moment)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L629"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_26_test_scenarios_qa_suite",
+      "label": "26. TEST SCENARIOS (QA SUITE)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "26. test scenarios (qa suite)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L648"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_27_implementation_order_phased_execution",
+      "label": "27. IMPLEMENTATION ORDER (PHASED EXECUTION)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "27. implementation order (phased execution)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L658"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_28_what_not_to_build_explicit_anti_complexity_list",
+      "label": "28. WHAT NOT TO BUILD (EXPLICIT ANTI-COMPLEXITY LIST)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "28. what not to build (explicit anti-complexity list)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L684"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_2_actors",
+      "label": "2. ACTORS",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. actors",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_3_end_to_end_user_journey",
+      "label": "3. END-TO-END USER JOURNEY",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. end-to-end user journey",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L37"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_6_canonical_business_data_model",
+      "label": "6. CANONICAL BUSINESS DATA MODEL",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "6. canonical business data model",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L126"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_7_business_state_model_the_digital_twin",
+      "label": "7. BUSINESS STATE MODEL (THE DIGITAL TWIN)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "7. business state model (the digital twin)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L169"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_8_financial_metrics_engine_deterministic_transparent",
+      "label": "8. FINANCIAL METRICS ENGINE (DETERMINISTIC & TRANSPARENT)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "8. financial metrics engine (deterministic & transparent)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L184"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_9_data_confidence_model_provenance_integrity",
+      "label": "9. DATA CONFIDENCE MODEL (PROVENANCE & INTEGRITY)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "9. data confidence model (provenance & integrity)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L198"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "label": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "JagaUsaha \u2014 Master Architecture & Product Logic Plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "jagausaha \u2014 master architecture & product logic plan",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_15_state_machines",
+      "label": "15. STATE MACHINES",
+      "_origin": "ast",
+      "community": 60,
+      "community_name": "15. STATE MACHINES",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "15. state machines",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L364"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_a_riskcase_lifecycle",
+      "label": "A. RiskCase Lifecycle",
+      "_origin": "ast",
+      "community": 60,
+      "community_name": "15. STATE MACHINES",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "a. riskcase lifecycle",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L366"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_b_recommendation_lifecycle",
+      "label": "B. Recommendation Lifecycle",
+      "_origin": "ast",
+      "community": 60,
+      "community_name": "15. STATE MACHINES",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "b. recommendation lifecycle",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L383"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_c_datainbox_item_lifecycle",
+      "label": "C. DataInbox Item Lifecycle",
+      "_origin": "ast",
+      "community": 60,
+      "community_name": "15. STATE MACHINES",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "c. datainbox item lifecycle",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L386"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_29_reality_check_where_would_the_system_fail_tomorrow_how_it_is_fixed",
+      "label": "29. REALITY-CHECK: WHERE WOULD THE SYSTEM FAIL TOMORROW & HOW IT IS FIXED?",
+      "_origin": "ast",
+      "community": 61,
+      "community_name": "29. REALITY-CHECK: WHERE WOULD THE SYSTEM FAIL TOMORROW & HOW IT IS FIXED?",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "29. reality-check: where would the system fail tomorrow & how it is fixed?",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L693"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_tantangan_nyata_1_owner_bayar_supplier_pakai_uang_tunai_dari_laci_kasir_tidak_lewat_rekening_bank",
+      "label": "Tantangan Nyata 1: \"Owner bayar supplier pakai uang tunai dari laci kasir, tidak lewat rekening bank.\"",
+      "_origin": "ast",
+      "community": 61,
+      "community_name": "29. REALITY-CHECK: WHERE WOULD THE SYSTEM FAIL TOMORROW & HOW IT IS FIXED?",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "tantangan nyata 1: \"owner bayar supplier pakai uang tunai dari laci kasir, tidak lewat rekening bank.\"",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L695"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_tantangan_nyata_2_omset_umkm_sangat_fluktuatif_sabtu_minggu_ramai_2_5_jt_senin_rabu_sepi_500rb",
+      "label": "Tantangan Nyata 2: \"Omset UMKM sangat fluktuatif (Sabtu-Minggu ramai 2.5 Jt, Senin-Rabu sepi 500rb).\"",
+      "_origin": "ast",
+      "community": 61,
+      "community_name": "29. REALITY-CHECK: WHERE WOULD THE SYSTEM FAIL TOMORROW & HOW IT IS FIXED?",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "tantangan nyata 2: \"omset umkm sangat fluktuatif (sabtu-minggu ramai 2.5 jt, senin-rabu sepi 500rb).\"",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L699"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_tantangan_nyata_3_owner_merasa_tersinggung_jika_ai_menuduh_mereka_korupsi_uang_toko_sendiri_saat_tarik_prive",
+      "label": "Tantangan Nyata 3: \"Owner merasa tersinggung jika AI menuduh mereka 'korupsi' uang toko sendiri saat tarik prive.\"",
+      "_origin": "ast",
+      "community": 61,
+      "community_name": "29. REALITY-CHECK: WHERE WOULD THE SYSTEM FAIL TOMORROW & HOW IT IS FIXED?",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "tantangan nyata 3: \"owner merasa tersinggung jika ai menuduh mereka 'korupsi' uang toko sendiri saat tarik prive.\"",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L703"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_4_new_user_onboarding_flow_progressive_disclosure",
+      "label": "4. NEW USER ONBOARDING FLOW (PROGRESSIVE DISCLOSURE)",
+      "_origin": "ast",
+      "community": 62,
+      "community_name": "4. NEW USER ONBOARDING FLOW (PROGRESSIVE DISCLOSURE)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. new user onboarding flow (progressive disclosure)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L58"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_step_1_identitas_bisnis_archetype",
+      "label": "Step 1: Identitas Bisnis & Archetype",
+      "_origin": "ast",
+      "community": 62,
+      "community_name": "4. NEW USER ONBOARDING FLOW (PROGRESSIVE DISCLOSURE)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "step 1: identitas bisnis & archetype",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L62"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_step_2_pilih_metode_input_data_fleksibel_anti_gagal",
+      "label": "Step 2: Pilih Metode Input Data (Fleksibel & Anti-Gagal)",
+      "_origin": "ast",
+      "community": 62,
+      "community_name": "4. NEW USER ONBOARDING FLOW (PROGRESSIVE DISCLOSURE)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "step 2: pilih metode input data (fleksibel & anti-gagal)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L71"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_step_3_penetapan_data_confidence_first_baseline",
+      "label": "Step 3: Penetapan Data Confidence & First Baseline",
+      "_origin": "ast",
+      "community": 62,
+      "community_name": "4. NEW USER ONBOARDING FLOW (PROGRESSIVE DISCLOSURE)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "step 3: penetapan data confidence & first baseline",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L82"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_16_mermaid_flow_diagrams",
+      "label": "16. MERMAID FLOW DIAGRAMS",
+      "_origin": "ast",
+      "community": 63,
+      "community_name": "16. MERMAID FLOW DIAGRAMS",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "16. mermaid flow diagrams",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L391"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_diagram_1_continuous_guardian_decision_simulation_loop",
+      "label": "Diagram 1: Continuous Guardian & Decision Simulation Loop",
+      "_origin": "ast",
+      "community": 63,
+      "community_name": "16. MERMAID FLOW DIAGRAMS",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "diagram 1: continuous guardian & decision simulation loop",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L393"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_diagram_2_cold_start_onboarding_flow_zero_historical_data",
+      "label": "Diagram 2: Cold-Start Onboarding Flow (Zero Historical Data)",
+      "_origin": "ast",
+      "community": 63,
+      "community_name": "16. MERMAID FLOW DIAGRAMS",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "diagram 2: cold-start onboarding flow (zero historical data)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L412"
+    },
+    {
+      "id": "jagausaha_strategy_spec_7_1_multi_agent_specialization_vs_monolithic_llm",
+      "label": "7.1 Multi-Agent Specialization vs. Monolithic LLM",
+      "_origin": "ast",
+      "community": 64,
+      "community_name": "7. AGENTIC DESIGN & SYSTEM TOPOLOGY",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "7.1 multi-agent specialization vs. monolithic llm",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L306"
+    },
+    {
+      "id": "jagausaha_strategy_spec_7_2_component_responsibilities",
+      "label": "7.2 Component Responsibilities",
+      "_origin": "ast",
+      "community": 64,
+      "community_name": "7. AGENTIC DESIGN & SYSTEM TOPOLOGY",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "7.2 component responsibilities",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L343"
+    },
+    {
+      "id": "jagausaha_strategy_spec_7_agentic_design_system_topology",
+      "label": "7. AGENTIC DESIGN & SYSTEM TOPOLOGY",
+      "_origin": "ast",
+      "community": 64,
+      "community_name": "7. AGENTIC DESIGN & SYSTEM TOPOLOGY",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "7. agentic design & system topology",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L304"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_5_data_ingestion_flow_canonical_pipeline",
+      "label": "5. DATA INGESTION FLOW (CANONICAL PIPELINE)",
+      "_origin": "ast",
+      "community": 65,
+      "community_name": "5. DATA INGESTION FLOW (CANONICAL PIPELINE)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. data ingestion flow (canonical pipeline)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L91"
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_detail_per_sumber_data",
+      "label": "Detail Per Sumber Data:",
+      "_origin": "ast",
+      "community": 65,
+      "community_name": "5. DATA INGESTION FLOW (CANONICAL PIPELINE)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "detail per sumber data:",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L111"
     },
     {
       "id": "claude_skills_graphify_skill",
@@ -6435,18 +7071,6 @@
       "source_location": "L719"
     },
     {
-      "id": "dataclasses",
-      "label": "dataclasses",
-      "_origin": "semantic",
-      "community": 0,
-      "community_name": "server.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "dataclasses",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "fastapi",
       "label": "fastapi",
       "_origin": "semantic",
@@ -6507,18 +7131,6 @@
       "type": "external"
     },
     {
-      "id": "os",
-      "label": "os",
-      "_origin": "semantic",
-      "community": 0,
-      "community_name": "server.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "os",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "pathlib",
       "label": "pathlib",
       "_origin": "semantic",
@@ -6543,114 +7155,6 @@
       "type": "external"
     },
     {
-      "id": "re",
-      "label": "re",
-      "_origin": "semantic",
-      "community": 0,
-      "community_name": "server.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "re",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "rich_console",
-      "label": "rich_console",
-      "_origin": "semantic",
-      "community": 0,
-      "community_name": "server.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "rich_console",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "rich_panel",
-      "label": "rich_panel",
-      "_origin": "semantic",
-      "community": 0,
-      "community_name": "server.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "rich_panel",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "rich_progress",
-      "label": "rich_progress",
-      "_origin": "semantic",
-      "community": 0,
-      "community_name": "server.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "rich_progress",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "rich_prompt",
-      "label": "rich_prompt",
-      "_origin": "semantic",
-      "community": 0,
-      "community_name": "server.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "rich_prompt",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "rich_table",
-      "label": "rich_table",
-      "_origin": "semantic",
-      "community": 0,
-      "community_name": "server.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "rich_table",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "sys",
-      "label": "sys",
-      "_origin": "semantic",
-      "community": 0,
-      "community_name": "server.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "sys",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "time",
-      "label": "time",
-      "_origin": "semantic",
-      "community": 0,
-      "community_name": "server.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "time",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "typing",
-      "label": "typing",
-      "_origin": "semantic",
-      "community": 0,
-      "community_name": "server.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "typing",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "uvicorn",
       "label": "uvicorn",
       "_origin": "semantic",
@@ -6671,6 +7175,138 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "frontend_src_index",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "dataclasses",
+      "label": "dataclasses",
+      "_origin": "semantic",
+      "community": 54,
+      "community_name": "dlmm.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "dataclasses",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "re",
+      "label": "re",
+      "_origin": "semantic",
+      "community": 54,
+      "community_name": "dlmm.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "re",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "typing",
+      "label": "typing",
+      "_origin": "semantic",
+      "community": 54,
+      "community_name": "dlmm.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "typing",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "os",
+      "label": "os",
+      "_origin": "semantic",
+      "community": 55,
+      "community_name": "cli_demo.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "os",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "rich_console",
+      "label": "rich_console",
+      "_origin": "semantic",
+      "community": 55,
+      "community_name": "cli_demo.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "rich_console",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "rich_panel",
+      "label": "rich_panel",
+      "_origin": "semantic",
+      "community": 55,
+      "community_name": "cli_demo.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "rich_panel",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "rich_progress",
+      "label": "rich_progress",
+      "_origin": "semantic",
+      "community": 55,
+      "community_name": "cli_demo.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "rich_progress",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "rich_prompt",
+      "label": "rich_prompt",
+      "_origin": "semantic",
+      "community": 55,
+      "community_name": "cli_demo.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "rich_prompt",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "rich_table",
+      "label": "rich_table",
+      "_origin": "semantic",
+      "community": 55,
+      "community_name": "cli_demo.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "rich_table",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "sys",
+      "label": "sys",
+      "_origin": "semantic",
+      "community": 55,
+      "community_name": "cli_demo.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "sys",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "time",
+      "label": "time",
+      "_origin": "semantic",
+      "community": 55,
+      "community_name": "cli_demo.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "time",
       "source_file": "",
       "type": "external"
     }
@@ -8317,7 +8953,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L23",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -8329,7 +8965,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L24",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -8341,7 +8977,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L25",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -8353,7 +8989,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L26",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -8365,7 +9001,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L27",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -8377,7 +9013,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L28",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -8389,7 +9025,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L29",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -8401,7 +9037,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L30",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -8413,7 +9049,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L30",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -9985,7 +10621,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L23",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -9997,7 +10633,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L24",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -10009,7 +10645,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L25",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -10021,7 +10657,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L26",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -10033,7 +10669,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L27",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -10045,7 +10681,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L28",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -10057,7 +10693,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L29",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -10069,7 +10705,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L30",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -13584,7 +14220,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L32",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -13595,7 +14231,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L56",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
@@ -15546,6 +16182,578 @@
       "weight": 1.0
     },
     {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_12_feature_flows_spesifikasi_10_fitur_utama",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_1_business_pulse_homepage_keamanan_kas",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L252",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_12_feature_flows_spesifikasi_10_fitur_utama",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_2_guardian_feed_pusat_intervensi_berkas_kasus",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L258",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_12_feature_flows_spesifikasi_10_fitur_utama",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_3_silent_leak_detector_detektor_kebocoran_kas_halus",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L265",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_12_feature_flows_spesifikasi_10_fitur_utama",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_4_safe_to_spend_calculator_duit_dingin_aman_belanja",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L269",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_12_feature_flows_spesifikasi_10_fitur_utama",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_5_future_simulator_decision_sandbox",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L273",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_12_feature_flows_spesifikasi_10_fitur_utama",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_6_business_fire_drill_uji_ketahanan_krisis_otomatis",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L282",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_12_feature_flows_spesifikasi_10_fitur_utama",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_7_pre_mortem_analyzer_simulasi_sebab_akibat_6_bulan_ke_depan",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L288",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_12_feature_flows_spesifikasi_10_fitur_utama",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_8_business_memory_memori_pengalaman_keputusan_outcome",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L293",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_12_feature_flows_spesifikasi_10_fitur_utama",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_9_data_inbox_kotak_masuk_rekonsiliasi_ragu_ragu",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L297",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_12_feature_flows_spesifikasi_10_fitur_utama",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_10_ask_jagausaha_asisten_konsultasi_finansial_kontekstual",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L302",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_15_state_machines",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_a_riskcase_lifecycle",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L366",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_15_state_machines",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_b_recommendation_lifecycle",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L383",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_15_state_machines",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_c_datainbox_item_lifecycle",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L386",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_16_mermaid_flow_diagrams",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_diagram_1_continuous_guardian_decision_simulation_loop",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L393",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_16_mermaid_flow_diagrams",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_diagram_2_cold_start_onboarding_flow_zero_historical_data",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L412",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_29_reality_check_where_would_the_system_fail_tomorrow_how_it_is_fixed",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_tantangan_nyata_1_owner_bayar_supplier_pakai_uang_tunai_dari_laci_kasir_tidak_lewat_rekening_bank",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L695",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_29_reality_check_where_would_the_system_fail_tomorrow_how_it_is_fixed",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_tantangan_nyata_2_omset_umkm_sangat_fluktuatif_sabtu_minggu_ramai_2_5_jt_senin_rabu_sepi_500rb",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L699",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_29_reality_check_where_would_the_system_fail_tomorrow_how_it_is_fixed",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_tantangan_nyata_3_owner_merasa_tersinggung_jika_ai_menuduh_mereka_korupsi_uang_toko_sendiri_saat_tarik_prive",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L703",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_4_new_user_onboarding_flow_progressive_disclosure",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_step_1_identitas_bisnis_archetype",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_4_new_user_onboarding_flow_progressive_disclosure",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_step_2_pilih_metode_input_data_fleksibel_anti_gagal",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_4_new_user_onboarding_flow_progressive_disclosure",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_step_3_penetapan_data_confidence_first_baseline",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L82",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_5_data_ingestion_flow_canonical_pipeline",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_detail_per_sumber_data",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_6_canonical_business_data_model",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_2_actors",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_7_business_state_model_the_digital_twin",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L169",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_8_financial_metrics_engine_deterministic_transparent",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L184",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_9_data_confidence_model_provenance_integrity",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L198",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_10_guardian_monitoring_engine_the_continuous_loop",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L214",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_11_signal_risk_logic_dari_anomali_ke_risiko_bermakna",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L238",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_12_feature_flows_spesifikasi_10_fitur_utama",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L250",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_13_agent_architecture_hermes_runtime_specification",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L308",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_14_human_approval_financial_safety_tiers",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L348",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_15_state_machines",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L364",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_3_end_to_end_user_journey",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_16_mermaid_flow_diagrams",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L391",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_17_ui_screen_map_information_architecture",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L423",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_18_edge_cases_penanganan_kondisi_realistis_umkm",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L448",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_19_hackathon_mvp_vertical_slice_priority",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L463",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_20_database_plan_postgresql_relational_schema",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L475",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_21_api_plan_restful_fastapi_specification",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L570",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_4_new_user_onboarding_flow_progressive_disclosure",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_22_event_job_pipeline",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L585",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_23_first_30_days_experience_retention_driver",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L604",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_24_demo_data_specification_kopi_nusa",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L614",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_25_exact_3_5_minute_demo_sequence_hackfest_wow_moment",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L629",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_26_test_scenarios_qa_suite",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L648",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_27_implementation_order_phased_execution",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L658",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_28_what_not_to_build_explicit_anti_complexity_list",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L684",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_29_reality_check_where_would_the_system_fail_tomorrow_how_it_is_fixed",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L693",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_1_product_north_star",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "target": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_5_data_ingestion_flow_canonical_pipeline",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
       "source": "jagausaha_strategy_spec",
       "target": "jagausaha_strategy_spec_jagausaha_ai_autonomous_financial_guardian_decision_sandbox_for_indonesian_umkm",
       "relation": "contains",
@@ -16922,6 +18130,30 @@
       "weight": 1.0
     },
     {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_13_agent_architecture_hermes_runtime_specification",
+      "target": "core_dlmm_calculate_safe_to_spend",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "calculate_safe_to_spend",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L340",
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_13_agent_architecture_hermes_runtime_specification",
+      "target": "core_dlmm_simulate_trajectory",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "simulate_trajectory",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L340",
+      "weight": 1.0
+    },
+    {
       "source": "api_server_ingest_text",
       "target": "core_dlmm_obligation",
       "relation": "uses",
@@ -16967,5 +18199,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7ee5cc1b7fb04cf7a493d650afcd02ecac24f21c"
+  "built_at_commit": "605b4b42fc1e8342984083b48ee984a3ab9d13bf"
 }
