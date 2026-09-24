@@ -1,7 +1,9 @@
 # Graph Report - JagaUsaha  (2026-09-25)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 90 files · ~480,684 words
+- Verdict: corpus is large enough that graph structure adds value.
+- Unclassified: 5 file(s) not represented in the graph (top: (none) 3, .css 2)
 
 ## Summary
 - 674 nodes · 1072 edges · 62 communities (49 shown, 13 thin omitted)
@@ -88,15 +90,15 @@
 10. `6. FIFTEEN UNCONVENTIONAL OUT-OF-THE-BOX AGENT CAPABILITIES` - 17 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `🎨 Komponen UI & Desain Eksternal` --references--> `AgentThinking()`  [INFERRED]
-  README.md → frontend/src/components/AgentThinking.tsx
-- `🎨 Komponen UI & Desain Eksternal` --references--> `MatrixOrb()`  [INFERRED]
-  README.md → frontend/src/components/ui/matrix-orb.tsx
 - `13. AGENT ARCHITECTURE (HERMES RUNTIME SPECIFICATION)` --references--> `calculate_safe_to_spend()`  [INFERRED]
   .hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md → core/dlmm.py
 - `13. AGENT ARCHITECTURE (HERMES RUNTIME SPECIFICATION)` --references--> `simulate_trajectory()`  [INFERRED]
   .hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md → core/dlmm.py
-- `ingest_text()` --uses--> `Obligation`  [INFERRED]
+- `🎨 Komponen UI & Desain Eksternal` --references--> `AgentThinking()`  [INFERRED]
+  README.md → frontend/src/components/AgentThinking.tsx
+- `🎨 Komponen UI & Desain Eksternal` --references--> `MatrixOrb()`  [INFERRED]
+  README.md → frontend/src/components/ui/matrix-orb.tsx
+- `simulate_decision()` --uses--> `Scenario`  [INFERRED]
   api/server.py → core/dlmm.py
 
 ## Import Cycles
@@ -301,7 +303,7 @@ Cohesion: 0.17
 Nodes (9): DashboardSimulatorView(), DashboardSimulatorViewProps, HowItWorksProps, LoginPageProps, Input, InputClassNames, InputProps, JagaUsahaLogo() (+1 more)
 
 ## Knowledge Gaps
-- **345 isolated node(s):** `BoardUIAgentThinkingProps`, `ThinkingStep`, `ActionFeedProps`, `DecisionIntelligenceProps`, `DecisionStudioProps` (+340 more)
+- **345 isolated node(s):** `deploy_vps.sh script`, `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components` (+340 more)
   These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 419 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -314,7 +316,7 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.029) - this node is a cross-community bridge._
 - **Why does `13. AGENT ARCHITECTURE (HERMES RUNTIME SPECIFICATION)` connect `simulate_trajectory` to `JagaUsaha — Master Architecture & Product Logic Plan`?**
   _High betweenness centrality (0.024) - this node is a cross-community bridge._
-- **What connects `BoardUIAgentThinkingProps`, `ThinkingStep`, `ActionFeedProps` to the rest of the system?**
+- **What connects `deploy_vps.sh script`, `$schema`, `plugins` to the rest of the system?**
   _345 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `server.py` be split into smaller, more focused modules?**
   _Cohesion score 0.10160427807486631 - nodes in this community are weakly interconnected._

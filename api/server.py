@@ -97,6 +97,11 @@ class ResolveInboxRequest(BaseModel):
     item_id: str
     category: str
 
+class ExtractContextRequest(BaseModel):
+    text: Optional[str] = ""
+    document_name: Optional[str] = None
+    document_note: Optional[str] = None
+
 @app.get("/api/health")
 def health_check():
     return {
@@ -235,6 +240,14 @@ def onboard_new_business(req: OnboardRequest):
         "runway_days": res_base.runway_days,
         "current_cash": CURRENT_STATE.current_cash
     }
+
+@app.post("/api/ai/extract-context")
+def extract_context_endpoint(req: ExtractContextRequest):
+    combined_text = req.text or ""
+    if req.document_note:
+        combined_text += f"\nCatatan Usaha: {req.document_note}"
+    result = SENSOR.extract_business_context_from_narrative(combined_text, req.document_name)
+    return result
 
 # Data Inbox Items (Resolving Uncertain Bank Mutations)
 DATA_INBOX_ITEMS = [
