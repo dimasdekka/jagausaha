@@ -84,26 +84,10 @@
       "jagausaha_strategy_spec_10_1_the_zero_form_onboarding_philosophy",
       "jagausaha_strategy_spec_10_data_reality_overcoming_the_indonesian_umkm_onboarding_barrier",
       "jagausaha_strategy_spec_11_hackathon_mvp_scope_what_to_build_vs_what_to_cut",
-      "jagausaha_strategy_spec_12_the_perfect_3_minute_hackathon_demo_script",
       "jagausaha_strategy_spec_13_ui_ux_design_architecture",
-      "jagausaha_strategy_spec_14_1_evaluating_hermes_agent_framework",
-      "jagausaha_strategy_spec_14_2_production_stack_specifications",
-      "jagausaha_strategy_spec_14_3_division_of_labor_code_vs_llm",
-      "jagausaha_strategy_spec_14_technical_architecture_framework_evaluation",
       "jagausaha_strategy_spec_15_1_real_vs_fabricated_metrics",
       "jagausaha_strategy_spec_15_measurable_impact_framework",
-      "jagausaha_strategy_spec_16_red_team_the_idea_brutal_judge_objections_defenses",
       "jagausaha_strategy_spec_17_the_competitive_moat",
-      "jagausaha_strategy_spec_19_final_challenge_the_7_day_hackathon_execution_plan",
-      "jagausaha_strategy_spec_1_1_field_realities_of_indonesian_umkm",
-      "jagausaha_strategy_spec_1_2_problem_ranking_matrix",
-      "jagausaha_strategy_spec_1_start_from_the_problem_not_the_solution",
-      "jagausaha_strategy_spec_2_1_the_original_hypothesis",
-      "jagausaha_strategy_spec_2_2_brutal_reality_check_weak_assumptions",
-      "jagausaha_strategy_spec_2_critical_evaluation_of_the_original_idea",
-      "jagausaha_strategy_spec_3_1_global_domestic_precedents",
-      "jagausaha_strategy_spec_3_2_the_unfair_differentiation_for_jagausaha",
-      "jagausaha_strategy_spec_3_competitive_landscape_local_adaptation",
       "jagausaha_strategy_spec_4_1_liquidity_invariant_engine",
       "jagausaha_strategy_spec_4_core_intelligence_dynamic_liquidity_margin_model_dlmm",
       "jagausaha_strategy_spec_5_1_evaluated_core_features",
@@ -112,21 +96,7 @@
       "jagausaha_strategy_spec_7_2_component_responsibilities",
       "jagausaha_strategy_spec_7_agentic_design_system_topology",
       "jagausaha_strategy_spec_8_proactive_behavior_the_autonomous_guardian_loop",
-      "jagausaha_strategy_spec_9_1_risk_classification_autonomy_gates",
-      "jagausaha_strategy_spec_9_2_hallucination_immunity_protocol",
-      "jagausaha_strategy_spec_9_safety_architecture_financial_trust_boundaries",
-      "jagausaha_strategy_spec_final_product_definition",
-      "jagausaha_strategy_spec_jagausaha_ai_autonomous_financial_guardian_decision_sandbox_for_indonesian_umkm",
-      "jagausaha_strategy_spec_minute_by_minute_live_walkthrough",
-      "jagausaha_strategy_spec_objection_1_isn_t_this_just_mekari_or_bukuwarung_with_a_chatgpt_wrapper",
-      "jagausaha_strategy_spec_objection_2_where_does_the_data_come_from_indonesian_umkm_keep_messy_cash_in_a_biscuit_tin",
-      "jagausaha_strategy_spec_objection_3_why_does_this_require_an_agent_a_simple_excel_formula_can_do_cash_flow_projection",
-      "jagausaha_strategy_spec_objection_4_what_if_your_ai_gives_wrong_advice_and_causes_a_business_to_collapse",
-      "jagausaha_strategy_spec_scenario_kopi_teras_barokah_small_coffee_shop_in_south_jakarta",
-      "jagausaha_strategy_spec_the_30_second_pitch",
-      "jagausaha_strategy_spec_the_7_day_exact_build_specification",
-      "jagausaha_strategy_spec_the_one_demo_moment_judges_will_remember",
-      "jagausaha_strategy_spec_what_not_to_build"
+      "jagausaha_strategy_spec_jagausaha_ai_autonomous_financial_guardian_decision_sandbox_for_indonesian_umkm"
     ],
     "2": [
       "frontend_package",
@@ -165,7 +135,6 @@
       "ref_autoprefixer",
       "ref_oxlint",
       "ref_postcss",
-      "ref_recharts",
       "ref_tailwindcss",
       "ref_types_node",
       "ref_types_react",
@@ -224,12 +193,20 @@
       "frontend_src_components_decisionintelligencecard",
       "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
       "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
+      "frontend_src_components_decisionstudio",
+      "frontend_src_components_decisionstudio_decisionstudioprops",
+      "frontend_src_components_decisionstudio_presetscenario",
       "frontend_src_components_motion_number",
       "frontend_src_components_motion_number_animatednumber",
       "frontend_src_components_motion_number_animatednumberprops",
       "frontend_src_components_pulsecards",
       "frontend_src_components_pulsecards_pulsecards",
-      "frontend_src_components_pulsecards_pulsecardsprops"
+      "frontend_src_components_pulsecards_pulsecardsprops",
+      "frontend_src_components_simulationchatmodal",
+      "frontend_src_components_simulationchatmodal_simulationchatmodal",
+      "frontend_src_components_simulationchatmodal_simulationchatmodalprops",
+      "ref_border_beam",
+      "ref_thinking_orbs"
     ],
     "7": [
       "claude_skills_graphify_skill",
@@ -265,7 +242,6 @@
       "frontend_src_components_motion_animated_toast_stack",
       "frontend_src_components_motion_animated_toast_stack_animatedtoast",
       "frontend_src_components_motion_animated_toast_stack_animatedtoastaction",
-      "frontend_src_components_motion_animated_toast_stack_animatedtoaststack",
       "frontend_src_components_motion_animated_toast_stack_animatedtoaststackprops",
       "frontend_src_components_motion_animated_toast_stack_createtoast",
       "frontend_src_components_motion_animated_toast_stack_position_class",
@@ -274,14 +250,10 @@
       "frontend_src_components_motion_animated_toast_stack_status_icon",
       "frontend_src_components_motion_animated_toast_stack_toastclassnames",
       "frontend_src_components_motion_animated_toast_stack_toastinput",
-      "frontend_src_components_motion_animated_toast_stack_toastitem",
       "frontend_src_components_motion_animated_toast_stack_toastposition",
       "frontend_src_components_motion_animated_toast_stack_toaststatus",
       "frontend_src_components_motion_animated_toast_stack_useanimatedtoaststack",
-      "frontend_src_components_motion_animated_toast_stack_useanimatedtoaststackoptions",
-      "frontend_src_index",
-      "frontend_src_main",
-      "ref_react_dom"
+      "frontend_src_components_motion_animated_toast_stack_useanimatedtoaststackoptions"
     ],
     "9": [
       "jagausaha_strategy_spec_18_final_product_synthesis",
@@ -306,11 +278,21 @@
       "jagausaha_strategy_spec_s_post_hackathon_roadmap"
     ],
     "10": [
+      "frontend_src_components_actionfeed",
+      "frontend_src_components_actionfeed_actionfeedprops",
       "frontend_src_components_footer",
-      "frontend_src_components_footer_footer",
+      "frontend_src_components_header",
+      "frontend_src_components_header_header",
+      "frontend_src_components_header_headerprops",
+      "frontend_src_components_loginpage",
+      "frontend_src_components_loginpage_loginpageprops",
+      "frontend_src_components_motion_button",
+      "frontend_src_components_motion_button_motionbutton",
+      "frontend_src_components_motion_button_motionbuttonprops",
       "frontend_src_components_ui_jagausahalogo",
       "frontend_src_components_ui_jagausahalogo_jagausahalogo",
-      "frontend_src_components_ui_jagausahalogo_jagausahalogoprops"
+      "frontend_src_components_ui_jagausahalogo_jagausahalogoprops",
+      "ref_react"
     ],
     "11": [
       "jagausaha_strategy_spec_6_fifteen_unconventional_out_of_the_box_agent_capabilities",
@@ -368,24 +350,15 @@
     ],
     "16": [
       "frontend_src_components_dashboard_dashboardsimulatorview",
+      "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorview",
       "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorviewprops",
-      "frontend_src_components_decisionstudio",
-      "frontend_src_components_decisionstudio_decisionstudioprops",
-      "frontend_src_components_decisionstudio_presetscenario",
-      "frontend_src_components_loginpage",
-      "frontend_src_components_loginpage_loginpageprops",
-      "frontend_src_components_motion_button",
-      "frontend_src_components_motion_button_motionbutton",
-      "frontend_src_components_motion_button_motionbuttonprops",
+      "frontend_src_components_howitworks",
+      "frontend_src_components_howitworks_howitworks",
+      "frontend_src_components_howitworks_howitworksprops",
       "frontend_src_components_motion_input",
       "frontend_src_components_motion_input_input",
       "frontend_src_components_motion_input_inputclassnames",
-      "frontend_src_components_motion_input_inputprops",
-      "frontend_src_components_simulationchatmodal",
-      "frontend_src_components_simulationchatmodal_simulationchatmodal",
-      "frontend_src_components_simulationchatmodal_simulationchatmodalprops",
-      "ref_border_beam",
-      "ref_thinking_orbs"
+      "frontend_src_components_motion_input_inputprops"
     ],
     "17": [
       "claude_skills_graphify_references_add_watch",
@@ -458,20 +431,18 @@
       "claude_skills_graphify_references_extraction_spec_graphify_reference_extraction_subagent_prompt"
     ],
     "32": [
-      "frontend_src_components_finalcta",
-      "frontend_src_components_finalcta_finalcta",
-      "frontend_src_components_finalcta_finalctaprops",
-      "frontend_src_components_herosection",
-      "frontend_src_components_herosection_herosection",
-      "frontend_src_components_herosection_herosectionprops",
-      "frontend_src_components_herovisual3d",
-      "frontend_src_components_herovisual3d_herovisual3d",
-      "frontend_src_components_motion_expanding_arrow_button",
-      "frontend_src_components_motion_expanding_arrow_button_arrow_opacity",
-      "frontend_src_components_motion_expanding_arrow_button_dottedchevron",
-      "frontend_src_components_motion_expanding_arrow_button_expandingarrowbutton",
-      "frontend_src_components_motion_expanding_arrow_button_expandingarrowbuttonprops",
-      "frontend_src_lib_ease_spring_press"
+      "frontend_src_components_boarduiareachart",
+      "frontend_src_components_boarduiareachart_boarduiareachartprops",
+      "frontend_src_components_boarduiareachart_chartdatapoint",
+      "frontend_src_components_motion_tabs",
+      "frontend_src_components_motion_tabs_tabs",
+      "frontend_src_components_motion_tabs_tabscontext",
+      "frontend_src_components_motion_tabs_tabscontexttype",
+      "frontend_src_components_motion_tabs_tabslist",
+      "frontend_src_components_motion_tabs_tabstrigger",
+      "frontend_src_components_motion_tabs_usetabscontext",
+      "frontend_src_components_motion_tabs_variant",
+      "ref_recharts"
     ],
     "33": [
       "frontend_src_components_agentthinking",
@@ -513,13 +484,17 @@
       "frontend_src_app",
       "frontend_src_app_presets",
       "frontend_src_app_pulsedata",
+      "frontend_src_components_actionfeed_actionfeed",
+      "frontend_src_components_dashboardpage_dashboardpage",
       "frontend_src_components_decisionstudio_decisionstudio",
       "frontend_src_components_faqsection",
       "frontend_src_components_faqsection_faqsection",
-      "frontend_src_components_featureagents_featureagents",
-      "frontend_src_components_header",
-      "frontend_src_components_header_header",
-      "frontend_src_components_header_headerprops",
+      "frontend_src_components_footer_footer",
+      "frontend_src_components_herosection",
+      "frontend_src_components_herosection_herosection",
+      "frontend_src_components_herosection_herosectionprops",
+      "frontend_src_components_herovisual3d",
+      "frontend_src_components_herovisual3d_herovisual3d",
       "frontend_src_components_loginpage_loginpage",
       "frontend_src_components_terminaldrawer",
       "frontend_src_components_terminaldrawer_terminaldrawer",
@@ -528,7 +503,55 @@
       "frontend_src_components_whatsappmodal_whatsappmodal",
       "frontend_src_components_whatsappmodal_whatsappmodalprops",
       "frontend_src_lib_ease_ease_out",
+      "ref_gsap",
       "ref_lucide_react"
+    ],
+    "36": [
+      "frontend_src_components_motion_bouncy_accordion",
+      "frontend_src_components_motion_bouncy_accordion_bouncyaccordion",
+      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionclassnames",
+      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionitem",
+      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionprops",
+      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionrow",
+      "frontend_src_components_motion_bouncy_accordion_chevron_transition",
+      "frontend_src_components_motion_bouncy_accordion_content_close_transition",
+      "frontend_src_components_motion_bouncy_accordion_content_open_transition",
+      "frontend_src_components_motion_bouncy_accordion_description_transition",
+      "frontend_src_components_motion_bouncy_accordion_row_transition",
+      "frontend_src_components_motion_bouncy_accordion_usecontrollableaccordionvalue"
+    ],
+    "37": [
+      "frontend_src_components_motion_animated_badge",
+      "frontend_src_components_motion_animated_badge_animatedbadgeprops",
+      "frontend_src_components_motion_animated_badge_animatedbadgesize",
+      "frontend_src_components_motion_animated_badge_animatedbadgestatus",
+      "frontend_src_components_motion_animated_badge_icon_class",
+      "frontend_src_components_motion_animated_badge_icon_roll_variants",
+      "frontend_src_components_motion_animated_badge_icons",
+      "frontend_src_components_motion_animated_badge_size_class",
+      "frontend_src_components_motion_animated_badge_status_class",
+      "frontend_src_components_motion_animated_badge_text_roll_variants"
+    ],
+    "38": [
+      "frontend_src_components_motion_animated_toast_stack_animatedtoaststack",
+      "frontend_src_components_motion_animated_toast_stack_toastitem",
+      "frontend_src_components_motion_marquee",
+      "frontend_src_components_motion_marquee_marquee",
+      "frontend_src_components_motion_marquee_marqueeprops",
+      "frontend_src_lib_utils",
+      "frontend_src_lib_utils_cn",
+      "ref_clsx",
+      "ref_tailwind_merge"
+    ],
+    "39": [
+      "frontend_src_components_motion_command_palette",
+      "frontend_src_components_motion_command_palette_commanditem",
+      "frontend_src_components_motion_command_palette_commandpalette",
+      "frontend_src_components_motion_command_palette_commandpaletteprops",
+      "frontend_src_components_motion_command_palette_panel_spring",
+      "frontend_src_index",
+      "frontend_src_main",
+      "ref_react_dom"
     ],
     "40": [
       "frontend_src_components_reactbits_shinytext",
@@ -543,71 +566,47 @@
       "frontend_src_components_dashboard_dashboardagendaview_dashboardagendaviewprops",
       "frontend_src_components_dashboard_dashboardagentsview",
       "frontend_src_components_dashboard_dashboardagentsview_dashboardagentsview",
-      "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorview",
       "frontend_src_components_dashboardpage",
-      "frontend_src_components_dashboardpage_dashboardpage",
       "frontend_src_components_dashboardpage_dashboardpageprops",
-      "frontend_src_components_motion_animated_badge",
       "frontend_src_components_motion_animated_badge_animatedbadge",
-      "frontend_src_components_motion_animated_badge_animatedbadgeprops",
-      "frontend_src_components_motion_animated_badge_animatedbadgesize",
-      "frontend_src_components_motion_animated_badge_animatedbadgestatus",
-      "frontend_src_components_motion_animated_badge_icon_class",
-      "frontend_src_components_motion_animated_badge_icon_roll_variants",
-      "frontend_src_components_motion_animated_badge_icons",
-      "frontend_src_components_motion_animated_badge_size_class",
-      "frontend_src_components_motion_animated_badge_status_class",
-      "frontend_src_components_motion_animated_badge_text_roll_variants"
+      "frontend_src_components_onboardingmodal",
+      "frontend_src_components_onboardingmodal_businesscontextdata",
+      "frontend_src_components_onboardingmodal_onboardingmodal",
+      "frontend_src_components_onboardingmodal_onboardingmodalprops"
     ],
     "42": [
       "frontend_src_components_trajectorychart",
       "frontend_src_components_trajectorychart_trajectorychart",
       "frontend_src_components_trajectorychart_trajectorychartprops"
     ],
-    "44": [
-      "frontend_src_components_boarduiareachart",
-      "frontend_src_components_boarduiareachart_boarduiareachartprops",
-      "frontend_src_components_boarduiareachart_chartdatapoint",
-      "frontend_src_components_motion_bouncy_accordion",
-      "frontend_src_components_motion_bouncy_accordion_bouncyaccordion",
-      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionclassnames",
-      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionitem",
-      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionprops",
-      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionrow",
-      "frontend_src_components_motion_bouncy_accordion_chevron_transition",
-      "frontend_src_components_motion_bouncy_accordion_content_close_transition",
-      "frontend_src_components_motion_bouncy_accordion_content_open_transition",
-      "frontend_src_components_motion_bouncy_accordion_description_transition",
-      "frontend_src_components_motion_bouncy_accordion_row_transition",
-      "frontend_src_components_motion_bouncy_accordion_usecontrollableaccordionvalue",
-      "frontend_src_components_motion_command_palette",
-      "frontend_src_components_motion_command_palette_commanditem",
-      "frontend_src_components_motion_command_palette_commandpalette",
-      "frontend_src_components_motion_command_palette_commandpaletteprops",
-      "frontend_src_components_motion_command_palette_panel_spring",
-      "frontend_src_components_motion_marquee",
-      "frontend_src_components_motion_marquee_marquee",
-      "frontend_src_components_motion_marquee_marqueeprops",
-      "frontend_src_components_motion_shared_layout_bg",
-      "frontend_src_components_motion_shared_layout_bg_reducedvariants",
-      "frontend_src_components_motion_shared_layout_bg_sharedlayoutbg",
-      "frontend_src_components_motion_shared_layout_bg_sharedlayoutbgprops",
-      "frontend_src_components_motion_shared_layout_bg_variants",
-      "frontend_src_components_motion_tabs",
-      "frontend_src_components_motion_tabs_tabs",
-      "frontend_src_components_motion_tabs_tabscontext",
-      "frontend_src_components_motion_tabs_tabscontexttype",
-      "frontend_src_components_motion_tabs_tabslist",
-      "frontend_src_components_motion_tabs_tabstrigger",
-      "frontend_src_components_motion_tabs_usetabscontext",
-      "frontend_src_components_motion_tabs_variant",
+    "43": [
       "frontend_src_components_motion_text_reveal",
       "frontend_src_components_motion_text_reveal_default_spring",
       "frontend_src_components_motion_text_reveal_splitmode",
       "frontend_src_components_motion_text_reveal_textreveal",
       "frontend_src_components_motion_text_reveal_textrevealprops",
       "frontend_src_components_motion_text_reveal_towordgroups",
-      "frontend_src_components_motion_text_reveal_wordgroup",
+      "frontend_src_components_motion_text_reveal_wordgroup"
+    ],
+    "44": [
+      "frontend_src_components_featureagents",
+      "frontend_src_components_featureagents_featureagents",
+      "frontend_src_components_finalcta",
+      "frontend_src_components_finalcta_finalcta",
+      "frontend_src_components_finalcta_finalctaprops",
+      "frontend_src_components_motion_expanding_arrow_button",
+      "frontend_src_components_motion_expanding_arrow_button_arrow_opacity",
+      "frontend_src_components_motion_expanding_arrow_button_dottedchevron",
+      "frontend_src_components_motion_expanding_arrow_button_expandingarrowbutton",
+      "frontend_src_components_motion_expanding_arrow_button_expandingarrowbuttonprops",
+      "frontend_src_components_motion_shared_layout_bg",
+      "frontend_src_components_motion_shared_layout_bg_reducedvariants",
+      "frontend_src_components_motion_shared_layout_bg_sharedlayoutbg",
+      "frontend_src_components_motion_shared_layout_bg_sharedlayoutbgprops",
+      "frontend_src_components_motion_shared_layout_bg_variants",
+      "frontend_src_components_motion_tilt_card",
+      "frontend_src_components_motion_tilt_card_tiltcard",
+      "frontend_src_components_motion_tilt_card_tiltcardprops",
       "frontend_src_lib_ease",
       "frontend_src_lib_ease_ease_drawer",
       "frontend_src_lib_ease_ease_in_out",
@@ -616,11 +615,18 @@
       "frontend_src_lib_ease_spring_layout",
       "frontend_src_lib_ease_spring_mouse",
       "frontend_src_lib_ease_spring_panel",
+      "frontend_src_lib_ease_spring_press",
       "frontend_src_lib_ease_spring_swap",
-      "frontend_src_lib_utils",
-      "frontend_src_lib_utils_cn",
-      "ref_clsx",
-      "ref_tailwind_merge"
+      "frontend_src_lib_hooks_use_hover_capable",
+      "frontend_src_lib_hooks_use_hover_capable_usehovercapable"
+    ],
+    "45": [
+      "jagausaha_strategy_spec_19_final_challenge_the_7_day_hackathon_execution_plan",
+      "jagausaha_strategy_spec_final_product_definition",
+      "jagausaha_strategy_spec_the_30_second_pitch",
+      "jagausaha_strategy_spec_the_7_day_exact_build_specification",
+      "jagausaha_strategy_spec_the_one_demo_moment_judges_will_remember",
+      "jagausaha_strategy_spec_what_not_to_build"
     ],
     "46": [
       "frontend_src_components_reactbits_blurtext",
@@ -631,41 +637,63 @@
       "frontend_src_components_reactbits_magnet_magnetprops",
       "ref_framer_motion"
     ],
+    "47": [
+      "jagausaha_strategy_spec_16_red_team_the_idea_brutal_judge_objections_defenses",
+      "jagausaha_strategy_spec_objection_1_isn_t_this_just_mekari_or_bukuwarung_with_a_chatgpt_wrapper",
+      "jagausaha_strategy_spec_objection_2_where_does_the_data_come_from_indonesian_umkm_keep_messy_cash_in_a_biscuit_tin",
+      "jagausaha_strategy_spec_objection_3_why_does_this_require_an_agent_a_simple_excel_formula_can_do_cash_flow_projection",
+      "jagausaha_strategy_spec_objection_4_what_if_your_ai_gives_wrong_advice_and_causes_a_business_to_collapse"
+    ],
+    "48": [
+      "jagausaha_strategy_spec_14_1_evaluating_hermes_agent_framework",
+      "jagausaha_strategy_spec_14_2_production_stack_specifications",
+      "jagausaha_strategy_spec_14_3_division_of_labor_code_vs_llm",
+      "jagausaha_strategy_spec_14_technical_architecture_framework_evaluation"
+    ],
+    "49": [
+      "jagausaha_strategy_spec_12_the_perfect_3_minute_hackathon_demo_script",
+      "jagausaha_strategy_spec_minute_by_minute_live_walkthrough",
+      "jagausaha_strategy_spec_scenario_kopi_teras_barokah_small_coffee_shop_in_south_jakarta"
+    ],
     "50": [
-      "frontend_src_components_actionfeed",
-      "frontend_src_components_actionfeed_actionfeed",
-      "frontend_src_components_actionfeed_actionfeedprops",
-      "frontend_src_components_featureagents",
-      "frontend_src_components_howitworks",
-      "frontend_src_components_howitworks_howitworks",
-      "frontend_src_components_howitworks_howitworksprops",
-      "frontend_src_components_motion_tilt_card",
-      "frontend_src_components_motion_tilt_card_tiltcard",
-      "frontend_src_components_motion_tilt_card_tiltcardprops",
-      "frontend_src_lib_hooks_use_hover_capable",
-      "frontend_src_lib_hooks_use_hover_capable_usehovercapable",
-      "ref_gsap",
-      "ref_react"
+      "jagausaha_strategy_spec_1_1_field_realities_of_indonesian_umkm",
+      "jagausaha_strategy_spec_1_2_problem_ranking_matrix",
+      "jagausaha_strategy_spec_1_start_from_the_problem_not_the_solution"
+    ],
+    "51": [
+      "jagausaha_strategy_spec_2_1_the_original_hypothesis",
+      "jagausaha_strategy_spec_2_2_brutal_reality_check_weak_assumptions",
+      "jagausaha_strategy_spec_2_critical_evaluation_of_the_original_idea"
+    ],
+    "52": [
+      "jagausaha_strategy_spec_3_1_global_domestic_precedents",
+      "jagausaha_strategy_spec_3_2_the_unfair_differentiation_for_jagausaha",
+      "jagausaha_strategy_spec_3_competitive_landscape_local_adaptation"
+    ],
+    "53": [
+      "jagausaha_strategy_spec_9_1_risk_classification_autonomy_gates",
+      "jagausaha_strategy_spec_9_2_hallucination_immunity_protocol",
+      "jagausaha_strategy_spec_9_safety_architecture_financial_trust_boundaries"
     ]
   },
   "cohesion": {
     "0": 0.050580997949419004,
-    "1": 0.0425531914893617,
-    "2": 0.046511627906976744,
+    "1": 0.11764705882352941,
+    "2": 0.047619047619047616,
     "3": 0.6666666666666666,
     "4": 0.1,
     "5": 0.11764705882352941,
-    "6": 0.2777777777777778,
+    "6": 0.17647058823529413,
     "7": 0.07407407407407407,
-    "8": 0.10476190476190476,
+    "8": 0.13333333333333333,
     "9": 0.1,
-    "10": 0.5,
+    "10": 0.24761904761904763,
     "11": 0.11764705882352941,
     "12": 0.2222222222222222,
     "13": 0.3333333333333333,
     "14": 0.3333333333333333,
     "15": 0.3333333333333333,
-    "16": 0.19298245614035087,
+    "16": 0.24444444444444444,
     "17": 0.5,
     "18": 0.6666666666666666,
     "19": 1.0,
@@ -681,22 +709,34 @@
     "29": 1.0,
     "30": 1.0,
     "31": 1.0,
-    "32": 0.17582417582417584,
+    "32": 0.24242424242424243,
     "33": 0.07881773399014778,
     "34": 0.6666666666666666,
-    "35": 0.16374269005847952,
+    "35": 0.12681159420289856,
+    "36": 0.18181818181818182,
+    "37": 0.2,
+    "38": 0.2777777777777778,
+    "39": 0.25,
     "40": 0.6666666666666666,
-    "41": 0.11255411255411256,
+    "41": 0.1978021978021978,
     "42": 0.6666666666666666,
-    "44": 0.052597402597402594,
+    "43": 0.3333333333333333,
+    "44": 0.09195402298850575,
+    "45": 0.3333333333333333,
     "46": 0.2857142857142857,
-    "50": 0.24175824175824176
+    "47": 0.4,
+    "48": 0.5,
+    "49": 0.6666666666666666,
+    "50": 0.6666666666666666,
+    "51": 0.6666666666666666,
+    "52": 0.6666666666666666,
+    "53": 0.6666666666666666
   },
   "gods": [
     {
       "id": "ref_react",
       "label": "react",
-      "degree": 48
+      "degree": 49
     },
     {
       "id": "frontend_src_lib_utils_cn",
@@ -706,16 +746,16 @@
     {
       "id": "ref_lucide_react",
       "label": "lucide-react",
-      "degree": 26
-    },
-    {
-      "id": "jagausaha_strategy_spec_jagausaha_ai_autonomous_financial_guardian_decision_sandbox_for_indonesian_umkm",
-      "label": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
-      "degree": 20
+      "degree": 27
     },
     {
       "id": "ref_framer_motion",
       "label": "framer-motion",
+      "degree": 21
+    },
+    {
+      "id": "jagausaha_strategy_spec_jagausaha_ai_autonomous_financial_guardian_decision_sandbox_for_indonesian_umkm",
+      "label": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
       "degree": 20
     },
     {
@@ -804,23 +844,23 @@
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `react` connect `react` to `expanding-arrow-button.tsx`, `matrix-orb.tsx`, `package.json`, `App.tsx`, `CountUp.tsx`, `SpotlightCard.tsx`, `DecisionIntelligenceCard.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `JagaUsahaLogo.tsx`, `ShinyText.tsx`, `cn`, `TrajectoryChart.tsx`, `BoardUIAgentThinking.tsx`, `framer-motion`, `DecisionStudio.tsx`?",
-      "why": "High betweenness centrality (0.101) - this node is a cross-community bridge."
+      "question": "Why does `react` connect `react` to `package.json`, `CountUp.tsx`, `DecisionStudio.tsx`, `animated-toast-stack.tsx`, `BoardUIAgentThinking.tsx`, `input.tsx`, `tabs.tsx`, `matrix-orb.tsx`, `SpotlightCard.tsx`, `App.tsx`, `bouncy-accordion.tsx`, `animated-badge.tsx`, `cn`, `command-palette.tsx`, `ShinyText.tsx`, `DashboardPage.tsx`, `TrajectoryChart.tsx`, `text-reveal.tsx`, `ease.ts`, `framer-motion`?",
+      "why": "High betweenness centrality (0.102) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `cn()` connect `cn` to `expanding-arrow-button.tsx`, `matrix-orb.tsx`, `DecisionIntelligenceCard.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `DecisionStudio.tsx`, `react`?",
+      "question": "Why does `cn()` connect `cn` to `tabs.tsx`, `matrix-orb.tsx`, `bouncy-accordion.tsx`, `animated-badge.tsx`, `DecisionStudio.tsx`, `command-palette.tsx`, `animated-toast-stack.tsx`, `DashboardPage.tsx`, `react`, `text-reveal.tsx`, `ease.ts`, `input.tsx`?",
       "why": "High betweenness centrality (0.029) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `lucide-react` connect `App.tsx` to `expanding-arrow-button.tsx`, `matrix-orb.tsx`, `package.json`, `DecisionIntelligenceCard.tsx`, `animated-toast-stack.tsx`, `animated-badge.tsx`, `cn`, `BoardUIAgentThinking.tsx`, `DecisionStudio.tsx`, `react`?",
-      "why": "High betweenness centrality (0.026) - this node is a cross-community bridge."
+      "question": "Why does `lucide-react` connect `App.tsx` to `matrix-orb.tsx`, `package.json`, `bouncy-accordion.tsx`, `animated-badge.tsx`, `DecisionStudio.tsx`, `command-palette.tsx`, `animated-toast-stack.tsx`, `DashboardPage.tsx`, `react`, `ease.ts`, `BoardUIAgentThinking.tsx`, `input.tsx`?",
+      "why": "High betweenness centrality (0.027) - this node is a cross-community bridge."
     },
     {
       "type": "isolated_nodes",
-      "question": "What connects `JagaUsahaLogoProps`, `BoardUIAgentThinkingProps`, `ThinkingStep` to the rest of the system?",
-      "why": "289 weakly-connected nodes found - possible documentation gaps or missing edges."
+      "question": "What connects `ActionFeedProps`, `HeaderProps`, `LoginPageProps` to the rest of the system?",
+      "why": "290 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
       "type": "low_cohesion",
@@ -830,12 +870,12 @@
     {
       "type": "low_cohesion",
       "question": "Should `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
       "question": "Should `package.json` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.046511627906976744 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.047619047619047616 - nodes in this community are weakly interconnected."
     }
   ]
 }

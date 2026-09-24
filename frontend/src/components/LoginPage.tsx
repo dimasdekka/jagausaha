@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Lock, Eye, EyeOff, ArrowRight, ArrowLeft, KeyRound, Sparkles } from 'lucide-react';
+import { Mail, Lock, Eye, EyeOff, ArrowRight, ArrowLeft, Sparkles } from 'lucide-react';
 import { JagaUsahaLogo } from './ui/JagaUsahaLogo';
 import { Input } from './motion/input';
 import { MotionButton } from './motion/button';
@@ -22,9 +22,10 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onBackToHome, onLoginSucce
     setErrorMsg(null);
   };
 
-  const handlePasskeyLogin = () => {
+  const handleGoogleLogin = () => {
+    setEmail('owner@kopiteras.id');
+    setPassword('jagausaha2026');
     setIsLoading(true);
-    setErrorMsg(null);
     setTimeout(() => {
       setIsLoading(false);
       onLoginSuccess('owner@kopiteras.id');
@@ -78,9 +79,9 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onBackToHome, onLoginSucce
         </div>
       </header>
 
-      {/* Main Centered Single-Axis Authentication Card (Linear / Stripe / Clerk Grade) */}
+      {/* Main Centered Single-Axis Authentication Card (Linear / Stripe Grade) */}
       <main className="flex-1 flex items-center justify-center px-4 py-8 relative z-10">
-        <div className="w-full max-w-[420px] mx-auto space-y-6">
+        <div className="w-full max-w-[400px] mx-auto space-y-6">
           {/* Brand Header */}
           <div className="text-center space-y-3">
             <div className="flex justify-center">
@@ -99,55 +100,8 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onBackToHome, onLoginSucce
 
           {/* Core Authentication Surface */}
           <div className="rounded-2xl border border-slate-200/90 bg-white p-7 sm:p-8 shadow-[0_12px_40px_rgba(0,0,0,0.05)] space-y-5">
-            {/* 1. Fast Biometric / Passkey Primary Action */}
-            <div className="space-y-2.5">
-              <button
-                type="button"
-                onClick={handlePasskeyLogin}
-                disabled={isLoading}
-                className="w-full h-10 px-4 rounded-xl border border-slate-200 bg-slate-50 hover:bg-slate-100/80 text-slate-800 text-xs font-semibold flex items-center justify-center gap-2 transition-all cursor-pointer shadow-2xs active:scale-[0.99]"
-              >
-                <KeyRound className="h-4 w-4 text-emerald-600" />
-                <span>Lanjutkan dengan Passkey / Biometrik</span>
-              </button>
-
-              <button
-                type="button"
-                onClick={handleFillDemo}
-                className="w-full h-10 px-4 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold flex items-center justify-center gap-2 transition-all cursor-pointer active:scale-[0.99]"
-              >
-                <svg className="h-4 w-4" viewBox="0 0 24 24">
-                  <path
-                    fill="#4285F4"
-                    d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17Z"
-                  />
-                  <path
-                    fill="#34A853"
-                    d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24Z"
-                  />
-                  <path
-                    fill="#FBBC05"
-                    d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15Z"
-                  />
-                  <path
-                    fill="#EA4335"
-                    d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"
-                  />
-                </svg>
-                <span>Lanjutkan dengan Google Workspace</span>
-              </button>
-            </div>
-
-            {/* Subtle Hairline Divider */}
-            <div className="relative flex items-center justify-center">
-              <div className="w-full border-t border-slate-200" />
-              <span className="bg-white px-3 text-[11px] font-medium text-slate-400 uppercase tracking-wider">
-                atau email usaha
-              </span>
-            </div>
-
             {/* Email & Password Form */}
-            <form onSubmit={handleSubmit} className="space-y-3.5">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <Input
                 label="Email Bisnis"
                 type="email"
@@ -213,6 +167,33 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onBackToHome, onLoginSucce
                 <span>{isLoading ? 'Memverifikasi...' : 'Masuk ke Dashboard'}</span>
                 <ArrowRight className="h-4 w-4" />
               </MotionButton>
+
+              {/* Google Workspace Direct Action */}
+              <button
+                type="button"
+                onClick={handleGoogleLogin}
+                className="w-full h-10 px-4 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold flex items-center justify-center gap-2 transition-all cursor-pointer active:scale-[0.99]"
+              >
+                <svg className="h-4 w-4" viewBox="0 0 24 24">
+                  <path
+                    fill="#4285F4"
+                    d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17Z"
+                  />
+                  <path
+                    fill="#34A853"
+                    d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24Z"
+                  />
+                  <path
+                    fill="#FBBC05"
+                    d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15Z"
+                  />
+                  <path
+                    fill="#EA4335"
+                    d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"
+                  />
+                </svg>
+                <span>Lanjutkan dengan Google Workspace</span>
+              </button>
             </form>
 
             {/* Bottom Link */}

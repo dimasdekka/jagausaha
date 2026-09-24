@@ -1008,9 +1008,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/LoginPage.tsx": {
-    "mtime": 1790190286.4630456,
-    "seen": 1790190560.8134022,
-    "ast_hash": "041a26d93e857c363bf2c309a30e4ff0",
+    "mtime": 1790260761.3058417,
+    "seen": 1790261392.6428726,
+    "ast_hash": "f98a85527ad6f7acb48f60d04d761635",
     "semantic_hash": ""
   },
   "frontend/src/components/ui/JagaUsahaLogo.tsx": {
@@ -1068,9 +1068,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/DashboardPage.tsx": {
-    "mtime": 1790259791.6719058,
-    "seen": 1790260418.7816987,
-    "ast_hash": "eed3db747a63b73d343e817d810755b7",
+    "mtime": 1790261059.9229126,
+    "seen": 1790261392.6428726,
+    "ast_hash": "b4b0877858b00bf23ccf7eb5aff964bc",
     "semantic_hash": ""
   },
   "screenshot_dashboard_page_verified.png": {
@@ -1119,6 +1119,36 @@
     "mtime": 1790260241.4191651,
     "seen": 1790260418.7816987,
     "ast_hash": "ab33ed8249c6b42662846c4f0bcb591d",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/OnboardingModal.tsx": {
+    "mtime": 1790261225.026411,
+    "seen": 1790261392.6428726,
+    "ast_hash": "ef3c87ed8ebd3d524cd663390611222b",
+    "semantic_hash": ""
+  },
+  "screenshot_fixed_login_verified.png": {
+    "mtime": 1790260812.4320765,
+    "seen": 1790261392.6428726,
+    "ast_hash": "163da0c3372414d5ba125a88a2051fa8",
+    "semantic_hash": ""
+  },
+  "screenshot_fixed_modal_verified.png": {
+    "mtime": 1790261264.271629,
+    "seen": 1790261392.6428726,
+    "ast_hash": "c6dc6dd74c255dae1530aeb2acf30ff8",
+    "semantic_hash": ""
+  },
+  "screenshot_onboarding_modal_step1.png": {
+    "mtime": 1790261179.617538,
+    "seen": 1790261392.6428726,
+    "ast_hash": "5c292f75728bf9328574c546e00f9119",
+    "semantic_hash": ""
+  },
+  "screenshot_onboarding_modal_step3.png": {
+    "mtime": 1790261330.8866084,
+    "seen": 1790261392.6428726,
+    "ast_hash": "4ac6c11c872bafe6665735d71abe33cd",
     "semantic_hash": ""
   }
 }
