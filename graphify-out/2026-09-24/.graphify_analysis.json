@@ -2,10 +2,8 @@
   "communities": {
     "0": [
       "api_server",
-      "api_server_get_business_pulse",
       "api_server_get_negotiate_script",
       "api_server_get_nudge_script",
-      "api_server_health_check",
       "api_server_ingest_text",
       "api_server_ingestrequest",
       "api_server_load_initial_state",
@@ -13,70 +11,19 @@
       "api_server_nudgerequest",
       "api_server_rationale_1",
       "api_server_reset_state",
-      "api_server_serve_frontend_root",
-      "api_server_serve_frontend_spa",
-      "api_server_serve_placeholder",
       "api_server_simulate_decision",
       "api_server_simulaterequest",
       "basemodel",
-      "cli_demo",
-      "cli_demo_print_banner",
-      "cli_demo_rationale_1",
-      "cli_demo_run_cli",
-      "core_advisor",
-      "core_advisor_advisoragent",
-      "core_advisor_advisoragent_formulate_simulation_advisory",
-      "core_advisor_advisoragent_generate_debt_collection_message",
-      "core_advisor_advisoragent_generate_supplier_negotiation_script",
-      "core_advisor_advisoragent_init",
-      "core_advisor_py_any",
-      "core_advisor_rationale_1",
-      "core_advisor_rationale_111",
-      "core_advisor_rationale_29",
-      "core_advisor_rationale_84",
-      "core_dlmm",
-      "core_dlmm_businessstate",
-      "core_dlmm_businessstate_net_daily_operating_cash",
-      "core_dlmm_calculate_runway",
-      "core_dlmm_calculate_safe_to_spend",
       "core_dlmm_obligation",
-      "core_dlmm_rationale_1",
-      "core_dlmm_rationale_60",
-      "core_dlmm_rationale_83",
       "core_dlmm_receivable",
-      "core_dlmm_scenario",
-      "core_dlmm_simulate_trajectory",
-      "core_dlmm_trajectoryresult",
-      "core_sensor",
-      "core_sensor_parsedtransaction",
-      "core_sensor_py_any",
-      "core_sensor_rationale_1",
-      "core_sensor_rationale_33",
-      "core_sensor_rationale_91",
-      "core_sensor_sensoragent",
-      "core_sensor_sensoragent_init",
-      "core_sensor_sensoragent_parse_bca_mutation_text",
-      "core_sensor_sensoragent_parse_whatsapp_note",
-      "dataclasses",
       "fastapi",
       "fastapi_middleware_cors",
       "fastapi_responses",
       "fastapi_staticfiles",
-      "get",
       "json",
-      "os",
       "pathlib",
       "post",
       "pydantic",
-      "re",
-      "rich_console",
-      "rich_panel",
-      "rich_progress",
-      "rich_prompt",
-      "rich_table",
-      "sys",
-      "time",
-      "typing",
       "uvicorn"
     ],
     "1": [
@@ -92,9 +39,6 @@
       "jagausaha_strategy_spec_4_core_intelligence_dynamic_liquidity_margin_model_dlmm",
       "jagausaha_strategy_spec_5_1_evaluated_core_features",
       "jagausaha_strategy_spec_5_differentiating_feature_deep_dive",
-      "jagausaha_strategy_spec_7_1_multi_agent_specialization_vs_monolithic_llm",
-      "jagausaha_strategy_spec_7_2_component_responsibilities",
-      "jagausaha_strategy_spec_7_agentic_design_system_topology",
       "jagausaha_strategy_spec_8_proactive_behavior_the_autonomous_guardian_loop",
       "jagausaha_strategy_spec_jagausaha_ai_autonomous_financial_guardian_decision_sandbox_for_indonesian_umkm"
     ],
@@ -190,23 +134,30 @@
       "frontend_tsconfig_node_include"
     ],
     "6": [
-      "frontend_src_components_decisionintelligencecard",
-      "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
-      "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
-      "frontend_src_components_decisionstudio",
-      "frontend_src_components_decisionstudio_decisionstudioprops",
-      "frontend_src_components_decisionstudio_presetscenario",
-      "frontend_src_components_motion_number",
-      "frontend_src_components_motion_number_animatednumber",
-      "frontend_src_components_motion_number_animatednumberprops",
-      "frontend_src_components_pulsecards",
-      "frontend_src_components_pulsecards_pulsecards",
-      "frontend_src_components_pulsecards_pulsecardsprops",
-      "frontend_src_components_simulationchatmodal",
-      "frontend_src_components_simulationchatmodal_simulationchatmodal",
-      "frontend_src_components_simulationchatmodal_simulationchatmodalprops",
-      "ref_border_beam",
-      "ref_thinking_orbs"
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_10_guardian_monitoring_engine_the_continuous_loop",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_11_signal_risk_logic_dari_anomali_ke_risiko_bermakna",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_14_human_approval_financial_safety_tiers",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_17_ui_screen_map_information_architecture",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_18_edge_cases_penanganan_kondisi_realistis_umkm",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_19_hackathon_mvp_vertical_slice_priority",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_1_product_north_star",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_20_database_plan_postgresql_relational_schema",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_21_api_plan_restful_fastapi_specification",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_22_event_job_pipeline",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_23_first_30_days_experience_retention_driver",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_24_demo_data_specification_kopi_nusa",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_25_exact_3_5_minute_demo_sequence_hackfest_wow_moment",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_26_test_scenarios_qa_suite",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_27_implementation_order_phased_execution",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_28_what_not_to_build_explicit_anti_complexity_list",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_2_actors",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_3_end_to_end_user_journey",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_6_canonical_business_data_model",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_7_business_state_model_the_digital_twin",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_8_financial_metrics_engine_deterministic_transparent",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_9_data_confidence_model_provenance_integrity",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan"
     ],
     "7": [
       "claude_skills_graphify_skill",
@@ -278,12 +229,13 @@
       "jagausaha_strategy_spec_s_post_hackathon_roadmap"
     ],
     "10": [
-      "frontend_src_components_actionfeed",
-      "frontend_src_components_actionfeed_actionfeedprops",
       "frontend_src_components_footer",
       "frontend_src_components_header",
-      "frontend_src_components_header_header",
       "frontend_src_components_header_headerprops",
+      "frontend_src_components_herosection",
+      "frontend_src_components_herosection_herosectionprops",
+      "frontend_src_components_herovisual3d",
+      "frontend_src_components_herovisual3d_herovisual3d",
       "frontend_src_components_loginpage",
       "frontend_src_components_loginpage_loginpageprops",
       "frontend_src_components_motion_button",
@@ -352,13 +304,24 @@
       "frontend_src_components_dashboard_dashboardsimulatorview",
       "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorview",
       "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorviewprops",
+      "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
+      "frontend_src_components_decisionstudio",
+      "frontend_src_components_decisionstudio_decisionstudio",
+      "frontend_src_components_decisionstudio_decisionstudioprops",
+      "frontend_src_components_decisionstudio_presetscenario",
       "frontend_src_components_howitworks",
       "frontend_src_components_howitworks_howitworks",
       "frontend_src_components_howitworks_howitworksprops",
       "frontend_src_components_motion_input",
       "frontend_src_components_motion_input_input",
       "frontend_src_components_motion_input_inputclassnames",
-      "frontend_src_components_motion_input_inputprops"
+      "frontend_src_components_motion_input_inputprops",
+      "frontend_src_components_simulationchatmodal",
+      "frontend_src_components_simulationchatmodal_simulationchatmodal",
+      "frontend_src_components_simulationchatmodal_simulationchatmodalprops",
+      "frontend_src_lib_ease_spring_panel",
+      "ref_border_beam",
+      "ref_thinking_orbs"
     ],
     "17": [
       "claude_skills_graphify_references_add_watch",
@@ -432,6 +395,7 @@
     ],
     "32": [
       "frontend_src_components_boarduiareachart",
+      "frontend_src_components_boarduiareachart_boarduiareachart",
       "frontend_src_components_boarduiareachart_boarduiareachartprops",
       "frontend_src_components_boarduiareachart_chartdatapoint",
       "frontend_src_components_motion_tabs",
@@ -484,25 +448,23 @@
       "frontend_src_app",
       "frontend_src_app_presets",
       "frontend_src_app_pulsedata",
+      "frontend_src_components_actionfeed",
       "frontend_src_components_actionfeed_actionfeed",
+      "frontend_src_components_actionfeed_actionfeedprops",
       "frontend_src_components_dashboardpage_dashboardpage",
-      "frontend_src_components_decisionstudio_decisionstudio",
       "frontend_src_components_faqsection",
       "frontend_src_components_faqsection_faqsection",
+      "frontend_src_components_featureagents",
+      "frontend_src_components_featureagents_featureagents",
       "frontend_src_components_footer_footer",
-      "frontend_src_components_herosection",
+      "frontend_src_components_header_header",
       "frontend_src_components_herosection_herosection",
-      "frontend_src_components_herosection_herosectionprops",
-      "frontend_src_components_herovisual3d",
-      "frontend_src_components_herovisual3d_herovisual3d",
       "frontend_src_components_loginpage_loginpage",
-      "frontend_src_components_terminaldrawer",
-      "frontend_src_components_terminaldrawer_terminaldrawer",
-      "frontend_src_components_terminaldrawer_terminaldrawerprops",
+      "frontend_src_components_motion_tilt_card_tiltcard",
       "frontend_src_components_whatsappmodal",
       "frontend_src_components_whatsappmodal_whatsappmodal",
       "frontend_src_components_whatsappmodal_whatsappmodalprops",
-      "frontend_src_lib_ease_ease_out",
+      "frontend_src_lib_ease_spring_press",
       "ref_gsap",
       "ref_lucide_react"
     ],
@@ -530,7 +492,11 @@
       "frontend_src_components_motion_animated_badge_icons",
       "frontend_src_components_motion_animated_badge_size_class",
       "frontend_src_components_motion_animated_badge_status_class",
-      "frontend_src_components_motion_animated_badge_text_roll_variants"
+      "frontend_src_components_motion_animated_badge_text_roll_variants",
+      "frontend_src_components_terminaldrawer",
+      "frontend_src_components_terminaldrawer_terminaldrawer",
+      "frontend_src_components_terminaldrawer_terminaldrawerprops",
+      "frontend_src_lib_ease_ease_out"
     ],
     "38": [
       "frontend_src_components_motion_animated_toast_stack_animatedtoaststack",
@@ -559,7 +525,6 @@
       "frontend_src_components_reactbits_shinytext_shinytextprops"
     ],
     "41": [
-      "frontend_src_components_boarduiareachart_boarduiareachart",
       "frontend_src_components_dashboard_dashboardagendaview",
       "frontend_src_components_dashboard_dashboardagendaview_cashevent",
       "frontend_src_components_dashboard_dashboardagendaview_dashboardagendaview",
@@ -568,11 +533,19 @@
       "frontend_src_components_dashboard_dashboardagentsview_dashboardagentsview",
       "frontend_src_components_dashboardpage",
       "frontend_src_components_dashboardpage_dashboardpageprops",
+      "frontend_src_components_decisionintelligencecard",
+      "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
       "frontend_src_components_motion_animated_badge_animatedbadge",
+      "frontend_src_components_motion_number",
+      "frontend_src_components_motion_number_animatednumber",
+      "frontend_src_components_motion_number_animatednumberprops",
       "frontend_src_components_onboardingmodal",
       "frontend_src_components_onboardingmodal_businesscontextdata",
       "frontend_src_components_onboardingmodal_onboardingmodal",
-      "frontend_src_components_onboardingmodal_onboardingmodalprops"
+      "frontend_src_components_onboardingmodal_onboardingmodalprops",
+      "frontend_src_components_pulsecards",
+      "frontend_src_components_pulsecards_pulsecards",
+      "frontend_src_components_pulsecards_pulsecardsprops"
     ],
     "42": [
       "frontend_src_components_trajectorychart",
@@ -589,8 +562,6 @@
       "frontend_src_components_motion_text_reveal_wordgroup"
     ],
     "44": [
-      "frontend_src_components_featureagents",
-      "frontend_src_components_featureagents_featureagents",
       "frontend_src_components_finalcta",
       "frontend_src_components_finalcta_finalcta",
       "frontend_src_components_finalcta_finalctaprops",
@@ -605,7 +576,6 @@
       "frontend_src_components_motion_shared_layout_bg_sharedlayoutbgprops",
       "frontend_src_components_motion_shared_layout_bg_variants",
       "frontend_src_components_motion_tilt_card",
-      "frontend_src_components_motion_tilt_card_tiltcard",
       "frontend_src_components_motion_tilt_card_tiltcardprops",
       "frontend_src_lib_ease",
       "frontend_src_lib_ease_ease_drawer",
@@ -614,8 +584,6 @@
       "frontend_src_lib_ease_spring_glide",
       "frontend_src_lib_ease_spring_layout",
       "frontend_src_lib_ease_spring_mouse",
-      "frontend_src_lib_ease_spring_panel",
-      "frontend_src_lib_ease_spring_press",
       "frontend_src_lib_ease_spring_swap",
       "frontend_src_lib_hooks_use_hover_capable",
       "frontend_src_lib_hooks_use_hover_capable_usehovercapable"
@@ -674,26 +642,135 @@
       "jagausaha_strategy_spec_9_1_risk_classification_autonomy_gates",
       "jagausaha_strategy_spec_9_2_hallucination_immunity_protocol",
       "jagausaha_strategy_spec_9_safety_architecture_financial_trust_boundaries"
+    ],
+    "54": [
+      "core_dlmm",
+      "core_dlmm_calculate_runway",
+      "core_dlmm_rationale_1",
+      "core_sensor",
+      "core_sensor_parsedtransaction",
+      "core_sensor_py_any",
+      "core_sensor_rationale_1",
+      "core_sensor_rationale_33",
+      "core_sensor_rationale_91",
+      "core_sensor_sensoragent",
+      "core_sensor_sensoragent_init",
+      "core_sensor_sensoragent_parse_bca_mutation_text",
+      "core_sensor_sensoragent_parse_whatsapp_note",
+      "dataclasses",
+      "re",
+      "typing"
+    ],
+    "55": [
+      "cli_demo",
+      "cli_demo_rationale_1",
+      "core_advisor",
+      "core_advisor_rationale_1",
+      "os",
+      "rich_console",
+      "rich_panel",
+      "rich_progress",
+      "rich_prompt",
+      "rich_table",
+      "sys",
+      "time"
+    ],
+    "56": [
+      "api_server_get_business_pulse",
+      "cli_demo_print_banner",
+      "cli_demo_run_cli",
+      "core_dlmm_businessstate",
+      "core_dlmm_businessstate_net_daily_operating_cash",
+      "core_dlmm_calculate_safe_to_spend",
+      "core_dlmm_rationale_60",
+      "core_dlmm_rationale_83",
+      "core_dlmm_scenario",
+      "core_dlmm_simulate_trajectory",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_13_agent_architecture_hermes_runtime_specification"
+    ],
+    "57": [
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_10_ask_jagausaha_asisten_konsultasi_finansial_kontekstual",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_12_feature_flows_spesifikasi_10_fitur_utama",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_1_business_pulse_homepage_keamanan_kas",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_2_guardian_feed_pusat_intervensi_berkas_kasus",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_3_silent_leak_detector_detektor_kebocoran_kas_halus",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_4_safe_to_spend_calculator_duit_dingin_aman_belanja",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_5_future_simulator_decision_sandbox",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_6_business_fire_drill_uji_ketahanan_krisis_otomatis",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_7_pre_mortem_analyzer_simulasi_sebab_akibat_6_bulan_ke_depan",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_8_business_memory_memori_pengalaman_keputusan_outcome",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_9_data_inbox_kotak_masuk_rekonsiliasi_ragu_ragu"
+    ],
+    "58": [
+      "core_advisor_advisoragent",
+      "core_advisor_advisoragent_formulate_simulation_advisory",
+      "core_advisor_advisoragent_generate_debt_collection_message",
+      "core_advisor_advisoragent_generate_supplier_negotiation_script",
+      "core_advisor_advisoragent_init",
+      "core_advisor_py_any",
+      "core_advisor_rationale_111",
+      "core_advisor_rationale_29",
+      "core_advisor_rationale_84",
+      "core_dlmm_trajectoryresult"
+    ],
+    "59": [
+      "api_server_health_check",
+      "api_server_serve_frontend_root",
+      "api_server_serve_frontend_spa",
+      "api_server_serve_placeholder",
+      "get"
+    ],
+    "60": [
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_15_state_machines",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_a_riskcase_lifecycle",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_b_recommendation_lifecycle",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_c_datainbox_item_lifecycle"
+    ],
+    "61": [
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_29_reality_check_where_would_the_system_fail_tomorrow_how_it_is_fixed",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_tantangan_nyata_1_owner_bayar_supplier_pakai_uang_tunai_dari_laci_kasir_tidak_lewat_rekening_bank",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_tantangan_nyata_2_omset_umkm_sangat_fluktuatif_sabtu_minggu_ramai_2_5_jt_senin_rabu_sepi_500rb",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_tantangan_nyata_3_owner_merasa_tersinggung_jika_ai_menuduh_mereka_korupsi_uang_toko_sendiri_saat_tarik_prive"
+    ],
+    "62": [
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_4_new_user_onboarding_flow_progressive_disclosure",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_step_1_identitas_bisnis_archetype",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_step_2_pilih_metode_input_data_fleksibel_anti_gagal",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_step_3_penetapan_data_confidence_first_baseline"
+    ],
+    "63": [
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_16_mermaid_flow_diagrams",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_diagram_1_continuous_guardian_decision_simulation_loop",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_diagram_2_cold_start_onboarding_flow_zero_historical_data"
+    ],
+    "64": [
+      "jagausaha_strategy_spec_7_1_multi_agent_specialization_vs_monolithic_llm",
+      "jagausaha_strategy_spec_7_2_component_responsibilities",
+      "jagausaha_strategy_spec_7_agentic_design_system_topology"
+    ],
+    "65": [
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_5_data_ingestion_flow_canonical_pipeline",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_detail_per_sumber_data"
     ]
   },
   "cohesion": {
-    "0": 0.050580997949419004,
-    "1": 0.11764705882352941,
+    "0": 0.14130434782608695,
+    "1": 0.14285714285714285,
     "2": 0.047619047619047616,
     "3": 0.6666666666666666,
     "4": 0.1,
     "5": 0.11764705882352941,
-    "6": 0.17647058823529413,
+    "6": 0.08333333333333333,
     "7": 0.07407407407407407,
     "8": 0.13333333333333333,
     "9": 0.1,
-    "10": 0.24761904761904763,
+    "10": 0.24166666666666667,
     "11": 0.11764705882352941,
     "12": 0.2222222222222222,
     "13": 0.3333333333333333,
     "14": 0.3333333333333333,
     "15": 0.3333333333333333,
-    "16": 0.24444444444444444,
+    "16": 0.13333333333333333,
     "17": 0.5,
     "18": 0.6666666666666666,
     "19": 1.0,
@@ -709,19 +786,19 @@
     "29": 1.0,
     "30": 1.0,
     "31": 1.0,
-    "32": 0.24242424242424243,
+    "32": 0.21794871794871795,
     "33": 0.07881773399014778,
     "34": 0.6666666666666666,
-    "35": 0.12681159420289856,
+    "35": 0.13852813852813853,
     "36": 0.18181818181818182,
-    "37": 0.2,
+    "37": 0.15384615384615385,
     "38": 0.2777777777777778,
     "39": 0.25,
     "40": 0.6666666666666666,
-    "41": 0.1978021978021978,
+    "41": 0.14285714285714285,
     "42": 0.6666666666666666,
     "43": 0.3333333333333333,
-    "44": 0.09195402298850575,
+    "44": 0.10666666666666667,
     "45": 0.3333333333333333,
     "46": 0.2857142857142857,
     "47": 0.4,
@@ -730,7 +807,19 @@
     "50": 0.6666666666666666,
     "51": 0.6666666666666666,
     "52": 0.6666666666666666,
-    "53": 0.6666666666666666
+    "53": 0.6666666666666666,
+    "54": 0.14166666666666666,
+    "55": 0.19696969696969696,
+    "56": 0.2909090909090909,
+    "57": 0.18181818181818182,
+    "58": 0.2222222222222222,
+    "59": 0.4,
+    "60": 0.5,
+    "61": 0.5,
+    "62": 0.5,
+    "63": 0.6666666666666666,
+    "64": 0.6666666666666666,
+    "65": 1.0
   },
   "gods": [
     {
@@ -742,6 +831,11 @@
       "id": "frontend_src_lib_utils_cn",
       "label": "cn()",
       "degree": 33
+    },
+    {
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_jagausaha_master_architecture_product_logic_plan",
+      "label": "JagaUsaha — Master Architecture & Product Logic Plan",
+      "degree": 30
     },
     {
       "id": "ref_lucide_react",
@@ -777,11 +871,6 @@
       "id": "frontend_tsconfig_node_compileroptions",
       "label": "compilerOptions",
       "degree": 15
-    },
-    {
-      "id": "core_dlmm_simulate_trajectory",
-      "label": "simulate_trajectory()",
-      "degree": 12
     }
   ],
   "surprises": [
@@ -808,26 +897,26 @@
       "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories"
     },
     {
-      "source": "ingest_text()",
-      "target": "Obligation",
+      "source": "13. AGENT ARCHITECTURE (HERMES RUNTIME SPECIFICATION)",
+      "target": "calculate_safe_to_spend()",
       "source_files": [
-        "api/server.py",
+        ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
         "core/dlmm.py"
       ],
       "confidence": "INFERRED",
-      "relation": "uses",
-      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories"
     },
     {
-      "source": "ingest_text()",
-      "target": "Receivable",
+      "source": "13. AGENT ARCHITECTURE (HERMES RUNTIME SPECIFICATION)",
+      "target": "simulate_trajectory()",
       "source_files": [
-        "api/server.py",
+        ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
         "core/dlmm.py"
       ],
       "confidence": "INFERRED",
-      "relation": "uses",
-      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories"
     },
     {
       "source": "simulate_decision()",
@@ -838,39 +927,39 @@
       ],
       "confidence": "INFERRED",
       "relation": "uses",
-      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
     }
   ],
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `react` connect `react` to `package.json`, `CountUp.tsx`, `DecisionStudio.tsx`, `animated-toast-stack.tsx`, `BoardUIAgentThinking.tsx`, `input.tsx`, `tabs.tsx`, `matrix-orb.tsx`, `SpotlightCard.tsx`, `App.tsx`, `bouncy-accordion.tsx`, `animated-badge.tsx`, `cn`, `command-palette.tsx`, `ShinyText.tsx`, `DashboardPage.tsx`, `TrajectoryChart.tsx`, `text-reveal.tsx`, `ease.ts`, `framer-motion`?",
-      "why": "High betweenness centrality (0.102) - this node is a cross-community bridge."
+      "question": "Why does `react` connect `react` to `package.json`, `CountUp.tsx`, `animated-toast-stack.tsx`, `BoardUIAgentThinking.tsx`, `DecisionStudio.tsx`, `tabs.tsx`, `matrix-orb.tsx`, `SpotlightCard.tsx`, `App.tsx`, `bouncy-accordion.tsx`, `animated-badge.tsx`, `cn`, `command-palette.tsx`, `ShinyText.tsx`, `DashboardPage.tsx`, `TrajectoryChart.tsx`, `text-reveal.tsx`, `ease.ts`, `framer-motion`?",
+      "why": "High betweenness centrality (0.085) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `cn()` connect `cn` to `tabs.tsx`, `matrix-orb.tsx`, `bouncy-accordion.tsx`, `animated-badge.tsx`, `DecisionStudio.tsx`, `command-palette.tsx`, `animated-toast-stack.tsx`, `DashboardPage.tsx`, `react`, `text-reveal.tsx`, `ease.ts`, `input.tsx`?",
-      "why": "High betweenness centrality (0.029) - this node is a cross-community bridge."
-    },
-    {
-      "type": "bridge_node",
-      "question": "Why does `lucide-react` connect `App.tsx` to `matrix-orb.tsx`, `package.json`, `bouncy-accordion.tsx`, `animated-badge.tsx`, `DecisionStudio.tsx`, `command-palette.tsx`, `animated-toast-stack.tsx`, `DashboardPage.tsx`, `react`, `ease.ts`, `BoardUIAgentThinking.tsx`, `input.tsx`?",
+      "question": "Why does `JagaUsaha — Master Architecture & Product Logic Plan` connect `JagaUsaha — Master Architecture & Product Logic Plan` to `5. DATA INGESTION FLOW (CANONICAL PIPELINE)`, `simulate_trajectory`, `12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)`, `15. STATE MACHINES`, `29. REALITY-CHECK: WHERE WOULD THE SYSTEM FAIL TOMORROW & HOW IT IS FIXED?`, `4. NEW USER ONBOARDING FLOW (PROGRESSIVE DISCLOSURE)`, `16. MERMAID FLOW DIAGRAMS`?",
       "why": "High betweenness centrality (0.027) - this node is a cross-community bridge."
     },
     {
+      "type": "bridge_node",
+      "question": "Why does `cn()` connect `cn` to `tabs.tsx`, `matrix-orb.tsx`, `App.tsx`, `bouncy-accordion.tsx`, `animated-badge.tsx`, `command-palette.tsx`, `animated-toast-stack.tsx`, `DashboardPage.tsx`, `react`, `text-reveal.tsx`, `ease.ts`, `DecisionStudio.tsx`?",
+      "why": "High betweenness centrality (0.024) - this node is a cross-community bridge."
+    },
+    {
       "type": "isolated_nodes",
-      "question": "What connects `ActionFeedProps`, `HeaderProps`, `LoginPageProps` to the rest of the system?",
-      "why": "290 weakly-connected nodes found - possible documentation gaps or missing edges."
+      "question": "What connects `HeaderProps`, `HeroSectionProps`, `LoginPageProps` to the rest of the system?",
+      "why": "334 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
       "type": "low_cohesion",
       "question": "Should `server.py` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.050580997949419004 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.14130434782608695 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
       "question": "Should `JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",

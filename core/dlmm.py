@@ -30,10 +30,22 @@ class BusinessState:
     daily_cogs_ratio: float = 0.55 # Daily raw material/operational burn ratio (55% COGS)
     obligations: List[Obligation] = field(default_factory=list)
     receivables: List[Receivable] = field(default_factory=list)
+    use_seasonality: bool = True # Apply weekend/weekday retail curve
 
     @property
     def net_daily_operating_cash(self) -> float:
         return self.avg_daily_gross_inflow * (1.0 - self.daily_cogs_ratio)
+
+    def get_day_inflow_multiplier(self, day: int) -> float:
+        """
+        Seasonality Curve for Indonesian F&B and Retail:
+        Day % 7 in [5, 6] (Saturday & Sunday) enjoys ~1.55x traffic.
+        Weekday traffic operates at ~0.78x. Weighted 7-day average = 1.0.
+        """
+        if not self.use_seasonality:
+            return 1.0
+        dow = day % 7
+        return 1.55 if dow in (5, 6) else 0.78
 
 @dataclass
 class Scenario:
@@ -107,9 +119,10 @@ def simulate_trajectory(state: BusinessState, scenario: Optional[Scenario] = Non
     for d in range(1, days + 1):
         day_labels.append(d)
         
-        # Base daily movement
+        # Base daily movement with seasonality
+        daily_mult = state.get_day_inflow_multiplier(d)
         outflow_today = ob_map.get(d, 0.0)
-        inflow_today = state.net_daily_operating_cash + rec_map.get(d, 0.0)
+        inflow_today = (state.net_daily_operating_cash * daily_mult) + rec_map.get(d, 0.0)
         
         base_cash = base_cash + inflow_today - outflow_today
         baseline_curve.append(round(base_cash, 2))
@@ -119,7 +132,7 @@ def simulate_trajectory(state: BusinessState, scenario: Optional[Scenario] = Non
         if scenario and scenario.outflow_day == d:
             scen_outflow += scenario.one_time_outflow
             
-        scen_inflow = (state.net_daily_operating_cash * (scenario.daily_inflow_multiplier if scenario else 1.0)) + rec_map.get(d, 0.0)
+        scen_inflow = (state.net_daily_operating_cash * daily_mult * (scenario.daily_inflow_multiplier if scenario else 1.0)) + rec_map.get(d, 0.0)
         if scenario:
             scen_outflow += (scenario.monthly_fixed_delta / 30.0)
 
@@ -168,6 +181,55 @@ def simulate_trajectory(state: BusinessState, scenario: Optional[Scenario] = Non
         breached_rules=breached_rules,
         is_safe=is_safe
     )
+
+def run_fire_drill(state: BusinessState) -> Dict:
+    """
+    Business Fire Drill: 2 automated stress tests
+    1. Drop revenue by 20%
+    2. Zero receivables (customer default / 30-day delay)
+    """
+    # Test 1: Revenue -20%
+    scen_rev_drop = Scenario(name="Penjualan Turun 20%", daily_inflow_multiplier=0.8)
+    res_drop = simulate_trajectory(state, scen_rev_drop, days=30)
+    
+    # Test 2: Receivables Default
+    state_no_rec = BusinessState(
+        business_name=state.business_name,
+        current_cash=state.current_cash,
+        safety_buffer=state.safety_buffer,
+        avg_daily_gross_inflow=state.avg_daily_gross_inflow,
+        daily_cogs_ratio=state.daily_cogs_ratio,
+        obligations=state.obligations,
+        receivables=[]
+    )
+    res_no_rec = simulate_trajectory(state_no_rec, None, days=30)
+    
+    return {
+        "revenue_shock_20pct": {
+            "is_safe": res_drop.is_safe,
+            "min_cash": res_drop.min_scenario_cash,
+            "insolvency_day": res_drop.insolvency_day
+        },
+        "receivable_delay_shock": {
+            "is_safe": res_no_rec.is_safe,
+            "min_cash": res_no_rec.min_scenario_cash,
+            "insolvency_day": res_no_rec.insolvency_day
+        }
+    }
+
+def calculate_prive_leakage(draws: List[float], gross_profit: float) -> Dict:
+    """
+    Detects personal withdrawals exceeding healthy operating threshold (>35% gross profit).
+    """
+    total_draw = sum(draws)
+    leakage_ratio = (total_draw / gross_profit) if gross_profit > 0 else 1.0
+    is_excessive = leakage_ratio > 0.35
+    return {
+        "total_prive": round(total_draw, 2),
+        "leakage_ratio": round(leakage_ratio, 4),
+        "is_excessive": is_excessive,
+        "recommended_prive_quota": round(gross_profit * 0.25, 2)
+    }
 
 if __name__ == "__main__":
     # Runnable Self-Check for Kopi Teras Barokah

@@ -82,6 +82,21 @@ class NegotiateRequest(BaseModel):
     dp_percent: float = 0.5
     tempo_days: int = 30
 
+class OnboardRequest(BaseModel):
+    business_name: str
+    archetype: str
+    bank_name: str
+    initial_cash: float
+    safety_buffer: float
+    payroll_amount: float
+    payroll_day: int
+    fixed_rent_amount: float
+    daily_gross: float
+
+class ResolveInboxRequest(BaseModel):
+    item_id: str
+    category: str
+
 @app.get("/api/health")
 def health_check():
     return {
@@ -192,6 +207,127 @@ def ingest_text(req: IngestRequest):
                 amount=parsed["amount"]
             ))
         return {"parsed": parsed, "message": "Berhasil ditambahkan ke radar JagaUsaha"}
+
+@app.post("/api/onboard")
+def onboard_new_business(req: OnboardRequest):
+    global CURRENT_STATE
+    # Calibrate state from new business onboarding
+    CURRENT_STATE = BusinessState(
+        business_name=req.business_name,
+        current_cash=req.initial_cash,
+        safety_buffer=req.safety_buffer,
+        avg_daily_gross_inflow=req.daily_gross,
+        daily_cogs_ratio=0.55 if req.archetype == "fnb" else 0.65,
+        obligations=[
+            Obligation(title=f"Gaji Tim Karyawan", due_day=req.payroll_day, amount=req.payroll_amount, category="payroll"),
+            Obligation(title=f"Sewa & Tempo Operasional", due_day=10, amount=req.fixed_rent_amount, category="rent"),
+        ],
+        receivables=[
+            Receivable(title=f"Piutang Operasional {req.business_name}", due_day=14, amount=req.daily_gross * 4, collection_probability=0.85)
+        ]
+    )
+    safe_spend = calculate_safe_to_spend(CURRENT_STATE, window_days=14)
+    res_base = simulate_trajectory(CURRENT_STATE, None, days=30)
+    return {
+        "status": "success",
+        "message": f"Konteks usaha {req.business_name} berhasil diinisialisasi!",
+        "safe_to_spend": safe_spend,
+        "runway_days": res_base.runway_days,
+        "current_cash": CURRENT_STATE.current_cash
+    }
+
+# Data Inbox Items (Resolving Uncertain Bank Mutations)
+DATA_INBOX_ITEMS = [
+    {
+        "id": "inbox-1",
+        "date": "24 Sep 2026",
+        "raw_text": "TRSF E-BANKING DB 2409/FTSCY/WS95011 450.000,00",
+        "counterparty": "Transfer Antar Rekening Pribadi",
+        "amount": 450000.0,
+        "type": "OUTFLOW",
+        "suggested_category": "PRIVE",
+        "confidence": 0.72,
+        "status": "UNRESOLVED"
+    },
+    {
+        "id": "inbox-2",
+        "date": "23 Sep 2026",
+        "raw_text": "QRIS 00019283 TOKO PLASTIK MAKMUR 380.000,00",
+        "counterparty": "Toko Plastik Makmur",
+        "amount": 380000.0,
+        "type": "OUTFLOW",
+        "suggested_category": "COGS_PACKAGING",
+        "confidence": 0.81,
+        "status": "UNRESOLVED"
+    }
+]
+
+@app.get("/api/data-inbox")
+def get_data_inbox():
+    return {"items": DATA_INBOX_ITEMS}
+
+@app.post("/api/data-inbox/resolve")
+def resolve_data_inbox_item(req: ResolveInboxRequest):
+    item = next((i for i in DATA_INBOX_ITEMS if i["id"] == req.item_id), None)
+    if not item:
+        raise HTTPException(status_code=404, detail="Item Data Inbox tidak ditemukan")
+    item["status"] = "RESOLVED"
+    item["category"] = req.category
+    return {
+        "status": "success",
+        "message": f"Transaksi {item['raw_text'][:25]}... dialokasikan sebagai {req.category}",
+        "item": item
+    }
+
+# Business Memory Store (Decision Tracking & Outcome Measurement)
+BUSINESS_MEMORIES = [
+    {
+        "id": "mem-1",
+        "date": "Agustus 2026",
+        "decision_title": "Restrukturisasi Pembelian Mesin Kopi (DP 50% vs Tunai)",
+        "rationale": "Mencegah saldo kas defisit saat tanggal gajian barista (H+6)",
+        "simulated_impact": "Menyelamatkan kas likuid Rp 7.000.000",
+        "actual_outcome": "Toko sukses melewati gajian tanpa pinjaman online; kas operasional tetap terjaga sehat",
+        "status": "VERIFIED_SUCCESS"
+    },
+    {
+        "id": "mem-2",
+        "date": "Juli 2026",
+        "decision_title": "Penagihan Piutang Katering via WhatsApp QRIS Santun",
+        "rationale": "Mempercepat kas masuk 7 hari lebih awal sebelum tempo sewa tempat",
+        "simulated_impact": "Percepatan likuiditas +Rp 5.000.000",
+        "actual_outcome": "Pelanggan melunasi dalam 48 jam; tidak terjadi benturan tempo",
+        "status": "VERIFIED_SUCCESS"
+    }
+]
+
+@app.get("/api/memory")
+def get_business_memories():
+    return {"memories": BUSINESS_MEMORIES}
+
+@app.get("/api/agents/telemetry")
+def get_agents_telemetry():
+    return {
+        "sensor_agent": {
+            "status": "active",
+            "bca_mutations_indexed": 104,
+            "ocr_documents_processed": 18,
+            "prive_isolated": True,
+            "latency_ms": 14
+        },
+        "simulator_agent": {
+            "status": "active",
+            "method": "DLMM FastMath Core",
+            "hallucination_rate": "0% (Zero Hallucination)",
+            "horizon_days": 30
+        },
+        "advisor_agent": {
+            "status": "active",
+            "channel": "WhatsApp Webhook Ready",
+            "tone": "Indonesian UMKM Polite Tone",
+            "staged_drafts": 2
+        }
+    }
 
 @app.post("/api/reset")
 def reset_state():

@@ -18,6 +18,8 @@ import {
   Receipt,
   Bot,
   ExternalLink,
+  History,
+  Inbox,
 } from 'lucide-react';
 import { JagaUsahaLogo } from './ui/JagaUsahaLogo';
 import { BoardUIAreaChart } from './BoardUIAreaChart';
@@ -26,7 +28,9 @@ import { AnimatedBadge } from './motion/animated-badge';
 import { DashboardSimulatorView } from './dashboard/DashboardSimulatorView';
 import { DashboardAgendaView } from './dashboard/DashboardAgendaView';
 import { DashboardAgentsView } from './dashboard/DashboardAgentsView';
+import { DashboardMemoryView } from './dashboard/DashboardMemoryView';
 import { OnboardingModal, type BusinessContextData } from './OnboardingModal';
+import { DataInboxModal } from './DataInboxModal';
 
 interface DashboardPageProps {
   onLogout: () => void;
@@ -70,8 +74,9 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
   onSelectPreset,
   onOpenCommandPalette,
 }) => {
-  const [activeNav, setActiveNav] = useState<'overview' | 'simulator' | 'agenda' | 'agents'>('overview');
+  const [activeNav, setActiveNav] = useState<'overview' | 'simulator' | 'agenda' | 'agents' | 'memory'>('overview');
   const [isOnboardingOpen, setIsOnboardingOpen] = useState(false);
+  const [isDataInboxOpen, setIsDataInboxOpen] = useState(false);
   const [businessProfile, setBusinessProfile] = useState<BusinessContextData>({
     businessName: 'Kopi Teras Barokah',
     archetype: 'fnb',
@@ -250,6 +255,35 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               <Bot className={`h-4 w-4 ${activeNav === 'agents' ? 'text-emerald-400' : 'text-slate-500'}`} />
               <span>Log Sensor & AI Guardian</span>
             </button>
+
+            <button
+              onClick={() => setActiveNav('memory')}
+              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+                activeNav === 'memory'
+                  ? 'bg-neutral-950 text-white shadow-xs'
+                  : 'text-slate-600 hover:bg-slate-100 hover:text-slate-950'
+              }`}
+            >
+              <History className={`h-4 w-4 ${activeNav === 'memory' ? 'text-emerald-400' : 'text-slate-500'}`} />
+              <span>Memori Keputusan & Outcome</span>
+            </button>
+          </div>
+
+          {/* Data Inbox Quick Review Card */}
+          <div className="pt-1">
+            <button
+              type="button"
+              onClick={() => setIsDataInboxOpen(true)}
+              className="w-full flex items-center justify-between p-3 rounded-2xl bg-amber-50/70 hover:bg-amber-100/70 border border-amber-200/80 text-amber-950 transition-all cursor-pointer shadow-2xs"
+            >
+              <span className="flex items-center gap-2 text-xs font-bold">
+                <Inbox className="h-4 w-4 text-amber-700" />
+                <span>Data Inbox (2 Transaksi)</span>
+              </span>
+              <span className="text-[10px] font-bold bg-amber-200 text-amber-900 px-2 py-0.5 rounded-full">
+                Review
+              </span>
+            </button>
           </div>
 
           {/* Quick Scenario Sidebar Shortlist */}
@@ -329,6 +363,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               {activeNav === 'simulator' && 'Simulasi Keputusan Belanja Modal'}
               {activeNav === 'agenda' && 'Agenda Arus Kas Kritis 14 Hari'}
               {activeNav === 'agents' && 'Log Sensor & Arsitektur Guardian'}
+              {activeNav === 'memory' && 'Memori Keputusan & Hasil Nyata (Business Memory)'}
             </h1>
             <span className="hidden sm:inline-block text-xs font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
               Live Real-Time
@@ -406,6 +441,10 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
 
           {activeNav === 'agents' && (
             <DashboardAgentsView />
+          )}
+
+          {activeNav === 'memory' && (
+            <DashboardMemoryView />
           )}
 
           {activeNav === 'overview' && (
@@ -727,8 +766,44 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
         onClose={() => setIsOnboardingOpen(false)}
         onComplete={(data) => {
           setBusinessProfile(data);
+          try {
+            fetch('/api/onboard', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                business_name: data.businessName,
+                archetype: data.archetype,
+                bank_name: data.bankName,
+                initial_cash: data.initialCash,
+                safety_buffer: data.safetyBuffer,
+                payroll_amount: data.payrollAmount,
+                payroll_day: data.payrollDay,
+                fixed_rent_amount: data.fixedRentAmount,
+                daily_gross: data.dailyGross,
+              }),
+            }).catch(() => {});
+          } catch (e) {
+            // silent catch
+          }
         }}
         initialData={businessProfile}
+      />
+
+      {/* Data Inbox Modal (Resolving Uncertain Mutations) */}
+      <DataInboxModal
+        isOpen={isDataInboxOpen}
+        onClose={() => setIsDataInboxOpen(false)}
+        onResolved={(item, category) => {
+          try {
+            fetch('/api/data-inbox/resolve', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ item_id: item.id, category }),
+            }).catch(() => {});
+          } catch (e) {
+            // silent catch
+          }
+        }}
       />
     </div>
   );

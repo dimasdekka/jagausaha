@@ -2,24 +2,33 @@
   "communities": {
     "0": [
       "api_server",
+      "api_server_get_agents_telemetry",
+      "api_server_get_business_memories",
+      "api_server_get_data_inbox",
       "api_server_get_negotiate_script",
       "api_server_get_nudge_script",
+      "api_server_health_check",
       "api_server_ingest_text",
       "api_server_ingestrequest",
-      "api_server_load_initial_state",
       "api_server_negotiaterequest",
       "api_server_nudgerequest",
+      "api_server_onboard_new_business",
+      "api_server_onboardrequest",
       "api_server_rationale_1",
       "api_server_reset_state",
+      "api_server_resolve_data_inbox_item",
+      "api_server_resolveinboxrequest",
+      "api_server_serve_frontend_root",
+      "api_server_serve_frontend_spa",
+      "api_server_serve_placeholder",
       "api_server_simulate_decision",
       "api_server_simulaterequest",
       "basemodel",
-      "core_dlmm_obligation",
-      "core_dlmm_receivable",
       "fastapi",
       "fastapi_middleware_cors",
       "fastapi_responses",
       "fastapi_staticfiles",
+      "get",
       "json",
       "pathlib",
       "post",
@@ -204,7 +213,10 @@
       "frontend_src_components_motion_animated_toast_stack_toastposition",
       "frontend_src_components_motion_animated_toast_stack_toaststatus",
       "frontend_src_components_motion_animated_toast_stack_useanimatedtoaststack",
-      "frontend_src_components_motion_animated_toast_stack_useanimatedtoaststackoptions"
+      "frontend_src_components_motion_animated_toast_stack_useanimatedtoaststackoptions",
+      "frontend_src_index",
+      "frontend_src_main",
+      "ref_react_dom"
     ],
     "9": [
       "jagausaha_strategy_spec_18_final_product_synthesis",
@@ -230,17 +242,18 @@
     ],
     "10": [
       "frontend_src_components_footer",
-      "frontend_src_components_header",
-      "frontend_src_components_header_headerprops",
-      "frontend_src_components_herosection",
-      "frontend_src_components_herosection_herosectionprops",
-      "frontend_src_components_herovisual3d",
-      "frontend_src_components_herovisual3d_herovisual3d",
+      "frontend_src_components_howitworks",
+      "frontend_src_components_howitworks_howitworks",
+      "frontend_src_components_howitworks_howitworksprops",
       "frontend_src_components_loginpage",
       "frontend_src_components_loginpage_loginpageprops",
-      "frontend_src_components_motion_button",
-      "frontend_src_components_motion_button_motionbutton",
-      "frontend_src_components_motion_button_motionbuttonprops",
+      "frontend_src_components_motion_input",
+      "frontend_src_components_motion_input_input",
+      "frontend_src_components_motion_input_inputclassnames",
+      "frontend_src_components_motion_input_inputprops",
+      "frontend_src_components_reactbits_shinytext",
+      "frontend_src_components_reactbits_shinytext_shinytext",
+      "frontend_src_components_reactbits_shinytext_shinytextprops",
       "frontend_src_components_ui_jagausahalogo",
       "frontend_src_components_ui_jagausahalogo_jagausahalogo",
       "frontend_src_components_ui_jagausahalogo_jagausahalogoprops",
@@ -290,7 +303,10 @@
       "frontend_src_components_boarduiagentthinking_boarduiagentthinkingprops",
       "frontend_src_components_boarduiagentthinking_dotwaveindicator",
       "frontend_src_components_boarduiagentthinking_elapsedtimer",
-      "frontend_src_components_boarduiagentthinking_thinkingstep"
+      "frontend_src_components_boarduiagentthinking_thinkingstep",
+      "frontend_src_components_trajectorychart",
+      "frontend_src_components_trajectorychart_trajectorychart",
+      "frontend_src_components_trajectorychart_trajectorychartprops"
     ],
     "15": [
       "claude_skills_graphify_references_query",
@@ -301,21 +317,19 @@
       "claude_skills_graphify_references_query_step_1_traversal"
     ],
     "16": [
-      "frontend_src_components_dashboard_dashboardsimulatorview",
-      "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorview",
-      "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorviewprops",
+      "frontend_src_components_actionfeed",
+      "frontend_src_components_actionfeed_actionfeed",
+      "frontend_src_components_actionfeed_actionfeedprops",
+      "frontend_src_components_decisionintelligencecard",
       "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
+      "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
       "frontend_src_components_decisionstudio",
       "frontend_src_components_decisionstudio_decisionstudio",
       "frontend_src_components_decisionstudio_decisionstudioprops",
       "frontend_src_components_decisionstudio_presetscenario",
-      "frontend_src_components_howitworks",
-      "frontend_src_components_howitworks_howitworks",
-      "frontend_src_components_howitworks_howitworksprops",
-      "frontend_src_components_motion_input",
-      "frontend_src_components_motion_input_input",
-      "frontend_src_components_motion_input_inputclassnames",
-      "frontend_src_components_motion_input_inputprops",
+      "frontend_src_components_motion_button",
+      "frontend_src_components_motion_button_motionbutton",
+      "frontend_src_components_motion_button_motionbuttonprops",
       "frontend_src_components_simulationchatmodal",
       "frontend_src_components_simulationchatmodal_simulationchatmodal",
       "frontend_src_components_simulationchatmodal_simulationchatmodalprops",
@@ -448,33 +462,29 @@
       "frontend_src_app",
       "frontend_src_app_presets",
       "frontend_src_app_pulsedata",
-      "frontend_src_components_actionfeed",
-      "frontend_src_components_actionfeed_actionfeed",
-      "frontend_src_components_actionfeed_actionfeedprops",
-      "frontend_src_components_dashboardpage_dashboardpage",
-      "frontend_src_components_faqsection",
-      "frontend_src_components_faqsection_faqsection",
       "frontend_src_components_featureagents",
       "frontend_src_components_featureagents_featureagents",
       "frontend_src_components_footer_footer",
-      "frontend_src_components_header_header",
+      "frontend_src_components_herosection",
       "frontend_src_components_herosection_herosection",
+      "frontend_src_components_herosection_herosectionprops",
+      "frontend_src_components_herovisual3d",
+      "frontend_src_components_herovisual3d_herovisual3d",
       "frontend_src_components_loginpage_loginpage",
-      "frontend_src_components_motion_tilt_card_tiltcard",
-      "frontend_src_components_whatsappmodal",
-      "frontend_src_components_whatsappmodal_whatsappmodal",
-      "frontend_src_components_whatsappmodal_whatsappmodalprops",
-      "frontend_src_lib_ease_spring_press",
+      "frontend_src_components_terminaldrawer",
+      "frontend_src_components_terminaldrawer_terminaldrawer",
+      "frontend_src_components_terminaldrawer_terminaldrawerprops",
       "ref_gsap",
       "ref_lucide_react"
     ],
     "36": [
+      "frontend_src_components_faqsection",
+      "frontend_src_components_faqsection_faqsection",
       "frontend_src_components_motion_bouncy_accordion",
       "frontend_src_components_motion_bouncy_accordion_bouncyaccordion",
       "frontend_src_components_motion_bouncy_accordion_bouncyaccordionclassnames",
       "frontend_src_components_motion_bouncy_accordion_bouncyaccordionitem",
       "frontend_src_components_motion_bouncy_accordion_bouncyaccordionprops",
-      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionrow",
       "frontend_src_components_motion_bouncy_accordion_chevron_transition",
       "frontend_src_components_motion_bouncy_accordion_content_close_transition",
       "frontend_src_components_motion_bouncy_accordion_content_open_transition",
@@ -492,15 +502,17 @@
       "frontend_src_components_motion_animated_badge_icons",
       "frontend_src_components_motion_animated_badge_size_class",
       "frontend_src_components_motion_animated_badge_status_class",
-      "frontend_src_components_motion_animated_badge_text_roll_variants",
-      "frontend_src_components_terminaldrawer",
-      "frontend_src_components_terminaldrawer_terminaldrawer",
-      "frontend_src_components_terminaldrawer_terminaldrawerprops",
-      "frontend_src_lib_ease_ease_out"
+      "frontend_src_components_motion_animated_badge_text_roll_variants"
     ],
     "38": [
       "frontend_src_components_motion_animated_toast_stack_animatedtoaststack",
       "frontend_src_components_motion_animated_toast_stack_toastitem",
+      "frontend_src_components_motion_bouncy_accordion_bouncyaccordionrow",
+      "frontend_src_components_motion_command_palette",
+      "frontend_src_components_motion_command_palette_commanditem",
+      "frontend_src_components_motion_command_palette_commandpalette",
+      "frontend_src_components_motion_command_palette_commandpaletteprops",
+      "frontend_src_components_motion_command_palette_panel_spring",
       "frontend_src_components_motion_marquee",
       "frontend_src_components_motion_marquee_marquee",
       "frontend_src_components_motion_marquee_marqueeprops",
@@ -510,19 +522,36 @@
       "ref_tailwind_merge"
     ],
     "39": [
-      "frontend_src_components_motion_command_palette",
-      "frontend_src_components_motion_command_palette_commanditem",
-      "frontend_src_components_motion_command_palette_commandpalette",
-      "frontend_src_components_motion_command_palette_commandpaletteprops",
-      "frontend_src_components_motion_command_palette_panel_spring",
-      "frontend_src_index",
-      "frontend_src_main",
-      "ref_react_dom"
+      "frontend_src_components_motion_number",
+      "frontend_src_components_motion_number_animatednumber",
+      "frontend_src_components_motion_number_animatednumberprops",
+      "frontend_src_components_pulsecards",
+      "frontend_src_components_pulsecards_pulsecards",
+      "frontend_src_components_pulsecards_pulsecardsprops",
+      "frontend_src_components_whatsappmodal",
+      "frontend_src_components_whatsappmodal_whatsappmodal",
+      "frontend_src_components_whatsappmodal_whatsappmodalprops",
+      "frontend_src_lib_ease",
+      "frontend_src_lib_ease_ease_drawer",
+      "frontend_src_lib_ease_ease_in_out",
+      "frontend_src_lib_ease_ease_out",
+      "frontend_src_lib_ease_ease_out_css",
+      "frontend_src_lib_ease_spring_glide",
+      "frontend_src_lib_ease_spring_press",
+      "frontend_src_lib_ease_spring_swap"
     ],
     "40": [
-      "frontend_src_components_reactbits_shinytext",
-      "frontend_src_components_reactbits_shinytext_shinytext",
-      "frontend_src_components_reactbits_shinytext_shinytextprops"
+      "jagausaha_product_flow",
+      "jagausaha_product_flow_1_product_north_star",
+      "jagausaha_product_flow_2_aktor_tanggung_jawab_sistem",
+      "jagausaha_product_flow_3_end_to_end_lifecycle",
+      "jagausaha_product_flow_4_progressive_cold_start_onboarding_zero_historical_data",
+      "jagausaha_product_flow_5_formula_matematis_deterministik_dlmm_core",
+      "jagausaha_product_flow_6_sinyal_anomali_to_kasus_risiko_riskcase",
+      "jagausaha_product_flow_7_data_confidence_data_inbox",
+      "jagausaha_product_flow_8_human_approval_financial_safety",
+      "jagausaha_product_flow_9_demo_data_standard_kopi_nusa",
+      "jagausaha_product_flow_jagausaha_canonical_product_flow_business_architecture_specification"
     ],
     "41": [
       "frontend_src_components_dashboard_dashboardagendaview",
@@ -531,26 +560,30 @@
       "frontend_src_components_dashboard_dashboardagendaview_dashboardagendaviewprops",
       "frontend_src_components_dashboard_dashboardagentsview",
       "frontend_src_components_dashboard_dashboardagentsview_dashboardagentsview",
+      "frontend_src_components_dashboard_dashboardmemoryview",
+      "frontend_src_components_dashboard_dashboardmemoryview_dashboardmemoryview",
+      "frontend_src_components_dashboard_dashboardsimulatorview",
+      "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorview",
+      "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorviewprops",
       "frontend_src_components_dashboardpage",
+      "frontend_src_components_dashboardpage_dashboardpage",
       "frontend_src_components_dashboardpage_dashboardpageprops",
-      "frontend_src_components_decisionintelligencecard",
-      "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
+      "frontend_src_components_datainboxmodal",
+      "frontend_src_components_datainboxmodal_datainboxitem",
+      "frontend_src_components_datainboxmodal_datainboxmodal",
+      "frontend_src_components_datainboxmodal_datainboxmodalprops",
       "frontend_src_components_motion_animated_badge_animatedbadge",
-      "frontend_src_components_motion_number",
-      "frontend_src_components_motion_number_animatednumber",
-      "frontend_src_components_motion_number_animatednumberprops",
       "frontend_src_components_onboardingmodal",
       "frontend_src_components_onboardingmodal_businesscontextdata",
       "frontend_src_components_onboardingmodal_onboardingmodal",
-      "frontend_src_components_onboardingmodal_onboardingmodalprops",
-      "frontend_src_components_pulsecards",
-      "frontend_src_components_pulsecards_pulsecards",
-      "frontend_src_components_pulsecards_pulsecardsprops"
+      "frontend_src_components_onboardingmodal_onboardingmodalprops"
     ],
     "42": [
-      "frontend_src_components_trajectorychart",
-      "frontend_src_components_trajectorychart_trajectorychart",
-      "frontend_src_components_trajectorychart_trajectorychartprops"
+      "api_server_get_business_pulse",
+      "core_dlmm_calculate_safe_to_spend",
+      "core_dlmm_rationale_72",
+      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_13_agent_architecture_hermes_runtime_specification",
+      "tests_test_dlmm_testdlmmcore_test_safe_to_spend_exact_formula"
     ],
     "43": [
       "frontend_src_components_motion_text_reveal",
@@ -570,21 +603,10 @@
       "frontend_src_components_motion_expanding_arrow_button_dottedchevron",
       "frontend_src_components_motion_expanding_arrow_button_expandingarrowbutton",
       "frontend_src_components_motion_expanding_arrow_button_expandingarrowbuttonprops",
-      "frontend_src_components_motion_shared_layout_bg",
-      "frontend_src_components_motion_shared_layout_bg_reducedvariants",
-      "frontend_src_components_motion_shared_layout_bg_sharedlayoutbg",
-      "frontend_src_components_motion_shared_layout_bg_sharedlayoutbgprops",
-      "frontend_src_components_motion_shared_layout_bg_variants",
       "frontend_src_components_motion_tilt_card",
+      "frontend_src_components_motion_tilt_card_tiltcard",
       "frontend_src_components_motion_tilt_card_tiltcardprops",
-      "frontend_src_lib_ease",
-      "frontend_src_lib_ease_ease_drawer",
-      "frontend_src_lib_ease_ease_in_out",
-      "frontend_src_lib_ease_ease_out_css",
-      "frontend_src_lib_ease_spring_glide",
-      "frontend_src_lib_ease_spring_layout",
       "frontend_src_lib_ease_spring_mouse",
-      "frontend_src_lib_ease_spring_swap",
       "frontend_src_lib_hooks_use_hover_capable",
       "frontend_src_lib_hooks_use_hover_capable_usehovercapable"
     ],
@@ -597,12 +619,21 @@
       "jagausaha_strategy_spec_what_not_to_build"
     ],
     "46": [
+      "frontend_src_components_header",
+      "frontend_src_components_header_header",
+      "frontend_src_components_header_headerprops",
+      "frontend_src_components_motion_shared_layout_bg",
+      "frontend_src_components_motion_shared_layout_bg_reducedvariants",
+      "frontend_src_components_motion_shared_layout_bg_sharedlayoutbg",
+      "frontend_src_components_motion_shared_layout_bg_sharedlayoutbgprops",
+      "frontend_src_components_motion_shared_layout_bg_variants",
       "frontend_src_components_reactbits_blurtext",
       "frontend_src_components_reactbits_blurtext_blurtext",
       "frontend_src_components_reactbits_blurtext_blurtextprops",
       "frontend_src_components_reactbits_magnet",
       "frontend_src_components_reactbits_magnet_magnet",
       "frontend_src_components_reactbits_magnet_magnetprops",
+      "frontend_src_lib_ease_spring_layout",
       "ref_framer_motion"
     ],
     "47": [
@@ -644,25 +675,20 @@
       "jagausaha_strategy_spec_9_safety_architecture_financial_trust_boundaries"
     ],
     "54": [
-      "core_dlmm",
-      "core_dlmm_calculate_runway",
-      "core_dlmm_rationale_1",
       "core_sensor",
       "core_sensor_parsedtransaction",
-      "core_sensor_py_any",
       "core_sensor_rationale_1",
       "core_sensor_rationale_33",
-      "core_sensor_rationale_91",
       "core_sensor_sensoragent",
       "core_sensor_sensoragent_init",
       "core_sensor_sensoragent_parse_bca_mutation_text",
-      "core_sensor_sensoragent_parse_whatsapp_note",
       "dataclasses",
       "re",
       "typing"
     ],
     "55": [
       "cli_demo",
+      "cli_demo_print_banner",
       "cli_demo_rationale_1",
       "core_advisor",
       "core_advisor_rationale_1",
@@ -676,17 +702,31 @@
       "time"
     ],
     "56": [
-      "api_server_get_business_pulse",
-      "cli_demo_print_banner",
+      "api_server_load_initial_state",
       "cli_demo_run_cli",
+      "core_dlmm",
       "core_dlmm_businessstate",
       "core_dlmm_businessstate_net_daily_operating_cash",
-      "core_dlmm_calculate_safe_to_spend",
-      "core_dlmm_rationale_60",
-      "core_dlmm_rationale_83",
+      "core_dlmm_calculate_prive_leakage",
+      "core_dlmm_calculate_runway",
+      "core_dlmm_obligation",
+      "core_dlmm_rationale_1",
+      "core_dlmm_rationale_186",
+      "core_dlmm_rationale_221",
+      "core_dlmm_rationale_95",
+      "core_dlmm_receivable",
+      "core_dlmm_run_fire_drill",
       "core_dlmm_scenario",
       "core_dlmm_simulate_trajectory",
-      "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_13_agent_architecture_hermes_runtime_specification"
+      "tests_test_dlmm",
+      "tests_test_dlmm_testdlmmcore",
+      "tests_test_dlmm_testdlmmcore_setup",
+      "tests_test_dlmm_testdlmmcore_test_cash_outflow_insolvency_detection",
+      "tests_test_dlmm_testdlmmcore_test_fire_drill_shocks",
+      "tests_test_dlmm_testdlmmcore_test_prive_leakage_detection",
+      "tests_test_dlmm_testdlmmcore_test_restructured_dp_is_safe",
+      "tests_test_dlmm_testdlmmcore_test_seasonality_multipliers",
+      "unittest"
     ],
     "57": [
       "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_10_ask_jagausaha_asisten_konsultasi_finansial_kontekstual",
@@ -714,11 +754,9 @@
       "core_dlmm_trajectoryresult"
     ],
     "59": [
-      "api_server_health_check",
-      "api_server_serve_frontend_root",
-      "api_server_serve_frontend_spa",
-      "api_server_serve_placeholder",
-      "get"
+      "core_sensor_py_any",
+      "core_sensor_rationale_91",
+      "core_sensor_sensoragent_parse_whatsapp_note"
     ],
     "60": [
       "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_15_state_machines",
@@ -751,10 +789,14 @@
     "65": [
       "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_5_data_ingestion_flow_canonical_pipeline",
       "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_detail_per_sumber_data"
+    ],
+    "66": [
+      "core_dlmm_businessstate_get_day_inflow_multiplier",
+      "core_dlmm_rationale_40"
     ]
   },
   "cohesion": {
-    "0": 0.14130434782608695,
+    "0": 0.10416666666666667,
     "1": 0.14285714285714285,
     "2": 0.047619047619047616,
     "3": 0.6666666666666666,
@@ -762,15 +804,15 @@
     "5": 0.11764705882352941,
     "6": 0.08333333333333333,
     "7": 0.07407407407407407,
-    "8": 0.13333333333333333,
+    "8": 0.11695906432748537,
     "9": 0.1,
-    "10": 0.24166666666666667,
+    "10": 0.17647058823529413,
     "11": 0.11764705882352941,
     "12": 0.2222222222222222,
     "13": 0.3333333333333333,
-    "14": 0.3333333333333333,
+    "14": 0.19444444444444445,
     "15": 0.3333333333333333,
-    "16": 0.13333333333333333,
+    "16": 0.16374269005847952,
     "17": 0.5,
     "18": 0.6666666666666666,
     "19": 1.0,
@@ -789,18 +831,18 @@
     "32": 0.21794871794871795,
     "33": 0.07881773399014778,
     "34": 0.6666666666666666,
-    "35": 0.13852813852813853,
-    "36": 0.18181818181818182,
-    "37": 0.15384615384615385,
-    "38": 0.2777777777777778,
-    "39": 0.25,
-    "40": 0.6666666666666666,
-    "41": 0.14285714285714285,
-    "42": 0.6666666666666666,
+    "35": 0.19117647058823528,
+    "36": 0.1794871794871795,
+    "37": 0.2,
+    "38": 0.17142857142857143,
+    "39": 0.14705882352941177,
+    "40": 0.18181818181818182,
+    "41": 0.12648221343873517,
+    "42": 0.4,
     "43": 0.3333333333333333,
-    "44": 0.10666666666666667,
+    "44": 0.1978021978021978,
     "45": 0.3333333333333333,
-    "46": 0.2857142857142857,
+    "46": 0.14166666666666666,
     "47": 0.4,
     "48": 0.5,
     "49": 0.6666666666666666,
@@ -808,24 +850,25 @@
     "51": 0.6666666666666666,
     "52": 0.6666666666666666,
     "53": 0.6666666666666666,
-    "54": 0.14166666666666666,
-    "55": 0.19696969696969696,
-    "56": 0.2909090909090909,
+    "54": 0.2222222222222222,
+    "55": 0.1794871794871795,
+    "56": 0.19,
     "57": 0.18181818181818182,
     "58": 0.2222222222222222,
-    "59": 0.4,
+    "59": 0.6666666666666666,
     "60": 0.5,
     "61": 0.5,
     "62": 0.5,
     "63": 0.6666666666666666,
     "64": 0.6666666666666666,
-    "65": 1.0
+    "65": 1.0,
+    "66": 1.0
   },
   "gods": [
     {
       "id": "ref_react",
       "label": "react",
-      "degree": 49
+      "degree": 51
     },
     {
       "id": "frontend_src_lib_utils_cn",
@@ -840,12 +883,12 @@
     {
       "id": "ref_lucide_react",
       "label": "lucide-react",
-      "degree": 27
+      "degree": 29
     },
     {
       "id": "ref_framer_motion",
       "label": "framer-motion",
-      "degree": 21
+      "degree": 22
     },
     {
       "id": "jagausaha_strategy_spec_jagausaha_ai_autonomous_financial_guardian_decision_sandbox_for_indonesian_umkm",
@@ -858,6 +901,11 @@
       "degree": 20
     },
     {
+      "id": "core_dlmm_simulate_trajectory",
+      "label": "simulate_trajectory()",
+      "degree": 18
+    },
+    {
       "id": "frontend_tsconfig_app_compileroptions",
       "label": "compilerOptions",
       "degree": 18
@@ -866,14 +914,20 @@
       "id": "jagausaha_strategy_spec_6_fifteen_unconventional_out_of_the_box_agent_capabilities",
       "label": "6. FIFTEEN UNCONVENTIONAL OUT-OF-THE-BOX AGENT CAPABILITIES",
       "degree": 17
-    },
-    {
-      "id": "frontend_tsconfig_node_compileroptions",
-      "label": "compilerOptions",
-      "degree": 15
     }
   ],
   "surprises": [
+    {
+      "source": "13. AGENT ARCHITECTURE (HERMES RUNTIME SPECIFICATION)",
+      "target": "simulate_trajectory()",
+      "source_files": [
+        ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+        "core/dlmm.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; bridges separate communities"
+    },
     {
       "source": "🎨 Komponen UI & Desain Eksternal",
       "target": "AgentThinking()",
@@ -908,19 +962,8 @@
       "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories"
     },
     {
-      "source": "13. AGENT ARCHITECTURE (HERMES RUNTIME SPECIFICATION)",
-      "target": "simulate_trajectory()",
-      "source_files": [
-        ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
-        "core/dlmm.py"
-      ],
-      "confidence": "INFERRED",
-      "relation": "references",
-      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories"
-    },
-    {
-      "source": "simulate_decision()",
-      "target": "Scenario",
+      "source": "onboard_new_business()",
+      "target": "BusinessState",
       "source_files": [
         "api/server.py",
         "core/dlmm.py"
@@ -933,28 +976,28 @@
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `react` connect `react` to `package.json`, `CountUp.tsx`, `animated-toast-stack.tsx`, `BoardUIAgentThinking.tsx`, `DecisionStudio.tsx`, `tabs.tsx`, `matrix-orb.tsx`, `SpotlightCard.tsx`, `App.tsx`, `bouncy-accordion.tsx`, `animated-badge.tsx`, `cn`, `command-palette.tsx`, `ShinyText.tsx`, `DashboardPage.tsx`, `TrajectoryChart.tsx`, `text-reveal.tsx`, `ease.ts`, `framer-motion`?",
-      "why": "High betweenness centrality (0.085) - this node is a cross-community bridge."
+      "question": "Why does `react` connect `react` to `tabs.tsx`, `matrix-orb.tsx`, `package.json`, `App.tsx`, `bouncy-accordion.tsx`, `animated-badge.tsx`, `cn`, `ease.ts`, `animated-toast-stack.tsx`, `DashboardPage.tsx`, `CountUp.tsx`, `text-reveal.tsx`, `expanding-arrow-button.tsx`, `SpotlightCard.tsx`, `BoardUIAgentThinking.tsx`, `framer-motion`, `DecisionStudio.tsx`?",
+      "why": "High betweenness centrality (0.079) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `JagaUsaha — Master Architecture & Product Logic Plan` connect `JagaUsaha — Master Architecture & Product Logic Plan` to `5. DATA INGESTION FLOW (CANONICAL PIPELINE)`, `simulate_trajectory`, `12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)`, `15. STATE MACHINES`, `29. REALITY-CHECK: WHERE WOULD THE SYSTEM FAIL TOMORROW & HOW IT IS FIXED?`, `4. NEW USER ONBOARDING FLOW (PROGRESSIVE DISCLOSURE)`, `16. MERMAID FLOW DIAGRAMS`?",
-      "why": "High betweenness centrality (0.027) - this node is a cross-community bridge."
+      "question": "Why does `JagaUsaha — Master Architecture & Product Logic Plan` connect `JagaUsaha — Master Architecture & Product Logic Plan` to `5. DATA INGESTION FLOW (CANONICAL PIPELINE)`, `calculate_safe_to_spend`, `12. FEATURE FLOWS (SPESIFIKASI 10 FITUR UTAMA)`, `15. STATE MACHINES`, `29. REALITY-CHECK: WHERE WOULD THE SYSTEM FAIL TOMORROW & HOW IT IS FIXED?`, `4. NEW USER ONBOARDING FLOW (PROGRESSIVE DISCLOSURE)`, `16. MERMAID FLOW DIAGRAMS`?",
+      "why": "High betweenness centrality (0.029) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `cn()` connect `cn` to `tabs.tsx`, `matrix-orb.tsx`, `App.tsx`, `bouncy-accordion.tsx`, `animated-badge.tsx`, `command-palette.tsx`, `animated-toast-stack.tsx`, `DashboardPage.tsx`, `react`, `text-reveal.tsx`, `ease.ts`, `DecisionStudio.tsx`?",
+      "question": "Why does `13. AGENT ARCHITECTURE (HERMES RUNTIME SPECIFICATION)` connect `calculate_safe_to_spend` to `simulate_trajectory`, `JagaUsaha — Master Architecture & Product Logic Plan`?",
       "why": "High betweenness centrality (0.024) - this node is a cross-community bridge."
     },
     {
       "type": "isolated_nodes",
-      "question": "What connects `HeaderProps`, `HeroSectionProps`, `LoginPageProps` to the rest of the system?",
-      "why": "334 weakly-connected nodes found - possible documentation gaps or missing edges."
+      "question": "What connects `HowItWorksProps`, `LoginPageProps`, `InputClassNames` to the rest of the system?",
+      "why": "345 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
       "type": "low_cohesion",
       "question": "Should `server.py` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.14130434782608695 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.10416666666666667 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",

@@ -43,6 +43,32 @@
       "source_location": "L73"
     },
     {
+      "id": "api_server_onboardrequest",
+      "label": "OnboardRequest",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.py",
+      "file_type": "code",
+      "norm_label": "onboardrequest",
+      "source_file": "api/server.py",
+      "source_location": "L85"
+    },
+    {
+      "id": "api_server_resolveinboxrequest",
+      "label": "ResolveInboxRequest",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.py",
+      "file_type": "code",
+      "norm_label": "resolveinboxrequest",
+      "source_file": "api/server.py",
+      "source_location": "L96"
+    },
+    {
       "id": "api_server_simulaterequest",
       "label": "SimulateRequest",
       "_callable": true,
@@ -56,56 +82,17 @@
       "source_location": "L61"
     },
     {
-      "id": "core_dlmm_obligation",
-      "label": "Obligation",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "obligation",
-      "source_file": "core/dlmm.py",
-      "source_location": "L10"
-    },
-    {
-      "id": "core_dlmm_receivable",
-      "label": "Receivable",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "server.py",
-      "file_type": "code",
-      "norm_label": "receivable",
-      "source_file": "core/dlmm.py",
-      "source_location": "L18"
-    },
-    {
-      "id": "frontend_src_components_header_headerprops",
-      "label": "HeaderProps",
+      "id": "frontend_src_components_howitworks_howitworksprops",
+      "label": "HowItWorksProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 10,
       "community_name": "react",
       "file_type": "code",
-      "norm_label": "headerprops",
-      "source_file": "frontend/src/components/Header.tsx",
-      "source_location": "L14"
-    },
-    {
-      "id": "frontend_src_components_herosection_herosectionprops",
-      "label": "HeroSectionProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "herosectionprops",
-      "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L11"
+      "norm_label": "howitworksprops",
+      "source_file": "frontend/src/components/HowItWorks.tsx",
+      "source_location": "L9"
     },
     {
       "id": "frontend_src_components_loginpage_loginpageprops",
@@ -121,17 +108,43 @@
       "source_location": "L7"
     },
     {
-      "id": "frontend_src_components_motion_button_motionbuttonprops",
-      "label": "MotionButtonProps",
+      "id": "frontend_src_components_motion_input_inputclassnames",
+      "label": "InputClassNames",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 10,
       "community_name": "react",
       "file_type": "code",
-      "norm_label": "motionbuttonprops",
-      "source_file": "frontend/src/components/motion/button.tsx",
-      "source_location": "L9"
+      "norm_label": "inputclassnames",
+      "source_file": "frontend/src/components/motion/input.tsx",
+      "source_location": "L20"
+    },
+    {
+      "id": "frontend_src_components_motion_input_inputprops",
+      "label": "InputProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "inputprops",
+      "source_file": "frontend/src/components/motion/input.tsx",
+      "source_location": "L31"
+    },
+    {
+      "id": "frontend_src_components_reactbits_shinytext_shinytextprops",
+      "label": "ShinyTextProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "shinytextprops",
+      "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
+      "source_location": "L3"
     },
     {
       "id": "frontend_src_components_ui_jagausahalogo_jagausahalogoprops",
@@ -173,17 +186,43 @@
       "source_location": "L4"
     },
     {
-      "id": "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorviewprops",
-      "label": "DashboardSimulatorViewProps",
+      "id": "frontend_src_components_trajectorychart_trajectorychartprops",
+      "label": "TrajectoryChartProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "BoardUIAgentThinking.tsx",
+      "file_type": "code",
+      "norm_label": "trajectorychartprops",
+      "source_file": "frontend/src/components/TrajectoryChart.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "frontend_src_components_actionfeed_actionfeedprops",
+      "label": "ActionFeedProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 16,
       "community_name": "DecisionStudio.tsx",
       "file_type": "code",
-      "norm_label": "dashboardsimulatorviewprops",
-      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
-      "source_location": "L13"
+      "norm_label": "actionfeedprops",
+      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
+      "label": "DecisionIntelligenceProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "decisionintelligenceprops",
+      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
+      "source_location": "L7"
     },
     {
       "id": "frontend_src_components_decisionstudio_decisionstudioprops",
@@ -212,43 +251,17 @@
       "source_location": "L12"
     },
     {
-      "id": "frontend_src_components_howitworks_howitworksprops",
-      "label": "HowItWorksProps",
+      "id": "frontend_src_components_motion_button_motionbuttonprops",
+      "label": "MotionButtonProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 16,
       "community_name": "DecisionStudio.tsx",
       "file_type": "code",
-      "norm_label": "howitworksprops",
-      "source_file": "frontend/src/components/HowItWorks.tsx",
+      "norm_label": "motionbuttonprops",
+      "source_file": "frontend/src/components/motion/button.tsx",
       "source_location": "L9"
-    },
-    {
-      "id": "frontend_src_components_motion_input_inputclassnames",
-      "label": "InputClassNames",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "inputclassnames",
-      "source_file": "frontend/src/components/motion/input.tsx",
-      "source_location": "L20"
-    },
-    {
-      "id": "frontend_src_components_motion_input_inputprops",
-      "label": "InputProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "inputprops",
-      "source_file": "frontend/src/components/motion/input.tsx",
-      "source_location": "L31"
     },
     {
       "id": "frontend_src_components_simulationchatmodal_simulationchatmodalprops",
@@ -407,30 +420,30 @@
       "source_location": "L31"
     },
     {
-      "id": "frontend_src_components_actionfeed_actionfeedprops",
-      "label": "ActionFeedProps",
+      "id": "frontend_src_components_herosection_herosectionprops",
+      "label": "HeroSectionProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "actionfeedprops",
-      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "norm_label": "herosectionprops",
+      "source_file": "frontend/src/components/HeroSection.tsx",
       "source_location": "L11"
     },
     {
-      "id": "frontend_src_components_whatsappmodal_whatsappmodalprops",
-      "label": "WhatsAppModalProps",
+      "id": "frontend_src_components_terminaldrawer_terminaldrawerprops",
+      "label": "TerminalDrawerProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "whatsappmodalprops",
-      "source_file": "frontend/src/components/WhatsAppModal.tsx",
-      "source_location": "L6"
+      "norm_label": "terminaldrawerprops",
+      "source_file": "frontend/src/components/TerminalDrawer.tsx",
+      "source_location": "L7"
     },
     {
       "id": "frontend_src_components_motion_bouncy_accordion_bouncyaccordionclassnames",
@@ -511,17 +524,30 @@
       "source_location": "L24"
     },
     {
-      "id": "frontend_src_components_terminaldrawer_terminaldrawerprops",
-      "label": "TerminalDrawerProps",
+      "id": "frontend_src_components_motion_command_palette_commanditem",
+      "label": "CommandItem",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 37,
-      "community_name": "animated-badge.tsx",
+      "community": 38,
+      "community_name": "cn",
       "file_type": "code",
-      "norm_label": "terminaldrawerprops",
-      "source_file": "frontend/src/components/TerminalDrawer.tsx",
-      "source_location": "L7"
+      "norm_label": "commanditem",
+      "source_file": "frontend/src/components/motion/command-palette.tsx",
+      "source_location": "L14"
+    },
+    {
+      "id": "frontend_src_components_motion_command_palette_commandpaletteprops",
+      "label": "CommandPaletteProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 38,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "commandpaletteprops",
+      "source_file": "frontend/src/components/motion/command-palette.tsx",
+      "source_location": "L25"
     },
     {
       "id": "frontend_src_components_motion_marquee_marqueeprops",
@@ -537,43 +563,43 @@
       "source_location": "L4"
     },
     {
-      "id": "frontend_src_components_motion_command_palette_commanditem",
-      "label": "CommandItem",
+      "id": "frontend_src_components_motion_number_animatednumberprops",
+      "label": "AnimatedNumberProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 39,
-      "community_name": "command-palette.tsx",
+      "community_name": "ease.ts",
       "file_type": "code",
-      "norm_label": "commanditem",
-      "source_file": "frontend/src/components/motion/command-palette.tsx",
-      "source_location": "L14"
+      "norm_label": "animatednumberprops",
+      "source_file": "frontend/src/components/motion/number.tsx",
+      "source_location": "L9"
     },
     {
-      "id": "frontend_src_components_motion_command_palette_commandpaletteprops",
-      "label": "CommandPaletteProps",
+      "id": "frontend_src_components_pulsecards_pulsecardsprops",
+      "label": "PulseCardsProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 39,
-      "community_name": "command-palette.tsx",
+      "community_name": "ease.ts",
       "file_type": "code",
-      "norm_label": "commandpaletteprops",
-      "source_file": "frontend/src/components/motion/command-palette.tsx",
-      "source_location": "L25"
+      "norm_label": "pulsecardsprops",
+      "source_file": "frontend/src/components/PulseCards.tsx",
+      "source_location": "L6"
     },
     {
-      "id": "frontend_src_components_reactbits_shinytext_shinytextprops",
-      "label": "ShinyTextProps",
+      "id": "frontend_src_components_whatsappmodal_whatsappmodalprops",
+      "label": "WhatsAppModalProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 40,
-      "community_name": "ShinyText.tsx",
+      "community": 39,
+      "community_name": "ease.ts",
       "file_type": "code",
-      "norm_label": "shinytextprops",
-      "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
-      "source_location": "L3"
+      "norm_label": "whatsappmodalprops",
+      "source_file": "frontend/src/components/WhatsAppModal.tsx",
+      "source_location": "L6"
     },
     {
       "id": "frontend_src_components_dashboard_dashboardagendaview_cashevent",
@@ -602,6 +628,19 @@
       "source_location": "L12"
     },
     {
+      "id": "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorviewprops",
+      "label": "DashboardSimulatorViewProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "DashboardPage.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardsimulatorviewprops",
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L13"
+    },
+    {
       "id": "frontend_src_components_dashboardpage_dashboardpageprops",
       "label": "DashboardPageProps",
       "_callable": true,
@@ -612,33 +651,33 @@
       "file_type": "code",
       "norm_label": "dashboardpageprops",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L31"
+      "source_location": "L35"
     },
     {
-      "id": "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
-      "label": "DecisionIntelligenceProps",
+      "id": "frontend_src_components_datainboxmodal_datainboxitem",
+      "label": "DataInboxItem",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 41,
       "community_name": "DashboardPage.tsx",
       "file_type": "code",
-      "norm_label": "decisionintelligenceprops",
-      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
-      "source_location": "L7"
+      "norm_label": "datainboxitem",
+      "source_file": "frontend/src/components/DataInboxModal.tsx",
+      "source_location": "L14"
     },
     {
-      "id": "frontend_src_components_motion_number_animatednumberprops",
-      "label": "AnimatedNumberProps",
+      "id": "frontend_src_components_datainboxmodal_datainboxmodalprops",
+      "label": "DataInboxModalProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 41,
       "community_name": "DashboardPage.tsx",
       "file_type": "code",
-      "norm_label": "animatednumberprops",
-      "source_file": "frontend/src/components/motion/number.tsx",
-      "source_location": "L9"
+      "norm_label": "datainboxmodalprops",
+      "source_file": "frontend/src/components/DataInboxModal.tsx",
+      "source_location": "L27"
     },
     {
       "id": "frontend_src_components_onboardingmodal_businesscontextdata",
@@ -665,32 +704,6 @@
       "norm_label": "onboardingmodalprops",
       "source_file": "frontend/src/components/OnboardingModal.tsx",
       "source_location": "L28"
-    },
-    {
-      "id": "frontend_src_components_pulsecards_pulsecardsprops",
-      "label": "PulseCardsProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "DashboardPage.tsx",
-      "file_type": "code",
-      "norm_label": "pulsecardsprops",
-      "source_file": "frontend/src/components/PulseCards.tsx",
-      "source_location": "L6"
-    },
-    {
-      "id": "frontend_src_components_trajectorychart_trajectorychartprops",
-      "label": "TrajectoryChartProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "TrajectoryChart.tsx",
-      "file_type": "code",
-      "norm_label": "trajectorychartprops",
-      "source_file": "frontend/src/components/TrajectoryChart.tsx",
-      "source_location": "L3"
     },
     {
       "id": "frontend_src_components_motion_text_reveal_splitmode",
@@ -738,7 +751,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 44,
-      "community_name": "ease.ts",
+      "community_name": "expanding-arrow-button.tsx",
       "file_type": "code",
       "norm_label": "finalctaprops",
       "source_file": "frontend/src/components/FinalCTA.tsx",
@@ -751,24 +764,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 44,
-      "community_name": "ease.ts",
+      "community_name": "expanding-arrow-button.tsx",
       "file_type": "code",
       "norm_label": "expandingarrowbuttonprops",
       "source_file": "frontend/src/components/motion/expanding-arrow-button.tsx",
       "source_location": "L16"
-    },
-    {
-      "id": "frontend_src_components_motion_shared_layout_bg_sharedlayoutbgprops",
-      "label": "SharedLayoutBgProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "sharedlayoutbgprops",
-      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
-      "source_location": "L27"
     },
     {
       "id": "frontend_src_components_motion_tilt_card_tiltcardprops",
@@ -777,11 +777,37 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 44,
-      "community_name": "ease.ts",
+      "community_name": "expanding-arrow-button.tsx",
       "file_type": "code",
       "norm_label": "tiltcardprops",
       "source_file": "frontend/src/components/motion/tilt-card.tsx",
       "source_location": "L16"
+    },
+    {
+      "id": "frontend_src_components_header_headerprops",
+      "label": "HeaderProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "framer-motion",
+      "file_type": "code",
+      "norm_label": "headerprops",
+      "source_file": "frontend/src/components/Header.tsx",
+      "source_location": "L14"
+    },
+    {
+      "id": "frontend_src_components_motion_shared_layout_bg_sharedlayoutbgprops",
+      "label": "SharedLayoutBgProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "framer-motion",
+      "file_type": "code",
+      "norm_label": "sharedlayoutbgprops",
+      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
+      "source_location": "L27"
     },
     {
       "id": "frontend_src_components_reactbits_blurtext_blurtextprops",
@@ -816,7 +842,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 54,
-      "community_name": "dlmm.py",
+      "community_name": "sensor.py",
       "file_type": "code",
       "norm_label": "parsedtransaction",
       "source_file": "core/sensor.py",
@@ -829,7 +855,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 54,
-      "community_name": "dlmm.py",
+      "community_name": "sensor.py",
       "file_type": "code",
       "norm_label": "sensoragent",
       "source_file": "core/sensor.py",
@@ -849,6 +875,32 @@
       "source_location": "L25"
     },
     {
+      "id": "core_dlmm_obligation",
+      "label": "Obligation",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": "obligation",
+      "source_file": "core/dlmm.py",
+      "source_location": "L10"
+    },
+    {
+      "id": "core_dlmm_receivable",
+      "label": "Receivable",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": "receivable",
+      "source_file": "core/dlmm.py",
+      "source_location": "L18"
+    },
+    {
       "id": "core_dlmm_scenario",
       "label": "Scenario",
       "_callable": true,
@@ -859,7 +911,20 @@
       "file_type": "code",
       "norm_label": "scenario",
       "source_file": "core/dlmm.py",
-      "source_location": "L39"
+      "source_location": "L51"
+    },
+    {
+      "id": "tests_test_dlmm_testdlmmcore",
+      "label": "TestDLMMCore",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": "testdlmmcore",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L14"
     },
     {
       "id": "core_advisor_advisoragent",
@@ -885,7 +950,7 @@
       "file_type": "code",
       "norm_label": "trajectoryresult",
       "source_file": "core/dlmm.py",
-      "source_location": "L48"
+      "source_location": "L60"
     },
     {
       "id": "frontend_src_components_motion_animated_toast_stack_animatedtoast",
@@ -992,6 +1057,42 @@
       "source_location": "L89"
     },
     {
+      "id": "api_server_get_agents_telemetry",
+      "label": "get_agents_telemetry()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.py",
+      "file_type": "code",
+      "norm_label": "get_agents_telemetry()",
+      "source_file": "api/server.py",
+      "source_location": "L309"
+    },
+    {
+      "id": "api_server_get_business_memories",
+      "label": "get_business_memories()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.py",
+      "file_type": "code",
+      "norm_label": "get_business_memories()",
+      "source_file": "api/server.py",
+      "source_location": "L305"
+    },
+    {
+      "id": "api_server_get_data_inbox",
+      "label": "get_data_inbox()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.py",
+      "file_type": "code",
+      "norm_label": "get_data_inbox()",
+      "source_file": "api/server.py",
+      "source_location": "L266"
+    },
+    {
       "id": "api_server_get_negotiate_script",
       "label": "get_negotiate_script()",
       "_callable": true,
@@ -1001,7 +1102,7 @@
       "file_type": "code",
       "norm_label": "get_negotiate_script()",
       "source_file": "api/server.py",
-      "source_location": "L168"
+      "source_location": "L183"
     },
     {
       "id": "api_server_get_nudge_script",
@@ -1013,7 +1114,19 @@
       "file_type": "code",
       "norm_label": "get_nudge_script()",
       "source_file": "api/server.py",
-      "source_location": "L164"
+      "source_location": "L179"
+    },
+    {
+      "id": "api_server_health_check",
+      "label": "health_check()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.py",
+      "file_type": "code",
+      "norm_label": "health_check()",
+      "source_file": "api/server.py",
+      "source_location": "L101"
     },
     {
       "id": "api_server_ingest_text",
@@ -1025,19 +1138,19 @@
       "file_type": "code",
       "norm_label": "ingest_text()",
       "source_file": "api/server.py",
-      "source_location": "L174"
+      "source_location": "L189"
     },
     {
-      "id": "api_server_load_initial_state",
-      "label": "load_initial_state()",
+      "id": "api_server_onboard_new_business",
+      "label": "onboard_new_business()",
       "_callable": true,
       "_origin": "ast",
       "community": 0,
       "community_name": "server.py",
       "file_type": "code",
-      "norm_label": "load_initial_state()",
+      "norm_label": "onboard_new_business()",
       "source_file": "api/server.py",
-      "source_location": "L43"
+      "source_location": "L212"
     },
     {
       "id": "api_server_reset_state",
@@ -1049,7 +1162,55 @@
       "file_type": "code",
       "norm_label": "reset_state()",
       "source_file": "api/server.py",
-      "source_location": "L197"
+      "source_location": "L333"
+    },
+    {
+      "id": "api_server_resolve_data_inbox_item",
+      "label": "resolve_data_inbox_item()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.py",
+      "file_type": "code",
+      "norm_label": "resolve_data_inbox_item()",
+      "source_file": "api/server.py",
+      "source_location": "L270"
+    },
+    {
+      "id": "api_server_serve_frontend_root",
+      "label": "serve_frontend_root()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.py",
+      "file_type": "code",
+      "norm_label": "serve_frontend_root()",
+      "source_file": "api/server.py",
+      "source_location": "L344"
+    },
+    {
+      "id": "api_server_serve_frontend_spa",
+      "label": "serve_frontend_spa()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.py",
+      "file_type": "code",
+      "norm_label": "serve_frontend_spa()",
+      "source_file": "api/server.py",
+      "source_location": "L348"
+    },
+    {
+      "id": "api_server_serve_placeholder",
+      "label": "serve_placeholder()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.py",
+      "file_type": "code",
+      "norm_label": "serve_placeholder()",
+      "source_file": "api/server.py",
+      "source_location": "L357"
     },
     {
       "id": "api_server_simulate_decision",
@@ -1061,19 +1222,31 @@
       "file_type": "code",
       "norm_label": "simulate_decision()",
       "source_file": "api/server.py",
-      "source_location": "L117"
+      "source_location": "L132"
     },
     {
-      "id": "frontend_src_components_herovisual3d_herovisual3d",
-      "label": "HeroVisual3D()",
+      "id": "frontend_src_components_howitworks_howitworks",
+      "label": "HowItWorks()",
       "_callable": true,
       "_origin": "ast",
       "community": 10,
       "community_name": "react",
       "file_type": "code",
-      "norm_label": "herovisual3d()",
-      "source_file": "frontend/src/components/HeroVisual3D.tsx",
-      "source_location": "L5"
+      "norm_label": "howitworks()",
+      "source_file": "frontend/src/components/HowItWorks.tsx",
+      "source_location": "L13"
+    },
+    {
+      "id": "frontend_src_components_reactbits_shinytext_shinytext",
+      "label": "ShinyText()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "shinytext()",
+      "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
+      "source_location": "L10"
     },
     {
       "id": "frontend_src_components_ui_jagausahalogo_jagausahalogo",
@@ -1124,16 +1297,28 @@
       "source_location": "L46"
     },
     {
-      "id": "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorview",
-      "label": "DashboardSimulatorView()",
+      "id": "frontend_src_components_trajectorychart_trajectorychart",
+      "label": "TrajectoryChart()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "BoardUIAgentThinking.tsx",
+      "file_type": "code",
+      "norm_label": "trajectorychart()",
+      "source_file": "frontend/src/components/TrajectoryChart.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "frontend_src_components_actionfeed_actionfeed",
+      "label": "ActionFeed()",
       "_callable": true,
       "_origin": "ast",
       "community": 16,
       "community_name": "DecisionStudio.tsx",
       "file_type": "code",
-      "norm_label": "dashboardsimulatorview()",
-      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
-      "source_location": "L26"
+      "norm_label": "actionfeed()",
+      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "source_location": "L17"
     },
     {
       "id": "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
@@ -1158,18 +1343,6 @@
       "norm_label": "decisionstudio()",
       "source_file": "frontend/src/components/DecisionStudio.tsx",
       "source_location": "L40"
-    },
-    {
-      "id": "frontend_src_components_howitworks_howitworks",
-      "label": "HowItWorks()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "howitworks()",
-      "source_file": "frontend/src/components/HowItWorks.tsx",
-      "source_location": "L13"
     },
     {
       "id": "frontend_src_components_simulationchatmodal_simulationchatmodal",
@@ -1340,42 +1513,6 @@
       "source_location": "L9"
     },
     {
-      "id": "frontend_src_components_actionfeed_actionfeed",
-      "label": "ActionFeed()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "actionfeed()",
-      "source_file": "frontend/src/components/ActionFeed.tsx",
-      "source_location": "L17"
-    },
-    {
-      "id": "frontend_src_components_dashboardpage_dashboardpage",
-      "label": "DashboardPage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "dashboardpage()",
-      "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L55"
-    },
-    {
-      "id": "frontend_src_components_faqsection_faqsection",
-      "label": "FAQSection()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "faqsection()",
-      "source_file": "frontend/src/components/FAQSection.tsx",
-      "source_location": "L5"
-    },
-    {
       "id": "frontend_src_components_featureagents_featureagents",
       "label": "FeatureAgents()",
       "_callable": true,
@@ -1400,18 +1537,6 @@
       "source_location": "L4"
     },
     {
-      "id": "frontend_src_components_header_header",
-      "label": "Header()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "header()",
-      "source_file": "frontend/src/components/Header.tsx",
-      "source_location": "L22"
-    },
-    {
       "id": "frontend_src_components_herosection_herosection",
       "label": "HeroSection()",
       "_callable": true,
@@ -1422,6 +1547,18 @@
       "norm_label": "herosection()",
       "source_file": "frontend/src/components/HeroSection.tsx",
       "source_location": "L16"
+    },
+    {
+      "id": "frontend_src_components_herovisual3d_herovisual3d",
+      "label": "HeroVisual3D()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "herovisual3d()",
+      "source_file": "frontend/src/components/HeroVisual3D.tsx",
+      "source_location": "L5"
     },
     {
       "id": "frontend_src_components_loginpage_loginpage",
@@ -1436,28 +1573,28 @@
       "source_location": "L12"
     },
     {
-      "id": "frontend_src_components_motion_tilt_card_tiltcard",
-      "label": "TiltCard()",
+      "id": "frontend_src_components_terminaldrawer_terminaldrawer",
+      "label": "TerminalDrawer()",
       "_callable": true,
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "tiltcard()",
-      "source_file": "frontend/src/components/motion/tilt-card.tsx",
-      "source_location": "L23"
+      "norm_label": "terminaldrawer()",
+      "source_file": "frontend/src/components/TerminalDrawer.tsx",
+      "source_location": "L11"
     },
     {
-      "id": "frontend_src_components_whatsappmodal_whatsappmodal",
-      "label": "WhatsAppModal()",
+      "id": "frontend_src_components_faqsection_faqsection",
+      "label": "FAQSection()",
       "_callable": true,
       "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
+      "community": 36,
+      "community_name": "bouncy-accordion.tsx",
       "file_type": "code",
-      "norm_label": "whatsappmodal()",
-      "source_file": "frontend/src/components/WhatsAppModal.tsx",
-      "source_location": "L16"
+      "norm_label": "faqsection()",
+      "source_file": "frontend/src/components/FAQSection.tsx",
+      "source_location": "L5"
     },
     {
       "id": "frontend_src_components_motion_bouncy_accordion_bouncyaccordion",
@@ -1472,18 +1609,6 @@
       "source_location": "L271"
     },
     {
-      "id": "frontend_src_components_motion_bouncy_accordion_bouncyaccordionrow",
-      "label": "BouncyAccordionRow()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "bouncy-accordion.tsx",
-      "file_type": "code",
-      "norm_label": "bouncyaccordionrow()",
-      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
-      "source_location": "L108"
-    },
-    {
       "id": "frontend_src_components_motion_bouncy_accordion_usecontrollableaccordionvalue",
       "label": "useControllableAccordionValue()",
       "_callable": true,
@@ -1496,18 +1621,6 @@
       "source_location": "L82"
     },
     {
-      "id": "frontend_src_components_terminaldrawer_terminaldrawer",
-      "label": "TerminalDrawer()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "animated-badge.tsx",
-      "file_type": "code",
-      "norm_label": "terminaldrawer()",
-      "source_file": "frontend/src/components/TerminalDrawer.tsx",
-      "source_location": "L11"
-    },
-    {
       "id": "frontend_src_components_motion_animated_toast_stack_animatedtoaststack",
       "label": "AnimatedToastStack()",
       "_callable": true,
@@ -1518,6 +1631,30 @@
       "norm_label": "animatedtoaststack()",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
       "source_location": "L252"
+    },
+    {
+      "id": "frontend_src_components_motion_bouncy_accordion_bouncyaccordionrow",
+      "label": "BouncyAccordionRow()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 38,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "bouncyaccordionrow()",
+      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
+      "source_location": "L108"
+    },
+    {
+      "id": "frontend_src_components_motion_command_palette_commandpalette",
+      "label": "CommandPalette()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 38,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "commandpalette()",
+      "source_file": "frontend/src/components/motion/command-palette.tsx",
+      "source_location": "L41"
     },
     {
       "id": "frontend_src_components_motion_marquee_marquee",
@@ -1544,28 +1681,40 @@
       "source_location": "L4"
     },
     {
-      "id": "frontend_src_components_motion_command_palette_commandpalette",
-      "label": "CommandPalette()",
+      "id": "frontend_src_components_motion_number_animatednumber",
+      "label": "AnimatedNumber()",
       "_callable": true,
       "_origin": "ast",
       "community": 39,
-      "community_name": "command-palette.tsx",
+      "community_name": "ease.ts",
       "file_type": "code",
-      "norm_label": "commandpalette()",
-      "source_file": "frontend/src/components/motion/command-palette.tsx",
-      "source_location": "L41"
+      "norm_label": "animatednumber()",
+      "source_file": "frontend/src/components/motion/number.tsx",
+      "source_location": "L17"
     },
     {
-      "id": "frontend_src_components_reactbits_shinytext_shinytext",
-      "label": "ShinyText()",
+      "id": "frontend_src_components_pulsecards_pulsecards",
+      "label": "PulseCards()",
       "_callable": true,
       "_origin": "ast",
-      "community": 40,
-      "community_name": "ShinyText.tsx",
+      "community": 39,
+      "community_name": "ease.ts",
       "file_type": "code",
-      "norm_label": "shinytext()",
-      "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
-      "source_location": "L10"
+      "norm_label": "pulsecards()",
+      "source_file": "frontend/src/components/PulseCards.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "frontend_src_components_whatsappmodal_whatsappmodal",
+      "label": "WhatsAppModal()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "whatsappmodal()",
+      "source_file": "frontend/src/components/WhatsAppModal.tsx",
+      "source_location": "L16"
     },
     {
       "id": "frontend_src_components_dashboard_dashboardagendaview_dashboardagendaview",
@@ -1592,6 +1741,54 @@
       "source_location": "L11"
     },
     {
+      "id": "frontend_src_components_dashboard_dashboardmemoryview_dashboardmemoryview",
+      "label": "DashboardMemoryView()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "DashboardPage.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardmemoryview()",
+      "source_file": "frontend/src/components/dashboard/DashboardMemoryView.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorview",
+      "label": "DashboardSimulatorView()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "DashboardPage.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardsimulatorview()",
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L26"
+    },
+    {
+      "id": "frontend_src_components_dashboardpage_dashboardpage",
+      "label": "DashboardPage()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "DashboardPage.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardpage()",
+      "source_file": "frontend/src/components/DashboardPage.tsx",
+      "source_location": "L59"
+    },
+    {
+      "id": "frontend_src_components_datainboxmodal_datainboxmodal",
+      "label": "DataInboxModal()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "DashboardPage.tsx",
+      "file_type": "code",
+      "norm_label": "datainboxmodal()",
+      "source_file": "frontend/src/components/DataInboxModal.tsx",
+      "source_location": "L33"
+    },
+    {
       "id": "frontend_src_components_motion_animated_badge_animatedbadge",
       "label": "AnimatedBadge()",
       "_callable": true,
@@ -1602,18 +1799,6 @@
       "norm_label": "animatedbadge()",
       "source_file": "frontend/src/components/motion/animated-badge.tsx",
       "source_location": "L125"
-    },
-    {
-      "id": "frontend_src_components_motion_number_animatednumber",
-      "label": "AnimatedNumber()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "DashboardPage.tsx",
-      "file_type": "code",
-      "norm_label": "animatednumber()",
-      "source_file": "frontend/src/components/motion/number.tsx",
-      "source_location": "L17"
     },
     {
       "id": "frontend_src_components_onboardingmodal_onboardingmodal",
@@ -1628,28 +1813,40 @@
       "source_location": "L35"
     },
     {
-      "id": "frontend_src_components_pulsecards_pulsecards",
-      "label": "PulseCards()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "DashboardPage.tsx",
-      "file_type": "code",
-      "norm_label": "pulsecards()",
-      "source_file": "frontend/src/components/PulseCards.tsx",
-      "source_location": "L17"
-    },
-    {
-      "id": "frontend_src_components_trajectorychart_trajectorychart",
-      "label": "TrajectoryChart()",
+      "id": "api_server_get_business_pulse",
+      "label": "get_business_pulse()",
       "_callable": true,
       "_origin": "ast",
       "community": 42,
-      "community_name": "TrajectoryChart.tsx",
+      "community_name": "calculate_safe_to_spend",
       "file_type": "code",
-      "norm_label": "trajectorychart()",
-      "source_file": "frontend/src/components/TrajectoryChart.tsx",
-      "source_location": "L12"
+      "norm_label": "get_business_pulse()",
+      "source_file": "api/server.py",
+      "source_location": "L111"
+    },
+    {
+      "id": "core_dlmm_calculate_safe_to_spend",
+      "label": "calculate_safe_to_spend()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "calculate_safe_to_spend",
+      "file_type": "code",
+      "norm_label": "calculate_safe_to_spend()",
+      "source_file": "core/dlmm.py",
+      "source_location": "L71"
+    },
+    {
+      "id": "tests_test_dlmm_testdlmmcore_test_safe_to_spend_exact_formula",
+      "label": ".test_safe_to_spend_exact_formula()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "calculate_safe_to_spend",
+      "file_type": "code",
+      "norm_label": ".test_safe_to_spend_exact_formula()",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L32"
     },
     {
       "id": "frontend_src_components_motion_text_reveal_textreveal",
@@ -1681,7 +1878,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 44,
-      "community_name": "ease.ts",
+      "community_name": "expanding-arrow-button.tsx",
       "file_type": "code",
       "norm_label": "finalcta()",
       "source_file": "frontend/src/components/FinalCTA.tsx",
@@ -1693,11 +1890,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 44,
-      "community_name": "ease.ts",
+      "community_name": "expanding-arrow-button.tsx",
       "file_type": "code",
       "norm_label": "dottedchevron()",
       "source_file": "frontend/src/components/motion/expanding-arrow-button.tsx",
       "source_location": "L25"
+    },
+    {
+      "id": "frontend_src_components_motion_tilt_card_tiltcard",
+      "label": "TiltCard()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "expanding-arrow-button.tsx",
+      "file_type": "code",
+      "norm_label": "tiltcard()",
+      "source_file": "frontend/src/components/motion/tilt-card.tsx",
+      "source_location": "L23"
     },
     {
       "id": "frontend_src_lib_hooks_use_hover_capable_usehovercapable",
@@ -1705,11 +1914,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 44,
-      "community_name": "ease.ts",
+      "community_name": "expanding-arrow-button.tsx",
       "file_type": "code",
       "norm_label": "usehovercapable()",
       "source_file": "frontend/src/lib/hooks/use-hover-capable.ts",
       "source_location": "L3"
+    },
+    {
+      "id": "frontend_src_components_header_header",
+      "label": "Header()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "framer-motion",
+      "file_type": "code",
+      "norm_label": "header()",
+      "source_file": "frontend/src/components/Header.tsx",
+      "source_location": "L22"
     },
     {
       "id": "frontend_src_components_reactbits_blurtext_blurtext",
@@ -1736,24 +1957,12 @@
       "source_location": "L12"
     },
     {
-      "id": "core_dlmm_calculate_runway",
-      "label": "calculate_runway()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "dlmm.py",
-      "file_type": "code",
-      "norm_label": "calculate_runway()",
-      "source_file": "core/dlmm.py",
-      "source_location": "L77"
-    },
-    {
       "id": "core_sensor_sensoragent_init",
       "label": ".__init__()",
       "_callable": true,
       "_origin": "ast",
       "community": 54,
-      "community_name": "dlmm.py",
+      "community_name": "sensor.py",
       "file_type": "code",
       "norm_label": ".__init__()",
       "source_file": "core/sensor.py",
@@ -1765,47 +1974,35 @@
       "_callable": true,
       "_origin": "ast",
       "community": 54,
-      "community_name": "dlmm.py",
+      "community_name": "sensor.py",
       "file_type": "code",
       "norm_label": ".parse_bca_mutation_text()",
       "source_file": "core/sensor.py",
       "source_location": "L32"
     },
     {
-      "id": "core_sensor_sensoragent_parse_whatsapp_note",
-      "label": ".parse_whatsapp_note()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "dlmm.py",
-      "file_type": "code",
-      "norm_label": ".parse_whatsapp_note()",
-      "source_file": "core/sensor.py",
-      "source_location": "L90"
-    },
-    {
-      "id": "api_server_get_business_pulse",
-      "label": "get_business_pulse()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 56,
-      "community_name": "simulate_trajectory",
-      "file_type": "code",
-      "norm_label": "get_business_pulse()",
-      "source_file": "api/server.py",
-      "source_location": "L96"
-    },
-    {
       "id": "cli_demo_print_banner",
       "label": "print_banner()",
       "_callable": true,
       "_origin": "ast",
-      "community": 56,
-      "community_name": "simulate_trajectory",
+      "community": 55,
+      "community_name": "cli_demo.py",
       "file_type": "code",
       "norm_label": "print_banner()",
       "source_file": "cli_demo.py",
       "source_location": "L24"
+    },
+    {
+      "id": "api_server_load_initial_state",
+      "label": "load_initial_state()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": "load_initial_state()",
+      "source_file": "api/server.py",
+      "source_location": "L43"
     },
     {
       "id": "cli_demo_run_cli",
@@ -1829,19 +2026,43 @@
       "file_type": "code",
       "norm_label": ".net_daily_operating_cash()",
       "source_file": "core/dlmm.py",
-      "source_location": "L35"
+      "source_location": "L36"
     },
     {
-      "id": "core_dlmm_calculate_safe_to_spend",
-      "label": "calculate_safe_to_spend()",
+      "id": "core_dlmm_calculate_prive_leakage",
+      "label": "calculate_prive_leakage()",
       "_callable": true,
       "_origin": "ast",
       "community": 56,
       "community_name": "simulate_trajectory",
       "file_type": "code",
-      "norm_label": "calculate_safe_to_spend()",
+      "norm_label": "calculate_prive_leakage()",
       "source_file": "core/dlmm.py",
-      "source_location": "L59"
+      "source_location": "L220"
+    },
+    {
+      "id": "core_dlmm_calculate_runway",
+      "label": "calculate_runway()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": "calculate_runway()",
+      "source_file": "core/dlmm.py",
+      "source_location": "L89"
+    },
+    {
+      "id": "core_dlmm_run_fire_drill",
+      "label": "run_fire_drill()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": "run_fire_drill()",
+      "source_file": "core/dlmm.py",
+      "source_location": "L185"
     },
     {
       "id": "core_dlmm_simulate_trajectory",
@@ -1853,7 +2074,79 @@
       "file_type": "code",
       "norm_label": "simulate_trajectory()",
       "source_file": "core/dlmm.py",
-      "source_location": "L82"
+      "source_location": "L94"
+    },
+    {
+      "id": "tests_test_dlmm_testdlmmcore_setup",
+      "label": ".setUp()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": ".setup()",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L15"
+    },
+    {
+      "id": "tests_test_dlmm_testdlmmcore_test_cash_outflow_insolvency_detection",
+      "label": ".test_cash_outflow_insolvency_detection()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": ".test_cash_outflow_insolvency_detection()",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L45"
+    },
+    {
+      "id": "tests_test_dlmm_testdlmmcore_test_fire_drill_shocks",
+      "label": ".test_fire_drill_shocks()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": ".test_fire_drill_shocks()",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L60"
+    },
+    {
+      "id": "tests_test_dlmm_testdlmmcore_test_prive_leakage_detection",
+      "label": ".test_prive_leakage_detection()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": ".test_prive_leakage_detection()",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L66"
+    },
+    {
+      "id": "tests_test_dlmm_testdlmmcore_test_restructured_dp_is_safe",
+      "label": ".test_restructured_dp_is_safe()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": ".test_restructured_dp_is_safe()",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L53"
+    },
+    {
+      "id": "tests_test_dlmm_testdlmmcore_test_seasonality_multipliers",
+      "label": ".test_seasonality_multipliers()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": ".test_seasonality_multipliers()",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L38"
     },
     {
       "id": "core_advisor_advisoragent_formulate_simulation_advisory",
@@ -1904,52 +2197,28 @@
       "source_location": "L19"
     },
     {
-      "id": "api_server_health_check",
-      "label": "health_check()",
+      "id": "core_sensor_sensoragent_parse_whatsapp_note",
+      "label": ".parse_whatsapp_note()",
       "_callable": true,
       "_origin": "ast",
       "community": 59,
-      "community_name": "get",
+      "community_name": ".parse_whatsapp_note",
       "file_type": "code",
-      "norm_label": "health_check()",
-      "source_file": "api/server.py",
-      "source_location": "L86"
+      "norm_label": ".parse_whatsapp_note()",
+      "source_file": "core/sensor.py",
+      "source_location": "L90"
     },
     {
-      "id": "api_server_serve_frontend_root",
-      "label": "serve_frontend_root()",
+      "id": "core_dlmm_businessstate_get_day_inflow_multiplier",
+      "label": ".get_day_inflow_multiplier()",
       "_callable": true,
       "_origin": "ast",
-      "community": 59,
-      "community_name": "get",
+      "community": 66,
+      "community_name": ".get_day_inflow_multiplier",
       "file_type": "code",
-      "norm_label": "serve_frontend_root()",
-      "source_file": "api/server.py",
-      "source_location": "L208"
-    },
-    {
-      "id": "api_server_serve_frontend_spa",
-      "label": "serve_frontend_spa()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 59,
-      "community_name": "get",
-      "file_type": "code",
-      "norm_label": "serve_frontend_spa()",
-      "source_file": "api/server.py",
-      "source_location": "L212"
-    },
-    {
-      "id": "api_server_serve_placeholder",
-      "label": "serve_placeholder()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 59,
-      "community_name": "get",
-      "file_type": "code",
-      "norm_label": "serve_placeholder()",
-      "source_file": "api/server.py",
-      "source_location": "L221"
+      "norm_label": ".get_day_inflow_multiplier()",
+      "source_file": "core/dlmm.py",
+      "source_location": "L39"
     },
     {
       "id": "frontend_src_app_app",
@@ -2006,6 +2275,17 @@
       "community_name": "server.py",
       "file_type": "code",
       "norm_label": "basemodel",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "get",
+      "label": "get",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.py",
+      "file_type": "code",
+      "norm_label": "get",
       "source_file": "",
       "source_location": ""
     },
@@ -2211,36 +2491,14 @@
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_header",
-      "label": "Header.tsx",
+      "id": "frontend_src_components_howitworks",
+      "label": "HowItWorks.tsx",
       "_origin": "ast",
       "community": 10,
       "community_name": "react",
       "file_type": "code",
-      "norm_label": "header.tsx",
-      "source_file": "frontend/src/components/Header.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_herosection",
-      "label": "HeroSection.tsx",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "herosection.tsx",
-      "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_herovisual3d",
-      "label": "HeroVisual3D.tsx",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "herovisual3d.tsx",
-      "source_file": "frontend/src/components/HeroVisual3D.tsx",
+      "norm_label": "howitworks.tsx",
+      "source_file": "frontend/src/components/HowItWorks.tsx",
       "source_location": "L1"
     },
     {
@@ -2255,26 +2513,37 @@
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_motion_button",
-      "label": "button.tsx",
+      "id": "frontend_src_components_motion_input",
+      "label": "input.tsx",
       "_origin": "ast",
       "community": 10,
       "community_name": "react",
       "file_type": "code",
-      "norm_label": "button.tsx",
-      "source_file": "frontend/src/components/motion/button.tsx",
+      "norm_label": "input.tsx",
+      "source_file": "frontend/src/components/motion/input.tsx",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_motion_button_motionbutton",
-      "label": "MotionButton",
+      "id": "frontend_src_components_motion_input_input",
+      "label": "Input",
       "_origin": "ast",
       "community": 10,
       "community_name": "react",
       "file_type": "code",
-      "norm_label": "motionbutton",
-      "source_file": "frontend/src/components/motion/button.tsx",
-      "source_location": "L17"
+      "norm_label": "input",
+      "source_file": "frontend/src/components/motion/input.tsx",
+      "source_location": "L51"
+    },
+    {
+      "id": "frontend_src_components_reactbits_shinytext",
+      "label": "ShinyText.tsx",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "shinytext.tsx",
+      "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
+      "source_location": "L1"
     },
     {
       "id": "frontend_src_components_ui_jagausahalogo",
@@ -2688,6 +2957,17 @@
       "source_location": "L1"
     },
     {
+      "id": "frontend_src_components_trajectorychart",
+      "label": "TrajectoryChart.tsx",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "BoardUIAgentThinking.tsx",
+      "file_type": "code",
+      "norm_label": "trajectorychart.tsx",
+      "source_file": "frontend/src/components/TrajectoryChart.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "claude_skills_graphify_references_query",
       "label": "query.md",
       "_origin": "ast",
@@ -2760,14 +3040,25 @@
       "source_location": "L61"
     },
     {
-      "id": "frontend_src_components_dashboard_dashboardsimulatorview",
-      "label": "DashboardSimulatorView.tsx",
+      "id": "frontend_src_components_actionfeed",
+      "label": "ActionFeed.tsx",
       "_origin": "ast",
       "community": 16,
       "community_name": "DecisionStudio.tsx",
       "file_type": "code",
-      "norm_label": "dashboardsimulatorview.tsx",
-      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "norm_label": "actionfeed.tsx",
+      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_decisionintelligencecard",
+      "label": "DecisionIntelligenceCard.tsx",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "decisionintelligencecard.tsx",
+      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
       "source_location": "L1"
     },
     {
@@ -2782,37 +3073,26 @@
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_howitworks",
-      "label": "HowItWorks.tsx",
+      "id": "frontend_src_components_motion_button",
+      "label": "button.tsx",
       "_origin": "ast",
       "community": 16,
       "community_name": "DecisionStudio.tsx",
       "file_type": "code",
-      "norm_label": "howitworks.tsx",
-      "source_file": "frontend/src/components/HowItWorks.tsx",
+      "norm_label": "button.tsx",
+      "source_file": "frontend/src/components/motion/button.tsx",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_motion_input",
-      "label": "input.tsx",
+      "id": "frontend_src_components_motion_button_motionbutton",
+      "label": "MotionButton",
       "_origin": "ast",
       "community": 16,
       "community_name": "DecisionStudio.tsx",
       "file_type": "code",
-      "norm_label": "input.tsx",
-      "source_file": "frontend/src/components/motion/input.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_motion_input_input",
-      "label": "Input",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "input",
-      "source_file": "frontend/src/components/motion/input.tsx",
-      "source_location": "L51"
+      "norm_label": "motionbutton",
+      "source_file": "frontend/src/components/motion/button.tsx",
+      "source_location": "L17"
     },
     {
       "id": "frontend_src_components_simulationchatmodal",
@@ -4118,28 +4398,6 @@
       "source_location": "L44"
     },
     {
-      "id": "frontend_src_components_actionfeed",
-      "label": "ActionFeed.tsx",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "actionfeed.tsx",
-      "source_file": "frontend/src/components/ActionFeed.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_faqsection",
-      "label": "FAQSection.tsx",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "faqsection.tsx",
-      "source_file": "frontend/src/components/FAQSection.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "frontend_src_components_featureagents",
       "label": "FeatureAgents.tsx",
       "_origin": "ast",
@@ -4151,26 +4409,37 @@
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_whatsappmodal",
-      "label": "WhatsAppModal.tsx",
+      "id": "frontend_src_components_herosection",
+      "label": "HeroSection.tsx",
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "whatsappmodal.tsx",
-      "source_file": "frontend/src/components/WhatsAppModal.tsx",
+      "norm_label": "herosection.tsx",
+      "source_file": "frontend/src/components/HeroSection.tsx",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_lib_ease_spring_press",
-      "label": "SPRING_PRESS",
+      "id": "frontend_src_components_herovisual3d",
+      "label": "HeroVisual3D.tsx",
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "spring_press",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L8"
+      "norm_label": "herovisual3d.tsx",
+      "source_file": "frontend/src/components/HeroVisual3D.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_terminaldrawer",
+      "label": "TerminalDrawer.tsx",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "terminaldrawer.tsx",
+      "source_file": "frontend/src/components/TerminalDrawer.tsx",
+      "source_location": "L1"
     },
     {
       "id": "ref_gsap",
@@ -4193,6 +4462,17 @@
       "norm_label": "lucide-react",
       "source_file": "frontend/package.json",
       "source_location": "L17"
+    },
+    {
+      "id": "frontend_src_components_faqsection",
+      "label": "FAQSection.tsx",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "bouncy-accordion.tsx",
+      "file_type": "code",
+      "norm_label": "faqsection.tsx",
+      "source_file": "frontend/src/components/FAQSection.tsx",
+      "source_location": "L1"
     },
     {
       "id": "frontend_src_components_motion_bouncy_accordion",
@@ -4338,28 +4618,6 @@
       "source_location": "L105"
     },
     {
-      "id": "frontend_src_components_terminaldrawer",
-      "label": "TerminalDrawer.tsx",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "animated-badge.tsx",
-      "file_type": "code",
-      "norm_label": "terminaldrawer.tsx",
-      "source_file": "frontend/src/components/TerminalDrawer.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_lib_ease_ease_out",
-      "label": "EASE_OUT",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "animated-badge.tsx",
-      "file_type": "code",
-      "norm_label": "ease_out",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L2"
-    },
-    {
       "id": "frontend_src_components_motion_animated_toast_stack_toastitem",
       "label": "ToastItem",
       "_origin": "ast",
@@ -4369,6 +4627,28 @@
       "norm_label": "toastitem",
       "source_file": "frontend/src/components/motion/animated-toast-stack.tsx",
       "source_location": "L317"
+    },
+    {
+      "id": "frontend_src_components_motion_command_palette",
+      "label": "command-palette.tsx",
+      "_origin": "ast",
+      "community": 38,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "command-palette.tsx",
+      "source_file": "frontend/src/components/motion/command-palette.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_motion_command_palette_panel_spring",
+      "label": "PANEL_SPRING",
+      "_origin": "ast",
+      "community": 38,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "panel_spring",
+      "source_file": "frontend/src/components/motion/command-palette.tsx",
+      "source_location": "L34"
     },
     {
       "id": "frontend_src_components_motion_marquee",
@@ -4415,48 +4695,125 @@
       "source_location": "L21"
     },
     {
-      "id": "frontend_src_components_motion_command_palette",
-      "label": "command-palette.tsx",
+      "id": "frontend_src_components_motion_number",
+      "label": "number.tsx",
       "_origin": "ast",
       "community": 39,
-      "community_name": "command-palette.tsx",
+      "community_name": "ease.ts",
       "file_type": "code",
-      "norm_label": "command-palette.tsx",
-      "source_file": "frontend/src/components/motion/command-palette.tsx",
+      "norm_label": "number.tsx",
+      "source_file": "frontend/src/components/motion/number.tsx",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_motion_command_palette_panel_spring",
-      "label": "PANEL_SPRING",
+      "id": "frontend_src_components_pulsecards",
+      "label": "PulseCards.tsx",
       "_origin": "ast",
       "community": 39,
-      "community_name": "command-palette.tsx",
+      "community_name": "ease.ts",
       "file_type": "code",
-      "norm_label": "panel_spring",
-      "source_file": "frontend/src/components/motion/command-palette.tsx",
-      "source_location": "L34"
-    },
-    {
-      "id": "frontend_src_main",
-      "label": "main.tsx",
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "command-palette.tsx",
-      "file_type": "code",
-      "norm_label": "main.tsx",
-      "source_file": "frontend/src/main.tsx",
+      "norm_label": "pulsecards.tsx",
+      "source_file": "frontend/src/components/PulseCards.tsx",
       "source_location": "L1"
     },
     {
-      "id": "ref_react_dom",
-      "label": "react-dom",
+      "id": "frontend_src_components_whatsappmodal",
+      "label": "WhatsAppModal.tsx",
       "_origin": "ast",
       "community": 39,
-      "community_name": "command-palette.tsx",
-      "file_type": "concept",
-      "norm_label": "react-dom",
-      "source_file": "frontend/package.json",
-      "source_location": "L19"
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "whatsappmodal.tsx",
+      "source_file": "frontend/src/components/WhatsAppModal.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_lib_ease",
+      "label": "ease.ts",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "ease.ts",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_lib_ease_ease_drawer",
+      "label": "EASE_DRAWER",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "ease_drawer",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "frontend_src_lib_ease_ease_in_out",
+      "label": "EASE_IN_OUT",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "ease_in_out",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "frontend_src_lib_ease_ease_out",
+      "label": "EASE_OUT",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "ease_out",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L2"
+    },
+    {
+      "id": "frontend_src_lib_ease_ease_out_css",
+      "label": "EASE_OUT_CSS",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "ease_out_css",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "frontend_src_lib_ease_spring_glide",
+      "label": "SPRING_GLIDE",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "spring_glide",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L42"
+    },
+    {
+      "id": "frontend_src_lib_ease_spring_press",
+      "label": "SPRING_PRESS",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "spring_press",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "frontend_src_lib_ease_spring_swap",
+      "label": "SPRING_SWAP",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "ease.ts",
+      "file_type": "code",
+      "norm_label": "spring_swap",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L15"
     },
     {
       "id": "frontend_tsconfig_app",
@@ -4679,14 +5036,135 @@
       "source_location": "L25"
     },
     {
-      "id": "frontend_src_components_reactbits_shinytext",
-      "label": "ShinyText.tsx",
+      "id": "jagausaha_product_flow",
+      "label": "JAGAUSAHA_PRODUCT_FLOW.md",
       "_origin": "ast",
       "community": 40,
-      "community_name": "ShinyText.tsx",
-      "file_type": "code",
-      "norm_label": "shinytext.tsx",
-      "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
+      "community_name": "JagaUsaha \u2014 Canonical Product Flow & Business Architecture Specification",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "jagausaha_product_flow.md",
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "jagausaha_product_flow_1_product_north_star",
+      "label": "1. Product North Star",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "JagaUsaha \u2014 Canonical Product Flow & Business Architecture Specification",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. product north star",
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "jagausaha_product_flow_2_aktor_tanggung_jawab_sistem",
+      "label": "2. Aktor & Tanggung Jawab Sistem",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "JagaUsaha \u2014 Canonical Product Flow & Business Architecture Specification",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. aktor & tanggung jawab sistem",
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L12"
+    },
+    {
+      "id": "jagausaha_product_flow_3_end_to_end_lifecycle",
+      "label": "3. End-to-End Lifecycle",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "JagaUsaha \u2014 Canonical Product Flow & Business Architecture Specification",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. end-to-end lifecycle",
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L24"
+    },
+    {
+      "id": "jagausaha_product_flow_4_progressive_cold_start_onboarding_zero_historical_data",
+      "label": "4. Progressive Cold-Start Onboarding (Zero Historical Data)",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "JagaUsaha \u2014 Canonical Product Flow & Business Architecture Specification",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. progressive cold-start onboarding (zero historical data)",
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L53"
+    },
+    {
+      "id": "jagausaha_product_flow_5_formula_matematis_deterministik_dlmm_core",
+      "label": "5. Formula Matematis Deterministik (DLMM Core)",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "JagaUsaha \u2014 Canonical Product Flow & Business Architecture Specification",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. formula matematis deterministik (dlmm core)",
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L69"
+    },
+    {
+      "id": "jagausaha_product_flow_6_sinyal_anomali_to_kasus_risiko_riskcase",
+      "label": "6. Sinyal Anomali $\\to$ Kasus Risiko (*RiskCase*)",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "JagaUsaha \u2014 Canonical Product Flow & Business Architecture Specification",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "6. sinyal anomali $\\to$ kasus risiko (*riskcase*)",
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L80"
+    },
+    {
+      "id": "jagausaha_product_flow_7_data_confidence_data_inbox",
+      "label": "7. Data Confidence & Data Inbox",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "JagaUsaha \u2014 Canonical Product Flow & Business Architecture Specification",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "7. data confidence & data inbox",
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L87"
+    },
+    {
+      "id": "jagausaha_product_flow_8_human_approval_financial_safety",
+      "label": "8. Human Approval & Financial Safety",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "JagaUsaha \u2014 Canonical Product Flow & Business Architecture Specification",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "8. human approval & financial safety",
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L95"
+    },
+    {
+      "id": "jagausaha_product_flow_9_demo_data_standard_kopi_nusa",
+      "label": "9. Demo Data Standard: \"Kopi Nusa\"",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "JagaUsaha \u2014 Canonical Product Flow & Business Architecture Specification",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "9. demo data standard: \"kopi nusa\"",
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L103"
+    },
+    {
+      "id": "jagausaha_product_flow_jagausaha_canonical_product_flow_business_architecture_specification",
+      "label": "JagaUsaha \u2014 Canonical Product Flow & Business Architecture Specification",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "JagaUsaha \u2014 Canonical Product Flow & Business Architecture Specification",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "jagausaha \u2014 canonical product flow & business architecture specification",
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
       "source_location": "L1"
     },
     {
@@ -4712,6 +5190,28 @@
       "source_location": "L1"
     },
     {
+      "id": "frontend_src_components_dashboard_dashboardmemoryview",
+      "label": "DashboardMemoryView.tsx",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "DashboardPage.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardmemoryview.tsx",
+      "source_file": "frontend/src/components/dashboard/DashboardMemoryView.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_dashboard_dashboardsimulatorview",
+      "label": "DashboardSimulatorView.tsx",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "DashboardPage.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardsimulatorview.tsx",
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "frontend_src_components_dashboardpage",
       "label": "DashboardPage.tsx",
       "_origin": "ast",
@@ -4723,25 +5223,14 @@
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_decisionintelligencecard",
-      "label": "DecisionIntelligenceCard.tsx",
+      "id": "frontend_src_components_datainboxmodal",
+      "label": "DataInboxModal.tsx",
       "_origin": "ast",
       "community": 41,
       "community_name": "DashboardPage.tsx",
       "file_type": "code",
-      "norm_label": "decisionintelligencecard.tsx",
-      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_motion_number",
-      "label": "number.tsx",
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "DashboardPage.tsx",
-      "file_type": "code",
-      "norm_label": "number.tsx",
-      "source_file": "frontend/src/components/motion/number.tsx",
+      "norm_label": "datainboxmodal.tsx",
+      "source_file": "frontend/src/components/DataInboxModal.tsx",
       "source_location": "L1"
     },
     {
@@ -4756,26 +5245,27 @@
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_pulsecards",
-      "label": "PulseCards.tsx",
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "DashboardPage.tsx",
-      "file_type": "code",
-      "norm_label": "pulsecards.tsx",
-      "source_file": "frontend/src/components/PulseCards.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_trajectorychart",
-      "label": "TrajectoryChart.tsx",
+      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_13_agent_architecture_hermes_runtime_specification",
+      "label": "13. AGENT ARCHITECTURE (HERMES RUNTIME SPECIFICATION)",
       "_origin": "ast",
       "community": 42,
-      "community_name": "TrajectoryChart.tsx",
-      "file_type": "code",
-      "norm_label": "trajectorychart.tsx",
-      "source_file": "frontend/src/components/TrajectoryChart.tsx",
-      "source_location": "L1"
+      "community_name": "calculate_safe_to_spend",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "13. agent architecture (hermes runtime specification)",
+      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
+      "source_location": "L308"
+    },
+    {
+      "id": "core_dlmm_rationale_72",
+      "label": "Safe-to-Spend (\"Duit Dingin\"): Cash - Committed Obligations(window) +\u2026",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "calculate_safe_to_spend",
+      "file_type": "rationale",
+      "norm_label": "safe-to-spend (\"duit dingin\"): cash - committed obligations(window) +...",
+      "source_file": "core/dlmm.py",
+      "source_location": "L72"
     },
     {
       "id": "frontend_src_components_motion_text_reveal",
@@ -4804,7 +5294,7 @@
       "label": "FinalCTA.tsx",
       "_origin": "ast",
       "community": 44,
-      "community_name": "ease.ts",
+      "community_name": "expanding-arrow-button.tsx",
       "file_type": "code",
       "norm_label": "finalcta.tsx",
       "source_file": "frontend/src/components/FinalCTA.tsx",
@@ -4815,7 +5305,7 @@
       "label": "expanding-arrow-button.tsx",
       "_origin": "ast",
       "community": 44,
-      "community_name": "ease.ts",
+      "community_name": "expanding-arrow-button.tsx",
       "file_type": "code",
       "norm_label": "expanding-arrow-button.tsx",
       "source_file": "frontend/src/components/motion/expanding-arrow-button.tsx",
@@ -4826,7 +5316,7 @@
       "label": "ARROW_OPACITY",
       "_origin": "ast",
       "community": 44,
-      "community_name": "ease.ts",
+      "community_name": "expanding-arrow-button.tsx",
       "file_type": "code",
       "norm_label": "arrow_opacity",
       "source_file": "frontend/src/components/motion/expanding-arrow-button.tsx",
@@ -4837,161 +5327,40 @@
       "label": "ExpandingArrowButton",
       "_origin": "ast",
       "community": 44,
-      "community_name": "ease.ts",
+      "community_name": "expanding-arrow-button.tsx",
       "file_type": "code",
       "norm_label": "expandingarrowbutton",
       "source_file": "frontend/src/components/motion/expanding-arrow-button.tsx",
       "source_location": "L42"
     },
     {
-      "id": "frontend_src_components_motion_shared_layout_bg",
-      "label": "shared-layout-bg.tsx",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "shared-layout-bg.tsx",
-      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_motion_shared_layout_bg_reducedvariants",
-      "label": "reducedVariants",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "reducedvariants",
-      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
-      "source_location": "L41"
-    },
-    {
-      "id": "frontend_src_components_motion_shared_layout_bg_sharedlayoutbg",
-      "label": "SharedLayoutBg",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "sharedlayoutbg",
-      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
-      "source_location": "L47"
-    },
-    {
-      "id": "frontend_src_components_motion_shared_layout_bg_variants",
-      "label": "variants",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "variants",
-      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
-      "source_location": "L35"
-    },
-    {
       "id": "frontend_src_components_motion_tilt_card",
       "label": "tilt-card.tsx",
       "_origin": "ast",
       "community": 44,
-      "community_name": "ease.ts",
+      "community_name": "expanding-arrow-button.tsx",
       "file_type": "code",
       "norm_label": "tilt-card.tsx",
       "source_file": "frontend/src/components/motion/tilt-card.tsx",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_lib_ease",
-      "label": "ease.ts",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "ease.ts",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_lib_ease_ease_drawer",
-      "label": "EASE_DRAWER",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "ease_drawer",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L4"
-    },
-    {
-      "id": "frontend_src_lib_ease_ease_in_out",
-      "label": "EASE_IN_OUT",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "ease_in_out",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L3"
-    },
-    {
-      "id": "frontend_src_lib_ease_ease_out_css",
-      "label": "EASE_OUT_CSS",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "ease_out_css",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L6"
-    },
-    {
-      "id": "frontend_src_lib_ease_spring_glide",
-      "label": "SPRING_GLIDE",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "spring_glide",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L42"
-    },
-    {
-      "id": "frontend_src_lib_ease_spring_layout",
-      "label": "SPRING_LAYOUT",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "spring_layout",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L29"
-    },
-    {
       "id": "frontend_src_lib_ease_spring_mouse",
       "label": "SPRING_MOUSE",
       "_origin": "ast",
       "community": 44,
-      "community_name": "ease.ts",
+      "community_name": "expanding-arrow-button.tsx",
       "file_type": "code",
       "norm_label": "spring_mouse",
       "source_file": "frontend/src/lib/ease.ts",
       "source_location": "L36"
     },
     {
-      "id": "frontend_src_lib_ease_spring_swap",
-      "label": "SPRING_SWAP",
-      "_origin": "ast",
-      "community": 44,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "spring_swap",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L15"
-    },
-    {
       "id": "frontend_src_lib_hooks_use_hover_capable",
       "label": "use-hover-capable.ts",
       "_origin": "ast",
       "community": 44,
-      "community_name": "ease.ts",
+      "community_name": "expanding-arrow-button.tsx",
       "file_type": "code",
       "norm_label": "use-hover-capable.ts",
       "source_file": "frontend/src/lib/hooks/use-hover-capable.ts",
@@ -5070,6 +5439,61 @@
       "source_location": "L728"
     },
     {
+      "id": "frontend_src_components_header",
+      "label": "Header.tsx",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "framer-motion",
+      "file_type": "code",
+      "norm_label": "header.tsx",
+      "source_file": "frontend/src/components/Header.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_motion_shared_layout_bg",
+      "label": "shared-layout-bg.tsx",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "framer-motion",
+      "file_type": "code",
+      "norm_label": "shared-layout-bg.tsx",
+      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_motion_shared_layout_bg_reducedvariants",
+      "label": "reducedVariants",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "framer-motion",
+      "file_type": "code",
+      "norm_label": "reducedvariants",
+      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
+      "source_location": "L41"
+    },
+    {
+      "id": "frontend_src_components_motion_shared_layout_bg_sharedlayoutbg",
+      "label": "SharedLayoutBg",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "framer-motion",
+      "file_type": "code",
+      "norm_label": "sharedlayoutbg",
+      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
+      "source_location": "L47"
+    },
+    {
+      "id": "frontend_src_components_motion_shared_layout_bg_variants",
+      "label": "variants",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "framer-motion",
+      "file_type": "code",
+      "norm_label": "variants",
+      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
+      "source_location": "L35"
+    },
+    {
       "id": "frontend_src_components_reactbits_blurtext",
       "label": "BlurText.tsx",
       "_origin": "ast",
@@ -5090,6 +5514,17 @@
       "norm_label": "magnet.tsx",
       "source_file": "frontend/src/components/reactbits/Magnet.tsx",
       "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_lib_ease_spring_layout",
+      "label": "SPRING_LAYOUT",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "framer-motion",
+      "file_type": "code",
+      "norm_label": "spring_layout",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L29"
     },
     {
       "id": "ref_framer_motion",
@@ -5578,47 +6013,14 @@
       "source_location": "L405"
     },
     {
-      "id": "core_dlmm",
-      "label": "dlmm.py",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "dlmm.py",
-      "file_type": "code",
-      "norm_label": "dlmm.py",
-      "source_file": "core/dlmm.py",
-      "source_location": "L1"
-    },
-    {
       "id": "core_sensor",
       "label": "sensor.py",
       "_origin": "ast",
       "community": 54,
-      "community_name": "dlmm.py",
+      "community_name": "sensor.py",
       "file_type": "code",
       "norm_label": "sensor.py",
       "source_file": "core/sensor.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "core_sensor_py_any",
-      "label": "Any",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "dlmm.py",
-      "file_type": "code",
-      "norm_label": "any",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "core_dlmm_rationale_1",
-      "label": "Dynamic Liquidity & Margin Model (DLMM) Deterministic Financial Simulation Core\u2026",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "dlmm.py",
-      "file_type": "rationale",
-      "norm_label": "dynamic liquidity & margin model (dlmm) deterministic financial simulation core...",
-      "source_file": "core/dlmm.py",
       "source_location": "L1"
     },
     {
@@ -5626,7 +6028,7 @@
       "label": "Sensor Agent & Multimodal Ingestion Module for JagaUsaha. Parses Indonesian\u2026",
       "_origin": "ast",
       "community": 54,
-      "community_name": "dlmm.py",
+      "community_name": "sensor.py",
       "file_type": "rationale",
       "norm_label": "sensor agent & multimodal ingestion module for jagausaha. parses indonesian...",
       "source_file": "core/sensor.py",
@@ -5637,22 +6039,11 @@
       "label": "Parses standard KlikBCA / m-BCA text export. Example lines: 20/09 TRSF\u2026",
       "_origin": "ast",
       "community": 54,
-      "community_name": "dlmm.py",
+      "community_name": "sensor.py",
       "file_type": "rationale",
       "norm_label": "parses standard klikbca / m-bca text export. example lines: 20/09 trsf...",
       "source_file": "core/sensor.py",
       "source_location": "L33"
-    },
-    {
-      "id": "core_sensor_rationale_91",
-      "label": "Parses natural conversational WhatsApp voice-to-text notes from the owner.\u2026",
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "dlmm.py",
-      "file_type": "rationale",
-      "norm_label": "parses natural conversational whatsapp voice-to-text notes from the owner....",
-      "source_file": "core/sensor.py",
-      "source_location": "L91"
     },
     {
       "id": "cli_demo",
@@ -5699,30 +6090,62 @@
       "source_location": "L1"
     },
     {
-      "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_13_agent_architecture_hermes_runtime_specification",
-      "label": "13. AGENT ARCHITECTURE (HERMES RUNTIME SPECIFICATION)",
+      "id": "core_dlmm",
+      "label": "dlmm.py",
       "_origin": "ast",
       "community": 56,
       "community_name": "simulate_trajectory",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "13. agent architecture (hermes runtime specification)",
-      "source_file": ".hermes/plans/2026-09-24_jagausaha-master-architecture-plan.md",
-      "source_location": "L308"
+      "file_type": "code",
+      "norm_label": "dlmm.py",
+      "source_file": "core/dlmm.py",
+      "source_location": "L1"
     },
     {
-      "id": "core_dlmm_rationale_60",
-      "label": "Safe-to-Spend (\"Duit Dingin\"): Cash - Committed Obligations(window) +\u2026",
+      "id": "tests_test_dlmm",
+      "label": "test_dlmm.py",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "code",
+      "norm_label": "test_dlmm.py",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "core_dlmm_rationale_1",
+      "label": "Dynamic Liquidity & Margin Model (DLMM) Deterministic Financial Simulation Core\u2026",
       "_origin": "ast",
       "community": 56,
       "community_name": "simulate_trajectory",
       "file_type": "rationale",
-      "norm_label": "safe-to-spend (\"duit dingin\"): cash - committed obligations(window) +...",
+      "norm_label": "dynamic liquidity & margin model (dlmm) deterministic financial simulation core...",
       "source_file": "core/dlmm.py",
-      "source_location": "L60"
+      "source_location": "L1"
     },
     {
-      "id": "core_dlmm_rationale_83",
+      "id": "core_dlmm_rationale_186",
+      "label": "Business Fire Drill: 2 automated stress tests 1. Drop revenue by 20% 2. Zero\u2026",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "rationale",
+      "norm_label": "business fire drill: 2 automated stress tests 1. drop revenue by 20% 2. zero...",
+      "source_file": "core/dlmm.py",
+      "source_location": "L186"
+    },
+    {
+      "id": "core_dlmm_rationale_221",
+      "label": "Detects personal withdrawals exceeding healthy operating threshold (>35% gross\u2026",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "file_type": "rationale",
+      "norm_label": "detects personal withdrawals exceeding healthy operating threshold (>35% gross...",
+      "source_file": "core/dlmm.py",
+      "source_location": "L221"
+    },
+    {
+      "id": "core_dlmm_rationale_95",
       "label": "Simulate day-by-day cash evolution across specified horizon. Compares baseline\u2026",
       "_origin": "ast",
       "community": 56,
@@ -5730,7 +6153,7 @@
       "file_type": "rationale",
       "norm_label": "simulate day-by-day cash evolution across specified horizon. compares baseline...",
       "source_file": "core/dlmm.py",
-      "source_location": "L83"
+      "source_location": "L95"
     },
     {
       "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan_10_ask_jagausaha_asisten_konsultasi_finansial_kontekstual",
@@ -5909,15 +6332,26 @@
       "source_location": "L84"
     },
     {
-      "id": "get",
-      "label": "get",
+      "id": "core_sensor_py_any",
+      "label": "Any",
       "_origin": "ast",
       "community": 59,
-      "community_name": "get",
+      "community_name": ".parse_whatsapp_note",
       "file_type": "code",
-      "norm_label": "get",
+      "norm_label": "any",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "core_sensor_rationale_91",
+      "label": "Parses natural conversational WhatsApp voice-to-text notes from the owner.\u2026",
+      "_origin": "ast",
+      "community": 59,
+      "community_name": ".parse_whatsapp_note",
+      "file_type": "rationale",
+      "norm_label": "parses natural conversational whatsapp voice-to-text notes from the owner....",
+      "source_file": "core/sensor.py",
+      "source_location": "L91"
     },
     {
       "id": "hermes_plans_2026_09_24_jagausaha_master_architecture_plan",
@@ -6448,6 +6882,17 @@
       "source_location": "L111"
     },
     {
+      "id": "core_dlmm_rationale_40",
+      "label": "Seasonality Curve for Indonesian F&B and Retail: Day % 7 in [5, 6] (Saturday &\u2026",
+      "_origin": "ast",
+      "community": 66,
+      "community_name": ".get_day_inflow_multiplier",
+      "file_type": "rationale",
+      "norm_label": "seasonality curve for indonesian f&b and retail: day % 7 in [5, 6] (saturday &...",
+      "source_file": "core/dlmm.py",
+      "source_location": "L40"
+    },
+    {
       "id": "claude_skills_graphify_skill",
       "label": "SKILL.md",
       "_origin": "ast",
@@ -6831,6 +7276,28 @@
       "source_location": "L102"
     },
     {
+      "id": "frontend_src_main",
+      "label": "main.tsx",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "animated-toast-stack.tsx",
+      "file_type": "code",
+      "norm_label": "main.tsx",
+      "source_file": "frontend/src/main.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "ref_react_dom",
+      "label": "react-dom",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "animated-toast-stack.tsx",
+      "file_type": "concept",
+      "norm_label": "react-dom",
+      "source_file": "frontend/package.json",
+      "source_location": "L19"
+    },
+    {
       "id": "jagausaha_strategy_spec_18_final_product_synthesis",
       "label": "18. FINAL PRODUCT SYNTHESIS",
       "_origin": "ast",
@@ -7167,23 +7634,11 @@
       "type": "external"
     },
     {
-      "id": "frontend_src_index",
-      "label": "frontend_src_index",
-      "_origin": "semantic",
-      "community": 39,
-      "community_name": "command-palette.tsx",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "frontend_src_index",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "dataclasses",
       "label": "dataclasses",
       "_origin": "semantic",
       "community": 54,
-      "community_name": "dlmm.py",
+      "community_name": "sensor.py",
       "external": true,
       "file_type": "concept",
       "norm_label": "dataclasses",
@@ -7195,7 +7650,7 @@
       "label": "re",
       "_origin": "semantic",
       "community": 54,
-      "community_name": "dlmm.py",
+      "community_name": "sensor.py",
       "external": true,
       "file_type": "concept",
       "norm_label": "re",
@@ -7207,7 +7662,7 @@
       "label": "typing",
       "_origin": "semantic",
       "community": 54,
-      "community_name": "dlmm.py",
+      "community_name": "sensor.py",
       "external": true,
       "file_type": "concept",
       "norm_label": "typing",
@@ -7309,6 +7764,29 @@
       "norm_label": "time",
       "source_file": "",
       "type": "external"
+    },
+    {
+      "id": "frontend_src_index",
+      "label": "frontend_src_index",
+      "_origin": "semantic",
+      "community": 8,
+      "community_name": "animated-toast-stack.tsx",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "frontend_src_index",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "unittest",
+      "label": "unittest",
+      "community": 56,
+      "community_name": "simulate_trajectory",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "unittest",
+      "source_file": "",
+      "type": "external"
     }
   ],
   "links": [
@@ -7321,7 +7799,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "api/server.py",
-      "source_location": "L97",
+      "source_location": "L112",
       "weight": 1.0
     },
     {
@@ -7333,7 +7811,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "api/server.py",
-      "source_location": "L98",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -7373,6 +7851,30 @@
       "weight": 1.0
     },
     {
+      "source": "api_server_onboard_new_business",
+      "target": "core_dlmm_calculate_safe_to_spend",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "api/server.py",
+      "source_location": "L229",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server_onboard_new_business",
+      "target": "core_dlmm_simulate_trajectory",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "api/server.py",
+      "source_location": "L230",
+      "weight": 1.0
+    },
+    {
       "source": "api_server_reset_state",
       "target": "api_server_load_initial_state",
       "relation": "calls",
@@ -7381,7 +7883,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "api/server.py",
-      "source_location": "L199",
+      "source_location": "L335",
       "weight": 1.0
     },
     {
@@ -7393,7 +7895,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "api/server.py",
-      "source_location": "L143",
+      "source_location": "L158",
       "weight": 1.0
     },
     {
@@ -7493,6 +7995,42 @@
       "weight": 1.0
     },
     {
+      "source": "core_dlmm_run_fire_drill",
+      "target": "core_dlmm_scenario",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "core/dlmm.py",
+      "source_location": "L192",
+      "weight": 1.0
+    },
+    {
+      "source": "core_dlmm_run_fire_drill",
+      "target": "core_dlmm_simulate_trajectory",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "core/dlmm.py",
+      "source_location": "L193",
+      "weight": 1.0
+    },
+    {
+      "source": "core_dlmm_run_fire_drill",
+      "target": "core_dlmm_businessstate",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "core/dlmm.py",
+      "source_location": "L196",
+      "weight": 1.0
+    },
+    {
       "source": "core_dlmm_simulate_trajectory",
       "target": "core_dlmm_calculate_safe_to_spend",
       "relation": "calls",
@@ -7501,7 +8039,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "core/dlmm.py",
-      "source_location": "L136",
+      "source_location": "L149",
       "weight": 1.0
     },
     {
@@ -7513,7 +8051,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "core/dlmm.py",
-      "source_location": "L137",
+      "source_location": "L150",
       "weight": 1.0
     },
     {
@@ -7525,7 +8063,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "core/dlmm.py",
-      "source_location": "L160",
+      "source_location": "L173",
       "weight": 1.0
     },
     {
@@ -7889,6 +8427,150 @@
       "weight": 1.0
     },
     {
+      "source": "tests_test_dlmm_testdlmmcore_setup",
+      "target": "core_dlmm_businessstate",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore_setup",
+      "target": "core_dlmm_obligation",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore_setup",
+      "target": "core_dlmm_receivable",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore_test_cash_outflow_insolvency_detection",
+      "target": "core_dlmm_scenario",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore_test_cash_outflow_insolvency_detection",
+      "target": "core_dlmm_simulate_trajectory",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore_test_fire_drill_shocks",
+      "target": "core_dlmm_run_fire_drill",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore_test_prive_leakage_detection",
+      "target": "core_dlmm_calculate_prive_leakage",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore_test_restructured_dp_is_safe",
+      "target": "core_dlmm_scenario",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore_test_restructured_dp_is_safe",
+      "target": "core_dlmm_simulate_trajectory",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore_test_safe_to_spend_exact_formula",
+      "target": "core_dlmm_calculate_safe_to_spend",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server_get_agents_telemetry",
+      "target": "get",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "decorator",
+      "source_file": "api/server.py",
+      "source_location": "L308",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server_get_business_memories",
+      "target": "get",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "decorator",
+      "source_file": "api/server.py",
+      "source_location": "L304",
+      "weight": 1.0
+    },
+    {
       "source": "api_server_get_business_pulse",
       "target": "get",
       "relation": "references",
@@ -7897,7 +8579,19 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "api/server.py",
-      "source_location": "L95",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server_get_data_inbox",
+      "target": "get",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "decorator",
+      "source_file": "api/server.py",
+      "source_location": "L265",
       "weight": 1.0
     },
     {
@@ -7909,7 +8603,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "api/server.py",
-      "source_location": "L167",
+      "source_location": "L182",
       "weight": 1.0
     },
     {
@@ -7921,7 +8615,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "api/server.py",
-      "source_location": "L163",
+      "source_location": "L178",
       "weight": 1.0
     },
     {
@@ -7933,7 +8627,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "api/server.py",
-      "source_location": "L85",
+      "source_location": "L100",
       "weight": 1.0
     },
     {
@@ -7945,7 +8639,19 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "api/server.py",
-      "source_location": "L173",
+      "source_location": "L188",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server_onboard_new_business",
+      "target": "post",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "decorator",
+      "source_file": "api/server.py",
+      "source_location": "L211",
       "weight": 1.0
     },
     {
@@ -7957,7 +8663,19 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "api/server.py",
-      "source_location": "L196",
+      "source_location": "L332",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server_resolve_data_inbox_item",
+      "target": "post",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "decorator",
+      "source_file": "api/server.py",
+      "source_location": "L269",
       "weight": 1.0
     },
     {
@@ -7969,7 +8687,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "api/server.py",
-      "source_location": "L207",
+      "source_location": "L343",
       "weight": 1.0
     },
     {
@@ -7981,7 +8699,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "api/server.py",
-      "source_location": "L211",
+      "source_location": "L347",
       "weight": 1.0
     },
     {
@@ -7993,7 +8711,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "api/server.py",
-      "source_location": "L220",
+      "source_location": "L356",
       "weight": 1.0
     },
     {
@@ -8005,7 +8723,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "api/server.py",
-      "source_location": "L116",
+      "source_location": "L131",
       "weight": 1.0
     },
     {
@@ -8029,7 +8747,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "core/dlmm.py",
-      "source_location": "L82",
+      "source_location": "L94",
       "weight": 1.0
     },
     {
@@ -8118,18 +8836,6 @@
     },
     {
       "source": "api_server",
-      "target": "uvicorn",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "api/server.py",
-      "source_location": "L225",
-      "weight": 1.0
-    },
-    {
-      "source": "api_server",
       "target": "core_sensor_sensoragent",
       "relation": "imports",
       "_origin": "ast",
@@ -8150,6 +8856,18 @@
       "context": "import",
       "source_file": "api/server.py",
       "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server",
+      "target": "uvicorn",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "api/server.py",
+      "source_location": "L361",
       "weight": 1.0
     },
     {
@@ -8909,6 +9627,18 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_dashboard_dashboardmemoryview",
+      "target": "frontend_src_components_motion_animated_badge_animatedbadge",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardMemoryView.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_dashboard_dashboardsimulatorview",
       "target": "frontend_src_components_motion_button_motionbutton",
       "relation": "imports",
@@ -8953,7 +9683,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L22",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -8965,7 +9695,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L23",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -8977,7 +9707,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L24",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -8989,7 +9719,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L25",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -9001,7 +9731,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L26",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -9013,7 +9743,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L27",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -9025,7 +9755,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L28",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboardpage",
+      "target": "frontend_src_components_dashboard_dashboardmemoryview_dashboardmemoryview",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/DashboardPage.tsx",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -9037,7 +9779,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L29",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -9049,7 +9791,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L29",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboardpage",
+      "target": "frontend_src_components_datainboxmodal_datainboxmodal",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/DashboardPage.tsx",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -9821,6 +10575,126 @@
       "weight": 1.0
     },
     {
+      "source": "tests_test_dlmm",
+      "target": "unittest",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm",
+      "target": "core_dlmm_businessstate",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm",
+      "target": "core_dlmm_calculate_prive_leakage",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm",
+      "target": "core_dlmm_calculate_runway",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm",
+      "target": "core_dlmm_calculate_safe_to_spend",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm",
+      "target": "core_dlmm_obligation",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm",
+      "target": "core_dlmm_receivable",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm",
+      "target": "core_dlmm_run_fire_drill",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm",
+      "target": "core_dlmm_scenario",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm",
+      "target": "core_dlmm_simulate_trajectory",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
       "source": "api_server",
       "target": "typing",
       "relation": "imports_from",
@@ -10529,6 +11403,42 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_dashboard_dashboardmemoryview",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardMemoryView.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardmemoryview",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardMemoryView.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardmemoryview",
+      "target": "frontend_src_components_motion_animated_badge",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardMemoryView.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_dashboard_dashboardsimulatorview",
       "target": "ref_react",
       "relation": "imports_from",
@@ -10621,7 +11531,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L22",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -10633,7 +11543,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L23",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -10645,7 +11555,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L24",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -10657,7 +11567,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L25",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -10669,7 +11579,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L26",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -10681,7 +11591,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L27",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -10693,7 +11603,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L28",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboardpage",
+      "target": "frontend_src_components_dashboard_dashboardmemoryview",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/DashboardPage.tsx",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -10705,7 +11627,55 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L29",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboardpage",
+      "target": "frontend_src_components_datainboxmodal",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/DashboardPage.tsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_datainboxmodal",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/DataInboxModal.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_datainboxmodal",
+      "target": "ref_framer_motion",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/DataInboxModal.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_datainboxmodal",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/DataInboxModal.tsx",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -12534,6 +13504,18 @@
       "weight": 1.0
     },
     {
+      "source": "tests_test_dlmm",
+      "target": "core_dlmm",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
       "source": "api_server_get_negotiate_script",
       "target": "api_server_negotiaterequest",
       "relation": "references",
@@ -12542,7 +13524,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "api/server.py",
-      "source_location": "L168",
+      "source_location": "L183",
       "weight": 1.0
     },
     {
@@ -12554,7 +13536,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "api/server.py",
-      "source_location": "L164",
+      "source_location": "L179",
       "weight": 1.0
     },
     {
@@ -12566,7 +13548,31 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "api/server.py",
-      "source_location": "L174",
+      "source_location": "L189",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server_onboard_new_business",
+      "target": "api_server_onboardrequest",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "api/server.py",
+      "source_location": "L212",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server_resolve_data_inbox_item",
+      "target": "api_server_resolveinboxrequest",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "api/server.py",
+      "source_location": "L270",
       "weight": 1.0
     },
     {
@@ -12578,7 +13584,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "api/server.py",
-      "source_location": "L117",
+      "source_location": "L132",
       "weight": 1.0
     },
     {
@@ -12602,7 +13608,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "core/dlmm.py",
-      "source_location": "L59",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
@@ -12614,7 +13620,29 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "core/dlmm.py",
-      "source_location": "L82",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server",
+      "target": "api_server_health_check",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/server.py",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server",
+      "target": "api_server_get_business_pulse",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/server.py",
+      "source_location": "L111",
       "weight": 1.0
     },
     {
@@ -12625,7 +13653,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "api/server.py",
-      "source_location": "L117",
+      "source_location": "L132",
       "weight": 1.0
     },
     {
@@ -12636,7 +13664,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "api/server.py",
-      "source_location": "L164",
+      "source_location": "L179",
       "weight": 1.0
     },
     {
@@ -12647,7 +13675,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "api/server.py",
-      "source_location": "L168",
+      "source_location": "L183",
       "weight": 1.0
     },
     {
@@ -12658,34 +13686,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "api/server.py",
-      "source_location": "L174",
+      "source_location": "L189",
       "weight": 1.0
     },
     {
       "source": "api_server",
-      "target": "api_server_reset_state",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "api/server.py",
-      "source_location": "L197",
-      "weight": 1.0
-    },
-    {
-      "source": "api_server",
-      "target": "api_server_serve_frontend_root",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "api/server.py",
-      "source_location": "L208",
-      "weight": 1.0
-    },
-    {
-      "source": "api_server",
-      "target": "api_server_serve_frontend_spa",
+      "target": "api_server_onboard_new_business",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -12696,13 +13702,90 @@
     },
     {
       "source": "api_server",
+      "target": "api_server_get_data_inbox",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/server.py",
+      "source_location": "L266",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server",
+      "target": "api_server_resolve_data_inbox_item",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/server.py",
+      "source_location": "L270",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server",
+      "target": "api_server_get_business_memories",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/server.py",
+      "source_location": "L305",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server",
+      "target": "api_server_get_agents_telemetry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/server.py",
+      "source_location": "L309",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server",
+      "target": "api_server_reset_state",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/server.py",
+      "source_location": "L333",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server",
+      "target": "api_server_serve_frontend_root",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/server.py",
+      "source_location": "L344",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server",
+      "target": "api_server_serve_frontend_spa",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/server.py",
+      "source_location": "L348",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server",
       "target": "api_server_serve_placeholder",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "api/server.py",
-      "source_location": "L221",
+      "source_location": "L357",
       "weight": 1.0
     },
     {
@@ -12762,18 +13845,18 @@
     },
     {
       "source": "api_server",
-      "target": "api_server_health_check",
+      "target": "api_server_onboardrequest",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "api/server.py",
-      "source_location": "L86",
+      "source_location": "L85",
       "weight": 1.0
     },
     {
       "source": "api_server",
-      "target": "api_server_get_business_pulse",
+      "target": "api_server_resolveinboxrequest",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -13444,6 +14527,28 @@
     },
     {
       "source": "core_dlmm",
+      "target": "core_dlmm_run_fire_drill",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/dlmm.py",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "core_dlmm",
+      "target": "core_dlmm_calculate_prive_leakage",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/dlmm.py",
+      "source_location": "L220",
+      "weight": 1.0
+    },
+    {
+      "source": "core_dlmm",
       "target": "core_dlmm_businessstate",
       "relation": "contains",
       "_origin": "ast",
@@ -13461,7 +14566,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "core/dlmm.py",
-      "source_location": "L39",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -13472,7 +14577,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "core/dlmm.py",
-      "source_location": "L48",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -13483,7 +14588,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "core/dlmm.py",
-      "source_location": "L59",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
@@ -13494,7 +14599,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "core/dlmm.py",
-      "source_location": "L77",
+      "source_location": "L89",
       "weight": 1.0
     },
     {
@@ -13505,7 +14610,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "core/dlmm.py",
-      "source_location": "L82",
+      "source_location": "L94",
       "weight": 1.0
     },
     {
@@ -14191,6 +15296,17 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_dashboard_dashboardmemoryview",
+      "target": "frontend_src_components_dashboard_dashboardmemoryview_dashboardmemoryview",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/dashboard/DashboardMemoryView.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_dashboard_dashboardsimulatorview",
       "target": "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorviewprops",
       "relation": "contains",
@@ -14220,7 +15336,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L31",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -14231,7 +15347,40 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L55",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_datainboxmodal",
+      "target": "frontend_src_components_datainboxmodal_datainboxitem",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/DataInboxModal.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_datainboxmodal",
+      "target": "frontend_src_components_datainboxmodal_datainboxmodalprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/DataInboxModal.tsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_datainboxmodal",
+      "target": "frontend_src_components_datainboxmodal_datainboxmodal",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/DataInboxModal.tsx",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -16754,6 +17903,116 @@
       "weight": 1.0
     },
     {
+      "source": "jagausaha_product_flow",
+      "target": "jagausaha_product_flow_jagausaha_canonical_product_flow_business_architecture_specification",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "jagausaha_product_flow_jagausaha_canonical_product_flow_business_architecture_specification",
+      "target": "jagausaha_product_flow_9_demo_data_standard_kopi_nusa",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L103",
+      "weight": 1.0
+    },
+    {
+      "source": "jagausaha_product_flow_jagausaha_canonical_product_flow_business_architecture_specification",
+      "target": "jagausaha_product_flow_2_aktor_tanggung_jawab_sistem",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "jagausaha_product_flow_jagausaha_canonical_product_flow_business_architecture_specification",
+      "target": "jagausaha_product_flow_3_end_to_end_lifecycle",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "jagausaha_product_flow_jagausaha_canonical_product_flow_business_architecture_specification",
+      "target": "jagausaha_product_flow_4_progressive_cold_start_onboarding_zero_historical_data",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "jagausaha_product_flow_jagausaha_canonical_product_flow_business_architecture_specification",
+      "target": "jagausaha_product_flow_5_formula_matematis_deterministik_dlmm_core",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "jagausaha_product_flow_jagausaha_canonical_product_flow_business_architecture_specification",
+      "target": "jagausaha_product_flow_1_product_north_star",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "jagausaha_product_flow_jagausaha_canonical_product_flow_business_architecture_specification",
+      "target": "jagausaha_product_flow_6_sinyal_anomali_to_kasus_risiko_riskcase",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "jagausaha_product_flow_jagausaha_canonical_product_flow_business_architecture_specification",
+      "target": "jagausaha_product_flow_7_data_confidence_data_inbox",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "jagausaha_product_flow_jagausaha_canonical_product_flow_business_architecture_specification",
+      "target": "jagausaha_product_flow_8_human_approval_financial_safety",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "JAGAUSAHA_PRODUCT_FLOW.md",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
       "source": "jagausaha_strategy_spec",
       "target": "jagausaha_strategy_spec_jagausaha_ai_autonomous_financial_guardian_decision_sandbox_for_indonesian_umkm",
       "relation": "contains",
@@ -17799,6 +19058,17 @@
       "weight": 1.0
     },
     {
+      "source": "tests_test_dlmm",
+      "target": "tests_test_dlmm_testdlmmcore",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_tailwind_config",
       "target": "tailwindcss",
       "relation": "dynamic_import",
@@ -17838,6 +19108,28 @@
       "confidence_score": 1.0,
       "source_file": "api/server.py",
       "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server_onboardrequest",
+      "target": "basemodel",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/server.py",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "api_server_resolveinboxrequest",
+      "target": "basemodel",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/server.py",
+      "source_location": "L96",
       "weight": 1.0
     },
     {
@@ -17903,7 +19195,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "core/dlmm.py",
-      "source_location": "L35",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "core_dlmm_businessstate",
+      "target": "core_dlmm_businessstate_get_day_inflow_multiplier",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/dlmm.py",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -17937,6 +19240,83 @@
       "confidence_score": 1.0,
       "source_file": "core/sensor.py",
       "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore",
+      "target": "tests_test_dlmm_testdlmmcore_setup",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore",
+      "target": "tests_test_dlmm_testdlmmcore_test_safe_to_spend_exact_formula",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore",
+      "target": "tests_test_dlmm_testdlmmcore_test_seasonality_multipliers",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore",
+      "target": "tests_test_dlmm_testdlmmcore_test_cash_outflow_insolvency_detection",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore",
+      "target": "tests_test_dlmm_testdlmmcore_test_restructured_dp_is_safe",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore",
+      "target": "tests_test_dlmm_testdlmmcore_test_fire_drill_shocks",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore",
+      "target": "tests_test_dlmm_testdlmmcore_test_prive_leakage_detection",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L66",
       "weight": 1.0
     },
     {
@@ -18028,25 +19408,58 @@
       "weight": 1.0
     },
     {
-      "source": "core_dlmm_rationale_60",
+      "source": "core_dlmm_rationale_186",
+      "target": "core_dlmm_run_fire_drill",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/dlmm.py",
+      "source_location": "L186",
+      "weight": 1.0
+    },
+    {
+      "source": "core_dlmm_rationale_221",
+      "target": "core_dlmm_calculate_prive_leakage",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/dlmm.py",
+      "source_location": "L221",
+      "weight": 1.0
+    },
+    {
+      "source": "core_dlmm_rationale_40",
+      "target": "core_dlmm_businessstate_get_day_inflow_multiplier",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/dlmm.py",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "core_dlmm_rationale_72",
       "target": "core_dlmm_calculate_safe_to_spend",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "core/dlmm.py",
-      "source_location": "L60",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
-      "source": "core_dlmm_rationale_83",
+      "source": "core_dlmm_rationale_95",
       "target": "core_dlmm_simulate_trajectory",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "core/dlmm.py",
-      "source_location": "L83",
+      "source_location": "L95",
       "weight": 1.0
     },
     {
@@ -18161,7 +19574,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "api/server.py",
-      "source_location": "L182",
+      "source_location": "L197",
       "weight": 0.8
     },
     {
@@ -18172,7 +19585,40 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "api/server.py",
-      "source_location": "L189",
+      "source_location": "L204",
+      "weight": 0.8
+    },
+    {
+      "source": "api_server_onboard_new_business",
+      "target": "core_dlmm_businessstate",
+      "relation": "uses",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "api/server.py",
+      "source_location": "L215",
+      "weight": 0.8
+    },
+    {
+      "source": "api_server_onboard_new_business",
+      "target": "core_dlmm_obligation",
+      "relation": "uses",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "api/server.py",
+      "source_location": "L222",
+      "weight": 0.8
+    },
+    {
+      "source": "api_server_onboard_new_business",
+      "target": "core_dlmm_receivable",
+      "relation": "uses",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "api/server.py",
+      "source_location": "L226",
       "weight": 0.8
     },
     {
@@ -18183,7 +19629,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "api/server.py",
-      "source_location": "L126",
+      "source_location": "L141",
       "weight": 0.8
     },
     {
@@ -18196,8 +19642,52 @@
       "source_file": "core/advisor.py",
       "source_location": "L110",
       "weight": 0.8
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore",
+      "target": "core_dlmm_businessstate",
+      "relation": "uses",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L16",
+      "weight": 0.8
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore",
+      "target": "core_dlmm_obligation",
+      "relation": "uses",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L23",
+      "weight": 0.8
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore",
+      "target": "core_dlmm_receivable",
+      "relation": "uses",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L28",
+      "weight": 0.8
+    },
+    {
+      "source": "tests_test_dlmm_testdlmmcore",
+      "target": "core_dlmm_scenario",
+      "relation": "uses",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "tests/test_dlmm.py",
+      "source_location": "L47",
+      "weight": 0.8
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "605b4b42fc1e8342984083b48ee984a3ab9d13bf"
+  "built_at_commit": "58772140b83f70ed134aff156813b7853b43a170"
 }
