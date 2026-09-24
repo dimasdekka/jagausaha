@@ -318,17 +318,17 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       {/* 2. RIGHT MAIN CONTENT AREA                                                */}
       {/* ========================================================================= */}
       <div className="flex-1 flex flex-col min-w-0 md:h-screen md:overflow-y-auto">
-        {/* Sticky Top Bar for Content */}
-        <header className="sticky top-0 z-20 h-16 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl px-5 sm:px-8 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <h1 className="text-base sm:text-lg font-bold text-slate-950 tracking-tight">
+        {/* Sticky Top Bar for Content with Generous Padding & Centered Rhythm */}
+        <header className="sticky top-0 z-20 h-18 sm:h-20 border-b border-slate-200/80 bg-white/95 backdrop-blur-xl px-6 sm:px-10 flex items-center justify-between gap-4 sm:gap-6 shrink-0">
+          <div className="flex items-center gap-3.5 min-w-0">
+            <h1 className="text-base sm:text-lg font-bold text-slate-950 tracking-tight truncate">
               {activeNav === 'overview' && 'Ringkasan Kas & Sandbox'}
-              {activeNav === 'simulator' && 'Simulasi Keputusan Belanja Modal'}
-              {activeNav === 'agenda' && 'Agenda Arus Kas Kritis 14 Hari'}
-              {activeNav === 'agents' && 'Log Sensor & Arsitektur Guardian'}
-              {activeNav === 'memory' && 'Memori Keputusan & Hasil Nyata (Business Memory)'}
+              {activeNav === 'simulator' && 'Simulasi Keputusan Belanja'}
+              {activeNav === 'agenda' && 'Agenda Arus Kas 14H'}
+              {activeNav === 'agents' && 'Log Sensor & AI Guardian'}
+              {activeNav === 'memory' && 'Memori Keputusan & Outcome'}
             </h1>
-            <span className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200/80">
+            <span className="hidden lg:inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200/80 shrink-0">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -337,15 +337,15 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             </span>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2.5 sm:gap-3.5 shrink-0">
             {/* Quick Command Palette Button */}
             <button
               onClick={onOpenCommandPalette}
-              className="hidden sm:flex items-center gap-2 h-9 px-3 rounded-xl bg-slate-100 hover:bg-slate-200/70 border border-slate-200 text-xs text-slate-500 hover:text-slate-900 transition-all cursor-pointer shadow-2xs"
+              className="hidden sm:flex items-center gap-2 h-9 px-3.5 rounded-xl bg-slate-100 hover:bg-slate-200/70 border border-slate-200 text-xs text-slate-600 hover:text-slate-950 transition-all cursor-pointer shadow-2xs"
             >
               <Search className="h-3.5 w-3.5 text-slate-400" />
               <span>Cari...</span>
-              <kbd className="rounded border border-slate-300 bg-white px-1.5 py-0.5 font-mono text-[9px] font-semibold text-slate-600">
+              <kbd className="rounded border border-slate-300 bg-white px-1.5 py-0.5 font-mono text-[9px] font-semibold text-slate-500">
                 ⌘K
               </kbd>
             </button>
@@ -370,7 +370,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             {/* Parameter Usaha Quick Action */}
             <button
               onClick={() => setIsOnboardingOpen(true)}
-              className="hidden md:inline-flex items-center gap-1.5 h-9 px-3 rounded-xl bg-slate-100 hover:bg-slate-200/80 border border-slate-200 text-xs font-semibold text-slate-800 transition-all cursor-pointer shadow-2xs"
+              className="hidden md:inline-flex items-center gap-1.5 h-9 px-3.5 rounded-xl bg-slate-100 hover:bg-slate-200/80 border border-slate-200 text-xs font-semibold text-slate-800 transition-all cursor-pointer shadow-2xs"
               title="Atur parameter profil usaha (archetype, kas awal, komitmen rutin)"
             >
               <Sparkles className="h-3.5 w-3.5 text-emerald-600" />
@@ -380,7 +380,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             {/* Back to Home Shortcut */}
             <button
               onClick={onLogout}
-              className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 hover:text-slate-950 px-2 py-1 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer"
+              className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 hover:text-slate-950 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer ml-1 pl-3 border-l border-slate-200"
             >
               <span>Beranda</span>
               <ExternalLink className="h-3 w-3" />
@@ -388,8 +388,8 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
           </div>
         </header>
 
-        {/* Content Body */}
-        <main className="p-5 sm:p-8 space-y-6 sm:space-y-8 flex-1">
+        {/* Content Body with Generous Padding */}
+        <main className="p-6 sm:p-10 space-y-6 sm:space-y-8 flex-1">
           {activeNav === 'simulator' && (
             <DashboardSimulatorView
               currentCash={currentCash}
