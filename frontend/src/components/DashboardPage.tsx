@@ -152,26 +152,26 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       {/* ========================================================================= */}
       <aside className="w-full md:w-64 lg:w-72 bg-white border-r border-slate-200/90 flex flex-col justify-between shrink-0 md:h-screen md:sticky md:top-0 z-30">
         {/* Top Workspace Header */}
-        <div className="p-5 border-b border-slate-100 space-y-4">
+        <div className="p-5 border-b border-slate-100 space-y-3.5">
           <div className="flex items-center justify-between">
             <JagaUsahaLogo size={32} showWordmark={true} />
-            <span className="text-[10px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+            <span className="text-[10.5px] font-mono font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full border border-slate-200">
               v1.0
             </span>
           </div>
 
           {/* Workspace Identity Card (Linear / Stripe Standard) */}
-          <div className="p-3 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+          <div className="p-3 rounded-2xl bg-slate-50 border border-slate-200/80">
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2 truncate">
-                <div className="h-7 w-7 rounded-xl bg-neutral-900 text-white flex items-center justify-center font-bold text-[11px] shrink-0 shadow-2xs">
+              <div className="flex items-center gap-2.5 truncate">
+                <div className="h-8 w-8 rounded-xl bg-slate-900 text-white flex items-center justify-center font-bold font-mono text-xs shrink-0 shadow-2xs">
                   {businessProfile.businessName.slice(0, 2).toUpperCase()}
                 </div>
                 <div className="truncate">
                   <div className="text-xs font-bold text-slate-900 truncate">
                     {businessProfile.businessName}
                   </div>
-                  <div className="text-[10.5px] text-slate-500 font-medium capitalize">
+                  <div className="text-[11px] text-slate-500 font-medium capitalize">
                     {businessProfile.archetype === 'fnb'
                       ? 'Kafe, Resto & F&B'
                       : businessProfile.archetype === 'retail'
@@ -183,20 +183,10 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                 </div>
               </div>
 
-              <span className="text-[10px] font-bold text-slate-600 bg-slate-200/70 px-1.5 py-0.5 rounded-md shrink-0">
+              <span className="text-[10px] font-bold text-slate-600 bg-slate-200/70 px-2 py-0.5 rounded-md shrink-0">
                 UMKM
               </span>
             </div>
-
-            {/* Ubah Parameter Usaha Trigger */}
-            <button
-              type="button"
-              onClick={() => setIsOnboardingOpen(true)}
-              className="w-full py-1.5 px-2 rounded-xl bg-white hover:bg-slate-100 border border-slate-200/90 text-[10.5px] font-semibold text-slate-700 hover:text-slate-950 flex items-center justify-center gap-1.5 transition-colors cursor-pointer shadow-2xs"
-            >
-              <Sparkles className="h-3 w-3 text-emerald-600" />
-              <span>Ubah Parameter Usaha</span>
-            </button>
           </div>
         </div>
 
@@ -286,43 +276,16 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             </button>
           </div>
 
-          {/* Quick Scenario Sidebar Shortlist */}
-          <div className="space-y-2 pt-2 border-t border-slate-100">
-            <div className="px-3 text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
-              <span>Uji Skenario Belanja</span>
-              <span className="text-[9px] text-emerald-700 bg-emerald-50 px-1 rounded font-bold">Instan</span>
-            </div>
-
-            <div className="space-y-1">
-              {presets.map((preset) => {
-                const isSelected = activePreset === preset.id;
-                return (
-                  <button
-                    key={preset.id}
-                    onClick={() => {
-                      setActiveNav('overview');
-                      onSelectPreset(preset.id, preset.outflow);
-                    }}
-                    className={`w-full text-left p-2.5 rounded-xl text-xs transition-all cursor-pointer flex flex-col justify-between ${
-                      isSelected
-                        ? 'bg-emerald-50/80 border border-emerald-300/80 text-emerald-950 font-bold shadow-2xs'
-                        : 'hover:bg-slate-100/70 border border-transparent text-slate-700 font-medium'
-                    }`}
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="truncate">{preset.label}</span>
-                      {preset.dangerous && (
-                        <span className="text-[9px] font-bold text-rose-700 bg-rose-100 px-1 py-0.2 rounded">
-                          Risiko
-                        </span>
-                      )}
-                    </div>
-                    <span className="text-[10px] text-slate-500 font-mono mt-0.5">
-                      {preset.outflow > 0 ? `Rp ${(preset.outflow / 1_000_000).toFixed(1)} Jt` : 'Beban Rutin'}
-                    </span>
-                  </button>
-                );
-              })}
+          {/* Engine Status Widget */}
+          <div className="pt-2 border-t border-slate-100">
+            <div className="p-3 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+              <div className="text-[11px] font-bold text-slate-800 flex items-center justify-between">
+                <span>Integritas DLMM</span>
+                <span className="text-emerald-700 font-bold text-[10px]">100% Deterministik</span>
+              </div>
+              <p className="text-[10px] text-slate-500 leading-relaxed font-normal">
+                Formula matematika native Python. Bebas halusinasi LLM untuk perlindungan kas harian.
+              </p>
             </div>
           </div>
         </div>
@@ -359,14 +322,18 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
         <header className="sticky top-0 z-20 h-16 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl px-5 sm:px-8 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <h1 className="text-base sm:text-lg font-bold text-slate-950 tracking-tight">
-              {activeNav === 'overview' && 'Ringkasan Keamanan Kas & Sandbox'}
+              {activeNav === 'overview' && 'Ringkasan Kas & Sandbox'}
               {activeNav === 'simulator' && 'Simulasi Keputusan Belanja Modal'}
               {activeNav === 'agenda' && 'Agenda Arus Kas Kritis 14 Hari'}
               {activeNav === 'agents' && 'Log Sensor & Arsitektur Guardian'}
               {activeNav === 'memory' && 'Memori Keputusan & Hasil Nyata (Business Memory)'}
             </h1>
-            <span className="hidden sm:inline-block text-xs font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
-              Live Real-Time
+            <span className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200/80">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              <span>Live Real-Time</span>
             </span>
           </div>
 
@@ -451,99 +418,103 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             <>
               {/* A. Top 4-Pillar Financial KPI Strip */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {/* Card 1: Saldo Kas Aktif */}
-            <div className="rounded-2xl border border-blue-200/90 bg-gradient-to-br from-blue-50/60 via-white to-white p-5 shadow-xs flex flex-col justify-between space-y-2">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-blue-950 uppercase tracking-wider flex items-center gap-1.5">
-                  <div className="p-1 rounded-md bg-blue-100 text-blue-700">
-                    <Wallet className="h-3.5 w-3.5" />
+                {/* Card 1: Saldo Kas Aktif */}
+                <div className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs flex flex-col justify-between space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
+                      <div className="p-1 rounded-md bg-blue-50 text-blue-700 border border-blue-200/60">
+                        <Wallet className="h-3.5 w-3.5" />
+                      </div>
+                      Kas Rekening {businessProfile.bankName}
+                    </span>
+                    <AnimatedBadge status="info" size="sm">
+                      Live Sinkron
+                    </AnimatedBadge>
                   </div>
-                  Kas Rekening BCA
-                </span>
-                <AnimatedBadge status="info" size="sm">
-                  Live Sinkron
-                </AnimatedBadge>
-              </div>
-              <div className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight flex items-baseline gap-1">
-                <span className="text-base font-semibold text-slate-500">Rp</span>
-                <AnimatedNumber value={currentCash} duration={0.8} />
-              </div>
-              <div className="text-[11.5px] text-slate-700 font-medium border-t border-blue-100/80 pt-2 flex justify-between">
-                <span>Cadangan Darurat:</span>
-                <strong className="text-slate-900 font-bold">Rp {safetyBuffer.toLocaleString('id-ID')}</strong>
-              </div>
-            </div>
+                  <div className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight flex items-baseline tabular-nums">
+                    <span className="text-xs font-semibold text-slate-400 mr-1">Rp</span>
+                    <AnimatedNumber value={currentCash} duration={0.8} />
+                  </div>
+                  <div className="text-[11px] text-slate-500 font-medium border-t border-slate-100 pt-2.5 mt-2 flex items-center justify-between">
+                    <span>Cadangan Darurat</span>
+                    <span className="h-3 w-px bg-slate-200" />
+                    <strong className="text-slate-900 font-bold tabular-nums">Rp {safetyBuffer.toLocaleString('id-ID')}</strong>
+                  </div>
+                </div>
 
-            {/* Card 2: Duit Dingin Aman (Safe-to-Spend) */}
-            <div className="rounded-2xl border border-emerald-300/90 bg-gradient-to-br from-emerald-50/70 via-white to-white p-5 shadow-xs flex flex-col justify-between space-y-2">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-emerald-950 uppercase tracking-wider flex items-center gap-1.5">
-                  <div className="p-1 rounded-md bg-emerald-100 text-emerald-700">
-                    <Sparkles className="h-3.5 w-3.5" />
+                {/* Card 2: Duit Dingin Aman (Safe-to-Spend) — STANDOUT HERO */}
+                <div className="rounded-2xl border-2 border-emerald-500 bg-emerald-50/20 p-5 shadow-xs flex flex-col justify-between space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-emerald-950 uppercase tracking-wider flex items-center gap-1.5">
+                      <div className="p-1 rounded-md bg-emerald-100 text-emerald-700">
+                        <Sparkles className="h-3.5 w-3.5" />
+                      </div>
+                      Duit Dingin Aman
+                    </span>
+                    <AnimatedBadge status="success" size="sm">
+                      Safe-to-Spend
+                    </AnimatedBadge>
                   </div>
-                  Duit Dingin Aman
-                </span>
-                <AnimatedBadge status="success" size="sm">
-                  Safe-to-Spend
-                </AnimatedBadge>
-              </div>
-              <div className="text-2xl sm:text-3xl font-extrabold text-emerald-950 tracking-tight flex items-baseline gap-1">
-                <span className="text-base font-semibold text-emerald-700">Rp</span>
-                <AnimatedNumber value={safeToSpend} duration={0.8} />
-              </div>
-              <div className="text-[11.5px] text-emerald-950 font-medium border-t border-emerald-200/70 pt-2 flex justify-between">
-                <span>Batas Belanja Bebas:</span>
-                <strong className="text-emerald-900 font-bold">100% Aman Gaji</strong>
-              </div>
-            </div>
+                  <div className="text-2xl sm:text-3xl font-extrabold text-emerald-950 tracking-tight flex items-baseline tabular-nums">
+                    <span className="text-xs font-semibold text-emerald-600/80 mr-1">Rp</span>
+                    <AnimatedNumber value={safeToSpend} duration={0.8} />
+                  </div>
+                  <div className="text-[11px] text-emerald-900 font-medium border-t border-emerald-200/60 pt-2.5 mt-2 flex items-center justify-between">
+                    <span>Batas Belanja Bebas</span>
+                    <span className="h-3 w-px bg-emerald-300/80" />
+                    <strong className="text-emerald-950 font-bold">100% Aman Gaji</strong>
+                  </div>
+                </div>
 
-            {/* Card 3: Runway Kas Operasional */}
-            <div className="rounded-2xl border border-indigo-200/80 bg-gradient-to-br from-indigo-50/50 via-white to-white p-5 shadow-xs flex flex-col justify-between space-y-2">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-indigo-950 uppercase tracking-wider flex items-center gap-1.5">
-                  <div className="p-1 rounded-md bg-indigo-100 text-indigo-700">
-                    <Clock className="h-3.5 w-3.5" />
+                {/* Card 3: Runway Kas Operasional */}
+                <div className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs flex flex-col justify-between space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
+                      <div className="p-1 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-200/60">
+                        <Clock className="h-3.5 w-3.5" />
+                      </div>
+                      Runway Kas
+                    </span>
+                    <span className="text-[10px] font-bold text-indigo-800 bg-indigo-50 border border-indigo-200/60 px-2 py-0.5 rounded-full">
+                      Horizon 30H
+                    </span>
                   </div>
-                  Runway Kas
-                </span>
-                <span className="text-[10px] font-bold text-indigo-800 bg-indigo-100/80 px-2 py-0.5 rounded-full">
-                  Horizon 30H
-                </span>
-              </div>
-              <div className="text-2xl sm:text-3xl font-extrabold text-indigo-950 tracking-tight flex items-baseline gap-1">
-                <span>{runwayDays}</span>
-                <span className="text-sm font-semibold text-slate-500">Hari Aman</span>
-              </div>
-              <div className="text-[11px] text-slate-600 font-normal border-t border-indigo-100/60 pt-2 flex justify-between">
-                <span>Ketahanan Operasional:</span>
-                <strong className="text-indigo-900">Optimal</strong>
-              </div>
-            </div>
+                  <div className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight flex items-baseline gap-1.5 tabular-nums">
+                    <span>{runwayDays}</span>
+                    <span className="text-xs font-bold text-indigo-900">Hari Aman</span>
+                  </div>
+                  <div className="text-[11px] text-slate-500 font-medium border-t border-slate-100 pt-2.5 mt-2 flex items-center justify-between">
+                    <span>Ketahanan Operasional</span>
+                    <span className="h-3 w-px bg-slate-200" />
+                    <strong className="text-slate-900 font-bold">Optimal</strong>
+                  </div>
+                </div>
 
-            {/* Card 4: Net Inflow Harian */}
-            <div className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs flex flex-col justify-between space-y-2">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
-                  <div className="p-1 rounded-md bg-slate-100 text-slate-700">
-                    <TrendingUp className="h-3.5 w-3.5" />
+                {/* Card 4: Net Inflow Harian */}
+                <div className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs flex flex-col justify-between space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
+                      <div className="p-1 rounded-md bg-slate-100 text-slate-700 border border-slate-200/60">
+                        <TrendingUp className="h-3.5 w-3.5" />
+                      </div>
+                      Omset Rata-Rata
+                    </span>
+                    <span className="text-[10px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                      Inflow Stabil
+                    </span>
                   </div>
-                  Omset Rata-Rata
-                </span>
-                <span className="text-[10px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
-                  Inflow Stabil
-                </span>
+                  <div className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight flex items-baseline tabular-nums">
+                    <span className="text-xs font-semibold text-slate-400 mr-1">Rp</span>
+                    <AnimatedNumber value={dailyGross} duration={0.8} />
+                    <span className="text-xs font-medium text-slate-400 ml-1">/hari</span>
+                  </div>
+                  <div className="text-[11px] text-slate-500 font-medium border-t border-slate-100 pt-2.5 mt-2 flex items-center justify-between">
+                    <span>Margin Bersih</span>
+                    <span className="h-3 w-px bg-slate-200" />
+                    <strong className="text-slate-900 font-bold">51.1% Operasional</strong>
+                  </div>
+                </div>
               </div>
-              <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight flex items-baseline gap-1">
-                <span className="text-base font-semibold text-slate-400">Rp</span>
-                <AnimatedNumber value={dailyGross} duration={0.8} />
-                <span className="text-xs font-medium text-slate-400">/hari</span>
-              </div>
-              <div className="text-[11px] text-slate-500 font-normal border-t border-slate-100 pt-2 flex justify-between">
-                <span>Margin Bersih:</span>
-                <strong className="text-slate-800">51.1% Operasional</strong>
-              </div>
-            </div>
-          </div>
 
           {/* B. Skenario Belanja Quick Selector Strip */}
           <div className="rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm space-y-4">
@@ -576,23 +547,21 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                   <button
                     key={preset.id}
                     onClick={() => onSelectPreset(preset.id, preset.outflow)}
-                    className={`p-3.5 rounded-xl border text-left transition-all duration-150 active:scale-[0.98] cursor-pointer flex flex-col justify-between h-full ${
+                    className={`p-3.5 rounded-2xl border text-left transition-all duration-150 active:scale-[0.98] cursor-pointer flex flex-col justify-between h-full relative ${
                       isSelected
-                        ? 'border-neutral-950 bg-neutral-950 text-white shadow-md ring-2 ring-neutral-900/10'
+                        ? 'border-2 border-slate-900 bg-slate-50/70 shadow-xs ring-1 ring-slate-900/10 text-slate-950 font-bold'
                         : isDangerous
-                        ? 'border-rose-200/80 bg-rose-50/20 hover:bg-rose-50/50 hover:border-rose-300 text-slate-900'
+                        ? 'border border-rose-200/90 bg-rose-50/30 hover:bg-rose-50/60 hover:border-rose-300 text-slate-900'
                         : isRecommended
-                        ? 'border-emerald-200/80 bg-emerald-50/20 hover:bg-emerald-50/50 hover:border-emerald-300 text-slate-900'
-                        : 'border-slate-200/80 bg-white hover:bg-slate-50/80 hover:border-slate-300 text-slate-900'
+                        ? 'border border-emerald-200/90 bg-emerald-50/30 hover:bg-emerald-50/60 hover:border-emerald-300 text-slate-900'
+                        : 'border border-slate-200/90 bg-white hover:bg-slate-50/80 hover:border-slate-300 text-slate-900'
                     }`}
                   >
                     <div>
                       <div className="flex items-center justify-between gap-1 mb-1.5">
                         <span
                           className={`text-[10px] font-bold px-2 py-0.5 rounded-md border ${
-                            isSelected
-                              ? 'bg-neutral-800 text-neutral-200 border-neutral-700'
-                              : isDangerous
+                            isDangerous
                               ? 'bg-rose-100 text-rose-800 border-rose-200'
                               : isRecommended
                               ? 'bg-emerald-100 text-emerald-800 border-emerald-200'
@@ -601,17 +570,25 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                         >
                           {isDangerous ? 'Risiko Defisit' : isRecommended ? 'Solusi Aman' : 'Beban Rutin'}
                         </span>
+
+                        {isSelected && (
+                          <span className="h-4 w-4 rounded-full bg-slate-900 text-white text-[10px] font-bold flex items-center justify-center shrink-0">
+                            ✓
+                          </span>
+                        )}
                       </div>
 
                       <div className="text-xs font-bold tracking-tight">{preset.label}</div>
                     </div>
 
                     <div
-                      className={`text-xs tabular-nums mt-2.5 font-semibold ${
-                        isSelected ? 'text-neutral-300' : 'text-slate-600'
+                      className={`text-xs tabular-nums mt-2.5 font-bold ${
+                        isSelected ? 'text-slate-950 font-extrabold' : 'text-slate-600'
                       }`}
                     >
-                      {preset.outflow > 0 ? `Rp ${(preset.outflow / 1_000_000).toFixed(1)} Jt` : 'Beban Rutin'}
+                      {preset.outflow > 0
+                        ? `Rp ${(preset.outflow / 1_000_000).toFixed(1)} Jt`
+                        : 'Rp 2.5 Jt/bln'}
                     </div>
                   </button>
                 );
@@ -638,11 +615,13 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               {/* Box A: Real-Time Intelligence & Clashing Alert */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-sm space-y-3.5">
                 <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
-                  <span className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
-                    <Zap className="h-3.5 w-3.5 text-amber-500" />
+                  <span className="text-sm font-semibold text-slate-950 tracking-tight flex items-center gap-1.5">
+                    <Zap className="h-4 w-4 text-amber-500" />
                     Analisis Risiko Deterministik
                   </span>
-                  <span className="text-[10px] text-slate-500 font-mono">DLMM Core v1.0</span>
+                  <span className="text-[10px] font-mono font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200">
+                    DLMM FastMath v1.0
+                  </span>
                 </div>
 
                 {!isSafe ? (
@@ -699,11 +678,13 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               {/* Box B: Scheduled Cash Events Timeline */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-sm space-y-3">
                 <div className="flex items-center justify-between border-b border-slate-100 pb-2">
-                  <span className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
-                    <Calendar className="h-3.5 w-3.5 text-blue-600" />
+                  <span className="text-sm font-semibold text-slate-950 tracking-tight flex items-center gap-1.5">
+                    <Calendar className="h-4 w-4 text-blue-600" />
                     Agenda Kas Kritis 14 Hari ke Depan
                   </span>
-                  <span className="text-[10px] font-semibold text-slate-400">4 Komitmen</span>
+                  <span className="text-[10px] font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200">
+                    4 Komitmen
+                  </span>
                 </div>
 
                 <div className="space-y-2">
