@@ -160,30 +160,17 @@
       "source_location": "L19"
     },
     {
-      "id": "frontend_src_components_motion_command_palette_commandpaletteprops",
-      "label": "CommandPaletteProps",
+      "id": "frontend_src_components_ui_jagausahalogo_jagausahalogoprops",
+      "label": "JagaUsahaLogoProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 10,
-      "community_name": "ease.ts",
+      "community_name": "JagaUsahaLogo.tsx",
       "file_type": "code",
-      "norm_label": "commandpaletteprops",
-      "source_file": "frontend/src/components/motion/command-palette.tsx",
-      "source_location": "L25"
-    },
-    {
-      "id": "frontend_src_components_whatsappmodal_whatsappmodalprops",
-      "label": "WhatsAppModalProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "whatsappmodalprops",
-      "source_file": "frontend/src/components/WhatsAppModal.tsx",
-      "source_location": "L6"
+      "norm_label": "jagausahalogoprops",
+      "source_file": "frontend/src/components/ui/JagaUsahaLogo.tsx",
+      "source_location": "L3"
     },
     {
       "id": "frontend_src_components_boarduiagentthinking_boarduiagentthinkingprops",
@@ -212,17 +199,17 @@
       "source_location": "L4"
     },
     {
-      "id": "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
-      "label": "DecisionIntelligenceProps",
+      "id": "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorviewprops",
+      "label": "DashboardSimulatorViewProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 16,
       "community_name": "DecisionStudio.tsx",
       "file_type": "code",
-      "norm_label": "decisionintelligenceprops",
-      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
-      "source_location": "L7"
+      "norm_label": "dashboardsimulatorviewprops",
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L13"
     },
     {
       "id": "frontend_src_components_decisionstudio_decisionstudioprops",
@@ -251,6 +238,19 @@
       "source_location": "L12"
     },
     {
+      "id": "frontend_src_components_loginpage_loginpageprops",
+      "label": "LoginPageProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "loginpageprops",
+      "source_file": "frontend/src/components/LoginPage.tsx",
+      "source_location": "L7"
+    },
+    {
       "id": "frontend_src_components_motion_button_motionbuttonprops",
       "label": "MotionButtonProps",
       "_callable": true,
@@ -262,6 +262,32 @@
       "norm_label": "motionbuttonprops",
       "source_file": "frontend/src/components/motion/button.tsx",
       "source_location": "L9"
+    },
+    {
+      "id": "frontend_src_components_motion_input_inputclassnames",
+      "label": "InputClassNames",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "inputclassnames",
+      "source_file": "frontend/src/components/motion/input.tsx",
+      "source_location": "L20"
+    },
+    {
+      "id": "frontend_src_components_motion_input_inputprops",
+      "label": "InputProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "inputprops",
+      "source_file": "frontend/src/components/motion/input.tsx",
+      "source_location": "L31"
     },
     {
       "id": "frontend_src_components_simulationchatmodal_simulationchatmodalprops",
@@ -303,6 +329,19 @@
       "source_location": "L4"
     },
     {
+      "id": "frontend_src_components_herosection_herosectionprops",
+      "label": "HeroSectionProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "expanding-arrow-button.tsx",
+      "file_type": "code",
+      "norm_label": "herosectionprops",
+      "source_file": "frontend/src/components/HeroSection.tsx",
+      "source_location": "L11"
+    },
+    {
       "id": "frontend_src_components_motion_expanding_arrow_button_expandingarrowbuttonprops",
       "label": "ExpandingArrowButtonProps",
       "_callable": true,
@@ -313,19 +352,6 @@
       "file_type": "code",
       "norm_label": "expandingarrowbuttonprops",
       "source_file": "frontend/src/components/motion/expanding-arrow-button.tsx",
-      "source_location": "L16"
-    },
-    {
-      "id": "frontend_src_components_motion_tilt_card_tiltcardprops",
-      "label": "TiltCardProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "expanding-arrow-button.tsx",
-      "file_type": "code",
-      "norm_label": "tiltcardprops",
-      "source_file": "frontend/src/components/motion/tilt-card.tsx",
       "source_location": "L16"
     },
     {
@@ -381,43 +407,17 @@
       "source_location": "L4"
     },
     {
-      "id": "frontend_src_components_motion_text_reveal_splitmode",
-      "label": "SplitMode",
+      "id": "frontend_src_components_reactbits_spotlightcard_spotlightcardprops",
+      "label": "SpotlightCardProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 34,
-      "community_name": "text-reveal.tsx",
+      "community_name": "SpotlightCard.tsx",
       "file_type": "code",
-      "norm_label": "splitmode",
-      "source_file": "frontend/src/components/motion/text-reveal.tsx",
-      "source_location": "L9"
-    },
-    {
-      "id": "frontend_src_components_motion_text_reveal_textrevealprops",
-      "label": "TextRevealProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "text-reveal.tsx",
-      "file_type": "code",
-      "norm_label": "textrevealprops",
-      "source_file": "frontend/src/components/motion/text-reveal.tsx",
-      "source_location": "L11"
-    },
-    {
-      "id": "frontend_src_components_motion_text_reveal_wordgroup",
-      "label": "WordGroup",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "text-reveal.tsx",
-      "file_type": "code",
-      "norm_label": "wordgroup",
-      "source_file": "frontend/src/components/motion/text-reveal.tsx",
-      "source_location": "L28"
+      "norm_label": "spotlightcardprops",
+      "source_file": "frontend/src/components/reactbits/SpotlightCard.tsx",
+      "source_location": "L3"
     },
     {
       "id": "frontend_src_app_pulsedata",
@@ -433,69 +433,43 @@
       "source_location": "L31"
     },
     {
-      "id": "frontend_src_components_actionfeed_actionfeedprops",
-      "label": "ActionFeedProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "actionfeedprops",
-      "source_file": "frontend/src/components/ActionFeed.tsx",
-      "source_location": "L11"
-    },
-    {
-      "id": "frontend_src_components_herosection_herosectionprops",
-      "label": "HeroSectionProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "herosectionprops",
-      "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L11"
-    },
-    {
-      "id": "frontend_src_components_motion_command_palette_commanditem",
-      "label": "CommandItem",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "commanditem",
-      "source_file": "frontend/src/components/motion/command-palette.tsx",
-      "source_location": "L14"
-    },
-    {
       "id": "frontend_src_components_header_headerprops",
       "label": "HeaderProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 37,
-      "community_name": "Header.tsx",
+      "community": 35,
+      "community_name": "App.tsx",
       "file_type": "code",
       "norm_label": "headerprops",
       "source_file": "frontend/src/components/Header.tsx",
       "source_location": "L14"
     },
     {
-      "id": "frontend_src_components_motion_shared_layout_bg_sharedlayoutbgprops",
-      "label": "SharedLayoutBgProps",
+      "id": "frontend_src_components_terminaldrawer_terminaldrawerprops",
+      "label": "TerminalDrawerProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 37,
-      "community_name": "Header.tsx",
+      "community": 35,
+      "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "sharedlayoutbgprops",
-      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
-      "source_location": "L27"
+      "norm_label": "terminaldrawerprops",
+      "source_file": "frontend/src/components/TerminalDrawer.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "frontend_src_components_whatsappmodal_whatsappmodalprops",
+      "label": "WhatsAppModalProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "whatsappmodalprops",
+      "source_file": "frontend/src/components/WhatsAppModal.tsx",
+      "source_location": "L6"
     },
     {
       "id": "frontend_src_components_reactbits_shinytext_shinytextprops",
@@ -509,6 +483,45 @@
       "norm_label": "shinytextprops",
       "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
       "source_location": "L3"
+    },
+    {
+      "id": "frontend_src_components_dashboard_dashboardagendaview_cashevent",
+      "label": "CashEvent",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "animated-badge.tsx",
+      "file_type": "code",
+      "norm_label": "cashevent",
+      "source_file": "frontend/src/components/dashboard/DashboardAgendaView.tsx",
+      "source_location": "L21"
+    },
+    {
+      "id": "frontend_src_components_dashboard_dashboardagendaview_dashboardagendaviewprops",
+      "label": "DashboardAgendaViewProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "animated-badge.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardagendaviewprops",
+      "source_file": "frontend/src/components/dashboard/DashboardAgendaView.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "frontend_src_components_dashboardpage_dashboardpageprops",
+      "label": "DashboardPageProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "animated-badge.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardpageprops",
+      "source_file": "frontend/src/components/DashboardPage.tsx",
+      "source_location": "L31"
     },
     {
       "id": "frontend_src_components_motion_animated_badge_animatedbadgeprops",
@@ -550,19 +563,6 @@
       "source_location": "L24"
     },
     {
-      "id": "frontend_src_components_terminaldrawer_terminaldrawerprops",
-      "label": "TerminalDrawerProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "animated-badge.tsx",
-      "file_type": "code",
-      "norm_label": "terminaldrawerprops",
-      "source_file": "frontend/src/components/TerminalDrawer.tsx",
-      "source_location": "L7"
-    },
-    {
       "id": "frontend_src_components_trajectorychart_trajectorychartprops",
       "label": "TrajectoryChartProps",
       "_callable": true,
@@ -576,6 +576,97 @@
       "source_location": "L3"
     },
     {
+      "id": "frontend_src_components_boarduiareachart_boarduiareachartprops",
+      "label": "BoardUIAreaChartProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "boarduiareachartprops",
+      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
+      "source_location": "L22"
+    },
+    {
+      "id": "frontend_src_components_boarduiareachart_chartdatapoint",
+      "label": "ChartDataPoint",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "chartdatapoint",
+      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
+      "source_location": "L15"
+    },
+    {
+      "id": "frontend_src_components_motion_bouncy_accordion_bouncyaccordionclassnames",
+      "label": "BouncyAccordionClassNames",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "bouncyaccordionclassnames",
+      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
+      "source_location": "L29"
+    },
+    {
+      "id": "frontend_src_components_motion_bouncy_accordion_bouncyaccordionitem",
+      "label": "BouncyAccordionItem",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "bouncyaccordionitem",
+      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
+      "source_location": "L21"
+    },
+    {
+      "id": "frontend_src_components_motion_bouncy_accordion_bouncyaccordionprops",
+      "label": "BouncyAccordionProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "bouncyaccordionprops",
+      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
+      "source_location": "L40"
+    },
+    {
+      "id": "frontend_src_components_motion_command_palette_commanditem",
+      "label": "CommandItem",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "commanditem",
+      "source_file": "frontend/src/components/motion/command-palette.tsx",
+      "source_location": "L14"
+    },
+    {
+      "id": "frontend_src_components_motion_command_palette_commandpaletteprops",
+      "label": "CommandPaletteProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "commandpaletteprops",
+      "source_file": "frontend/src/components/motion/command-palette.tsx",
+      "source_location": "L25"
+    },
+    {
       "id": "frontend_src_components_motion_marquee_marqueeprops",
       "label": "MarqueeProps",
       "_callable": true,
@@ -587,6 +678,19 @@
       "norm_label": "marqueeprops",
       "source_file": "frontend/src/components/motion/marquee.tsx",
       "source_location": "L4"
+    },
+    {
+      "id": "frontend_src_components_motion_shared_layout_bg_sharedlayoutbgprops",
+      "label": "SharedLayoutBgProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "sharedlayoutbgprops",
+      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
+      "source_location": "L27"
     },
     {
       "id": "frontend_src_components_motion_tabs_tabscontexttype",
@@ -615,6 +719,45 @@
       "source_location": "L13"
     },
     {
+      "id": "frontend_src_components_motion_text_reveal_splitmode",
+      "label": "SplitMode",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "splitmode",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "frontend_src_components_motion_text_reveal_textrevealprops",
+      "label": "TextRevealProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "textrevealprops",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "frontend_src_components_motion_text_reveal_wordgroup",
+      "label": "WordGroup",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "wordgroup",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L28"
+    },
+    {
       "id": "frontend_src_components_reactbits_blurtext_blurtextprops",
       "label": "BlurTextProps",
       "_callable": true,
@@ -641,43 +784,17 @@
       "source_location": "L4"
     },
     {
-      "id": "frontend_src_components_motion_bouncy_accordion_bouncyaccordionclassnames",
-      "label": "BouncyAccordionClassNames",
+      "id": "frontend_src_components_actionfeed_actionfeedprops",
+      "label": "ActionFeedProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 48,
-      "community_name": "bouncy-accordion.tsx",
+      "community": 50,
+      "community_name": "react",
       "file_type": "code",
-      "norm_label": "bouncyaccordionclassnames",
-      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
-      "source_location": "L29"
-    },
-    {
-      "id": "frontend_src_components_motion_bouncy_accordion_bouncyaccordionitem",
-      "label": "BouncyAccordionItem",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "bouncy-accordion.tsx",
-      "file_type": "code",
-      "norm_label": "bouncyaccordionitem",
-      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
-      "source_location": "L21"
-    },
-    {
-      "id": "frontend_src_components_motion_bouncy_accordion_bouncyaccordionprops",
-      "label": "BouncyAccordionProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "bouncy-accordion.tsx",
-      "file_type": "code",
-      "norm_label": "bouncyaccordionprops",
-      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
-      "source_location": "L40"
+      "norm_label": "actionfeedprops",
+      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "source_location": "L11"
     },
     {
       "id": "frontend_src_components_howitworks_howitworksprops",
@@ -693,108 +810,30 @@
       "source_location": "L9"
     },
     {
-      "id": "frontend_src_components_loginpage_loginpageprops",
-      "label": "LoginPageProps",
+      "id": "frontend_src_components_motion_tilt_card_tiltcardprops",
+      "label": "TiltCardProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 50,
       "community_name": "react",
       "file_type": "code",
-      "norm_label": "loginpageprops",
-      "source_file": "frontend/src/components/LoginPage.tsx",
+      "norm_label": "tiltcardprops",
+      "source_file": "frontend/src/components/motion/tilt-card.tsx",
+      "source_location": "L16"
+    },
+    {
+      "id": "frontend_src_components_decisionintelligencecard_decisionintelligenceprops",
+      "label": "DecisionIntelligenceProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "DecisionIntelligenceCard.tsx",
+      "file_type": "code",
+      "norm_label": "decisionintelligenceprops",
+      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
       "source_location": "L7"
-    },
-    {
-      "id": "frontend_src_components_motion_input_inputclassnames",
-      "label": "InputClassNames",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "inputclassnames",
-      "source_file": "frontend/src/components/motion/input.tsx",
-      "source_location": "L20"
-    },
-    {
-      "id": "frontend_src_components_motion_input_inputprops",
-      "label": "InputProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "inputprops",
-      "source_file": "frontend/src/components/motion/input.tsx",
-      "source_location": "L31"
-    },
-    {
-      "id": "frontend_src_components_reactbits_spotlightcard_spotlightcardprops",
-      "label": "SpotlightCardProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "spotlightcardprops",
-      "source_file": "frontend/src/components/reactbits/SpotlightCard.tsx",
-      "source_location": "L3"
-    },
-    {
-      "id": "frontend_src_components_ui_jagausahalogo_jagausahalogoprops",
-      "label": "JagaUsahaLogoProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "jagausahalogoprops",
-      "source_file": "frontend/src/components/ui/JagaUsahaLogo.tsx",
-      "source_location": "L3"
-    },
-    {
-      "id": "frontend_src_components_boarduiareachart_boarduiareachartprops",
-      "label": "BoardUIAreaChartProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "DashboardPage.tsx",
-      "file_type": "code",
-      "norm_label": "boarduiareachartprops",
-      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
-      "source_location": "L22"
-    },
-    {
-      "id": "frontend_src_components_boarduiareachart_chartdatapoint",
-      "label": "ChartDataPoint",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "DashboardPage.tsx",
-      "file_type": "code",
-      "norm_label": "chartdatapoint",
-      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
-      "source_location": "L15"
-    },
-    {
-      "id": "frontend_src_components_dashboardpage_dashboardpageprops",
-      "label": "DashboardPageProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "DashboardPage.tsx",
-      "file_type": "code",
-      "norm_label": "dashboardpageprops",
-      "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L28"
     },
     {
       "id": "frontend_src_components_motion_number_animatednumberprops",
@@ -803,7 +842,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "DashboardPage.tsx",
+      "community_name": "DecisionIntelligenceCard.tsx",
       "file_type": "code",
       "norm_label": "animatednumberprops",
       "source_file": "frontend/src/components/motion/number.tsx",
@@ -816,7 +855,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "DashboardPage.tsx",
+      "community_name": "DecisionIntelligenceCard.tsx",
       "file_type": "code",
       "norm_label": "pulsecardsprops",
       "source_file": "frontend/src/components/PulseCards.tsx",
@@ -1215,16 +1254,28 @@
       "source_location": "L90"
     },
     {
-      "id": "frontend_src_components_motion_command_palette_commandpalette",
-      "label": "CommandPalette()",
+      "id": "frontend_src_components_footer_footer",
+      "label": "Footer()",
       "_callable": true,
       "_origin": "ast",
       "community": 10,
-      "community_name": "ease.ts",
+      "community_name": "JagaUsahaLogo.tsx",
       "file_type": "code",
-      "norm_label": "commandpalette()",
-      "source_file": "frontend/src/components/motion/command-palette.tsx",
-      "source_location": "L41"
+      "norm_label": "footer()",
+      "source_file": "frontend/src/components/Footer.tsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "frontend_src_components_ui_jagausahalogo_jagausahalogo",
+      "label": "JagaUsahaLogo()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "JagaUsahaLogo.tsx",
+      "file_type": "code",
+      "norm_label": "jagausahalogo()",
+      "source_file": "frontend/src/components/ui/JagaUsahaLogo.tsx",
+      "source_location": "L15"
     },
     {
       "id": "frontend_src_components_boarduiagentthinking_boarduiagentthinking",
@@ -1263,18 +1314,6 @@
       "source_location": "L46"
     },
     {
-      "id": "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
-      "label": "DecisionIntelligenceCard()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "DecisionStudio.tsx",
-      "file_type": "code",
-      "norm_label": "decisionintelligencecard()",
-      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
-      "source_location": "L17"
-    },
-    {
       "id": "frontend_src_components_simulationchatmodal_simulationchatmodal",
       "label": "SimulationChatModal()",
       "_callable": true,
@@ -1311,6 +1350,30 @@
       "source_location": "L8"
     },
     {
+      "id": "frontend_src_components_herosection_herosection",
+      "label": "HeroSection()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "expanding-arrow-button.tsx",
+      "file_type": "code",
+      "norm_label": "herosection()",
+      "source_file": "frontend/src/components/HeroSection.tsx",
+      "source_location": "L16"
+    },
+    {
+      "id": "frontend_src_components_herovisual3d_herovisual3d",
+      "label": "HeroVisual3D()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "expanding-arrow-button.tsx",
+      "file_type": "code",
+      "norm_label": "herovisual3d()",
+      "source_file": "frontend/src/components/HeroVisual3D.tsx",
+      "source_location": "L5"
+    },
+    {
       "id": "frontend_src_components_motion_expanding_arrow_button_dottedchevron",
       "label": "DottedChevron()",
       "_callable": true,
@@ -1321,30 +1384,6 @@
       "norm_label": "dottedchevron()",
       "source_file": "frontend/src/components/motion/expanding-arrow-button.tsx",
       "source_location": "L25"
-    },
-    {
-      "id": "frontend_src_components_motion_tilt_card_tiltcard",
-      "label": "TiltCard()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "expanding-arrow-button.tsx",
-      "file_type": "code",
-      "norm_label": "tiltcard()",
-      "source_file": "frontend/src/components/motion/tilt-card.tsx",
-      "source_location": "L23"
-    },
-    {
-      "id": "frontend_src_lib_hooks_use_hover_capable_usehovercapable",
-      "label": "useHoverCapable()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "expanding-arrow-button.tsx",
-      "file_type": "code",
-      "norm_label": "usehovercapable()",
-      "source_file": "frontend/src/lib/hooks/use-hover-capable.ts",
-      "source_location": "L3"
     },
     {
       "id": "frontend_src_components_agentthinking_agentthinking",
@@ -1419,40 +1458,16 @@
       "source_location": "L80"
     },
     {
-      "id": "frontend_src_components_motion_text_reveal_textreveal",
-      "label": "TextReveal()",
+      "id": "frontend_src_components_reactbits_spotlightcard_spotlightcard",
+      "label": "SpotlightCard()",
       "_callable": true,
       "_origin": "ast",
       "community": 34,
-      "community_name": "text-reveal.tsx",
+      "community_name": "SpotlightCard.tsx",
       "file_type": "code",
-      "norm_label": "textreveal()",
-      "source_file": "frontend/src/components/motion/text-reveal.tsx",
-      "source_location": "L38"
-    },
-    {
-      "id": "frontend_src_components_motion_text_reveal_towordgroups",
-      "label": "toWordGroups()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "text-reveal.tsx",
-      "file_type": "code",
-      "norm_label": "towordgroups()",
-      "source_file": "frontend/src/components/motion/text-reveal.tsx",
-      "source_location": "L30"
-    },
-    {
-      "id": "frontend_src_components_actionfeed_actionfeed",
-      "label": "ActionFeed()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "actionfeed()",
-      "source_file": "frontend/src/components/ActionFeed.tsx",
-      "source_location": "L17"
+      "norm_label": "spotlightcard()",
+      "source_file": "frontend/src/components/reactbits/SpotlightCard.tsx",
+      "source_location": "L9"
     },
     {
       "id": "frontend_src_components_decisionstudio_decisionstudio",
@@ -1467,6 +1482,18 @@
       "source_location": "L40"
     },
     {
+      "id": "frontend_src_components_faqsection_faqsection",
+      "label": "FAQSection()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "faqsection()",
+      "source_file": "frontend/src/components/FAQSection.tsx",
+      "source_location": "L5"
+    },
+    {
       "id": "frontend_src_components_featureagents_featureagents",
       "label": "FeatureAgents()",
       "_callable": true,
@@ -1479,40 +1506,40 @@
       "source_location": "L9"
     },
     {
-      "id": "frontend_src_components_footer_footer",
-      "label": "Footer()",
+      "id": "frontend_src_components_header_header",
+      "label": "Header()",
       "_callable": true,
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "footer()",
-      "source_file": "frontend/src/components/Footer.tsx",
-      "source_location": "L4"
+      "norm_label": "header()",
+      "source_file": "frontend/src/components/Header.tsx",
+      "source_location": "L22"
     },
     {
-      "id": "frontend_src_components_herosection_herosection",
-      "label": "HeroSection()",
+      "id": "frontend_src_components_loginpage_loginpage",
+      "label": "LoginPage()",
       "_callable": true,
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "herosection()",
-      "source_file": "frontend/src/components/HeroSection.tsx",
-      "source_location": "L16"
+      "norm_label": "loginpage()",
+      "source_file": "frontend/src/components/LoginPage.tsx",
+      "source_location": "L12"
     },
     {
-      "id": "frontend_src_components_herovisual3d_herovisual3d",
-      "label": "HeroVisual3D()",
+      "id": "frontend_src_components_terminaldrawer_terminaldrawer",
+      "label": "TerminalDrawer()",
       "_callable": true,
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "herovisual3d()",
-      "source_file": "frontend/src/components/HeroVisual3D.tsx",
-      "source_location": "L5"
+      "norm_label": "terminaldrawer()",
+      "source_file": "frontend/src/components/TerminalDrawer.tsx",
+      "source_location": "L11"
     },
     {
       "id": "frontend_src_components_whatsappmodal_whatsappmodal",
@@ -1527,18 +1554,6 @@
       "source_location": "L16"
     },
     {
-      "id": "frontend_src_components_header_header",
-      "label": "Header()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "Header.tsx",
-      "file_type": "code",
-      "norm_label": "header()",
-      "source_file": "frontend/src/components/Header.tsx",
-      "source_location": "L22"
-    },
-    {
       "id": "frontend_src_components_reactbits_shinytext_shinytext",
       "label": "ShinyText()",
       "_callable": true,
@@ -1549,6 +1564,66 @@
       "norm_label": "shinytext()",
       "source_file": "frontend/src/components/reactbits/ShinyText.tsx",
       "source_location": "L10"
+    },
+    {
+      "id": "frontend_src_components_boarduiareachart_boarduiareachart",
+      "label": "BoardUIAreaChart()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "animated-badge.tsx",
+      "file_type": "code",
+      "norm_label": "boarduiareachart()",
+      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
+      "source_location": "L31"
+    },
+    {
+      "id": "frontend_src_components_dashboard_dashboardagendaview_dashboardagendaview",
+      "label": "DashboardAgendaView()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "animated-badge.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardagendaview()",
+      "source_file": "frontend/src/components/dashboard/DashboardAgendaView.tsx",
+      "source_location": "L36"
+    },
+    {
+      "id": "frontend_src_components_dashboard_dashboardagentsview_dashboardagentsview",
+      "label": "DashboardAgentsView()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "animated-badge.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardagentsview()",
+      "source_file": "frontend/src/components/dashboard/DashboardAgentsView.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorview",
+      "label": "DashboardSimulatorView()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "animated-badge.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardsimulatorview()",
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L26"
+    },
+    {
+      "id": "frontend_src_components_dashboardpage_dashboardpage",
+      "label": "DashboardPage()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "animated-badge.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardpage()",
+      "source_file": "frontend/src/components/DashboardPage.tsx",
+      "source_location": "L55"
     },
     {
       "id": "frontend_src_components_motion_animated_badge_animatedbadge",
@@ -1563,18 +1638,6 @@
       "source_location": "L125"
     },
     {
-      "id": "frontend_src_components_terminaldrawer_terminaldrawer",
-      "label": "TerminalDrawer()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "animated-badge.tsx",
-      "file_type": "code",
-      "norm_label": "terminaldrawer()",
-      "source_file": "frontend/src/components/TerminalDrawer.tsx",
-      "source_location": "L11"
-    },
-    {
       "id": "frontend_src_components_trajectorychart_trajectorychart",
       "label": "TrajectoryChart()",
       "_callable": true,
@@ -1585,6 +1648,54 @@
       "norm_label": "trajectorychart()",
       "source_file": "frontend/src/components/TrajectoryChart.tsx",
       "source_location": "L12"
+    },
+    {
+      "id": "frontend_src_components_motion_bouncy_accordion_bouncyaccordion",
+      "label": "BouncyAccordion()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "bouncyaccordion()",
+      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
+      "source_location": "L271"
+    },
+    {
+      "id": "frontend_src_components_motion_bouncy_accordion_bouncyaccordionrow",
+      "label": "BouncyAccordionRow()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "bouncyaccordionrow()",
+      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
+      "source_location": "L108"
+    },
+    {
+      "id": "frontend_src_components_motion_bouncy_accordion_usecontrollableaccordionvalue",
+      "label": "useControllableAccordionValue()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "usecontrollableaccordionvalue()",
+      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
+      "source_location": "L82"
+    },
+    {
+      "id": "frontend_src_components_motion_command_palette_commandpalette",
+      "label": "CommandPalette()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "commandpalette()",
+      "source_file": "frontend/src/components/motion/command-palette.tsx",
+      "source_location": "L41"
     },
     {
       "id": "frontend_src_components_motion_marquee_marquee",
@@ -1647,6 +1758,30 @@
       "source_location": "L24"
     },
     {
+      "id": "frontend_src_components_motion_text_reveal_textreveal",
+      "label": "TextReveal()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "textreveal()",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L38"
+    },
+    {
+      "id": "frontend_src_components_motion_text_reveal_towordgroups",
+      "label": "toWordGroups()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "towordgroups()",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L30"
+    },
+    {
       "id": "frontend_src_lib_utils_cn",
       "label": "cn()",
       "_callable": true,
@@ -1683,52 +1818,16 @@
       "source_location": "L12"
     },
     {
-      "id": "frontend_src_components_faqsection_faqsection",
-      "label": "FAQSection()",
+      "id": "frontend_src_components_actionfeed_actionfeed",
+      "label": "ActionFeed()",
       "_callable": true,
       "_origin": "ast",
-      "community": 48,
-      "community_name": "bouncy-accordion.tsx",
+      "community": 50,
+      "community_name": "react",
       "file_type": "code",
-      "norm_label": "faqsection()",
-      "source_file": "frontend/src/components/FAQSection.tsx",
-      "source_location": "L5"
-    },
-    {
-      "id": "frontend_src_components_motion_bouncy_accordion_bouncyaccordion",
-      "label": "BouncyAccordion()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "bouncy-accordion.tsx",
-      "file_type": "code",
-      "norm_label": "bouncyaccordion()",
-      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
-      "source_location": "L271"
-    },
-    {
-      "id": "frontend_src_components_motion_bouncy_accordion_bouncyaccordionrow",
-      "label": "BouncyAccordionRow()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "bouncy-accordion.tsx",
-      "file_type": "code",
-      "norm_label": "bouncyaccordionrow()",
-      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
-      "source_location": "L108"
-    },
-    {
-      "id": "frontend_src_components_motion_bouncy_accordion_usecontrollableaccordionvalue",
-      "label": "useControllableAccordionValue()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "bouncy-accordion.tsx",
-      "file_type": "code",
-      "norm_label": "usecontrollableaccordionvalue()",
-      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
-      "source_location": "L82"
+      "norm_label": "actionfeed()",
+      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "source_location": "L17"
     },
     {
       "id": "frontend_src_components_howitworks_howitworks",
@@ -1743,64 +1842,40 @@
       "source_location": "L13"
     },
     {
-      "id": "frontend_src_components_loginpage_loginpage",
-      "label": "LoginPage()",
+      "id": "frontend_src_components_motion_tilt_card_tiltcard",
+      "label": "TiltCard()",
       "_callable": true,
       "_origin": "ast",
       "community": 50,
       "community_name": "react",
       "file_type": "code",
-      "norm_label": "loginpage()",
-      "source_file": "frontend/src/components/LoginPage.tsx",
-      "source_location": "L12"
+      "norm_label": "tiltcard()",
+      "source_file": "frontend/src/components/motion/tilt-card.tsx",
+      "source_location": "L23"
     },
     {
-      "id": "frontend_src_components_reactbits_spotlightcard_spotlightcard",
-      "label": "SpotlightCard()",
+      "id": "frontend_src_lib_hooks_use_hover_capable_usehovercapable",
+      "label": "useHoverCapable()",
       "_callable": true,
       "_origin": "ast",
       "community": 50,
       "community_name": "react",
       "file_type": "code",
-      "norm_label": "spotlightcard()",
-      "source_file": "frontend/src/components/reactbits/SpotlightCard.tsx",
-      "source_location": "L9"
+      "norm_label": "usehovercapable()",
+      "source_file": "frontend/src/lib/hooks/use-hover-capable.ts",
+      "source_location": "L3"
     },
     {
-      "id": "frontend_src_components_ui_jagausahalogo_jagausahalogo",
-      "label": "JagaUsahaLogo()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "jagausahalogo()",
-      "source_file": "frontend/src/components/ui/JagaUsahaLogo.tsx",
-      "source_location": "L15"
-    },
-    {
-      "id": "frontend_src_components_boarduiareachart_boarduiareachart",
-      "label": "BoardUIAreaChart()",
+      "id": "frontend_src_components_decisionintelligencecard_decisionintelligencecard",
+      "label": "DecisionIntelligenceCard()",
       "_callable": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "DashboardPage.tsx",
+      "community_name": "DecisionIntelligenceCard.tsx",
       "file_type": "code",
-      "norm_label": "boarduiareachart()",
-      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
-      "source_location": "L31"
-    },
-    {
-      "id": "frontend_src_components_dashboardpage_dashboardpage",
-      "label": "DashboardPage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "DashboardPage.tsx",
-      "file_type": "code",
-      "norm_label": "dashboardpage()",
-      "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L52"
+      "norm_label": "decisionintelligencecard()",
+      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
+      "source_location": "L17"
     },
     {
       "id": "frontend_src_components_motion_number_animatednumber",
@@ -1808,7 +1883,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "DashboardPage.tsx",
+      "community_name": "DecisionIntelligenceCard.tsx",
       "file_type": "code",
       "norm_label": "animatednumber()",
       "source_file": "frontend/src/components/motion/number.tsx",
@@ -1820,7 +1895,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "DashboardPage.tsx",
+      "community_name": "DecisionIntelligenceCard.tsx",
       "file_type": "code",
       "norm_label": "pulsecards()",
       "source_file": "frontend/src/components/PulseCards.tsx",
@@ -2165,6 +2240,18 @@
       "source_location": "L442"
     },
     {
+      "id": "jagausaha_strategy_spec_12_the_perfect_3_minute_hackathon_demo_script",
+      "label": "12. THE PERFECT 3-MINUTE HACKATHON DEMO SCRIPT",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "12. the perfect 3-minute hackathon demo script",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L457"
+    },
+    {
       "id": "jagausaha_strategy_spec_13_ui_ux_design_architecture",
       "label": "13. UI / UX DESIGN ARCHITECTURE",
       "_origin": "ast",
@@ -2175,6 +2262,54 @@
       "norm_label": "13. ui / ux design architecture",
       "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
       "source_location": "L505"
+    },
+    {
+      "id": "jagausaha_strategy_spec_14_1_evaluating_hermes_agent_framework",
+      "label": "14.1 Evaluating Hermes Agent Framework",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "14.1 evaluating hermes agent framework",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L527"
+    },
+    {
+      "id": "jagausaha_strategy_spec_14_2_production_stack_specifications",
+      "label": "14.2 Production Stack Specifications",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "14.2 production stack specifications",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L534"
+    },
+    {
+      "id": "jagausaha_strategy_spec_14_3_division_of_labor_code_vs_llm",
+      "label": "14.3 Division of Labor: Code vs. LLM",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "14.3 division of labor: code vs. llm",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L560"
+    },
+    {
+      "id": "jagausaha_strategy_spec_14_technical_architecture_framework_evaluation",
+      "label": "14. TECHNICAL ARCHITECTURE & FRAMEWORK EVALUATION",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "14. technical architecture & framework evaluation",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L525"
     },
     {
       "id": "jagausaha_strategy_spec_15_1_real_vs_fabricated_metrics",
@@ -2201,6 +2336,18 @@
       "source_location": "L572"
     },
     {
+      "id": "jagausaha_strategy_spec_16_red_team_the_idea_brutal_judge_objections_defenses",
+      "label": "16. RED TEAM THE IDEA: BRUTAL JUDGE OBJECTIONS & DEFENSES",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "16. red team the idea: brutal judge objections & defenses",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L587"
+    },
+    {
       "id": "jagausaha_strategy_spec_17_the_competitive_moat",
       "label": "17. THE COMPETITIVE MOAT",
       "_origin": "ast",
@@ -2211,6 +2358,126 @@
       "norm_label": "17. the competitive moat",
       "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
       "source_location": "L607"
+    },
+    {
+      "id": "jagausaha_strategy_spec_19_final_challenge_the_7_day_hackathon_execution_plan",
+      "label": "19. FINAL CHALLENGE: THE 7-DAY HACKATHON EXECUTION PLAN",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "19. final challenge: the 7-day hackathon execution plan",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L726"
+    },
+    {
+      "id": "jagausaha_strategy_spec_1_1_field_realities_of_indonesian_umkm",
+      "label": "1.1 Field Realities of Indonesian UMKM",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.1 field realities of indonesian umkm",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L8"
+    },
+    {
+      "id": "jagausaha_strategy_spec_1_2_problem_ranking_matrix",
+      "label": "1.2 Problem Ranking Matrix",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.2 problem ranking matrix",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L38"
+    },
+    {
+      "id": "jagausaha_strategy_spec_1_start_from_the_problem_not_the_solution",
+      "label": "1. START FROM THE PROBLEM \u2014 NOT THE SOLUTION",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. start from the problem \u2014 not the solution",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "jagausaha_strategy_spec_2_1_the_original_hypothesis",
+      "label": "2.1 The Original Hypothesis",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2.1 the original hypothesis",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L52"
+    },
+    {
+      "id": "jagausaha_strategy_spec_2_2_brutal_reality_check_weak_assumptions",
+      "label": "2.2 Brutal Reality Check & Weak Assumptions",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2.2 brutal reality check & weak assumptions",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L55"
+    },
+    {
+      "id": "jagausaha_strategy_spec_2_critical_evaluation_of_the_original_idea",
+      "label": "2. CRITICAL EVALUATION OF THE ORIGINAL IDEA",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. critical evaluation of the original idea",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L50"
+    },
+    {
+      "id": "jagausaha_strategy_spec_3_1_global_domestic_precedents",
+      "label": "3.1 Global & Domestic Precedents",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3.1 global & domestic precedents",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L80"
+    },
+    {
+      "id": "jagausaha_strategy_spec_3_2_the_unfair_differentiation_for_jagausaha",
+      "label": "3.2 The Unfair Differentiation for JagaUsaha",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3.2 the unfair differentiation for jagausaha",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L89"
+    },
+    {
+      "id": "jagausaha_strategy_spec_3_competitive_landscape_local_adaptation",
+      "label": "3. COMPETITIVE LANDSCAPE & LOCAL ADAPTATION",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. competitive landscape & local adaptation",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L78"
     },
     {
       "id": "jagausaha_strategy_spec_4_1_liquidity_invariant_engine",
@@ -2309,6 +2576,54 @@
       "source_location": "L372"
     },
     {
+      "id": "jagausaha_strategy_spec_9_1_risk_classification_autonomy_gates",
+      "label": "9.1 Risk Classification & Autonomy Gates",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "9.1 risk classification & autonomy gates",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L407"
+    },
+    {
+      "id": "jagausaha_strategy_spec_9_2_hallucination_immunity_protocol",
+      "label": "9.2 Hallucination Immunity Protocol",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "9.2 hallucination immunity protocol",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L415"
+    },
+    {
+      "id": "jagausaha_strategy_spec_9_safety_architecture_financial_trust_boundaries",
+      "label": "9. SAFETY ARCHITECTURE & FINANCIAL TRUST BOUNDARIES",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "9. safety architecture & financial trust boundaries",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L405"
+    },
+    {
+      "id": "jagausaha_strategy_spec_final_product_definition",
+      "label": "Final Product Definition",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "final product definition",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L743"
+    },
+    {
       "id": "jagausaha_strategy_spec_jagausaha_ai_autonomous_financial_guardian_decision_sandbox_for_indonesian_umkm",
       "label": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
       "_origin": "ast",
@@ -2321,136 +2636,146 @@
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_motion_command_palette",
-      "label": "command-palette.tsx",
+      "id": "jagausaha_strategy_spec_minute_by_minute_live_walkthrough",
+      "label": "Minute-by-Minute Live Walkthrough",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "minute-by-minute live walkthrough",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L463"
+    },
+    {
+      "id": "jagausaha_strategy_spec_objection_1_isn_t_this_just_mekari_or_bukuwarung_with_a_chatgpt_wrapper",
+      "label": "Objection 1: \"Isn't this just Mekari or BukuWarung with a ChatGPT wrapper?\"",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "objection 1: \"isn't this just mekari or bukuwarung with a chatgpt wrapper?\"",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L589"
+    },
+    {
+      "id": "jagausaha_strategy_spec_objection_2_where_does_the_data_come_from_indonesian_umkm_keep_messy_cash_in_a_biscuit_tin",
+      "label": "Objection 2: \"Where does the data come from? Indonesian UMKM keep messy cash in a biscuit tin!\"",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "objection 2: \"where does the data come from? indonesian umkm keep messy cash in a biscuit tin!\"",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L593"
+    },
+    {
+      "id": "jagausaha_strategy_spec_objection_3_why_does_this_require_an_agent_a_simple_excel_formula_can_do_cash_flow_projection",
+      "label": "Objection 3: \"Why does this require an AGENT? A simple Excel formula can do cash flow projection.\"",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "objection 3: \"why does this require an agent? a simple excel formula can do cash flow projection.\"",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L597"
+    },
+    {
+      "id": "jagausaha_strategy_spec_objection_4_what_if_your_ai_gives_wrong_advice_and_causes_a_business_to_collapse",
+      "label": "Objection 4: \"What if your AI gives wrong advice and causes a business to collapse?\"",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "objection 4: \"what if your ai gives wrong advice and causes a business to collapse?\"",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L601"
+    },
+    {
+      "id": "jagausaha_strategy_spec_scenario_kopi_teras_barokah_small_coffee_shop_in_south_jakarta",
+      "label": "Scenario: \"Kopi Teras Barokah\" (Small Coffee Shop in South Jakarta)",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "scenario: \"kopi teras barokah\" (small coffee shop in south jakarta)",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L459"
+    },
+    {
+      "id": "jagausaha_strategy_spec_the_30_second_pitch",
+      "label": "The 30-Second Pitch",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "the 30-second pitch",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L756"
+    },
+    {
+      "id": "jagausaha_strategy_spec_the_7_day_exact_build_specification",
+      "label": "The 7-Day Exact Build Specification",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "the 7-day exact build specification",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L734"
+    },
+    {
+      "id": "jagausaha_strategy_spec_the_one_demo_moment_judges_will_remember",
+      "label": "The One Demo Moment Judges Will Remember",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "the one demo moment judges will remember",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L761"
+    },
+    {
+      "id": "jagausaha_strategy_spec_what_not_to_build",
+      "label": "What NOT to Build",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "JAGAUSAHA: AI Autonomous Financial Guardian & Decision Sandbox for Indonesian UMKM",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "what not to build",
+      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
+      "source_location": "L728"
+    },
+    {
+      "id": "frontend_src_components_footer",
+      "label": "Footer.tsx",
       "_origin": "ast",
       "community": 10,
-      "community_name": "ease.ts",
+      "community_name": "JagaUsahaLogo.tsx",
       "file_type": "code",
-      "norm_label": "command-palette.tsx",
-      "source_file": "frontend/src/components/motion/command-palette.tsx",
+      "norm_label": "footer.tsx",
+      "source_file": "frontend/src/components/Footer.tsx",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_motion_command_palette_panel_spring",
-      "label": "PANEL_SPRING",
+      "id": "frontend_src_components_ui_jagausahalogo",
+      "label": "JagaUsahaLogo.tsx",
       "_origin": "ast",
       "community": 10,
-      "community_name": "ease.ts",
+      "community_name": "JagaUsahaLogo.tsx",
       "file_type": "code",
-      "norm_label": "panel_spring",
-      "source_file": "frontend/src/components/motion/command-palette.tsx",
-      "source_location": "L34"
-    },
-    {
-      "id": "frontend_src_components_whatsappmodal",
-      "label": "WhatsAppModal.tsx",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "whatsappmodal.tsx",
-      "source_file": "frontend/src/components/WhatsAppModal.tsx",
+      "norm_label": "jagausahalogo.tsx",
+      "source_file": "frontend/src/components/ui/JagaUsahaLogo.tsx",
       "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_lib_ease",
-      "label": "ease.ts",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "ease.ts",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_lib_ease_ease_drawer",
-      "label": "EASE_DRAWER",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "ease_drawer",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L4"
-    },
-    {
-      "id": "frontend_src_lib_ease_ease_in_out",
-      "label": "EASE_IN_OUT",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "ease_in_out",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L3"
-    },
-    {
-      "id": "frontend_src_lib_ease_ease_out",
-      "label": "EASE_OUT",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "ease_out",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L2"
-    },
-    {
-      "id": "frontend_src_lib_ease_ease_out_css",
-      "label": "EASE_OUT_CSS",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "ease_out_css",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L6"
-    },
-    {
-      "id": "frontend_src_lib_ease_spring_glide",
-      "label": "SPRING_GLIDE",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "spring_glide",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L42"
-    },
-    {
-      "id": "frontend_src_lib_ease_spring_panel",
-      "label": "SPRING_PANEL",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "spring_panel",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L22"
-    },
-    {
-      "id": "frontend_src_lib_ease_spring_press",
-      "label": "SPRING_PRESS",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "spring_press",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L8"
-    },
-    {
-      "id": "frontend_src_lib_ease_spring_swap",
-      "label": "SPRING_SWAP",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "ease.ts",
-      "file_type": "code",
-      "norm_label": "spring_swap",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L15"
     },
     {
       "id": "jagausaha_strategy_spec_6_fifteen_unconventional_out_of_the_box_agent_capabilities",
@@ -2914,14 +3239,14 @@
       "source_location": "L61"
     },
     {
-      "id": "frontend_src_components_decisionintelligencecard",
-      "label": "DecisionIntelligenceCard.tsx",
+      "id": "frontend_src_components_dashboard_dashboardsimulatorview",
+      "label": "DashboardSimulatorView.tsx",
       "_origin": "ast",
       "community": 16,
       "community_name": "DecisionStudio.tsx",
       "file_type": "code",
-      "norm_label": "decisionintelligencecard.tsx",
-      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
+      "norm_label": "dashboardsimulatorview.tsx",
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
       "source_location": "L1"
     },
     {
@@ -2933,6 +3258,17 @@
       "file_type": "code",
       "norm_label": "decisionstudio.tsx",
       "source_file": "frontend/src/components/DecisionStudio.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_loginpage",
+      "label": "LoginPage.tsx",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "loginpage.tsx",
+      "source_file": "frontend/src/components/LoginPage.tsx",
       "source_location": "L1"
     },
     {
@@ -2956,6 +3292,28 @@
       "norm_label": "motionbutton",
       "source_file": "frontend/src/components/motion/button.tsx",
       "source_location": "L17"
+    },
+    {
+      "id": "frontend_src_components_motion_input",
+      "label": "input.tsx",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "input.tsx",
+      "source_file": "frontend/src/components/motion/input.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_motion_input_input",
+      "label": "Input",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "DecisionStudio.tsx",
+      "file_type": "code",
+      "norm_label": "input",
+      "source_file": "frontend/src/components/motion/input.tsx",
+      "source_location": "L51"
     },
     {
       "id": "frontend_src_components_simulationchatmodal",
@@ -3490,6 +3848,17 @@
       "source_location": "L31"
     },
     {
+      "id": "ref_recharts",
+      "label": "recharts",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "recharts",
+      "source_file": "frontend/package.json",
+      "source_location": "L20"
+    },
+    {
       "id": "ref_tailwindcss",
       "label": "tailwindcss",
       "_origin": "ast",
@@ -3962,6 +4331,28 @@
       "source_location": "L1"
     },
     {
+      "id": "frontend_src_components_herosection",
+      "label": "HeroSection.tsx",
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "expanding-arrow-button.tsx",
+      "file_type": "code",
+      "norm_label": "herosection.tsx",
+      "source_file": "frontend/src/components/HeroSection.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_herovisual3d",
+      "label": "HeroVisual3D.tsx",
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "expanding-arrow-button.tsx",
+      "file_type": "code",
+      "norm_label": "herovisual3d.tsx",
+      "source_file": "frontend/src/components/HeroVisual3D.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "frontend_src_components_motion_expanding_arrow_button",
       "label": "expanding-arrow-button.tsx",
       "_origin": "ast",
@@ -3995,37 +4386,15 @@
       "source_location": "L42"
     },
     {
-      "id": "frontend_src_components_motion_tilt_card",
-      "label": "tilt-card.tsx",
+      "id": "frontend_src_lib_ease_spring_press",
+      "label": "SPRING_PRESS",
       "_origin": "ast",
       "community": 32,
       "community_name": "expanding-arrow-button.tsx",
       "file_type": "code",
-      "norm_label": "tilt-card.tsx",
-      "source_file": "frontend/src/components/motion/tilt-card.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_lib_ease_spring_mouse",
-      "label": "SPRING_MOUSE",
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "expanding-arrow-button.tsx",
-      "file_type": "code",
-      "norm_label": "spring_mouse",
+      "norm_label": "spring_press",
       "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L36"
-    },
-    {
-      "id": "frontend_src_lib_hooks_use_hover_capable",
-      "label": "use-hover-capable.ts",
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "expanding-arrow-button.tsx",
-      "file_type": "code",
-      "norm_label": "use-hover-capable.ts",
-      "source_file": "frontend/src/lib/hooks/use-hover-capable.ts",
-      "source_location": "L1"
+      "source_location": "L8"
     },
     {
       "id": "frontend_src_components_agentthinking",
@@ -4250,26 +4619,15 @@
       "source_location": "L8"
     },
     {
-      "id": "frontend_src_components_motion_text_reveal",
-      "label": "text-reveal.tsx",
+      "id": "frontend_src_components_reactbits_spotlightcard",
+      "label": "SpotlightCard.tsx",
       "_origin": "ast",
       "community": 34,
-      "community_name": "text-reveal.tsx",
+      "community_name": "SpotlightCard.tsx",
       "file_type": "code",
-      "norm_label": "text-reveal.tsx",
-      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "norm_label": "spotlightcard.tsx",
+      "source_file": "frontend/src/components/reactbits/SpotlightCard.tsx",
       "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_motion_text_reveal_default_spring",
-      "label": "DEFAULT_SPRING",
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "text-reveal.tsx",
-      "file_type": "code",
-      "norm_label": "default_spring",
-      "source_file": "frontend/src/components/motion/text-reveal.tsx",
-      "source_location": "L26"
     },
     {
       "id": "frontend_src_app",
@@ -4294,59 +4652,59 @@
       "source_location": "L44"
     },
     {
-      "id": "frontend_src_components_actionfeed",
-      "label": "ActionFeed.tsx",
+      "id": "frontend_src_components_faqsection",
+      "label": "FAQSection.tsx",
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "actionfeed.tsx",
-      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "norm_label": "faqsection.tsx",
+      "source_file": "frontend/src/components/FAQSection.tsx",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_featureagents",
-      "label": "FeatureAgents.tsx",
+      "id": "frontend_src_components_header",
+      "label": "Header.tsx",
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "featureagents.tsx",
-      "source_file": "frontend/src/components/FeatureAgents.tsx",
+      "norm_label": "header.tsx",
+      "source_file": "frontend/src/components/Header.tsx",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_herosection",
-      "label": "HeroSection.tsx",
+      "id": "frontend_src_components_terminaldrawer",
+      "label": "TerminalDrawer.tsx",
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "herosection.tsx",
-      "source_file": "frontend/src/components/HeroSection.tsx",
+      "norm_label": "terminaldrawer.tsx",
+      "source_file": "frontend/src/components/TerminalDrawer.tsx",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_herovisual3d",
-      "label": "HeroVisual3D.tsx",
+      "id": "frontend_src_components_whatsappmodal",
+      "label": "WhatsAppModal.tsx",
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
       "file_type": "code",
-      "norm_label": "herovisual3d.tsx",
-      "source_file": "frontend/src/components/HeroVisual3D.tsx",
+      "norm_label": "whatsappmodal.tsx",
+      "source_file": "frontend/src/components/WhatsAppModal.tsx",
       "source_location": "L1"
     },
     {
-      "id": "ref_gsap",
-      "label": "gsap",
+      "id": "frontend_src_lib_ease_ease_out",
+      "label": "EASE_OUT",
       "_origin": "ast",
       "community": 35,
       "community_name": "App.tsx",
-      "file_type": "concept",
-      "norm_label": "gsap",
-      "source_file": "frontend/package.json",
-      "source_location": "L16"
+      "file_type": "code",
+      "norm_label": "ease_out",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L2"
     },
     {
       "id": "ref_lucide_react",
@@ -4358,252 +4716,6 @@
       "norm_label": "lucide-react",
       "source_file": "frontend/package.json",
       "source_location": "L17"
-    },
-    {
-      "id": "jagausaha_strategy_spec_19_final_challenge_the_7_day_hackathon_execution_plan",
-      "label": "19. FINAL CHALLENGE: THE 7-DAY HACKATHON EXECUTION PLAN",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "19. FINAL CHALLENGE: THE 7-DAY HACKATHON EXECUTION PLAN",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "19. final challenge: the 7-day hackathon execution plan",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L726"
-    },
-    {
-      "id": "jagausaha_strategy_spec_final_product_definition",
-      "label": "Final Product Definition",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "19. FINAL CHALLENGE: THE 7-DAY HACKATHON EXECUTION PLAN",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "final product definition",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L743"
-    },
-    {
-      "id": "jagausaha_strategy_spec_the_30_second_pitch",
-      "label": "The 30-Second Pitch",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "19. FINAL CHALLENGE: THE 7-DAY HACKATHON EXECUTION PLAN",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "the 30-second pitch",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L756"
-    },
-    {
-      "id": "jagausaha_strategy_spec_the_7_day_exact_build_specification",
-      "label": "The 7-Day Exact Build Specification",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "19. FINAL CHALLENGE: THE 7-DAY HACKATHON EXECUTION PLAN",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "the 7-day exact build specification",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L734"
-    },
-    {
-      "id": "jagausaha_strategy_spec_the_one_demo_moment_judges_will_remember",
-      "label": "The One Demo Moment Judges Will Remember",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "19. FINAL CHALLENGE: THE 7-DAY HACKATHON EXECUTION PLAN",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "the one demo moment judges will remember",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L761"
-    },
-    {
-      "id": "jagausaha_strategy_spec_what_not_to_build",
-      "label": "What NOT to Build",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "19. FINAL CHALLENGE: THE 7-DAY HACKATHON EXECUTION PLAN",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "what not to build",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L728"
-    },
-    {
-      "id": "frontend_src_components_header",
-      "label": "Header.tsx",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "Header.tsx",
-      "file_type": "code",
-      "norm_label": "header.tsx",
-      "source_file": "frontend/src/components/Header.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_motion_shared_layout_bg",
-      "label": "shared-layout-bg.tsx",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "Header.tsx",
-      "file_type": "code",
-      "norm_label": "shared-layout-bg.tsx",
-      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_motion_shared_layout_bg_reducedvariants",
-      "label": "reducedVariants",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "Header.tsx",
-      "file_type": "code",
-      "norm_label": "reducedvariants",
-      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
-      "source_location": "L41"
-    },
-    {
-      "id": "frontend_src_components_motion_shared_layout_bg_sharedlayoutbg",
-      "label": "SharedLayoutBg",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "Header.tsx",
-      "file_type": "code",
-      "norm_label": "sharedlayoutbg",
-      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
-      "source_location": "L47"
-    },
-    {
-      "id": "frontend_src_components_motion_shared_layout_bg_variants",
-      "label": "variants",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "Header.tsx",
-      "file_type": "code",
-      "norm_label": "variants",
-      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
-      "source_location": "L35"
-    },
-    {
-      "id": "frontend_src_lib_ease_spring_layout",
-      "label": "SPRING_LAYOUT",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "Header.tsx",
-      "file_type": "code",
-      "norm_label": "spring_layout",
-      "source_file": "frontend/src/lib/ease.ts",
-      "source_location": "L29"
-    },
-    {
-      "id": "jagausaha_strategy_spec_16_red_team_the_idea_brutal_judge_objections_defenses",
-      "label": "16. RED TEAM THE IDEA: BRUTAL JUDGE OBJECTIONS & DEFENSES",
-      "_origin": "ast",
-      "community": 38,
-      "community_name": "16. RED TEAM THE IDEA: BRUTAL JUDGE OBJECTIONS & DEFENSES",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "16. red team the idea: brutal judge objections & defenses",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L587"
-    },
-    {
-      "id": "jagausaha_strategy_spec_objection_1_isn_t_this_just_mekari_or_bukuwarung_with_a_chatgpt_wrapper",
-      "label": "Objection 1: \"Isn't this just Mekari or BukuWarung with a ChatGPT wrapper?\"",
-      "_origin": "ast",
-      "community": 38,
-      "community_name": "16. RED TEAM THE IDEA: BRUTAL JUDGE OBJECTIONS & DEFENSES",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "objection 1: \"isn't this just mekari or bukuwarung with a chatgpt wrapper?\"",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L589"
-    },
-    {
-      "id": "jagausaha_strategy_spec_objection_2_where_does_the_data_come_from_indonesian_umkm_keep_messy_cash_in_a_biscuit_tin",
-      "label": "Objection 2: \"Where does the data come from? Indonesian UMKM keep messy cash in a biscuit tin!\"",
-      "_origin": "ast",
-      "community": 38,
-      "community_name": "16. RED TEAM THE IDEA: BRUTAL JUDGE OBJECTIONS & DEFENSES",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "objection 2: \"where does the data come from? indonesian umkm keep messy cash in a biscuit tin!\"",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L593"
-    },
-    {
-      "id": "jagausaha_strategy_spec_objection_3_why_does_this_require_an_agent_a_simple_excel_formula_can_do_cash_flow_projection",
-      "label": "Objection 3: \"Why does this require an AGENT? A simple Excel formula can do cash flow projection.\"",
-      "_origin": "ast",
-      "community": 38,
-      "community_name": "16. RED TEAM THE IDEA: BRUTAL JUDGE OBJECTIONS & DEFENSES",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "objection 3: \"why does this require an agent? a simple excel formula can do cash flow projection.\"",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L597"
-    },
-    {
-      "id": "jagausaha_strategy_spec_objection_4_what_if_your_ai_gives_wrong_advice_and_causes_a_business_to_collapse",
-      "label": "Objection 4: \"What if your AI gives wrong advice and causes a business to collapse?\"",
-      "_origin": "ast",
-      "community": 38,
-      "community_name": "16. RED TEAM THE IDEA: BRUTAL JUDGE OBJECTIONS & DEFENSES",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "objection 4: \"what if your ai gives wrong advice and causes a business to collapse?\"",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L601"
-    },
-    {
-      "id": "jagausaha_strategy_spec_14_1_evaluating_hermes_agent_framework",
-      "label": "14.1 Evaluating Hermes Agent Framework",
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "14. TECHNICAL ARCHITECTURE & FRAMEWORK EVALUATION",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "14.1 evaluating hermes agent framework",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L527"
-    },
-    {
-      "id": "jagausaha_strategy_spec_14_2_production_stack_specifications",
-      "label": "14.2 Production Stack Specifications",
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "14. TECHNICAL ARCHITECTURE & FRAMEWORK EVALUATION",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "14.2 production stack specifications",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L534"
-    },
-    {
-      "id": "jagausaha_strategy_spec_14_3_division_of_labor_code_vs_llm",
-      "label": "14.3 Division of Labor: Code vs. LLM",
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "14. TECHNICAL ARCHITECTURE & FRAMEWORK EVALUATION",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "14.3 division of labor: code vs. llm",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L560"
-    },
-    {
-      "id": "jagausaha_strategy_spec_14_technical_architecture_framework_evaluation",
-      "label": "14. TECHNICAL ARCHITECTURE & FRAMEWORK EVALUATION",
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "14. TECHNICAL ARCHITECTURE & FRAMEWORK EVALUATION",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "14. technical architecture & framework evaluation",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L525"
     },
     {
       "id": "frontend_tsconfig_app",
@@ -4837,6 +4949,39 @@
       "source_location": "L1"
     },
     {
+      "id": "frontend_src_components_dashboard_dashboardagendaview",
+      "label": "DashboardAgendaView.tsx",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "animated-badge.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardagendaview.tsx",
+      "source_file": "frontend/src/components/dashboard/DashboardAgendaView.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_dashboard_dashboardagentsview",
+      "label": "DashboardAgentsView.tsx",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "animated-badge.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardagentsview.tsx",
+      "source_file": "frontend/src/components/dashboard/DashboardAgentsView.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_dashboardpage",
+      "label": "DashboardPage.tsx",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "animated-badge.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardpage.tsx",
+      "source_file": "frontend/src/components/DashboardPage.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "frontend_src_components_motion_animated_badge",
       "label": "animated-badge.tsx",
       "_origin": "ast",
@@ -4914,17 +5059,6 @@
       "source_location": "L105"
     },
     {
-      "id": "frontend_src_components_terminaldrawer",
-      "label": "TerminalDrawer.tsx",
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "animated-badge.tsx",
-      "file_type": "code",
-      "norm_label": "terminaldrawer.tsx",
-      "source_file": "frontend/src/components/TerminalDrawer.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "frontend_src_components_trajectorychart",
       "label": "TrajectoryChart.tsx",
       "_origin": "ast",
@@ -4936,40 +5070,103 @@
       "source_location": "L1"
     },
     {
-      "id": "jagausaha_strategy_spec_12_the_perfect_3_minute_hackathon_demo_script",
-      "label": "12. THE PERFECT 3-MINUTE HACKATHON DEMO SCRIPT",
+      "id": "frontend_src_components_boarduiareachart",
+      "label": "BoardUIAreaChart.tsx",
       "_origin": "ast",
-      "community": 43,
-      "community_name": "12. THE PERFECT 3-MINUTE HACKATHON DEMO SCRIPT",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "12. the perfect 3-minute hackathon demo script",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L457"
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "boarduiareachart.tsx",
+      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
+      "source_location": "L1"
     },
     {
-      "id": "jagausaha_strategy_spec_minute_by_minute_live_walkthrough",
-      "label": "Minute-by-Minute Live Walkthrough",
+      "id": "frontend_src_components_motion_bouncy_accordion",
+      "label": "bouncy-accordion.tsx",
       "_origin": "ast",
-      "community": 43,
-      "community_name": "12. THE PERFECT 3-MINUTE HACKATHON DEMO SCRIPT",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "minute-by-minute live walkthrough",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L463"
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "bouncy-accordion.tsx",
+      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
+      "source_location": "L1"
     },
     {
-      "id": "jagausaha_strategy_spec_scenario_kopi_teras_barokah_small_coffee_shop_in_south_jakarta",
-      "label": "Scenario: \"Kopi Teras Barokah\" (Small Coffee Shop in South Jakarta)",
+      "id": "frontend_src_components_motion_bouncy_accordion_chevron_transition",
+      "label": "CHEVRON_TRANSITION",
       "_origin": "ast",
-      "community": 43,
-      "community_name": "12. THE PERFECT 3-MINUTE HACKATHON DEMO SCRIPT",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "scenario: \"kopi teras barokah\" (small coffee shop in south jakarta)",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L459"
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "chevron_transition",
+      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
+      "source_location": "L76"
+    },
+    {
+      "id": "frontend_src_components_motion_bouncy_accordion_content_close_transition",
+      "label": "CONTENT_CLOSE_TRANSITION",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "content_close_transition",
+      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
+      "source_location": "L65"
+    },
+    {
+      "id": "frontend_src_components_motion_bouncy_accordion_content_open_transition",
+      "label": "CONTENT_OPEN_TRANSITION",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "content_open_transition",
+      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
+      "source_location": "L59"
+    },
+    {
+      "id": "frontend_src_components_motion_bouncy_accordion_description_transition",
+      "label": "DESCRIPTION_TRANSITION",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "description_transition",
+      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
+      "source_location": "L71"
+    },
+    {
+      "id": "frontend_src_components_motion_bouncy_accordion_row_transition",
+      "label": "ROW_TRANSITION",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "row_transition",
+      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
+      "source_location": "L53"
+    },
+    {
+      "id": "frontend_src_components_motion_command_palette",
+      "label": "command-palette.tsx",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "command-palette.tsx",
+      "source_file": "frontend/src/components/motion/command-palette.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_motion_command_palette_panel_spring",
+      "label": "PANEL_SPRING",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "panel_spring",
+      "source_file": "frontend/src/components/motion/command-palette.tsx",
+      "source_location": "L34"
     },
     {
       "id": "frontend_src_components_motion_marquee",
@@ -4981,6 +5178,50 @@
       "norm_label": "marquee.tsx",
       "source_file": "frontend/src/components/motion/marquee.tsx",
       "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_motion_shared_layout_bg",
+      "label": "shared-layout-bg.tsx",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "shared-layout-bg.tsx",
+      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_motion_shared_layout_bg_reducedvariants",
+      "label": "reducedVariants",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "reducedvariants",
+      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
+      "source_location": "L41"
+    },
+    {
+      "id": "frontend_src_components_motion_shared_layout_bg_sharedlayoutbg",
+      "label": "SharedLayoutBg",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "sharedlayoutbg",
+      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
+      "source_location": "L47"
+    },
+    {
+      "id": "frontend_src_components_motion_shared_layout_bg_variants",
+      "label": "variants",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "variants",
+      "source_file": "frontend/src/components/motion/shared-layout-bg.tsx",
+      "source_location": "L35"
     },
     {
       "id": "frontend_src_components_motion_tabs",
@@ -5003,6 +5244,127 @@
       "norm_label": "tabscontext",
       "source_file": "frontend/src/components/motion/tabs.tsx",
       "source_location": "L22"
+    },
+    {
+      "id": "frontend_src_components_motion_text_reveal",
+      "label": "text-reveal.tsx",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "text-reveal.tsx",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_motion_text_reveal_default_spring",
+      "label": "DEFAULT_SPRING",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "default_spring",
+      "source_file": "frontend/src/components/motion/text-reveal.tsx",
+      "source_location": "L26"
+    },
+    {
+      "id": "frontend_src_lib_ease",
+      "label": "ease.ts",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "ease.ts",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_lib_ease_ease_drawer",
+      "label": "EASE_DRAWER",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "ease_drawer",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "frontend_src_lib_ease_ease_in_out",
+      "label": "EASE_IN_OUT",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "ease_in_out",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "frontend_src_lib_ease_ease_out_css",
+      "label": "EASE_OUT_CSS",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "ease_out_css",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "frontend_src_lib_ease_spring_glide",
+      "label": "SPRING_GLIDE",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "spring_glide",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L42"
+    },
+    {
+      "id": "frontend_src_lib_ease_spring_layout",
+      "label": "SPRING_LAYOUT",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "spring_layout",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L29"
+    },
+    {
+      "id": "frontend_src_lib_ease_spring_mouse",
+      "label": "SPRING_MOUSE",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "spring_mouse",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "frontend_src_lib_ease_spring_panel",
+      "label": "SPRING_PANEL",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "spring_panel",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L22"
+    },
+    {
+      "id": "frontend_src_lib_ease_spring_swap",
+      "label": "SPRING_SWAP",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "spring_swap",
+      "source_file": "frontend/src/lib/ease.ts",
+      "source_location": "L15"
     },
     {
       "id": "frontend_src_lib_utils",
@@ -5038,42 +5400,6 @@
       "source_location": "L21"
     },
     {
-      "id": "jagausaha_strategy_spec_1_1_field_realities_of_indonesian_umkm",
-      "label": "1.1 Field Realities of Indonesian UMKM",
-      "_origin": "ast",
-      "community": 45,
-      "community_name": "1. START FROM THE PROBLEM \u2014 NOT THE SOLUTION",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1.1 field realities of indonesian umkm",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L8"
-    },
-    {
-      "id": "jagausaha_strategy_spec_1_2_problem_ranking_matrix",
-      "label": "1.2 Problem Ranking Matrix",
-      "_origin": "ast",
-      "community": 45,
-      "community_name": "1. START FROM THE PROBLEM \u2014 NOT THE SOLUTION",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1.2 problem ranking matrix",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L38"
-    },
-    {
-      "id": "jagausaha_strategy_spec_1_start_from_the_problem_not_the_solution",
-      "label": "1. START FROM THE PROBLEM \u2014 NOT THE SOLUTION",
-      "_origin": "ast",
-      "community": 45,
-      "community_name": "1. START FROM THE PROBLEM \u2014 NOT THE SOLUTION",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1. start from the problem \u2014 not the solution",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L6"
-    },
-    {
       "id": "frontend_src_components_reactbits_blurtext",
       "label": "BlurText.tsx",
       "_origin": "ast",
@@ -5105,155 +5431,6 @@
       "norm_label": "framer-motion",
       "source_file": "frontend/package.json",
       "source_location": "L15"
-    },
-    {
-      "id": "jagausaha_strategy_spec_2_1_the_original_hypothesis",
-      "label": "2.1 The Original Hypothesis",
-      "_origin": "ast",
-      "community": 47,
-      "community_name": "2. CRITICAL EVALUATION OF THE ORIGINAL IDEA",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2.1 the original hypothesis",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L52"
-    },
-    {
-      "id": "jagausaha_strategy_spec_2_2_brutal_reality_check_weak_assumptions",
-      "label": "2.2 Brutal Reality Check & Weak Assumptions",
-      "_origin": "ast",
-      "community": 47,
-      "community_name": "2. CRITICAL EVALUATION OF THE ORIGINAL IDEA",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2.2 brutal reality check & weak assumptions",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L55"
-    },
-    {
-      "id": "jagausaha_strategy_spec_2_critical_evaluation_of_the_original_idea",
-      "label": "2. CRITICAL EVALUATION OF THE ORIGINAL IDEA",
-      "_origin": "ast",
-      "community": 47,
-      "community_name": "2. CRITICAL EVALUATION OF THE ORIGINAL IDEA",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2. critical evaluation of the original idea",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L50"
-    },
-    {
-      "id": "frontend_src_components_faqsection",
-      "label": "FAQSection.tsx",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "bouncy-accordion.tsx",
-      "file_type": "code",
-      "norm_label": "faqsection.tsx",
-      "source_file": "frontend/src/components/FAQSection.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_motion_bouncy_accordion",
-      "label": "bouncy-accordion.tsx",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "bouncy-accordion.tsx",
-      "file_type": "code",
-      "norm_label": "bouncy-accordion.tsx",
-      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_motion_bouncy_accordion_chevron_transition",
-      "label": "CHEVRON_TRANSITION",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "bouncy-accordion.tsx",
-      "file_type": "code",
-      "norm_label": "chevron_transition",
-      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
-      "source_location": "L76"
-    },
-    {
-      "id": "frontend_src_components_motion_bouncy_accordion_content_close_transition",
-      "label": "CONTENT_CLOSE_TRANSITION",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "bouncy-accordion.tsx",
-      "file_type": "code",
-      "norm_label": "content_close_transition",
-      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
-      "source_location": "L65"
-    },
-    {
-      "id": "frontend_src_components_motion_bouncy_accordion_content_open_transition",
-      "label": "CONTENT_OPEN_TRANSITION",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "bouncy-accordion.tsx",
-      "file_type": "code",
-      "norm_label": "content_open_transition",
-      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
-      "source_location": "L59"
-    },
-    {
-      "id": "frontend_src_components_motion_bouncy_accordion_description_transition",
-      "label": "DESCRIPTION_TRANSITION",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "bouncy-accordion.tsx",
-      "file_type": "code",
-      "norm_label": "description_transition",
-      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
-      "source_location": "L71"
-    },
-    {
-      "id": "frontend_src_components_motion_bouncy_accordion_row_transition",
-      "label": "ROW_TRANSITION",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "bouncy-accordion.tsx",
-      "file_type": "code",
-      "norm_label": "row_transition",
-      "source_file": "frontend/src/components/motion/bouncy-accordion.tsx",
-      "source_location": "L53"
-    },
-    {
-      "id": "jagausaha_strategy_spec_3_1_global_domestic_precedents",
-      "label": "3.1 Global & Domestic Precedents",
-      "_origin": "ast",
-      "community": 49,
-      "community_name": "3. COMPETITIVE LANDSCAPE & LOCAL ADAPTATION",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "3.1 global & domestic precedents",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L80"
-    },
-    {
-      "id": "jagausaha_strategy_spec_3_2_the_unfair_differentiation_for_jagausaha",
-      "label": "3.2 The Unfair Differentiation for JagaUsaha",
-      "_origin": "ast",
-      "community": 49,
-      "community_name": "3. COMPETITIVE LANDSCAPE & LOCAL ADAPTATION",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "3.2 the unfair differentiation for jagausaha",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L89"
-    },
-    {
-      "id": "jagausaha_strategy_spec_3_competitive_landscape_local_adaptation",
-      "label": "3. COMPETITIVE LANDSCAPE & LOCAL ADAPTATION",
-      "_origin": "ast",
-      "community": 49,
-      "community_name": "3. COMPETITIVE LANDSCAPE & LOCAL ADAPTATION",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "3. competitive landscape & local adaptation",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L78"
     },
     {
       "id": "frontend_tsconfig_node",
@@ -5443,14 +5620,25 @@
       "source_location": "L22"
     },
     {
-      "id": "frontend_src_components_footer",
-      "label": "Footer.tsx",
+      "id": "frontend_src_components_actionfeed",
+      "label": "ActionFeed.tsx",
       "_origin": "ast",
       "community": 50,
       "community_name": "react",
       "file_type": "code",
-      "norm_label": "footer.tsx",
-      "source_file": "frontend/src/components/Footer.tsx",
+      "norm_label": "actionfeed.tsx",
+      "source_file": "frontend/src/components/ActionFeed.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_featureagents",
+      "label": "FeatureAgents.tsx",
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "react",
+      "file_type": "code",
+      "norm_label": "featureagents.tsx",
+      "source_file": "frontend/src/components/FeatureAgents.tsx",
       "source_location": "L1"
     },
     {
@@ -5465,59 +5653,37 @@
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_loginpage",
-      "label": "LoginPage.tsx",
+      "id": "frontend_src_components_motion_tilt_card",
+      "label": "tilt-card.tsx",
       "_origin": "ast",
       "community": 50,
       "community_name": "react",
       "file_type": "code",
-      "norm_label": "loginpage.tsx",
-      "source_file": "frontend/src/components/LoginPage.tsx",
+      "norm_label": "tilt-card.tsx",
+      "source_file": "frontend/src/components/motion/tilt-card.tsx",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_motion_input",
-      "label": "input.tsx",
+      "id": "frontend_src_lib_hooks_use_hover_capable",
+      "label": "use-hover-capable.ts",
       "_origin": "ast",
       "community": 50,
       "community_name": "react",
       "file_type": "code",
-      "norm_label": "input.tsx",
-      "source_file": "frontend/src/components/motion/input.tsx",
+      "norm_label": "use-hover-capable.ts",
+      "source_file": "frontend/src/lib/hooks/use-hover-capable.ts",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_motion_input_input",
-      "label": "Input",
+      "id": "ref_gsap",
+      "label": "gsap",
       "_origin": "ast",
       "community": 50,
       "community_name": "react",
-      "file_type": "code",
-      "norm_label": "input",
-      "source_file": "frontend/src/components/motion/input.tsx",
-      "source_location": "L51"
-    },
-    {
-      "id": "frontend_src_components_reactbits_spotlightcard",
-      "label": "SpotlightCard.tsx",
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "spotlightcard.tsx",
-      "source_file": "frontend/src/components/reactbits/SpotlightCard.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_ui_jagausahalogo",
-      "label": "JagaUsahaLogo.tsx",
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "jagausahalogo.tsx",
-      "source_file": "frontend/src/components/ui/JagaUsahaLogo.tsx",
-      "source_location": "L1"
+      "file_type": "concept",
+      "norm_label": "gsap",
+      "source_file": "frontend/package.json",
+      "source_location": "L16"
     },
     {
       "id": "ref_react",
@@ -5531,61 +5697,14 @@
       "source_location": "L18"
     },
     {
-      "id": "jagausaha_strategy_spec_9_1_risk_classification_autonomy_gates",
-      "label": "9.1 Risk Classification & Autonomy Gates",
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "9. SAFETY ARCHITECTURE & FINANCIAL TRUST BOUNDARIES",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "9.1 risk classification & autonomy gates",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L407"
-    },
-    {
-      "id": "jagausaha_strategy_spec_9_2_hallucination_immunity_protocol",
-      "label": "9.2 Hallucination Immunity Protocol",
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "9. SAFETY ARCHITECTURE & FINANCIAL TRUST BOUNDARIES",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "9.2 hallucination immunity protocol",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L415"
-    },
-    {
-      "id": "jagausaha_strategy_spec_9_safety_architecture_financial_trust_boundaries",
-      "label": "9. SAFETY ARCHITECTURE & FINANCIAL TRUST BOUNDARIES",
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "9. SAFETY ARCHITECTURE & FINANCIAL TRUST BOUNDARIES",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "9. safety architecture & financial trust boundaries",
-      "source_file": "JAGAUSAHA_STRATEGY_SPEC.md",
-      "source_location": "L405"
-    },
-    {
-      "id": "frontend_src_components_boarduiareachart",
-      "label": "BoardUIAreaChart.tsx",
+      "id": "frontend_src_components_decisionintelligencecard",
+      "label": "DecisionIntelligenceCard.tsx",
       "_origin": "ast",
       "community": 6,
-      "community_name": "DashboardPage.tsx",
+      "community_name": "DecisionIntelligenceCard.tsx",
       "file_type": "code",
-      "norm_label": "boarduiareachart.tsx",
-      "source_file": "frontend/src/components/BoardUIAreaChart.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_dashboardpage",
-      "label": "DashboardPage.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "DashboardPage.tsx",
-      "file_type": "code",
-      "norm_label": "dashboardpage.tsx",
-      "source_file": "frontend/src/components/DashboardPage.tsx",
+      "norm_label": "decisionintelligencecard.tsx",
+      "source_file": "frontend/src/components/DecisionIntelligenceCard.tsx",
       "source_location": "L1"
     },
     {
@@ -5593,7 +5712,7 @@
       "label": "number.tsx",
       "_origin": "ast",
       "community": 6,
-      "community_name": "DashboardPage.tsx",
+      "community_name": "DecisionIntelligenceCard.tsx",
       "file_type": "code",
       "norm_label": "number.tsx",
       "source_file": "frontend/src/components/motion/number.tsx",
@@ -5604,22 +5723,11 @@
       "label": "PulseCards.tsx",
       "_origin": "ast",
       "community": 6,
-      "community_name": "DashboardPage.tsx",
+      "community_name": "DecisionIntelligenceCard.tsx",
       "file_type": "code",
       "norm_label": "pulsecards.tsx",
       "source_file": "frontend/src/components/PulseCards.tsx",
       "source_location": "L1"
-    },
-    {
-      "id": "ref_recharts",
-      "label": "recharts",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "DashboardPage.tsx",
-      "file_type": "concept",
-      "norm_label": "recharts",
-      "source_file": "frontend/package.json",
-      "source_location": "L20"
     },
     {
       "id": "claude_skills_graphify_skill",
@@ -8104,6 +8212,54 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_dashboard_dashboardagentsview",
+      "target": "frontend_src_components_motion_animated_badge_animatedbadge",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardAgentsView.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardsimulatorview",
+      "target": "frontend_src_components_motion_button_motionbutton",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardsimulatorview",
+      "target": "frontend_src_components_motion_animated_badge_animatedbadge",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardsimulatorview",
+      "target": "frontend_src_components_motion_input_input",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_dashboardpage",
       "target": "frontend_src_components_ui_jagausahalogo_jagausahalogo",
       "relation": "imports",
@@ -8149,6 +8305,42 @@
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
       "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboardpage",
+      "target": "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorview",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/DashboardPage.tsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboardpage",
+      "target": "frontend_src_components_dashboard_dashboardagendaview_dashboardagendaview",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/DashboardPage.tsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboardpage",
+      "target": "frontend_src_components_dashboard_dashboardagentsview_dashboardagentsview",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/DashboardPage.tsx",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -9556,6 +9748,126 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_dashboard_dashboardagendaview",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardAgendaView.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardagendaview",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardAgendaView.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardagentsview",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardAgentsView.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardagentsview",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardAgentsView.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardagentsview",
+      "target": "frontend_src_components_motion_animated_badge",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardAgentsView.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardsimulatorview",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardsimulatorview",
+      "target": "frontend_src_components_motion_button",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardsimulatorview",
+      "target": "frontend_src_components_motion_animated_badge",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardsimulatorview",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardsimulatorview",
+      "target": "frontend_src_components_motion_input",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_dashboardpage",
       "target": "ref_react",
       "relation": "imports_from",
@@ -9625,6 +9937,42 @@
       "context": "import",
       "source_file": "frontend/src/components/DashboardPage.tsx",
       "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboardpage",
+      "target": "frontend_src_components_dashboard_dashboardsimulatorview",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/DashboardPage.tsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboardpage",
+      "target": "frontend_src_components_dashboard_dashboardagendaview",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/DashboardPage.tsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboardpage",
+      "target": "frontend_src_components_dashboard_dashboardagentsview",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/DashboardPage.tsx",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -13018,6 +13366,72 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_dashboard_dashboardagendaview",
+      "target": "frontend_src_components_dashboard_dashboardagendaview_dashboardagendaviewprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/dashboard/DashboardAgendaView.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardagendaview",
+      "target": "frontend_src_components_dashboard_dashboardagendaview_cashevent",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/dashboard/DashboardAgendaView.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardagendaview",
+      "target": "frontend_src_components_dashboard_dashboardagendaview_dashboardagendaview",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/dashboard/DashboardAgendaView.tsx",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardagentsview",
+      "target": "frontend_src_components_dashboard_dashboardagentsview_dashboardagentsview",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/dashboard/DashboardAgentsView.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardsimulatorview",
+      "target": "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorviewprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_dashboard_dashboardsimulatorview",
+      "target": "frontend_src_components_dashboard_dashboardsimulatorview_dashboardsimulatorview",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/dashboard/DashboardSimulatorView.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_dashboardpage",
       "target": "frontend_src_components_dashboardpage_dashboardpageprops",
       "relation": "contains",
@@ -13025,7 +13439,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L28",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -13036,7 +13450,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/DashboardPage.tsx",
-      "source_location": "L52",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
@@ -16375,5 +16789,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "419c48d3ef5b0f118b49000c7b1a6a1445aab001"
+  "built_at_commit": "ebf5a1cd1162fb9e9b02aeb97974ad19d3da691f"
 }

@@ -1068,9 +1068,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/DashboardPage.tsx": {
-    "mtime": 1790190539.7238355,
-    "seen": 1790190560.8134022,
-    "ast_hash": "d9bce3c52c88ff88d9639c52ca8d954b",
+    "mtime": 1790259791.6719058,
+    "seen": 1790260418.7816987,
+    "ast_hash": "eed3db747a63b73d343e817d810755b7",
     "semantic_hash": ""
   },
   "screenshot_dashboard_page_verified.png": {
@@ -1083,6 +1083,42 @@
     "mtime": 1790190499.6774268,
     "seen": 1790190560.8144028,
     "ast_hash": "819e7f8537c7a53bd698433cc11bb228",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/dashboard/DashboardAgendaView.tsx": {
+    "mtime": 1790259847.7501712,
+    "seen": 1790260418.7816987,
+    "ast_hash": "ce0a5eac42e72ddb50e3010e1e3fdd36",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/dashboard/DashboardAgentsView.tsx": {
+    "mtime": 1790259865.3146055,
+    "seen": 1790260418.7816987,
+    "ast_hash": "e51b3b4314c603a7898281af0eaceca1",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/dashboard/DashboardSimulatorView.tsx": {
+    "mtime": 1790259898.088142,
+    "seen": 1790260418.7816987,
+    "ast_hash": "3e4a2495209117befa528f8213a5cb3d",
+    "semantic_hash": ""
+  },
+  "screenshot_dashboard_agenda_view.png": {
+    "mtime": 1790260301.5242503,
+    "seen": 1790260418.7816987,
+    "ast_hash": "01b79e59d91eef4fd3466249178c073d",
+    "semantic_hash": ""
+  },
+  "screenshot_dashboard_agents_view.png": {
+    "mtime": 1790260365.4420793,
+    "seen": 1790260418.7816987,
+    "ast_hash": "f0bc4ba3b0585e4ca0f122cdb23d6c93",
+    "semantic_hash": ""
+  },
+  "screenshot_dashboard_simulator_view.png": {
+    "mtime": 1790260241.4191651,
+    "seen": 1790260418.7816987,
+    "ast_hash": "ab33ed8249c6b42662846c4f0bcb591d",
     "semantic_hash": ""
   }
 }

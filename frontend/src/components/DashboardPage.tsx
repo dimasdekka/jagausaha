@@ -24,6 +24,9 @@ import { JagaUsahaLogo } from './ui/JagaUsahaLogo';
 import { BoardUIAreaChart } from './BoardUIAreaChart';
 import { AnimatedNumber } from './motion/number';
 import { AnimatedBadge } from './motion/animated-badge';
+import { DashboardSimulatorView } from './dashboard/DashboardSimulatorView';
+import { DashboardAgendaView } from './dashboard/DashboardAgendaView';
+import { DashboardAgentsView } from './dashboard/DashboardAgentsView';
 
 interface DashboardPageProps {
   onLogout: () => void;
@@ -338,8 +341,30 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
 
         {/* Content Body */}
         <main className="p-5 sm:p-8 space-y-6 sm:space-y-8 flex-1">
-          {/* A. Top 4-Pillar Financial KPI Strip */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {activeNav === 'simulator' && (
+            <DashboardSimulatorView
+              currentCash={currentCash}
+              safeToSpend={safeToSpend}
+              safetyBuffer={safetyBuffer}
+              dailyGross={dailyGross}
+              onOpenWhatsAppModal={onOpenWhatsAppModal}
+            />
+          )}
+
+          {activeNav === 'agenda' && (
+            <DashboardAgendaView
+              onOpenWhatsAppModal={onOpenWhatsAppModal}
+            />
+          )}
+
+          {activeNav === 'agents' && (
+            <DashboardAgentsView />
+          )}
+
+          {activeNav === 'overview' && (
+            <>
+              {/* A. Top 4-Pillar Financial KPI Strip */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {/* Card 1: Saldo Kas Aktif */}
             <div className="rounded-2xl border border-blue-200/90 bg-gradient-to-br from-blue-50/60 via-white to-white p-5 shadow-xs flex flex-col justify-between space-y-2">
               <div className="flex items-center justify-between">
@@ -644,6 +669,8 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               </div>
             </div>
           </div>
+            </>
+          )}
         </main>
       </div>
     </div>
