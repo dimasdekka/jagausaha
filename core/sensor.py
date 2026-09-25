@@ -215,3 +215,81 @@ class SensorAgent:
             "detected_items": detected_items,
             "summary_narrative": summary_narrative
         }
+
+    def generate_onboarding_chat_turn(self, messages: List[Dict[str, str]]) -> Dict[str, Any]:
+        """
+        Drives interactive, multi-turn voice/chat dialogue with UMKM owner.
+        Extracts business parameters progressively while maintaining natural conversation.
+        """
+        user_texts = [m.get("content", "") for m in messages if m.get("role") == "user"]
+        combined_text = " ".join(user_texts)
+
+        extracted = self.extract_business_context_from_narrative(combined_text)
+        lower_combined = combined_text.lower()
+
+        # Check what information is still missing from the dialogue
+        has_name = bool(re.search(r"(?:nama (?:usaha|toko|kafe|kedai|bisnis|butik)|kopi\s+[a-zA-Z]|toko\s+[a-zA-Z]|butik\s+[a-zA-Z])", lower_combined))
+        has_cash = any(w in lower_combined for w in ["saldo", "kas", "rekening", "modal", "juta", "jt"])
+        has_commitments = any(w in lower_combined for w in ["gaji", "karyawan", "barista", "sewa", "tempo", "buffer", "darurat"])
+
+        # Determine the next conversational turn
+        if not user_texts:
+            reply = (
+                "Halo! Saya AI Guardian JagaUsaha. Mari kita siapkan radar keuangan usaha Anda "
+                "secara santai. Boleh ceritakan, apa nama usaha Anda dan bergerak di bidang apa?"
+            )
+            quick_replies = [
+                "Kedai Kopi Kopi Nusa di Serang",
+                "Butik Fashion & Hijab Zahrana",
+                "Warung Sembako Toko Berkah"
+            ]
+            is_complete = False
+
+        elif not has_cash:
+            reply = (
+                f"Senang berkenalan dengan {extracted['business_name']}! "
+                f"Untuk memproyeksikan daya tahan kas, berapa perkiraan saldo kas di rekening operasional "
+                f"(misalnya di BCA, Mandiri, atau BRI) dan rata-rata omset harian yang biasa masuk?"
+            )
+            quick_replies = [
+                "Saldo di BCA ada 25 juta, omset 1,2 juta/hari",
+                "Saldo kas Mandiri 30 juta, omset 2 juta/hari",
+                "Kas tunai dan rekening BRI total 15 juta"
+            ]
+            is_complete = False
+
+        elif not has_commitments:
+            reply = (
+                f"Saldo kas Rp {extracted['initial_cash']:,.0f} tercatat dengan rapi. "
+                f"Selanjutnya, apakah ada kewajiban rutin bulanan seperti gaji karyawan atau sewa tempat, "
+                f"dan berapa cadangan darurat (buffer) yang ingin Anda amankan agar tidak boleh tersentuh belanja?"
+            ).replace(",", ".")
+            quick_replies = [
+                "Gaji 4 barista 8 juta tiap tgl 30, buffer 5 juta",
+                "Gaji admin 5 juta tgl 28, sewa ruko 3 juta",
+                "Gaji pegawai 4,5 juta tgl 25, buffer 2,5 juta"
+            ]
+            is_complete = False
+
+        else:
+            safe_spend = extracted['safe_to_spend']
+            reply = (
+                f"Luar biasa! Profil keuangan {extracted['business_name']} sudah lengkap terpetakan. "
+                f"Dengan saldo kas Rp {extracted['initial_cash']:,.0f}, buffer darurat Rp {extracted['safety_buffer']:,.0f}, "
+                f"dan komitmen gaji Rp {extracted['payroll_amount']:,.0f}, model DLMM menetapkan "
+                f"Duit Dingin Aman (Safe-to-Spend) Anda sebesar Rp {safe_spend:,.0f}. "
+                f"Anda sudah siap menerapkan model ini langsung ke Dashboard!"
+            ).replace(",", ".")
+            quick_replies = [
+                "Terapkan ke Dashboard sekarang",
+                "Ada sedikit revisi pada angka gaji",
+                "Cek simulasi belanja mesin dulu"
+            ]
+            is_complete = True
+
+        return {
+            "reply": reply,
+            "extracted_data": extracted,
+            "is_complete": is_complete,
+            "quick_replies": quick_replies
+        }

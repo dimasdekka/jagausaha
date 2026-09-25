@@ -93,7 +93,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
               }`}
             >
               <Mic className={`h-3.5 w-3.5 ${activeTab === 'voice' ? 'text-[#2563eb]' : ''}`} />
-              <span>1. Ceritakan via Suara / AI</span>
+              <span>1. Ngobrol via Suara / AI</span>
             </button>
 
             <button
@@ -106,7 +106,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
               }`}
             >
               <FileText className={`h-3.5 w-3.5 ${activeTab === 'document' ? 'text-[#2563eb]' : ''}`} />
-              <span>2. Upload Dokumen & Catatan</span>
+              <span>2. Kirim Laporan Keuangan + Suara/Teks</span>
             </button>
 
             <button

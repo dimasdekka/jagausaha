@@ -20,6 +20,8 @@ import {
   ExternalLink,
   History,
   Inbox,
+  Mic,
+  BookOpen,
 } from 'lucide-react';
 import { JagaUsahaLogo } from './ui/JagaUsahaLogo';
 import { BoardUIAreaChart } from './BoardUIAreaChart';
@@ -28,6 +30,7 @@ import { DashboardSimulatorView } from './dashboard/DashboardSimulatorView';
 import { DashboardAgendaView } from './dashboard/DashboardAgendaView';
 import { DashboardAgentsView } from './dashboard/DashboardAgentsView';
 import { DashboardMemoryView } from './dashboard/DashboardMemoryView';
+import { DashboardRAGView } from './dashboard/DashboardRAGView';
 import { OnboardingModal, type BusinessContextData } from './OnboardingModal';
 import { DataInboxModal } from './DataInboxModal';
 
@@ -73,7 +76,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
   onSelectPreset,
   onOpenCommandPalette,
 }) => {
-  const [activeNav, setActiveNav] = useState<'overview' | 'simulator' | 'agenda' | 'agents' | 'memory'>('overview');
+  const [activeNav, setActiveNav] = useState<'overview' | 'simulator' | 'agenda' | 'agents' | 'memory' | 'rag'>('overview');
   const [isOnboardingOpen, setIsOnboardingOpen] = useState(false);
   const [isDataInboxOpen, setIsDataInboxOpen] = useState(false);
   const [businessProfile, setBusinessProfile] = useState<BusinessContextData>({
@@ -256,6 +259,18 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               <History className={`h-4 w-4 ${activeNav === 'memory' ? 'text-[#16a34a]' : 'text-[#737373]'}`} />
               <span>Memori Keputusan & Outcome</span>
             </button>
+
+            <button
+              onClick={() => setActiveNav('rag')}
+              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-[8px] text-xs transition-all cursor-pointer ${
+                activeNav === 'rag'
+                  ? 'bg-[#0a0a0a] text-white font-semibold shadow-dub-subtle'
+                  : 'text-[#404040] hover:text-[#0a0a0a] hover:bg-[#f5f5f5] font-medium'
+              }`}
+            >
+              <BookOpen className={`h-4 w-4 ${activeNav === 'rag' ? 'text-[#2563eb]' : 'text-[#737373]'}`} />
+              <span>Pangkalan Dokumen & RAG</span>
+            </button>
           </div>
 
           {/* Data Inbox Quick Review Card */}
@@ -328,6 +343,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               {activeNav === 'agenda' && 'Agenda Arus Kas 14H'}
               {activeNav === 'agents' && 'Log Sensor & AI Guardian'}
               {activeNav === 'memory' && 'Memori Keputusan & Outcome'}
+              {activeNav === 'rag' && 'Pangkalan Dokumen & RAG Finansial'}
             </h1>
             <span className="hidden lg:inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200/80 shrink-0">
               <span className="relative flex h-2 w-2">
@@ -368,14 +384,15 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               <span className="absolute top-2 right-2 h-2 w-2 rounded-full bg-rose-500" />
             </button>
 
-            {/* Parameter Usaha Quick Action */}
+            {/* Input Data Perusahaan via Voice / Dokumen Quick Action */}
             <button
               onClick={() => setIsOnboardingOpen(true)}
-              className="hidden md:inline-flex items-center gap-1.5 h-9 px-3.5 rounded-xl bg-slate-100 hover:bg-slate-200/80 border border-slate-200 text-xs font-semibold text-slate-800 transition-all cursor-pointer shadow-2xs"
-              title="Atur parameter profil usaha (archetype, kas awal, komitmen rutin)"
+              className="inline-flex items-center gap-1.5 h-9 px-3.5 rounded-[8px] bg-[#0a0a0a] hover:bg-[#171717] text-white text-xs font-semibold transition-all cursor-pointer shadow-dub-subtle"
+              title="Input data usaha via percakapan suara atau kirim dokumen laporan keuangan"
             >
-              <Sparkles className="h-3.5 w-3.5 text-emerald-600" />
-              <span>Parameter Usaha</span>
+              <Mic className="h-3.5 w-3.5 text-[#2563eb]" />
+              <span className="hidden sm:inline">Input Data via Suara / Dokumen</span>
+              <span className="sm:hidden">Input Data</span>
             </button>
 
             {/* Back to Home Shortcut */}
@@ -413,6 +430,10 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
 
           {activeNav === 'memory' && (
             <DashboardMemoryView />
+          )}
+
+          {activeNav === 'rag' && (
+            <DashboardRAGView />
           )}
 
           {activeNav === 'overview' && (

@@ -22,6 +22,7 @@ if str(BASE_DIR) not in sys.path:
 from core.dlmm import BusinessState, Obligation, Receivable, Scenario, simulate_trajectory, calculate_safe_to_spend
 from core.sensor import SensorAgent
 from core.advisor import AdvisorAgent
+from core.rag import RAG_ENGINE
 
 app = FastAPI(
     title="JagaUsaha API",
@@ -101,6 +102,26 @@ class ExtractContextRequest(BaseModel):
     text: Optional[str] = ""
     document_name: Optional[str] = None
     document_note: Optional[str] = None
+
+class ChatMessage(BaseModel):
+    role: str
+    content: str
+
+class OnboardingChatRequest(BaseModel):
+    messages: List[ChatMessage]
+
+class RAGQueryRequest(BaseModel):
+    query: str
+    current_cash: Optional[float] = 18500000.0
+    safe_to_spend: Optional[float] = 3800000.0
+    doc_type_filter: Optional[str] = None
+
+class RAGIngestRequest(BaseModel):
+    doc_id: str
+    source: str
+    content: str
+    doc_type: Optional[str] = "uploaded_doc"
+    metadata: Optional[Dict[str, Any]] = None
 
 @app.get("/api/health")
 def health_check():
@@ -247,7 +268,66 @@ def extract_context_endpoint(req: ExtractContextRequest):
     if req.document_note:
         combined_text += f"\nCatatan Usaha: {req.document_note}"
     result = SENSOR.extract_business_context_from_narrative(combined_text, req.document_name)
+    
+    # Auto-ingest uploaded document & notes into RAG Engine
+    if req.document_name or req.document_note:
+        source_label = req.document_name or "Catatan_Finansial_Usaha.txt"
+        ingest_text = f"Dokumen: {source_label}\nCatatan: {req.document_note or ''}\nRangkuman: {result.get('summary_narrative', '')}"
+        RAG_ENGINE.add_document(
+            doc_id=f"doc-user-{len(RAG_ENGINE.chunks) + 1}",
+            source=source_label,
+            content=ingest_text,
+            doc_type="uploaded_doc",
+            metadata={"extracted_cash": result.get("initial_cash"), "bank": result.get("bank_name")}
+        )
     return result
+
+@app.post("/api/ai/onboarding-chat")
+def onboarding_chat_endpoint(req: OnboardingChatRequest):
+    msgs = [{"role": m.role, "content": m.content} for m in req.messages]
+    result = SENSOR.generate_onboarding_chat_turn(msgs)
+    return result
+
+@app.get("/api/rag/documents")
+def get_rag_documents():
+    chunks = []
+    for c in RAG_ENGINE.chunks:
+        chunks.append({
+            "chunk_id": c.chunk_id,
+            "source": c.source,
+            "doc_type": c.doc_type,
+            "content": c.content,
+            "metadata": c.metadata
+        })
+    return {
+        "total_documents": len(chunks),
+        "documents": chunks
+    }
+
+@app.post("/api/rag/query")
+def query_rag_endpoint(req: RAGQueryRequest):
+    res = RAG_ENGINE.query(
+        user_query=req.query,
+        current_cash=req.current_cash or CURRENT_STATE.current_cash,
+        safe_to_spend=req.safe_to_spend or CURRENT_STATE.safety_buffer
+    )
+    return {
+        "query": res.query,
+        "answer": res.answer,
+        "citations": res.citations,
+        "retrieved_chunks": res.retrieved_chunks
+    }
+
+@app.post("/api/rag/ingest")
+def ingest_rag_endpoint(req: RAGIngestRequest):
+    RAG_ENGINE.add_document(
+        doc_id=req.doc_id,
+        source=req.source,
+        content=req.content,
+        doc_type=req.doc_type or "uploaded_doc",
+        metadata=req.metadata or {}
+    )
+    return {"status": "success", "chunk_id": req.doc_id, "total_chunks": len(RAG_ENGINE.chunks)}
 
 # Data Inbox Items (Resolving Uncertain Bank Mutations)
 DATA_INBOX_ITEMS = [
