@@ -93,12 +93,12 @@ export const OnboardingDocumentUpload: React.FC<OnboardingDocumentUploadProps> =
       businessName: extractedResult.business_name || 'Kopi Nusa',
       archetype: extractedResult.archetype || 'fnb',
       bankName: extractedResult.bank_name || 'BCA',
-      initialCash: extractedResult.initial_cash || 25000000,
-      safetyBuffer: extractedResult.safety_buffer || 5000000,
-      payrollAmount: extractedResult.payroll_amount || 8000000,
-      payrollDay: extractedResult.payroll_day || 30,
-      fixedRentAmount: extractedResult.fixed_rent_amount || 3000000,
-      dailyGross: extractedResult.daily_gross || 1200000,
+      initialCash: extractedResult.initial_cash ?? 25000000,
+      safetyBuffer: extractedResult.safety_buffer ?? 5000000,
+      payrollAmount: extractedResult.payroll_amount ?? 8000000,
+      payrollDay: extractedResult.payroll_day ?? 30,
+      fixedRentAmount: extractedResult.fixed_rent_amount ?? 3000000,
+      dailyGross: extractedResult.daily_gross ?? 1200000,
     });
   };
 
