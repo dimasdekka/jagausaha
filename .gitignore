@@ -34,6 +34,10 @@ pnpm-debug.log*
 # Test Screenshots & Virtualenvs
 screenshot_*.png
 .venv/
+deploy_*.py
+core/backup_vps/
+data/backup_vps/
+
 
 .vscode/
 .idea/
