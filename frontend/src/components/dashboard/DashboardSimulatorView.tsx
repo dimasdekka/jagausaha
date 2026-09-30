@@ -5,6 +5,7 @@ import {
   CheckCircle2,
   ArrowRight,
   MessageSquare,
+  Calendar,
 } from 'lucide-react';
 import { Input } from '../motion/input';
 import { MotionButton } from '../motion/button';
@@ -32,7 +33,8 @@ export const DashboardSimulatorView: React.FC<DashboardSimulatorViewProps> = ({
 }) => {
   const [expenseName, setExpenseName] = useState('Mesin Espresso 2-Group');
   const [amountStr, setAmountStr] = useState('14000000');
-  const [paymentScheme, setPaymentScheme] = useState<'cash' | 'dp50' | 'install3'>('cash');
+  const [paymentScheme, setPaymentScheme] = useState<'cash' | 'dp50' | 'installment'>('cash');
+  const [installmentMonths, setInstallmentMonths] = useState<number>(3);
   const [executionDay, setExecutionDay] = useState<number>(0);
 
   const parsedAmount = parseInt(amountStr, 10) || 0;
@@ -43,7 +45,7 @@ export const DashboardSimulatorView: React.FC<DashboardSimulatorViewProps> = ({
       ? parsedAmount
       : paymentScheme === 'dp50'
       ? Math.round(parsedAmount * 0.5)
-      : Math.round(parsedAmount / 3);
+      : Math.round(parsedAmount / installmentMonths);
 
   // Deterministic checks
   const postCash = currentCash - immediateOutflow;
@@ -169,17 +171,63 @@ export const DashboardSimulatorView: React.FC<DashboardSimulatorViewProps> = ({
 
                 <button
                   type="button"
-                  onClick={() => setPaymentScheme('install3')}
+                  onClick={() => setPaymentScheme('installment')}
                   className={`p-3 rounded-xl border text-left cursor-pointer transition-all ${
-                    paymentScheme === 'install3'
+                    paymentScheme === 'installment'
                       ? 'border-indigo-600 bg-indigo-950 text-white shadow-xs'
                       : 'border-slate-200 hover:bg-slate-50 text-slate-800'
                   }`}
                 >
-                  <div className="text-xs font-bold">Cicilan 3x</div>
-                  <div className="text-[10.5px] opacity-80 mt-0.5">Bagi 3 bulan</div>
+                  <div className="text-xs font-bold flex items-center justify-between">
+                    <span>Cicilan {installmentMonths}x</span>
+                    <span className={`text-[9.5px] px-1.5 py-0.2 rounded font-mono ${paymentScheme === 'installment' ? 'bg-indigo-800 text-indigo-200' : 'bg-slate-100 text-slate-600'}`}>
+                      Pilih Tenor
+                    </span>
+                  </div>
+                  <div className="text-[10.5px] opacity-80 mt-0.5 truncate">
+                    Bagi {installmentMonths} bulan (@ Rp {Math.round(parsedAmount / installmentMonths).toLocaleString('id-ID')})
+                  </div>
                 </button>
               </div>
+
+              {/* Tenor / Installment Duration Selector */}
+              {paymentScheme === 'installment' && (
+                <div className="p-3.5 rounded-2xl bg-indigo-50/70 border border-indigo-200/90 space-y-2.5 animate-in fade-in duration-150">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs">
+                    <span className="font-bold text-indigo-950 flex items-center gap-1.5">
+                      <Calendar className="h-3.5 w-3.5 text-indigo-600" />
+                      <span>Pilih Jumlah Bulan Cicilan (Tenor):</span>
+                    </span>
+                    <span className="text-[11px] font-bold text-indigo-800 bg-white px-2.5 py-0.5 rounded-lg border border-indigo-200 shadow-2xs self-start sm:self-auto">
+                      Beban: Rp {Math.round(parsedAmount / installmentMonths).toLocaleString('id-ID')} / bulan
+                    </span>
+                  </div>
+
+                  {/* Month options: 2, 3, 4, 6, 9, 12 bulan */}
+                  <div className="grid grid-cols-3 sm:grid-cols-6 gap-1.5">
+                    {[2, 3, 4, 6, 9, 12].map((m) => (
+                      <button
+                        key={m}
+                        type="button"
+                        onClick={() => setInstallmentMonths(m)}
+                        className={`py-2 px-2 rounded-xl text-xs font-bold border transition-all cursor-pointer text-center ${
+                          installmentMonths === m
+                            ? 'bg-indigo-950 text-white border-indigo-950 shadow-xs'
+                            : 'bg-white text-indigo-950 border-indigo-200 hover:bg-indigo-100/70 hover:border-indigo-300'
+                        }`}
+                      >
+                        <div>{m}x</div>
+                        <div className="text-[9.5px] opacity-75 font-normal">{m} Bulan</div>
+                      </button>
+                    ))}
+                  </div>
+
+                  <div className="text-[10.5px] text-indigo-700/90 flex flex-col sm:flex-row sm:items-center justify-between pt-1 border-t border-indigo-200/60 font-medium">
+                    <span>• Keluar langsung bulan ini: <strong>Rp {Math.round(parsedAmount / installmentMonths).toLocaleString('id-ID')}</strong></span>
+                    <span>• Sisa {installmentMonths - 1} cicilan teralokasi di agenda kas berikutnya</span>
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Target Execution Day */}
@@ -301,7 +349,11 @@ export const DashboardSimulatorView: React.FC<DashboardSimulatorViewProps> = ({
                   onOpenWhatsAppModal({
                     title: `Negosiasi Tempo ${expenseName}`,
                     recipient: 'Supplier / Vendor Terkait',
-                    text: `Halo Pak/Bu Vendor, salam hangat dari kami 🙏\n\nTerkait rencana pengadaan *${expenseName}* senilai *Rp ${parsedAmount.toLocaleString('id-ID')}*, kami sangat tertarik untuk bekerjasama. Untuk menjaga kestabilan likuiditas kas operasional kami, apakah memungkinkan jika transaksi ini dibayarkan secara bertahap (skema DP 50% dan pelunasan tempo 30 hari)?\n\nTerima kasih atas pengertian dan kerjasamanya! 😊`,
+                    text: `Halo Pak/Bu Vendor, salam hangat dari kami 🙏\n\nTerkait rencana pengadaan *${expenseName}* senilai *Rp ${parsedAmount.toLocaleString('id-ID')}*, kami sangat tertarik untuk bekerjasama. Sesuai dengan jadwal budgeting dan prosedur pengadaan berkala toko kami, apakah memungkinkan jika transaksi ini dibayarkan secara bertahap ${
+                      paymentScheme === 'installment'
+                        ? `(skema cicilan ${installmentMonths} bulan sebesar Rp ${Math.round(parsedAmount / installmentMonths).toLocaleString('id-ID')}/bulan)`
+                        : `(skema DP 50% dan pelunasan tempo 30 hari)`
+                    }?\n\nTerima kasih atas pengertian dan kerjasamanya! 😊`,
                     type: 'supplier_negotiation',
                   })
                 }

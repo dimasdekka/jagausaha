@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Wallet,
   Sparkles,
@@ -17,11 +17,11 @@ import {
   LayoutDashboard,
   Receipt,
   Bot,
-  ExternalLink,
   History,
   Inbox,
-  Mic,
   BookOpen,
+  Menu,
+  X,
 } from 'lucide-react';
 import { JagaUsahaLogo } from './ui/JagaUsahaLogo';
 import { BoardUIAreaChart } from './BoardUIAreaChart';
@@ -56,6 +56,7 @@ interface DashboardPageProps {
   presets: Array<{ id: string; label: string; outflow: number; dangerous: boolean }>;
   onSelectPreset: (id: string, amount: number) => void;
   onOpenCommandPalette: () => void;
+  autoOpenOnboarding?: boolean;
 }
 
 export const DashboardPage: React.FC<DashboardPageProps> = ({
@@ -75,10 +76,69 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
   presets,
   onSelectPreset,
   onOpenCommandPalette,
+  autoOpenOnboarding = false,
 }) => {
   const [activeNav, setActiveNav] = useState<'overview' | 'simulator' | 'agenda' | 'agents' | 'memory' | 'rag'>('overview');
-  const [isOnboardingOpen, setIsOnboardingOpen] = useState(false);
+  const [isOnboardingOpen, setIsOnboardingOpen] = useState(autoOpenOnboarding);
   const [isDataInboxOpen, setIsDataInboxOpen] = useState(false);
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
+  // Prevent background scroll when mobile drawer is open
+  useEffect(() => {
+    if (isMobileNavOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMobileNavOpen]);
+
+  const navItems = [
+    {
+      id: 'overview',
+      label: 'Ringkasan Kas & Sandbox',
+      icon: LayoutDashboard,
+      iconColor: 'text-[#16a34a]',
+    },
+    {
+      id: 'simulator',
+      label: 'Simulasi Keputusan',
+      icon: SlidersHorizontal,
+      iconColor: 'text-[#2563eb]',
+    },
+    {
+      id: 'agenda',
+      label: 'Agenda Kas 14H',
+      icon: Receipt,
+      iconColor: 'text-[#7c3aed]',
+    },
+    {
+      id: 'agents',
+      label: 'Log Sensor & AI Guardian',
+      icon: Bot,
+      iconColor: 'text-[#ea580c]',
+    },
+    {
+      id: 'memory',
+      label: 'Memori Keputusan & Outcome',
+      icon: History,
+      iconColor: 'text-[#16a34a]',
+    },
+    {
+      id: 'rag',
+      label: 'Pangkalan Dokumen & RAG',
+      icon: BookOpen,
+      iconColor: 'text-[#2563eb]',
+    },
+  ] as const;
+
+  useEffect(() => {
+    if (autoOpenOnboarding) {
+      setIsOnboardingOpen(true);
+    }
+  }, [autoOpenOnboarding]);
   const [businessProfile, setBusinessProfile] = useState<BusinessContextData>({
     businessName: 'Kopi Teras Barokah',
     archetype: 'fnb',
@@ -133,7 +193,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
         onOpenWhatsAppModal({
           title: 'Negosiasi Tempo Supplier',
           recipient: 'Toko Berkah (Supplier Kopi)',
-          text: `Selamat siang Pak/Bu Toko Berkah, salam hangat dari kami 🙏\n\nTerkait tagihan bahan baku seharga *Rp 4.200.000*, untuk menjaga kestabilan likuiditas kas operasional kami, apakah memungkinkan jika kami bayarkan dengan skema *DP 50% (Rp 2.100.000) hari ini*, dan pelunasan sisanya tempo 30 hari?\n\nTerima kasih banyak atas pertimbangannya Pak/Bu! 🙏`,
+          text: `Selamat siang Pak/Bu Toko Berkah, salam hangat dari kami 🙏\n\nTerkait tagihan bahan baku senilai *Rp 4.200.000*, sesuai dengan alur budgeting dan jadwal administrasi pengadaan kami bulan ini, apakah memungkinkan jika kami bayarkan dengan skema *DP 50% (Rp 2.100.000) hari ini*, dan pelunasan sisanya tempo 30 hari?\n\nTerima kasih banyak atas kemitraan dan kerjasamanya Pak/Bu! 🙏`,
           type: 'supplier_negotiation',
         }),
     },
@@ -150,9 +210,192 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
   return (
     <div className="min-h-screen bg-[#ffffff] text-[#171717] flex flex-col md:flex-row font-sans selection:bg-[#dcfce7] selection:text-[#16a34a] antialiased">
       {/* ========================================================================= */}
-      {/* 1. LEFT SIDEBAR NAVIGATION (Dub / Linear Hairline Aesthetic)              */}
+      {/* 0. MOBILE OFF-CANVAS DRAWER (BURGER NAVBAR)                               */}
       {/* ========================================================================= */}
-      <aside className="w-full md:w-64 lg:w-72 bg-[#ffffff] border-r border-[#e5e5e5] flex flex-col justify-between shrink-0 md:h-screen md:sticky md:top-0 z-30">
+      {isMobileNavOpen && (
+        <div className="fixed inset-0 z-50 md:hidden">
+          {/* Backdrop overlay */}
+          <div
+            onClick={() => setIsMobileNavOpen(false)}
+            className="fixed inset-0 bg-neutral-950/60 backdrop-blur-xs transition-opacity animate-in fade-in duration-200"
+          />
+
+          {/* Sliding drawer panel */}
+          <aside className="fixed inset-y-0 left-0 w-[290px] max-w-[85vw] bg-white border-r border-neutral-200 shadow-2xl flex flex-col justify-between z-50 animate-in slide-in-from-left duration-250">
+            {/* Top Workspace Header */}
+            <div className="p-4 border-b border-neutral-200 space-y-3">
+              <div className="flex items-center justify-between">
+                <JagaUsahaLogo size={28} showWordmark={true} />
+                <button
+                  type="button"
+                  onClick={() => setIsMobileNavOpen(false)}
+                  className="h-8 w-8 rounded-xl text-neutral-500 hover:text-neutral-950 hover:bg-neutral-100 flex items-center justify-center transition-colors cursor-pointer border border-neutral-200/80"
+                  aria-label="Tutup Menu Navigasi"
+                >
+                  <X className="h-4 w-4" />
+                </button>
+              </div>
+
+              {/* Workspace Identity Card */}
+              <div className="p-2.5 rounded-xl bg-neutral-50 border border-neutral-200">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2 truncate">
+                    <div className="h-7 w-7 rounded-lg bg-neutral-950 text-white flex items-center justify-center font-bold font-mono text-xs shrink-0 shadow-2xs">
+                      {businessProfile.businessName.slice(0, 2).toUpperCase()}
+                    </div>
+                    <div className="truncate">
+                      <div className="text-xs font-semibold text-neutral-900 truncate">
+                        {businessProfile.businessName}
+                      </div>
+                      <div className="text-[10px] text-neutral-500 font-medium capitalize">
+                        {businessProfile.archetype === 'fnb'
+                          ? 'Kafe, Resto & F&B'
+                          : businessProfile.archetype === 'retail'
+                          ? 'Retail & Fashion'
+                          : businessProfile.archetype === 'grocery'
+                          ? 'Warung & Kelontong'
+                          : 'Jasa & Agensi'}
+                      </div>
+                    </div>
+                  </div>
+
+                  <span className="text-[9.5px] font-bold text-neutral-600 bg-white border border-neutral-200 px-2 py-0.5 rounded-full shrink-0">
+                    UMKM
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Sidebar Nav Links */}
+            <div className="flex-1 p-3 space-y-4 overflow-y-auto">
+              <div className="space-y-1">
+                <div className="px-3 pb-1 text-[10px] font-bold uppercase tracking-wider text-neutral-400">
+                  Menu Utama
+                </div>
+
+                {navItems.map((item) => {
+                  const Icon = item.icon;
+                  const isActive = activeNav === item.id;
+                  return (
+                    <button
+                      key={item.id}
+                      onClick={() => {
+                        setActiveNav(item.id as any);
+                        setIsMobileNavOpen(false);
+                      }}
+                      className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs transition-all cursor-pointer ${
+                        isActive
+                          ? 'bg-neutral-950 text-white font-semibold shadow-xs'
+                          : 'text-neutral-700 hover:text-neutral-950 hover:bg-neutral-100 font-medium'
+                      }`}
+                    >
+                      <Icon className={`h-4 w-4 shrink-0 ${isActive ? item.iconColor : 'text-neutral-500'}`} />
+                      <span className="truncate">{item.label}</span>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Data Inbox Quick Review Card */}
+              <div className="pt-1">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsMobileNavOpen(false);
+                    setIsDataInboxOpen(true);
+                  }}
+                  className="w-full p-2.5 rounded-xl bg-amber-50/70 border border-amber-200/90 text-left hover:bg-amber-100/70 transition-all cursor-pointer flex items-center justify-between group"
+                >
+                  <div className="flex items-center gap-2 truncate">
+                    <div className="h-6 w-6 rounded-lg bg-amber-500/20 text-amber-700 flex items-center justify-center shrink-0">
+                      <Inbox className="h-3.5 w-3.5" />
+                    </div>
+                    <div className="truncate">
+                      <div className="text-[11px] font-bold text-amber-950 truncate">
+                        Data Inbox (2 Transaksi)
+                      </div>
+                      <div className="text-[10px] text-amber-700">QRIS & Kas Masuk</div>
+                    </div>
+                  </div>
+                  <span className="text-[10px] font-bold text-amber-900 bg-amber-200/60 px-2 py-0.5 rounded-md shrink-0">
+                    Review
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            {/* VPS & AI Hosting Badge (Mobile) */}
+            <div className="p-3 border-t border-neutral-200 bg-neutral-50/80 space-y-2">
+              <div className="p-2.5 rounded-xl border border-neutral-200/90 bg-white text-[11px] shadow-2xs space-y-1">
+                <div className="flex items-center justify-between">
+                  <span className="flex items-center gap-1.5 font-bold text-neutral-900">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <span>Cloud VPS Live</span>
+                  </span>
+                  <span className="font-mono text-[9px] font-bold text-neutral-600 bg-neutral-100 px-1.5 py-0.5 rounded border border-neutral-200/70">
+                    103.30.146.174
+                  </span>
+                </div>
+                <div className="flex items-center justify-between text-[10px] text-neutral-500 pt-0.5">
+                  <span>Hosting:</span>
+                  <a
+                    href="https://idwebhost.com/ai-hosting/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-emerald-700 hover:underline"
+                  >
+                    AI Hosting IDwebhost ↗
+                  </a>
+                </div>
+                <div className="flex items-center justify-between text-[10px] text-neutral-500">
+                  <span>Infrastruktur:</span>
+                  <a
+                    href="https://cloudbaik.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-neutral-700 hover:underline"
+                  >
+                    Cloud VPS ↗
+                  </a>
+                </div>
+              </div>
+
+              {/* Footer Profile & Logout */}
+              <div className="flex items-center justify-between p-2 rounded-xl bg-white border border-neutral-200">
+                <div className="flex items-center gap-2.5 truncate">
+                  <div className="h-7 w-7 rounded-lg bg-neutral-950 text-white flex items-center justify-center text-xs font-bold font-mono shrink-0">
+                    OB
+                  </div>
+                  <div className="truncate">
+                    <div className="text-xs font-semibold text-neutral-950 truncate">
+                      Owner Bisnis
+                    </div>
+                    <div className="text-[10px] text-neutral-500 truncate">
+                      owner@kopiteras.id
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  onClick={() => {
+                    setIsMobileNavOpen(false);
+                    onLogout();
+                  }}
+                  className="p-1.5 rounded-lg text-neutral-500 hover:text-rose-600 hover:bg-rose-50 transition-colors cursor-pointer"
+                  title="Keluar ke Landing Page"
+                >
+                  <LogOut className="h-4 w-4" />
+                </button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* 1. DESKTOP LEFT SIDEBAR NAVIGATION                                        */}
+      {/* ========================================================================= */}
+      <aside className="hidden md:flex md:w-64 lg:w-72 bg-[#ffffff] border-r border-[#e5e5e5] flex-col justify-between shrink-0 md:h-screen md:sticky md:top-0 z-30">
         {/* Top Workspace Header */}
         <div className="p-5 border-b border-[#e5e5e5] space-y-3.5">
           <div className="flex items-center justify-between">
@@ -200,77 +443,24 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               Menu Utama
             </div>
 
-            <button
-              onClick={() => setActiveNav('overview')}
-              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-[8px] text-xs transition-all cursor-pointer ${
-                activeNav === 'overview'
-                  ? 'bg-[#0a0a0a] text-white font-semibold shadow-dub-subtle'
-                  : 'text-[#404040] hover:text-[#0a0a0a] hover:bg-[#f5f5f5] font-medium'
-              }`}
-            >
-              <LayoutDashboard className={`h-4 w-4 ${activeNav === 'overview' ? 'text-[#16a34a]' : 'text-[#737373]'}`} />
-              <span>Ringkasan Kas & Sandbox</span>
-            </button>
-
-            <button
-              onClick={() => setActiveNav('simulator')}
-              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-[8px] text-xs transition-all cursor-pointer ${
-                activeNav === 'simulator'
-                  ? 'bg-[#0a0a0a] text-white font-semibold shadow-dub-subtle'
-                  : 'text-[#404040] hover:text-[#0a0a0a] hover:bg-[#f5f5f5] font-medium'
-              }`}
-            >
-              <SlidersHorizontal className={`h-4 w-4 ${activeNav === 'simulator' ? 'text-[#2563eb]' : 'text-[#737373]'}`} />
-              <span>Simulasi Keputusan</span>
-            </button>
-
-            <button
-              onClick={() => setActiveNav('agenda')}
-              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-[8px] text-xs transition-all cursor-pointer ${
-                activeNav === 'agenda'
-                  ? 'bg-[#0a0a0a] text-white font-semibold shadow-dub-subtle'
-                  : 'text-[#404040] hover:text-[#0a0a0a] hover:bg-[#f5f5f5] font-medium'
-              }`}
-            >
-              <Receipt className={`h-4 w-4 ${activeNav === 'agenda' ? 'text-[#7c3aed]' : 'text-[#737373]'}`} />
-              <span>Agenda Kas 14H</span>
-            </button>
-
-            <button
-              onClick={() => setActiveNav('agents')}
-              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-[8px] text-xs transition-all cursor-pointer ${
-                activeNav === 'agents'
-                  ? 'bg-[#0a0a0a] text-white font-semibold shadow-dub-subtle'
-                  : 'text-[#404040] hover:text-[#0a0a0a] hover:bg-[#f5f5f5] font-medium'
-              }`}
-            >
-              <Bot className={`h-4 w-4 ${activeNav === 'agents' ? 'text-[#ea580c]' : 'text-[#737373]'}`} />
-              <span>Log Sensor & AI Guardian</span>
-            </button>
-
-            <button
-              onClick={() => setActiveNav('memory')}
-              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-[8px] text-xs transition-all cursor-pointer ${
-                activeNav === 'memory'
-                  ? 'bg-[#0a0a0a] text-white font-semibold shadow-dub-subtle'
-                  : 'text-[#404040] hover:text-[#0a0a0a] hover:bg-[#f5f5f5] font-medium'
-              }`}
-            >
-              <History className={`h-4 w-4 ${activeNav === 'memory' ? 'text-[#16a34a]' : 'text-[#737373]'}`} />
-              <span>Memori Keputusan & Outcome</span>
-            </button>
-
-            <button
-              onClick={() => setActiveNav('rag')}
-              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-[8px] text-xs transition-all cursor-pointer ${
-                activeNav === 'rag'
-                  ? 'bg-[#0a0a0a] text-white font-semibold shadow-dub-subtle'
-                  : 'text-[#404040] hover:text-[#0a0a0a] hover:bg-[#f5f5f5] font-medium'
-              }`}
-            >
-              <BookOpen className={`h-4 w-4 ${activeNav === 'rag' ? 'text-[#2563eb]' : 'text-[#737373]'}`} />
-              <span>Pangkalan Dokumen & RAG</span>
-            </button>
+            {navItems.map((item) => {
+              const Icon = item.icon;
+              const isActive = activeNav === item.id;
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => setActiveNav(item.id as any)}
+                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-[8px] text-xs transition-all cursor-pointer ${
+                    isActive
+                      ? 'bg-[#0a0a0a] text-white font-semibold shadow-dub-subtle'
+                      : 'text-[#404040] hover:text-[#0a0a0a] hover:bg-[#f5f5f5] font-medium'
+                  }`}
+                >
+                  <Icon className={`h-4 w-4 ${isActive ? item.iconColor : 'text-[#737373]'}`} />
+                  <span>{item.label}</span>
+                </button>
+              );
+            })}
           </div>
 
           {/* Data Inbox Quick Review Card */}
@@ -289,25 +479,44 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               </span>
             </button>
           </div>
-
-          {/* Engine Status Widget */}
-          <div className="pt-2 border-t border-[#e5e5e5]">
-            <div className="p-3 rounded-[12px] bg-[#f5f5f5] border border-[#e5e5e5] space-y-1">
-              <div className="text-[11px] font-semibold text-[#171717] flex items-center justify-between">
-                <span>Integritas DLMM</span>
-                <span className="text-[#16a34a] font-bold text-[10px] bg-[#dcfce7] px-1.5 py-0.2 rounded-full border border-[#bbf7d0]">
-                  100% Deterministik
-                </span>
-              </div>
-              <p className="text-[10px] text-[#737373] leading-relaxed font-normal">
-                Formula matematika native Python. Bebas halusinasi LLM untuk perlindungan kas harian.
-              </p>
-            </div>
-          </div>
         </div>
 
-        {/* Bottom Sidebar User Profile & Logout */}
-        <div className="p-4 border-t border-[#e5e5e5] bg-[#ffffff] space-y-3">
+        {/* Bottom Sidebar: VPS & Hosting Telemetry Badge */}
+        <div className="p-3 border-t border-[#e5e5e5] bg-[#fafafa] space-y-2.5">
+          <div className="p-2.5 rounded-xl border border-neutral-200 bg-white text-[11px] shadow-2xs space-y-1.5">
+            <div className="flex items-center justify-between">
+              <span className="flex items-center gap-1.5 font-bold text-neutral-900">
+                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span>Cloud VPS Live</span>
+              </span>
+              <span className="font-mono text-[9px] font-bold text-neutral-600 bg-neutral-100 px-1.5 py-0.5 rounded border border-neutral-200/70">
+                103.30.146.174
+              </span>
+            </div>
+            <div className="flex items-center justify-between text-[10px] text-neutral-500 pt-0.5">
+              <span>Hosting:</span>
+              <a
+                href="https://idwebhost.com/ai-hosting/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-emerald-700 hover:underline"
+              >
+                AI Hosting IDwebhost ↗
+              </a>
+            </div>
+            <div className="flex items-center justify-between text-[10px] text-neutral-500">
+              <span>Infrastruktur:</span>
+              <a
+                href="https://cloudbaik.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-neutral-700 hover:underline"
+              >
+                Cloud VPS ↗
+              </a>
+            </div>
+          </div>
+
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2.5 truncate">
               <div className="h-8 w-8 rounded-[8px] bg-[#0a0a0a] text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-dub-subtle">
@@ -335,30 +544,44 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       {/* ========================================================================= */}
       <div className="flex-1 flex flex-col min-w-0 md:h-screen md:overflow-y-auto">
         {/* Sticky Top Bar for Content with Generous Padding & Centered Rhythm */}
-        <header className="sticky top-0 z-20 h-18 sm:h-20 border-b border-slate-200/80 bg-white/95 backdrop-blur-xl px-6 sm:px-10 flex items-center justify-between gap-4 sm:gap-6 shrink-0">
-          <div className="flex items-center gap-3.5 min-w-0">
-            <h1 className="text-base sm:text-lg font-bold text-slate-950 tracking-tight truncate">
-              {activeNav === 'overview' && 'Ringkasan Kas & Sandbox'}
-              {activeNav === 'simulator' && 'Simulasi Keputusan Belanja'}
-              {activeNav === 'agenda' && 'Agenda Arus Kas 14H'}
-              {activeNav === 'agents' && 'Log Sensor & AI Guardian'}
-              {activeNav === 'memory' && 'Memori Keputusan & Outcome'}
-              {activeNav === 'rag' && 'Pangkalan Dokumen & RAG Finansial'}
-            </h1>
-            <span className="hidden lg:inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200/80 shrink-0">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-              </span>
-              <span>Live Real-Time</span>
-            </span>
+        <header className="sticky top-0 z-20 h-16 sm:h-20 border-b border-slate-200/80 bg-white/95 backdrop-blur-xl px-4 sm:px-10 flex items-center justify-between gap-3 sm:gap-6 shrink-0">
+          <div className="flex items-center gap-2.5 sm:gap-3.5 min-w-0">
+            {/* Mobile Burger Menu Button */}
+            <button
+              type="button"
+              onClick={() => setIsMobileNavOpen(true)}
+              className="md:hidden p-2 -ml-1 rounded-xl text-slate-700 hover:text-slate-950 hover:bg-slate-100 transition-colors cursor-pointer border border-slate-200/80 shadow-2xs"
+              aria-label="Buka Menu Navigasi"
+              title="Menu Navigasi"
+            >
+              <Menu className="h-5 w-5" />
+            </button>
+
+            <div className="flex items-center min-w-0">
+              <h1 className="text-sm sm:text-lg font-bold text-slate-950 tracking-tight truncate">
+                {activeNav === 'overview' && 'Ringkasan Kas & Sandbox'}
+                {activeNav === 'simulator' && 'Simulasi Keputusan Belanja'}
+                {activeNav === 'agenda' && 'Agenda Arus Kas 14H'}
+                {activeNav === 'agents' && 'Log Sensor & AI Guardian'}
+                {activeNav === 'memory' && 'Memori Keputusan & Outcome'}
+                {activeNav === 'rag' && 'Pangkalan Dokumen & RAG Finansial'}
+              </h1>
+            </div>
           </div>
 
-          <div className="flex items-center gap-2.5 sm:gap-3.5 shrink-0">
+          <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
+            {/* IDwebhost AI Hosting Telemetry Pill */}
+            <div className="hidden xl:flex items-center gap-2 h-9 px-3 rounded-xl bg-emerald-50/80 border border-emerald-200/90 text-xs text-emerald-950 shadow-2xs">
+              <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+              <span className="font-semibold">AI Hosting IDwebhost</span>
+              <span className="text-emerald-300">|</span>
+              <span className="font-mono text-[10px] text-emerald-800 font-bold">103.30.146.174</span>
+            </div>
+
             {/* Quick Command Palette Button */}
             <button
               onClick={onOpenCommandPalette}
-              className="hidden sm:flex items-center gap-2 h-9 px-3.5 rounded-xl bg-slate-100 hover:bg-slate-200/70 border border-slate-200 text-xs text-slate-600 hover:text-slate-950 transition-all cursor-pointer shadow-2xs"
+              className="hidden sm:flex items-center gap-2 h-9 px-3 rounded-xl bg-slate-100 hover:bg-slate-200/70 border border-slate-200 text-xs text-slate-600 hover:text-slate-950 transition-all cursor-pointer shadow-2xs"
             >
               <Search className="h-3.5 w-3.5 text-slate-400" />
               <span>Cari...</span>
@@ -384,24 +607,15 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               <span className="absolute top-2 right-2 h-2 w-2 rounded-full bg-rose-500" />
             </button>
 
-            {/* Input Data Perusahaan via Voice / Dokumen Quick Action */}
+            {/* Tombol Input Data Usaha (Satu Pintu Multi-Modal) */}
             <button
+              type="button"
               onClick={() => setIsOnboardingOpen(true)}
-              className="inline-flex items-center gap-1.5 h-9 px-3.5 rounded-[8px] bg-[#0a0a0a] hover:bg-[#171717] text-white text-xs font-semibold transition-all cursor-pointer shadow-dub-subtle"
-              title="Input data usaha via percakapan suara atau kirim dokumen laporan keuangan"
+              className="inline-flex items-center gap-2 h-9 px-3.5 sm:px-4 rounded-xl bg-neutral-950 hover:bg-neutral-850 text-white text-xs font-semibold transition-all cursor-pointer shadow-xs hover:shadow-sm active:scale-[0.98]"
+              title="Input data usaha melalui unggah berkas, rekaman suara, atau catatan teks"
             >
-              <Mic className="h-3.5 w-3.5 text-[#2563eb]" />
-              <span className="hidden sm:inline">Input Data via Suara / Dokumen</span>
-              <span className="sm:hidden">Input Data</span>
-            </button>
-
-            {/* Back to Home Shortcut */}
-            <button
-              onClick={onLogout}
-              className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 hover:text-slate-950 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer ml-1 pl-3 border-l border-slate-200"
-            >
-              <span>Beranda</span>
-              <ExternalLink className="h-3 w-3" />
+              <Sparkles className="h-3.5 w-3.5 text-blue-400" />
+              <span>Input Data Usaha</span>
             </button>
           </div>
         </header>

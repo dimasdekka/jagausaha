@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { PulseCards } from './PulseCards';
 import { BoardUIAreaChart } from './BoardUIAreaChart';
 import { DecisionIntelligenceCard } from './DecisionIntelligenceCard';
 import { SimulationChatModal } from './SimulationChatModal';
-import { ThinkingOrb, type OrbState } from 'thinking-orbs';
+import { VoiceBeam, useMicrophone } from 'voice-glow';
+import { ThinkingOrb } from 'thinking-orbs';
 import { BorderBeam } from 'border-beam';
-import { Mic, Sparkles, Send } from 'lucide-react';
-import { Input } from './motion/input';
-import { MotionButton } from './motion/button';
+import { Mic, Send, Sparkles, Lightbulb, ArrowUpRight, Bot, X } from 'lucide-react';
 
 interface PresetScenario {
   id: string;
@@ -58,20 +57,123 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
   const isSafe = insolvencyDay === null;
   const minCash = scenarioCash ? Math.min(...scenarioCash) : Math.min(...baselineCash);
   const [promptText, setPromptText] = useState('');
-  const [orbState, setOrbState] = useState<OrbState>('breathing');
   const [isChatModalOpen, setIsChatModalOpen] = useState(false);
   const [activeQuery, setActiveQuery] = useState('Beli mesin espresso 14 juta tunai aman nggak?');
 
   const customIdeaChips = [
-    { label: 'Sewa Ruko Tambahan (20 Jt)', amount: 20000000 },
-    { label: 'Beli Grinder Kopi Baru (4.5 Jt)', amount: 4500000 },
-    { label: 'Renovasi Bar Espresso (8 Jt)', amount: 8000000 },
+    { label: 'Sewa Ruko Tambahan', amount: 20000000 },
+    { label: 'Beli Grinder Kopi Baru', amount: 4500000 },
+    { label: 'Renovasi Bar Espresso', amount: 8000000 },
   ];
+
+  const mic = useMicrophone();
+  const [isVoiceActive, setIsVoiceActive] = useState(false);
+  const [isThinking, setIsThinking] = useState(false);
+  const silenceTimerRef = useRef<any>(null);
+  const recognitionRef = useRef<any>(null);
+
+  const resetSilenceTimer = (durationMs = 5000) => {
+    if (silenceTimerRef.current) clearTimeout(silenceTimerRef.current);
+    silenceTimerRef.current = setTimeout(() => {
+      stopVoiceSession();
+    }, durationMs);
+  };
+
+  const stopVoiceSession = () => {
+    if (silenceTimerRef.current) clearTimeout(silenceTimerRef.current);
+    if (mic.state === 'live') {
+      try { mic.stop(); } catch {}
+    }
+    if (recognitionRef.current) {
+      try { recognitionRef.current.stop(); } catch {}
+    }
+    setIsVoiceActive(false);
+  };
+
+  // Setup Web Speech API for Real Voice Input
+  useEffect(() => {
+    const SpeechRecognition =
+      (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+
+    if (SpeechRecognition) {
+      const recognition = new SpeechRecognition();
+      recognition.continuous = true;
+      recognition.interimResults = true;
+      recognition.lang = 'id-ID';
+
+      recognition.onresult = (event: any) => {
+        let currentTranscript = '';
+        for (let i = 0; i < event.results.length; i++) {
+          currentTranscript += event.results[i][0].transcript;
+        }
+        if (currentTranscript.trim()) {
+          setPromptText(currentTranscript.trim());
+          // Voice detected! Reset silence timer to 3.5 seconds
+          resetSilenceTimer(3500);
+        }
+      };
+
+      recognition.onspeechstart = () => {
+        resetSilenceTimer(6000);
+      };
+
+      recognition.onspeechend = () => {
+        resetSilenceTimer(2500);
+      };
+
+      recognition.onerror = (event: any) => {
+        console.warn('SpeechRecognition notice:', event?.error);
+        if (event?.error === 'no-speech') {
+          // Keep listening until silence timer finishes
+          return;
+        }
+      };
+
+      recognitionRef.current = recognition;
+    }
+
+    return () => {
+      if (silenceTimerRef.current) clearTimeout(silenceTimerRef.current);
+      if (recognitionRef.current) {
+        try { recognitionRef.current.stop(); } catch {}
+      }
+    };
+  }, []);
+
+  const handleToggleVoice = async () => {
+    if (isVoiceActive) {
+      stopVoiceSession();
+      return;
+    }
+
+    setIsVoiceActive(true);
+    setPromptText('');
+    // Start silence timer: if no voice input for 5 seconds, auto-stop
+    resetSilenceTimer(5000);
+
+    // Try starting physical microphone stream for VoiceBeam
+    try {
+      if (mic.supported) {
+        await mic.start();
+      }
+    } catch (e) {
+      console.warn('Microphone stream error:', e);
+    }
+
+    // Try starting SpeechRecognition for real-time Indonesian transcription
+    if (recognitionRef.current) {
+      try {
+        recognitionRef.current.start();
+      } catch (e) {
+        console.warn('SpeechRecognition start error:', e);
+      }
+    }
+  };
 
   const handleRunSimulation = (queryToRun?: string) => {
     const text = queryToRun || promptText || 'Beli mesin espresso 14 juta tunai aman nggak?';
     setActiveQuery(text);
-    setOrbState('solving');
+    setIsThinking(true);
 
     // Parse amount from text if custom
     const match = text.match(/(\d+([\.,]\d+)?)\s*(juta|jt)/i);
@@ -86,43 +188,36 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
     }
 
     setTimeout(() => {
-      setOrbState('breathing');
+      setIsThinking(false);
       setIsChatModalOpen(true);
-    }, 350);
+    }, 400);
   };
 
   const handleVoiceTest = () => {
-    setOrbState('listening');
     setActiveQuery('Pesan Suara WhatsApp: "Beli mesin espresso 14 juta tunai aman nggak buat gajian barista minggu depan?"');
     onTriggerVoiceSim();
     setTimeout(() => {
-      setOrbState('solving');
-      setTimeout(() => {
-        setOrbState('breathing');
-        setIsChatModalOpen(true);
-      }, 400);
-    }, 600);
+      setIsChatModalOpen(true);
+    }, 400);
   };
 
   return (
-    <div className="rounded-3xl border border-neutral-200/90 bg-white shadow-handhold overflow-hidden">
-      {/* 1. Window Header (macOS Terminal / Studio Top Bar) */}
-      <div className="flex items-center justify-between px-6 py-3.5 border-b border-neutral-100 bg-neutral-50/70">
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-1.5">
-            <span className="h-2.5 w-2.5 rounded-full bg-neutral-300" />
-            <span className="h-2.5 w-2.5 rounded-full bg-neutral-300" />
-            <span className="h-2.5 w-2.5 rounded-full bg-neutral-300" />
-          </div>
-          <span className="text-xs font-medium text-neutral-500 pl-2.5 border-l border-neutral-200">
-            jagausaha.app/sandbox
-          </span>
+    <div className="rounded-2xl border border-neutral-200 bg-white shadow-sm overflow-hidden">
+      {/* 1. Authentic Header (No Fake Chrome / Anti-Slop Rule) */}
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 px-6 py-4 border-b border-neutral-200 bg-neutral-50/60">
+        <div>
+          <h2 className="text-sm sm:text-base font-bold text-neutral-900 tracking-tight">
+            Sandbox Simulasi Kas & Keputusan Bisnis
+          </h2>
+          <p className="text-xs text-neutral-500 font-normal">
+            Uji dampak belanja modal terhadap likuiditas kas operasional 30 hari ke depan
+          </p>
         </div>
 
         <div className="flex items-center gap-2">
-          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-          <span className="text-xs font-medium text-neutral-600">
-            Simulasi Kas 30 Hari · DLMM Engine
+          <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200/80 px-2.5 py-1 rounded-lg">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+            DLMM Safe-to-Spend Aktif
           </span>
         </div>
       </div>
@@ -151,7 +246,7 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
                 <button
                   key={preset.id}
                   onClick={() => onSelectPreset(preset.id, preset.outflow)}
-                  className={`p-3.5 rounded-xl border text-left transition-all duration-150 active:scale-[0.98] cursor-pointer flex flex-col justify-between h-full ${
+                  className={`p-3.5 rounded-2xl border text-left transition-all duration-150 active:scale-[0.98] cursor-pointer flex flex-col justify-between h-full ${
                     isSelected
                       ? 'border-neutral-950 bg-neutral-950 text-white shadow-md ring-2 ring-neutral-900/10'
                       : isDangerous
@@ -163,7 +258,7 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
                 >
                   <div>
                     <div className="flex items-center justify-between gap-1 mb-1.5">
-                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md border ${
+                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-lg border ${
                         isSelected
                           ? 'bg-neutral-800 text-neutral-200 border-neutral-700'
                           : isDangerous
@@ -218,127 +313,181 @@ export const DecisionStudio: React.FC<DecisionStudioProps> = ({
 
           {/* Right: Decision Intelligence & Action Plan */}
           <div className="lg:col-span-5 flex flex-col">
-            <DecisionIntelligenceCard
-              isSafe={isSafe}
-              insolvencyDay={insolvencyDay}
-              minCash={minCash}
-              safeToSpend={safeToSpend}
-              scenarioName={scenarioName}
-              onOpenNegotiate={onOpenNegotiate}
-              onApplySafeSolution={onApplySafeSolution}
-            />
+            <BorderBeam
+              size="md"
+              colorVariant="ocean"
+              strength={isThinking ? 0.85 : 0}
+              active={isThinking}
+            >
+              <DecisionIntelligenceCard
+                isSafe={isSafe}
+                insolvencyDay={insolvencyDay}
+                minCash={minCash}
+                safeToSpend={safeToSpend}
+                scenarioName={scenarioName}
+                onOpenNegotiate={onOpenNegotiate}
+                onApplySafeSolution={onApplySafeSolution}
+              />
+            </BorderBeam>
           </div>
         </div>
 
-        {/* 5. Raycast-Style Ambient AI Command Bar */}
-        <div className="rounded-2xl border border-neutral-200/90 bg-white p-4 sm:p-5 space-y-3.5 shadow-xs">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-neutral-100 pb-3">
+        {/* 5. Clean, High-Trust AI Financial Command Bar */}
+        <div className="rounded-2xl border border-neutral-200/90 bg-white p-4 sm:p-5 space-y-4 shadow-xs">
+          {/* Header Row */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5">
             <div className="flex items-center gap-2.5">
-              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-neutral-900 text-white overflow-hidden shadow-xs">
+              <div className="h-8 w-8 rounded-xl bg-neutral-950 flex items-center justify-center shrink-0 shadow-xs overflow-hidden">
                 <ThinkingOrb
-                  state={orbState === 'listening' ? 'listening' : 'breathing'}
+                  state={isVoiceActive ? 'listening' : isThinking ? 'solving' : 'breathing'}
                   size={20}
                   speed={1}
-                  theme="dark"
                 />
               </div>
               <div>
                 <div className="flex items-center gap-2">
-                  <span className="text-xs font-semibold text-neutral-950">
+                  <h3 className="text-xs sm:text-sm font-bold text-neutral-950 tracking-tight">
                     Konsultasi Keputusan Finansial AI
-                  </span>
-                  <span className="text-[10px] text-emerald-600 font-medium bg-emerald-50 border border-emerald-200/60 px-2 py-0.2 rounded-full">
-                    DLMM Engine
+                  </h3>
+                  <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200/70 px-2 py-0.5 rounded-md">
+                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                    DLMM Safe-to-Spend
                   </span>
                 </div>
-                <div className="text-[11px] text-neutral-500 font-normal">
-                  Simulasi dampak pengeluaran modal kustom terhadap arus kas 30 hari ke depan
-                </div>
+                <p className="text-[11px] text-neutral-500 font-normal">
+                  Simulasikan dampak pengeluaran modal kustom terhadap ketahanan kas 30 hari ke depan
+                </p>
               </div>
             </div>
+
+            {/* Quick status pill */}
+            <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-medium text-neutral-500 bg-neutral-50 border border-neutral-200/70 px-2.5 py-1 rounded-lg">
+              <Bot className="h-3.5 w-3.5 text-neutral-400" />
+              <span>Hermes Agent Ready</span>
+            </div>
           </div>
 
-          {/* Input Row with Reactive ThinkingOrb & Input Wrapped in BorderBeam */}
-          <div className="flex flex-col sm:flex-row items-center gap-3">
-            {/* Live Interactive ThinkingOrb Avatar Scale (64px) */}
-            <div
-              onClick={handleVoiceTest}
-              className="hidden sm:flex items-center justify-center h-11 w-11 rounded-xl bg-neutral-50 border border-neutral-200/90 shadow-2xs cursor-pointer hover:border-neutral-400 hover:scale-105 transition-all shrink-0 overflow-hidden"
-              title="ThinkingOrb AI Voice Simulation - Klik untuk uji suara"
-            >
-              <ThinkingOrb
-                state={orbState === 'listening' ? 'listening' : (promptText ? 'composing' : 'searching')}
-                size={64}
-                speed={1}
+          {/* VoiceBeam wrapping the Input Bar */}
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-2.5">
+            <div className="relative flex-1">
+              <VoiceBeam
+                stream={mic.stream || undefined}
+                level={!mic.stream && isVoiceActive ? 0.65 : undefined}
+                processing={isThinking}
+                colorVariant="ocean"
                 theme="light"
-              />
-            </div>
-
-            {/* Input Bar with RGB BorderBeam (Around Input Field Itself) */}
-            <div className="flex-1 w-full relative">
-              <BorderBeam
-                size="sm"
-                colorVariant="colorful"
-                strength={0.85}
-                theme="light"
-                borderRadius={9999}
               >
-                <Input
-                  type="text"
-                  value={promptText}
-                  onChange={(val) => setPromptText(val)}
-                  placeholder='Tanyakan skenario custom... (cth: "Sewa ruko 20 juta per tahun aman?")'
-                  leftIcon={
+                <div className={`relative flex items-center w-full bg-white rounded-xl border transition-all ${
+                  isVoiceActive
+                    ? 'border-emerald-500 shadow-sm'
+                    : 'border-neutral-200 hover:border-neutral-300 focus-within:border-neutral-900 focus-within:ring-1 focus-within:ring-neutral-900/10'
+                }`}>
+                  <input
+                    type="text"
+                    value={promptText}
+                    onChange={(e) => setPromptText(e.target.value)}
+                    placeholder={
+                      isVoiceActive
+                        ? '🔴 Mendengarkan suara Anda... (Bicaralah sekarang)'
+                        : 'Tanyakan skenario custom... (cth: "Sewa ruko 20 juta per tahun aman?")'
+                    }
+                    spellCheck={false}
+                    autoComplete="off"
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') {
+                        e.preventDefault();
+                        handleRunSimulation();
+                      }
+                    }}
+                    className="w-full h-11 px-4 bg-transparent text-xs sm:text-sm font-normal text-neutral-900 placeholder:text-neutral-400 focus:outline-none"
+                  />
+                  {promptText && !isVoiceActive && (
                     <button
                       type="button"
-                      onClick={handleVoiceTest}
-                      title="Klik untuk uji simulasi pesan suara WhatsApp"
-                      className="p-0.5 rounded-full hover:bg-neutral-100 text-neutral-400 hover:text-emerald-600 transition-colors cursor-pointer"
+                      onClick={() => setPromptText('')}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-700 p-1 cursor-pointer"
+                      title="Hapus teks"
                     >
-                      <Mic className="h-4 w-4" />
+                      <X className="h-3.5 w-3.5" />
                     </button>
-                  }
-                  spellCheck={false}
-                  autoComplete="off"
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter') {
-                      e.preventDefault();
-                      handleRunSimulation();
-                    }
-                  }}
-                />
-              </BorderBeam>
+                  )}
+                </div>
+              </VoiceBeam>
             </div>
 
-            {/* Simulate Action Button */}
-            <MotionButton
+            {/* Clear, Unmistakable Voice Input Button using ThinkingOrb */}
+            <button
               type="button"
-              variant="primary"
-              size="md"
-              onClick={() => handleRunSimulation()}
-              className="w-full sm:w-auto shrink-0 h-10 px-5 rounded-xl gap-2 text-xs font-semibold"
+              onClick={handleToggleVoice}
+              className={`h-11 px-4 rounded-xl border inline-flex items-center justify-center gap-2 text-xs font-semibold transition-all cursor-pointer shrink-0 ${
+                isVoiceActive
+                  ? 'bg-rose-600 hover:bg-rose-700 text-white border-rose-700 animate-pulse shadow-md'
+                  : 'bg-white hover:bg-neutral-50 text-neutral-800 border-neutral-200 hover:border-neutral-300 shadow-2xs active:scale-[0.98]'
+              }`}
+              title={isVoiceActive ? 'Klik untuk berhenti merekam' : 'Gunakan Voice Input (Bicara langsung via Mikrofon)'}
             >
-              <Send className="h-3.5 w-3.5" />
-              <span>Simulasikan</span>
-            </MotionButton>
+              <ThinkingOrb
+                state={isVoiceActive ? 'listening' : 'breathing'}
+                size={20}
+                speed={1}
+              />
+              <span>{isVoiceActive ? 'Berhenti Bicara' : 'Voice Input'}</span>
+            </button>
+
+            {/* Simulasikan Action Button */}
+            <button
+              type="button"
+              onClick={() => handleRunSimulation()}
+              disabled={isThinking}
+              className="h-11 px-5 rounded-xl bg-neutral-950 hover:bg-neutral-850 active:scale-[0.98] text-white text-xs font-semibold inline-flex items-center justify-center gap-2 transition-all shadow-xs cursor-pointer shrink-0 disabled:opacity-50"
+            >
+              {isThinking ? (
+                <>
+                  <ThinkingOrb state="working" size={20} speed={1} />
+                  <span>Memproses...</span>
+                </>
+              ) : (
+                <>
+                  <Send className="h-3.5 w-3.5" />
+                  <span>Simulasikan</span>
+                </>
+              )}
+            </button>
           </div>
 
-          {/* Custom Exploratory Idea Chips (No Redundancy) */}
-          <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
-            <span className="text-[11px] font-medium text-neutral-400">Eksplorasi Ide Lain:</span>
+          {/* Clean Suggestion Chips */}
+          <div className="flex flex-wrap items-center gap-1.5 pt-1 border-t border-neutral-100">
+            <span className="text-[11px] font-semibold text-neutral-400 flex items-center gap-1">
+              <Lightbulb className="h-3 w-3 text-amber-500" />
+              <span>Eksplorasi Ide:</span>
+            </span>
             {customIdeaChips.map((chip, idx) => (
               <button
                 key={idx}
+                type="button"
                 onClick={() => {
                   setPromptText(chip.label);
                   onSelectPreset('custom', chip.amount);
                   handleRunSimulation(chip.label);
                 }}
-                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-neutral-50 hover:bg-neutral-100 border border-neutral-200/80 text-[11px] font-medium text-neutral-700 transition-colors shadow-2xs cursor-pointer active:scale-95"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-neutral-50 hover:bg-neutral-100/90 text-neutral-700 hover:text-neutral-950 border border-neutral-200/70 hover:border-neutral-300 text-xs font-medium transition-all shadow-2xs cursor-pointer active:scale-95 group"
               >
                 <span>{chip.label}</span>
+                <span className="text-[10px] font-semibold text-neutral-400 group-hover:text-emerald-600 transition-colors">
+                  Rp {(chip.amount / 1000000).toLocaleString('id-ID')} Jt
+                </span>
+                <ArrowUpRight className="h-3 w-3 text-neutral-400 group-hover:text-neutral-700 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </button>
             ))}
+            <button
+              type="button"
+              onClick={handleVoiceTest}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50/70 hover:bg-emerald-100/80 text-emerald-800 border border-emerald-200/80 text-xs font-medium transition-all shadow-2xs cursor-pointer active:scale-95 group"
+            >
+              <Mic className="h-3 w-3 text-emerald-600" />
+              <span>Simulasi Voice Note Barista</span>
+              <ArrowUpRight className="h-3 w-3 text-emerald-600 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </button>
           </div>
         </div>
       </div>

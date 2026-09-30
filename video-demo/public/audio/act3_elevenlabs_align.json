@@ -1,0 +1,852 @@
+[
+  {
+    "word": "Salah",
+    "start": 0.0,
+    "end": 0.302
+  },
+  {
+    "word": "satu",
+    "start": 0.337,
+    "end": 0.569
+  },
+  {
+    "word": "kendala",
+    "start": 0.615,
+    "end": 0.952
+  },
+  {
+    "word": "terbesar",
+    "start": 0.998,
+    "end": 1.486
+  },
+  {
+    "word": "UMKM",
+    "start": 1.579,
+    "end": 2.31
+  },
+  {
+    "word": "dalam",
+    "start": 2.635,
+    "end": 2.902
+  },
+  {
+    "word": "menggunakan",
+    "start": 2.926,
+    "end": 3.448
+  },
+  {
+    "word": "aplikasi",
+    "start": 3.506,
+    "end": 4.04
+  },
+  {
+    "word": "keuangan",
+    "start": 4.098,
+    "end": 4.632
+  },
+  {
+    "word": "adalah",
+    "start": 4.841,
+    "end": 5.19
+  },
+  {
+    "word": "proses",
+    "start": 5.213,
+    "end": 5.631
+  },
+  {
+    "word": "input",
+    "start": 5.712,
+    "end": 6.037
+  },
+  {
+    "word": "manual",
+    "start": 6.095,
+    "end": 6.478
+  },
+  {
+    "word": "yang",
+    "start": 6.548,
+    "end": 6.664
+  },
+  {
+    "word": "ribet",
+    "start": 6.711,
+    "end": 7.082
+  },
+  {
+    "word": "dan",
+    "start": 7.326,
+    "end": 7.5
+  },
+  {
+    "word": "bikin",
+    "start": 7.558,
+    "end": 7.79
+  },
+  {
+    "word": "malas!",
+    "start": 7.848,
+    "end": 8.464
+  },
+  {
+    "word": "Tapi",
+    "start": 8.905,
+    "end": 9.253
+  },
+  {
+    "word": "di",
+    "start": 9.311,
+    "end": 9.369
+  },
+  {
+    "word": "JagaUsaha,",
+    "start": 9.439,
+    "end": 10.286
+  },
+  {
+    "word": "kami",
+    "start": 10.321,
+    "end": 10.565
+  },
+  {
+    "word": "memecahkan",
+    "start": 10.623,
+    "end": 11.157
+  },
+  {
+    "word": "masalah",
+    "start": 11.215,
+    "end": 11.598
+  },
+  {
+    "word": "ini",
+    "start": 11.645,
+    "end": 11.947
+  },
+  {
+    "word": "dengan",
+    "start": 12.156,
+    "end": 12.423
+  },
+  {
+    "word": "solusi",
+    "start": 12.481,
+    "end": 12.829
+  },
+  {
+    "word": "satu",
+    "start": 12.875,
+    "end": 13.084
+  },
+  {
+    "word": "pintu:",
+    "start": 13.119,
+    "end": 13.827
+  },
+  {
+    "word": "Unified",
+    "start": 14.269,
+    "end": 14.756
+  },
+  {
+    "word": "Multi-Modal",
+    "start": 14.814,
+    "end": 15.476
+  },
+  {
+    "word": "Onboarding!",
+    "start": 15.546,
+    "end": 16.44
+  },
+  {
+    "word": "Cukup",
+    "start": 17.044,
+    "end": 17.38
+  },
+  {
+    "word": "satu",
+    "start": 17.427,
+    "end": 17.659
+  },
+  {
+    "word": "klik",
+    "start": 17.717,
+    "end": 17.926
+  },
+  {
+    "word": "tombol",
+    "start": 17.996,
+    "end": 18.437
+  },
+  {
+    "word": "Input",
+    "start": 18.948,
+    "end": 19.389
+  },
+  {
+    "word": "Data",
+    "start": 19.459,
+    "end": 19.702
+  },
+  {
+    "word": "Usaha!",
+    "start": 19.76,
+    "end": 20.445
+  },
+  {
+    "word": "Pemilik",
+    "start": 21.049,
+    "end": 21.456
+  },
+  {
+    "word": "usaha",
+    "start": 21.514,
+    "end": 21.955
+  },
+  {
+    "word": "bisa",
+    "start": 22.071,
+    "end": 22.338
+  },
+  {
+    "word": "langsung",
+    "start": 22.384,
+    "end": 22.756
+  },
+  {
+    "word": "mengunggah",
+    "start": 22.791,
+    "end": 23.29
+  },
+  {
+    "word": "e-Statement",
+    "start": 23.383,
+    "end": 24.068
+  },
+  {
+    "word": "rekening",
+    "start": 24.312,
+    "end": 24.741
+  },
+  {
+    "word": "koran",
+    "start": 24.788,
+    "end": 25.078
+  },
+  {
+    "word": "BCA",
+    "start": 25.136,
+    "end": 25.693
+  },
+  {
+    "word": "dalam",
+    "start": 25.867,
+    "end": 26.134
+  },
+  {
+    "word": "format",
+    "start": 26.204,
+    "end": 26.564
+  },
+  {
+    "word": "PDF...",
+    "start": 26.622,
+    "end": 27.446
+  },
+  {
+    "word": "laporan",
+    "start": 27.69,
+    "end": 28.12
+  },
+  {
+    "word": "kasir",
+    "start": 28.178,
+    "end": 28.503
+  },
+  {
+    "word": "POS",
+    "start": 28.584,
+    "end": 28.77
+  },
+  {
+    "word": "Moka",
+    "start": 28.851,
+    "end": 29.246
+  },
+  {
+    "word": "dalam",
+    "start": 29.339,
+    "end": 29.606
+  },
+  {
+    "word": "format",
+    "start": 29.664,
+    "end": 29.989
+  },
+  {
+    "word": "Excel...",
+    "start": 30.047,
+    "end": 30.767
+  },
+  {
+    "word": "atau",
+    "start": 31.15,
+    "end": 31.405
+  },
+  {
+    "word": "bahkan",
+    "start": 31.452,
+    "end": 31.788
+  },
+  {
+    "word": "cukup",
+    "start": 31.87,
+    "end": 32.137
+  },
+  {
+    "word": "merekam",
+    "start": 32.183,
+    "end": 32.624
+  },
+  {
+    "word": "catatan",
+    "start": 32.706,
+    "end": 33.216
+  },
+  {
+    "word": "suara",
+    "start": 33.286,
+    "end": 33.541
+  },
+  {
+    "word": "santai!",
+    "start": 33.6,
+    "end": 34.273
+  },
+  {
+    "word": "Sensor",
+    "start": 34.97,
+    "end": 35.446
+  },
+  {
+    "word": "cerdas",
+    "start": 35.504,
+    "end": 35.852
+  },
+  {
+    "word": "kami",
+    "start": 35.922,
+    "end": 36.282
+  },
+  {
+    "word": "langsung",
+    "start": 36.432,
+    "end": 36.804
+  },
+  {
+    "word": "mengekstrak",
+    "start": 36.839,
+    "end": 37.373
+  },
+  {
+    "word": "seluruh",
+    "start": 37.443,
+    "end": 37.768
+  },
+  {
+    "word": "data",
+    "start": 37.802,
+    "end": 38.046
+  },
+  {
+    "word": "transaksi",
+    "start": 38.093,
+    "end": 38.789
+  },
+  {
+    "word": "secara",
+    "start": 38.998,
+    "end": 39.381
+  },
+  {
+    "word": "otomatis",
+    "start": 39.439,
+    "end": 40.078
+  },
+  {
+    "word": "tanpa",
+    "start": 40.252,
+    "end": 40.566
+  },
+  {
+    "word": "perlu",
+    "start": 40.612,
+    "end": 40.856
+  },
+  {
+    "word": "diketik",
+    "start": 40.902,
+    "end": 41.274
+  },
+  {
+    "word": "manual",
+    "start": 41.332,
+    "end": 41.669
+  },
+  {
+    "word": "sedikit",
+    "start": 41.727,
+    "end": 42.087
+  },
+  {
+    "word": "pun!",
+    "start": 42.121,
+    "end": 42.574
+  },
+  {
+    "word": "Keren",
+    "start": 43.015,
+    "end": 43.271
+  },
+  {
+    "word": "banget,",
+    "start": 43.329,
+    "end": 43.642
+  },
+  {
+    "word": "kan?",
+    "start": 43.665,
+    "end": 44.037
+  },
+  {
+    "word": "Perhatikan",
+    "start": 44.246,
+    "end": 44.757
+  },
+  {
+    "word": "panel",
+    "start": 44.826,
+    "end": 45.117
+  },
+  {
+    "word": "Digital",
+    "start": 45.175,
+    "end": 45.57
+  },
+  {
+    "word": "Twin",
+    "start": 45.628,
+    "end": 45.929
+  },
+  {
+    "word": "di",
+    "start": 46.046,
+    "end": 46.173
+  },
+  {
+    "word": "sisi",
+    "start": 46.22,
+    "end": 46.452
+  },
+  {
+    "word": "kanan",
+    "start": 46.498,
+    "end": 46.789
+  },
+  {
+    "word": "yang",
+    "start": 46.847,
+    "end": 46.963
+  },
+  {
+    "word": "langsung",
+    "start": 47.009,
+    "end": 47.369
+  },
+  {
+    "word": "terisi",
+    "start": 47.427,
+    "end": 47.799
+  },
+  {
+    "word": "sempurna",
+    "start": 47.868,
+    "end": 48.391
+  },
+  {
+    "word": "secara",
+    "start": 48.449,
+    "end": 48.774
+  },
+  {
+    "word": "instan!",
+    "start": 48.844,
+    "end": 49.529
+  },
+  {
+    "word": "Saldo",
+    "start": 50.04,
+    "end": 50.435
+  },
+  {
+    "word": "kas",
+    "start": 50.493,
+    "end": 50.655
+  },
+  {
+    "word": "riil",
+    "start": 50.748,
+    "end": 50.992
+  },
+  {
+    "word": "terdeteksi",
+    "start": 51.061,
+    "end": 51.677
+  },
+  {
+    "word": "delapan",
+    "start": 51.758,
+    "end": 52.141
+  },
+  {
+    "word": "belas",
+    "start": 52.188,
+    "end": 52.397
+  },
+  {
+    "word": "koma",
+    "start": 52.478,
+    "end": 52.896
+  },
+  {
+    "word": "lima",
+    "start": 53.221,
+    "end": 53.465
+  },
+  {
+    "word": "juta",
+    "start": 53.523,
+    "end": 53.743
+  },
+  {
+    "word": "rupiah...",
+    "start": 53.79,
+    "end": 54.486
+  },
+  {
+    "word": "cadangan",
+    "start": 54.928,
+    "end": 55.357
+  },
+  {
+    "word": "kas",
+    "start": 55.427,
+    "end": 55.589
+  },
+  {
+    "word": "darurat",
+    "start": 55.671,
+    "end": 56.077
+  },
+  {
+    "word": "aman",
+    "start": 56.147,
+    "end": 56.414
+  },
+  {
+    "word": "tiga",
+    "start": 56.46,
+    "end": 56.669
+  },
+  {
+    "word": "juta",
+    "start": 56.739,
+    "end": 56.948
+  },
+  {
+    "word": "rupiah...",
+    "start": 56.994,
+    "end": 57.691
+  },
+  {
+    "word": "komitmen",
+    "start": 58.016,
+    "end": 58.538
+  },
+  {
+    "word": "gaji",
+    "start": 58.608,
+    "end": 58.852
+  },
+  {
+    "word": "barista",
+    "start": 58.91,
+    "end": 59.328
+  },
+  {
+    "word": "tujuh",
+    "start": 59.386,
+    "end": 59.711
+  },
+  {
+    "word": "koma",
+    "start": 59.734,
+    "end": 60.129
+  },
+  {
+    "word": "lima",
+    "start": 60.28,
+    "end": 60.512
+  },
+  {
+    "word": "juta",
+    "start": 60.57,
+    "end": 60.779
+  },
+  {
+    "word": "rupiah",
+    "start": 60.825,
+    "end": 61.243
+  },
+  {
+    "word": "pada",
+    "start": 61.301,
+    "end": 61.487
+  },
+  {
+    "word": "tanggal",
+    "start": 61.534,
+    "end": 61.812
+  },
+  {
+    "word": "tiga",
+    "start": 61.859,
+    "end": 62.079
+  },
+  {
+    "word": "puluh...",
+    "start": 62.126,
+    "end": 62.625
+  },
+  {
+    "word": "serta",
+    "start": 63.066,
+    "end": 63.368
+  },
+  {
+    "word": "sewa",
+    "start": 63.426,
+    "end": 63.716
+  },
+  {
+    "word": "ruko",
+    "start": 63.763,
+    "end": 64.204
+  },
+  {
+    "word": "empat",
+    "start": 64.32,
+    "end": 64.715
+  },
+  {
+    "word": "koma",
+    "start": 64.784,
+    "end": 65.179
+  },
+  {
+    "word": "dua",
+    "start": 65.249,
+    "end": 65.481
+  },
+  {
+    "word": "juta",
+    "start": 65.551,
+    "end": 65.771
+  },
+  {
+    "word": "rupiah!",
+    "start": 65.817,
+    "end": 66.433
+  },
+  {
+    "word": "Setelah",
+    "start": 67.036,
+    "end": 67.431
+  },
+  {
+    "word": "tersimpan,",
+    "start": 67.466,
+    "end": 68.174
+  },
+  {
+    "word": "sistem",
+    "start": 68.29,
+    "end": 68.685
+  },
+  {
+    "word": "langsung",
+    "start": 68.755,
+    "end": 69.115
+  },
+  {
+    "word": "memetakan",
+    "start": 69.149,
+    "end": 69.672
+  },
+  {
+    "word": "parameter",
+    "start": 69.73,
+    "end": 70.229
+  },
+  {
+    "word": "ini",
+    "start": 70.299,
+    "end": 70.508
+  },
+  {
+    "word": "ke",
+    "start": 70.554,
+    "end": 70.635
+  },
+  {
+    "word": "dashboard",
+    "start": 70.693,
+    "end": 71.216
+  },
+  {
+    "word": "dan",
+    "start": 71.495,
+    "end": 71.657
+  },
+  {
+    "word": "menghitung",
+    "start": 71.715,
+    "end": 72.145
+  },
+  {
+    "word": "Duit",
+    "start": 72.18,
+    "end": 72.365
+  },
+  {
+    "word": "Dingin",
+    "start": 72.412,
+    "end": 72.644
+  },
+  {
+    "word": "Aman",
+    "start": 72.725,
+    "end": 73.097
+  },
+  {
+    "word": "sebesar",
+    "start": 73.306,
+    "end": 73.724
+  },
+  {
+    "word": "tiga",
+    "start": 73.782,
+    "end": 74.049
+  },
+  {
+    "word": "koma",
+    "start": 74.107,
+    "end": 74.397
+  },
+  {
+    "word": "delapan",
+    "start": 74.455,
+    "end": 74.838
+  },
+  {
+    "word": "juta",
+    "start": 74.896,
+    "end": 75.105
+  },
+  {
+    "word": "rupiah!",
+    "start": 75.14,
+    "end": 75.721
+  },
+  {
+    "word": "Pemilik",
+    "start": 76.324,
+    "end": 76.719
+  },
+  {
+    "word": "usaha",
+    "start": 76.777,
+    "end": 77.067
+  },
+  {
+    "word": "kini",
+    "start": 77.137,
+    "end": 77.369
+  },
+  {
+    "word": "tahu",
+    "start": 77.427,
+    "end": 77.694
+  },
+  {
+    "word": "persis",
+    "start": 77.764,
+    "end": 78.135
+  },
+  {
+    "word": "berapa",
+    "start": 78.217,
+    "end": 78.542
+  },
+  {
+    "word": "uang",
+    "start": 78.658,
+    "end": 78.867
+  },
+  {
+    "word": "yang",
+    "start": 78.925,
+    "end": 79.064
+  },
+  {
+    "word": "benar-benar",
+    "start": 79.111,
+    "end": 79.691
+  },
+  {
+    "word": "aman",
+    "start": 79.761,
+    "end": 80.144
+  },
+  {
+    "word": "untuk",
+    "start": 80.469,
+    "end": 80.783
+  },
+  {
+    "word": "dibelanjakan",
+    "start": 80.829,
+    "end": 81.537
+  },
+  {
+    "word": "tanpa",
+    "start": 81.607,
+    "end": 81.92
+  },
+  {
+    "word": "menyentuh",
+    "start": 81.967,
+    "end": 82.408
+  },
+  {
+    "word": "dana",
+    "start": 82.454,
+    "end": 82.71
+  },
+  {
+    "word": "operasional!",
+    "start": 82.768,
+    "end": 83.824
+  }
+]

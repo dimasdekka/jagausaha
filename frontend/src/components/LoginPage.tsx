@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Lock, Eye, EyeOff, ArrowRight, ArrowLeft, Sparkles } from 'lucide-react';
+import { Mail, Lock, Eye, EyeOff, ArrowRight, ArrowLeft, Sparkles, User, Phone } from 'lucide-react';
 import { JagaUsahaLogo } from './ui/JagaUsahaLogo';
 import { Input } from './motion/input';
 import { MotionButton } from './motion/button';
@@ -7,33 +7,63 @@ import { MotionButton } from './motion/button';
 interface LoginPageProps {
   onBackToHome: () => void;
   onLoginSuccess: (email: string) => void;
+  onRegisterSuccess?: (email: string, fullName: string) => void;
 }
 
-export const LoginPage: React.FC<LoginPageProps> = ({ onBackToHome, onLoginSuccess }) => {
+export const LoginPage: React.FC<LoginPageProps> = ({
+  onBackToHome,
+  onLoginSuccess,
+  onRegisterSuccess,
+}) => {
+  const [authMode, setAuthMode] = useState<'login' | 'register'>('login');
+  const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const handleFillDemo = () => {
+    setAuthMode('login');
     setEmail('owner@kopiteras.id');
     setPassword('jagausaha2026');
     setErrorMsg(null);
   };
 
-  const handleGoogleLogin = () => {
+  const handleGoogleLogin = async () => {
     setEmail('owner@kopiteras.id');
     setPassword('jagausaha2026');
     setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
+    setErrorMsg(null);
+    try {
+      const res = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: 'owner@kopiteras.id',
+          password: 'jagausaha2026'
+        })
+      });
+      const data = await res.json();
+      if (data.token) {
+        localStorage.setItem('jagausaha_token', data.token);
+        localStorage.setItem('jagausaha_user', JSON.stringify(data.user));
+      }
       onLoginSuccess('owner@kopiteras.id');
-    }, 600);
+    } catch {
+      onLoginSuccess('owner@kopiteras.id');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (authMode === 'register' && !fullName.trim()) {
+      setErrorMsg('Masukkan nama lengkap pemilik usaha.');
+      return;
+    }
     if (!email.trim() || !email.includes('@')) {
       setErrorMsg('Masukkan alamat email bisnis yang valid.');
       return;
@@ -46,10 +76,55 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onBackToHome, onLoginSucce
     setErrorMsg(null);
     setIsLoading(true);
 
-    setTimeout(() => {
+    try {
+      if (authMode === 'register') {
+        const res = await fetch('/api/auth/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: email.trim(),
+            password: password,
+            full_name: fullName.trim(),
+            phone: phone.trim()
+          })
+        });
+        const data = await res.json();
+        if (!res.ok) {
+          throw new Error(data.detail || 'Pendaftaran gagal.');
+        }
+        if (data.token) {
+          localStorage.setItem('jagausaha_token', data.token);
+          localStorage.setItem('jagausaha_user', JSON.stringify(data.user));
+        }
+        if (onRegisterSuccess) {
+          onRegisterSuccess(email.trim(), fullName.trim());
+        } else {
+          onLoginSuccess(email.trim());
+        }
+      } else {
+        const res = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: email.trim(),
+            password: password
+          })
+        });
+        const data = await res.json();
+        if (!res.ok) {
+          throw new Error(data.detail || 'Email atau password salah.');
+        }
+        if (data.token) {
+          localStorage.setItem('jagausaha_token', data.token);
+          localStorage.setItem('jagausaha_user', JSON.stringify(data.user));
+        }
+        onLoginSuccess(email.trim());
+      }
+    } catch (err: any) {
+      setErrorMsg(err.message || 'Terjadi kesalahan sistem.');
+    } finally {
       setIsLoading(false);
-      onLoginSuccess(email);
-    }, 700);
+    }
   };
 
   return (
@@ -90,29 +165,88 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onBackToHome, onLoginSucce
 
             <div className="space-y-1">
               <h1 className="text-2xl font-bold tracking-tight text-slate-950">
-                Masuk ke JagaUsaha
+                {authMode === 'register' ? 'Daftar Akun Baru' : 'Masuk ke JagaUsaha'}
               </h1>
               <p className="text-xs text-slate-500 font-normal leading-relaxed">
-                Portal intelijen likuiditas kas & manajemen arus kas bisnis.
+                {authMode === 'register'
+                  ? 'Mulai lindungi likuiditas kas & inisialisasi AI Guardian usaha Anda.'
+                  : 'Portal intelijen likuiditas kas & manajemen arus kas bisnis.'}
               </p>
             </div>
           </div>
 
+          {/* Mode Switcher Tabs */}
+          <div className="grid grid-cols-2 p-1 bg-slate-100 rounded-xl border border-slate-200/80">
+            <button
+              type="button"
+              onClick={() => {
+                setAuthMode('login');
+                setErrorMsg(null);
+              }}
+              className={`py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
+                authMode === 'login'
+                  ? 'bg-white text-slate-950 shadow-xs'
+                  : 'text-slate-500 hover:text-slate-900'
+              }`}
+            >
+              Masuk ke Akun
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setAuthMode('register');
+                setErrorMsg(null);
+              }}
+              className={`py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
+                authMode === 'register'
+                  ? 'bg-white text-slate-950 shadow-xs'
+                  : 'text-slate-500 hover:text-slate-900'
+              }`}
+            >
+              Daftar Baru
+            </button>
+          </div>
+
           {/* Core Authentication Surface */}
-          <div className="rounded-2xl border border-slate-200/90 bg-white p-7 sm:p-8 shadow-[0_12px_40px_rgba(0,0,0,0.05)] space-y-5">
-            {/* Email & Password Form */}
+          <div className="rounded-2xl border border-slate-200/90 bg-white p-6 sm:p-8 shadow-[0_12px_40px_rgba(0,0,0,0.05)] space-y-5">
+            {/* Auth Form */}
             <form onSubmit={handleSubmit} className="space-y-4">
+              {authMode === 'register' && (
+                <Input
+                  label="Nama Lengkap Pemilik"
+                  type="text"
+                  value={fullName}
+                  onChange={(val) => setFullName(val)}
+                  placeholder="Contoh: Dimas Dekananta"
+                  leftIcon={<User className="h-4 w-4 text-slate-400" />}
+                  error={Boolean(errorMsg && !fullName)}
+                  spellCheck={false}
+                />
+              )}
+
               <Input
                 label="Email Bisnis"
                 type="email"
                 value={email}
                 onChange={(val) => setEmail(val)}
-                placeholder="name@company.com"
+                placeholder="owner@usaha.id"
                 leftIcon={<Mail className="h-4 w-4 text-slate-400" />}
                 error={Boolean(errorMsg && !email)}
                 spellCheck={false}
                 autoComplete="email"
               />
+
+              {authMode === 'register' && (
+                <Input
+                  label="No. WhatsApp Usaha (Opsional)"
+                  type="tel"
+                  value={phone}
+                  onChange={(val) => setPhone(val)}
+                  placeholder="0812-xxxx-xxxx"
+                  leftIcon={<Phone className="h-4 w-4 text-slate-400" />}
+                  spellCheck={false}
+                />
+              )}
 
               <div className="space-y-1">
                 <Input
@@ -134,19 +268,25 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onBackToHome, onLoginSucce
                   error={Boolean(errorMsg && password.length < 6)}
                 />
 
-                <div className="flex items-center justify-between text-xs pt-1 px-1">
-                  <label className="flex items-center gap-1.5 text-slate-600 font-medium cursor-pointer">
-                    <input type="checkbox" defaultChecked className="rounded border-slate-300 text-neutral-950 focus:ring-0" />
-                    <span>Ingat saya</span>
-                  </label>
-                  <button
-                    type="button"
-                    onClick={() => alert('Link reset password telah dikirim ke email terdaftar.')}
-                    className="text-slate-600 hover:text-slate-900 font-semibold cursor-pointer"
-                  >
-                    Lupa password?
-                  </button>
-                </div>
+                {authMode === 'login' ? (
+                  <div className="flex items-center justify-between text-xs pt-1 px-1">
+                    <label className="flex items-center gap-1.5 text-slate-600 font-medium cursor-pointer">
+                      <input type="checkbox" defaultChecked className="rounded border-slate-300 text-neutral-950 focus:ring-0" />
+                      <span>Ingat saya</span>
+                    </label>
+                    <button
+                      type="button"
+                      onClick={() => alert('Link reset password telah dikirim ke email terdaftar.')}
+                      className="text-slate-600 hover:text-slate-900 font-semibold cursor-pointer"
+                    >
+                      Lupa password?
+                    </button>
+                  </div>
+                ) : (
+                  <div className="text-[11px] text-slate-400 pt-0.5 px-1">
+                    Minimal 6 karakter kombinasi huruf dan angka.
+                  </div>
+                )}
               </div>
 
               {/* Error Message */}
@@ -164,7 +304,15 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onBackToHome, onLoginSucce
                 disabled={isLoading}
                 className="w-full h-10 rounded-xl text-xs font-bold gap-2 shadow-sm bg-neutral-950 hover:bg-neutral-800 text-white cursor-pointer"
               >
-                <span>{isLoading ? 'Memverifikasi...' : 'Masuk ke Dashboard'}</span>
+                <span>
+                  {isLoading
+                    ? authMode === 'register'
+                      ? 'Mendaftarkan Akun...'
+                      : 'Memverifikasi...'
+                    : authMode === 'register'
+                    ? 'Daftar & Inisialisasi Usaha'
+                    : 'Masuk ke Dashboard'}
+                </span>
                 <ArrowRight className="h-4 w-4" />
               </MotionButton>
 
@@ -198,14 +346,29 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onBackToHome, onLoginSucce
 
             {/* Bottom Link */}
             <div className="pt-2 text-center text-xs text-slate-500 font-medium border-t border-slate-100">
-              Belum memiliki akun?{' '}
-              <button
-                type="button"
-                onClick={handleFillDemo}
-                className="text-emerald-700 font-bold hover:underline cursor-pointer"
-              >
-                Daftar Uji Coba Gratis
-              </button>
+              {authMode === 'register' ? (
+                <>
+                  Sudah memiliki akun?{' '}
+                  <button
+                    type="button"
+                    onClick={() => setAuthMode('login')}
+                    className="text-emerald-700 font-bold hover:underline cursor-pointer"
+                  >
+                    Masuk di Sini
+                  </button>
+                </>
+              ) : (
+                <>
+                  Belum memiliki akun?{' '}
+                  <button
+                    type="button"
+                    onClick={() => setAuthMode('register')}
+                    className="text-emerald-700 font-bold hover:underline cursor-pointer"
+                  >
+                    Daftar Akun Baru
+                  </button>
+                </>
+              )}
             </div>
           </div>
         </div>

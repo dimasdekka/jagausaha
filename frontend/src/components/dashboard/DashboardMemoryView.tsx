@@ -4,7 +4,6 @@ import {
   CheckCircle2,
   ShieldCheck,
   Sparkles,
-  ArrowUpRight,
 } from 'lucide-react';
 
 export const DashboardMemoryView: React.FC = () => {
@@ -58,38 +57,38 @@ export const DashboardMemoryView: React.FC = () => {
       {/* ============================================================ */}
       {/* 1. Header Banner — Dub.co High Contrast Editorial Card      */}
       {/* ============================================================ */}
-      <div className="rounded-[16px] border border-[#e5e5e5] bg-[#ffffff] p-6 sm:p-7 shadow-dub-subtle flex flex-col md:flex-row items-start md:items-center justify-between gap-5">
+      <div className="rounded-2xl border border-neutral-200/90 bg-white p-6 sm:p-7 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-5">
         <div className="space-y-1.5 max-w-xl">
           <div className="flex items-center gap-2.5">
-            <div className="h-8 w-8 rounded-[8px] bg-[#0a0a0a] text-white flex items-center justify-center shrink-0 shadow-dub-subtle">
-              <History className="h-4 w-4 text-[#2563eb]" />
+            <div className="h-8 w-8 rounded-xl bg-neutral-950 text-white flex items-center justify-center shrink-0 shadow-xs">
+              <History className="h-4 w-4 text-blue-400" />
             </div>
-            <h2 className="text-base sm:text-lg font-bold text-[#0a0a0a] tracking-tight">
+            <h2 className="text-base sm:text-lg font-bold text-neutral-950 tracking-tight">
               Business Memory (Memori Keputusan & Hasil Nyata)
             </h2>
           </div>
-          <p className="text-xs text-[#525252] leading-relaxed">
+          <p className="text-xs text-neutral-500 leading-relaxed font-normal">
             JagaUsaha mencatat setiap rekomendasi dan keputusan strategis yang diambil owner, lalu membandingkan hasil proyeksi model dengan realitas arus kas 30–60 hari kemudian.
           </p>
         </div>
 
         {/* Total Protected Cash Metric Strip */}
-        <div className="rounded-[12px] bg-[#f5f5f5] border border-[#e5e5e5] p-4 flex items-center gap-4 shrink-0 shadow-dub-subtle">
+        <div className="rounded-xl bg-neutral-50/80 border border-neutral-200/90 p-4 flex items-center gap-4 shrink-0 shadow-2xs">
           <div className="space-y-0.5">
-            <div className="text-[10.5px] uppercase tracking-wider font-semibold text-[#737373]">
+            <div className="text-[10.5px] uppercase tracking-wider font-semibold text-neutral-500">
               Total Kas Terlindungi
             </div>
-            <div className="text-xl sm:text-2xl font-bold font-mono text-[#16a34a] tabular-nums tracking-tight">
+            <div className="text-xl sm:text-2xl font-bold text-emerald-600 tabular-nums tracking-tight">
               +Rp 14.100.000
             </div>
           </div>
-          <div className="h-8 w-px bg-[#e5e5e5]" />
+          <div className="h-8 w-px bg-neutral-200" />
           <div className="space-y-1">
-            <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#166534] bg-[#dcfce7] border border-[#bbf7d0] px-2.5 py-1 rounded-full">
-              <CheckCircle2 className="h-3 w-3 text-[#16a34a]" />
+            <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200/80 px-2.5 py-1 rounded-full shadow-2xs">
+              <CheckCircle2 className="h-3 w-3 text-emerald-600" />
               <span>3 Terverifikasi</span>
             </span>
-            <div className="text-[10px] text-[#737373] text-center font-mono">100% Realisasi</div>
+            <div className="text-[10px] text-neutral-500 text-center">100% Realisasi</div>
           </div>
         </div>
       </div>
@@ -101,29 +100,34 @@ export const DashboardMemoryView: React.FC = () => {
         {memories.map((mem) => (
           <div
             key={mem.id}
-            className="rounded-[16px] border border-[#e5e5e5] bg-[#ffffff] p-5 sm:p-6 shadow-dub-subtle space-y-4.5 transition-all hover:border-[#d4d4d4]"
+            className="rounded-2xl border border-neutral-200/90 bg-white p-5 sm:p-6 shadow-xs hover:border-neutral-300 transition-all space-y-4"
           >
             {/* Card Header: Title, Category, Status Badge */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#e5e5e5]">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3.5 border-b border-neutral-100">
               <div className="flex items-start sm:items-center gap-3">
-                <div className="h-9 w-9 rounded-[8px] bg-[#f5f5f5] border border-[#e5e5e5] flex items-center justify-center shrink-0">
-                  <ShieldCheck className="h-4 w-4 text-[#16a34a]" />
+                <div className="h-9 w-9 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-200/80 flex items-center justify-center shrink-0 shadow-2xs">
+                  <ShieldCheck className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="text-sm sm:text-base font-bold text-[#0a0a0a] tracking-tight">
-                    {mem.title}
-                  </h3>
-                  <div className="text-xs text-[#525252] flex items-center gap-2 mt-0.5">
-                    <span className="font-semibold text-[#171717]">{mem.period}</span>
-                    <span className="text-[#a3a3a3]">·</span>
-                    <span className="text-[#525252]">{mem.category}</span>
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-sm sm:text-base font-bold text-neutral-950 tracking-tight">
+                      {mem.title}
+                    </h3>
+                    <span className="text-[10px] font-mono text-neutral-500 bg-neutral-100 px-1.5 py-0.5 rounded border border-neutral-200/60">
+                      #{mem.id}
+                    </span>
+                  </div>
+                  <div className="text-xs text-neutral-500 flex items-center gap-2 mt-0.5">
+                    <span className="font-semibold text-neutral-700">{mem.period}</span>
+                    <span className="text-neutral-300">•</span>
+                    <span>{mem.category}</span>
                   </div>
                 </div>
               </div>
 
-              {/* Status Pill */}
-              <div className="flex items-center gap-2 self-start sm:self-auto shrink-0">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#f5f5f5] border border-[#e5e5e5] text-[#0a0a0a] shadow-dub-subtle">
+              {/* Status Badge */}
+              <div className="self-start sm:self-auto shrink-0">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200/80 shadow-2xs">
                   <span
                     className="h-2 w-2 rounded-full"
                     style={{ backgroundColor: mem.badgeColor }}
@@ -133,80 +137,89 @@ export const DashboardMemoryView: React.FC = () => {
               </div>
             </div>
 
-            {/* Middle Grid: Initial Recommendation vs Verified Real Outcome */}
+            {/* Middle Grid: Chronological Journey (Rencana & Rasional vs Hasil Nyata & Dampak) */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* Box A: Initial Scenario & Plan */}
-              <div className="p-4 rounded-[12px] bg-[#ffffff] border border-[#e5e5e5] flex flex-col justify-between space-y-3.5 shadow-dub-subtle">
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-xs font-bold text-[#0a0a0a] pb-2 border-b border-[#f5f5f5]">
-                    <Sparkles className="h-3.5 w-3.5 text-[#2563eb]" />
-                    <span>Skenario & Rekomendasi Awal</span>
+              {/* Kolom Kiri: Skenario & Latar Belakang Rasional */}
+              <div className="rounded-xl border border-neutral-200/80 bg-neutral-50/60 p-4 flex flex-col justify-between space-y-3.5">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between pb-2 border-b border-neutral-200/60">
+                    <div className="flex items-center gap-2 text-xs font-bold text-neutral-900">
+                      <Sparkles className="h-3.5 w-3.5 text-blue-600" />
+                      <span>Skenario & Rekomendasi Terpilih</span>
+                    </div>
+                    <span className="text-[10px] font-medium text-neutral-500 bg-white px-2 py-0.5 rounded border border-neutral-200/70">
+                      Rencana Awal
+                    </span>
                   </div>
-                  <p className="text-xs text-[#404040] leading-relaxed">
+
+                  <p className="text-xs text-neutral-800 leading-relaxed font-medium">
                     {mem.scenarioTested}
                   </p>
+
+                  {/* Latar Belakang / Rasional di Kolom Kiri (Alur Berpikir Alami) */}
+                  <div className="p-3 rounded-lg bg-white border border-neutral-200/70 space-y-1 text-xs text-neutral-600 leading-relaxed shadow-2xs">
+                    <div className="text-[10.5px] uppercase font-bold text-neutral-500 tracking-wider">
+                      Latar Belakang & Rasional:
+                    </div>
+                    <p className="text-neutral-700">{mem.rationale}</p>
+                  </div>
                 </div>
 
-                {/* Stat Block for Projected Benefit */}
-                <div className="rounded-[8px] bg-[#f5f5f5] border border-[#e5e5e5] p-3 space-y-1 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
-                  <div className="flex items-center justify-between">
-                    <span className="text-[10.5px] uppercase tracking-wider font-semibold text-[#525252]">
-                      {mem.benefitLabel}
-                    </span>
-                    <div className="h-6 w-6 rounded-[6px] bg-white border border-[#e5e5e5] flex items-center justify-center text-[#2563eb]">
-                      <ArrowUpRight className="h-3.5 w-3.5" />
-                    </div>
-                  </div>
-                  <div className="text-base sm:text-lg font-bold font-mono text-[#0a0a0a] tabular-nums">
+                {/* Target Metric */}
+                <div className="pt-2.5 border-t border-neutral-200/60 flex items-center justify-between text-xs">
+                  <span className="text-neutral-500 font-medium">
+                    Target: {mem.benefitLabel}
+                  </span>
+                  <span className="text-sm font-bold text-neutral-900">
                     {mem.simulatedBenefit}
-                  </div>
+                  </span>
                 </div>
               </div>
 
-              {/* Box B: Verified Real-World Outcome */}
-              <div className="p-4 rounded-[12px] bg-[#dcfce7]/20 border border-[#bbf7d0] flex flex-col justify-between space-y-3.5 shadow-dub-subtle">
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between pb-2 border-b border-[#bbf7d0]">
-                    <div className="flex items-center gap-1.5 text-xs font-bold text-[#14532d]">
-                      <CheckCircle2 className="h-3.5 w-3.5 text-[#16a34a]" />
+              {/* Kolom Kanan: Hasil Nyata Terverifikasi & Rekonsiliasi Bank */}
+              <div className="rounded-xl border border-emerald-200/90 bg-gradient-to-b from-emerald-50/30 via-white to-white p-4 flex flex-col justify-between space-y-3.5 shadow-2xs">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between pb-2 border-b border-emerald-200/60">
+                    <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-950">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
                       <span>Hasil Nyata Terverifikasi</span>
                     </div>
-                    <span className="text-[10px] font-semibold text-[#166534] bg-white px-2 py-0.5 rounded-full border border-[#bbf7d0]">
+                    <span className="text-[10px] font-semibold text-emerald-800 bg-emerald-100/70 px-2 py-0.5 rounded-full border border-emerald-200">
                       Sinkron Mutasi Bank
                     </span>
                   </div>
-                  <p className="text-xs text-[#166534] leading-relaxed font-normal">
+
+                  <p className="text-xs text-neutral-800 leading-relaxed">
                     {mem.actualOutcome}
                   </p>
+
+                  {/* Status Rekonsiliasi Bank */}
+                  <div className="p-3 rounded-lg bg-emerald-50/50 border border-emerald-200/70 space-y-1 text-xs">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10.5px] font-bold text-emerald-900 uppercase tracking-wider">
+                        Status Rekonsiliasi Bank:
+                      </span>
+                      <span className="text-[10px] font-bold text-emerald-700 bg-white px-2 py-0.5 rounded-md border border-emerald-200 flex items-center gap-1 shadow-2xs">
+                        <CheckCircle2 className="h-3 w-3 text-emerald-600" />
+                        100% Valid
+                      </span>
+                    </div>
+                    <p className="text-emerald-800 text-[11.5px] leading-relaxed font-medium">
+                      {mem.status}
+                    </p>
+                  </div>
                 </div>
 
-                {/* Outcome Status Sub-box with 2-tier layout (Zero Truncation Guarantee) */}
-                <div className="rounded-[8px] bg-white border border-[#bbf7d0] p-3 space-y-1 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
-                  <div className="flex items-center justify-between">
-                    <span className="text-[10.5px] uppercase tracking-wider font-bold text-[#14532d]">
-                      Status Rekonsiliasi Bank
-                    </span>
-                    <span className="text-[10px] font-bold text-[#16a34a] bg-[#dcfce7] px-2 py-0.5 rounded-full border border-[#bbf7d0] flex items-center gap-1">
-                      <CheckCircle2 className="h-3 w-3" />
-                      <span>100% Valid</span>
-                    </span>
-                  </div>
-                  <div className="text-xs text-[#166534] font-medium leading-relaxed">
-                    {mem.status}
-                  </div>
+                {/* Real Cash Impact */}
+                <div className="pt-2.5 border-t border-emerald-200/60 flex items-center justify-between text-xs">
+                  <span className="text-neutral-500 font-medium">
+                    Dampak Kas Riil:
+                  </span>
+                  <span className="text-sm sm:text-base font-bold text-emerald-700">
+                    +{mem.simulatedBenefit}
+                  </span>
                 </div>
               </div>
-            </div>
-
-            {/* Bottom Rationale & Audit Trail */}
-            <div className="rounded-[8px] border-l-3 border-[#ea580c] bg-[#f5f5f5] p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <div className="text-xs text-[#404040] leading-relaxed">
-                <strong className="text-[#171717] font-semibold">Rasional Keputusan: </strong>
-                <span>{mem.rationale}</span>
-              </div>
-              <span className="font-mono text-[11px] text-[#525252] bg-white px-2 py-1 rounded border border-[#e5e5e5] shrink-0 self-start sm:self-auto shadow-dub-subtle">
-                ID: #{mem.id}
-              </span>
             </div>
           </div>
         ))}

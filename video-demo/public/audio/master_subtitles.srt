@@ -1,0 +1,780 @@
+1
+00:00:00,000 --> 00:00:01,858
+Halo rekan-rekan, dan seluruh
+
+2
+00:00:01,892 --> 00:00:03,053
+dewan juri yang terhormat
+
+3
+00:00:03,111 --> 00:00:05,236
+di IDwebhost AI Competition
+
+4
+00:00:05,619 --> 00:00:08,057
+2026! Pernah nggak Anda
+
+5
+00:00:08,104 --> 00:00:09,787
+melihat... sebuah kedai kopi
+
+6
+00:00:09,868 --> 00:00:11,262
+yang super ramai pembeli,
+
+7
+00:00:11,471 --> 00:00:12,655
+saldo kas di rekening
+
+8
+00:00:12,701 --> 00:00:14,547
+BCA-nya terlihat belasan juta
+
+9
+00:00:14,617 --> 00:00:15,918
+di awal bulan, tapi
+
+10
+00:00:15,964 --> 00:00:18,367
+seminggu kemudian... sang pemilik
+
+11
+00:00:18,414 --> 00:00:19,691
+panik luar biasa karena
+
+12
+00:00:19,737 --> 00:00:21,096
+terancam gagal bayar gaji
+
+13
+00:00:21,142 --> 00:00:22,918
+barista atau sewa ruko?
+
+14
+00:00:23,162 --> 00:00:24,718
+Nah, ini fakta mengejutkan!
+
+15
+00:00:25,159 --> 00:00:26,634
+Menurut data resmi Kementerian
+
+16
+00:00:26,692 --> 00:00:28,514
+Koperasi dan UKM, delapan
+
+17
+00:00:28,561 --> 00:00:29,919
+puluh dua persen kegagalan
+
+18
+00:00:29,989 --> 00:00:31,475
+usaha kecil bukan karena
+
+19
+00:00:31,522 --> 00:00:33,577
+sepi pelanggan... melainkan karena
+
+20
+00:00:33,635 --> 00:00:35,051
+terjebak ilusi saldo kas
+
+21
+00:00:35,132 --> 00:00:37,547
+operasional! Pemilik merasa uangnya
+
+22
+00:00:37,594 --> 00:00:39,045
+masih banyak, lalu tergiur
+
+23
+00:00:39,103 --> 00:00:40,159
+belanja modal di awal
+
+24
+00:00:40,217 --> 00:00:42,772
+bulan... tanpa memperhitungkan komitmen
+
+25
+00:00:42,853 --> 00:00:44,234
+jatuh tempo minggu depan!
+
+26
+00:00:44,838 --> 00:00:46,371
+Untuk itulah, kami hadirkan
+
+27
+00:00:46,417 --> 00:00:49,970
+solusi revolusioner: JagaUsaha! Autonomous
+
+28
+00:00:50,063 --> 00:00:51,955
+Financial Guardian yang bekerja
+
+29
+00:00:52,001 --> 00:00:54,231
+secara proaktif melindungi likuiditas
+
+30
+00:00:54,323 --> 00:00:56,367
+kas UMKM sebelum krisis
+
+31
+00:00:56,413 --> 00:00:58,793
+terjadi! Seluruh platform canggih
+
+32
+00:00:58,840 --> 00:01:00,326
+ini di-hosting di CloudBaik
+
+33
+00:01:00,767 --> 00:01:02,683
+Cloud VPS dan ditenagai
+
+34
+00:01:02,741 --> 00:01:04,447
+layanan AI Hosting unggulan
+
+35
+00:01:04,772 --> 00:01:07,257
+dari IDwebhost! Yuk, langsung
+
+36
+00:01:07,292 --> 00:01:08,464
+saja kita lihat bagaimana
+
+37
+00:01:08,511 --> 00:01:10,217
+sistem cerdas ini beraksi!
+
+38
+00:01:10,217 --> 00:01:11,541
+Sekarang, mari kita masuk
+
+39
+00:01:11,564 --> 00:01:12,922
+ke dashboard dan melihat
+
+40
+00:01:12,980 --> 00:01:14,907
+arsitektur kecerdasan buatan luar
+
+41
+00:01:14,965 --> 00:01:16,370
+biasa yang berjalan di
+
+42
+00:01:16,417 --> 00:01:18,065
+balik layar! Di menu
+
+43
+00:01:18,112 --> 00:01:19,180
+Log Sensor dan AI
+
+44
+00:01:19,250 --> 00:01:20,794
+Guardian ini, terdapat tiga
+
+45
+00:01:20,829 --> 00:01:22,779
+agen otonom yang berkolaborasi
+
+46
+00:01:22,849 --> 00:01:25,217
+tanpa henti! Pertama, Sensor
+
+47
+00:01:25,275 --> 00:01:27,551
+Agent... yang membaca mutasi
+
+48
+00:01:27,621 --> 00:01:29,269
+rekening dan transaksi kasir
+
+49
+00:01:29,350 --> 00:01:32,090
+secara otomatis! Kedua, Simulator
+
+50
+00:01:32,148 --> 00:01:34,540
+Agent... berbasis formula matematika
+
+51
+00:01:34,587 --> 00:01:36,967
+deterministik DLMM dengan tingkat
+
+52
+00:01:37,013 --> 00:01:39,440
+halusinasi nol persen! Dan
+
+53
+00:01:39,498 --> 00:01:42,040
+ketiga, Advisor Agent... yang
+
+54
+00:01:42,098 --> 00:01:44,049
+siap merumuskan intervensi taktis
+
+55
+00:01:44,118 --> 00:01:46,429
+melalui WhatsApp! Nah, perhatikan
+
+56
+00:01:46,777 --> 00:01:48,321
+layar terminal SSH langsung
+
+57
+00:01:48,356 --> 00:01:49,819
+ini! Melalui koneksi aman
+
+58
+00:01:49,877 --> 00:01:50,817
+port empat empat dua
+
+59
+00:01:50,864 --> 00:01:52,327
+dua ke server CloudBaik
+
+60
+00:01:52,408 --> 00:01:54,033
+Cloud VPS dengan alamat
+
+61
+00:01:54,103 --> 00:02:02,555
+IP 103.30.146.174... layanan jagausaha.service
+
+62
+00:02:02,601 --> 00:02:03,937
+aktif berjalan luar biasa
+
+63
+00:02:03,971 --> 00:02:05,852
+stabil dengan konsumsi memori
+
+64
+00:02:05,887 --> 00:02:08,975
+super efisien! Ditenagai spesifikasi
+
+65
+00:02:09,022 --> 00:02:10,357
+tangguh empat Core CPU
+
+66
+00:02:10,438 --> 00:02:12,737
+AMD EPYC, empat gigabyte
+
+67
+00:02:12,760 --> 00:02:14,571
+RAM, dan penyimpanan secepat
+
+68
+00:02:14,618 --> 00:02:16,522
+kilat NVMe SSD di
+
+69
+00:02:16,580 --> 00:02:18,472
+data center lokal Indonesia...
+
+70
+00:02:19,285 --> 00:02:21,270
+layanan AI Hosting IDwebhost
+
+71
+00:02:21,444 --> 00:02:23,278
+memberikan latensi mendekati nol
+
+72
+00:02:23,453 --> 00:02:25,577
+dan keandalan maksimal! Seluruh
+
+73
+00:02:25,624 --> 00:02:27,655
+mesin otonom ini diorkestrasikan
+
+74
+00:02:27,713 --> 00:02:29,223
+oleh Hermes Agent untuk
+
+75
+00:02:29,258 --> 00:02:30,790
+menjamin privasi penuh dan
+
+76
+00:02:30,860 --> 00:02:33,716
+keamanan data finansial UMKM!
+
+77
+00:02:33,716 --> 00:02:35,202
+Salah satu kendala terbesar
+
+78
+00:02:35,295 --> 00:02:37,756
+UMKM dalam menggunakan aplikasi
+
+79
+00:02:37,814 --> 00:02:39,753
+keuangan adalah proses input
+
+80
+00:02:39,811 --> 00:02:41,216
+manual yang ribet dan
+
+81
+00:02:41,274 --> 00:02:43,085
+bikin malas! Tapi di
+
+82
+00:02:43,155 --> 00:02:45,314
+JagaUsaha, kami memecahkan masalah
+
+83
+00:02:45,361 --> 00:02:46,800
+ini dengan solusi satu
+
+84
+00:02:46,835 --> 00:02:50,156
+pintu: Unified Multi-Modal Onboarding!
+
+85
+00:02:50,760 --> 00:02:52,153
+Cukup satu klik tombol
+
+86
+00:02:52,664 --> 00:02:55,172
+Input Data Usaha! Pemilik
+
+87
+00:02:55,230 --> 00:02:57,006
+usaha bisa langsung mengunggah
+
+88
+00:02:57,099 --> 00:02:59,409
+e-Statement rekening koran BCA
+
+89
+00:02:59,583 --> 00:03:01,836
+dalam format PDF... laporan
+
+90
+00:03:01,894 --> 00:03:03,322
+kasir POS Moka dalam
+
+91
+00:03:03,380 --> 00:03:05,504
+format Excel... atau bahkan
+
+92
+00:03:05,586 --> 00:03:07,257
+cukup merekam catatan suara
+
+93
+00:03:07,316 --> 00:03:09,998
+santai! Sensor cerdas kami
+
+94
+00:03:10,148 --> 00:03:11,762
+langsung mengekstrak seluruh data
+
+95
+00:03:11,809 --> 00:03:14,282
+transaksi secara otomatis tanpa
+
+96
+00:03:14,328 --> 00:03:15,803
+perlu diketik manual sedikit
+
+97
+00:03:15,837 --> 00:03:17,753
+pun! Keren banget, kan?
+
+98
+00:03:17,962 --> 00:03:19,645
+Perhatikan panel Digital Twin
+
+99
+00:03:19,762 --> 00:03:20,679
+di sisi kanan yang
+
+100
+00:03:20,725 --> 00:03:22,490
+langsung terisi sempurna secara
+
+101
+00:03:22,560 --> 00:03:24,708
+instan! Saldo kas riil
+
+102
+00:03:24,777 --> 00:03:26,612
+terdeteksi delapan belas koma
+
+103
+00:03:26,937 --> 00:03:29,073
+lima juta rupiah... cadangan
+
+104
+00:03:29,143 --> 00:03:30,385
+kas darurat aman tiga
+
+105
+00:03:30,455 --> 00:03:32,568
+juta rupiah... komitmen gaji
+
+106
+00:03:32,626 --> 00:03:34,228
+barista tujuh koma lima
+
+107
+00:03:34,286 --> 00:03:35,528
+juta rupiah pada tanggal
+
+108
+00:03:35,575 --> 00:03:37,432
+tiga puluh... serta sewa
+
+109
+00:03:37,479 --> 00:03:39,197
+ruko empat koma dua
+
+110
+00:03:39,267 --> 00:03:41,890
+juta rupiah! Setelah tersimpan,
+
+111
+00:03:42,006 --> 00:03:43,945
+sistem langsung memetakan parameter
+
+112
+00:03:44,015 --> 00:03:45,373
+ini ke dashboard dan
+
+113
+00:03:45,431 --> 00:03:46,813
+menghitung Duit Dingin Aman
+
+114
+00:03:47,022 --> 00:03:48,554
+sebesar tiga koma delapan
+
+115
+00:03:48,612 --> 00:03:50,783
+juta rupiah! Pemilik usaha
+
+116
+00:03:50,853 --> 00:03:52,258
+kini tahu persis berapa
+
+117
+00:03:52,374 --> 00:03:53,860
+uang yang benar-benar aman
+
+118
+00:03:54,185 --> 00:03:56,124
+untuk dibelanjakan tanpa menyentuh
+
+119
+00:03:56,170 --> 00:03:57,540
+dana operasional!
+
+120
+00:03:57,540 --> 00:03:58,562
+Nah, sekarang mari kita
+
+121
+00:03:58,631 --> 00:04:00,361
+uji fitur paling spektakuler:
+
+122
+00:04:00,535 --> 00:04:02,556
+Sandbox Simulasi Keputusan Kas!
+
+123
+00:04:02,881 --> 00:04:04,251
+Bayangkan pemilik kedai Kopi
+
+124
+00:04:04,285 --> 00:04:06,027
+Teras Barokah melihat saldo
+
+125
+00:04:06,097 --> 00:04:07,420
+BCA delapan belas juta
+
+126
+00:04:07,467 --> 00:04:09,463
+rupiah... lalu tergiur membeli
+
+127
+00:04:09,521 --> 00:04:11,217
+mesin espresso komersial baru
+
+128
+00:04:11,461 --> 00:04:12,738
+seharga empat belas juta
+
+129
+00:04:12,784 --> 00:04:14,990
+rupiah secara tunai! Pengguna
+
+130
+00:04:15,037 --> 00:04:16,476
+cukup berbicara santai dengan
+
+131
+00:04:16,523 --> 00:04:19,239
+antarmuka suara interaktif VoiceBeam:
+
+132
+00:04:19,414 --> 00:04:21,318
+Beli mesin espresso empat
+
+133
+00:04:21,364 --> 00:04:22,467
+belas juta tunai aman
+
+134
+00:04:22,502 --> 00:04:23,582
+nggak buat gajian barista
+
+135
+00:04:23,628 --> 00:04:26,159
+minggu depan? Begitu disimulasikan,
+
+136
+00:04:26,333 --> 00:04:28,573
+mesin deterministik DLMM FastMath
+
+137
+00:04:28,724 --> 00:04:30,617
+langsung membunyikan alarm bahaya!
+
+138
+00:04:31,128 --> 00:04:32,648
+Lihatlah kurva proyeksi arus
+
+139
+00:04:32,718 --> 00:04:33,879
+kas yang menukik tajam
+
+140
+00:04:33,937 --> 00:04:34,854
+ke bawah garis nol
+
+141
+00:04:34,901 --> 00:04:37,304
+rupiah! Sistem secara presisi
+
+142
+00:04:37,362 --> 00:04:38,999
+mendeteksi bahwa pada hari
+
+143
+00:04:39,046 --> 00:04:40,543
+ke-enam saat tanggal gajian
+
+144
+00:04:40,602 --> 00:04:42,865
+barista tiba... kas operasional
+
+145
+00:04:42,935 --> 00:04:44,607
+toko akan mengalami defisit
+
+146
+00:04:44,653 --> 00:04:46,139
+parah hingga minus tiga
+
+147
+00:04:46,186 --> 00:04:47,904
+koma tiga juta rupiah!
+
+148
+00:04:48,287 --> 00:04:50,145
+Luar biasanya, JagaUsaha tidak
+
+149
+00:04:50,180 --> 00:04:52,362
+cuma memperingatkan... tapi langsung
+
+150
+00:04:52,397 --> 00:04:54,708
+memberikan tombol mitigasi preskriptif:
+
+151
+00:04:55,149 --> 00:04:56,484
+Terapkan DP lima puluh
+
+152
+00:04:56,507 --> 00:04:57,958
+persen atau tujuh juta
+
+153
+00:04:58,005 --> 00:05:00,304
+rupiah! Begitu tombol diklik,
+
+154
+00:05:00,373 --> 00:05:02,115
+kurva kas seketika pulih
+
+155
+00:05:02,150 --> 00:05:03,311
+melesat kembali ke zona
+
+156
+00:05:03,357 --> 00:05:04,959
+hijau yang aman dengan
+
+157
+00:05:05,017 --> 00:05:06,689
+ketahanan kas yang prima!
+
+158
+00:05:06,689 --> 00:05:09,092
+Setelah keputusan diambil, JagaUsaha
+
+159
+00:05:09,139 --> 00:05:10,648
+langsung membantu eksekusi di
+
+160
+00:05:10,706 --> 00:05:13,202
+lapangan melalui generator negosiasi
+
+161
+00:05:13,643 --> 00:05:15,466
+WhatsApp! Cukup satu klik
+
+162
+00:05:15,536 --> 00:05:17,858
+tombol Draf WhatsApp! Sistem
+
+163
+00:05:17,916 --> 00:05:19,588
+otomatis meracik draf pesan
+
+164
+00:05:19,646 --> 00:05:21,109
+bisnis formal yang sangat
+
+165
+00:05:21,155 --> 00:05:23,164
+santun, cerdas, dan persuasif!
+
+166
+00:05:23,675 --> 00:05:25,114
+Pesan ini mengajukan termin
+
+167
+00:05:25,172 --> 00:05:26,856
+pembayaran DP lima puluh
+
+168
+00:05:26,890 --> 00:05:28,353
+persen hari ini dan
+
+169
+00:05:28,411 --> 00:05:29,886
+pelunasan tempo tiga puluh
+
+170
+00:05:29,909 --> 00:05:31,500
+hari ke depan... lengkap
+
+171
+00:05:31,558 --> 00:05:33,218
+dengan argumen budgeting kas
+
+172
+00:05:33,299 --> 00:05:35,134
+operasional toko yang membuat
+
+173
+00:05:35,180 --> 00:05:37,316
+supplier mesin merasa dihargai
+
+174
+00:05:37,386 --> 00:05:39,127
+dan aman! Pengguna tinggal
+
+175
+00:05:39,174 --> 00:05:40,834
+menyalin pesan dan mengirimkannya
+
+176
+00:05:40,880 --> 00:05:42,831
+langsung ke vendor! Praktis
+
+177
+00:05:42,889 --> 00:05:44,735
+dan solutif! Bapak, Ibu,
+
+178
+00:05:44,758 --> 00:05:46,116
+dan dewan juri sekalian...
+
+179
+00:05:46,499 --> 00:05:48,787
+JagaUsaha membuktikan bagaimana perpaduan
+
+180
+00:05:48,845 --> 00:05:51,352
+kecerdasan buatan otonom, antarmuka
+
+181
+00:05:51,410 --> 00:05:52,989
+bersih dan modern, serta
+
+182
+00:05:53,059 --> 00:05:54,870
+infrastruktur tangguh dari AI
+
+183
+00:05:54,917 --> 00:05:57,506
+Hosting IDwebhost serta CloudBaik
+
+184
+00:05:57,541 --> 00:05:59,874
+Cloud VPS... mampu memberikan
+
+185
+00:05:59,932 --> 00:06:01,720
+benteng perlindungan nyata bagi
+
+186
+00:06:01,767 --> 00:06:04,599
+jutaan UMKM Indonesia! Jangan
+
+187
+00:06:04,681 --> 00:06:05,993
+ragu untuk mencoba langsung
+
+188
+00:06:06,062 --> 00:06:07,571
+live demo aplikasi kami
+
+189
+00:06:07,955 --> 00:06:13,028
+di 103.30.146.174 port delapan
+
+190
+00:06:13,086 --> 00:06:15,350
+ribu! Terima kasih sebesar-besarnya
+
+191
+00:06:15,397 --> 00:06:17,393
+kepada IDwebhost dan CloudBaik
+
+192
+00:06:17,777 --> 00:06:19,669
+atas terselenggaranya kompetisi luar
+
+193
+00:06:19,727 --> 00:06:22,595
+biasa ini! JagaUsaha... jaga
+
+194
+00:06:22,653 --> 00:06:23,988
+kas usaha Anda sebelum
+
+195
+00:06:24,034 --> 00:06:25,126
+krisis menyapa!
+

@@ -91,20 +91,41 @@ class SensorAgent:
                 "summary_narrative": "Belum ada narasi atau dokumen yang dianalisis. Menampilkan profil bisnis awal default."
             }
 
+        missing_items = []
+        is_name_from_doc = False
+        is_name_missing = False
+
         # 1. Detect Business Name
         name_match = re.search(
-            r"(?:nama (?:usaha|toko|kafe|kedai|bisnis|butik)(?:\s+(?:saya|kami|adalah))?|(?:toko|kedai|kafe|resto|butik)(?:\s+kopi)?\s+(?:saya|kami|adalah)\s+|(?:toko|kedai|kafe|resto|butik)\s+)([a-zA-Z0-9\s]{3,25})",
+            r"(?:nama\s+nasabah|nama\s+pemilik|pelanggan\s*\(buyer\)|nama\s+(?:usaha|toko|kafe|kedai|bisnis|butik)(?:\s+(?:saya|kami|adalah))?|(?:toko|kedai|kafe|resto|butik)(?:\s+kopi)?\s+(?:saya|kami|adalah)\s+|(?:toko|kedai|kafe|resto|butik)\s+)\s*[:=]?\s*([a-zA-Z0-9\s]{3,35})",
             safe_text,
             re.IGNORECASE
         )
         if name_match:
             raw_bname = name_match.group(1).strip()
             raw_bname = re.sub(r"^(?:saya|kami|adalah)\s+", "", raw_bname, flags=re.IGNORECASE)
-            raw_bname = re.sub(r"\s+(di|cabang|daerah).*$", "", raw_bname, flags=re.IGNORECASE).strip()
-            business_name = raw_bname.title() if raw_bname else "Kopi Nusa"
-            detected_items.append(f"Nama Usaha: {business_name}")
+            raw_bname = re.sub(r"\s+(?:mata\s+uang|periode|no\.?|rekening|idr|cbg|saldo|tanggal|di|cabang).*$", "", raw_bname, flags=re.IGNORECASE).strip()
+            if len(raw_bname) >= 3:
+                business_name = raw_bname.title()
+                is_name_from_doc = True
+                detected_items.append(f"Nama Usaha Terdeteksi: {business_name}")
+            else:
+                business_name = "Usaha F&B Saya"
+                is_name_missing = True
+                missing_items.append("Nama Usaha belum terdeteksi dari dokumen atau suara (dapat Anda tentukan)")
         else:
-            business_name = "Kopi Nusa" if "nusa" in lower else "Kopi Teras Barokah"
+            if any(w in lower for w in ["kopi", "kafe", "resto", "kuliner", "f&b"]):
+                business_name = "Usaha F&B / Kuliner"
+            elif any(w in lower for w in ["baju", "fashion", "butik", "olshop", "retail"]):
+                business_name = "Usaha Retail / Olshop"
+            elif any(w in lower for w in ["sembako", "warung", "kelontong"]):
+                business_name = "Toko Sembako / Kelontong"
+            elif any(w in lower for w in ["jasa", "agensi", "kreatif", "desain"]):
+                business_name = "Usaha Jasa & Agensi"
+            else:
+                business_name = "Usaha Saya"
+            is_name_missing = True
+            missing_items.append("Nama Usaha belum terdeteksi dari dokumen/suara (Silakan isi nama usaha Anda)")
 
         # 2. Detect Archetype
         if any(w in lower for w in ["kopi", "kafe", "cafe", "barista", "resto", "makanan", "kuliner", "minuman", "f&b"]):
@@ -123,7 +144,9 @@ class SensorAgent:
             archetype = "fnb"
 
         # 3. Detect Bank Name
-        if "mandiri" in lower:
+        if "bca" in lower or "central asia" in lower:
+            bank_name = "BCA"
+        elif "mandiri" in lower:
             bank_name = "Bank Mandiri"
         elif "bri" in lower:
             bank_name = "Bank BRI"
@@ -154,11 +177,17 @@ class SensorAgent:
                     u = m_pre.group(2)
                     return val * 1_000_000 if u in ["jt", "juta"] else val * 1_000
 
-                # 3. Search general number near kw
-                pat_gen = rf"{kw}[^\d\n]*?(\d+[\.,]?\d*)\s*(rb|ribu|jt|juta)?"
+                # 3. Search general number near kw (ignoring 4-digit years like 2024-2027)
+                pat_gen = rf"{kw}[^\d\n]*?(\d{1,3}(?:\.\d{3})+|\d+[\.,]?\d*)\s*(rb|ribu|jt|juta)?"
                 m_gen = re.search(pat_gen, lower)
                 if m_gen:
-                    val = float(m_gen.group(1).replace(",", "."))
+                    raw_str = m_gen.group(1)
+                    if "." in raw_str and len(raw_str.split(".")[-1]) == 3:
+                        val = float(raw_str.replace(".", ""))
+                        return val
+                    val = float(raw_str.replace(",", "."))
+                    if 2023 <= val <= 2030:
+                        continue
                     u = m_gen.group(2) or ""
                     if u in ["jt", "juta"] or (u == "" and val < 1000):
                         return val * 1_000_000
@@ -169,20 +198,44 @@ class SensorAgent:
             return default_val
 
         # 4. Extract Balances & Commitments
-        initial_cash = parse_amount_near(["saldo", "kas", "rekening", "modal", "uang"], 18500000.0)
+        saldo_akhir_match = re.search(r"(?:saldo\s+akhir|penjualan\s+bersih|net\s+revenue)[^\d\n]*?rp\.?\s*(\d{1,3}(?:\.\d{3})+|\d+)", lower)
+        if saldo_akhir_match:
+            try:
+                initial_cash = float(saldo_akhir_match.group(1).replace(".", ""))
+            except ValueError:
+                initial_cash = parse_amount_near(["saldo", "kas", "rekening", "modal", "uang"], 18500000.0)
+        else:
+            initial_cash = parse_amount_near(["saldo", "kas", "rekening", "modal", "uang"], 18500000.0)
         detected_items.append(f"Saldo Kas: Rp {initial_cash:,.0f}".replace(",", "."))
 
         safety_buffer = parse_amount_near(["buffer", "cadangan", "darurat", "simpan"], 3000000.0)
         detected_items.append(f"Cadangan Darurat: Rp {safety_buffer:,.0f}".replace(",", "."))
 
-        payroll_amount = parse_amount_near(["gaji", "pegawai", "karyawan", "barista", "admin"], 7500000.0)
-        detected_items.append(f"Beban Gaji: Rp {payroll_amount:,.0f}".replace(",", "."))
+        payroll_match = re.search(r"(?:payroll|gaji)[^\d\n]*?(\d{1,3}(?:\.\d{3})+)", lower)
+        if payroll_match:
+            try:
+                payroll_amount = float(payroll_match.group(1).replace(".", ""))
+            except ValueError:
+                payroll_amount = parse_amount_near(["gaji", "pegawai", "karyawan", "barista", "admin"], 7500000.0)
+        else:
+            payroll_amount = parse_amount_near(["gaji", "pegawai", "karyawan", "barista", "admin"], 0.0)
+        
+        if payroll_amount > 0:
+            detected_items.append(f"Beban Gaji: Rp {payroll_amount:,.0f}".replace(",", "."))
+        else:
+            missing_items.append("Beban Gaji Bulanan belum tercatat (Disarankan diisi agar tanggal gajian terlindungi)")
 
-        fixed_rent_amount = parse_amount_near(["sewa", "ruko", "tempat", "outlet"], 4200000.0)
-        detected_items.append(f"Beban Sewa: Rp {fixed_rent_amount:,.0f}".replace(",", "."))
+        fixed_rent_amount = parse_amount_near(["sewa", "ruko", "tempat", "outlet"], 0.0)
+        if fixed_rent_amount > 0:
+            detected_items.append(f"Beban Sewa: Rp {fixed_rent_amount:,.0f}".replace(",", "."))
+        else:
+            missing_items.append("Biaya Sewa Tempat belum tercatat (Abaikan jika lokasi toko milik sendiri)")
 
-        daily_gross = parse_amount_near(["omset", "omzet", "penjualan", "sehari", "per hari"], 900000.0)
-        detected_items.append(f"Omset Rata-Rata: Rp {daily_gross:,.0f}/hari".replace(",", "."))
+        daily_gross = parse_amount_near(["omset", "omzet", "penjualan", "sehari", "per hari"], 0.0)
+        if daily_gross > 0:
+            detected_items.append(f"Omset Rata-Rata: Rp {daily_gross:,.0f}/hari".replace(",", "."))
+        else:
+            missing_items.append("Omset harian rata-rata belum tercatat (Dihitung otomatis saat operasional berjalan)")
 
         # Detect payroll date (support any valid calendar day 1-31)
         pday_match = re.search(r"t(?:an)?g(?:ga)?l\s+(\d{1,2})", lower)
@@ -202,6 +255,8 @@ class SensorAgent:
 
         return {
             "business_name": business_name,
+            "is_name_detected_from_doc": is_name_from_doc,
+            "is_name_missing": is_name_missing,
             "archetype": archetype,
             "bank_name": bank_name,
             "initial_cash": initial_cash,
@@ -211,8 +266,9 @@ class SensorAgent:
             "fixed_rent_amount": fixed_rent_amount,
             "daily_gross": daily_gross,
             "safe_to_spend": instant_safe_spend,
-            "confidence": 0.88 if len(detected_items) >= 4 else 0.65,
+            "confidence": 0.92 if len(detected_items) >= 4 else 0.70,
             "detected_items": detected_items,
+            "missing_items": missing_items,
             "summary_narrative": summary_narrative
         }
 
@@ -236,12 +292,13 @@ class SensorAgent:
         if not user_texts:
             reply = (
                 "Halo! Saya AI Guardian JagaUsaha. Mari kita siapkan radar keuangan usaha Anda "
-                "secara santai. Boleh ceritakan, apa nama usaha Anda dan bergerak di bidang apa?"
+                "secara santai. Boleh sebutkan, bidang usaha apa yang sedang Anda jalankan?"
             )
             quick_replies = [
-                "Kedai Kopi Kopi Nusa di Serang",
-                "Butik Fashion & Hijab Zahrana",
-                "Warung Sembako Toko Berkah"
+                "Kafe, Resto & F&B",
+                "Retail Fashion & Olshop",
+                "Warung & Toko Sembako",
+                "Jasa & Agensi Kreatif"
             ]
             is_complete = False
 

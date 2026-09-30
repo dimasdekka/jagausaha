@@ -8,7 +8,7 @@ import sys
 import json
 from pathlib import Path
 from typing import Optional, Dict, Any, List
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, UploadFile, File, Form, Header
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, JSONResponse
@@ -23,6 +23,7 @@ from core.dlmm import BusinessState, Obligation, Receivable, Scenario, simulate_
 from core.sensor import SensorAgent
 from core.advisor import AdvisorAgent
 from core.rag import RAG_ENGINE
+from core.auth import register_user, login_user, get_user_by_token, init_auth_db
 
 app = FastAPI(
     title="JagaUsaha API",
@@ -123,6 +124,20 @@ class RAGIngestRequest(BaseModel):
     doc_type: Optional[str] = "uploaded_doc"
     metadata: Optional[Dict[str, Any]] = None
 
+class RegisterRequest(BaseModel):
+    email: str
+    password: str
+    full_name: str
+    phone: Optional[str] = ""
+
+class LoginRequest(BaseModel):
+    email: str
+    password: str
+
+@app.on_event("startup")
+def startup_event():
+    init_auth_db()
+
 @app.get("/api/health")
 def health_check():
     return {
@@ -132,6 +147,41 @@ def health_check():
         "framework": "Hermes Agent Compatible",
         "runtime": "CloudBaik VPS Ready"
     }
+
+@app.post("/api/auth/register")
+def api_register(req: RegisterRequest):
+    try:
+        res = register_user(
+            email=req.email,
+            password=req.password,
+            full_name=req.full_name,
+            phone=req.phone or ""
+        )
+        return res
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Gagal memproses pendaftaran: {str(e)}")
+
+@app.post("/api/auth/login")
+def api_login(req: LoginRequest):
+    try:
+        res = login_user(email=req.email, password=req.password)
+        return res
+    except ValueError as e:
+        raise HTTPException(status_code=401, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Gagal memproses login: {str(e)}")
+
+@app.get("/api/auth/me")
+def api_auth_me(authorization: Optional[str] = Header(None)):
+    if not authorization:
+        raise HTTPException(status_code=401, detail="Header Authorization tidak ditemukan.")
+    token = authorization.replace("Bearer ", "").strip()
+    user = get_user_by_token(token)
+    if not user:
+        raise HTTPException(status_code=401, detail="Sesi tidak valid atau telah kedaluwarsa.")
+    return {"status": "success", "user": user}
 
 @app.get("/api/pulse")
 def get_business_pulse():
@@ -280,6 +330,72 @@ def extract_context_endpoint(req: ExtractContextRequest):
             doc_type="uploaded_doc",
             metadata={"extracted_cash": result.get("initial_cash"), "bank": result.get("bank_name")}
         )
+    return result
+
+@app.post("/api/ai/upload-file")
+async def upload_file_endpoint(
+    file: UploadFile = File(...),
+    document_note: Optional[str] = Form(None)
+):
+    import io
+    import pypdf
+    import openpyxl
+
+    contents = await file.read()
+    filename = file.filename or "dokumen_keuangan"
+    extracted_text = ""
+    ext = filename.split(".")[-1].lower() if "." in filename else ""
+
+    if ext == "pdf":
+        try:
+            reader = pypdf.PdfReader(io.BytesIO(contents))
+            for page in reader.pages:
+                extracted_text += (page.extract_text() or "") + "\n"
+        except Exception as e:
+            extracted_text = f"Dokumen PDF: {filename} ({e})"
+    elif ext in ["xlsx", "xls"]:
+        try:
+            wb = openpyxl.load_workbook(io.BytesIO(contents), data_only=True)
+            for sheet in wb.sheetnames:
+                ws = wb[sheet]
+                extracted_text += f"\n[Sheet: {sheet}]\n"
+                for row in ws.iter_rows(values_only=True):
+                    row_vals = [str(cell) for cell in row if cell is not None]
+                    if row_vals:
+                        extracted_text += " | ".join(row_vals) + "\n"
+        except Exception as e:
+            extracted_text = f"Dokumen Excel: {filename} ({e})"
+    elif ext in ["csv", "txt", "json", "md"]:
+        try:
+            extracted_text = contents.decode("utf-8", errors="ignore")
+        except Exception as e:
+            extracted_text = str(contents)
+    else:
+        extracted_text = f"Berkas fisik: {filename}"
+
+    combined_text = extracted_text
+    if document_note:
+        combined_text += f"\nCatatan Tambahan: {document_note}"
+
+    result = SENSOR.extract_business_context_from_narrative(combined_text, filename)
+
+    # Ingest directly into RAG Engine
+    source_label = filename
+    summary_text = result.get('summary_narrative', '')
+    ingest_text = f"Sumber: {source_label}\nCuplikan Teks:\n{extracted_text[:1200]}\nRangkuman Analisis: {summary_text}"
+    RAG_ENGINE.add_document(
+        doc_id=f"doc-user-{len(RAG_ENGINE.chunks) + 1}",
+        source=source_label,
+        content=ingest_text,
+        doc_type="uploaded_doc",
+        metadata={
+            "extracted_cash": result.get("initial_cash"),
+            "bank": result.get("bank_name"),
+            "file_size": len(contents),
+            "filename": filename
+        }
+    )
+
     return result
 
 @app.post("/api/ai/onboarding-chat")

@@ -37,6 +37,9 @@ screenshot_*.png
 deploy_*.py
 core/backup_vps/
 data/backup_vps/
+graphify-out/
+data/*.db
+nul
 
 
 .vscode/

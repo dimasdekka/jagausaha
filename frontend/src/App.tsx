@@ -73,6 +73,8 @@ export function App() {
     'Contoh: "Beli mesin espresso 14 juta tunai aman nggak?"'
   );
 
+  const [autoOpenOnboarding, setAutoOpenOnboarding] = useState<boolean>(false);
+
   // Terminal Logs
   const [logs, setLogs] = useState<string[]>([
     '[INIT] JagaUsaha runtime deployed on IDwebhost CloudBaik VPS.',
@@ -419,9 +421,19 @@ export function App() {
         <LoginPage
           onBackToHome={goToLanding}
           onLoginSuccess={(email) => {
+            setAutoOpenOnboarding(false);
             showToast({
               title: 'Login Berhasil!',
               description: `Selamat datang di Dashboard JagaUsaha, ${email}!`,
+              status: 'success',
+            });
+            goToDashboard();
+          }}
+          onRegisterSuccess={(_, fullName) => {
+            setAutoOpenOnboarding(true);
+            showToast({
+              title: 'Pendaftaran Berhasil!',
+              description: `Selamat datang, ${fullName}! Mari kita inisialisasi data usaha Anda.`,
               status: 'success',
             });
             goToDashboard();
@@ -449,6 +461,7 @@ export function App() {
             goToLanding();
           }}
           onOpenWhatsAppModal={(data) => setModalData({ isOpen: true, ...data })}
+          autoOpenOnboarding={autoOpenOnboarding}
           currentCash={pulse.current_cash}
           safeToSpend={pulse.safe_to_spend}
           safetyBuffer={pulse.safety_buffer}
@@ -488,6 +501,42 @@ export function App() {
         id="scroll-progress-bar"
         className="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-emerald-500 via-teal-400 to-indigo-500 z-[100] w-full scale-x-0 origin-left pointer-events-none shadow-xs shadow-emerald-500/20"
       />
+
+      {/* Top Official Competition & Infrastructure Banner */}
+      <div className="bg-neutral-950 text-neutral-300 text-[11px] sm:text-xs py-1.5 px-4 border-b border-neutral-800">
+        <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="font-semibold text-white">IDwebhost AI Competition</span>
+            <span className="text-neutral-500">·</span>
+            <span className="text-neutral-300 hidden sm:inline">Autonomous Financial Agent untuk UMKM</span>
+          </div>
+          <div className="flex items-center gap-3 text-neutral-400">
+            <span>Infrastruktur:</span>
+            <a
+              href="https://idwebhost.com/ai-hosting/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-emerald-400 font-semibold underline underline-offset-2 transition-colors"
+            >
+              AI Hosting IDwebhost ↗
+            </a>
+            <span className="text-neutral-600">/</span>
+            <a
+              href="https://cloudbaik.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-emerald-400 font-semibold underline underline-offset-2 transition-colors"
+            >
+              Cloud VPS ↗
+            </a>
+            <span className="text-neutral-600 hidden md:inline">·</span>
+            <code className="hidden md:inline font-mono text-[10.5px] bg-neutral-900 border border-neutral-800 px-1.5 py-0.5 rounded text-emerald-400">
+              IP: 103.30.146.174
+            </code>
+          </div>
+        </div>
+      </div>
 
       <Header
         onReset={() => runSimulation('espresso_cash', 14000000)}

@@ -1,0 +1,762 @@
+[
+  {
+    "word": "Nah,",
+    "start": 0.0,
+    "end": 0.232
+  },
+  {
+    "word": "sekarang",
+    "start": 0.255,
+    "end": 0.592
+  },
+  {
+    "word": "mari",
+    "start": 0.615,
+    "end": 0.813
+  },
+  {
+    "word": "kita",
+    "start": 0.848,
+    "end": 1.022
+  },
+  {
+    "word": "uji",
+    "start": 1.091,
+    "end": 1.277
+  },
+  {
+    "word": "fitur",
+    "start": 1.335,
+    "end": 1.625
+  },
+  {
+    "word": "paling",
+    "start": 1.683,
+    "end": 1.927
+  },
+  {
+    "word": "spektakuler:",
+    "start": 1.962,
+    "end": 2.821
+  },
+  {
+    "word": "Sandbox",
+    "start": 2.995,
+    "end": 3.471
+  },
+  {
+    "word": "Simulasi",
+    "start": 3.495,
+    "end": 3.982
+  },
+  {
+    "word": "Keputusan",
+    "start": 4.04,
+    "end": 4.493
+  },
+  {
+    "word": "Kas!",
+    "start": 4.574,
+    "end": 5.016
+  },
+  {
+    "word": "Bayangkan",
+    "start": 5.341,
+    "end": 5.782
+  },
+  {
+    "word": "pemilik",
+    "start": 5.828,
+    "end": 6.165
+  },
+  {
+    "word": "kedai",
+    "start": 6.188,
+    "end": 6.444
+  },
+  {
+    "word": "Kopi",
+    "start": 6.49,
+    "end": 6.711
+  },
+  {
+    "word": "Teras",
+    "start": 6.745,
+    "end": 6.978
+  },
+  {
+    "word": "Barokah",
+    "start": 7.047,
+    "end": 7.558
+  },
+  {
+    "word": "melihat",
+    "start": 7.767,
+    "end": 8.104
+  },
+  {
+    "word": "saldo",
+    "start": 8.139,
+    "end": 8.487
+  },
+  {
+    "word": "BCA",
+    "start": 8.557,
+    "end": 8.928
+  },
+  {
+    "word": "delapan",
+    "start": 8.998,
+    "end": 9.358
+  },
+  {
+    "word": "belas",
+    "start": 9.404,
+    "end": 9.601
+  },
+  {
+    "word": "juta",
+    "start": 9.671,
+    "end": 9.88
+  },
+  {
+    "word": "rupiah...",
+    "start": 9.927,
+    "end": 10.542
+  },
+  {
+    "word": "lalu",
+    "start": 10.925,
+    "end": 11.134
+  },
+  {
+    "word": "tergiur",
+    "start": 11.18,
+    "end": 11.564
+  },
+  {
+    "word": "membeli",
+    "start": 11.622,
+    "end": 11.923
+  },
+  {
+    "word": "mesin",
+    "start": 11.981,
+    "end": 12.237
+  },
+  {
+    "word": "espresso",
+    "start": 12.307,
+    "end": 12.748
+  },
+  {
+    "word": "komersial",
+    "start": 12.794,
+    "end": 13.27
+  },
+  {
+    "word": "baru",
+    "start": 13.328,
+    "end": 13.677
+  },
+  {
+    "word": "seharga",
+    "start": 13.921,
+    "end": 14.385
+  },
+  {
+    "word": "empat",
+    "start": 14.408,
+    "end": 14.699
+  },
+  {
+    "word": "belas",
+    "start": 14.745,
+    "end": 14.942
+  },
+  {
+    "word": "juta",
+    "start": 15.0,
+    "end": 15.198
+  },
+  {
+    "word": "rupiah",
+    "start": 15.244,
+    "end": 15.569
+  },
+  {
+    "word": "secara",
+    "start": 15.616,
+    "end": 15.918
+  },
+  {
+    "word": "tunai!",
+    "start": 15.952,
+    "end": 16.545
+  },
+  {
+    "word": "Pengguna",
+    "start": 17.055,
+    "end": 17.45
+  },
+  {
+    "word": "cukup",
+    "start": 17.497,
+    "end": 17.729
+  },
+  {
+    "word": "berbicara",
+    "start": 17.752,
+    "end": 18.216
+  },
+  {
+    "word": "santai",
+    "start": 18.263,
+    "end": 18.669
+  },
+  {
+    "word": "dengan",
+    "start": 18.727,
+    "end": 18.936
+  },
+  {
+    "word": "antarmuka",
+    "start": 18.983,
+    "end": 19.47
+  },
+  {
+    "word": "suara",
+    "start": 19.517,
+    "end": 19.749
+  },
+  {
+    "word": "interaktif",
+    "start": 19.807,
+    "end": 20.434
+  },
+  {
+    "word": "VoiceBeam:",
+    "start": 20.945,
+    "end": 21.699
+  },
+  {
+    "word": "Beli",
+    "start": 21.874,
+    "end": 22.071
+  },
+  {
+    "word": "mesin",
+    "start": 22.129,
+    "end": 22.361
+  },
+  {
+    "word": "espresso",
+    "start": 22.419,
+    "end": 22.988
+  },
+  {
+    "word": "empat",
+    "start": 23.429,
+    "end": 23.778
+  },
+  {
+    "word": "belas",
+    "start": 23.824,
+    "end": 24.01
+  },
+  {
+    "word": "juta",
+    "start": 24.068,
+    "end": 24.277
+  },
+  {
+    "word": "tunai",
+    "start": 24.323,
+    "end": 24.637
+  },
+  {
+    "word": "aman",
+    "start": 24.706,
+    "end": 24.927
+  },
+  {
+    "word": "nggak",
+    "start": 24.962,
+    "end": 25.101
+  },
+  {
+    "word": "buat",
+    "start": 25.136,
+    "end": 25.287
+  },
+  {
+    "word": "gajian",
+    "start": 25.345,
+    "end": 25.635
+  },
+  {
+    "word": "barista",
+    "start": 25.693,
+    "end": 26.042
+  },
+  {
+    "word": "minggu",
+    "start": 26.088,
+    "end": 26.285
+  },
+  {
+    "word": "depan?",
+    "start": 26.32,
+    "end": 26.831
+  },
+  {
+    "word": "Begitu",
+    "start": 27.272,
+    "end": 27.597
+  },
+  {
+    "word": "disimulasikan,",
+    "start": 27.643,
+    "end": 28.619
+  },
+  {
+    "word": "mesin",
+    "start": 28.793,
+    "end": 29.095
+  },
+  {
+    "word": "deterministik",
+    "start": 29.141,
+    "end": 29.849
+  },
+  {
+    "word": "DLMM",
+    "start": 29.919,
+    "end": 30.43
+  },
+  {
+    "word": "FastMath",
+    "start": 30.499,
+    "end": 31.033
+  },
+  {
+    "word": "langsung",
+    "start": 31.184,
+    "end": 31.556
+  },
+  {
+    "word": "membunyikan",
+    "start": 31.579,
+    "end": 32.067
+  },
+  {
+    "word": "alarm",
+    "start": 32.125,
+    "end": 32.415
+  },
+  {
+    "word": "bahaya!",
+    "start": 32.45,
+    "end": 33.077
+  },
+  {
+    "word": "Lihatlah",
+    "start": 33.588,
+    "end": 33.994
+  },
+  {
+    "word": "kurva",
+    "start": 34.017,
+    "end": 34.331
+  },
+  {
+    "word": "proyeksi",
+    "start": 34.365,
+    "end": 34.818
+  },
+  {
+    "word": "arus",
+    "start": 34.876,
+    "end": 35.108
+  },
+  {
+    "word": "kas",
+    "start": 35.178,
+    "end": 35.376
+  },
+  {
+    "word": "yang",
+    "start": 35.457,
+    "end": 35.573
+  },
+  {
+    "word": "menukik",
+    "start": 35.608,
+    "end": 35.979
+  },
+  {
+    "word": "tajam",
+    "start": 36.037,
+    "end": 36.339
+  },
+  {
+    "word": "ke",
+    "start": 36.397,
+    "end": 36.455
+  },
+  {
+    "word": "bawah",
+    "start": 36.502,
+    "end": 36.78
+  },
+  {
+    "word": "garis",
+    "start": 36.838,
+    "end": 37.094
+  },
+  {
+    "word": "nol",
+    "start": 37.163,
+    "end": 37.314
+  },
+  {
+    "word": "rupiah!",
+    "start": 37.361,
+    "end": 38.011
+  },
+  {
+    "word": "Sistem",
+    "start": 38.522,
+    "end": 38.893
+  },
+  {
+    "word": "secara",
+    "start": 38.963,
+    "end": 39.253
+  },
+  {
+    "word": "presisi",
+    "start": 39.3,
+    "end": 39.764
+  },
+  {
+    "word": "mendeteksi",
+    "start": 39.822,
+    "end": 40.507
+  },
+  {
+    "word": "bahwa",
+    "start": 40.751,
+    "end": 40.995
+  },
+  {
+    "word": "pada",
+    "start": 41.041,
+    "end": 41.227
+  },
+  {
+    "word": "hari",
+    "start": 41.285,
+    "end": 41.459
+  },
+  {
+    "word": "ke-enam",
+    "start": 41.506,
+    "end": 41.9
+  },
+  {
+    "word": "saat",
+    "start": 41.982,
+    "end": 42.249
+  },
+  {
+    "word": "tanggal",
+    "start": 42.272,
+    "end": 42.609
+  },
+  {
+    "word": "gajian",
+    "start": 42.678,
+    "end": 43.003
+  },
+  {
+    "word": "barista",
+    "start": 43.062,
+    "end": 43.421
+  },
+  {
+    "word": "tiba...",
+    "start": 43.468,
+    "end": 44.06
+  },
+  {
+    "word": "kas",
+    "start": 44.501,
+    "end": 44.675
+  },
+  {
+    "word": "operasional",
+    "start": 44.745,
+    "end": 45.325
+  },
+  {
+    "word": "toko",
+    "start": 45.395,
+    "end": 45.79
+  },
+  {
+    "word": "akan",
+    "start": 45.918,
+    "end": 46.161
+  },
+  {
+    "word": "mengalami",
+    "start": 46.208,
+    "end": 46.614
+  },
+  {
+    "word": "defisit",
+    "start": 46.672,
+    "end": 47.067
+  },
+  {
+    "word": "parah",
+    "start": 47.113,
+    "end": 47.485
+  },
+  {
+    "word": "hingga",
+    "start": 47.729,
+    "end": 48.019
+  },
+  {
+    "word": "minus",
+    "start": 48.065,
+    "end": 48.298
+  },
+  {
+    "word": "tiga",
+    "start": 48.356,
+    "end": 48.599
+  },
+  {
+    "word": "koma",
+    "start": 48.646,
+    "end": 49.052
+  },
+  {
+    "word": "tiga",
+    "start": 49.18,
+    "end": 49.47
+  },
+  {
+    "word": "juta",
+    "start": 49.528,
+    "end": 49.749
+  },
+  {
+    "word": "rupiah!",
+    "start": 49.795,
+    "end": 50.364
+  },
+  {
+    "word": "Luar",
+    "start": 50.747,
+    "end": 50.991
+  },
+  {
+    "word": "biasanya,",
+    "start": 51.049,
+    "end": 51.63
+  },
+  {
+    "word": "JagaUsaha",
+    "start": 51.723,
+    "end": 52.35
+  },
+  {
+    "word": "tidak",
+    "start": 52.384,
+    "end": 52.605
+  },
+  {
+    "word": "cuma",
+    "start": 52.64,
+    "end": 52.849
+  },
+  {
+    "word": "memperingatkan...",
+    "start": 52.895,
+    "end": 53.882
+  },
+  {
+    "word": "tapi",
+    "start": 54.207,
+    "end": 54.439
+  },
+  {
+    "word": "langsung",
+    "start": 54.486,
+    "end": 54.822
+  },
+  {
+    "word": "memberikan",
+    "start": 54.857,
+    "end": 55.31
+  },
+  {
+    "word": "tombol",
+    "start": 55.38,
+    "end": 55.728
+  },
+  {
+    "word": "mitigasi",
+    "start": 55.774,
+    "end": 56.262
+  },
+  {
+    "word": "preskriptif:",
+    "start": 56.308,
+    "end": 57.168
+  },
+  {
+    "word": "Terapkan",
+    "start": 57.609,
+    "end": 58.12
+  },
+  {
+    "word": "DP",
+    "start": 58.178,
+    "end": 58.352
+  },
+  {
+    "word": "lima",
+    "start": 58.468,
+    "end": 58.677
+  },
+  {
+    "word": "puluh",
+    "start": 58.712,
+    "end": 58.944
+  },
+  {
+    "word": "persen",
+    "start": 58.967,
+    "end": 59.443
+  },
+  {
+    "word": "atau",
+    "start": 59.594,
+    "end": 59.85
+  },
+  {
+    "word": "tujuh",
+    "start": 59.884,
+    "end": 60.175
+  },
+  {
+    "word": "juta",
+    "start": 60.209,
+    "end": 60.418
+  },
+  {
+    "word": "rupiah!",
+    "start": 60.465,
+    "end": 61.045
+  },
+  {
+    "word": "Begitu",
+    "start": 61.556,
+    "end": 61.881
+  },
+  {
+    "word": "tombol",
+    "start": 61.939,
+    "end": 62.23
+  },
+  {
+    "word": "diklik,",
+    "start": 62.299,
+    "end": 62.764
+  },
+  {
+    "word": "kurva",
+    "start": 62.833,
+    "end": 63.147
+  },
+  {
+    "word": "kas",
+    "start": 63.216,
+    "end": 63.414
+  },
+  {
+    "word": "seketika",
+    "start": 63.437,
+    "end": 64.076
+  },
+  {
+    "word": "pulih",
+    "start": 64.25,
+    "end": 64.575
+  },
+  {
+    "word": "melesat",
+    "start": 64.61,
+    "end": 64.981
+  },
+  {
+    "word": "kembali",
+    "start": 65.028,
+    "end": 65.387
+  },
+  {
+    "word": "ke",
+    "start": 65.434,
+    "end": 65.515
+  },
+  {
+    "word": "zona",
+    "start": 65.562,
+    "end": 65.771
+  },
+  {
+    "word": "hijau",
+    "start": 65.817,
+    "end": 66.189
+  },
+  {
+    "word": "yang",
+    "start": 66.235,
+    "end": 66.363
+  },
+  {
+    "word": "aman",
+    "start": 66.432,
+    "end": 66.85
+  },
+  {
+    "word": "dengan",
+    "start": 67.175,
+    "end": 67.419
+  },
+  {
+    "word": "ketahanan",
+    "start": 67.477,
+    "end": 67.93
+  },
+  {
+    "word": "kas",
+    "start": 68.011,
+    "end": 68.185
+  },
+  {
+    "word": "yang",
+    "start": 68.255,
+    "end": 68.371
+  },
+  {
+    "word": "prima!",
+    "start": 68.406,
+    "end": 69.149
+  }
+]

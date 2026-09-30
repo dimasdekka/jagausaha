@@ -34,9 +34,8 @@ export default {
       },
       fontFamily: {
         serif: ['Newsreader', 'Georgia', 'serif'],
-        sans: ['Inter', '"Plus Jakarta Sans"', '-apple-system', 'sans-serif'],
-        satoshi: ['Satoshi', 'Inter', 'sans-serif'],
-        mono: ['"Geist Mono"', '"JetBrains Mono"', 'monospace'],
+        sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
       },
       boxShadow: {
         'dub-subtle': 'rgba(0, 0, 0, 0.05) 0px 1px 2px 0px',

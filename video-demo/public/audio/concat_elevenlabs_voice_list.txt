@@ -1,0 +1,5 @@
+file 'C:/Users/Unicodes/Documents/Developments/Project/JagaUsaha/video-demo/public/audio/act1_elevenlabs_voice.mp3'
+file 'C:/Users/Unicodes/Documents/Developments/Project/JagaUsaha/video-demo/public/audio/act2_elevenlabs_voice.mp3'
+file 'C:/Users/Unicodes/Documents/Developments/Project/JagaUsaha/video-demo/public/audio/act3_elevenlabs_voice.mp3'
+file 'C:/Users/Unicodes/Documents/Developments/Project/JagaUsaha/video-demo/public/audio/act4_elevenlabs_voice.mp3'
+file 'C:/Users/Unicodes/Documents/Developments/Project/JagaUsaha/video-demo/public/audio/act5_elevenlabs_voice.mp3'

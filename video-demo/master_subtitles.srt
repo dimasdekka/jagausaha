@@ -1,0 +1,168 @@
+1
+00:00:00,100 --> 00:00:07,155
+Halo Bapak, Ibu, dan dewan juri IDwebhost AI Competition 2026!
+
+2
+00:00:07,105 --> 00:00:20,998
+Pernah nggak Anda melihat sebuah kedai kopi yang ramai pembeli, saldo kas rekeningnya terlihat belasan juta, tapi seminggu kemudian sang pemilik panik luar biasa karena terancam gagal bayar gaji barista atau sewa ruko?
+
+3
+00:00:20,998 --> 00:00:33,391
+Nah, menurut data Kementerian Koperasi dan UKM, delapan puluh dua persen kegagalan usaha kecil bukan karena sepi pelanggan, melainkan karena ilusi saldo kas operasional.
+
+4
+00:00:33,391 --> 00:00:42,764
+Pemilik merasa uangnya masih banyak, lalu tergiur belanja modal di awal bulan, tanpa memperhitungkan komitmen jatuh tempo minggu depan.
+
+5
+00:00:42,764 --> 00:00:48,607
+Untuk menyelesaikan masalah genting inilah, kami membangun JagaUsaha.
+
+6
+00:00:48,607 --> 00:00:57,477
+JagaUsaha adalah autonomous financial guardian yang bekerja proaktif melindungi likuiditas kas UMKM sebelum krisis terjadi.
+
+7
+00:00:57,477 --> 00:01:04,569
+Seluruh platform ini di-hosting di CloudBaik Cloud VPS dan ditenagai layanan AI Hosting dari IDwebhost.
+
+8
+00:01:04,569 --> 00:01:09,473
+Yuk, kita lihat langsung bagaimana sistem cerdas ini bekerja!
+
+9
+00:01:09,580 --> 00:01:16,599
+Sekarang, mari kita masuk ke dashboard dan melihat arsitektur sistem yang berjalan di balik layar.
+
+10
+00:01:16,549 --> 00:01:23,580
+Di menu Log Sensor & AI Guardian ini, terdapat tiga agen otonom yang bekerja tanpa henti.
+
+11
+00:01:23,580 --> 00:01:29,602
+Pertama, Sensor Agent yang membaca mutasi rekening dan transaksi kasir.
+
+12
+00:01:29,602 --> 00:01:38,159
+Kedua, Simulator Agent berbasis formula matematika deterministik DLMM dengan tingkat halusinasi nol persen.
+
+13
+00:01:38,159 --> 00:01:44,361
+Dan ketiga, Advisor Agent yang merumuskan intervensi taktis melalui WhatsApp.
+
+14
+00:01:44,361 --> 00:01:48,314
+Perhatikan layar terminal SSH langsung ini.
+
+15
+00:01:48,314 --> 00:02:06,164
+Melalui koneksi aman port empat empat dua dua ke server CloudBaik Cloud VPS beralamat IP 103.30.146.174, layanan jagausaha.service aktif berjalan stabil dengan konsumsi memori yang sangat efisien.
+
+16
+00:02:06,164 --> 00:02:21,921
+Didukung spesifikasi empat Core CPU AMD EPYC, empat gigabyte RAM, dan penyimpanan cepat SSD di data center lokal Indonesia, layanan AI Hosting IDwebhost memberikan latensi yang sangat rendah dan keandalan tinggi.
+
+17
+00:02:21,921 --> 00:02:30,431
+Mesin autonomous ini diorkestrasikan oleh Hermes Agent untuk menjamin keamanan dan privasi data finansial UMKM.
+
+18
+00:02:30,532 --> 00:02:38,428
+Salah satu kendala terbesar UMKM dalam menggunakan aplikasi finansial adalah proses input manual yang ribet.
+
+19
+00:02:38,378 --> 00:02:45,950
+Di JagaUsaha, kami menghadirkan solusi satu pintu: Unified Multi-Modal Onboarding.
+
+20
+00:02:45,950 --> 00:02:49,340
+Cukup klik tombol Input Data Usaha.
+
+21
+00:02:49,340 --> 00:03:01,804
+Di sini, pemilik usaha cukup mengunggah e-Statement rekening koran BCA dalam format PDF, laporan kasir POS Moka dalam format Excel, atau rekaman catatan suara santai.
+
+22
+00:03:01,804 --> 00:03:07,897
+Sensor cerdas kami langsung mengekstrak seluruh data transaksi secara otomatis.
+
+23
+00:03:07,897 --> 00:03:27,740
+Perhatikan panel Digital Twin di sisi kanan yang langsung terisi sempurna: saldo kas riil delapan belas koma lima juta rupiah, cadangan kas darurat aman tiga juta rupiah, komitmen gaji barista tujuh koma lima juta rupiah pada tanggal tiga puluh, serta sewa ruko empat koma dua juta rupiah.
+
+24
+00:03:27,740 --> 00:03:35,530
+Formula Safe-to-Spend atau Duit Dingin Aman langsung terhitung otomatis sebesar tiga koma delapan juta rupiah.
+
+25
+00:03:35,530 --> 00:03:41,467
+Semua terjadi instan tanpa pemilik usaha harus mengetik angka satu per satu!
+
+26
+00:03:41,572 --> 00:03:48,711
+Sekarang, mari kita uji fitur paling krusial: Sandbox Simulasi Keputusan Kas.
+
+27
+00:03:48,661 --> 00:04:01,353
+Bayangkan sang pemilik kedai Kopi Teras Barokah melihat saldo BCA delapan belas juta rupiah, lalu tergiur membeli mesin espresso komersial baru seharga empat belas juta rupiah secara tunai.
+
+28
+00:04:01,353 --> 00:04:13,457
+Pengguna cukup berbicara dengan antarmuka suara interaktif berteknologi VoiceBeam dari Libraries.dev: Beli mesin espresso empat belas juta tunai aman nggak buat gajian barista minggu depan?
+
+29
+00:04:13,457 --> 00:04:20,680
+Begitu disimulasikan, mesin deterministik DLMM FastMath langsung membunyikan alarm bahaya!
+
+30
+00:04:20,680 --> 00:04:25,175
+Lihat kurva proyeksi arus kas yang anjlok ke zona merah.
+
+31
+00:04:25,175 --> 00:04:36,786
+Sistem mendeteksi bahwa pada hari ke-enam saat tanggal gajian barista jatuh tempo, kas operasional toko akan mengalami defisit hingga minus tiga koma tiga juta rupiah!
+
+32
+00:04:36,786 --> 00:04:47,243
+Hebatnya, JagaUsaha tidak hanya melarang, tapi langsung memberikan tombol solusi: Terapkan DP lima puluh persen atau tujuh juta rupiah.
+
+33
+00:04:47,243 --> 00:04:54,959
+Begitu tombol diklik, kurva kas seketika pulih dan kembali ke zona hijau yang aman dengan runway positif!
+
+34
+00:04:55,060 --> 00:05:02,740
+Setelah keputusan diambil, JagaUsaha membantu eksekusi ke lapangan melalui generator negosiasi WhatsApp.
+
+35
+00:05:02,690 --> 00:05:05,406
+Cukup klik tombol Draf WhatsApp.
+
+36
+00:05:05,406 --> 00:05:11,800
+Sistem otomatis menyusun draf pesan bisnis formal yang sangat santun dan profesional.
+
+37
+00:05:11,800 --> 00:05:25,921
+Pesan ini mengajukan termin pembayaran DP lima puluh persen hari ini dan pelunasan tempo tiga puluh hari ke depan, lengkap dengan alasan budgeting kas operasional toko sehingga menjaga hubungan baik dengan supplier mesin.
+
+38
+00:05:25,921 --> 00:05:33,231
+Pengguna cukup memilih preset, menyalin pesan dengan satu klik, dan mengirimkannya langsung ke vendor.
+
+39
+00:05:33,231 --> 00:05:53,868
+Bapak, Ibu, dan dewan juri sekalian, JagaUsaha membuktikan bagaimana integrasi kecerdasan buatan otonom, antarmuka bersih anti-slop, dan infrastruktur tangguh dari AI Hosting IDwebhost serta CloudBaik Cloud VPS dapat memberikan perlindungan nyata bagi kelangsungan hidup UMKM Indonesia.
+
+40
+00:05:53,868 --> 00:06:04,565
+Silakan coba langsung live demo aplikasi kami di alamat 103.30.146.174 port delapan ribu.
+
+41
+00:06:04,565 --> 00:06:10,719
+Terima kasih banyak kepada IDwebhost dan CloudBaik atas terselenggaranya kompetisi ini.
+
+42
+00:06:10,719 --> 00:06:16,019
+JagaUsaha, jaga kas usaha Anda sebelum krisis menyapa!
+

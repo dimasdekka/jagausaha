@@ -1,0 +1,782 @@
+[
+  {
+    "word": "Sekarang,",
+    "start": 0.0,
+    "end": 0.522
+  },
+  {
+    "word": "mari",
+    "start": 0.569,
+    "end": 0.766
+  },
+  {
+    "word": "kita",
+    "start": 0.801,
+    "end": 0.987
+  },
+  {
+    "word": "masuk",
+    "start": 1.033,
+    "end": 1.324
+  },
+  {
+    "word": "ke",
+    "start": 1.347,
+    "end": 1.416
+  },
+  {
+    "word": "dashboard",
+    "start": 1.474,
+    "end": 1.95
+  },
+  {
+    "word": "dan",
+    "start": 2.194,
+    "end": 2.357
+  },
+  {
+    "word": "melihat",
+    "start": 2.392,
+    "end": 2.705
+  },
+  {
+    "word": "arsitektur",
+    "start": 2.763,
+    "end": 3.413
+  },
+  {
+    "word": "kecerdasan",
+    "start": 3.471,
+    "end": 4.063
+  },
+  {
+    "word": "buatan",
+    "start": 4.133,
+    "end": 4.458
+  },
+  {
+    "word": "luar",
+    "start": 4.505,
+    "end": 4.69
+  },
+  {
+    "word": "biasa",
+    "start": 4.748,
+    "end": 5.201
+  },
+  {
+    "word": "yang",
+    "start": 5.48,
+    "end": 5.666
+  },
+  {
+    "word": "berjalan",
+    "start": 5.689,
+    "end": 6.049
+  },
+  {
+    "word": "di",
+    "start": 6.084,
+    "end": 6.153
+  },
+  {
+    "word": "balik",
+    "start": 6.2,
+    "end": 6.42
+  },
+  {
+    "word": "layar!",
+    "start": 6.49,
+    "end": 7.024
+  },
+  {
+    "word": "Di",
+    "start": 7.465,
+    "end": 7.593
+  },
+  {
+    "word": "menu",
+    "start": 7.639,
+    "end": 7.848
+  },
+  {
+    "word": "Log",
+    "start": 7.895,
+    "end": 8.046
+  },
+  {
+    "word": "Sensor",
+    "start": 8.092,
+    "end": 8.429
+  },
+  {
+    "word": "dan",
+    "start": 8.499,
+    "end": 8.626
+  },
+  {
+    "word": "AI",
+    "start": 8.719,
+    "end": 8.963
+  },
+  {
+    "word": "Guardian",
+    "start": 9.033,
+    "end": 9.392
+  },
+  {
+    "word": "ini,",
+    "start": 9.474,
+    "end": 9.752
+  },
+  {
+    "word": "terdapat",
+    "start": 9.834,
+    "end": 10.298
+  },
+  {
+    "word": "tiga",
+    "start": 10.321,
+    "end": 10.577
+  },
+  {
+    "word": "agen",
+    "start": 10.612,
+    "end": 10.855
+  },
+  {
+    "word": "otonom",
+    "start": 10.925,
+    "end": 11.355
+  },
+  {
+    "word": "yang",
+    "start": 11.471,
+    "end": 11.645
+  },
+  {
+    "word": "berkolaborasi",
+    "start": 11.691,
+    "end": 12.562
+  },
+  {
+    "word": "tanpa",
+    "start": 12.632,
+    "end": 12.957
+  },
+  {
+    "word": "henti!",
+    "start": 12.992,
+    "end": 13.549
+  },
+  {
+    "word": "Pertama,",
+    "start": 13.99,
+    "end": 14.524
+  },
+  {
+    "word": "Sensor",
+    "start": 14.582,
+    "end": 15.0
+  },
+  {
+    "word": "Agent...",
+    "start": 15.058,
+    "end": 15.732
+  },
+  {
+    "word": "yang",
+    "start": 16.335,
+    "end": 16.498
+  },
+  {
+    "word": "membaca",
+    "start": 16.533,
+    "end": 16.904
+  },
+  {
+    "word": "mutasi",
+    "start": 16.951,
+    "end": 17.334
+  },
+  {
+    "word": "rekening",
+    "start": 17.404,
+    "end": 17.81
+  },
+  {
+    "word": "dan",
+    "start": 17.868,
+    "end": 17.972
+  },
+  {
+    "word": "transaksi",
+    "start": 18.019,
+    "end": 18.599
+  },
+  {
+    "word": "kasir",
+    "start": 18.657,
+    "end": 19.052
+  },
+  {
+    "word": "secara",
+    "start": 19.133,
+    "end": 19.459
+  },
+  {
+    "word": "otomatis!",
+    "start": 19.505,
+    "end": 20.329
+  },
+  {
+    "word": "Kedua,",
+    "start": 20.77,
+    "end": 21.246
+  },
+  {
+    "word": "Simulator",
+    "start": 21.316,
+    "end": 21.873
+  },
+  {
+    "word": "Agent...",
+    "start": 21.931,
+    "end": 22.593
+  },
+  {
+    "word": "berbasis",
+    "start": 22.709,
+    "end": 23.209
+  },
+  {
+    "word": "formula",
+    "start": 23.267,
+    "end": 23.661
+  },
+  {
+    "word": "matematika",
+    "start": 23.719,
+    "end": 24.323
+  },
+  {
+    "word": "deterministik",
+    "start": 24.37,
+    "end": 25.101
+  },
+  {
+    "word": "DLMM",
+    "start": 25.171,
+    "end": 25.867
+  },
+  {
+    "word": "dengan",
+    "start": 26.111,
+    "end": 26.366
+  },
+  {
+    "word": "tingkat",
+    "start": 26.413,
+    "end": 26.75
+  },
+  {
+    "word": "halusinasi",
+    "start": 26.796,
+    "end": 27.4
+  },
+  {
+    "word": "nol",
+    "start": 27.458,
+    "end": 27.597
+  },
+  {
+    "word": "persen!",
+    "start": 27.655,
+    "end": 28.352
+  },
+  {
+    "word": "Dan",
+    "start": 29.048,
+    "end": 29.223
+  },
+  {
+    "word": "ketiga,",
+    "start": 29.281,
+    "end": 29.873
+  },
+  {
+    "word": "Advisor",
+    "start": 29.989,
+    "end": 30.488
+  },
+  {
+    "word": "Agent...",
+    "start": 30.546,
+    "end": 31.208
+  },
+  {
+    "word": "yang",
+    "start": 31.649,
+    "end": 31.823
+  },
+  {
+    "word": "siap",
+    "start": 31.881,
+    "end": 32.113
+  },
+  {
+    "word": "merumuskan",
+    "start": 32.172,
+    "end": 32.729
+  },
+  {
+    "word": "intervensi",
+    "start": 32.798,
+    "end": 33.379
+  },
+  {
+    "word": "taktis",
+    "start": 33.449,
+    "end": 33.832
+  },
+  {
+    "word": "melalui",
+    "start": 33.901,
+    "end": 34.215
+  },
+  {
+    "word": "WhatsApp!",
+    "start": 34.273,
+    "end": 34.784
+  },
+  {
+    "word": "Nah,",
+    "start": 35.329,
+    "end": 35.573
+  },
+  {
+    "word": "perhatikan",
+    "start": 35.62,
+    "end": 36.212
+  },
+  {
+    "word": "layar",
+    "start": 36.56,
+    "end": 36.827
+  },
+  {
+    "word": "terminal",
+    "start": 36.885,
+    "end": 37.303
+  },
+  {
+    "word": "SSH",
+    "start": 37.361,
+    "end": 37.698
+  },
+  {
+    "word": "langsung",
+    "start": 37.779,
+    "end": 38.104
+  },
+  {
+    "word": "ini!",
+    "start": 38.139,
+    "end": 38.453
+  },
+  {
+    "word": "Melalui",
+    "start": 38.603,
+    "end": 38.94
+  },
+  {
+    "word": "koneksi",
+    "start": 38.987,
+    "end": 39.323
+  },
+  {
+    "word": "aman",
+    "start": 39.381,
+    "end": 39.602
+  },
+  {
+    "word": "port",
+    "start": 39.66,
+    "end": 39.857
+  },
+  {
+    "word": "empat",
+    "start": 39.892,
+    "end": 40.159
+  },
+  {
+    "word": "empat",
+    "start": 40.206,
+    "end": 40.415
+  },
+  {
+    "word": "dua",
+    "start": 40.449,
+    "end": 40.6
+  },
+  {
+    "word": "dua",
+    "start": 40.647,
+    "end": 40.937
+  },
+  {
+    "word": "ke",
+    "start": 41.123,
+    "end": 41.227
+  },
+  {
+    "word": "server",
+    "start": 41.285,
+    "end": 41.564
+  },
+  {
+    "word": "CloudBaik",
+    "start": 41.61,
+    "end": 42.11
+  },
+  {
+    "word": "Cloud",
+    "start": 42.191,
+    "end": 42.423
+  },
+  {
+    "word": "VPS",
+    "start": 42.481,
+    "end": 42.934
+  },
+  {
+    "word": "dengan",
+    "start": 43.189,
+    "end": 43.41
+  },
+  {
+    "word": "alamat",
+    "start": 43.468,
+    "end": 43.816
+  },
+  {
+    "word": "IP",
+    "start": 43.886,
+    "end": 44.153
+  },
+  {
+    "word": "103.30.146.174...",
+    "start": 44.699,
+    "end": 49.679
+  },
+  {
+    "word": "layanan",
+    "start": 50.411,
+    "end": 50.759
+  },
+  {
+    "word": "jagausaha.service",
+    "start": 50.829,
+    "end": 52.338
+  },
+  {
+    "word": "aktif",
+    "start": 52.384,
+    "end": 52.721
+  },
+  {
+    "word": "berjalan",
+    "start": 52.779,
+    "end": 53.139
+  },
+  {
+    "word": "luar",
+    "start": 53.174,
+    "end": 53.348
+  },
+  {
+    "word": "biasa",
+    "start": 53.394,
+    "end": 53.72
+  },
+  {
+    "word": "stabil",
+    "start": 53.754,
+    "end": 54.207
+  },
+  {
+    "word": "dengan",
+    "start": 54.416,
+    "end": 54.683
+  },
+  {
+    "word": "konsumsi",
+    "start": 54.753,
+    "end": 55.229
+  },
+  {
+    "word": "memori",
+    "start": 55.299,
+    "end": 55.635
+  },
+  {
+    "word": "super",
+    "start": 55.67,
+    "end": 55.925
+  },
+  {
+    "word": "efisien!",
+    "start": 55.96,
+    "end": 56.668
+  },
+  {
+    "word": "Ditenagai",
+    "start": 57.481,
+    "end": 58.038
+  },
+  {
+    "word": "spesifikasi",
+    "start": 58.073,
+    "end": 58.758
+  },
+  {
+    "word": "tangguh",
+    "start": 58.805,
+    "end": 59.118
+  },
+  {
+    "word": "empat",
+    "start": 59.141,
+    "end": 59.478
+  },
+  {
+    "word": "Core",
+    "start": 59.548,
+    "end": 59.722
+  },
+  {
+    "word": "CPU",
+    "start": 59.745,
+    "end": 60.14
+  },
+  {
+    "word": "AMD",
+    "start": 60.221,
+    "end": 60.453
+  },
+  {
+    "word": "EPYC,",
+    "start": 60.546,
+    "end": 61.405
+  },
+  {
+    "word": "empat",
+    "start": 61.649,
+    "end": 61.974
+  },
+  {
+    "word": "gigabyte",
+    "start": 62.032,
+    "end": 62.52
+  },
+  {
+    "word": "RAM,",
+    "start": 62.543,
+    "end": 62.984
+  },
+  {
+    "word": "dan",
+    "start": 63.193,
+    "end": 63.344
+  },
+  {
+    "word": "penyimpanan",
+    "start": 63.402,
+    "end": 63.913
+  },
+  {
+    "word": "secepat",
+    "start": 63.971,
+    "end": 64.354
+  },
+  {
+    "word": "kilat",
+    "start": 64.401,
+    "end": 64.749
+  },
+  {
+    "word": "NVMe",
+    "start": 64.83,
+    "end": 65.411
+  },
+  {
+    "word": "SSD",
+    "start": 65.446,
+    "end": 65.864
+  },
+  {
+    "word": "di",
+    "start": 66.189,
+    "end": 66.305
+  },
+  {
+    "word": "data",
+    "start": 66.363,
+    "end": 66.618
+  },
+  {
+    "word": "center",
+    "start": 66.653,
+    "end": 66.955
+  },
+  {
+    "word": "lokal",
+    "start": 67.001,
+    "end": 67.303
+  },
+  {
+    "word": "Indonesia...",
+    "start": 67.361,
+    "end": 68.255
+  },
+  {
+    "word": "layanan",
+    "start": 69.068,
+    "end": 69.451
+  },
+  {
+    "word": "AI",
+    "start": 69.532,
+    "end": 69.753
+  },
+  {
+    "word": "Hosting",
+    "start": 69.811,
+    "end": 70.159
+  },
+  {
+    "word": "IDwebhost",
+    "start": 70.217,
+    "end": 71.053
+  },
+  {
+    "word": "memberikan",
+    "start": 71.227,
+    "end": 71.633
+  },
+  {
+    "word": "latensi",
+    "start": 71.703,
+    "end": 72.191
+  },
+  {
+    "word": "mendekati",
+    "start": 72.26,
+    "end": 72.736
+  },
+  {
+    "word": "nol",
+    "start": 72.794,
+    "end": 73.061
+  },
+  {
+    "word": "dan",
+    "start": 73.236,
+    "end": 73.41
+  },
+  {
+    "word": "keandalan",
+    "start": 73.468,
+    "end": 73.909
+  },
+  {
+    "word": "maksimal!",
+    "start": 73.967,
+    "end": 74.64
+  },
+  {
+    "word": "Seluruh",
+    "start": 74.965,
+    "end": 75.36
+  },
+  {
+    "word": "mesin",
+    "start": 75.407,
+    "end": 75.65
+  },
+  {
+    "word": "otonom",
+    "start": 75.697,
+    "end": 76.034
+  },
+  {
+    "word": "ini",
+    "start": 76.115,
+    "end": 76.428
+  },
+  {
+    "word": "diorkestrasikan",
+    "start": 76.544,
+    "end": 77.438
+  },
+  {
+    "word": "oleh",
+    "start": 77.496,
+    "end": 77.682
+  },
+  {
+    "word": "Hermes",
+    "start": 77.705,
+    "end": 78.03
+  },
+  {
+    "word": "Agent",
+    "start": 78.112,
+    "end": 78.506
+  },
+  {
+    "word": "untuk",
+    "start": 78.75,
+    "end": 79.006
+  },
+  {
+    "word": "menjamin",
+    "start": 79.041,
+    "end": 79.447
+  },
+  {
+    "word": "privasi",
+    "start": 79.505,
+    "end": 79.9
+  },
+  {
+    "word": "penuh",
+    "start": 79.958,
+    "end": 80.318
+  },
+  {
+    "word": "dan",
+    "start": 80.41,
+    "end": 80.573
+  },
+  {
+    "word": "keamanan",
+    "start": 80.643,
+    "end": 81.13
+  },
+  {
+    "word": "data",
+    "start": 81.188,
+    "end": 81.421
+  },
+  {
+    "word": "finansial",
+    "start": 81.467,
+    "end": 82.094
+  },
+  {
+    "word": "UMKM!",
+    "start": 82.303,
+    "end": 83.499
+  }
+]
